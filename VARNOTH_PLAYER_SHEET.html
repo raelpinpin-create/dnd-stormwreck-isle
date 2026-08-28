@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Varnoth — Martial Defender Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-page: #070d18;
+            --bg-sheet: #0b1424;
+            --panel-bg: #101c30;
+            --panel-sub: #0c1626;
+            --card-border: #1d2e4a;
+            --card-border-hover: #38bdf8;
+            --accent-gold: #f59e0b;
+            --accent-blue: #38bdf8;
+            --accent-cyan: #22d3ee;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --accent-crimson: #f43f5e;
+            --accent-purple: #c084fc;
+            --text-light: #f8fafc;
+            --text-dim: #94a3b8;
+            --text-muted: #64748b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-light);
+            line-height: 1.5;
+            padding: 16px 12px;
+            display: flex;
+            justify-content: center;
+            font-size: 0.88rem;
+        }
+
+        .sheet-container {
+            width: 100%;
+            max-width: 1160px;
+            background-color: var(--bg-sheet);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            box-shadow: 0 12px 36px rgba(0,0,0,0.75);
+            overflow: hidden;
+        }
+
+        /* Top Header Banner */
+        .header-banner {
+            background: linear-gradient(180deg, #162842 0%, #0d1a2d 100%);
+            border-bottom: 1px solid var(--card-border);
+            padding: 12px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header-title h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--accent-gold);
+            font-size: 1.55rem;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+        }
+
+        .header-title p {
+            color: var(--text-dim);
+            font-size: 0.82rem;
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .pill-badge-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .pill-badge {
+            padding: 3px 10px;
+            border-radius: 9999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .pill-gold { background: #b45309; color: #fef3c7; border: 1px solid #f59e0b; }
+        .pill-crimson { background: #be123c; color: #ffe4e6; border: 1px solid #f43f5e; }
+        .pill-blue { background: #0369a1; color: #f0f9ff; border: 1px solid #38bdf8; }
+
+        /* TOP PROMINENT DICE ROLLER CONSOLE */
+        .top-dice-console {
+            background: #080f1e;
+            border-bottom: 1px solid var(--card-border);
+            padding: 10px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.4);
+        }
+
+        .dice-controls-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .dice-buttons-group {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+
+        .dice-btn {
+            background: #132238;
+            border: 1px solid #233a5e;
+            color: var(--text-light);
+            padding: 4px 9px;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .dice-btn:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+            background: #1b2f4d;
+        }
+
+        .roll-mode-group {
+            display: flex;
+            background: #0d1726;
+            border: 1px solid #1e314f;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .btn-mode {
+            padding: 3px 8px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-mode.active-mode {
+            background: var(--accent-gold);
+            color: #000;
+        }
+
+        .roll-console-box {
+            background: #050b14;
+            border: 1px solid #16243b;
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.84rem;
+            color: var(--accent-gold);
+            min-height: 38px;
+            display: flex;
+            align-items: center;
+            word-break: break-word;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);
+        }
+
+        /* Main 2-Column Grid Layout */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 12px;
+            padding: 14px 16px;
+        }
+
+        @media (max-width: 960px) {
+            .main-layout { grid-template-columns: 1fr; }
+        }
+
+        /* Generic Panel */
+        .panel {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .panel-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 4px;
+        }
+
+        /* Vitals 4-Box Row */
+        .vitals-4box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+            margin-bottom: 6px;
+        }
+
+        .vital-mini-box {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 6px 3px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vital-mini-lbl {
+            font-size: 0.64rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .vital-mini-val {
+            font-size: 1.08rem;
+            font-weight: 800;
+            color: var(--text-light);
+            font-family: 'JetBrains Mono', monospace;
+            margin-top: 1px;
+        }
+
+        /* HP Engine & Healthbar */
+        .hp-ctrl-container {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 8px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .hp-health-bar-bg {
+            width: 100%;
+            height: 7px;
+            background: #060c17;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+        }
+
+        .hp-health-bar-fill {
+            height: 100%;
+            width: 100%;
+            background: var(--accent-green);
+            transition: width 0.3s ease, background-color 0.3s ease;
+        }
+
+        .hp-input-num {
+            background: #060c17;
+            border: 1px solid var(--card-border);
+            color: var(--text-light);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.82rem;
+            font-weight: 700;
+            padding: 3px 6px;
+            border-radius: 4px;
+            outline: none;
+        }
+        .hp-input-num:focus { border-color: var(--accent-gold); }
+
+        .btn-act {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.1s;
+        }
+        .btn-act:active { transform: scale(0.96); }
+        .btn-act-dmg { background: #991b1b; color: #fee2e2; }
+        .btn-act-heal { background: #065f46; color: #d1fae5; }
+        .btn-act-pre { background: #16243a; color: var(--text-light); border: 1px solid #23395b; }
+        .btn-act-pre:hover { background: #1f3352; border-color: var(--accent-blue); }
+
+        /* Ability Scores 6-Strip */
+        .ability-strip {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 4px;
+            margin-bottom: 6px;
+        }
+
+        .ability-box {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            text-align: center;
+            padding: 5px 1px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .ability-box:hover { border-color: var(--accent-gold); background: rgba(245, 158, 11, 0.08); }
+        .ability-box.active-key {
+            border: 1.5px solid var(--accent-gold);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .ability-name { font-size: 0.62rem; font-weight: 700; color: var(--text-dim); }
+        .ability-score { font-size: 0.98rem; font-weight: 800; color: var(--text-light); font-family: 'JetBrains Mono', monospace; }
+        .ability-mod { font-size: 0.68rem; font-weight: 600; color: var(--text-dim); }
+        .ability-box.active-key .ability-mod { color: var(--accent-gold); font-weight: 700; }
+
+        /* Stat Row List */
+        .stat-row-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .stat-row-item {
+            font-size: 0.76rem;
+            color: var(--text-light);
+            padding: 3px 6px;
+            background: var(--panel-sub);
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+        .stat-row-item:hover { background: #182840; }
+        .stat-row-item.prof-item {
+            color: var(--accent-gold);
+            font-weight: 700;
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 2px solid var(--accent-gold);
+        }
+
+        /* 2-Column Action Grid */
+        .spell-grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .spell-grid-2col { grid-template-columns: 1fr; }
+        }
+
+        .spell-compact-card {
+            background-color: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 8px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            transition: border-color 0.2s;
+        }
+
+        .spell-compact-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .spell-desc-compact {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            line-height: 1.35;
+        }
+
+        .spell-action-btns {
+            display: flex;
+            gap: 4px;
+            margin-top: 3px;
+            flex-wrap: wrap;
+        }
+
+        .btn-card-roll {
+            background: #0284c7;
+            color: #f0f9ff;
+            border: none;
+            border-radius: 4px;
+            padding: 3px 7px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-card-roll:hover { background: #0369a1; }
+        .btn-card-heal { background: #065f46; color: #d1fae5; }
+        .btn-card-heal:hover { background: #047857; }
+        .btn-card-dmg { background: #991b1b; color: #fee2e2; }
+        .btn-card-dmg:hover { background: #b91c1c; }
+        .btn-card-slot { background: #1a2a42; color: #94a3b8; font-size: 0.68rem; border: 1px solid #294063; }
+        .btn-card-slot:hover { background: #23395b; color: #fff; }
+
+        /* Inventory List */
+        .inv-list-compact {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            max-height: 190px;
+            overflow-y: auto;
+        }
+
+        .inv-row-item {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 4px;
+            padding: 3px 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.76rem;
+            gap: 6px;
+            transition: border-color 0.15s;
+        }
+        .inv-row-item:hover {
+            border-color: #334155;
+        }
+
+        .inv-item-info {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .inv-controls {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
+        .inv-stepper {
+            display: inline-flex;
+            align-items: center;
+            background: #090e1a;
+            border: 1px solid #334155;
+            border-radius: 4px;
+            padding: 1px 3px;
+            gap: 2px;
+        }
+
+        .btn-step-qty {
+            background: transparent;
+            border: none;
+            color: #94a3b8;
+            font-size: 0.68rem;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 1px 4px;
+            border-radius: 2px;
+            transition: all 0.15s;
+            line-height: 1;
+        }
+        .btn-step-qty:hover {
+            background: #1e293b;
+            color: var(--accent-gold);
+        }
+        .btn-step-qty:active {
+            transform: scale(0.92);
+        }
+
+        .inv-qty-val {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            min-width: 22px;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .btn-del-item {
+            background: transparent;
+            border: none;
+            color: var(--accent-red);
+            font-weight: 700;
+            cursor: pointer;
+            padding: 1px 5px;
+            font-size: 0.85rem;
+            border-radius: 3px;
+            transition: all 0.15s;
+        }
+        .btn-del-item:hover {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+        }
+
+        /* Modal Overlay Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(4, 7, 13, 0.85);
+            backdrop-filter: blur(4px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+        }
+        .modal-overlay.active { display: flex; }
+
+        .modal-card {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 480px;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+            overflow: hidden;
+        }
+
+        .modal-header {
+            background: #1e293b;
+            padding: 10px 14px;
+            border-bottom: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            color: var(--accent-gold);
+        }
+
+        .modal-close-btn {
+            background: transparent;
+            border: none;
+            color: #94a3b8;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 2px 6px;
+        }
+        .modal-close-btn:hover { color: #fff; }
+
+        .modal-body {
+            padding: 12px 14px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .tx-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            max-height: 280px;
+            overflow-y: auto;
+        }
+
+        .tx-item {
+            background: #131d31;
+            border: 1px solid #1f2e4d;
+            border-radius: 4px;
+            padding: 6px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.74rem;
+        }
+        .tx-gain { border-left: 3px solid var(--accent-green); }
+        .tx-spend { border-left: 3px solid var(--accent-red); }
+        .tx-silver { border-left: 3px solid var(--accent-blue); }
+        .tx-reset { border-left: 3px solid var(--accent-gold); }
+    </style>
+</head>
+<body>
+
+    <div class="sheet-container">
+        
+        <!-- HEADER BANNER -->
+        <header class="header-banner">
+            <div class="header-title">
+                <h1>🛡️ GENERAL VARNOTH</h1>
+                <div style="font-size:0.82rem; font-weight:700; color:#fde68a; margin-top:2px; letter-spacing:0.5px;">
+                    « Warden of the Living Grove » & « The Indomitable Iron-Oak »
+                </div>
+                <div style="font-size:0.75rem; color:var(--text-dim); margin-top:1px;">
+                    Level 3 Human Martial Defender (Azure Wolves Commander • Sidekick Tank)
+                </div>
+            </div>
+            <div class="pill-badge-group">
+                <button class="btn-act btn-act-pre" onclick="exportSheetState()" style="font-size:0.75rem; font-weight:700; color:var(--accent-gold); border:1px solid rgba(245, 158, 11, 0.4); display:flex; align-items:center; gap:4px; padding:4px 10px; cursor:pointer;" title="1-Click copy current HP, features, and inventory to clipboard">📋 Export Data</button>
+                <span class="pill-badge pill-gold">LAWFUL GOOD</span>
+                <span class="pill-badge pill-crimson">MARTIAL DEFENDER 3</span>
+                <span class="pill-badge pill-blue">TANK</span>
+            </div>
+        </header>
+
+        <!-- TOP PROMINENT DICE ROLLER CONSOLE -->
+        <div class="top-dice-console">
+            <div class="dice-controls-bar">
+                <div class="dice-buttons-group">
+                    <span style="font-size:0.75rem; font-weight:700; color:var(--text-dim); margin-right:4px;">ROLL:</span>
+                    <button class="dice-btn" onclick="rollCustomDie(20)">d20</button>
+                    <button class="dice-btn" onclick="rollCustomDie(12)">d12</button>
+                    <button class="dice-btn" onclick="rollCustomDie(10)">d10</button>
+                    <button class="dice-btn" onclick="rollCustomDie(8)">d8</button>
+                    <button class="dice-btn" onclick="rollCustomDie(6)">d6</button>
+                    <button class="dice-btn" onclick="rollCustomDie(4)">d4</button>
+                    <button class="dice-btn" onclick="rollCustomDie(100)">d100</button>
+                    <div style="display:flex; align-items:center; gap:3px; margin-left:6px;">
+                        <span style="font-size:0.72rem; color:var(--text-dim);">MOD:</span>
+                        <input type="number" id="dice-mod" value="0" class="hp-input-num" style="width:38px; height:24px; padding:2px 4px; font-size:0.75rem;">
+                        <button class="btn-act btn-act-pre" style="padding:2px 5px; font-size:0.68rem;" onclick="setDiceMod(1)">+1</button>
+                        <button class="btn-act btn-act-pre" style="padding:2px 5px; font-size:0.68rem;" onclick="setDiceMod(-1)">-1</button>
+                        <button class="btn-act btn-act-pre" style="padding:2px 5px; font-size:0.68rem;" onclick="setDiceMod(0)">0</button>
+                    </div>
+                </div>
+
+                <div class="roll-mode-group">
+                    <button class="btn-mode active-mode" id="mode-norm" onclick="setRollMode('norm')">Norm</button>
+                    <button class="btn-mode" id="mode-adv" onclick="setRollMode('adv')">Adv</button>
+                    <button class="btn-mode" id="mode-dis" onclick="setRollMode('dis')">Dis</button>
+                </div>
+            </div>
+            <div class="roll-console-box" id="roll-res">
+                🛡️ General Varnoth ready for frontline defense. Crits on 19-20! Click any stat, attack, or die to roll.
+            </div>
+        </div>
+
+        <!-- MAIN 2-COLUMN LAYOUT -->
+        <div class="main-layout">
+            
+            <!-- LEFT COLUMN: VITALS, HELP TOKENS, PURSE, ABILITIES, SAVES & SKILLS -->
+            <div>
+                <!-- 4-BOX VITALS -->
+                <div class="vitals-4box">
+                    <div class="vital-mini-box">
+                        <span class="vital-mini-lbl">HP</span>
+                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">29/29</span>
+                    </div>
+                    <div class="vital-mini-box">
+                        <span class="vital-mini-lbl">AC</span>
+                        <span class="vital-mini-val" id="ac-disp" style="color:var(--accent-gold);">17</span>
+                    </div>
+                    <div class="vital-mini-box" onclick="rollInitiativeVarnoth()" style="cursor:pointer; transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent-blue)'" onmouseout="this.style.borderColor='var(--card-border)'" title="Click to roll Initiative with Battle Readiness Advantage (+0 Adv)">
+                        <span class="vital-mini-lbl">INIT 🎲</span>
+                        <span class="vital-mini-val" style="color:var(--accent-blue);">+0 ⚡</span>
+                    </div>
+                    <div class="vital-mini-box" title="Improved Critical: Scores Critical Hit on 19 or 20!">
+                        <span class="vital-mini-lbl">CRIT / HIT</span>
+                        <span class="vital-mini-val" style="font-size:0.85rem; color:var(--accent-gold);">19-20 ★ | +4</span>
+                    </div>
+                </div>
+
+                <!-- INTERACTIVE HP DAMAGE / HEAL CONTROLLER -->
+                <div class="hp-ctrl-container">
+                    <div class="hp-health-bar-bg">
+                        <div class="hp-health-bar-fill" id="hp-bar" style="width: 100%;"></div>
+                    </div>
+                    <div style="display:flex; flex-direction:column; gap:5px;">
+                        <!-- Top Row: Spacious Number Input + Damage/Heal Buttons -->
+                        <div style="display:flex; align-items:center; gap:5px; width:100%;">
+                            <input type="number" id="hp-input" class="hp-input-num" placeholder="Enter amount..." min="1" max="999" style="flex:1; height:32px; font-size:0.88rem; text-align:left; padding:3px 8px; font-weight:600; background:#060c17; border:1px solid var(--card-border); border-radius:4px;">
+                            <button class="btn-act btn-act-dmg" onclick="applyDamage()" style="padding:4px 12px; height:32px; font-size:0.8rem; font-weight:700;" title="Take custom damage">💥 Take Damage</button>
+                            <button class="btn-act btn-act-heal" onclick="applyHeal()" style="padding:4px 12px; height:32px; font-size:0.8rem; font-weight:700;" title="Heal custom amount">💚 Heal HP</button>
+                        </div>
+                        <!-- Bottom Row: Small +/- Steppers with Rests -->
+                        <div style="display:flex; align-items:center; justify-content:space-between; gap:4px; width:100%;">
+                            <div style="display:flex; gap:3px;">
+                                <button class="btn-act btn-act-dmg" style="padding: 3px 8px; font-size: 0.74rem; font-weight:700;" onclick="quickModHP(-1)" title="Decrease 1 HP">➖ -1</button>
+                                <button class="btn-act btn-act-heal" style="padding: 3px 8px; font-size: 0.74rem; font-weight:700;" onclick="quickModHP(1)" title="Increase 1 HP">➕ +1</button>
+                                <button class="btn-act btn-act-pre" style="padding: 3px 6px; font-size: 0.7rem;" onclick="clearTempHP()" title="Clear Temporary HP">🛡️ Clear Temp</button>
+                            </div>
+                            <div style="display:flex; gap:3px;">
+                                <button class="btn-act btn-act-pre" onclick="takeShortRest()" style="padding:3px 7px; font-size:0.7rem; color:var(--accent-blue);" title="Heal 8 HP (25% Max HP, up to 2/day) + Reset Second Wind">☕ Short Rest</button>
+                                <button class="btn-act btn-act-pre" onclick="resetHP()" style="padding:3px 7px; font-size:0.7rem; color:var(--accent-green);" title="Full Rest">⛺ Long Rest</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🤝 DAGGERHEART HELP TOKENS TRACKER -->
+                <div class="panel" style="padding: 8px 10px; background: linear-gradient(135deg, #0d2137 0%, #0d1726 100%); border: 1px solid rgba(56, 189, 248, 0.35);">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <div style="display:flex; align-items:center; gap:5px;">
+                            <span style="font-size:0.95rem;">🤝</span>
+                            <span style="color:var(--accent-blue); font-size:0.75rem; font-weight:800; letter-spacing:0.5px;">HELP TOKENS</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <span id="help-tokens-disp" style="font-size:1.15rem; font-weight:800; color:var(--accent-blue); font-family:'JetBrains Mono', monospace;">2 / 2</span>
+                            <button class="btn-act btn-act-pre" onclick="spendHelpToken()" style="color:var(--accent-blue); border:1px solid rgba(56, 189, 248, 0.4); font-size:0.68rem; padding:2px 6px;" title="Spend 1 token to roll +1d6 Help die for ally">🎲 Spend (+1d6)</button>
+                            <button class="btn-act btn-act-pre" onclick="restoreHelpToken()" style="font-size:0.68rem; padding:2px 5px;" title="Regain 1 token (Restores +1 on Short Rest, Full on Long Rest)">➕</button>
+                        </div>
+                    </div>
+                    <div style="font-size:0.68rem; color:var(--text-dim); margin-top:2px;">
+                        Free call-out within 30 ft. Spend to roll <strong>+1d6 Advantage Die</strong> on ally's roll!
+                    </div>
+                </div>
+
+                <!-- 💰 INTERACTIVE GOLD & CURRENCY PURSE (10 SP = 1 GP) -->
+                <div class="panel" style="padding: 8px 10px; background: linear-gradient(135deg, #18150a 0%, #0d121c 100%); border: 1px solid rgba(245, 158, 11, 0.35);">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 5px;">
+                        <div style="display:flex; align-items:center; gap:5px;">
+                            <span style="font-size:0.95rem;">💰</span>
+                            <span style="color:var(--accent-gold); font-size:0.75rem; font-weight:800; letter-spacing:0.5px;">GOLD PURSE</span>
+                            <span style="font-size:0.62rem; color:var(--text-muted); font-weight:600; background:rgba(255,255,255,0.05); padding:1px 4px; border-radius:3px; border:1px solid rgba(255,255,255,0.1);" title="Standard 5e Economy: 10 Silver = 1 Gold">10 SP = 1 GP</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <button class="btn-act btn-act-pre" onclick="openGoldHistoryModal()" style="font-size:0.68rem; padding:2px 6px; color:var(--accent-gold); border:1px solid rgba(245,158,11,0.4);" title="Open transaction history ledger">📜 Ledger</button>
+                            <button class="btn-act btn-act-pre" onclick="resetGoldPurse()" style="font-size:0.68rem; padding:2px 5px; color:#cbd5e1;" title="Reset gold to default starting 28 GP, 6 SP">🔄 Reset</button>
+                            <div style="display:flex; align-items:baseline; gap:4px; margin-left:3px;">
+                                <span id="gold-disp" style="font-size:1.15rem; font-weight:800; color:#facc15; font-family:'Inter', sans-serif;">28</span>
+                                <span style="font-size:0.7rem; font-weight:700; color:#fbbf24;">GP</span>
+                                <span style="color:var(--text-dim); font-size:0.75rem;">•</span>
+                                <span id="silver-disp" style="font-size:0.95rem; font-weight:700; color:#cbd5e1; font-family:'Inter', sans-serif;">6</span>
+                                <span style="font-size:0.68rem; font-weight:600; color:#94a3b8;">SP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 1: Amount Input + Optional Memo + Spend/Add -->
+                    <div style="display:flex; align-items:center; gap:4px; margin-bottom:5px;">
+                        <input type="number" id="gold-input" class="hp-input-num" placeholder="GP..." min="1" max="99999" style="width:54px; height:26px; font-size:0.78rem; text-align:left; padding:2px 6px; font-weight:600; background:#0b1220; border:1px solid rgba(245,158,11,0.3); border-radius:3px; color:#fef08a;">
+                        <input type="text" id="gold-reason-input" placeholder="Memo / Reason (optional)..." style="flex:1; height:26px; font-size:0.72rem; padding:2px 6px; background:#0b1220; border:1px solid #334155; border-radius:3px; color:#cbd5e1;">
+                        <button class="btn-act btn-act-dmg" onclick="applyGoldSpend()" style="padding:2px 8px; height:26px; font-size:0.72rem; font-weight:700;" title="Spend entered GP">- Spend</button>
+                        <button class="btn-act btn-act-heal" onclick="applyGoldAdd()" style="padding:2px 8px; height:26px; font-size:0.72rem; font-weight:700; background:linear-gradient(135deg, #ca8a04 0%, #a16207 100%); color:#fff;" title="Add entered GP">+ Add</button>
+                    </div>
+
+                    <!-- Row 2: Sleek Quick Steppers -->
+                    <div style="display:flex; align-items:center; justify-content:space-between; gap:3px;">
+                        <div style="display:flex; gap:2px; align-items:center;">
+                            <button class="btn-act btn-act-dmg" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(-5)">-5</button>
+                            <button class="btn-act btn-act-dmg" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(-1)">-1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(1)">+1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(5)">+5</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(10)">+10</button>
+                        </div>
+                        <div style="display:flex; gap:2px; align-items:center;">
+                            <span style="font-size:0.65rem; color:var(--text-dim); font-weight:600;">SP:</span>
+                            <button class="btn-act btn-act-dmg" style="padding:2px 4px; font-size:0.65rem; font-weight:700;" onclick="stepSilver(-5)">-5</button>
+                            <button class="btn-act btn-act-pre" style="padding:2px 4px; font-size:0.65rem;" onclick="stepSilver(-1)">-1</button>
+                            <button class="btn-act btn-act-pre" style="padding:2px 4px; font-size:0.65rem;" onclick="stepSilver(1)">+1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 4px; font-size:0.65rem; font-weight:700;" onclick="stepSilver(5)">+5</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6-ABILITY STRIP -->
+                <div class="ability-strip">
+                    <div class="ability-box active-key" onclick="rollD20('STR Check ★', 2)" title="Click to roll STR Check (+2)">
+                        <div class="ability-name">STR</div>
+                        <div class="ability-score">15</div>
+                        <div class="ability-mod">+2</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('DEX Check', 0)" title="Click to roll DEX Check (+0)">
+                        <div class="ability-name">DEX</div>
+                        <div class="ability-score">10</div>
+                        <div class="ability-mod">+0</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('CON Check', 2)" title="Click to roll CON Check (+2)">
+                        <div class="ability-name">CON</div>
+                        <div class="ability-score">14</div>
+                        <div class="ability-mod">+2</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('INT Check', 0)" title="Click to roll INT Check (+0)">
+                        <div class="ability-name">INT</div>
+                        <div class="ability-score">10</div>
+                        <div class="ability-mod">+0</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('WIS Check', 1)" title="Click to roll WIS Check (+1)">
+                        <div class="ability-name">WIS</div>
+                        <div class="ability-score">12</div>
+                        <div class="ability-mod">+1</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('CHA Check', 1)" title="Click to roll CHA Check (+1)">
+                        <div class="ability-name">CHA</div>
+                        <div class="ability-score">12</div>
+                        <div class="ability-mod">+1</div>
+                    </div>
+                </div>
+
+                <!-- SAVING THROWS PANEL -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🛡️ Saving Throws</span>
+                        <span style="font-size:0.68rem; color:var(--text-dim);">Prof Bonus: +2</span>
+                    </div>
+                    <ul class="stat-row-list">
+                        <li class="stat-row-item prof-item" onclick="rollD20('Strength Save ★', 4)">
+                            <span>Strength Save ★</span>
+                            <span>+4 🎲</span>
+                        </li>
+                        <li class="stat-row-item" onclick="rollD20('Dexterity Save', 0)">
+                            <span>Dexterity Save</span>
+                            <span>+0 🎲</span>
+                        </li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Constitution Save ★', 4)">
+                            <span>Constitution Save ★</span>
+                            <span>+4 🎲</span>
+                        </li>
+                        <li class="stat-row-item" onclick="rollD20('Intelligence Save', 0)">
+                            <span>Intelligence Save</span>
+                            <span>+0 🎲</span>
+                        </li>
+                        <li class="stat-row-item" onclick="rollD20('Wisdom Save', 1)">
+                            <span>Wisdom Save</span>
+                            <span>+1 🎲</span>
+                        </li>
+                        <li class="stat-row-item" onclick="rollD20('Charisma Save', 1)">
+                            <span>Charisma Save</span>
+                            <span>+1 🎲</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SKILL MODIFIERS (ALL 18 SKILLS INDIVIDUALLY) -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>📜 Skill Modifiers (All 18 Skills)</span>
+                        <span style="font-size:0.68rem; color:var(--accent-gold);">★ = Proficient</span>
+                    </div>
+                    <ul class="stat-row-list">
+                        <li class="stat-row-item prof-item" onclick="rollD20('Athletics (STR) ★', 4)"><span>Athletics (STR) ★</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Acrobatics (DEX)', 0)"><span>Acrobatics (DEX)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 0)"><span>Sleight of Hand (DEX)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Stealth (DEX - Armor Disadv)', 0)" title="Splint mail imposes disadvantage on Stealth"><span>Stealth (DEX) <small style="color:var(--text-muted);">(Disadv)</small></span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Arcana (INT)', 0)"><span>Arcana (INT)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('History (INT Tactics) ★', 2)"><span>History (INT Tactics) ★</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Investigation (INT)', 0)"><span>Investigation (INT)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Nature (INT)', 0)"><span>Nature (INT)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Religion (INT)', 0)"><span>Religion (INT)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Animal Handling (WIS)', 1)"><span>Animal Handling (WIS)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Insight (WIS)', 1)"><span>Insight (WIS)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Medicine (WIS)', 1)"><span>Medicine (WIS)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Perception (WIS) ★', 3)"><span>Perception (WIS) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Survival (WIS) ★', 3)"><span>Survival (WIS) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Deception (CHA)', 1)"><span>Deception (CHA)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Intimidation (CHA) ★', 3)"><span>Intimidation (CHA) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Performance (CHA)', 1)"><span>Performance (CHA)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Persuasion (CHA)', 1)"><span>Persuasion (CHA)</span><span>+1 🎲</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: MARTIAL FEATURES, WEAPONS & EQUIPMENT -->
+            <div>
+                
+                <!-- ACTIVE DEFENSIVE STANCES & BUFF TOGGLES -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🛡️ Defensive Stances & Buff Toggles</span>
+                        <span style="font-size:0.68rem; color:var(--accent-blue);">Live AC Engine</span>
+                    </div>
+                    <div class="spell-grid-2col">
+                        <!-- Shield Toggle -->
+                        <div class="spell-compact-card" id="card-shield" style="border-left: 2.5px solid var(--accent-gold);">
+                            <div class="spell-compact-header">
+                                <span>🛡️ Azure Wolf Shield (+2 AC)</span>
+                                <span id="badge-shield" style="font-size:0.68rem; color:var(--accent-green); font-weight:700;">EQUIPPED</span>
+                            </div>
+                            <div class="spell-desc-compact">Heavy azure wolf steel shield. Toggles between 17 AC (1H) and 15 AC (2H Versatile).</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll btn-card-slot" id="btn-toggle-shield" onclick="toggleShieldEquipped()">[Toggle Shield Equipping]</button>
+                            </div>
+                        </div>
+
+                        <!-- Half Cover / Stance -->
+                        <div class="spell-compact-card" id="card-cover">
+                            <div class="spell-compact-header">
+                                <span>🧱 Cover / Defense Stance (+2 AC)</span>
+                                <span id="badge-cover" style="font-size:0.68rem; color:var(--text-muted); font-weight:700;">OFF</span>
+                            </div>
+                            <div class="spell-desc-compact">Bracing behind low walls or heavy cover grants +2 AC and +2 Dexterity saving throws.</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll btn-card-slot" id="btn-toggle-cover" onclick="toggleCoverBuff()">[Toggle Cover +2 AC]</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MARTIAL STANCES & REACTION ABILITIES -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>⚔️ Martial Features & Tank Reactions</span>
+                    </div>
+                    <div class="spell-grid-2col">
+                        <!-- Improved Critical & Battle Readiness (Level 3 Features) -->
+                        <div class="spell-compact-card" style="border-left: 2.5px solid var(--accent-gold);">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('improvedcrit')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        💥 Improved Critical & Readiness <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:var(--accent-gold); margin-top:1px;">Passive Trait • 19-20 Crits</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:var(--accent-gold); font-weight:700;">PASSIVE</span>
+                            </div>
+                            <div class="spell-desc-compact">Weapon attacks score Critical Hit on <strong>19 or 20</strong>! Advantage on Initiative.</div>
+                        </div>
+
+                        <!-- Protection Reaction -->
+                        <div class="spell-compact-card" style="border-left: 2.5px solid var(--accent-blue);">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('protectionreaction')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='#f8fafc'">
+                                        🛡️ Protection Style <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#38bdf8; margin-top:1px;">Reaction • 5ft Intercept</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:var(--accent-blue); font-weight:700;">REACTION</span>
+                            </div>
+                            <div class="spell-desc-compact">When an enemy attacks an ally within 5ft, impose <strong>Disadvantage</strong> on attack!</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll" onclick="triggerProtectionReaction()">🛡️ Intercept Attack (Disadv)</button>
+                            </div>
+                        </div>
+
+                        <!-- Second Wind -->
+                        <div class="spell-compact-card" id="card-wind" style="border-left: 2.5px solid var(--accent-green);">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('secondwind')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-green)'" onmouseout="this.style.color='#f8fafc'">
+                                        💨 Second Wind <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Bonus Action • 1/Short Rest</div>
+                                </div>
+                                <span id="wind-badge" style="font-size:0.68rem; color:var(--accent-green); font-weight:700;">1/1 Ready</span>
+                            </div>
+                            <div class="spell-desc-compact">Bonus Action. Regain <strong>1d10 + 3</strong> HP during battle once per short rest.</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll btn-card-heal" id="btn-roll-wind" onclick="useSecondWind()">💨 Heal 1d10+3</button>
+                                <button class="btn-card-roll btn-card-slot" onclick="toggleWind()">[Reset/Use]</button>
+                            </div>
+                        </div>
+
+                        <!-- Action Surge -->
+                        <div class="spell-compact-card" id="card-surge" style="border-left: 2.5px solid #f59e0b;">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('actionsurge')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#f8fafc'">
+                                        ⚡ Action Surge <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f59e0b; margin-top:1px;">Free Action • 1/Short Rest</div>
+                                </div>
+                                <span id="surge-badge" style="font-size:0.68rem; color:#f59e0b; font-weight:700;">1/1 Ready</span>
+                            </div>
+                            <div class="spell-desc-compact">Free Action. Take <strong>1 additional Action</strong> on your turn (1/Short Rest).</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll" id="btn-roll-surge" onclick="useActionSurge()" style="background:#b45309; color:#fff;">⚡ Take Extra Action</button>
+                                <button class="btn-card-roll btn-card-slot" onclick="toggleSurge()">[Reset/Use]</button>
+                            </div>
+                        </div>
+
+                        <!-- Shield Shove / Peg Leg Kick -->
+                        <div class="spell-compact-card">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('pegkick')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🪵 Peg Kick / Shield Shove <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#cbd5e1; margin-top:1px;">Special Attack • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:var(--accent-gold); font-weight:700;">ATHLETICS +4</span>
+                            </div>
+                            <div class="spell-desc-compact">Contest vs target: <strong>DC 12 STR Save</strong> or target shoved 5ft / knocked <strong>Prone</strong>!</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll" onclick="rollD20('Peg Leg Strike', 4)">🪵 Kick (+4)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Peg Kick Damage', 4, 2, 'Bludgeoning')">💥 1d4+2 Bludgeon</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEAPON ATTACKS & HEAVY STRIKES -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>⚔️ Weapon Attacks & Heavy Strikes (Crits on 19-20)</span>
+                    </div>
+
+                    <div class="spell-grid-2col">
+                        <!-- Azure Wolf Longsword (1H) -->
+                        <div class="spell-compact-card">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('azurelongsword1h')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        ⚔️ Azure Longsword (1H) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Martial Melee • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.7rem; color:var(--accent-gold); font-weight:700;">+4 Hit • 19-20 Crit</span>
+                            </div>
+                            <div class="spell-desc-compact">1-Handed with Shield. <em>Hit:</em> 1d8 + 2 Slashing damage.</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll" onclick="rollVarnothAttack('Azure Longsword (1H)', 4)">⚔️ Attack (+4)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Longsword Damage (1H)', 8, 2, 'Slashing')">💥 1d8+2 Dmg</button>
+                            </div>
+                        </div>
+
+                        <!-- Azure Wolf Longsword (2H) -->
+                        <div class="spell-compact-card">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('azurelongsword2h')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-crimson)'" onmouseout="this.style.color='#f8fafc'">
+                                        ⚔️ Azure Longsword (2H) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f87171; margin-top:1px;">Versatile 2H • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.7rem; color:var(--accent-crimson); font-weight:700;">+4 Hit • 19-20 Crit</span>
+                            </div>
+                            <div class="spell-desc-compact">2-Handed grip (No Shield). <em>Hit:</em> 1d10 + 2 Slashing damage.</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll" onclick="rollVarnothAttack('Longsword (2H Versatile)', 4)">⚔️ Attack (+4)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Longsword Damage (2H)', 10, 2, 'Slashing')">💥 1d10+2 Dmg</button>
+                            </div>
+                        </div>
+
+                        <!-- Twin Bone-Cleavers -->
+                        <div class="spell-compact-card">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('bonecleavers')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='#f87171'" onmouseout="this.style.color='#f8fafc'">
+                                        🪓 Twin Bone-Cleavers <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">Dual-Wield • Action + Bonus</div>
+                                </div>
+                                <span style="font-size:0.7rem; color:#f87171; font-weight:700;">+4 Hit • Trophy</span>
+                            </div>
+                            <div class="spell-desc-compact">Main: 1d6+2 Slashing. Off-Hand Bonus: 1d6 Slashing.</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll" onclick="rollVarnothAttack('Main Bone-Cleaver', 4)">🪓 Main (+4)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Main Cleaver Damage', 6, 2, 'Slashing')">💥 1d6+2</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Off-Hand Cleaver Damage', 6, 0, 'Slashing')" style="background:#7f1d1d;">💥 Off-Hand 1d6</button>
+                            </div>
+                        </div>
+
+                        <!-- Heavy Crossbow -->
+                        <div class="spell-compact-card">
+                            <div class="spell-compact-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('heavycrossbow')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='#f8fafc'">
+                                        🏹 Heavy Crossbow <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#38bdf8; margin-top:1px;">Martial Ranged • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.7rem; color:var(--accent-blue); font-weight:700;">+2 Hit • 100/400 ft</span>
+                            </div>
+                            <div class="spell-desc-compact">Ranged heavy missile. <em>Hit:</em> 1d10 Piercing damage.</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll" onclick="rollVarnothAttack('Heavy Crossbow', 2)">🏹 Attack (+2)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Crossbow Damage', 10, 0, 'Piercing')">💥 1d10 Dmg</button>
+                            </div>
+                        </div>
+
+                        <!-- Potion of Healing (Full Action) -->
+                        <div class="spell-compact-card" style="border-left: 2.5px solid var(--accent-green); grid-column: 1 / -1;">
+                            <div class="spell-compact-header">
+                                <span>🧪 Potion of Healing (Full Action)</span>
+                                <span style="font-size:0.7rem; color:var(--accent-green); font-weight:700;">100% Full Max HP</span>
+                            </div>
+                            <div class="spell-desc-compact">Consuming as a Full Action instantly restores <strong>100% Full Max HP (29 HP)</strong>!</div>
+                            <div class="spell-action-btns">
+                                <button class="btn-card-roll btn-card-heal" onclick="useFullPotionOfHealing()">🧪 Drink Potion (Full 29 HP Heal)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEAPONS, RELICS & CONSUMABLES -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🎒 Weapons, Equipment & Veteran Kit</span>
+                    </div>
+
+                    <!-- Editable Inventory List -->
+                    <div class="inv-list-compact" id="inventory-list">
+                        <!-- Rendered dynamically from localStorage -->
+                    </div>
+
+                    <div style="display:flex; gap:6px; margin-top:4px;">
+                        <input type="text" id="new-item-input" class="hp-input-num" style="flex:1; width:auto; text-align:left; padding:4px 7px;" placeholder="New item or loot...">
+                        <button class="btn-act" style="background:var(--accent-gold); color:#000;" onclick="addItem()">+ Add</button>
+                        <button class="btn-act btn-act-pre" onclick="resetInventory()" title="Reset to official campaign inventory">🔄 Reset</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 💰 GOLD TRANSACTION HISTORY MODAL -->
+    <div class="modal-overlay" id="gold-modal" onclick="closeGoldHistoryOnBackdrop(event)">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>💰 Coin Purse Ledger & History</h3>
+                <button class="modal-close-btn" onclick="closeGoldHistoryModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div style="background:rgba(245, 158, 11, 0.08); border:1px solid rgba(245, 158, 11, 0.3); border-radius:6px; padding:8px 10px; display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                        <div style="font-size:0.68rem; font-weight:700; color:var(--text-dim); text-transform:uppercase;">Current Available Balance</div>
+                        <div style="font-size:1.15rem; font-weight:800; color:#facc15; font-family:'Inter', sans-serif;">
+                            <span id="modal-gold-disp">28</span> GP • <span id="modal-silver-disp" style="color:#cbd5e1;">6</span> SP
+                        </div>
+                    </div>
+                    <button class="btn-act btn-act-pre" onclick="resetGoldPurse()" style="color:var(--accent-gold); border:1px solid rgba(245,158,11,0.3); padding:4px 8px; font-size:0.7rem;">🔄 Reset Balance</button>
+                </div>
+
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
+                    <span style="font-size:0.74rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase;">Recent Transactions:</span>
+                    <button class="btn-act btn-act-pre" onclick="clearGoldHistory()" style="padding:2px 6px; font-size:0.66rem; color:#f87171;">🗑️ Clear Log</button>
+                </div>
+
+                <div class="tx-list" id="modal-tx-list">
+                    <!-- Rendered dynamically from localStorage -->
+                </div>
+            </div>
+            <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:flex-end;">
+                <button class="btn-act btn-act-pre" onclick="closeGoldHistoryModal()" style="padding:4px 12px; font-size:0.76rem; font-weight:600;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📦 ITEM DESCRIPTION MODAL (WORLD LOOT VAULT) -->
+    <div class="modal-overlay" id="item-modal" onclick="closeItemModalOnBackdrop(event)">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="item-modal-title" style="display:flex; align-items:center; gap:6px;">📦 Item Details</h3>
+                <button class="modal-close-btn" onclick="closeItemModal()">✕</button>
+            </div>
+            <div class="modal-body" id="item-modal-body">
+                <!-- Rendered dynamically -->
+            </div>
+            <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:space-between; align-items:center;">
+                <div id="item-modal-actions"></div>
+                <button class="btn-act btn-act-pre" onclick="closeItemModal()" style="padding:4px 12px; font-size:0.76rem; font-weight:600;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔮 SPELL & ACTION DESCRIPTION MODAL (D&D 5E COMPENDIUM) -->
+    <div class="modal-overlay" id="spell-modal" onclick="closeSpellModalOnBackdrop(event)">
+        <div class="modal-card" style="max-width: 530px;">
+            <div class="modal-header">
+                <h3 id="spell-modal-title" style="display:flex; align-items:center; gap:6px;">⚔️ Martial Feature & Attack Details</h3>
+                <button class="modal-close-btn" onclick="closeSpellModal()">✕</button>
+            </div>
+            <div class="modal-body" id="spell-modal-body">
+                <!-- Rendered dynamically -->
+            </div>
+            <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
+                <div id="spell-modal-actions" style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;"></div>
+                <button class="btn-act btn-act-pre" onclick="closeSpellModal()" style="padding:4px 12px; font-size:0.76rem; font-weight:600;">Close</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // State Variables
+    let curHP = 29;
+    let maxHP = 29;
+    let tempHP = 0;
+    let baseAC = 15; // Splint Mail
+    let isShieldEquipped = true; // Azure Wolf Steel Shield (+2 AC)
+    let isCoverActive = false; // +2 Cover AC
+    let tempAcBonus = 0;
+    let isSecondWindReady = true;
+    let isActionSurgeReady = true;
+    let helpTokens = 1;
+    let maxHelpTokens = 2;
+    let shortRestsRemaining = 2;
+    const maxShortRests = 2;
+    let rollMode = 'norm';
+
+    const defaultItems = [
+        "⚔️ Azure Wolf Longsword",
+        "🛡️ Azure Wolf Steel Shield",
+        "🥋 Splint Mail Armor",
+        "🏹 Heavy Crossbow",
+        "🪓 Twin Notched Bone-Cleavers",
+        "🧪 1x Potion of Healing"
+    ];
+
+    // ==========================================
+    // ❤️ UNIFIED HP & TEMPORARY HP ENGINE
+    // ==========================================
+    function updateHPUI() {
+        const hpDisp = document.getElementById('hp-disp');
+        const bar = document.getElementById('hp-bar');
+
+        if (tempHP > 0) {
+            hpDisp.innerText = `${curHP} + ${tempHP} (${maxHP})`;
+            hpDisp.style.color = 'var(--accent-blue)';
+        } else {
+            hpDisp.innerText = `${curHP}/${maxHP}`;
+            if (curHP <= 0) hpDisp.style.color = 'var(--accent-red)';
+            else if (curHP <= Math.floor(maxHP * 0.25)) hpDisp.style.color = 'var(--accent-red)';
+            else if (curHP <= Math.floor(maxHP * 0.5)) hpDisp.style.color = 'var(--accent-gold)';
+            else hpDisp.style.color = 'var(--accent-green)';
+        }
+
+        const pct = Math.max(0, Math.min(100, (curHP / maxHP) * 100));
+        bar.style.width = `${pct}%`;
+        if (tempHP > 0) bar.style.backgroundColor = 'var(--accent-blue)';
+        else if (pct <= 25) bar.style.backgroundColor = 'var(--accent-red)';
+        else if (pct <= 50) bar.style.backgroundColor = 'var(--accent-gold)';
+        else bar.style.backgroundColor = 'var(--accent-green)';
+
+        localStorage.setItem('dnd_hp_varnoth_v2', curHP);
+        localStorage.setItem('dnd_temphp_varnoth_v2', tempHP);
+    }
+
+    function applyDamage() {
+        const input = document.getElementById('hp-input');
+        const amt = parseInt(input.value) || 0;
+        if (amt <= 0) return;
+
+        let remaining = amt;
+        if (tempHP > 0) {
+            if (tempHP >= remaining) {
+                tempHP -= remaining;
+                remaining = 0;
+            } else {
+                remaining -= tempHP;
+                tempHP = 0;
+            }
+        }
+        curHP = Math.max(0, curHP - remaining);
+        input.value = '';
+        updateHPUI();
+        logRoll(`💥 <strong>Damage Taken:</strong> Varnoth took ${amt} damage. Current HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''}`);
+    }
+
+    function applyHeal() {
+        const input = document.getElementById('hp-input');
+        const amt = parseInt(input.value) || 0;
+        if (amt <= 0) return;
+
+        curHP = Math.min(maxHP, curHP + amt);
+        input.value = '';
+        updateHPUI();
+        logRoll(`💚 <strong>Healing:</strong> Varnoth healed ${amt} HP. Current HP: ${curHP}/${maxHP}`);
+    }
+
+    function quickModHP(delta) {
+        if (delta < 0) {
+            let remaining = Math.abs(delta);
+            if (tempHP > 0) {
+                if (tempHP >= remaining) {
+                    tempHP -= remaining;
+                    remaining = 0;
+                } else {
+                    remaining -= tempHP;
+                    tempHP = 0;
+                }
+            }
+            curHP = Math.max(0, curHP - remaining);
+        } else {
+            curHP = Math.min(maxHP, curHP + delta);
+        }
+        updateHPUI();
+    }
+
+    function clearTempHP() {
+        tempHP = 0;
+        updateHPUI();
+        logRoll(`🛡️ <strong>Temporary HP Cleared.</strong> Current HP: ${curHP}/${maxHP}`);
+    }
+
+    function resetHP() {
+        if (confirm("Take a Long Rest? Restores Full HP (29), Second Wind, Action Surge, and all 2 Help Tokens!")) {
+            curHP = maxHP;
+            tempHP = 0;
+            isSecondWindReady = true;
+            isActionSurgeReady = true;
+            helpTokens = maxHelpTokens;
+            shortRestsRemaining = maxShortRests;
+            updateHPUI();
+            updateWindUI();
+            updateSurgeUI();
+            updateHelpUI();
+            logRoll(`⛺ <strong>Long Rest Completed!</strong> Full HP (${maxHP}), Second Wind, Action Surge, and Help Tokens (2/2) restored.`);
+        }
+    }
+
+    function takeShortRest() {
+        if (shortRestsRemaining <= 0) {
+            logRoll(`⚠️ <strong>No Short Rests remaining today!</strong> (Max 2 per day).`);
+            return;
+        }
+        shortRestsRemaining--;
+        const healAmt = 8; // 25% of 29 = 8 HP
+        const prevHP = curHP;
+        curHP = Math.min(maxHP, curHP + healAmt);
+        isSecondWindReady = true;
+        isActionSurgeReady = true;
+        helpTokens = Math.min(maxHelpTokens, helpTokens + 1);
+        updateHPUI();
+        updateWindUI();
+        updateSurgeUI();
+        updateHelpUI();
+        logRoll(`☕ <strong>Short Rest:</strong> Varnoth rested and healed ${curHP - prevHP} HP (now ${curHP}/${maxHP}). Restored 1 Help Token (${helpTokens}/2), refreshed Second Wind and Action Surge! (${shortRestsRemaining} rests left today).`);
+    }
+
+    function useFullPotionOfHealing() {
+        curHP = maxHP;
+        updateHPUI();
+        logRoll(`🧪 <strong>Potion of Healing:</strong> Varnoth drank a potion as a Full Action, restoring <strong>100% Full HP (29/29)</strong>!`);
+    }
+
+    // ==========================================
+    // 🛡️ DYNAMIC ARMOR CLASS ENGINE
+    // ==========================================
+    function updateACUI() {
+        let ac = baseAC; // Splint Mail 15
+        if (isShieldEquipped) ac += 2;
+        if (isCoverActive) ac += 2;
+        ac += tempAcBonus;
+
+        const acDisp = document.getElementById('ac-disp');
+        if (acDisp) acDisp.innerText = ac;
+
+        const badgeShield = document.getElementById('badge-shield');
+        if (badgeShield) {
+            badgeShield.innerText = isShieldEquipped ? 'EQUIPPED (+2 AC)' : 'UNEQUIPPED (2H)';
+            badgeShield.style.color = isShieldEquipped ? 'var(--accent-green)' : 'var(--text-muted)';
+        }
+
+        const badgeCover = document.getElementById('badge-cover');
+        if (badgeCover) {
+            badgeCover.innerText = isCoverActive ? 'ACTIVE (+2 AC)' : 'OFF';
+            badgeCover.style.color = isCoverActive ? 'var(--accent-blue)' : 'var(--text-muted)';
+        }
+    }
+
+    function toggleShieldEquipped() {
+        isShieldEquipped = !isShieldEquipped;
+        updateACUI();
+        logRoll(`🛡️ <strong>Azure Wolf Shield:</strong> ${isShieldEquipped ? 'Equipped (+2 AC ➔ AC 17)' : 'Unequipped for 2-Handed grip (AC 15)'}.`);
+    }
+
+    function toggleCoverBuff() {
+        isCoverActive = !isCoverActive;
+        updateACUI();
+        logRoll(`🧱 <strong>Defense / Cover Stance:</strong> ${isCoverActive ? 'Activated (+2 AC)' : 'Deactivated'}.`);
+    }
+
+    // ==========================================
+    // 💨 SECOND WIND & ACTION SURGE (FIGHTER MARTIAL TRAITS)
+    // ==========================================
+    function updateWindUI() {
+        const badge = document.getElementById('wind-badge');
+        const btn = document.getElementById('btn-roll-wind');
+        if (badge) {
+            badge.innerText = isSecondWindReady ? '1/1 Ready' : '0/1 Used';
+            badge.style.color = isSecondWindReady ? 'var(--accent-green)' : 'var(--text-muted)';
+        }
+        if (btn) {
+            btn.style.opacity = isSecondWindReady ? '1' : '0.5';
+        }
+    }
+
+    function useSecondWind() {
+        if (!isSecondWindReady) {
+            logRoll(`⚠️ <strong>Second Wind already expended!</strong> (Recharges on a Short or Long Rest).`);
+            return;
+        }
+        const d10 = Math.floor(Math.random() * 10) + 1;
+        const heal = d10 + 3; // 1d10 + Level 3
+        isSecondWindReady = false;
+        curHP = Math.min(maxHP, curHP + heal);
+        updateHPUI();
+        updateWindUI();
+        logRoll(`💨 <strong>Second Wind Activated:</strong> Varnoth digs deep and catches her breath! [d10:${d10} + 3] = <span style="color:var(--accent-green); font-weight:700;">+${heal} HP</span> (Current: ${curHP}/${maxHP}).`);
+    }
+
+    function toggleWind() {
+        isSecondWindReady = !isSecondWindReady;
+        updateWindUI();
+        logRoll(`💨 <strong>Second Wind Status:</strong> ${isSecondWindReady ? 'Reset to Ready' : 'Marked as Expended'}.`);
+    }
+
+    function updateSurgeUI() {
+        const badge = document.getElementById('surge-badge');
+        const btn = document.getElementById('btn-roll-surge');
+        if (badge) {
+            badge.innerText = isActionSurgeReady ? '1/1 Ready' : '0/1 Used';
+            badge.style.color = isActionSurgeReady ? '#f59e0b' : 'var(--text-muted)';
+        }
+        if (btn) {
+            btn.style.opacity = isActionSurgeReady ? '1' : '0.5';
+        }
+    }
+
+    function useActionSurge() {
+        if (!isActionSurgeReady) {
+            logRoll(`⚠️ <strong>Action Surge already expended!</strong> (Recharges on a Short or Long Rest).`);
+            return;
+        }
+        isActionSurgeReady = false;
+        updateSurgeUI();
+        logRoll(`⚡ <strong>ACTION SURGE TRIGGERED!</strong> General Varnoth digs deep into veteran reserve training and gains <span style="color:#f59e0b; font-weight:800;">1 Additional Action</span> this turn! (1/Short Rest - Expended)`);
+    }
+
+    function toggleSurge() {
+        isActionSurgeReady = !isActionSurgeReady;
+        updateSurgeUI();
+        logRoll(`⚡ <strong>Action Surge Status:</strong> ${isActionSurgeReady ? 'Reset to Ready' : 'Marked as Expended'}.`);
+    }
+
+    function triggerProtectionReaction() {
+        logRoll(`🛡️ <strong>Protection Fighting Style (Reaction):</strong> General Varnoth slams her Azure Wolf shield into the fray, imposing <span style="color:var(--accent-blue); font-weight:700;">DISADVANTAGE</span> on the enemy's attack against an adjacent ally!`);
+    }
+
+    // ==========================================
+    // 🤝 DAGGERHEART HELP TOKENS ENGINE
+    // ==========================================
+    function updateHelpUI() {
+        document.getElementById('help-tokens-disp').innerText = `${helpTokens} / ${maxHelpTokens}`;
+        localStorage.setItem('dnd_help_varnoth_v2', helpTokens);
+    }
+
+    function spendHelpToken() {
+        if (helpTokens <= 0) {
+            logRoll(`⚠️ <strong>No Help Tokens remaining!</strong> (Restores on Short/Long Rest).`);
+            return;
+        }
+        helpTokens--;
+        updateHelpUI();
+        const d6 = Math.floor(Math.random() * 6) + 1;
+        logRoll(`🤝 <strong>General Varnoth called out tactical aid!</strong> Spent 1 Help Token (${helpTokens}/${maxHelpTokens} left) ➔ Rolled <span style="font-size:1.05rem; color:var(--accent-blue); font-weight:700;">+${d6}</span> to ally's d20 check!`);
+    }
+
+    function restoreHelpToken() {
+        helpTokens = Math.min(maxHelpTokens, helpTokens + 1);
+        updateHelpUI();
+        logRoll(`🤝 <strong>Help Token Restored:</strong> ${helpTokens}/${maxHelpTokens} available.`);
+    }
+
+    // ==========================================
+    // 🔮 SPELL & ACTION DETAILS MODAL ENGINE
+    // ==========================================
+    const spellActionDatabase = {
+        "improvedcrit": {
+            id: "improvedcrit",
+            name: "💥 Improved Critical & Battle Readiness",
+            school: "Sidekick Martial Feature (Level 3 Champion Archetype)",
+            castingTime: "Passive Trait",
+            range: "Self",
+            components: "None",
+            duration: "Permanent",
+            attackMod: "Critical Hit on 19 or 20 (10% Crit Rate!)",
+            damage: "Brutal Crits: Max Base Damage + Extra Roll + Mod",
+            desc: "Weapon attacks score Critical Hit on 19 or 20! Advantage on Initiative.",
+            fullRules: "General Varnoth's decades of frontline legion command give her lethal combat precision.<br><br>• <strong>Improved Critical:</strong> Weapon attacks score a critical hit on a roll of <strong>19 or 20</strong> on the d20.<br>• <strong>Battle Readiness:</strong> Varnoth has <strong>Advantage on all Initiative rolls</strong>.<br>• <strong>Brutal Crits House Rule:</strong> On a critical hit (19-20), deal Maximum Base Die Damage + 1 Normal Damage Roll + Modifiers!",
+            flavor: "A seasoned veteran of the Azure Legion who reads enemy defenses effortlessly, capitalizing on every opening with devastating power.",
+            modalButtons: []
+        },
+        "protectionreaction": {
+            id: "protectionreaction",
+            name: "🛡️ Protection Fighting Style",
+            school: "Martial Reaction / Tank Ward",
+            castingTime: "1 Reaction",
+            range: "5 feet",
+            components: "Requires Shield Equipped",
+            duration: "Instantaneous",
+            attackMod: "Imposes Disadvantage on Enemy Attack",
+            damage: "Defensive Intercept",
+            desc: "When an enemy attacks an ally within 5ft, impose Disadvantage on attack!",
+            fullRules: "When a creature that you can see attacks a target other than you that is within 5 feet of you, you can use your <strong>Reaction</strong> to impose <strong>Disadvantage on the attack roll</strong>.<br><br>🛡️ <strong>Prerequisite:</strong> You must be wielding a shield.",
+            flavor: "With a deafening clash of metal, Varnoth thrusts her Azure Wolf shield into the path of an enemy blade, protecting her comrades from harm.",
+            modalButtons: [
+                { label: "🛡️ Intercept Attack (Disadv)", class: "btn-roll-action", onClick: () => triggerProtectionReaction() }
+            ]
+        },
+        "secondwind": {
+            id: "secondwind",
+            name: "💨 Second Wind",
+            school: "Fighter / Defender Combat Surge",
+            castingTime: "1 Bonus Action",
+            range: "Self",
+            components: "None",
+            duration: "Instantaneous",
+            attackMod: "Self-Heal (1/Short or Long Rest)",
+            damage: "Regain 1d10 + 3 Hit Points",
+            desc: "Bonus Action. Regain 1d10 + 3 HP during battle once per short rest.",
+            fullRules: "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a <strong>Bonus Action</strong> to regain hit points equal to <strong>1d10 + your Level (3)</strong>.<br><br>Once you use this feature, you must finish a short or long rest before you can use it again.",
+            flavor: "Gritting her teeth through wounds and fatigue, Varnoth digs deep into her legion training and catches her second wind.",
+            modalButtons: [
+                { label: "💨 Heal 1d10+3", class: "btn-roll-action btn-roll-heal", onClick: () => useSecondWind() }
+            ]
+        },
+        "actionsurge": {
+            id: "actionsurge",
+            name: "⚡ Action Surge",
+            school: "Veteran Legion Surge",
+            castingTime: "Free Action (on your turn)",
+            range: "Self",
+            components: "None",
+            duration: "Instantaneous",
+            attackMod: "Gain 1 Additional Action on your Turn",
+            damage: "Burst Action (Attack, Dash, Disengage, Dodge, Shove)",
+            desc: "Free Action. Take 1 additional Action on your turn (1/Short Rest).",
+            fullRules: "You can push yourself beyond your normal limits for a moment. On your turn, you can take <strong>one additional action</strong> on top of your regular action and a possible bonus action.<br><br>Once you use this feature, you must finish a short or long rest before you can use it again.",
+            flavor: "A sudden burst of disciplined speed allows Varnoth to strike again, reposition, or shove an attacker before they can react.",
+            modalButtons: [
+                { label: "⚡ Take Extra Action", class: "btn-roll-action", onClick: () => useActionSurge() }
+            ]
+        },
+        "pegkick": {
+            id: "pegkick",
+            name: "🪵 Peg Kick / Shield Shove",
+            school: "Special Melee Maneuver",
+            castingTime: "1 Action (or Special Attack)",
+            range: "Melee 5 feet",
+            components: "None",
+            duration: "Instantaneous",
+            attackMod: "+4 Athletics Check vs Target STR/DEX (DC 12 Save)",
+            damage: "1d4 + 2 Bludgeoning Damage + Shove 5ft or Knock Prone",
+            desc: "Contest vs target: DC 12 STR Save or target shoved 5ft / knocked Prone!",
+            fullRules: "Varnoth uses her reinforced iron-capped peg leg or heavy shield boss to batter opponents off-balance.<br><br>• <strong>Attack Roll:</strong> d20 + 4 (Athletics) vs target AC / save.<br>• <strong>Damage:</strong> 1d4 + 2 bludgeoning damage.<br>• <strong>Shove Effect:</strong> The target must succeed on a <strong>DC 12 Strength saving throw</strong> or be pushed 5 feet away or knocked <strong>Prone</strong> (granting Advantage to all melee attacks against it!).",
+            flavor: "Varnoth plants her good boot and delivers a thunderous iron-shod kick from her peg leg straight into the enemy's knee.",
+            modalButtons: [
+                { label: "🪵 Kick (+4)", class: "btn-roll-action", onClick: () => rollD20('Peg Leg Strike', 4) },
+                { label: "💥 1d4+2 Bludgeon", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Peg Kick Damage', 4, 2, 'Bludgeoning') }
+            ]
+        },
+        "azurelongsword1h": {
+            id: "azurelongsword1h",
+            name: "⚔️ Azure Wolf Longsword (1-Handed + Shield)",
+            school: "Martial Melee Weapon",
+            castingTime: "1 Action (Melee Attack)",
+            range: "Melee 5 feet",
+            components: "One-handed with Azure Shield",
+            duration: "Instantaneous",
+            attackMod: "+4 to Hit (STR +2, Prof +2) • Crits on 19-20",
+            damage: "1d8 + 2 Slashing Damage",
+            desc: "1-Handed with Shield. Hit: 1d8 + 2 Slashing damage.",
+            fullRules: "The ceremonial steel blade of the Azure Legion, balanced perfectly for sword-and-board combat.<br><br>• <strong>Attack Roll:</strong> d20 + 4 vs AC (Crits on 19 or 20).<br>• <strong>Damage:</strong> 1d8 + 2 slashing damage.<br>• <strong>Brutal Crit Damage:</strong> 8 (Max Base) + 1d8 + 2 Slashing = <strong>10 + 1d8 Damage</strong>.",
+            flavor: "A disciplined, sweeping slash from behind the defensive rampart of her Azure Wolf shield.",
+            modalButtons: [
+                { label: "⚔️ Longsword Attack (+4)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Azure Longsword (1H)', 4) },
+                { label: "💥 1d8+2 Slashing", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Longsword Damage (1H)', 8, 2, 'Slashing') }
+            ]
+        },
+        "azurelongsword2h": {
+            id: "azurelongsword2h",
+            name: "⚔️ Azure Wolf Longsword (2-Handed Versatile)",
+            school: "Martial Melee Weapon (Versatile Grip)",
+            castingTime: "1 Action (Melee Attack)",
+            range: "Melee 5 feet",
+            components: "Two-handed grip (No Shield)",
+            duration: "Instantaneous",
+            attackMod: "+4 to Hit (STR +2, Prof +2) • Crits on 19-20",
+            damage: "1d10 + 2 Slashing Damage",
+            desc: "2-Handed grip (No Shield). Hit: 1d10 + 2 Slashing damage.",
+            fullRules: "Varnoth slings her shield over her back and grips the Azure Longsword with both hands for maximum cutting power.<br><br>• <strong>Attack Roll:</strong> d20 + 4 vs AC (Crits on 19 or 20).<br>• <strong>Damage:</strong> 1d10 + 2 slashing damage.<br>• <strong>Brutal Crit Damage:</strong> 10 (Max Base) + 1d10 + 2 Slashing = <strong>12 + 1d10 Damage</strong>.",
+            flavor: "A two-handed overhead execution stroke designed to cleave through heavy armor and monster hide.",
+            modalButtons: [
+                { label: "⚔️ Longsword Attack (+4)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Longsword (2H Versatile)', 4) },
+                { label: "💥 1d10+2 Slashing", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Longsword Damage (2H)', 10, 2, 'Slashing') }
+            ]
+        },
+        "bonecleavers": {
+            id: "bonecleavers",
+            name: "🪓 Twin Notched Bone-Cleavers (Dual-Wield)",
+            school: "Martial Light Melee Weapons (Trophy Weapons)",
+            castingTime: "1 Action (Main-Hand) + 1 Bonus Action (Off-Hand)",
+            range: "Melee 5 feet",
+            components: "Dual-wielding light weapons",
+            duration: "Instantaneous",
+            attackMod: "+4 to Hit (STR +2, Prof +2) • Crits on 19-20",
+            damage: "Main: 1d6 + 2 Slashing | Off-Hand Bonus: 1d6 Slashing",
+            desc: "Main: 1d6+2 Slashing. Off-Hand Bonus: 1d6 Slashing.",
+            fullRules: "Serrated heavy bone-axes taken from the Seagrow Caves troglodytes.<br><br>• <strong>Main-Hand Attack:</strong> d20 + 4 to hit, dealing <strong>1d6 + 2 slashing damage</strong>.<br>• <strong>Off-Hand Bonus Action Attack:</strong> d20 + 4 to hit, dealing <strong>1d6 slashing damage</strong> (no ability mod added to damage without Two-Weapon Fighting style).<br>• <strong>Crits on 19-20!</strong>",
+            flavor: "A savage flurry of alternating chops that overwhelms enemy guards.",
+            modalButtons: [
+                { label: "🪓 Main Attack (+4)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Main Bone-Cleaver', 4) },
+                { label: "💥 1d6+2 Main Dmg", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Main Cleaver Damage', 6, 2, 'Slashing') },
+                { label: "💥 1d6 Off-Hand Dmg", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Off-Hand Cleaver Damage', 6, 0, 'Slashing') }
+            ]
+        },
+        "heavycrossbow": {
+            id: "heavycrossbow",
+            name: "🏹 Heavy Crossbow",
+            school: "Martial Ranged Weapon",
+            castingTime: "1 Action (Ranged Attack)",
+            range: "100 / 400 feet",
+            components: "Ammunition, heavy, loading, two-handed",
+            duration: "Instantaneous",
+            attackMod: "+2 to Hit (DEX +0, Prof +2) • Crits on 19-20",
+            damage: "1d10 Piercing Damage",
+            desc: "Ranged heavy missile. Hit: 1d10 Piercing damage.",
+            fullRules: "A heavy winch crossbow designed to pierce monster hide at long distances.<br><br>• <strong>Attack Roll:</strong> d20 + 2 vs AC (Crits on 19 or 20).<br>• <strong>Range:</strong> 100 ft normal / 400 ft disadvantage.<br>• <strong>Damage:</strong> 1d10 piercing damage.<br>• <strong>Brutal Crit Damage:</strong> 10 (Max Base) + 1d10 Piercing = <strong>10 + 1d10 Damage</strong>.",
+            flavor: "Varnoth raises the heavy crossbow with steady aim, launching a steel-tipped bolt across the cavern.",
+            modalButtons: [
+                { label: "🏹 Crossbow Attack (+2)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Heavy Crossbow', 2) },
+                { label: "💥 1d10 Piercing", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Crossbow Damage', 10, 0, 'Piercing') }
+            ]
+        }
+    };
+
+    function openSpellDetailsModal(spellId) {
+        const sp = spellActionDatabase[spellId];
+        if (!sp) return;
+
+        document.getElementById('spell-modal-title').innerHTML = `${sp.name}`;
+        const body = document.getElementById('spell-modal-body');
+
+        let combatStatsHtml = '';
+        if (sp.attackMod || sp.damage) {
+            combatStatsHtml = `
+                <div style="background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:6px; padding:8px 10px; display:grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap:6px; font-size:0.75rem;">
+                    ${sp.attackMod ? `<div><span style="color:var(--text-dim); font-size:0.68rem; text-transform:uppercase; font-weight:700;">Attack / Save:</span><div style="font-weight:700; color:var(--accent-gold);">${sp.attackMod}</div></div>` : ''}
+                    ${sp.damage ? `<div><span style="color:var(--text-dim); font-size:0.68rem; text-transform:uppercase; font-weight:700;">Damage / Effect:</span><div style="font-weight:700; color:#f87171;">${sp.damage}</div></div>` : ''}
+                </div>
+            `;
+        }
+
+        let flavorHtml = '';
+        if (sp.flavor) {
+            flavorHtml = `
+                <div style="background:#090e1a; border:1px solid #1e293b; border-radius:6px; padding:7px 10px; font-size:0.75rem; color:#cbd5e1; font-style:italic; line-height:1.4;">
+                    "${sp.flavor}"
+                </div>
+            `;
+        }
+
+        body.innerHTML = `
+            <div style="display:flex; flex-direction:column; gap:8px;">
+                <!-- Badge Strip -->
+                <div style="display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
+                    <span class="pill-badge" style="background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); color:#fde68a; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:700;">${sp.school || 'Martial Action'}</span>
+                    <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#93c5fd; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">⏱️ ${sp.castingTime || '1 Action'}</span>
+                    <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">📏 ${sp.range || 'Self'}</span>
+                    <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">⏳ ${sp.duration || 'Instantaneous'}</span>
+                </div>
+
+                ${combatStatsHtml}
+
+                <!-- Full Rules & Mechanics -->
+                <div style="background:rgba(56,189,248,0.05); border:1px solid rgba(56,189,248,0.22); border-radius:6px; padding:9px 11px; font-size:0.78rem; color:#f8fafc; line-height:1.5;">
+                    <div style="font-size:0.7rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:4px;">📖 D&D 5e Rules & Mechanics:</div>
+                    <div>${sp.fullRules || sp.desc}</div>
+                </div>
+
+                ${flavorHtml}
+            </div>
+        `;
+
+        const actionsContainer = document.getElementById('spell-modal-actions');
+        actionsContainer.innerHTML = '';
+
+        if (sp.modalButtons) {
+            sp.modalButtons.forEach(btn => {
+                const b = document.createElement('button');
+                b.className = btn.class;
+                b.innerHTML = btn.label;
+                b.onclick = () => { btn.onClick(); };
+                actionsContainer.appendChild(b);
+            });
+        }
+
+        document.getElementById('spell-modal').classList.add('active');
+    }
+
+    function closeSpellModal() {
+        const modal = document.getElementById('spell-modal');
+        if (modal) modal.classList.remove('active');
+    }
+
+    function closeSpellModalOnBackdrop(e) {
+        if (e.target.id === 'spell-modal') {
+            closeSpellModal();
+        }
+    }
+
+    // ==========================================
+    // 🎲 DICE ROLLING ENGINE WITH 19-20 BRUTAL CRITS
+    // ==========================================
+    function setRollMode(mode) {
+        rollMode = mode;
+        document.getElementById('mode-norm').classList.remove('active-mode');
+        document.getElementById('mode-adv').classList.remove('active-mode');
+        document.getElementById('mode-dis').classList.remove('active-mode');
+        document.getElementById(`mode-${mode}`).classList.add('active-mode');
+    }
+
+    function setDiceMod(val) {
+        const el = document.getElementById('dice-mod');
+        if (val === 0) el.value = 0;
+        else el.value = (parseInt(el.value) || 0) + val;
+    }
+
+    function logRoll(text) {
+        document.getElementById('roll-res').innerHTML = text;
+    }
+
+    function rollCustomDie(sides) {
+        const mod = parseInt(document.getElementById('dice-mod').value) || 0;
+        const modStr = mod >= 0 ? `+${mod}` : `${mod}`;
+
+        if (sides === 20 && rollMode !== 'norm') {
+            const r1 = Math.floor(Math.random() * 20) + 1;
+            const r2 = Math.floor(Math.random() * 20) + 1;
+            const chosen = (rollMode === 'adv') ? Math.max(r1, r2) : Math.min(r1, r2);
+            const total = chosen + mod;
+            const modeLabel = rollMode === 'adv' ? 'Advantage' : 'Disadvantage';
+            let msg = `🎲 <strong>d20 (${modeLabel}: [${r1}, ${r2}] ➔ ${chosen}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total}</span></strong>`;
+            if (chosen >= 19) msg += " 🔥 <span style='color:#facc15; font-weight:700;'>CRIT (19-20)!</span>";
+            if (chosen === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 FAIL!</span>";
+            logRoll(msg);
+            return;
+        }
+
+        const roll = Math.floor(Math.random() * sides) + 1;
+        const total = roll + mod;
+        let msg = `🎲 <strong>d${sides} (${roll}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total}</span></strong>`;
+        if (sides === 20 && roll >= 19) msg += " 🔥 <span style='color:#facc15; font-weight:700;'>CRIT (19-20)!</span>";
+        if (sides === 20 && roll === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 FAIL!</span>";
+        logRoll(msg);
+    }
+
+    function rollD20(label, mod) {
+        const modInput = parseInt(document.getElementById('dice-mod').value) || 0;
+        const totalMod = mod + modInput;
+        const modStr = totalMod >= 0 ? `+${totalMod}` : `${totalMod}`;
+
+        if (rollMode !== 'norm') {
+            const r1 = Math.floor(Math.random() * 20) + 1;
+            const r2 = Math.floor(Math.random() * 20) + 1;
+            const chosen = (rollMode === 'adv') ? Math.max(r1, r2) : Math.min(r1, r2);
+            const total = chosen + totalMod;
+            const modeLabel = rollMode === 'adv' ? 'Advantage' : 'Disadvantage';
+            let msg = `🎯 <strong>${label}:</strong> [${r1}, ${r2}] ➔ d20(${chosen}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total}</span> <small style="color:var(--text-muted);">(${modeLabel})</small>`;
+            if (chosen >= 19) msg += " 🔥 <span style='color:#facc15; font-weight:700;'>CRIT (19-20)!</span>";
+            if (chosen === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 FAIL!</span>";
+            logRoll(msg);
+            return;
+        }
+
+        const d20 = Math.floor(Math.random() * 20) + 1;
+        const total = d20 + totalMod;
+        let msg = `🎯 <strong>${label}:</strong> d20(${d20}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total}</span>`;
+        if (d20 >= 19) msg += " 🔥 <span style='color:#facc15; font-weight:700;'>CRIT (19-20)!</span>";
+        if (d20 === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 FAIL!</span>";
+        logRoll(msg);
+    }
+
+    function rollInitiativeVarnoth() {
+        // Battle Readiness grants Advantage on Initiative
+        const r1 = Math.floor(Math.random() * 20) + 1;
+        const r2 = Math.floor(Math.random() * 20) + 1;
+        const chosen = Math.max(r1, r2);
+        const modInput = parseInt(document.getElementById('dice-mod').value) || 0;
+        const total = chosen + 0 + modInput;
+        logRoll(`⚡ <strong>Battle Readiness Initiative:</strong> [${r1}, ${r2}] ➔ Highest(${chosen}) + 0 = <span style="font-size:1.1rem; color:var(--accent-blue); font-weight:800;">${total}</span>!`);
+    }
+
+    function rollVarnothAttack(weapon, mod) {
+        const modInput = parseInt(document.getElementById('dice-mod').value) || 0;
+        const totalMod = mod + modInput;
+        const modStr = totalMod >= 0 ? `+${totalMod}` : `${totalMod}`;
+
+        if (rollMode !== 'norm') {
+            const r1 = Math.floor(Math.random() * 20) + 1;
+            const r2 = Math.floor(Math.random() * 20) + 1;
+            const chosen = (rollMode === 'adv') ? Math.max(r1, r2) : Math.min(r1, r2);
+            const total = chosen + totalMod;
+            const modeLabel = rollMode === 'adv' ? 'Advantage' : 'Disadvantage';
+            let msg = `⚔️ <strong>${weapon} Attack:</strong> [${r1}, ${r2}] ➔ d20(${chosen}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total} to Hit</span> <small style="color:var(--text-muted);">(${modeLabel})</small>`;
+            if (chosen >= 19) msg += " 🔥 <span style='color:#facc15; font-weight:800;'>CRITICAL HIT (19-20)!</span>";
+            if (chosen === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 MISS!</span>";
+            logRoll(msg);
+            return;
+        }
+
+        const d20 = Math.floor(Math.random() * 20) + 1;
+        const total = d20 + totalMod;
+        let msg = `⚔️ <strong>${weapon} Attack:</strong> d20(${d20}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total} to Hit</span>`;
+        if (d20 >= 19) msg += " 🔥 <span style='color:#facc15; font-weight:800;'>CRITICAL HIT (19-20)!</span>";
+        if (d20 === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 MISS!</span>";
+        logRoll(msg);
+    }
+
+    function rollFormulaDamage(label, sides, bonus, type) {
+        const roll = Math.floor(Math.random() * sides) + 1;
+        const total = roll + bonus;
+        logRoll(`💥 <strong>${label}:</strong> [d${sides}:${roll} + ${bonus}] = <span style="font-size:1.05rem; color:#f87171; font-weight:700;">${total}</span> ${type} Damage`);
+    }
+
+    // ==========================================
+    // 💰 INTERACTIVE GOLD & CURRENCY PURSE (100 SP = 1 GP)
+    // ==========================================
+    const DEFAULT_START_GP = 8;
+    const DEFAULT_START_SP = 6;
+
+    function getStoredGold(key, defaultVal) {
+        const val = localStorage.getItem(key);
+        if (val === null || val === 'NaN' || val === undefined || isNaN(parseInt(val))) {
+            localStorage.setItem(key, defaultVal);
+            return defaultVal;
+        }
+        return parseInt(val);
+    }
+
+    let curGP = getStoredGold('dnd_gold_varnoth_v3', DEFAULT_START_GP);
+    let curSP = getStoredGold('dnd_silver_varnoth_v3', DEFAULT_START_SP);
+
+    function getGoldHistory() {
+        const stored = localStorage.getItem('dnd_gold_tx_varnoth');
+        if (!stored) {
+            const initial = [{
+                type: 'initial',
+                label: 'Starting Balance',
+                delta: `${DEFAULT_START_GP} GP, ${DEFAULT_START_SP} SP`,
+                total: `${DEFAULT_START_GP} GP, ${DEFAULT_START_SP} SP`,
+                time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            }];
+            localStorage.setItem('dnd_gold_tx_varnoth', JSON.stringify(initial));
+            return initial;
+        }
+        try {
+            return JSON.parse(stored);
+        } catch(e) {
+            return [];
+        }
+    }
+
+    function saveGoldHistory(history) {
+        localStorage.setItem('dnd_gold_tx_varnoth', JSON.stringify(history.slice(0, 50)));
+    }
+
+    function logGoldTx(type, label, deltaStr, totalStr) {
+        const history = getGoldHistory();
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        history.unshift({
+            type: type,
+            label: label || (type === 'gain' ? 'Loot / Income' : type === 'spend' ? 'Purchase / Expense' : 'Adjustment'),
+            delta: deltaStr,
+            total: totalStr,
+            time: timeStr
+        });
+        saveGoldHistory(history);
+        renderGoldHistory();
+    }
+
+    function normalizeCoins() {
+        if (isNaN(curGP)) curGP = 0;
+        if (isNaN(curSP)) curSP = 0;
+        
+        // 10 SP = 1 GP Economy (Standard D&D 5e)
+        // Handle SP overflow (>= 10)
+        if (curSP >= 10) {
+            const extraGP = Math.floor(curSP / 10);
+            curGP += extraGP;
+            curSP = curSP % 10;
+        }
+        
+        // Handle SP underflow (< 0) by borrowing from GP (1 GP = 10 SP)
+        while (curSP < 0 && curGP > 0) {
+            curGP -= 1;
+            curSP += 10;
+        }
+        
+        // If out of GP and SP is still negative, clamp total to 0
+        if (curGP <= 0 && curSP < 0) {
+            curGP = 0;
+            curSP = 0;
+        }
+    }
+
+    function updateGoldUI() {
+        normalizeCoins();
+        document.getElementById('gold-disp').innerText = curGP;
+        document.getElementById('silver-disp').innerText = curSP;
+        
+        const modalG = document.getElementById('modal-gold-disp');
+        const modalS = document.getElementById('modal-silver-disp');
+        if (modalG) modalG.innerText = curGP;
+        if (modalS) modalS.innerText = curSP;
+
+        localStorage.setItem('dnd_gold_varnoth_v2', curGP);
+        localStorage.setItem('dnd_silver_varnoth_v2', curSP);
+    }
+
+    function resetGoldPurse() {
+        if (confirm(`Reset Gold Purse to starting balance (${DEFAULT_START_GP} GP, ${DEFAULT_START_SP} SP)?`)) {
+            curGP = DEFAULT_START_GP;
+            curSP = DEFAULT_START_SP;
+            updateGoldUI();
+            logGoldTx('reset', '🔄 Reset to Official Balance', `${DEFAULT_START_GP} GP, ${DEFAULT_START_SP} SP`, `${curGP} GP, ${curSP} SP`);
+            logRoll(`💰 <strong>Gold Purse Reset:</strong> Restored to <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP.`);
+        }
+    }
+
+    function stepGold(delta) {
+        let totalSP = (curGP * 10) + curSP;
+        totalSP = Math.max(0, totalSP + (delta * 10));
+        curGP = Math.floor(totalSP / 10);
+        curSP = totalSP % 10;
+        
+        updateGoldUI();
+        const type = delta > 0 ? 'gain' : 'spend';
+        const deltaStr = `${delta > 0 ? '+' : ''}${delta} GP`;
+        logGoldTx(type, delta > 0 ? 'Quick Add' : 'Quick Spend', deltaStr, `${curGP} GP, ${curSP} SP`);
+        logRoll(`💰 <strong>Gold Purse:</strong> ${deltaStr} ➔ <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP`);
+    }
+
+    function stepSilver(delta) {
+        if (isNaN(curSP)) curSP = DEFAULT_START_SP;
+        if (isNaN(curGP)) curGP = DEFAULT_START_GP;
+        
+        const prevGP = curGP;
+        curSP += delta;
+        normalizeCoins();
+        updateGoldUI();
+        
+        const deltaStr = `${delta > 0 ? '+' : ''}${delta} SP`;
+        let logMsg = `🥈 <strong>Silver Step:</strong> ${deltaStr} ➔ <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, <span style="color:#cbd5e1; font-weight:700;">${curSP} SP</span>`;
+        if (curGP < prevGP) {
+            logMsg += ` <small style="color:#f59e0b;">(Converted 1 GP ➔ 10 SP)</small>`;
+        } else if (curGP > prevGP) {
+            logMsg += ` <small style="color:#86efac;">(10 SP Converted ➔ +1 GP)</small>`;
+        }
+        
+        logGoldTx('silver', delta > 0 ? 'Silver +1' : 'Silver -1', deltaStr, `${curGP} GP, ${curSP} SP`);
+        logRoll(logMsg);
+    }
+
+    function applyGoldAdd() {
+        const input = document.getElementById('gold-input');
+        const reasonInput = document.getElementById('gold-reason-input');
+        const amt = parseInt(input.value) || 0;
+        const memo = reasonInput ? reasonInput.value.trim() : '';
+        if (amt <= 0) return;
+        if (isNaN(curGP)) curGP = DEFAULT_START_GP;
+        curGP += amt;
+        input.value = '';
+        if (reasonInput) reasonInput.value = '';
+        updateGoldUI();
+        logGoldTx('gain', memo || 'Earned Gold', `+${amt} GP`, `${curGP} GP, ${curSP} SP`);
+        logRoll(`💰 <strong>Gained Gold:</strong> +${amt} GP ${memo ? '(' + memo + ') ' : ''}➔ Total: <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP`);
+    }
+
+    function applyGoldSpend() {
+        const input = document.getElementById('gold-input');
+        const reasonInput = document.getElementById('gold-reason-input');
+        const amt = parseInt(input.value) || 0;
+        const memo = reasonInput ? reasonInput.value.trim() : '';
+        if (amt <= 0) return;
+        
+        let totalSP = (curGP * 10) + curSP;
+        const costSP = amt * 10;
+        
+        if (costSP > totalSP) {
+            alert(`Insufficient funds! You have ${curGP} GP, ${curSP} SP but tried to spend ${amt} GP.`);
+            return;
+        }
+        
+        totalSP -= costSP;
+        curGP = Math.floor(totalSP / 10);
+        curSP = totalSP % 10;
+        
+        input.value = '';
+        if (reasonInput) reasonInput.value = '';
+        updateGoldUI();
+        logGoldTx('spend', memo || 'Spent Gold', `-${amt} GP`, `${curGP} GP, ${curSP} SP`);
+        logRoll(`💸 <strong>Spent Gold:</strong> -${amt} GP ${memo ? '(' + memo + ') ' : ''}➔ Remaining: <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP`);
+    }
+
+    function renderGoldHistory() {
+        const list = document.getElementById('modal-tx-list');
+        if (!list) return;
+        const history = getGoldHistory();
+        if (history.length === 0) {
+            list.innerHTML = `<div style="text-align:center; color:var(--text-muted); font-size:0.75rem; padding:12px;">No transactions recorded yet.</div>`;
+            return;
+        }
+        list.innerHTML = history.map(item => {
+            let badgeClass = 'tx-gain';
+            let color = 'var(--accent-green)';
+            if (item.type === 'spend') { badgeClass = 'tx-spend'; color = 'var(--accent-red)'; }
+            else if (item.type === 'silver') { badgeClass = 'tx-silver'; color = 'var(--accent-blue)'; }
+            else if (item.type === 'reset' || item.type === 'initial') { badgeClass = 'tx-reset'; color = 'var(--accent-gold)'; }
+
+            return `
+                <div class="tx-item ${badgeClass}">
+                    <div>
+                        <div style="font-weight:700; color:#f8fafc; display:flex; align-items:center; gap:6px;">
+                            <span>${item.label}</span>
+                            <span style="font-size:0.65rem; color:var(--text-muted); font-weight:normal;">• ${item.time}</span>
+                        </div>
+                        <div style="font-size:0.68rem; color:var(--text-dim);">Balance: ${item.total}</div>
+                    </div>
+                    <div style="font-weight:800; font-family:'JetBrains Mono',monospace; font-size:0.85rem; color:${color};">
+                        ${item.delta}
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    function openGoldHistoryModal() {
+        renderGoldHistory();
+        updateGoldUI();
+        document.getElementById('gold-modal').classList.add('active');
+    }
+
+    function closeGoldHistoryModal() {
+        document.getElementById('gold-modal').classList.remove('active');
+    }
+
+    function closeGoldHistoryOnBackdrop(e) {
+        if (e.target.id === 'gold-modal') {
+            closeGoldHistoryModal();
+        }
+    }
+
+    function clearGoldHistory() {
+        if (confirm("Clear all recorded transaction history? Current balance will be kept.")) {
+            localStorage.setItem('dnd_gold_tx_varnoth', JSON.stringify([{
+                type: 'initial',
+                label: 'History Reset',
+                delta: `${curGP} GP, ${curSP} SP`,
+                total: `${curGP} GP, ${curSP} SP`,
+                time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            }]));
+            renderGoldHistory();
+            logRoll("📜 Gold transaction history cleared.");
+        }
+    }
+
+    // ==========================================
+    // 🎒 INVENTORY MANAGEMENT & WORLD LOOT VAULT
+    // ==========================================
+    const worldLootVault = {
+        "potion of healing": {
+            name: "🧪 Potion of Healing",
+            category: "HEAL • Uncommon Potion",
+            origin: "Dragon's Rest Pharmacy / Tarak's Brews",
+            desc: "A shimmering ruby-red liquid smelling of almond and wild berries.",
+            effect: "• <strong>Bonus Action (Quick Sip):</strong> Restores <strong>2d6 Hit Points</strong>.<br>• <strong>Full Action (Full Chug):</strong> Restores <strong>100% FULL MAX HP</strong>!"
+        },
+        "elixir of health": {
+            name: "🍷 Elixir of Health (Legendary)",
+            category: "HEAL • Legendary Relic Potion",
+            origin: "Distilled from The Ruby Morel (Seagrow Caves)",
+            desc: "A thick, glowing crimson elixir that radiates radiant warmth and divine vitality.",
+            effect: "• <strong>Action to Drink:</strong> Cures any disease, poison, blindness, deafness, and paralysis + grants <strong>+20 Temporary HP</strong>.<br>• 🕊️ <strong>0 HP Miracle Revive:</strong> If administered to a dying/0 HP ally, instantly revives them to <strong>100% FULL MAX HP</strong>!"
+        },
+        "diluted drake blood potion": {
+            name: "🐉 Diluted Drake Blood Potion",
+            category: "BUFF • Rare Combat Alchemy",
+            origin: "Distilled from Fume Drake Venom Sacs (Tarak)",
+            desc: "A boiling orange draught that causes the drinker's veins to glow with draconic fury.",
+            effect: "• <strong>Action to Drink:</strong> Grants <strong>+1 to all Attack Rolls and +2 to all Damage Rolls</strong> on all weapon & spell dice for the entire day (lasts until next Long Rest)!"
+        },
+        "drake blood potion": {
+            name: "🐉 Drake Blood Potion",
+            category: "BUFF • Rare Combat Alchemy",
+            origin: "Distilled from Fume Drake Venom Sacs (Tarak)",
+            desc: "A boiling orange draught that causes the drinker's veins to glow with draconic fury.",
+            effect: "• <strong>Action to Drink:</strong> Grants <strong>+1 to all Attack Rolls and +2 to all Damage Rolls</strong> on all weapon & spell dice for the entire day (lasts until next Long Rest)!"
+        },
+        "twin notched bone-cleavers": {
+            name: "🪓 Twin Notched Bone-Cleavers",
+            category: "WEAPON • Uncommon Martial",
+            origin: "Fume Drake Boss (Seagrow Caves)",
+            desc: "Serrated bone blades carved from volcanic drake ribs.",
+            effect: "• <strong>+4 to hit, 1d6+2 Slashing</strong> + <strong>1d4 Rend Damage</strong> on double strike."
+        },
+        "longsword": {
+            name: "🗡️ Veteran's Longsword",
+            category: "WEAPON • Versatile Martial",
+            origin: "Neverwinter Guard Issue",
+            desc: "A well-balanced steel longsword stamped with the Azure Wolf crest.",
+            effect: "• <strong>+4 to hit, 1d8+2 Slashing (1-Handed) or 1d10+2 (2-Handed)</strong>."
+        },
+        "azure wolf longsword": {
+            name: "⚔️ Azure Wolf Longsword",
+            category: "WEAPON • Martial Melee (Masterwork)",
+            origin: "General Varnoth's Military Service",
+            desc: "A balanced steel longsword engraved with the howling azure wolf emblem of Neverwinter.",
+            effect: "• <strong>+4 to hit, 1d8+2 Slashing (Versatile 1d10+2)</strong>.<br>• <strong>Masterwork Edge:</strong> Scores a Critical Hit on a roll of <strong>19 or 20</strong>!"
+        },
+        "azure wolf steel shield": {
+            name: "🛡️ Azure Wolf Steel Shield",
+            category: "SHIELD • Standard Shield",
+            origin: "General Varnoth's Custom Shield",
+            desc: "A heavy steel heater shield emblazoned with a snarling azure wolf.",
+            effect: "• Grants <strong>+2 to Armor Class (AC)</strong>.<br>• Enables 🛡️ <strong>Protection Fighting Style</strong> reaction."
+        },
+        "splint mail armor": {
+            name: "🥋 Splint Mail Armor",
+            category: "ARMOR • Heavy Armor",
+            origin: "Neverwinter Military Issue",
+            desc: "Vertical strips of steel riveted to thick leather backing.",
+            effect: "• Grants <strong>Base AC 15</strong>."
+        },
+        "splint armor": {
+            name: "🥋 Splint Mail Armor",
+            category: "ARMOR • Heavy Armor",
+            origin: "Neverwinter Military Issue",
+            desc: "Vertical strips of steel riveted to thick leather backing.",
+            effect: "• Grants <strong>Base AC 15</strong>."
+        },
+        "heavy crossbow": {
+            name: "🏹 Heavy Crossbow",
+            category: "WEAPON • Martial Ranged",
+            origin: "Standard Military Armory",
+            desc: "A heavy-draw steel crossbow built for piercing armor at range.",
+            effect: "• <strong>+2 to hit, 1d10 Piercing damage</strong> (Range 100/400 ft, Heavy, Two-Handed, Loading, 20 Bolts)."
+        },
+        "twin notched bone-cleavers": {
+            name: "🪓 Twin Notched Bone-Cleavers",
+            category: "WEAPON • Martial Melee Trophy",
+            origin: "Kobold Champion Trophy (Ridge Camp)",
+            desc: "Two wicked bone-handled cleavers with serrated shark-tooth notches.",
+            effect: "• <strong>+4 to hit, 1d6+2 Slashing damage</strong> (Light, Finesse)."
+        },
+        "compass rose": {
+            name: "📖 Compass Rose Log Fragment & Spellbook",
+            category: "QUEST LOGBOOK & MANUSCRIPT • Rare",
+            origin: "Captain's Cabin C4 (Wreck of the Compass Rose)",
+            desc: "Waterlogged, salt-stained parchment leaves bound in brine-rotted naval leather. The ink is handwritten in erratic, grief-stricken elven script.",
+            effect: "• <strong>Key Lore Revelation:</strong> Deciphers Aleitha's tragedy, the Talisman of Orcus, and the exact ritual required to permanently end the beach zombie plague!",
+            manuscript: `<strong>[Excerpts from the Journal of Lady Aleitha aboard the Compass Rose]</strong><br><br>
+<em>"Decades ago, Captain Brastos commanded the Compass Rose. When his ship was reported lost in a violent storm off Stormwreck Isle, his betrothed, a noblewoman named Aleitha, went mad with grief. Desperate to reunite with her lost lover, she turned to dark forbidden rites, weaving a morbid Talisman of Orcus out of braided silver hair, sea pearls, and finger bones.<br><br>
+She brought the talisman aboard a rescue vessel to search for Brastos—but when her ship sank into the reef, the dark talisman sank into the submerged lower hold.<br><br>
+The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetual state of undead torment. You realize with absolute certainty:<br><br>
+<span style='color:#ef4444; font-weight:bold;'>The drowned zombies on the beach will never stop rising from the ocean depth every foggy tide until someone wades into the submerged hold of the Compass Rose, claims Aleitha's Talisman, and burns it upon Captain Brastos's grave at the Dragon's Rest cemetery!</span>"</em>`
+        }
+    };
+
+    function getItemDetails(rawItemName) {
+        const parsed = parseItemInfo(rawItemName);
+        const clean = parsed.name.toLowerCase().replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').replace(/\(.*?\)/g, '').trim();
+
+        for (let key in worldLootVault) {
+            if (clean.includes(key) || key.includes(clean)) {
+                return {
+                    ...worldLootVault[key],
+                    qty: parsed.qty,
+                    hasQty: parsed.hasQty,
+                    raw: rawItemName
+                };
+            }
+        }
+
+        return {
+            name: (parsed.emoji ? parsed.emoji + ' ' : '') + parsed.name,
+            category: "ADVENTURING GEAR • Loot",
+            origin: "Acquired during campaign exploration",
+            desc: "An item carried in the adventurer's pack.",
+            effect: `• <strong>Item Details:</strong> ${rawItemName}`,
+            qty: parsed.qty,
+            hasQty: parsed.hasQty,
+            raw: rawItemName
+        };
+    }
+
+    function openItemDetailsModal(index) {
+        const items = getStoredItems();
+        if (!items[index]) return;
+        const itemStr = items[index];
+        const details = getItemDetails(itemStr);
+        
+        document.getElementById('item-modal-title').innerHTML = `${details.name}`;
+        const body = document.getElementById('item-modal-body');
+        
+        let manuscriptHtml = '';
+        if (details.manuscript) {
+            manuscriptHtml = `
+                <div style="background:rgba(245,158,11,0.08); border-left:3px solid var(--accent-gold); border-radius:4px; padding:10px; font-family:'Georgia', serif; font-size:0.75rem; color:#fde68a; line-height:1.6; margin-top:2px;">
+                    <div style="font-family:'Cinzel', serif; font-size:0.7rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase; margin-bottom:4px;">📜 Read In-Game Manuscript:</div>
+                    ${details.manuscript}
+                </div>
+            `;
+        }
+
+        body.innerHTML = `
+            <div style="display:flex; flex-direction:column; gap:8px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:4px;">
+                    <span class="pill-badge" style="background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); color:#fde68a; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:700;">${details.category}</span>
+                    <span style="font-size:0.68rem; color:var(--text-muted); font-style:italic;">📍 ${details.origin}</span>
+                </div>
+                <div style="background:#090e1a; border:1px solid #1e293b; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#cbd5e1; font-style:italic; line-height:1.4;">
+                    "${details.desc}"
+                </div>
+                <div style="background:rgba(56,189,248,0.06); border:1px solid rgba(56,189,248,0.25); border-radius:6px; padding:8px 10px; font-size:0.78rem; color:#f8fafc; line-height:1.5;">
+                    <div style="font-size:0.7rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:4px;">⚡ In-Game Mechanics & Effects:</div>
+                    <div>${details.effect}</div>
+                </div>
+                ${manuscriptHtml}
+            </div>
+        `;
+
+        const actions = document.getElementById('item-modal-actions');
+        if (details.hasQty) {
+            actions.innerHTML = `
+                <button class="btn-act btn-act-pre" onclick="stepItemQty(${index}, -1); openItemDetailsModal(${index});" style="color:var(--accent-gold); border-color:rgba(245,158,11,0.4); font-size:0.72rem; padding:4px 8px;">🧪 Consume 1 (${details.qty} left)</button>
+            `;
+        } else {
+            actions.innerHTML = ``;
+        }
+
+        document.getElementById('item-modal').classList.add('active');
+    }
+
+    function closeItemModal() {
+        const modal = document.getElementById('item-modal');
+        if (modal) modal.classList.remove('active');
+    }
+
+    function closeItemModalOnBackdrop(e) {
+        if (e.target.id === 'item-modal') {
+            closeItemModal();
+        }
+    }
+
+    function getStoredItems() {
+        let stored = localStorage.getItem('dnd_inv_varnoth_v21');
+        if (!stored) {
+            for (let i = 1; i <= 20; i++) localStorage.removeItem(`dnd_inv_varnoth_v${i}`);
+            localStorage.removeItem('dnd_inv_varnoth');
+            localStorage.setItem('dnd_inv_varnoth_v21', JSON.stringify(defaultItems));
+            return [...defaultItems];
+        }
+        return JSON.parse(stored);
+    }
+
+    function saveItems(items) {
+        localStorage.setItem('dnd_inv_varnoth_v21', JSON.stringify(items));
+    }
+
+    // Universal Item Quantity Parsing & Formatting Engine
+    function parseItemInfo(itemStr) {
+        if (!itemStr) return { hasQty: false, qty: 1, emoji: '', name: '', raw: '' };
+        
+        // Match leading emojis/symbols
+        const emojiMatch = itemStr.match(/^([\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\s]+)/u);
+        const emoji = emojiMatch ? emojiMatch[1].trim() + ' ' : '';
+        let rest = (emojiMatch ? itemStr.slice(emojiMatch[0].length) : itemStr).trim();
+
+        let qty = 1;
+        let hasQty = false;
+        let name = rest;
+
+        // Pattern 1: Prefix "13x Item", "13 x Item", "x13 Item"
+        const prefixMatch = rest.match(/^(?:(\d+)\s*[xX]|[xX]\s*(\d+))\s+(.+)$/);
+        // Pattern 2: Suffix "Item x13", "Item 13x", "Item x 13"
+        const suffixMatch = rest.match(/^(.+?)\s+(?:[xX]\s*(\d+)|(\d+)\s*[xX])$/);
+        // Pattern 3: Parenthesized suffix "Item (x13)", "Item (13x)", "Item (13)"
+        const parenMatch = rest.match(/^(.+?)\s*\(\s*(?:[xX]\s*(\d+)|(\d+)\s*[xX]?)\s*\)$/);
+
+        if (prefixMatch) {
+            hasQty = true;
+            qty = parseInt(prefixMatch[1] || prefixMatch[2]) || 1;
+            name = prefixMatch[3].trim();
+        } else if (suffixMatch) {
+            hasQty = true;
+            qty = parseInt(suffixMatch[2] || suffixMatch[3]) || 1;
+            name = suffixMatch[1].trim();
+        } else if (parenMatch) {
+            hasQty = true;
+            qty = parseInt(parenMatch[2] || parenMatch[3]) || 1;
+            name = parenMatch[1].trim();
+        }
+
+        return {
+            hasQty: hasQty,
+            qty: qty,
+            emoji: emoji,
+            name: name,
+            raw: itemStr
+        };
+    }
+
+    function renderInventory() {
+        const list = document.getElementById('inventory-list');
+        if (!list) return;
+        const items = getStoredItems();
+        list.innerHTML = '';
+
+        if (items.length === 0) {
+            list.innerHTML = `<div style="text-align:center; color:var(--text-muted); font-size:0.75rem; padding:10px;">Inventory is empty.</div>`;
+            return;
+        }
+
+        items.forEach((item, index) => {
+            const parsed = parseItemInfo(item);
+            const div = document.createElement('div');
+            div.className = 'inv-row-item';
+
+            let controlsHtml = '';
+            if (parsed.hasQty) {
+                controlsHtml = `
+                    <div class="inv-stepper">
+                        <button class="btn-step-qty" onclick="stepItemQty(${index}, -1)" title="Use / Consume 1 (➖)">➖</button>
+                        <span class="inv-qty-val">${parsed.qty}x</span>
+                        <button class="btn-step-qty" onclick="stepItemQty(${index}, 1)" title="Add / Restock 1 (➕)">➕</button>
+                    </div>
+                    <button class="btn-del-item" onclick="deleteItem(${index})" title="Discard entire stack">✕</button>
+                `;
+                div.innerHTML = `
+                    <div class="inv-item-info" title="Click to view full description and lore">
+                        <span onclick="openItemDetailsModal(${index})" style="cursor:pointer; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">${parsed.emoji}${parsed.name}</span>
+                    </div>
+                    <div class="inv-controls">
+                        ${controlsHtml}
+                    </div>
+                `;
+            } else {
+                controlsHtml = `
+                    <div class="inv-stepper" style="border:none; background:transparent;">
+                        <button class="btn-step-qty" onclick="stepItemQty(${index}, 1)" title="Turn into stack / Add 1 (➕)" style="border:1px solid #334155; border-radius:3px; padding:1px 5px;">➕</button>
+                    </div>
+                    <button class="btn-del-item" onclick="deleteItem(${index})" title="Discard item">✕</button>
+                `;
+                div.innerHTML = `
+                    <div class="inv-item-info" title="Click to view full description and lore">
+                        <span onclick="openItemDetailsModal(${index})" style="cursor:pointer; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">${item}</span>
+                    </div>
+                    <div class="inv-controls">
+                        ${controlsHtml}
+                    </div>
+                `;
+            }
+
+            list.appendChild(div);
+        });
+    }
+
+    // Session Delta Tracking
+    function getSessionDelta() {
+        return {
+            added: JSON.parse(localStorage.getItem('dnd_delta_add_varnoth') || '[]'),
+            removed: JSON.parse(localStorage.getItem('dnd_delta_rem_varnoth') || '[]')
+        };
+    }
+
+    function saveSessionDelta(delta) {
+        localStorage.setItem('dnd_delta_add_varnoth', JSON.stringify(delta.added));
+        localStorage.setItem('dnd_delta_rem_varnoth', JSON.stringify(delta.removed));
+    }
+
+    function clearSessionDelta() {
+        localStorage.removeItem('dnd_delta_add_varnoth');
+        localStorage.removeItem('dnd_delta_rem_varnoth');
+    }
+
+    function recordDeltaItem(type, baseName, count = 1) {
+        if (!baseName || count <= 0) return;
+        const delta = getSessionDelta();
+        const normalizedName = baseName.replace(/^(\d+)\s*[xX]\s*/, '').trim();
+        
+        const oppositeType = type === 'added' ? 'removed' : 'added';
+        const currentList = delta[type];
+        const oppList = delta[oppositeType];
+
+        function findEntryIndex(list, name) {
+            return list.findIndex(entry => {
+                const entryName = entry.replace(/^(\d+)\s*[xX]\s*/, '').trim();
+                return entryName === name;
+            });
+        }
+
+        function getEntryCount(entry) {
+            const m = entry.match(/^(\d+)\s*[xX]\s*/);
+            return m ? parseInt(m[1]) : 1;
+        }
+
+        let oppIdx = findEntryIndex(oppList, normalizedName);
+        if (oppIdx !== -1) {
+            let oppCount = getEntryCount(oppList[oppIdx]);
+            if (oppCount > count) {
+                oppList[oppIdx] = `${oppCount - count}x ${normalizedName}`;
+            } else if (oppCount === count) {
+                oppList.splice(oppIdx, 1);
+            } else {
+                oppList.splice(oppIdx, 1);
+                let remaining = count - oppCount;
+                let currIdx = findEntryIndex(currentList, normalizedName);
+                if (currIdx !== -1) {
+                    let currCount = getEntryCount(currentList[currIdx]);
+                    currentList[currIdx] = `${currCount + remaining}x ${normalizedName}`;
+                } else {
+                    currentList.push(remaining > 1 ? `${remaining}x ${normalizedName}` : `1x ${normalizedName}`);
+                }
+            }
+        } else {
+            let currIdx = findEntryIndex(currentList, normalizedName);
+            if (currIdx !== -1) {
+                let currCount = getEntryCount(currentList[currIdx]);
+                currentList[currIdx] = `${currCount + count}x ${normalizedName}`;
+            } else {
+                currentList.push(count > 1 ? `${count}x ${normalizedName}` : `1x ${normalizedName}`);
+            }
+        }
+
+        saveSessionDelta(delta);
+    }
+
+    function stepItemQty(index, delta) {
+        const items = getStoredItems();
+        if (!items[index]) return;
+        const parsed = parseItemInfo(items[index]);
+        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+
+        if (delta < 0) {
+            const newQty = parsed.qty + delta;
+            recordDeltaItem('removed', cleanName, 1);
+            
+            if (newQty <= 0) {
+                const removed = items.splice(index, 1);
+                saveItems(items);
+                renderInventory();
+                logRoll(`🗑️ <strong>Consumed last:</strong> "${parsed.emoji}${parsed.name}" is now depleted and removed.`);
+            } else {
+                items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
+                saveItems(items);
+                renderInventory();
+                logRoll(`🧪 <strong>Consumed 1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} remaining</span>).`);
+            }
+        } else if (delta > 0) {
+            const newQty = parsed.qty + delta;
+            items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
+            saveItems(items);
+            recordDeltaItem('added', cleanName, 1);
+            renderInventory();
+            logRoll(`🎒 <strong>Restocked +1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} total</span>).`);
+        }
+    }
+
+    function addItem() {
+        const input = document.getElementById('new-item-input');
+        const text = input.value.trim();
+        if (!text) return;
+        const items = getStoredItems();
+        items.push(text);
+        saveItems(items);
+
+        const parsed = parseItemInfo(text);
+        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+        recordDeltaItem('added', cleanName, parsed.qty);
+
+        input.value = '';
+        renderInventory();
+        logRoll(`🎒 Added to inventory: "${text}"`);
+    }
+
+    function deleteItem(index) {
+        const items = getStoredItems();
+        if (!items[index]) return;
+        const itemStr = items[index];
+        const parsed = parseItemInfo(itemStr);
+        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+
+        items.splice(index, 1);
+        saveItems(items);
+
+        recordDeltaItem('removed', cleanName, parsed.qty);
+
+        renderInventory();
+        logRoll(`🗑️ Removed from inventory: "${itemStr}"`);
+    }
+
+    function resetInventory() {
+        if (confirm("Reset inventory to official starting veteran kit?")) {
+            localStorage.setItem('dnd_inv_varnoth_v15', JSON.stringify(defaultItems));
+            clearSessionDelta();
+            renderInventory();
+            logRoll("🎒 Inventory and session delta reset to official campaign veteran loadout.");
+        }
+    }
+
+    // 1-Click Session Delta Export Protocol
+    function exportSheetState() {
+        const delta = getSessionDelta();
+        let deltaParts = [];
+        if (delta.added.length > 0) {
+            deltaParts.push(`➕ Added: ${delta.added.join(', ')}`);
+        }
+        if (delta.removed.length > 0) {
+            deltaParts.push(`➖ Consumed/Removed: ${delta.removed.join(', ')}`);
+        }
+        const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
+        
+        const stateStr = `🛡️ GENERAL VARNOTH [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: ${isShieldEquipped ? 17 : 15} | 2nd Wind: ${isSecondWindReady ? 'Ready' : 'Used'} | Surge: ${isActionSurgeReady ? 'Ready' : 'Used'} | Help: ${helpTokens}/2 | Wealth: ${curGP} GP, ${curSP} SP] • ${invSummary}`;
+        
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(stateStr).then(() => {
+                logRoll(`📋 <strong>Session Delta Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
+            }).catch(() => {
+                prompt("Copy Varnoth's session export string:", stateStr);
+            });
+        } else {
+            prompt("Copy Varnoth's session export string:", stateStr);
+        }
+    }
+
+    // ==========================================
+    // 🚀 INITIALIZATION
+    // ==========================================
+    function init() {
+        const savedHP = localStorage.getItem('dnd_hp_varnoth_v2');
+        if (savedHP !== null) curHP = parseInt(savedHP);
+        const savedTemp = localStorage.getItem('dnd_temphp_varnoth_v2');
+        if (savedTemp !== null) tempHP = parseInt(savedTemp);
+
+        const savedHelp = localStorage.getItem('dnd_help_varnoth_v2');
+        if (savedHelp !== null) helpTokens = parseInt(savedHelp);
+
+        updateHPUI();
+        updateACUI();
+        updateWindUI();
+        updateSurgeUI();
+        updateHelpUI();
+        updateGoldUI();
+        renderInventory();
+    }
+
+    init();
+</script>
+
+</body>
+</html>

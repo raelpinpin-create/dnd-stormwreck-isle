@@ -1,0 +1,3439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eflein — Master Player Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-page: #0b101d;
+            --bg-sheet: #0f1523;
+            --panel-bg: #151d30;
+            --panel-sub: #101726;
+            --card-border: #222d42;
+            --card-border-hover: #3b82f6;
+            --accent-gold: #f59e0b;
+            --accent-blue: #38bdf8;
+            --accent-cyan: #22d3ee;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --accent-purple: #c084fc;
+            --text-light: #f8fafc;
+            --text-dim: #94a3b8;
+            --text-muted: #64748b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-light);
+            line-height: 1.5;
+            padding: 16px 12px;
+            display: flex;
+            justify-content: center;
+            font-size: 0.88rem;
+        }
+
+        .sheet-container {
+            width: 100%;
+            max-width: 1160px;
+            background-color: var(--bg-sheet);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            box-shadow: 0 12px 36px rgba(0,0,0,0.75);
+            overflow: hidden;
+        }
+
+        /* Top Header Banner */
+        .header-banner {
+            background: linear-gradient(180deg, #182238 0%, #0f172a 100%);
+            border-bottom: 1px solid var(--card-border);
+            padding: 12px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header-title h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--accent-gold);
+            font-size: 1.55rem;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+        }
+
+        .header-title p {
+            color: var(--text-dim);
+            font-size: 0.82rem;
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .pill-badge-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .pill-badge {
+            padding: 3px 10px;
+            border-radius: 9999px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .pill-neutral { background: #334155; color: #f1f5f9; border: 1px solid #475569; }
+        .pill-blue { background: #0369a1; color: #f0f9ff; border: 1px solid #0284c7; }
+
+        /* TOP PROMINENT DICE ROLLER CONSOLE */
+        .top-dice-console {
+            background: #090e1b;
+            border-bottom: 1px solid var(--card-border);
+            padding: 10px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.4);
+        }
+
+        .dice-controls-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .dice-buttons-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .dice-btn {
+            background: var(--panel-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-light);
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        .dice-btn:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .dice-mod-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .roll-result-display {
+            background: linear-gradient(135deg, #0d1629 0%, #090f1e 100%);
+            border: 1.5px solid var(--card-border);
+            border-radius: 6px;
+            padding: 8px 14px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.92rem;
+            color: #f8fafc;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+        .roll-result-display.highlight-roll {
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 14px rgba(245, 158, 11, 0.25);
+        }
+
+        /* Main 2-Column Grid Layout */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 330px 1fr;
+            gap: 14px;
+            padding: 14px 18px;
+        }
+
+        @media (max-width: 960px) {
+            .main-layout { grid-template-columns: 1fr; }
+        }
+
+        /* Generic Panel */
+        .panel {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .panel-title {
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        /* Vitals 4-Box Row */
+        .vitals-4box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .vital-mini-box {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 6px 3px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vital-mini-lbl {
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            text-transform: uppercase;
+        }
+
+        .vital-mini-val {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-top: 1px;
+            transition: color 0.3s ease;
+        }
+
+        /* HP Controller */
+        .hp-ctrl-container {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 8px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            margin-bottom: 8px;
+        }
+
+        .hp-health-bar-bg {
+            width: 100%;
+            height: 9px;
+            background: #090d16;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+            position: relative;
+        }
+
+        .hp-health-bar-fill {
+            height: 100%;
+            width: 100%;
+            background: var(--accent-green);
+            transition: width 0.3s ease, background-color 0.3s ease;
+        }
+
+        .hp-health-bar-temp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            background: rgba(56, 189, 248, 0.65);
+            transition: width 0.3s ease;
+        }
+
+        .hp-btn-row {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .hp-input-num {
+            background: #090d16;
+            border: 1px solid var(--card-border);
+            color: var(--text-light);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 3px 5px;
+            border-radius: 4px;
+            width: 50px;
+            text-align: center;
+            outline: none;
+        }
+        .hp-input-num:focus { border-color: var(--accent-gold); }
+
+        .btn-act {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.15s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-act:active { transform: scale(0.97); }
+        .btn-act-dmg { background: #991b1b; color: #fee2e2; }
+        .btn-act-dmg:hover { background: #b91c1c; }
+        .btn-act-heal { background: #065f46; color: #d1fae5; }
+        .btn-act-heal:hover { background: #047857; }
+        .btn-act-temp { background: #0284c7; color: #f0f9ff; border: 1px solid #38bdf8; }
+        .btn-act-temp:hover { background: #0369a1; }
+        .btn-act-pre { background: #1e293b; color: var(--text-light); border: 1px solid var(--card-border); }
+        .btn-act-pre:hover { background: #334155; }
+
+        /* Dynamic Buffs / Toggles Bar */
+        .buffs-toggle-bar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .toggle-btn-card {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 5px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .toggle-btn-card:hover { border-color: var(--accent-gold); }
+        .toggle-btn-card.active-buff {
+            border-color: #38bdf8;
+            background: rgba(56, 189, 248, 0.12);
+        }
+        .toggle-badge {
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .toggle-badge.off { background: #334155; color: #94a3b8; }
+        .toggle-badge.on { background: #0284c7; color: #f0f9ff; }
+
+        /* Ability Scores Strip */
+        .ability-strip {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .ability-box {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px 2px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .ability-box:hover { border-color: var(--accent-gold); background: rgba(245, 158, 11, 0.08); }
+        .ability-box.active-key {
+            border: 1.5px solid var(--accent-gold);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .ability-name { font-size: 0.65rem; font-weight: 700; color: var(--text-dim); }
+        .ability-score { font-size: 1rem; font-weight: 700; color: var(--text-light); }
+        .ability-mod { font-size: 0.72rem; font-weight: 600; color: var(--text-dim); }
+        .ability-box.active-key .ability-mod { color: var(--accent-gold); }
+
+        /* Skills & Saves Lists */
+        .stat-row-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .stat-row-item {
+            font-size: 0.76rem;
+            color: var(--text-light);
+            padding: 3px 7px;
+            background: var(--panel-sub);
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            border: 1px solid transparent;
+        }
+        .stat-row-item:hover {
+            background: #1e293b;
+            border-color: var(--accent-blue);
+        }
+        .stat-row-item.prof-item {
+            color: var(--accent-gold);
+            font-weight: 600;
+            background: rgba(245, 158, 11, 0.07);
+            border-left: 3px solid var(--accent-gold);
+        }
+
+        /* Action & Spell Cards */
+        .action-grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 7px;
+        }
+
+        @media (max-width: 600px) {
+            .action-grid-2col { grid-template-columns: 1fr; }
+        }
+
+        .action-card {
+            background-color: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 7px 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            transition: all 0.15s ease;
+        }
+        .action-card:hover { border-color: #3b82f6; }
+        .action-card.unprepared-card {
+            opacity: 0.6;
+            background-color: rgba(15, 22, 38, 0.5);
+            border-style: dashed;
+        }
+
+        .action-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            gap: 4px;
+        }
+
+        .action-desc {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            line-height: 1.35;
+        }
+
+        .action-btn-row {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 2px;
+        }
+
+        /* Sleek Dropdown for Spell Levels */
+        .lvl-dropdown {
+            background: #0b1120;
+            border: 1px solid #334155;
+            color: var(--accent-gold);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 2px 5px;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+        }
+        .lvl-dropdown:focus { border-color: var(--accent-blue); }
+
+        .btn-roll-action {
+            background: #0284c7;
+            color: #f0f9ff;
+            border: none;
+            border-radius: 4px;
+            padding: 3px 8px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-roll-action:hover { background: #0369a1; }
+        .btn-roll-dmg { background: #991b1b; color: #fee2e2; }
+        .btn-roll-dmg:hover { background: #b91c1c; }
+        .btn-roll-heal { background: #065f46; color: #d1fae5; }
+        .btn-roll-heal:hover { background: #047857; }
+
+        /* Inventory List */
+        .inv-list-compact {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            max-height: 165px;
+            overflow-y: auto;
+        }
+
+        .inv-row-item {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 4px;
+            padding: 3px 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.74rem;
+            gap: 6px;
+            transition: border-color 0.15s;
+        }
+        .inv-row-item:hover {
+            border-color: #334155;
+        }
+
+        .inv-item-info {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .inv-controls {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
+        .inv-stepper {
+            display: inline-flex;
+            align-items: center;
+            background: #090e1a;
+            border: 1px solid #334155;
+            border-radius: 4px;
+            padding: 1px 3px;
+            gap: 2px;
+        }
+
+        .btn-step-qty {
+            background: transparent;
+            border: none;
+            color: #94a3b8;
+            font-size: 0.68rem;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 1px 4px;
+            border-radius: 2px;
+            transition: all 0.15s;
+            line-height: 1;
+        }
+        .btn-step-qty:hover {
+            background: #1e293b;
+            color: var(--accent-gold);
+        }
+        .btn-step-qty:active {
+            transform: scale(0.92);
+        }
+
+        .inv-qty-val {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            min-width: 22px;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .btn-del-item {
+            background: transparent;
+            border: none;
+            color: var(--accent-red);
+            font-weight: 700;
+            cursor: pointer;
+            padding: 1px 5px;
+            font-size: 0.85rem;
+            border-radius: 3px;
+            transition: all 0.15s;
+        }
+        .btn-del-item:hover {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+        }
+
+        /* 💰 Coin Purse Ledger Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(4, 7, 14, 0.78);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        .modal-card {
+            background: #0d1424;
+            border: 1.5px solid var(--accent-gold);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 480px;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85), 0 0 24px rgba(245, 158, 11, 0.2);
+            overflow: hidden;
+            animation: modalPop 0.18s ease-out;
+        }
+        @keyframes modalPop {
+            from { opacity: 0; transform: scale(0.96) translateY(8px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .modal-header {
+            background: linear-gradient(180deg, #1d2538 0%, #101828 100%);
+            border-bottom: 1px solid var(--card-border);
+            padding: 10px 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .modal-close-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: all 0.15s;
+        }
+        .modal-close-btn:hover {
+            color: #fff;
+            background: rgba(239, 68, 68, 0.2);
+        }
+        .modal-body {
+            padding: 12px 14px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .tx-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            max-height: 320px;
+            overflow-y: auto;
+        }
+        .tx-item {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 5px;
+            padding: 6px 9px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.76rem;
+            transition: all 0.15s;
+        }
+        .tx-gain { border-left: 3px solid var(--accent-green); }
+        .tx-spend { border-left: 3px solid var(--accent-red); }
+        .tx-reset { border-left: 3px solid var(--accent-gold); }
+        .tx-silver { border-left: 3px solid var(--accent-blue); }
+    </style>
+</head>
+<body>
+
+    <div class="sheet-container">
+        
+        <!-- HEADER BANNER -->
+        <header class="header-banner">
+            <div class="header-title">
+                <h1>⚡ EFLEIN</h1>
+                <div style="font-size:0.85rem; font-weight:700; color:#fde68a; margin-top:2px; letter-spacing:0.5px;">
+                    « Warden of the Living Grove »
+                </div>
+                <div style="font-size:0.75rem; color:var(--text-dim); margin-top:1px;">
+                    Level 3 High Elf Evocation Wizard • Delinquent Prodigy
+                </div>
+            </div>
+            <div class="pill-badge-group">
+                <button class="btn-act btn-act-pre" onclick="exportSheetState()" style="color:var(--accent-gold); border:1px solid rgba(245, 158, 11, 0.4); display:flex; align-items:center; gap:4px;" title="Copy current HP, spell slots, prepared spells, and inventory to clipboard">📋 Export Data</button>
+                <span class="pill-badge pill-neutral">CHAOTIC NEUTRAL</span>
+                <span class="pill-badge pill-blue">DELINQUENT WIZARD</span>
+            </div>
+        </header>
+
+        <!-- TOP PROMINENT DICE ROLLER CONSOLE -->
+        <section class="top-dice-console">
+            <div class="dice-controls-bar">
+                <div class="dice-buttons-group">
+                    <span style="font-size:0.75rem; font-weight:700; color:var(--text-dim); margin-right:2px;">🎲 Quick Roll:</span>
+                    <button class="dice-btn" onclick="rollCustomDie(20)">d20</button>
+                    <button class="dice-btn" onclick="rollCustomDie(12)">d12</button>
+                    <button class="dice-btn" onclick="rollCustomDie(10)">d10</button>
+                    <button class="dice-btn" onclick="rollCustomDie(8)">d8</button>
+                    <button class="dice-btn" onclick="rollCustomDie(6)">d6</button>
+                    <button class="dice-btn" onclick="rollCustomDie(4)">d4</button>
+                    <button class="dice-btn" onclick="rollCustomDie(100)">d100</button>
+                </div>
+
+                <div class="dice-mod-group">
+                    <span style="font-size:0.75rem; font-weight:600; color:var(--text-dim);">Mod:</span>
+                    <input type="number" id="dice-mod" class="hp-input-num" value="0" style="width:42px; padding:2px 4px; font-size:0.78rem;">
+                    <button class="btn-act btn-act-pre" onclick="modDiceMod(1)">+1</button>
+                    <button class="btn-act btn-act-pre" onclick="modDiceMod(-1)">-1</button>
+                    <button class="btn-act btn-act-pre" onclick="document.getElementById('dice-mod').value=0">0</button>
+                    <button class="btn-act btn-act-pre" id="btn-adv" onclick="toggleAdvantage('adv')">Adv</button>
+                    <button class="btn-act btn-act-pre" id="btn-dis" onclick="toggleAdvantage('dis')">Dis</button>
+                </div>
+            </div>
+
+            <!-- RESULT BANNER -->
+            <div class="roll-result-display" id="roll-res">
+                ⚡ Arcane matrix initialized. Roll any attack, save, or skill check below!
+            </div>
+        </section>
+
+        <!-- MAIN 2-COLUMN LAYOUT -->
+        <div class="main-layout">
+            
+            <!-- LEFT COLUMN: VITALS, TOGGLES, ABILITIES, SAVES & 18 INDIVIDUAL SKILLS -->
+            <div>
+                
+                <!-- 4-BOX VITALS -->
+                <div class="vitals-4box">
+                    <div class="vital-mini-box">
+                        <span class="vital-mini-lbl">HIT POINTS</span>
+                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">20/20</span>
+                    </div>
+                    <div class="vital-mini-box">
+                        <span class="vital-mini-lbl">ARMOR CLASS</span>
+                        <span class="vital-mini-val" id="ac-disp" style="color:var(--accent-gold);">12</span>
+                    </div>
+                    <div class="vital-mini-box" onclick="rollD20('Initiative Roll (DEX +2 & Lodestone +1)', 3)" style="cursor:pointer;" title="Click to roll Initiative (+3)">
+                        <span class="vital-mini-lbl">INIT 🎲</span>
+                        <span class="vital-mini-val" style="color:var(--accent-blue);">+3</span>
+                    </div>
+                    <div class="vital-mini-box">
+                        <span class="vital-mini-lbl">SPELL DC / HIT</span>
+                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 14 | +6</span>
+                    </div>
+                </div>
+
+                <!-- INTEGRATED HP & TEMPORARY HP CONTROLLER -->
+                <div class="hp-ctrl-container">
+                    <div class="hp-health-bar-bg">
+                        <div class="hp-health-bar-fill" id="hp-bar" style="width: 100%;"></div>
+                        <div class="hp-health-bar-temp" id="hp-temp-bar" style="width: 0%;"></div>
+                    </div>
+                    
+                    <div style="display:flex; flex-direction:column; gap:6px;">
+                        <!-- Top Row: Spacious Number Input + Damage/Heal Buttons -->
+                        <div style="display:flex; align-items:center; gap:6px; width:100%;">
+                            <input type="number" id="hp-input" class="hp-input-num" placeholder="Enter amount..." min="1" max="999" style="flex:1; height:34px; font-size:0.92rem; text-align:left; padding:4px 10px; font-weight:600; background:#0b1220; border:1.5px solid var(--card-border); border-radius:4px;">
+                            <button class="btn-act btn-act-dmg" onclick="applyDamage()" style="padding:6px 14px; height:34px; font-size:0.84rem; font-weight:700;" title="Take custom damage">💥 Take Damage</button>
+                            <button class="btn-act btn-act-heal" onclick="applyHeal()" style="padding:6px 14px; height:34px; font-size:0.84rem; font-weight:700;" title="Heal custom amount">💚 Heal HP</button>
+                        </div>
+                        <!-- Bottom Row: Small +/- Steppers with Clear Temp and Rests -->
+                        <div style="display:flex; align-items:center; justify-content:space-between; gap:4px; width:100%;">
+                            <div style="display:flex; gap:4px;">
+                                <button class="btn-act btn-act-dmg" style="padding: 4px 9px; font-size: 0.76rem; font-weight:700;" onclick="stepHP(-1)" title="Decrease 1 HP">➖ -1</button>
+                                <button class="btn-act btn-act-heal" style="padding: 4px 9px; font-size: 0.76rem; font-weight:700;" onclick="stepHP(1)" title="Increase 1 HP">➕ +1</button>
+                            </div>
+                            <div style="display:flex; gap:4px;">
+                                <button class="btn-act btn-act-pre" onclick="clearTempHP()" style="padding:4px 8px; font-size:0.72rem; color:#94a3b8;" title="Clear Temp HP">🛡️ Clear Temp</button>
+                                <button class="btn-act btn-act-pre" onclick="takeShortRest()" style="padding:4px 8px; font-size:0.72rem; color:var(--accent-blue);" title="Heal 25% Max HP (up to 2/day) & +1 Help Token">☕ Short Rest</button>
+                                <button class="btn-act btn-act-pre" onclick="resetHP()" style="padding:4px 8px; font-size:0.72rem; color:var(--accent-green);" title="Full Long Rest (Restore HP, Slots, Short Rests & Help)">⛺ Long Rest</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DYNAMIC ABILITY / BUFF TOGGLES (AFFECTS STATS DIRECTLY) -->
+                <div class="buffs-toggle-bar">
+                    <!-- Mage Armor Toggle -->
+                    <div class="toggle-btn-card" id="card-mage-armor-toggle" onclick="toggleMageArmorBuff()">
+                        <div>
+                            <div style="font-size:0.74rem; font-weight:700;">🔮 Mage Armor</div>
+                            <div style="font-size:0.66rem; color:var(--text-dim);" id="sub-mage-armor">Base AC: 12</div>
+                        </div>
+                        <span class="toggle-badge off" id="badge-mage-armor">OFF (12)</span>
+                    </div>
+
+                    <!-- Shield Reaction Toggle -->
+                    <div class="toggle-btn-card" id="card-shield-toggle" onclick="toggleShieldReactionBuff()">
+                        <div>
+                            <div style="font-size:0.74rem; font-weight:700;">🛡️ Shield Reaction</div>
+                            <div style="font-size:0.66rem; color:var(--text-dim);">+5 AC (1 Rnd)</div>
+                        </div>
+                        <span class="toggle-badge off" id="badge-shield">+5 AC</span>
+                    </div>
+                </div>
+
+                <!-- HELP TOKENS TRACKER (2 Long Rest / +1 Short Rest) -->
+                <div class="panel" style="padding: 7px 10px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-size:0.76rem; font-weight:700; color:#67e8f9;">🤝 Help Tokens:</span>
+                        <div style="display:flex; align-items:center; gap:5px;">
+                            <span id="help-tokens-disp" style="font-weight:700; color:#67e8f9; font-size:0.88rem;">2 / 2</span>
+                            <button class="btn-act btn-act-temp" onclick="rollHelpToken()" style="padding:2px 7px; font-size:0.7rem;">🎲 Spend (+1d6)</button>
+                            <button class="btn-act btn-act-pre" onclick="modHelpToken(1)" style="padding:2px 5px; font-size:0.68rem; color:#67e8f9;" title="Gain +1 Help Token (+1 on Short Rest)">+1</button>
+                            <button class="btn-act btn-act-pre" onclick="resetHelpTokens()" style="padding:2px 5px; font-size:0.68rem;">Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 ABILITY SCORES STRIP -->
+                <div class="ability-strip">
+                    <div class="ability-box" onclick="rollD20('STR Check', 0)" title="Click to roll STR Check (+0)">
+                        <div class="ability-name">STR</div>
+                        <div class="ability-score">10</div>
+                        <div class="ability-mod">+0</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('DEX Check', 2)" title="Click to roll DEX Check (+2)">
+                        <div class="ability-name">DEX</div>
+                        <div class="ability-score">15</div>
+                        <div class="ability-mod">+2</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('CON Check', 2)" title="Click to roll CON Check (+2)">
+                        <div class="ability-name">CON</div>
+                        <div class="ability-score">14</div>
+                        <div class="ability-mod">+2</div>
+                    </div>
+                    <div class="ability-box active-key" onclick="rollD20('INT Check', 3)" title="Click to roll INT Check (+3)">
+                        <div class="ability-name">INT</div>
+                        <div class="ability-score">16</div>
+                        <div class="ability-mod">+3</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('WIS Check', 1)" title="Click to roll WIS Check (+1)">
+                        <div class="ability-name">WIS</div>
+                        <div class="ability-score">12</div>
+                        <div class="ability-mod">+1</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('CHA Check', -1)" title="Click to roll CHA Check (-1)">
+                        <div class="ability-name">CHA</div>
+                        <div class="ability-score">8</div>
+                        <div class="ability-mod">-1</div>
+                    </div>
+                </div>
+
+                <!-- SAVING THROWS PANEL -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🛡️ Saving Throws</span>
+                    </div>
+                    <ul class="stat-row-list">
+                        <li class="stat-row-item prof-item" onclick="rollD20('Intelligence Saving Throw ★', 5)"><span>Intelligence Save ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Wisdom Saving Throw ★', 3)"><span>Wisdom Save ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Dexterity Save', 2)"><span>Dexterity Save</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Constitution Save', 2)"><span>Constitution Save</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Strength Save', 0)"><span>Strength Save</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Charisma Save', -1)"><span>Charisma Save</span><span>-1 🎲</span></li>
+                    </ul>
+                </div>
+
+                <!-- ALL 18 SKILLS MATRIX (INDIVIDUALLY SEPARATED) -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🎯 All 18 Skills (Individual Rolls)</span>
+                        <span style="font-size:0.7rem; color:var(--text-dim);">Prof: +2</span>
+                    </div>
+                    <ul class="stat-row-list">
+                        <li class="stat-row-item" onclick="rollD20('Acrobatics (DEX)', 2)"><span>Acrobatics (DEX)</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Animal Handling (WIS)', 1)"><span>Animal Handling (WIS)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Arcana (INT) ★', 5)"><span>Arcana (INT) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Athletics (STR)', 0)"><span>Athletics (STR)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Deception (CHA)', -1)"><span>Deception (CHA)</span><span>-1 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('History (INT) ★', 5)"><span>History (INT) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Insight (WIS) ★', 3)"><span>Insight (WIS) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Intimidation (CHA)', -1)"><span>Intimidation (CHA)</span><span>-1 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Investigation (INT) ★', 5)"><span>Investigation (INT) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Medicine (WIS)', 1)"><span>Medicine (WIS)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Nature (INT)', 3)"><span>Nature (INT)</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Perception (WIS) ★', 3)"><span>Perception (WIS) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Performance (CHA)', -1)"><span>Performance (CHA)</span><span>-1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Persuasion (CHA)', -1)"><span>Persuasion (CHA)</span><span>-1 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Religion (INT) ★', 5)"><span>Religion (INT) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 2)"><span>Sleight of Hand (DEX)</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 2)"><span>Stealth (DEX)</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Survival (WIS)', 1)"><span>Survival (WIS)</span><span>+1 🎲</span></li>
+                    </ul>
+                </div>
+
+                <!-- 💰 SLEEK GOLD & COIN PURSE (LEFT SIDE) -->
+                <div class="panel" style="padding: 8px 10px; background: linear-gradient(135deg, #18150a 0%, #0d121c 100%); border: 1px solid rgba(245, 158, 11, 0.35); margin-top: 8px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 5px;">
+                        <div style="display:flex; align-items:center; gap:5px;">
+                            <span style="font-size:0.95rem;">💰</span>
+                            <span style="color:var(--accent-gold); font-size:0.75rem; font-weight:800; letter-spacing:0.5px;">GOLD PURSE</span>
+                            <span style="font-size:0.62rem; color:var(--text-muted); font-weight:600; background:rgba(255,255,255,0.05); padding:1px 4px; border-radius:3px; border:1px solid rgba(255,255,255,0.1);" title="Standard 5e Economy: 10 Silver = 1 Gold">10 SP = 1 GP</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <button class="btn-act btn-act-pre" onclick="openGoldHistoryModal()" style="font-size:0.68rem; padding:2px 6px; color:var(--accent-gold); border:1px solid rgba(245,158,11,0.4);" title="Open transaction history ledger">📜 Ledger</button>
+                            <button class="btn-act btn-act-pre" onclick="resetGoldPurse()" style="font-size:0.68rem; padding:2px 5px; color:#cbd5e1;" title="Reset gold to default starting 48 GP, 1 SP">🔄 Reset</button>
+                            <div style="display:flex; align-items:baseline; gap:4px; margin-left:3px;">
+                                <span id="gold-disp" style="font-size:1.15rem; font-weight:800; color:#facc15; font-family:'Inter', sans-serif;">48</span>
+                                <span style="font-size:0.7rem; font-weight:700; color:#fbbf24;">GP</span>
+                                <span style="color:var(--text-dim); font-size:0.75rem;">•</span>
+                                <span id="silver-disp" style="font-size:0.95rem; font-weight:700; color:#cbd5e1; font-family:'Inter', sans-serif;">1</span>
+                                <span style="font-size:0.68rem; font-weight:600; color:#94a3b8;">SP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 1: Amount Input + Optional Reason + Spend/Add -->
+                    <div style="display:flex; align-items:center; gap:4px; margin-bottom:5px;">
+                        <input type="number" id="gold-input" class="hp-input-num" placeholder="GP..." min="1" max="99999" style="width:54px; height:26px; font-size:0.78rem; text-align:left; padding:2px 6px; font-weight:600; background:#0b1220; border:1px solid rgba(245,158,11,0.3); border-radius:3px; color:#fef08a;">
+                        <input type="text" id="gold-reason-input" placeholder="Memo / Reason (optional)..." style="flex:1; height:26px; font-size:0.72rem; padding:2px 6px; background:#0b1220; border:1px solid #334155; border-radius:3px; color:#cbd5e1;">
+                        <button class="btn-act btn-act-dmg" onclick="applyGoldSpend()" style="padding:2px 8px; height:26px; font-size:0.72rem; font-weight:700;" title="Spend entered GP">- Spend</button>
+                        <button class="btn-act btn-act-heal" onclick="applyGoldAdd()" style="padding:2px 8px; height:26px; font-size:0.72rem; font-weight:700; background:linear-gradient(135deg, #ca8a04 0%, #a16207 100%); color:#fff;" title="Add entered GP">+ Add</button>
+                    </div>
+
+                    <!-- Row 2: Sleek Quick Steppers -->
+                    <div style="display:flex; align-items:center; justify-content:space-between; gap:3px;">
+                        <div style="display:flex; gap:2px; align-items:center;">
+                            <button class="btn-act btn-act-dmg" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(-5)">-5</button>
+                            <button class="btn-act btn-act-dmg" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(-1)">-1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(1)">+1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(5)">+5</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(10)">+10</button>
+                        </div>
+                        <div style="display:flex; gap:2px; align-items:center;">
+                            <span style="font-size:0.65rem; color:var(--text-dim); font-weight:600;">SP:</span>
+                            <button class="btn-act btn-act-dmg" style="padding:2px 4px; font-size:0.65rem; font-weight:700;" onclick="stepSilver(-5)">-5</button>
+                            <button class="btn-act btn-act-pre" style="padding:2px 4px; font-size:0.65rem;" onclick="stepSilver(-1)">-1</button>
+                            <button class="btn-act btn-act-pre" style="padding:2px 4px; font-size:0.65rem;" onclick="stepSilver(1)">+1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 4px; font-size:0.65rem; font-weight:700;" onclick="stepSilver(5)">+5</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: ACTIONS (WEAPONS + CANTRIPS), SPELLBOOK WITH LEVEL DROPDOWN, RELICS, INVENTORY -->
+            <div>
+                
+                <!-- ⚔️ ACTIONS & AT-WILL ATTACKS (WEAPONS + CANTRIPS) -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>⚔️ Actions & At-Will Attacks (Weapons + Cantrips)</span>
+                        <span style="font-size:0.7rem; color:var(--accent-blue);">At-Will / Unlimited</span>
+                    </div>
+
+                    <div class="action-grid-2col">
+                        <!-- Sling of the Ridge-Runner -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('sling')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🏹 Sling of Ridge-Runner (+1) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Ranged Weapon • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">MAGIC</span>
+                            </div>
+                            <div class="action-desc">Ranged 30/120ft (no disadv). +5 to Hit, 1d4+3 Bludgeoning.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="rollD20('Sling (+1) Attack', 5)">🏹 Attack</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Sling (+1) Damage', 4, 3, 'Bludgeoning')">💥 Damage</button>
+                            </div>
+                        </div>
+
+                        <!-- Zombie Captain's Cutlass / Shortsword -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('cutlass')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🗡️ Zombie Captain's Cutlass <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Melee Weapon • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">FINESSE</span>
+                            </div>
+                            <div class="action-desc">Melee 5ft. +4 to Hit, 1d6+2 Slashing/Piercing. 30ft swim speed.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="rollD20('Cutlass Attack', 4)">🗡️ Attack</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Cutlass Damage', 6, 2, 'Slashing')">💥 Damage</button>
+                            </div>
+                        </div>
+
+                        <!-- Ray of Frost -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('rayoffrost')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='#f8fafc'">
+                                        ❄️ Ray of Frost (Cantrip) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#38bdf8; margin-top:1px;">Cantrip • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:#38bdf8; font-weight:700;">EVOCATION</span>
+                            </div>
+                            <div class="action-desc">Ranged 60ft. +6 to Hit, 1d8 Cold & slows target -10ft.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="rollD20('Ray of Frost Attack', 6)">❄️ Attack</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Ray of Frost Dmg', 8, 0, 'Cold')">💥 Damage</button>
+                            </div>
+                        </div>
+
+                        <!-- Shocking Grasp -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('shockinggrasp')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        ⚡ Shocking Grasp (Cantrip) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#fbbf24; margin-top:1px;">Cantrip • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:#fbbf24; font-weight:700;">EVOCATION</span>
+                            </div>
+                            <div class="action-desc">Melee Touch. +6 to Hit, 1d8 Lightning & prevents reactions.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="rollD20('Shocking Grasp Attack', 6)">⚡ Attack</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Shocking Grasp Dmg', 8, 0, 'Lightning')">💥 Damage</button>
+                            </div>
+                        </div>
+
+                        <!-- Mage Hand -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('magehand')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-purple)'" onmouseout="this.style.color='#f8fafc'">
+                                        ✨ Mage Hand (Cantrip) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#c084fc; margin-top:1px;">Cantrip • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:#c084fc; font-weight:700;">HIGH ELF TRAIT</span>
+                            </div>
+                            <div class="action-desc">30ft range (45ft with Lodestone). Manipulates objects up to 10 lbs.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="castUtility('✨ Cast Mage Hand (30ft/45ft Range magnetic pull)')">✨ Cast</button>
+                            </div>
+                        </div>
+
+                        <!-- Prestidigitation -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('prestidigitation')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🖐️ Prestidigitation (Cantrip) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#94a3b8; margin-top:1px;">Cantrip • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:#94a3b8; font-weight:700;">TRANSMUTATION</span>
+                            </div>
+                            <div class="action-desc">Minor sensory tricks, sparks, lighting fires, cleaning/flavoring objects.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="castUtility('🖐️ Cast Prestidigitation (Tricks / Sensory Effects)')">🖐️ Cast</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🔮 FULL SPELLBOOK & SCALABLE SPELLS (LEVEL 1-4 DROPDOWN) -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>📚 Full Spellbook & Scalable Spells</span>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span id="prep-counter" style="font-size:0.72rem; color:var(--text-dim);">5 Prepared</span>
+                            <button class="btn-act btn-act-pre" onclick="refillAllSlots()" style="font-size:0.68rem; color:var(--accent-gold);">⛺ Refill Slots</button>
+                        </div>
+                    </div>
+
+                    <!-- MULTI-TIER SPELL SLOT TRACKER (LEVEL 1, 2, 3) -->
+                    <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:6px 8px; display:flex; flex-direction:column; gap:4px; margin-bottom:5px;">
+                        <div style="font-size:0.68rem; font-weight:700; color:var(--text-dim); text-transform:uppercase; display:flex; justify-content:space-between;">
+                            <span>🔮 Spell Slots by Level</span>
+                            <span style="font-size:0.64rem; color:var(--text-muted); font-weight:normal;">Auto-deducts on cast</span>
+                        </div>
+                        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:5px;">
+                            <!-- Level 1 Slots -->
+                            <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <span style="font-size:0.68rem; font-weight:700; color:var(--accent-blue);">1st:</span>
+                                    <span id="slot-pips-1" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(1)">🟦 🟦 🟦 (3/3)</span>
+                                </div>
+                                <div style="display:flex; gap:2px;">
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(1, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(1, 1)" style="padding:0px 4px; font-size:0.65rem;">+</button>
+                                </div>
+                            </div>
+                            <!-- Level 2 Slots -->
+                            <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <span style="font-size:0.68rem; font-weight:700; color:var(--accent-purple);">2nd:</span>
+                                    <span id="slot-pips-2" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(2)">— (0/0)</span>
+                                </div>
+                                <div style="display:flex; gap:2px;">
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(2, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(2, 1)" style="padding:0px 4px; font-size:0.65rem;">+</button>
+                                </div>
+                            </div>
+                            <!-- Level 3 Slots -->
+                            <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <span style="font-size:0.68rem; font-weight:700; color:var(--accent-gold);">3rd:</span>
+                                    <span id="slot-pips-3" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(3)">— (0/0)</span>
+                                </div>
+                                <div style="display:flex; gap:2px;">
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(3, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(3, 1)" style="padding:0px 4px; font-size:0.65rem;">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-grid-2col" id="spellbook-grid">
+                        <!-- Rendered by JS with level dropdowns (Lvl 1-4) -->
+                    </div>
+                </div>
+
+                <!-- 👘 RELICS, RECOVERY & REACTION POWERS -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>⚡ Relics, Recoveries & Active Class Features</span>
+                    </div>
+
+                    <div style="display:flex; flex-direction:column; gap:5px;">
+                        <div style="background:rgba(124, 58, 237, 0.08); border:1px solid #a855f7; border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <div>
+                                <span style="font-weight:700; color:#c084fc;">🪄 Wand of Magic Missiles:</span>
+                                <span id="wand-charges-disp" style="color:#fde68a; font-weight:bold; margin-left:4px;">7 / 7 Charges</span>
+                            </div>
+                            <div style="display:flex; gap:4px;">
+                                <button class="btn-roll-action btn-roll-dmg" style="background:#7c3aed; padding:3px 8px; font-size:0.7rem;" onclick="useWandOfMagicMissiles(1)">🪄 Cast (1 Chg: 3 Darts)</button>
+                                <button class="btn-act btn-act-pre" onclick="modWandCharges(1)" style="font-size:0.65rem; padding:1px 4px;">+</button>
+                                <button class="btn-act btn-act-pre" onclick="modWandCharges(-1)" style="font-size:0.65rem; padding:1px 4px;">-</button>
+                            </div>
+                        </div>
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <span>👘 <strong>Robe of Arcane Reserve:</strong> 1/Day: Instantly regain 1 expended Spell Slot.</span>
+                            <button class="btn-roll-action" style="background:#7c3aed;" onclick="useRobeOfReserve()">🔮 Regain Slot</button>
+                        </div>
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <span>⚡ <strong>Astalagan's Scale:</strong> +1 Focus, 1/Day add +1d6 Lightning Surge to any spell.</span>
+                            <button class="btn-roll-action" style="background:#d97706;" onclick="rollAstalaganSurge()">⚡ Surge (+1d6)</button>
+                        </div>
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <span>📖 <strong>Arcane Recovery (1/Day on Short Rest):</strong> Regain 1 expended 1st-level spell slot.</span>
+                            <button class="btn-roll-action" style="background:#059669;" onclick="useArcaneRecovery()">☕ Arcane Recovery</button>
+                        </div>
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <span>💥 <strong>Sculpt Spells (Evocation Savant):</strong> 1+Spell Lvl allies automatically succeed on saves & take 0 damage from your AoEs!</span>
+                            <span style="color:#86efac; font-weight:700; font-size:0.68rem;">PASSIVE SHIELD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🎒 EDITABLE INVENTORY (CONSUMABLES & LOOT) -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🎒 Tracked Inventory & Consumables</span>
+                    </div>
+
+                    <div class="inv-list-compact" id="inventory-list">
+                        <!-- Rendered dynamically from localStorage -->
+                    </div>
+
+                    <div style="display:flex; gap:6px; margin-top:5px;">
+                        <input type="text" id="new-item-input" class="hp-input-num" style="flex:1; width:auto; text-align:left; padding:4px 7px;" placeholder="Add new loot or item...">
+                        <button class="btn-act" style="background:var(--accent-gold); color:#000;" onclick="addItem()">+ Add</button>
+                        <button class="btn-act btn-act-pre" onclick="resetInventory()" title="Reset to official campaign loadout">🔄 Reset</button>
+                    </div>
+                </div>
+
+                <!-- 🎯 ACTIVE CAMPAIGN QUESTS -->
+                <div class="panel">
+                    <div class="panel-title">🎯 Active Campaign Quests</div>
+                    <div style="font-size:0.76rem; color:var(--text-dim); line-height:1.4; display:flex; flex-direction:column; gap:3px;">
+                        <p>• <strong>Search for Lost Wife:</strong> Visited Dragon's Rest 8 months ago ➔ Headed toward the Clifftop Observatory.</p>
+                        <p>• <strong>Seagrow Caves Blight:</strong> Cure Sinensa with Heart Cap mushrooms.</p>
+                        <p>• <strong>Wreck of Compass Rose:</strong> Retrieve Aleitha's Talisman & burn on Brastos's grave.</p>
+                        <p>• <strong>Three Metallic Scales:</strong> Bronze Awakened (+1 Focus, +1d6 Surge).</p>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+    <!-- 💰 GOLD TRANSACTION HISTORY MODAL -->
+    <div class="modal-overlay" id="gold-modal" onclick="closeGoldHistoryOnBackdrop(event)">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>💰 Coin Purse Ledger & History</h3>
+                <button class="modal-close-btn" onclick="closeGoldHistoryModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div style="background:rgba(245, 158, 11, 0.08); border:1px solid rgba(245, 158, 11, 0.3); border-radius:6px; padding:8px 10px; display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                        <div style="font-size:0.68rem; font-weight:700; color:var(--text-dim); text-transform:uppercase;">Current Available Balance</div>
+                        <div style="font-size:1.15rem; font-weight:800; color:#facc15; font-family:'Inter', sans-serif;">
+                            <span id="modal-gold-disp">48</span> GP • <span id="modal-silver-disp" style="color:#cbd5e1;">1</span> SP
+                        </div>
+                    </div>
+                    <button class="btn-act btn-act-pre" onclick="resetGoldPurse()" style="color:var(--accent-gold); border:1px solid rgba(245,158,11,0.3); padding:4px 8px; font-size:0.7rem;">🔄 Reset Balance</button>
+                </div>
+
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
+                    <span style="font-size:0.74rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase;">Recent Transactions:</span>
+                    <button class="btn-act btn-act-pre" onclick="clearGoldHistory()" style="padding:2px 6px; font-size:0.66rem; color:#f87171;">🗑️ Clear Log</button>
+                </div>
+
+                <div class="tx-list" id="modal-tx-list">
+                    <!-- Rendered dynamically from localStorage -->
+                </div>
+            </div>
+            <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:flex-end;">
+                <button class="btn-act btn-act-pre" onclick="closeGoldHistoryModal()" style="padding:4px 12px; font-size:0.76rem; font-weight:600;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📦 ITEM DESCRIPTION MODAL (WORLD LOOT VAULT) -->
+    <div class="modal-overlay" id="item-modal" onclick="closeItemModalOnBackdrop(event)">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="item-modal-title" style="display:flex; align-items:center; gap:6px;">📦 Item Details</h3>
+                <button class="modal-close-btn" onclick="closeItemModal()">✕</button>
+            </div>
+            <div class="modal-body" id="item-modal-body">
+                <!-- Rendered dynamically -->
+            </div>
+            <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:space-between; align-items:center;">
+                <div id="item-modal-actions"></div>
+                <button class="btn-act btn-act-pre" onclick="closeItemModal()" style="padding:4px 12px; font-size:0.76rem; font-weight:600;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔮 SPELL & ACTION DESCRIPTION MODAL (D&D 5E COMPENDIUM) -->
+    <div class="modal-overlay" id="spell-modal" onclick="closeSpellModalOnBackdrop(event)">
+        <div class="modal-card" style="max-width: 530px;">
+            <div class="modal-header">
+                <h3 id="spell-modal-title" style="display:flex; align-items:center; gap:6px;">🔮 Spell Details</h3>
+                <button class="modal-close-btn" onclick="closeSpellModal()">✕</button>
+            </div>
+            <div class="modal-body" id="spell-modal-body">
+                <!-- Rendered dynamically -->
+            </div>
+            <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
+                <div id="spell-modal-actions" style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;"></div>
+                <button class="btn-act btn-act-pre" onclick="closeSpellModal()" style="padding:4px 12px; font-size:0.76rem; font-weight:600;">Close</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // State Variables
+    let curHP = 20;
+    let maxHP = 20;
+    let tempHP = 0;
+    let baseAC = 12;
+    let isMageArmorActive = false;
+    let isShieldActive = false;
+    let curSlots = 4;
+    let maxSlots = 4;
+    let helpTokens = 2;
+    let maxHelpTokens = 2;
+    let shortRestsRemaining = 2;
+    const maxShortRests = 2;
+    let rollMode = 'norm';
+
+    // Full Wizard Spellbook with Complete D&D 5e Compendium Data
+    const fullSpellbook = [
+        {
+            id: "mm",
+            name: "⚡ Magic Missile",
+            tag: "1st Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "1st-Level Evocation",
+            castingTime: "1 Action",
+            range: "120 feet",
+            components: "V, S (Verbal, Somatic)",
+            duration: "Instantaneous",
+            attackMod: "Auto-Hit (No Attack Roll / No Save)",
+            damage: "1d4 + 1 Force Damage per dart (3 darts at 1st lvl = 3d4+3)",
+            desc: "Auto-hit force darts (1d4+1 each). Scales +1 dart per slot level.",
+            fullRules: "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals <strong>1d4 + 1 force damage</strong> to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+            upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st (4 darts at 2nd lvl, 5 darts at 3rd lvl).",
+            flavor: "Eflein extends three fingers crackling with teal arcane sparks, firing luminous darts that weave around cover and never miss.",
+            prepared: true,
+            hasLevelSelect: true,
+            buttons: [
+                { label: "💥 Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollMagicMissileScaled(lvl) }
+            ]
+        },
+        {
+            id: "shield",
+            name: "🛡️ Shield",
+            tag: "1st Lvl • 1 Reaction",
+            tagColor: "#c084fc",
+            school: "1st-Level Abjuration",
+            castingTime: "1 Reaction (when hit by an attack or Magic Missile)",
+            range: "Self",
+            components: "V, S",
+            duration: "1 round (until start of next turn)",
+            attackMod: "+5 AC Bonus (Immediate Reaction)",
+            damage: "Negates Magic Missile & deflects attacks",
+            desc: "+5 AC reaction & blocks Magic Missile until start of next turn.",
+            fullRules: "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a <strong>+5 bonus to AC</strong>, including against the triggering attack, and you take no damage from <em>Magic Missile</em>.",
+            upcastNotes: "Casting with higher-level slots grants no additional benefits.",
+            flavor: "Eflein throws up a crystalline barrier of hardened force that deflects incoming blades and spells in a shower of blue sparks.",
+            prepared: true,
+            hasLevelSelect: false,
+            buttons: [
+                { label: "🛡️ Cast", class: "btn-roll-action", costSlot: false, onClick: () => castShieldSpell() }
+            ]
+        },
+        {
+            id: "twave",
+            name: "🌊 Thunderwave",
+            tag: "1st Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "1st-Level Evocation",
+            castingTime: "1 Action",
+            range: "Self (15-foot cube)",
+            components: "V, S",
+            duration: "Instantaneous",
+            attackMod: "DC 14 Constitution Saving Throw",
+            damage: "2d8 Thunder Damage & 10ft Push (half on save)",
+            desc: "DC 14 Con: 2d8 thunder + 10ft push. Scales +1d8 per slot lvl.",
+            fullRules: "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a <strong>DC 14 Constitution saving throw</strong>. On a failed save, a creature takes <strong>2d8 thunder damage</strong> and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.<br><br>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you, and the spell emits a thunderous boom audible out to 300 feet.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can protect 2 allies in the cube to take 0 damage and automatically succeed on their save!",
+            upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st (3d8 at 2nd lvl, 4d8 at 3rd lvl).",
+            flavor: "Eflein slams her palms together, releasing a deafening shockwave that sends foes and debris flying backwards.",
+            prepared: true,
+            hasLevelSelect: true,
+            buttons: [
+                { label: "🌊 Cast / Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollThunderwaveScaled(lvl) }
+            ]
+        },
+        {
+            id: "iknife",
+            name: "🧊 Ice Knife",
+            tag: "1st Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "1st-Level Conjuration",
+            castingTime: "1 Action",
+            range: "60 feet",
+            components: "S, M (a drop of water or piece of ice)",
+            duration: "Instantaneous",
+            attackMod: "+6 Spell Attack / DC 14 Dex Save (Burst)",
+            damage: "1d10 Piercing (Shard) + 2d6 Cold (Burst)",
+            desc: "+6 Hit: 1d10 pierc. Hit or miss: DC 14 Dex or (1+lvl)d6 cold burst.",
+            fullRules: "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack (<strong>+6 to hit</strong>). On a hit, the target takes <strong>1d10 piercing damage</strong>. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a <strong>DC 14 Dexterity saving throw</strong> or take <strong>2d6 cold damage</strong>.",
+            upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the cold explosion damage increases by 1d6 for each slot level above 1st (3d6 cold at 2nd lvl, 4d6 cold at 3rd lvl).",
+            flavor: "Eflein condenses the humid sea mist into a jagged frost dagger, hurtling it forward before detonating in a shower of razor-sharp icy shrapnel.",
+            prepared: true,
+            hasLevelSelect: true,
+            buttons: [
+                { label: "🎯 Attack", class: "btn-roll-action", costSlot: false, onClick: () => rollD20('Ice Knife Shard Attack', 6) },
+                { label: "💥 Shard Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: () => rollFormulaDamage('Ice Knife Shard Damage', 10, 0, 'Piercing') },
+                { label: "❄️ Burst Damage", class: "btn-roll-action btn-roll-dmg", costSlot: false, onClick: (lvl) => rollIceKnifeBurst(lvl) }
+            ]
+        },
+        {
+            id: "mstep",
+            name: "💨 Misty Step",
+            tag: "2nd Lvl • Bonus Action",
+            tagColor: "#f97316",
+            school: "2nd-Level Conjuration",
+            castingTime: "1 Bonus Action",
+            range: "Self",
+            components: "V (Verbal)",
+            duration: "Instantaneous",
+            attackMod: "Tactical Teleportation (Bonus Action)",
+            damage: "Teleport up to 30 feet to an unoccupied space",
+            desc: "Teleport up to 30 feet to an unoccupied space you can see.",
+            fullRules: "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.<br><br>⚡ <strong>Bonus Action Economy:</strong> Because this uses only a Bonus Action, you can still cast a Cantrip (like <em>Ray of Frost</em> or <em>Shocking Grasp</em>) or take the Dash/Disengage Action on the same turn!",
+            upcastNotes: "Casting with higher-level slots grants no additional benefits.",
+            flavor: "Eflein dissolves into a swirl of silvery mist and reappears instantaneously across the battlefield behind cover or atop high ground.",
+            prepared: true,
+            hasLevelSelect: false,
+            buttons: [
+                { label: "💨 Teleport (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castMistyStep() }
+            ]
+        },
+        {
+            id: "rbi",
+            name: "❄️ Rime's Binding Ice",
+            tag: "2nd Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "2nd-Level Evocation",
+            castingTime: "1 Action",
+            range: "Self (30-foot cone)",
+            components: "S, M (a vial of meltwater)",
+            duration: "Instantaneous",
+            attackMod: "DC 14 Constitution Saving Throw",
+            damage: "3d8 Cold Damage & Speed Reduced to 0",
+            desc: "30-ft cone. DC 14 Con: 3d8 cold + speed 0 until broken (Action).",
+            fullRules: "A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a <strong>DC 14 Constitution saving throw</strong>. On a failed save, a creature takes <strong>3d8 cold damage</strong> and is hindered by ice crystals until the spell ends: its speed is reduced to 0 until the ice is broken. On a successful save, a creature takes half as much damage and isn't hindered.<br><br>A creature hindered by the ice can use its action to break the ice from itself or another creature, ending the effect.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the cone so they take 0 damage and their speed is unaffected!",
+            upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd (4d8 at 3rd lvl).",
+            flavor: "Eflein unleashes a biting blizzard of permafrost from her fingertips, encasing enemies in jagged crystal rime that locks them in place.",
+            prepared: true,
+            hasLevelSelect: true,
+            buttons: [
+                { label: "❄️ Cast & Burst (-1 Slot)", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollRimesBindingIce(lvl) }
+            ]
+        },
+        {
+            id: "shatter",
+            name: "💥 Shatter",
+            tag: "2nd Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "2nd-Level Evocation",
+            castingTime: "1 Action",
+            range: "60 feet (10-ft radius sphere)",
+            components: "V, S, M (a chip of mica)",
+            duration: "Instantaneous",
+            attackMod: "DC 14 Constitution Saving Throw",
+            damage: "3d8 Thunder Damage (Disadv vs Inorganic)",
+            desc: "60ft • 10ft radius. DC 14 Con: 3d8 thunder (half on save).",
+            fullRules: "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a <strong>DC 14 Constitution saving throw</strong>. A creature takes <strong>3d8 thunder damage</strong> on a failed save, or half as much damage on a successful one.<br><br>A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.<br><br>A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the blast to take 0 damage!",
+            upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd (4d8 at 3rd lvl).",
+            flavor: "Eflein focuses resonant vibrations into a single focal point, shattering armor, bones, and stone in an explosive sonic boom.",
+            prepared: false,
+            hasLevelSelect: true,
+            buttons: [
+                { label: "💥 Cast & Burst (-1 Slot)", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollShatterScaled(lvl) }
+            ]
+        },
+        {
+            id: "web",
+            name: "🕸️ Web",
+            tag: "2nd Lvl • Concentration",
+            tagColor: "#fbbf24",
+            school: "2nd-Level Conjuration",
+            castingTime: "1 Action",
+            range: "60 feet (20-ft cube)",
+            components: "V, S, M (a bit of spiderweb)",
+            duration: "Concentration, up to 1 hour",
+            attackMod: "DC 14 Dexterity Saving Throw",
+            damage: "Restrained Condition & Difficult Terrain (2d4 Fire if burned)",
+            desc: "60ft • 20ft cube. DC 14 Dex or Restrained. Difficult terrain.",
+            fullRules: "You conjure a mass of thick, sticky webbing at a point within range. The webs fill a 20-foot cube. The webs are difficult terrain and lightly obscure their area.<br><br>Each creature that starts its turn in the webs or enters them during its turn must make a <strong>DC 14 Dexterity saving throw</strong>. On a failed save, the creature is <strong>Restrained</strong> as long as it remains in the webs or until it breaks free (Action: DC 14 Strength check).<br><br>The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing <strong>2d4 fire damage</strong> to any creature that starts its turn in the fire.",
+            upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
+            flavor: "Eflein weaves dense strands of ethereal spider silk across the battlefield, anchoring and entangling advancing foes.",
+            prepared: false,
+            hasLevelSelect: false,
+            buttons: [
+                { label: "🕸️ Cast Web (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castWebSpell() }
+            ]
+        },
+        {
+            id: "aganazzar",
+            name: "🔥 Aganazzar's Scorcher",
+            tag: "2nd Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "2nd-Level Evocation",
+            castingTime: "1 Action",
+            range: "30 feet (5-ft wide line)",
+            components: "V, S, M (a red dragon scale)",
+            duration: "Instantaneous",
+            attackMod: "DC 14 Dexterity Saving Throw",
+            damage: "3d8 Fire Damage (half on save)",
+            desc: "30ft Line (5ft wide). DC 14 Dex: 3d8 fire. Sculpt Spells protects!",
+            fullRules: "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a <strong>DC 14 Dexterity saving throw</strong>. A creature takes <strong>3d8 fire damage</strong> on a failed save, or half as much damage on a successful one.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the line so they take 0 damage and auto-pass their save!",
+            upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd (4d8 at 3rd lvl).",
+            flavor: "Eflein traces an incandescent draconic rune in the air, projecting a searing column of flame straight through enemy ranks.",
+            prepared: false,
+            hasLevelSelect: true,
+            buttons: [
+                { label: "🔥 Scorching Line (-1 Slot)", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollAganazzarsScorcher(lvl) }
+            ]
+        },
+        {
+            id: "alterself",
+            name: "🧬 Alter Self",
+            tag: "2nd Lvl • Concentration",
+            tagColor: "#fbbf24",
+            school: "2nd-Level Transmutation",
+            castingTime: "1 Action",
+            range: "Self",
+            components: "V, S",
+            duration: "Concentration, up to 1 hour",
+            attackMod: "Self-Transformation / Adaptation",
+            damage: "Aquatic (Gills + 30ft Swim) / Change Appearance / +1 Natural Weapons (1d6+mod)",
+            desc: "Choose: Aquatic Adaptation (swim 30ft + gills), Change Appearance, or +1 Weapons.",
+            fullRules: "You assume a different form. When you cast the spell, choose one of the following options:<br><br>• <strong>Aquatic Adaptation:</strong> You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed (30 ft).<br>• <strong>Change Appearance:</strong> You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics.<br>• <strong>Natural Weapons:</strong> You grow claws, fangs, spines, or horns. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage and you have a +1 bonus to attack and damage rolls with them, counting as magical.",
+            upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
+            flavor: "Eflein recites transmutation cantrips to reforge her own biology—growing sleek gills for deep ocean diving or reshaping her face.",
+            prepared: false,
+            hasLevelSelect: false,
+            buttons: [
+                { label: "🌊 Aquatic Adaptation (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castAlterSelf('Aquatic Adaptation (Breathe underwater & 30ft Swim Speed)') },
+                { label: "🎭 Change Appearance (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castAlterSelf('Change Appearance (Transform face & physical shape)') },
+                { label: "🦷 Natural Weapons (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castAlterSelf('Natural Weapons (+1 magical attack, 1d6+mod damage)') }
+            ]
+        },
+        {
+            id: "detmag",
+            name: "🔍 Detect Magic",
+            tag: "1st Lvl • Ritual",
+            tagColor: "#86efac",
+            school: "1st-Level Divination (Ritual)",
+            castingTime: "1 Action (or 10 min Ritual)",
+            range: "Self (30-foot aura)",
+            components: "V, S",
+            duration: "Concentration, up to 10 minutes",
+            attackMod: "Sense Magic Auras (30ft)",
+            damage: "Reveals magic school & auras",
+            desc: "Ritual (No slot): Sense magical auras within 30ft for 10 min.",
+            fullRules: "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.<br><br>The spell can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.<br><br>📜 <strong>Ritual Casting:</strong> Eflein can cast this without expending a spell slot by ritual casting for 10 minutes!",
+            upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
+            flavor: "Eflein's eyes glow with azure light as arcane leylines and hidden enchantments reveal themselves in vibrant colors.",
+            prepared: false,
+            hasLevelSelect: false,
+            buttons: [
+                { label: "🔍 Cast Ritual", class: "btn-roll-action", costSlot: false, onClick: () => castUtility('🔍 Detect Magic cast (Ritual / 30ft aura detection for 10 min)') }
+            ]
+        },
+        {
+            id: "rsick",
+            name: "🤮 Ray of Sickness",
+            tag: "1st Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "1st-Level Necromancy",
+            castingTime: "1 Action",
+            range: "60 feet",
+            components: "V, S",
+            duration: "Instantaneous",
+            attackMod: "+6 Spell Attack / DC 14 Con Save",
+            damage: "2d8 Poison Damage & Poisoned Condition",
+            desc: "+6 Hit: 2d8 poison dmg & DC 14 Con save vs Poisoned.",
+            fullRules: "A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target (<strong>+6 to hit</strong>). On a hit, the target takes <strong>2d8 poison damage</strong> and must make a <strong>DC 14 Constitution saving throw</strong>. On a failed save, it is also <strong>Poisoned</strong> until the end of your next turn (giving it disadvantage on attack rolls and ability checks).",
+            upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st (3d8 at 2nd lvl, 4d8 at 3rd lvl).",
+            flavor: "A beam of sickly viridian bile shoots from Eflein's palm, inducing sudden nausea and violent spasms in the target.",
+            prepared: false,
+            hasLevelSelect: true,
+            buttons: [
+                { label: "🎯 Attack", class: "btn-roll-action", costSlot: false, onClick: () => rollD20('Ray of Sickness Attack', 6) },
+                { label: "💥 Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollRayOfSicknessScaled(lvl) }
+            ]
+        },
+        {
+            id: "sleep",
+            name: "💤 Sleep",
+            tag: "1st Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "1st-Level Enchantment",
+            castingTime: "1 Action",
+            range: "90 feet (20-ft radius sphere)",
+            components: "V, S, M (a pinch of fine sand, rose petals, or a cricket)",
+            duration: "1 minute",
+            attackMod: "5d8 HP Pool (No Save)",
+            damage: "Puts creatures to Sleep (Lowest current HP first)",
+            desc: "5d8 total HP of creatures fall unconscious (Lowest HP first).",
+            fullRules: "This spell sends creatures into a magical slumber. Roll <strong>5d8</strong>; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).<br><br>Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake.<br><br>Undead and creatures immune to being charmed aren't affected by this spell.",
+            upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st (7d8 at 2nd lvl, 9d8 at 3rd lvl).",
+            flavor: "Eflein blows a handful of shimmering silver slumber-dust into the breeze, putting lesser foes into a deep, peaceful sleep.",
+            prepared: false,
+            hasLevelSelect: true,
+            buttons: [
+                { label: "💤 Roll Sleep HP", class: "btn-roll-action", costSlot: true, onClick: (lvl) => rollSleepScaled(lvl) }
+            ]
+        },
+        {
+            id: "magearmor",
+            name: "🧙‍♂️ Mage Armor",
+            tag: "1st Lvl • 1 Action",
+            tagColor: "#f97316",
+            school: "1st-Level Abjuration",
+            castingTime: "1 Action",
+            range: "Touch",
+            components: "V, S, M (a piece of cured leather)",
+            duration: "8 hours",
+            attackMod: "Base AC becomes 13 + DEX (15 AC for Eflein)",
+            damage: "Protective ward (No armor required)",
+            desc: "Sets Base AC to 13 + DEX (15 AC) for 8 hours without armor.",
+            fullRules: "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes <strong>13 + its Dexterity modifier (giving Eflein 15 AC)</strong>. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+            upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
+            flavor: "Eflein traces abjuration runes along her tunic, weaving an invisible mesh of hardened force around herself.",
+            prepared: false,
+            hasLevelSelect: false,
+            buttons: [
+                { label: "🧙‍♂️ Cast", class: "btn-roll-action", costSlot: false, onClick: () => activateMageArmorSpell() }
+            ]
+        },
+        {
+            id: "complan",
+            name: "📜 Comprehend Languages",
+            tag: "1st Lvl • Ritual",
+            tagColor: "#86efac",
+            school: "1st-Level Divination (Ritual)",
+            castingTime: "1 Action (or 10 min Ritual)",
+            range: "Self",
+            components: "V, S, M (a pinch of soot and salt)",
+            duration: "1 hour",
+            attackMod: "Understand All Spoken & Written Languages",
+            damage: "Deciphers ancient scripts & foreign speech",
+            desc: "Ritual: Understand any spoken language and read ancient scripts.",
+            fullRules: "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.<br><br>This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.<br><br>📜 <strong>Ritual Casting:</strong> Eflein can cast this without expending a spell slot by ritual casting for 10 minutes!",
+            upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
+            flavor: "Eflein taps her temple with salt and soot, aligning her mind to decipher even the most ancient draconic and abyssal scripts.",
+            prepared: false,
+            hasLevelSelect: false,
+            buttons: [
+                { label: "📜 Cast Ritual", class: "btn-roll-action", costSlot: false, onClick: () => castUtility('📜 Comprehend Languages cast (Ritual / 1 hour duration)') }
+            ]
+        },
+        {
+            id: "protev",
+            name: "🛡️ Protection from Evil/Good",
+            tag: "1st Lvl • Concentration",
+            tagColor: "#fbbf24",
+            school: "1st-Level Abjuration",
+            castingTime: "1 Action",
+            range: "Touch",
+            components: "V, S, M (holy water or powdered silver and iron)",
+            duration: "Concentration, up to 10 minutes",
+            attackMod: "Defensive Ward vs Aberrations, Undead, Fiends",
+            damage: "Disadvantage on enemy attacks & immunity to Charmed/Frightened",
+            desc: "Concentration: Disadv on attacks from Undead/Fiends/Aberrations.",
+            fullRules: "Until the spell ends, one willing creature you touch is protected against certain types of creatures: Aberrations, Celestials, Elementals, Fey, Fiends, and Undead.<br><br>The protection grants several benefits: Creatures of those types have <strong>Disadvantage on attack rolls</strong> against the target. The target also can't be Charmed, Frightened, or Possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.",
+            upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
+            flavor: "Eflein sprinkles powdered silver, forging a sacred boundary that repels foul monstrosities and necrotic undead.",
+            prepared: false,
+            hasLevelSelect: false,
+            buttons: [
+                { label: "🛡️ Cast", class: "btn-roll-action", costSlot: true, onClick: () => castUtility('🛡️ Protection from Evil/Good active (Concentration / 10 min)') }
+            ]
+        }
+    ];
+
+    // Additional Cantrips, Weapons & Relics Database for the Details Modal
+    const spellActionDatabase = {
+        "sling": {
+            id: "sling",
+            name: "🏹 Sling of the Ridge-Runner (+1)",
+            school: "Uncommon Magical Weapon",
+            castingTime: "1 Action (Ranged Attack)",
+            range: "30/120 feet (No Disadvantage at long range!)",
+            components: "Ammunition (sling bullets/stones)",
+            duration: "Instantaneous",
+            attackMod: "+5 to Hit (DEX +2, Prof +2, Magic +1)",
+            damage: "1d4 + 3 Bludgeoning Damage",
+            desc: "Ranged 30/120ft (no disadv). +5 to Hit, 1d4+3 Bludgeoning.",
+            fullRules: "A masterwork dragon-leather sling etched with soaring wind runes looted from the Ridge Camp.<br><br>• <strong>+1 Magic Bonus:</strong> +1 to Attack and Damage rolls.<br>• <strong>Ridge Hunter Trait:</strong> Completely ignores disadvantage when firing at long range (up to 120 feet)!",
+            flavor: "Eflein loads a smooth river stone, whipping the sling in a tight loop and firing with unerring aerodynamic precision.",
+            modalButtons: [
+                { label: "🏹 Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Sling (+1) Attack', 5) },
+                { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Sling (+1) Damage', 4, 3, 'Bludgeoning') }
+            ]
+        },
+        "cutlass": {
+            id: "cutlass",
+            name: "🗡️ Zombie Captain's Cutlass",
+            school: "Uncommon Finesse Blade",
+            castingTime: "1 Action (Melee Attack)",
+            range: "Melee 5 feet",
+            components: "Melee Finesse / Light",
+            duration: "Instantaneous",
+            attackMod: "+4 to Hit (DEX +2, Prof +2)",
+            damage: "1d6 + 2 Slashing or Piercing Damage",
+            desc: "Melee 5ft. +4 to Hit, 1d6+2 Slashing/Piercing. 30ft swim speed.",
+            fullRules: "A barnacle-encrusted naval cutlass imbued with oceanic swiftness looted from the Beach Zombie Captain.<br><br>• <strong>Finesse & Light:</strong> Uses Dexterity modifier for attack and damage rolls.<br>• <strong>Wave-Strider:</strong> Grants the wielder a <strong>30-foot swimming speed</strong> while held in hand!",
+            flavor: "A saltwater-tempered blade that cuts with razor sharpness and pulls the wielder smoothly through ocean currents.",
+            modalButtons: [
+                { label: "🗡️ Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Cutlass Attack', 4) },
+                { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Cutlass Damage', 6, 2, 'Slashing') }
+            ]
+        },
+        "rayoffrost": {
+            id: "rayoffrost",
+            name: "❄️ Ray of Frost",
+            school: "Evocation Cantrip",
+            castingTime: "1 Action",
+            range: "60 feet",
+            components: "V, S",
+            duration: "Instantaneous",
+            attackMod: "+6 Spell Attack",
+            damage: "1d8 Cold Damage & -10ft Target Speed",
+            desc: "Ranged 60ft. +6 to Hit, 1d8 Cold & slows target -10ft.",
+            fullRules: "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target (<strong>+6 to hit</strong>). On a hit, it takes <strong>1d8 cold damage</strong>, and its speed is reduced by 10 feet until the start of your next turn.<br><br>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            flavor: "A stream of crackling sub-zero energy leaps from Eflein's wand, freezing the ground beneath the target's boots.",
+            modalButtons: [
+                { label: "❄️ Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Ray of Frost Attack', 6) },
+                { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Ray of Frost Dmg', 8, 0, 'Cold') }
+            ]
+        },
+        "shockinggrasp": {
+            id: "shockinggrasp",
+            name: "⚡ Shocking Grasp",
+            school: "Evocation Cantrip",
+            castingTime: "1 Action",
+            range: "Touch",
+            components: "V, S",
+            duration: "Instantaneous",
+            attackMod: "+6 Spell Attack (Advantage if target has metal armor)",
+            damage: "1d8 Lightning Damage & Prevents Reactions",
+            desc: "Melee Touch. +6 to Hit, 1d8 Lightning & prevents reactions.",
+            fullRules: "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target (<strong>+6 to hit</strong>). You have <strong>Advantage on the attack roll if the target is wearing armor made of metal</strong>.<br><br>On a hit, the target takes <strong>1d8 lightning damage</strong>, and <strong>it can't take reactions until the start of its next turn</strong>. (Allows you or allies to move away without triggering Opportunity Attacks!).<br><br>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            flavor: "Eflein grabs an attacker with sparks dancing across her fingers, jolting their nervous system and disabling their guard.",
+            modalButtons: [
+                { label: "⚡ Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Shocking Grasp Attack', 6) },
+                { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Shocking Grasp Dmg', 8, 0, 'Lightning') }
+            ]
+        },
+        "magehand": {
+            id: "magehand",
+            name: "✨ Mage Hand",
+            school: "Conjuration Cantrip (High Elf Trait)",
+            castingTime: "1 Action",
+            range: "30 feet (45 ft with Lodestone Bracelet)",
+            components: "V, S",
+            duration: "1 minute",
+            attackMod: "Spectral Manipulation (Up to 10 lbs)",
+            damage: "Utility / Manipulation",
+            desc: "30ft range (45ft with Lodestone). Manipulates objects up to 10 lbs.",
+            fullRules: "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you (extended to 45 feet by Eflein's Cracked Lodestone Bracelet) or if you cast this spell again.<br><br>You can use your action to control the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.<br><br>The hand can't attack, activate magic items, or carry more than 10 pounds.",
+            flavor: "A translucent glowing phantom hand manifests under Eflein's telekinetic control to disarm traps, fetch keys, or lift levers from safety.",
+            modalButtons: [
+                { label: "✨ Cast Mage Hand", class: "btn-roll-action", onClick: () => castUtility('✨ Cast Mage Hand (30ft/45ft Range magnetic pull)') }
+            ]
+        },
+        "prestidigitation": {
+            id: "prestidigitation",
+            name: "🖐️ Prestidigitation",
+            school: "Transmutation Cantrip",
+            castingTime: "1 Action",
+            range: "10 feet",
+            components: "V, S",
+            duration: "Up to 1 hour",
+            attackMod: "Minor Magic Tricks",
+            damage: "Sensory effects, sparks, lighting torches, cleaning/flavoring",
+            desc: "Minor sensory tricks, sparks, lighting fires, cleaning/flavoring objects.",
+            fullRules: "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:<br><br>• You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.<br>• You instantaneously light or snuff out a candle, a torch, or a small campfire.<br>• You instantaneously clean or soil an object no larger than 1 cubic foot.<br>• You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.<br>• You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.<br>• You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.<br><br>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.",
+            flavor: "Eflein performs casual sleight of magic—warming cold tea, lighting campfires with a snap, or conjuring glowing elven sigils.",
+            modalButtons: [
+                { label: "🖐️ Cast Prestidigitation", class: "btn-roll-action", onClick: () => castUtility('🖐️ Cast Prestidigitation (Tricks / Sensory Effects)') }
+            ]
+        }
+    };
+
+    const defaultItems = [
+        "🗡️ Shortsword",
+        "🗡️ Zombie Captain's Cutlass",
+        "🥽 Myla's Draconic Abyssal Goggles",
+        "🐉 Astalagan's Awakened Amber Scale",
+        "🧲 Cracked Lodestone Bracelet",
+        "📜 Spell Scroll of Absorb Elements",
+        "🤿 Spore-Filter Rebreather Mask",
+        "🧪 3x Potion of Healing",
+        "🧀 Cheese Bread",
+        "🥩 Philly Cheese Steak Bread",
+        "🐟 Salmon Bread",
+        "🌟 Eflein's Special Bread",
+        "🥯 Dragon's Rest Bagel",
+        "📖 Compass Rose Log Fragment & Spellbook",
+        "🏹 Sling of the Ridge-Runner (+1)",
+        "👘 Robe of Arcane Reserve",
+        "🪄 Wand of Magic Missiles"
+    ];
+
+    // ==========================================
+    // ❤️ UNIFIED HP & TEMPORARY HP ENGINE
+    // ==========================================
+    function updateHPUI() {
+        const hpDisp = document.getElementById('hp-disp');
+        const hpBar = document.getElementById('hp-bar');
+        const hpTempBar = document.getElementById('hp-temp-bar');
+
+        const basePct = Math.max(0, Math.min(100, (curHP / maxHP) * 100));
+        hpBar.style.width = `${basePct}%`;
+
+        if (tempHP > 0) {
+            hpDisp.innerText = `${curHP} (+${tempHP} Temp) / ${maxHP}`;
+            hpDisp.style.color = 'var(--accent-blue)';
+            hpDisp.style.textShadow = '0 0 8px rgba(56, 189, 248, 0.4)';
+            
+            const tempPct = Math.min(100, (tempHP / maxHP) * 100);
+            hpTempBar.style.width = `${tempPct}%`;
+        } else {
+            hpDisp.innerText = `${curHP}/${maxHP}`;
+            hpDisp.style.textShadow = 'none';
+            hpTempBar.style.width = '0%';
+
+            if (basePct > 50) {
+                hpBar.style.backgroundColor = 'var(--accent-green)';
+                hpDisp.style.color = 'var(--accent-green)';
+            } else if (basePct > 25) {
+                hpBar.style.backgroundColor = 'var(--accent-gold)';
+                hpDisp.style.color = 'var(--accent-gold)';
+            } else {
+                hpBar.style.backgroundColor = 'var(--accent-red)';
+                hpDisp.style.color = 'var(--accent-red)';
+            }
+        }
+    }
+
+    function stepHP(delta) {
+        if (delta > 0) {
+            if (curHP < maxHP) {
+                curHP += 1;
+                logRoll(`💚 <strong>+1 HP:</strong> ${curHP}/${maxHP}`);
+            } else {
+                tempHP += 1;
+                logRoll(`🛡️ <strong>+1 Temporary HP:</strong> ${curHP} (+${tempHP} Temp) / ${maxHP}`);
+            }
+        } else {
+            if (tempHP > 0) {
+                tempHP -= 1;
+                logRoll(`💥 <strong>-1 HP (Absorbed by Temp):</strong> ${curHP} (+${tempHP} Temp) / ${maxHP}`);
+            } else if (curHP > 0) {
+                curHP -= 1;
+                logRoll(`💥 <strong>-1 HP:</strong> ${curHP}/${maxHP}`);
+            }
+        }
+        updateHPUI();
+    }
+
+    function applyDamage() {
+        const input = document.getElementById('hp-input');
+        const dmg = parseInt(input.value) || 1;
+        input.value = '';
+
+        let remainingDmg = dmg;
+        let tempAbsorbed = 0;
+
+        if (tempHP > 0) {
+            if (tempHP >= remainingDmg) {
+                tempHP -= remainingDmg;
+                tempAbsorbed = remainingDmg;
+                remainingDmg = 0;
+            } else {
+                tempAbsorbed = tempHP;
+                remainingDmg -= tempHP;
+                tempHP = 0;
+            }
+        }
+
+        if (remainingDmg > 0) {
+            curHP = Math.max(0, curHP - remainingDmg);
+        }
+
+        updateHPUI();
+        logRoll(`💥 <strong>Damage Taken:</strong> ${dmg} Total (${tempAbsorbed > 0 ? tempAbsorbed + ' absorbed by Temp, ' : ''}${remainingDmg} to Base HP). HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''}`);
+    }
+
+    function applyHeal() {
+        const input = document.getElementById('hp-input');
+        const heal = parseInt(input.value) || 1;
+        input.value = '';
+
+        const prev = curHP;
+        curHP = Math.min(maxHP, curHP + heal);
+        updateHPUI();
+        logRoll(`💚 <strong>Healed:</strong> +${heal} HP (HP: ${prev} ➔ ${curHP}/${maxHP}).`);
+    }
+
+    function takeShortRest() {
+        if (shortRestsRemaining <= 0) {
+            logRoll(`⚠️ <strong>0 Short Rests remaining today!</strong> (Max 2 per day. Take a Full Long Rest to reset).`);
+            return;
+        }
+        shortRestsRemaining--;
+        const healAmt = Math.max(1, Math.ceil(maxHP * 0.25)); // 25% of Max HP (14 * 0.25 = 4 HP)
+        const prevHP = curHP;
+        curHP = Math.min(maxHP, curHP + healAmt);
+
+        helpTokens = Math.min(maxHelpTokens, helpTokens + 1);
+        updateHelpDisplay();
+        updateHPUI();
+
+        logRoll(`☕ <strong>Short Rest Taken (${shortRestsRemaining}/2 remaining today):</strong> Restored <span style="color:var(--accent-green); font-weight:700;">+${healAmt} HP</span> (HP: ${prevHP} ➔ ${curHP}/${maxHP}) & gained <span style="color:#67e8f9; font-weight:700;">+1 Help Token</span> (${helpTokens}/2)! (Remember Arcane Recovery if unspent)`);
+    }
+
+    function clearTempHP() {
+        tempHP = 0;
+        updateHPUI();
+        logRoll(`🛡️ Temporary HP cleared.`);
+    }
+
+    function resetHP() {
+        curHP = maxHP;
+        tempHP = 0;
+        shortRestsRemaining = maxShortRests;
+        helpTokens = maxHelpTokens;
+        updateHelpDisplay();
+        refillSlots();
+        updateHPUI();
+        logRoll(`⛺ <strong>Full Long Rest:</strong> Restored HP to ${maxHP}/${maxHP}, cleared Temp HP, reset Short Rests to 2/2, full Spell Slots & Help Tokens restored to 2/2!`);
+    }
+
+    // ==========================================
+    // 🛡️ DYNAMIC AC & BUFF ENGINE
+    // ==========================================
+    function updateACDisplay() {
+        const acDisp = document.getElementById('ac-disp');
+        const mageCard = document.getElementById('card-mage-armor-toggle');
+        const mageBadge = document.getElementById('badge-mage-armor');
+        const mageSub = document.getElementById('sub-mage-armor');
+        const shieldCard = document.getElementById('card-shield-toggle');
+        const shieldBadge = document.getElementById('badge-shield');
+
+        let effectiveBase = isMageArmorActive ? 15 : 12;
+        let totalAC = effectiveBase + (isShieldActive ? 5 : 0);
+
+        acDisp.innerText = totalAC;
+
+        if (isMageArmorActive) {
+            mageCard.classList.add('active-buff');
+            mageBadge.className = 'toggle-badge on';
+            mageBadge.innerText = 'ON (15)';
+            mageSub.innerText = 'Base AC: 15 (Active)';
+        } else {
+            mageCard.classList.remove('active-buff');
+            mageBadge.className = 'toggle-badge off';
+            mageBadge.innerText = 'OFF (12)';
+            mageSub.innerText = 'Base AC: 12';
+        }
+
+        if (isShieldActive) {
+            shieldCard.classList.add('active-buff');
+            shieldBadge.className = 'toggle-badge on';
+            shieldBadge.innerText = '+5 ACTIVE';
+        } else {
+            shieldCard.classList.remove('active-buff');
+            shieldBadge.className = 'toggle-badge off';
+            shieldBadge.innerText = '+5 AC';
+        }
+    }
+
+    function toggleMageArmorBuff() {
+        isMageArmorActive = !isMageArmorActive;
+        updateACDisplay();
+        logRoll(`🔮 <strong>Mage Armor:</strong> Toggled ${isMageArmorActive ? 'ON (Base AC ➔ 15)' : 'OFF (Base AC ➔ 12)'}. Total AC: ${document.getElementById('ac-disp').innerText}`);
+    }
+
+    function toggleShieldReactionBuff() {
+        isShieldActive = !isShieldActive;
+        updateACDisplay();
+        logRoll(`🛡️ <strong>Shield Reaction:</strong> Toggled ${isShieldActive ? 'ON (+5 AC buff active)' : 'OFF'}. Total AC: ${document.getElementById('ac-disp').innerText}`);
+    }
+
+    function castShieldSpell() {
+        if (curSlots > 0) modSlot(-1);
+        isShieldActive = true;
+        updateACDisplay();
+        logRoll(`🛡️ <strong>Cast Shield:</strong> +5 AC reaction active (AC: ${document.getElementById('ac-disp').innerText}) until start of next turn! Blocks Magic Missile.`);
+    }
+
+    function activateMageArmorSpell() {
+        if (curSlots > 0) modSlot(-1);
+        isMageArmorActive = true;
+        updateACDisplay();
+        logRoll(`🧙‍♂️ <strong>Cast Mage Armor:</strong> 1st-level slot expended. Base AC becomes 15 for 8 hours!`);
+    }
+
+    // ==========================================
+    // 🤝 HELP TOKENS & CLASS POWERS
+    // ==========================================
+    function updateHelpDisplay() {
+        document.getElementById('help-tokens-disp').innerText = `${helpTokens} / ${maxHelpTokens}`;
+    }
+
+    function rollHelpToken() {
+        if (helpTokens <= 0) {
+            logRoll(`⚠️ <strong>0 Help Tokens remaining!</strong> Regain +1 on Short Rest, or all 2 on Long Rest.`);
+            return;
+        }
+        helpTokens--;
+        updateHelpDisplay();
+        const d6 = Math.floor(Math.random() * 6) + 1;
+        logRoll(`🤝 <strong>Eflein spent a Help Token (+1d6 within 30ft):</strong> Rolled <span style="color:#67e8f9; font-weight:700;">+${d6}</span> to ally check! (${helpTokens}/2 remaining)`);
+    }
+
+    function modHelpToken(delta) {
+        helpTokens = Math.max(0, Math.min(maxHelpTokens, helpTokens + delta));
+        updateHelpDisplay();
+        logRoll(`🤝 Help Tokens adjusted: <strong>${helpTokens}/${maxHelpTokens}</strong>`);
+    }
+
+    function resetHelpTokens() {
+        helpTokens = maxHelpTokens;
+        updateHelpDisplay();
+        logRoll(`🤝 Help Tokens restored to 2/2.`);
+    }
+
+    function useRobeOfReserve() {
+        if (curSlots < maxSlots) {
+            curSlots++;
+            renderSlots();
+            logRoll(`👘 <strong>Robe of Arcane Reserve:</strong> Instantly restored 1 spell slot! (${curSlots}/${maxSlots} slots available)`);
+        } else {
+            logRoll(`👘 Robe of Arcane Reserve: Spell slots are already full (${maxSlots}/${maxSlots}).`);
+        }
+    }
+
+    function rollAstalaganSurge() {
+        const d6 = Math.floor(Math.random() * 6) + 1;
+        logRoll(`⚡ <strong>Astalagan's Surge (1/Day):</strong> Rolled <span style="color:#fbbf24; font-weight:700;">+${d6} Lightning Damage</span> added to spell!`);
+    }
+
+    function useRobeOfReserve() {
+        if (spellSlots[1].current < spellSlots[1].max) {
+            spellSlots[1].current++;
+            renderSpellSlots();
+            logRoll(`👘 <strong>Robe of Arcane Reserve:</strong> Instantly restored 1 1st-level spell slot! (${spellSlots[1].current}/${spellSlots[1].max} slots available)`);
+        } else {
+            logRoll(`👘 Robe of Arcane Reserve: 1st-level spell slots are already full (${spellSlots[1].max}/${spellSlots[1].max}).`);
+        }
+    }
+
+    function rollAstalaganSurge() {
+        const d6 = Math.floor(Math.random() * 6) + 1;
+        logRoll(`⚡ <strong>Astalagan's Surge (1/Day):</strong> Rolled <span style="color:#fbbf24; font-weight:700;">+${d6} Lightning Damage</span> added to spell!`);
+    }
+
+    function useArcaneRecovery() {
+        if (spellSlots[1].current < spellSlots[1].max) {
+            spellSlots[1].current++;
+            renderSpellSlots();
+            logRoll(`☕ <strong>Arcane Recovery (Short Rest):</strong> Regained 1 expended 1st-level spell slot (${spellSlots[1].current}/${spellSlots[1].max}).`);
+        } else {
+            logRoll(`☕ Arcane Recovery: 1st-level spell slots already full.`);
+        }
+    }
+
+    // ==========================================
+    // 🔮 MULTI-TIER SPELL SLOTS & SPELLBOOK
+    // ==========================================
+    let characterLevel = 3; // Current Character Level (Level 3 Upgraded)
+    let spellSlots = {
+        1: { current: 4, max: 4, reqLevel: 1 },
+        2: { current: 2, max: 2, reqLevel: 3 },
+        3: { current: 0, max: 0, reqLevel: 5 }
+    };
+
+    function renderSpellSlots() {
+        for (let lvl = 1; lvl <= 3; lvl++) {
+            const slot = spellSlots[lvl];
+            const el = document.getElementById(`slot-pips-${lvl}`);
+            if (!el) continue;
+            if (characterLevel < slot.reqLevel) {
+                el.innerHTML = `<span style="color:#ef4444; font-size:0.68rem; font-weight:700;" title="Unlocks at Character Level ${slot.reqLevel} as per D&D 5e">🔒 Lvl ${slot.reqLevel} Req</span>`;
+            } else if (slot.max === 0) {
+                el.innerHTML = `<span style="color:#64748b; font-size:0.72rem;">— (0/0)</span>`;
+            } else {
+                let pips = "";
+                for (let i = 0; i < slot.max; i++) {
+                    pips += (i < slot.current) ? "🟦 " : "⬛ ";
+                }
+                el.innerHTML = `${pips}<strong>(${slot.current}/${slot.max})</strong>`;
+            }
+        }
+    }
+
+    function toggleSlotTier(lvl) {
+        const slot = spellSlots[lvl];
+        if (characterLevel < slot.reqLevel) {
+            logRoll(`🔒 <strong>Level ${lvl} Spell Slots Locked!</strong> Eflein must reach <strong>Character Level ${slot.reqLevel}</strong> to unlock Level ${lvl} spell slots as per D&D 5e.`);
+            return;
+        }
+        if (slot.max === 0) {
+            slot.max = (lvl === 2 ? 2 : 2);
+            slot.current = slot.max;
+        } else {
+            slot.current = slot.current > 0 ? slot.current - 1 : slot.max;
+        }
+        renderSpellSlots();
+        logRoll(`Level ${lvl} Slots: ${slot.current}/${slot.max} available.`);
+    }
+
+    function modSlotTier(lvl, delta) {
+        const slot = spellSlots[lvl];
+        if (characterLevel < slot.reqLevel && delta > 0) {
+            logRoll(`🔒 <strong>Level ${lvl} Spell Slots Locked!</strong> Eflein must reach <strong>Character Level ${slot.reqLevel}</strong> to unlock Level ${lvl} spell slots as per D&D 5e.`);
+            return;
+        }
+        if (delta > 0 && slot.max === 0) {
+            slot.max = (lvl === 2 ? 2 : 2);
+            slot.current = slot.max;
+        } else if (delta < 0 && slot.max > 0 && slot.current === 0) {
+            slot.max = Math.max(0, slot.max - 1);
+            slot.current = Math.min(slot.current, slot.max);
+        } else {
+            slot.current = Math.max(0, Math.min(slot.max, slot.current + delta));
+        }
+        renderSpellSlots();
+    }
+
+    function refillAllSlots() {
+        for (let lvl = 1; lvl <= 3; lvl++) {
+            spellSlots[lvl].current = spellSlots[lvl].max;
+        }
+        renderSpellSlots();
+        logRoll(`🟦 All Spell Slots restored to full capacity on Rest!`);
+    }
+
+    const maxPreparedSpells = 6; // Level 3 Wizard + INT Mod (+3) = 6 spells max
+
+    function renderSpellbook() {
+        const container = document.getElementById('spellbook-grid');
+        container.innerHTML = '';
+        let prepCount = 0;
+
+        fullSpellbook.forEach(sp => {
+            if (sp.prepared) prepCount++;
+            const card = document.createElement('div');
+            card.className = `action-card ${sp.prepared ? '' : 'unprepared-card'}`;
+
+            const badgeText = sp.prepared ? 'PREPARED' : '+ PREPARE';
+            const badgeBg = sp.prepared ? 'background:rgba(34,197,94,0.15); color:#4ade80; border:1px solid #22c55e;' : 'background:#1e293b; color:#94a3b8; border:1px solid #334155;';
+
+            let controlsHtml = '';
+            if (sp.prepared) {
+                if (sp.hasLevelSelect) {
+                    controlsHtml += `
+                        <select id="lvl-select-${sp.id}" class="lvl-dropdown" title="Select Spell Level">
+                            <option value="1">Lvl 1</option>
+                            <option value="2">Lvl 2</option>
+                            <option value="3">Lvl 3</option>
+                        </select>
+                    `;
+                }
+
+                if (sp.buttons) {
+                    sp.buttons.forEach((btn, bIdx) => {
+                        controlsHtml += `<button class="${btn.class}" onclick="execSpellButton('${sp.id}', ${bIdx})">${btn.label}</button>`;
+                    });
+                }
+            } else {
+                controlsHtml = `<span style="font-size:0.68rem; color:var(--text-muted); font-style:italic;">In Spellbook archive — click toggle to prepare</span>`;
+            }
+
+            const tagColor = sp.tagColor || '#f97316';
+            const tagText = sp.tag || 'Spell • 1 Action';
+
+            card.innerHTML = `
+                <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                    <div>
+                        <div class="action-card-title" onclick="openSpellDetailsModal('${sp.id}')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                            ${sp.name} <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                        </div>
+                        <div style="font-size:0.67rem; font-weight:700; color:${tagColor}; margin-top:1px;">${tagText}</div>
+                    </div>
+                    <button class="btn-act" style="${badgeBg} font-size:0.65rem; padding:2px 6px; font-weight:700; flex-shrink:0;" onclick="toggleSpellPrep('${sp.id}')">${badgeText}</button>
+                </div>
+                <div class="action-desc" style="font-size:0.72rem; color:var(--text-dim); margin-top:2px;">${sp.desc}</div>
+                <div class="action-btn-row">${controlsHtml}</div>
+            `;
+            container.appendChild(card);
+        });
+
+        const counterEl = document.getElementById('prep-counter');
+        if (prepCount >= maxPreparedSpells) {
+            counterEl.innerHTML = `<span style="color:#4ade80; font-weight:700; background:rgba(34,197,94,0.12); padding:2px 6px; border-radius:4px; border:1px solid #22c55e;">${prepCount}/${maxPreparedSpells} Prepared (MAX CAP)</span>`;
+        } else {
+            counterEl.innerHTML = `<span style="color:#67e8f9; font-weight:700;">${prepCount}/${maxPreparedSpells} Prepared</span> <span style="color:var(--text-dim); font-size:0.68rem;">(${maxPreparedSpells - prepCount} slots left)</span>`;
+        }
+    }
+
+    // ==========================================
+    // 🔮 SPELL & ACTION DETAILS MODAL ENGINE
+    // ==========================================
+    function openSpellDetailsModal(spellId) {
+        const sp = spellActionDatabase[spellId] || fullSpellbook.find(s => s.id === spellId);
+        if (!sp) return;
+
+        document.getElementById('spell-modal-title').innerHTML = `${sp.name}`;
+        const body = document.getElementById('spell-modal-body');
+
+        let combatStatsHtml = '';
+        if (sp.attackMod || sp.damage) {
+            combatStatsHtml = `
+                <div style="background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:6px; padding:8px 10px; display:grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap:6px; font-size:0.75rem;">
+                    ${sp.attackMod ? `<div><span style="color:var(--text-dim); font-size:0.68rem; text-transform:uppercase; font-weight:700;">Attack / Save:</span><div style="font-weight:700; color:var(--accent-gold);">${sp.attackMod}</div></div>` : ''}
+                    ${sp.damage ? `<div><span style="color:var(--text-dim); font-size:0.68rem; text-transform:uppercase; font-weight:700;">Damage / Effect:</span><div style="font-weight:700; color:#f87171;">${sp.damage}</div></div>` : ''}
+                </div>
+            `;
+        }
+
+        let upcastHtml = '';
+        if (sp.upcastNotes) {
+            upcastHtml = `
+                <div style="background:rgba(192,132,252,0.08); border-left:3px solid var(--accent-purple); border-radius:4px; padding:7px 9px; font-size:0.75rem; color:#e9d5ff; line-height:1.4;">
+                    <div style="color:var(--accent-purple); text-transform:uppercase; font-size:0.68rem; font-weight:700; margin-bottom:2px;">🔮 At Higher Levels:</div>
+                    ${sp.upcastNotes}
+                </div>
+            `;
+        }
+
+        let flavorHtml = '';
+        if (sp.flavor) {
+            flavorHtml = `
+                <div style="background:#090e1a; border:1px solid #1e293b; border-radius:6px; padding:7px 10px; font-size:0.75rem; color:#cbd5e1; font-style:italic; line-height:1.4;">
+                    "${sp.flavor}"
+                </div>
+            `;
+        }
+
+        body.innerHTML = `
+            <div style="display:flex; flex-direction:column; gap:8px;">
+                <!-- Badge Strip -->
+                <div style="display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
+                    <span class="pill-badge" style="background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); color:#fde68a; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:700;">${sp.school || 'Spell'}</span>
+                    <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#93c5fd; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">⏱️ ${sp.castingTime || '1 Action'}</span>
+                    <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">📏 ${sp.range || 'Self'}</span>
+                    <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">🧩 ${sp.components || 'V, S'}</span>
+                    <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">⏳ ${sp.duration || 'Instantaneous'}</span>
+                </div>
+
+                ${combatStatsHtml}
+
+                <!-- Full Rules & Mechanics -->
+                <div style="background:rgba(56,189,248,0.05); border:1px solid rgba(56,189,248,0.22); border-radius:6px; padding:9px 11px; font-size:0.78rem; color:#f8fafc; line-height:1.5;">
+                    <div style="font-size:0.7rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:4px;">📖 D&D 5e Rules & Mechanics:</div>
+                    <div>${sp.fullRules || sp.desc}</div>
+                </div>
+
+                ${upcastHtml}
+                ${flavorHtml}
+            </div>
+        `;
+
+        const actionsContainer = document.getElementById('spell-modal-actions');
+        actionsContainer.innerHTML = '';
+
+        if (sp.modalButtons) {
+            sp.modalButtons.forEach(btn => {
+                const b = document.createElement('button');
+                b.className = btn.class;
+                b.innerHTML = btn.label;
+                b.onclick = () => { btn.onClick(); };
+                actionsContainer.appendChild(b);
+            });
+        } else if (sp.buttons && sp.prepared) {
+            if (sp.hasLevelSelect) {
+                const sel = document.createElement('select');
+                sel.className = 'lvl-dropdown';
+                sel.id = `modal-lvl-select-${sp.id}`;
+                sel.innerHTML = `
+                    <option value="1">Lvl 1</option>
+                    <option value="2">Lvl 2</option>
+                    <option value="3">Lvl 3</option>
+                `;
+                actionsContainer.appendChild(sel);
+            }
+            sp.buttons.forEach((btn, bIdx) => {
+                const b = document.createElement('button');
+                b.className = btn.class;
+                b.innerHTML = btn.label;
+                b.onclick = () => {
+                    const modalSel = document.getElementById(`modal-lvl-select-${sp.id}`);
+                    const lvl = modalSel ? parseInt(modalSel.value) || 1 : 1;
+                    const mainSel = document.getElementById(`lvl-select-${sp.id}`);
+                    if (mainSel) mainSel.value = lvl;
+                    execSpellButton(sp.id, bIdx);
+                };
+                actionsContainer.appendChild(b);
+            });
+        } else if (sp.buttons && !sp.prepared) {
+            actionsContainer.innerHTML = `<span style="font-size:0.72rem; color:var(--text-muted); font-style:italic;">Unprepared spell (prepare on sheet to cast)</span>`;
+        }
+
+        document.getElementById('spell-modal').classList.add('active');
+    }
+
+    function closeSpellModal() {
+        const modal = document.getElementById('spell-modal');
+        if (modal) modal.classList.remove('active');
+    }
+
+    function closeSpellModalOnBackdrop(e) {
+        if (e.target.id === 'spell-modal') {
+            closeSpellModal();
+        }
+    }
+
+    function toggleSpellPrep(spellId) {
+        const sp = fullSpellbook.find(s => s.id === spellId);
+        if (!sp) return;
+
+        const currentPrepCount = fullSpellbook.filter(s => s.prepared).length;
+
+        if (!sp.prepared && currentPrepCount >= maxPreparedSpells) {
+            logRoll(`⚠️ <strong>Preparation Limit Reached (${currentPrepCount}/${maxPreparedSpells})!</strong> Eflein can only prepare up to <strong>${maxPreparedSpells} spells</strong> at Level 2 (INT Mod +3 + Level 2). Unprepare an active spell first by clicking its green 'PREPARED' badge!`);
+            return;
+        }
+
+        sp.prepared = !sp.prepared;
+        renderSpellbook();
+        const newCount = fullSpellbook.filter(s => s.prepared).length;
+        logRoll(sp.prepared ? `✨ Prepared <strong>"${sp.name}"</strong> (${newCount}/${maxPreparedSpells} Prepared)!` : `📖 Moved <strong>"${sp.name}"</strong> to spellbook archive (${newCount}/${maxPreparedSpells} Prepared).`);
+    }
+
+    function getSelectedSpellLevel(spellId) {
+        const select = document.getElementById(`lvl-select-${spellId}`);
+        return select ? parseInt(select.value) || 1 : 1;
+    }
+
+    function execSpellButton(spellId, btnIdx) {
+        const sp = fullSpellbook.find(s => s.id === spellId);
+        if (!sp || !sp.buttons || !sp.buttons[btnIdx]) return;
+        const btn = sp.buttons[btnIdx];
+        const lvl = getSelectedSpellLevel(spellId);
+
+        if (btn.costSlot) {
+            if (characterLevel < spellSlots[lvl].reqLevel) {
+                logRoll(`🔒 <strong>Cannot cast at Level ${lvl}!</strong> Eflein does not have Level ${lvl} spell slots yet (Unlocks at Character Level ${spellSlots[lvl].reqLevel} as per D&D 5e). Please cast at Level 1!`);
+                return;
+            }
+            if (spellSlots[lvl] && spellSlots[lvl].max > 0) {
+                if (spellSlots[lvl].current > 0) {
+                    spellSlots[lvl].current--;
+                    renderSpellSlots();
+                } else {
+                    logRoll(`⚠️ <strong>0 Level ${lvl} Spell Slots remaining!</strong> Choose another slot tier or rest.`);
+                    return;
+                }
+            } else if (lvl <= 3 && spellSlots[lvl] && spellSlots[lvl].max === 0) {
+                logRoll(`ℹ️ <em>Casting at Level ${lvl} (No Level ${lvl} slots configured — cast freely).</em>`);
+            }
+        }
+        btn.onClick(lvl);
+    }
+
+    // Scaled Spell Rollers
+    function rollMagicMissileScaled(slotLevel) {
+        const darts = 2 + slotLevel; // Lvl 1: 3, Lvl 2: 4, Lvl 3: 5...
+        const rolls = [];
+        let total = 0;
+        for (let i = 0; i < darts; i++) {
+            const r = Math.floor(Math.random() * 4) + 1;
+            rolls.push(r + 1);
+            total += (r + 1);
+        }
+        logRoll(`⚡ <strong>Magic Missile (Level ${slotLevel} Slot • ${darts} Darts):</strong> [${rolls.join(' + ')}] = <span style="color:#fbbf24; font-weight:700;">${total} Force Damage</span> (Auto-Hit!)`);
+    }
+
+    function rollThunderwaveScaled(slotLevel) {
+        const diceCount = 1 + slotLevel; // Lvl 1: 2d8, Lvl 2: 3d8...
+        const rolls = [];
+        let total = 0;
+        for (let i = 0; i < diceCount; i++) {
+            const r = Math.floor(Math.random() * 8) + 1;
+            rolls.push(r);
+            total += r;
+        }
+        logRoll(`🌊 <strong>Thunderwave (Level ${slotLevel} Slot • ${diceCount}d8):</strong> [${rolls.join(' + ')}] = <span style="color:#38bdf8; font-weight:700;">${total} Thunder Damage</span> + 10ft Push (DC 14 Con save for half)`);
+    }
+
+    function rollIceKnifeBurst(slotLevel) {
+        const burstDice = 1 + slotLevel; // Lvl 1: 2d6, Lvl 2: 3d6, Lvl 3: 4d6...
+        const burstRolls = [];
+        let burstTotal = 0;
+        for (let i = 0; i < burstDice; i++) {
+            const r = Math.floor(Math.random() * 6) + 1;
+            burstRolls.push(r);
+            burstTotal += r;
+        }
+        logRoll(`❄️ <strong>Ice Knife Burst (Level ${slotLevel} Slot • ${burstDice}d6):</strong> [${burstRolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${burstTotal} Cold Damage</span> (DC 14 Dex save for creatures within 5ft)`);
+    }
+
+    function rollRayOfSicknessScaled(slotLevel) {
+        const diceCount = 1 + slotLevel; // Lvl 1: 2d8, Lvl 2: 3d8...
+        const rolls = [];
+        let total = 0;
+        for (let i = 0; i < diceCount; i++) {
+            const r = Math.floor(Math.random() * 8) + 1;
+            rolls.push(r);
+            total += r;
+        }
+        logRoll(`🤮 <strong>Ray of Sickness (Level ${slotLevel} Slot • ${diceCount}d8):</strong> [${rolls.join('+')}] = <span style="color:#86efac; font-weight:700;">${total} Poison Damage</span> & DC 14 Con save vs Poisoned!`);
+    }
+
+    function rollSleepScaled(slotLevel) {
+        const diceCount = 3 + (2 * slotLevel); // Lvl 1: 5d8, Lvl 2: 7d8...
+        const rolls = [];
+        let total = 0;
+        for (let i = 0; i < diceCount; i++) {
+            const r = Math.floor(Math.random() * 8) + 1;
+            rolls.push(r);
+            total += r;
+        }
+        logRoll(`💤 <strong>Sleep Spell (Level ${slotLevel} Slot • ${diceCount}d8):</strong> [${rolls.join(' + ')}] = <span style="color:#c084fc; font-weight:700;">${total} HP</span> of creatures put to sleep!`);
+    }
+
+    function castMistyStep() {
+        logRoll(`💨 <strong>Misty Step Cast (2nd-Level • Bonus Action):</strong> Eflein dissolves into a swirl of silvery mist and instantly teleports up to 30 feet to an unoccupied space!`);
+    }
+
+    function rollRimesBindingIce(slotLevel) {
+        const diceCount = 1 + (2 * slotLevel); // Lvl 2: 3d8 (since base is 2nd lvl 3d8), Lvl 3: 4d8
+        const actualDice = slotLevel === 1 ? 3 : (1 + slotLevel); // minimum 3d8
+        const finalDice = Math.max(3, actualDice);
+        const rolls = [];
+        let total = 0;
+        for (let i = 0; i < finalDice; i++) {
+            const r = Math.floor(Math.random() * 8) + 1;
+            rolls.push(r);
+            total += r;
+        }
+        logRoll(`❄️ <strong>Rime's Binding Ice (Level ${slotLevel} Slot • 30ft Cone • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${total} Cold Damage</span> (DC 14 Con save for half). Failed saves: <span style="color:#67e8f9; font-weight:700;">Speed reduced to 0</span> until ice is broken (Action / DC 14 Athletics)!`);
+    }
+
+    function rollShatterScaled(slotLevel) {
+        const diceCount = 1 + (2 * slotLevel) >= 3 ? (1 + slotLevel) : 3;
+        const finalDice = Math.max(3, 1 + slotLevel);
+        const rolls = [];
+        let total = 0;
+        for (let i = 0; i < finalDice; i++) {
+            const r = Math.floor(Math.random() * 8) + 1;
+            rolls.push(r);
+            total += r;
+        }
+        logRoll(`💥 <strong>Shatter (Level ${slotLevel} Slot • 60ft • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#fbbf24; font-weight:700;">${total} Thunder Damage</span> (DC 14 Con save for half). Creatures of inorganic material (stone, crystal, metal) have Disadvantage!`);
+    }
+
+    function castWebSpell() {
+        logRoll(`🕸️ <strong>Web (2nd-Level Conjuration • 60ft • 20ft Cube):</strong> Thick, sticky webs erupt! Area becomes difficult terrain and lightly obscured. Creatures entering or starting their turn must make a <span style="color:#fbbf24; font-weight:700;">DC 14 Dex Save</span> or become <span style="color:#ef4444; font-weight:700;">Restrained</span> (Action: DC 14 Str check to escape). If ignited, burning webs deal 2d4 fire damage!`);
+    }
+
+    function rollAganazzarsScorcher(slotLevel) {
+        const actualDice = slotLevel === 1 ? 3 : (1 + slotLevel); // Lvl 2: 3d8, Lvl 3: 4d8, Lvl 4: 5d8
+        const finalDice = Math.max(3, actualDice);
+        const rolls = [];
+        let total = 0;
+        for (let i = 0; i < finalDice; i++) {
+            const r = Math.floor(Math.random() * 8) + 1;
+            rolls.push(r);
+            total += r;
+        }
+        logRoll(`🔥 <strong>Aganazzar's Scorcher (Level ${slotLevel} Slot • 30ft Line • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#f97316; font-weight:700;">${total} Fire Damage</span> (DC 14 Dex save for half). Sculpt Spells automatically protects chosen allies!`);
+    }
+
+    function castAlterSelf(optionName) {
+        logRoll(`🧬 <strong>Alter Self Cast (2nd-Level Transmutation • Concentration):</strong> Eflein's body magically shifts into <span style="color:#a855f7; font-weight:700;">${optionName}</span>!`);
+    }
+
+    function castUtility(text) {
+        logRoll(text);
+    }
+
+    // ==========================================
+    // 🪄 WAND OF MAGIC MISSILES (7 CHARGES)
+    // ==========================================
+    let wandCharges = 7;
+    const maxWandCharges = 7;
+
+    function modWandCharges(delta) {
+        wandCharges = Math.max(0, Math.min(maxWandCharges, wandCharges + delta));
+        updateWandUI();
+    }
+
+    function updateWandUI() {
+        const el = document.getElementById('wand-charges-disp');
+        if (el) el.innerText = `${wandCharges} / ${maxWandCharges} Charges`;
+    }
+
+    function useWandOfMagicMissiles(charges = 1) {
+        if (wandCharges < charges) {
+            logRoll(`⚠️ <strong>Wand of Magic Missiles:</strong> Not enough charges (${wandCharges}/${maxWandCharges})! Requires a Long Rest to recharge.`);
+            return;
+        }
+        wandCharges -= charges;
+        updateWandUI();
+        const darts = 2 + charges; // 1 charge = 3 darts, 2 charges = 4 darts...
+        const rolls = [];
+        let total = 0;
+        for (let i = 0; i < darts; i++) {
+            const d4 = Math.floor(Math.random() * 4) + 1;
+            const dartDmg = d4 + 1;
+            rolls.push(`[d4:${d4}+1 = ${dartDmg}]`);
+            total += dartDmg;
+        }
+        logRoll(`🪄 <strong>WAND OF MAGIC MISSILES (Expended ${charges} Charge • ${darts} Force Darts):</strong> ${rolls.join(', ')} = <span style="color:#c084fc; font-weight:700;">${total} Force Damage</span> (Auto-hits! ${wandCharges}/${maxWandCharges} charges left)`);
+    }
+
+    // ==========================================
+    // 🎲 ROLLER SYSTEM & FORMATTER
+    // ==========================================
+    function logRoll(htmlMsg) {
+        const res = document.getElementById('roll-res');
+        res.innerHTML = htmlMsg;
+        res.classList.remove('highlight-roll');
+        void res.offsetWidth;
+        res.classList.add('highlight-roll');
+    }
+
+    function modDiceMod(delta) {
+        const input = document.getElementById('dice-mod');
+        input.value = (parseInt(input.value) || 0) + delta;
+    }
+
+    function toggleAdvantage(mode) {
+        if (rollMode === mode) {
+            rollMode = 'norm';
+            document.getElementById('btn-adv').style.background = '#1e293b';
+            document.getElementById('btn-dis').style.background = '#1e293b';
+        } else {
+            rollMode = mode;
+            document.getElementById('btn-adv').style.background = (mode === 'adv') ? 'var(--accent-green)' : '#1e293b';
+            document.getElementById('btn-dis').style.background = (mode === 'dis') ? 'var(--accent-red)' : '#1e293b';
+        }
+    }
+
+    function rollCustomDie(sides) {
+        const mod = parseInt(document.getElementById('dice-mod').value) || 0;
+        const modStr = mod >= 0 ? `+${mod}` : `${mod}`;
+
+        if (sides === 20 && rollMode !== 'norm') {
+            const r1 = Math.floor(Math.random() * 20) + 1;
+            const r2 = Math.floor(Math.random() * 20) + 1;
+            const chosen = (rollMode === 'adv') ? Math.max(r1, r2) : Math.min(r1, r2);
+            const total = chosen + mod;
+            const modeLabel = rollMode === 'adv' ? 'Advantage' : 'Disadvantage';
+            let msg = `🎲 <strong>d20 (${modeLabel}: [${r1}, ${r2}] ➔ ${chosen}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total}</span></strong>`;
+            if (chosen === 20) msg += " 🔥 <span style='color:#facc15; font-weight:700;'>NAT 20 CRIT!</span>";
+            if (chosen === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 FAIL!</span>";
+            logRoll(msg);
+            return;
+        }
+
+        const roll = Math.floor(Math.random() * sides) + 1;
+        const total = roll + mod;
+        let msg = `🎲 <strong>d${sides} (${roll}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total}</span></strong>`;
+        if (sides === 20 && roll === 20) msg += " 🔥 <span style='color:#facc15; font-weight:700;'>NAT 20 CRIT!</span>";
+        if (sides === 20 && roll === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 FAIL!</span>";
+        logRoll(msg);
+    }
+
+    function rollD20(label, mod) {
+        const modInput = parseInt(document.getElementById('dice-mod').value) || 0;
+        const totalMod = mod + modInput;
+        const modStr = totalMod >= 0 ? `+${totalMod}` : `${totalMod}`;
+
+        if (rollMode !== 'norm') {
+            const r1 = Math.floor(Math.random() * 20) + 1;
+            const r2 = Math.floor(Math.random() * 20) + 1;
+            const chosen = (rollMode === 'adv') ? Math.max(r1, r2) : Math.min(r1, r2);
+            const total = chosen + totalMod;
+            const modeLabel = rollMode === 'adv' ? 'Advantage' : 'Disadvantage';
+            let msg = `🎯 <strong>${label}:</strong> [${r1}, ${r2}] ➔ d20(${chosen}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total}</span> <small style="color:var(--text-muted);">(${modeLabel})</small>`;
+            if (chosen === 20) msg += " 🔥 <span style='color:#facc15; font-weight:700;'>NAT 20 CRIT!</span>";
+            if (chosen === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 FAIL!</span>";
+            logRoll(msg);
+            return;
+        }
+
+        const d20 = Math.floor(Math.random() * 20) + 1;
+        const total = d20 + totalMod;
+        let msg = `🎯 <strong>${label}:</strong> d20(${d20}) ${modStr} = <span style="font-size:1.05rem; color:var(--accent-gold); font-weight:700;">${total}</span>`;
+        if (d20 === 20) msg += " 🔥 <span style='color:#facc15; font-weight:700;'>NAT 20 CRIT!</span>";
+        if (d20 === 1) msg += " 💀 <span style='color:#ef4444; font-weight:700;'>NAT 1 FAIL!</span>";
+        logRoll(msg);
+    }
+
+    function rollFormulaDamage(label, sides, bonus, type) {
+        const roll = Math.floor(Math.random() * sides) + 1;
+        const total = roll + bonus;
+        logRoll(`💥 <strong>${label}:</strong> [d${sides}:${roll} + ${bonus}] = <span style="font-size:1.05rem; color:#f87171; font-weight:700;">${total}</span> ${type} Damage`);
+    }
+
+    // ==========================================
+    // 💰 INTERACTIVE GOLD & CURRENCY PURSE ENGINE WITH LEDGER
+    // ==========================================
+    const DEFAULT_START_GP = 28;
+    const DEFAULT_START_SP = 9;
+
+    function getStoredGold(key, defaultVal) {
+        const val = localStorage.getItem(key);
+        if (val === null || val === 'NaN' || val === undefined || isNaN(parseInt(val))) {
+            localStorage.setItem(key, defaultVal);
+            return defaultVal;
+        }
+        return parseInt(val);
+    }
+
+    let curGP = getStoredGold('dnd_gold_eflein_v3', DEFAULT_START_GP);
+    let curSP = getStoredGold('dnd_silver_eflein_v3', DEFAULT_START_SP);
+
+    function getGoldHistory() {
+        const stored = localStorage.getItem('dnd_gold_tx_eflein');
+        if (!stored) {
+            const initial = [{
+                type: 'initial',
+                label: 'Starting Balance',
+                delta: `${DEFAULT_START_GP} GP, ${DEFAULT_START_SP} SP`,
+                total: `${DEFAULT_START_GP} GP, ${DEFAULT_START_SP} SP`,
+                time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            }];
+            localStorage.setItem('dnd_gold_tx_eflein', JSON.stringify(initial));
+            return initial;
+        }
+        try {
+            return JSON.parse(stored);
+        } catch(e) {
+            return [];
+        }
+    }
+
+    function saveGoldHistory(history) {
+        localStorage.setItem('dnd_gold_tx_eflein', JSON.stringify(history.slice(0, 50)));
+    }
+
+    function logGoldTx(type, label, deltaStr, totalStr) {
+        const history = getGoldHistory();
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        history.unshift({
+            type: type,
+            label: label || (type === 'gain' ? 'Loot / Income' : type === 'spend' ? 'Purchase / Expense' : 'Adjustment'),
+            delta: deltaStr,
+            total: totalStr,
+            time: timeStr
+        });
+        saveGoldHistory(history);
+        renderGoldHistory();
+    }
+
+    function normalizeCoins() {
+        if (isNaN(curGP)) curGP = 0;
+        if (isNaN(curSP)) curSP = 0;
+        
+        // 10 SP = 1 GP Economy (Standard D&D 5e)
+        // Handle SP overflow (>= 10)
+        if (curSP >= 10) {
+            const extraGP = Math.floor(curSP / 10);
+            curGP += extraGP;
+            curSP = curSP % 10;
+        }
+        
+        // Handle SP underflow (< 0) by borrowing from GP (1 GP = 10 SP)
+        while (curSP < 0 && curGP > 0) {
+            curGP -= 1;
+            curSP += 10;
+        }
+        
+        // If out of GP and SP is still negative, clamp total to 0
+        if (curGP <= 0 && curSP < 0) {
+            curGP = 0;
+            curSP = 0;
+        }
+    }
+
+    function updateGoldUI() {
+        normalizeCoins();
+        document.getElementById('gold-disp').innerText = curGP;
+        document.getElementById('silver-disp').innerText = curSP;
+        
+        const modalG = document.getElementById('modal-gold-disp');
+        const modalS = document.getElementById('modal-silver-disp');
+        if (modalG) modalG.innerText = curGP;
+        if (modalS) modalS.innerText = curSP;
+
+        localStorage.setItem('dnd_gold_eflein_v2', curGP);
+        localStorage.setItem('dnd_silver_eflein_v2', curSP);
+    }
+
+    function resetGoldPurse() {
+        if (confirm(`Reset Gold Purse to starting balance (${DEFAULT_START_GP} GP, ${DEFAULT_START_SP} SP)?`)) {
+            curGP = DEFAULT_START_GP;
+            curSP = DEFAULT_START_SP;
+            updateGoldUI();
+            logGoldTx('reset', '🔄 Reset to Official Balance', `${DEFAULT_START_GP} GP, ${DEFAULT_START_SP} SP`, `${curGP} GP, ${curSP} SP`);
+            logRoll(`💰 <strong>Gold Purse Reset:</strong> Restored to <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP.`);
+        }
+    }
+
+    function stepGold(delta) {
+        let totalSP = (curGP * 10) + curSP;
+        totalSP = Math.max(0, totalSP + (delta * 10));
+        curGP = Math.floor(totalSP / 10);
+        curSP = totalSP % 10;
+        
+        updateGoldUI();
+        const type = delta > 0 ? 'gain' : 'spend';
+        const deltaStr = `${delta > 0 ? '+' : ''}${delta} GP`;
+        logGoldTx(type, delta > 0 ? 'Quick Add' : 'Quick Spend', deltaStr, `${curGP} GP, ${curSP} SP`);
+        logRoll(`💰 <strong>Gold Purse:</strong> ${deltaStr} ➔ <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP`);
+    }
+
+    function stepSilver(delta) {
+        if (isNaN(curSP)) curSP = DEFAULT_START_SP;
+        if (isNaN(curGP)) curGP = DEFAULT_START_GP;
+        
+        const prevGP = curGP;
+        curSP += delta;
+        normalizeCoins();
+        updateGoldUI();
+        
+        const deltaStr = `${delta > 0 ? '+' : ''}${delta} SP`;
+        let logMsg = `🥈 <strong>Silver Step:</strong> ${deltaStr} ➔ <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, <span style="color:#cbd5e1; font-weight:700;">${curSP} SP</span>`;
+        if (curGP < prevGP) {
+            logMsg += ` <small style="color:#f59e0b;">(Converted 1 GP ➔ 10 SP)</small>`;
+        } else if (curGP > prevGP) {
+            logMsg += ` <small style="color:#86efac;">(10 SP Converted ➔ +1 GP)</small>`;
+        }
+        
+        logGoldTx('silver', delta > 0 ? 'Silver +1' : 'Silver -1', deltaStr, `${curGP} GP, ${curSP} SP`);
+        logRoll(logMsg);
+    }
+
+    function applyGoldAdd() {
+        const input = document.getElementById('gold-input');
+        const reasonInput = document.getElementById('gold-reason-input');
+        const amt = parseInt(input.value) || 0;
+        const memo = reasonInput ? reasonInput.value.trim() : '';
+        if (amt <= 0) return;
+        if (isNaN(curGP)) curGP = DEFAULT_START_GP;
+        curGP += amt;
+        input.value = '';
+        if (reasonInput) reasonInput.value = '';
+        updateGoldUI();
+        logGoldTx('gain', memo || 'Earned Gold', `+${amt} GP`, `${curGP} GP, ${curSP} SP`);
+        logRoll(`💰 <strong>Gained Gold:</strong> +${amt} GP ${memo ? '(' + memo + ') ' : ''}➔ Total: <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP`);
+    }
+
+    function applyGoldSpend() {
+        const input = document.getElementById('gold-input');
+        const reasonInput = document.getElementById('gold-reason-input');
+        const amt = parseInt(input.value) || 0;
+        const memo = reasonInput ? reasonInput.value.trim() : '';
+        if (amt <= 0) return;
+        
+        let totalSP = (curGP * 10) + curSP;
+        const costSP = amt * 10;
+        
+        if (costSP > totalSP) {
+            alert(`Insufficient funds! You have ${curGP} GP, ${curSP} SP but tried to spend ${amt} GP.`);
+            return;
+        }
+        
+        totalSP -= costSP;
+        curGP = Math.floor(totalSP / 10);
+        curSP = totalSP % 10;
+        
+        input.value = '';
+        if (reasonInput) reasonInput.value = '';
+        updateGoldUI();
+        logGoldTx('spend', memo || 'Spent Gold', `-${amt} GP`, `${curGP} GP, ${curSP} SP`);
+        logRoll(`💸 <strong>Spent Gold:</strong> -${amt} GP ${memo ? '(' + memo + ') ' : ''}➔ Remaining: <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP`);
+    }
+
+    function renderGoldHistory() {
+        const list = document.getElementById('modal-tx-list');
+        if (!list) return;
+        const history = getGoldHistory();
+        if (history.length === 0) {
+            list.innerHTML = `<div style="text-align:center; color:var(--text-muted); font-size:0.75rem; padding:12px;">No transactions recorded yet.</div>`;
+            return;
+        }
+        list.innerHTML = history.map(item => {
+            let badgeClass = 'tx-gain';
+            let color = 'var(--accent-green)';
+            if (item.type === 'spend') { badgeClass = 'tx-spend'; color = 'var(--accent-red)'; }
+            else if (item.type === 'silver') { badgeClass = 'tx-silver'; color = 'var(--accent-blue)'; }
+            else if (item.type === 'reset' || item.type === 'initial') { badgeClass = 'tx-reset'; color = 'var(--accent-gold)'; }
+
+            return `
+                <div class="tx-item ${badgeClass}">
+                    <div>
+                        <div style="font-weight:700; color:#f8fafc; display:flex; align-items:center; gap:6px;">
+                            <span>${item.label}</span>
+                            <span style="font-size:0.65rem; color:var(--text-muted); font-weight:normal;">• ${item.time}</span>
+                        </div>
+                        <div style="font-size:0.68rem; color:var(--text-dim);">Balance: ${item.total}</div>
+                    </div>
+                    <div style="font-weight:800; font-family:'JetBrains Mono',monospace; font-size:0.85rem; color:${color};">
+                        ${item.delta}
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    function openGoldHistoryModal() {
+        renderGoldHistory();
+        updateGoldUI();
+        document.getElementById('gold-modal').classList.add('active');
+    }
+
+    function closeGoldHistoryModal() {
+        document.getElementById('gold-modal').classList.remove('active');
+    }
+
+    function closeGoldHistoryOnBackdrop(e) {
+        if (e.target.id === 'gold-modal') {
+            closeGoldHistoryModal();
+        }
+    }
+
+    function clearGoldHistory() {
+        if (confirm("Clear all recorded transaction history? Current balance will be kept.")) {
+            localStorage.setItem('dnd_gold_tx_eflein', JSON.stringify([{
+                type: 'initial',
+                label: 'History Reset',
+                delta: `${curGP} GP, ${curSP} SP`,
+                total: `${curGP} GP, ${curSP} SP`,
+                time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            }]));
+            renderGoldHistory();
+            logRoll("📜 Gold transaction history cleared.");
+        }
+    }
+
+    // ==========================================
+    // 🎒 INVENTORY MANAGEMENT & WORLD LOOT VAULT
+    // ==========================================
+    const worldLootVault = {
+        "potion of healing": {
+            name: "🧪 Potion of Healing",
+            category: "HEAL • Uncommon Potion",
+            origin: "Dragon's Rest Pharmacy / Tarak's Brews",
+            desc: "A shimmering ruby-red liquid smelling of almond and wild berries.",
+            effect: "• <strong>Bonus Action (Quick Sip):</strong> Restores <strong>2d6 Hit Points</strong>.<br>• <strong>Full Action (Full Chug):</strong> Restores <strong>100% FULL MAX HP</strong>!"
+        },
+        "elixir of health": {
+            name: "🍷 Elixir of Health (Legendary)",
+            category: "HEAL • Legendary Relic Potion",
+            origin: "Distilled from The Ruby Morel (Seagrow Caves)",
+            desc: "A thick, glowing crimson elixir that radiates radiant warmth and divine vitality.",
+            effect: "• <strong>Action to Drink:</strong> Cures any disease, poison, blindness, deafness, and paralysis + grants <strong>+20 Temporary HP</strong>.<br>• 🕊️ <strong>0 HP Miracle Revive:</strong> If administered to a dying/0 HP ally, instantly revives them to <strong>100% FULL MAX HP</strong>!"
+        },
+        "diluted drake blood potion": {
+            name: "🐉 Diluted Drake Blood Potion",
+            category: "BUFF • Rare Combat Alchemy",
+            origin: "Distilled from Fume Drake Venom Sacs (Tarak)",
+            desc: "A boiling orange draught that causes the drinker's veins to glow with draconic fury.",
+            effect: "• <strong>Action to Drink:</strong> Grants <strong>+1 to all Attack Rolls and +2 to all Damage Rolls</strong> on all weapon & spell dice for the entire day (lasts until next Long Rest)!"
+        },
+        "drake blood potion": {
+            name: "🐉 Drake Blood Potion",
+            category: "BUFF • Rare Combat Alchemy",
+            origin: "Distilled from Fume Drake Venom Sacs (Tarak)",
+            desc: "A boiling orange draught that causes the drinker's veins to glow with draconic fury.",
+            effect: "• <strong>Action to Drink:</strong> Grants <strong>+1 to all Attack Rolls and +2 to all Damage Rolls</strong> on all weapon & spell dice for the entire day (lasts until next Long Rest)!"
+        },
+        "astalagan's awakened amber scale": {
+            name: "🐉 Astalagan's Awakened Amber Scale",
+            category: "LEGENDARY SCALE • Attuned Focus",
+            origin: "Bahamut Altar Statue / Bronze Dragon Triarch",
+            desc: "A warm, humming amber dragon scale awakened in sacred spring water.",
+            effect: "• <strong>+1 to Lightning Spell Attacks & Save DC</strong> (DC 14, Hit +6)<br>• <strong>Lightning Surge (1/day):</strong> Deals +1d6 Lightning damage on a spell hit.<br>• <strong>Purifies Undead:</strong> Touch cleanses Orcus necrotic curses and repels drowned ghouls."
+        },
+        "clyssavar's rimefrost silver scale": {
+            name: "❄️ Clyssavar's Rimefrost Silver Scale",
+            category: "LEGENDARY SCALE • Attuned Relic",
+            origin: "Submerged Captain's Hold of Compass Rose / Silver Dragon Triarch",
+            desc: "A mirror-bright silver scale covered in permafrost patterns.",
+            effect: "• <strong>+1 to Attack & Save DC on all Cold Spells & Cold weapon strikes</strong><br>• <strong>Resistance to Cold Damage</strong><br>• <strong>Glacial Slow Burst (1/day):</strong> Deals +1d6 Cold damage and reduces target speed by an extra 10 ft."
+        },
+        "turadaer's solar gold scale": {
+            name: "☀️ Turadaer's Solar Gold Scale",
+            category: "LEGENDARY SCALE • Attuned Holy Relic",
+            origin: "Clifftop Observatory (Area D5 Planetarium) / Gold Dragon Triarch",
+            desc: "A heavy, radiant gold scale shining with the brilliance of a midday sun.",
+            effect: "• <strong>+1 to AC & All Saving Throws</strong><br>• <strong>+1 to Spell Attack Rolls & Save DC</strong> (DC 14, Hit +6)<br>• <strong>Radiant Bastion (10ft Aura):</strong> Allies in aura gain +1d4 to their first attack/save each round.<br>• <strong>Beacon of Dawn (1/day):</strong> Restores <strong>2d8 + WIS HP</strong> to all allies within 30 ft."
+        },
+        "myla's draconic abyssal goggles": {
+            name: "🥽 Myla's Draconic Abyssal Goggles",
+            category: "GEAR • Uncommon",
+            origin: "Crafted by Myla 'Goggles' at Dragon's Rest",
+            desc: "Tinted bronze-rimmed sea-quartz goggles engineered with draconic clarity lenses.",
+            effect: "• Grants <strong>Darkvision 60 ft</strong>.<br>• <strong>Murky Underwater Clarity:</strong> Completely ignores sight and darkness penalties in deep or murky submerged waters!"
+        },
+        "wand of magic missiles": {
+            name: "🪄 Wand of Magic Missiles",
+            category: "OFFENSIVE • Uncommon Arcane Focus",
+            origin: "Octopus Den (Seagrow Caves B1)",
+            desc: "A polished driftwood wand tipped with an iridescent force crystal.",
+            effect: "• Holds <strong>7 Charges</strong> (recharges 1d6+1 at dawn).<br>• Spend 1 charge to cast 1st-level *Magic Missile* (3 auto-hitting force darts, 1d4+1 each). Spend additional charges to upcast (+1 dart per charge)."
+        },
+        "robe of arcane reserve": {
+            name: "👘 Robe of Arcane Reserve (The Ley-Weaver's Mantle)",
+            category: "ARMOR • Uncommon Wondrous Item",
+            origin: "Dragon's Rest Cloister Vault",
+            desc: "Deep indigo robes woven with fine silver ley-line thread.",
+            effect: "• <strong>1 / Day Action:</strong> Instantly regain 1 expended 1st-level Spell Slot without resting!"
+        },
+        "cracked lodestone bracelet": {
+            name: "🧲 Cracked Lodestone Bracelet",
+            category: "FOCUS • Uncommon",
+            origin: "Myla's Scrap Workshop",
+            desc: "Magnetic iron-ore beads threaded on braided draconian copper wire.",
+            effect: "• Grants <strong>+1 to Initiative</strong>.<br>• Extends <em>Mage Hand</em> range by +15 ft and allows magnetic manipulation of small metal objects."
+        },
+        "spore-filter rebreather mask": {
+            name: "🤿 Spore-Filter Rebreather Mask",
+            category: "GEAR • Common",
+            origin: "Tarak & Myla's Collaborative Craft",
+            desc: "A fitted leather mask with dried lavender, active charcoal, and sea sponge filters.",
+            effect: "• Grants <strong>Advantage on Constitution Saving Throws</strong> against cavern spores, sulfur fumes, toxic gases, and fungal rot."
+        },
+        "sling/bow of the ridge-runner (+1)": {
+            name: "🏹 Sling / Bow of the Ridge-Runner (+1)",
+            category: "WEAPON • Uncommon Magical Sling",
+            origin: "Kobold Ridge Camp Commander Loot",
+            desc: "A reinforced dragon-leather sling etched with soaring wind glyphs.",
+            effect: "• <strong>+1 bonus to Attack and Damage rolls</strong> (1d4+1 bludgeoning).<br>• <strong>Ridge Hunter:</strong> Completely ignores Disadvantage at long range (up to 120 ft)!"
+        },
+        "zombie captain's cutlass": {
+            name: "🗡️ Zombie Captain's Cutlass",
+            category: "WEAPON • Uncommon Magical Cutlass",
+            origin: "Zombie Captain Boss (Beach Ambush / Compass Rose)",
+            desc: "A barnacle-encrusted naval cutlass imbued with oceanic swiftness.",
+            effect: "• <strong>+4 to hit, 1d6+2 slashing damage</strong>.<br>• <strong>Wave-Strider:</strong> Grants the wielder a <strong>30 ft swimming speed</strong> while held!"
+        },
+        "cheese bread": {
+            name: "🧀 Cheese Bread",
+            category: "SPECIALTY BREAD • Snack",
+            origin: "Dragon's Rest Cafeteria (Blepp & Frub)",
+            desc: "Warm, crusty roll filled with sharp aged island goat cheese.",
+            effect: "• Restores <strong>1d8 Hit Points</strong>.<br>• Grants <strong>+2 to Initiative</strong> for the next 1 encounter!"
+        },
+        "philly cheese steak bread": {
+            name: "🥩 Philly Cheese Steak Bread",
+            category: "SPECIALTY BREAD • Snack",
+            origin: "Dragon's Rest Cafeteria (Blepp & Frub)",
+            desc: "Hearty savory bread packed with grilled beef strips and molten spiced cheese.",
+            effect: "• Restores <strong>1d8 Hit Points</strong>.<br>• Grants <strong>+2 to all Attack Rolls</strong> for the next 1 encounter!"
+        },
+        "steak bread": {
+            name: "🥩 Philly Cheese Steak Bread",
+            category: "SPECIALTY BREAD • Snack",
+            origin: "Dragon's Rest Cafeteria (Blepp & Frub)",
+            desc: "Hearty savory bread packed with grilled beef strips and molten spiced cheese.",
+            effect: "• Restores <strong>1d8 Hit Points</strong>.<br>• Grants <strong>+2 to all Attack Rolls</strong> for the next 1 encounter!"
+        },
+        "salmon bread": {
+            name: "🐟 Salmon Bread",
+            category: "SPECIALTY BREAD • Snack",
+            origin: "Dragon's Rest Cafeteria (Blepp & Frub)",
+            desc: "Flaky golden brioche filled with smoked coastal pink salmon and dill herbs.",
+            effect: "• Restores <strong>1d8 Hit Points</strong>.<br>• Grants <strong>+4 Temporary HP</strong>!"
+        },
+        "eflein's special bread": {
+            name: "🌟 Eflein's Special Bread",
+            category: "SPECIALTY BREAD • Snack",
+            origin: "Custom Recipe by Blepp & Frub for Eflein",
+            desc: "A sweet honeyed pastry sprinkled with crushed candied sea-nuts and arcane cinnamon.",
+            effect: "• Restores <strong>1d8 Hit Points</strong>.<br>• Grants <strong>+2 to all Skill Checks</strong> until the next Long Rest!"
+        },
+        "dragon's rest bagel": {
+            name: "🥯 Dragon's Rest Bagel",
+            category: "SPECIALTY BREAD • Snack",
+            origin: "Dragon's Rest Cafeteria (Blepp & Frub)",
+            desc: "A dense, boiled dough ring baked on volcanic basalt stones with savory sea salt.",
+            effect: "• Restores <strong>1d8 Hit Points</strong>.<br>• Grants <strong>+2 to Armor Class (AC)</strong> until the next Short Rest!"
+        },
+        "the vintage of the dawn watch": {
+            name: "🍾 The Vintage of the Dawn Watch",
+            category: "SACRED RELIC • Attuned Holy Vessel",
+            origin: "Father Flubs' Parish Relic Vessel",
+            desc: "An ornate ceramic wine jug consecrated to Eldath and Lathander.",
+            effect: "• Refills daily at dawn with 4 draughts of blessed sacramental wine.<br>• <strong>Toasting Fellowship:</strong> Drinking or toasting grants <strong>1d4+2 Temp HP and Advantage against Fear & Poison</strong>.<br>• Provides continuous nourishment and +1 to all Divine Healing rolls."
+        },
+        "spitfire flask": {
+            name: "💣 Spitfire Flask",
+            category: "EXPLOSIVE • Common Alchemical Weapon",
+            origin: "Kobold Camp Craft / Alchemical Paste",
+            desc: "A volatile clay flask filled with bubbling sulfur-pitch and crushed fire drake glands.",
+            effect: "• <strong>Action to Throw (20 ft range):</strong> Shatters in a 5-ft radius dealing <strong>2d4 Fire Damage</strong> (DC 11 Dex save for half)."
+        },
+        "cloak of protection": {
+            name: "🛡️ Cloak of Protection",
+            category: "ARMOR • Uncommon (Attuned)",
+            origin: "Ancient Dragon's Rest Crypt",
+            desc: "A shimmering silver-grey mantle that pulses with subtle abjuration wards.",
+            effect: "• Grants <strong>+1 to Armor Class (AC)</strong>.<br>• Grants <strong>+1 to all Saving Throws</strong>."
+        },
+        "dragon-scale buckler": {
+            name: "🛡️ Dragon-Scale Buckler",
+            category: "SHIELD • Uncommon",
+            origin: "Kobold Champion (Ridge Camp)",
+            desc: "A lightweight buckler forged from polished blue-bronze dragon scales.",
+            effect: "• Grants <strong>+2 to Armor Class (AC)</strong>.<br>• Weighs half standard shield weight (3 lbs) and leaves off-hand free for simple interactions."
+        },
+        "boots of elvenkind": {
+            name: "👢 Boots of Elvenkind",
+            category: "GEAR • Uncommon",
+            origin: "Shipwreck Hold C9 (Compass Rose)",
+            desc: "Supple deerskin boots that leave no trace and muffle all footfalls.",
+            effect: "• Footsteps make no sound regardless of terrain.<br>• Grants <strong>Advantage on Dexterity (Stealth) checks</strong> that rely on moving silently."
+        },
+        "wind spores": {
+            name: "🍄 Wind Spores (Pouch)",
+            category: "BUFF • Common Consumable Herb",
+            origin: "Hot Springs / Seagrow Caves Myconids",
+            desc: "A small pouch of dried teal fungal spores that generate pure breathing oxygen.",
+            effect: "• Squeeze the spore cap to inhale. For <strong>1 hour</strong>, the creature does not need to breathe (immune to drowning, suffocation, and vacuum)."
+        },
+        "shortsword": {
+            name: "🗡️ Shortsword",
+            category: "WEAPON • Martial Melee",
+            origin: "Standard Adventurer Loadout",
+            desc: "A double-edged steel blade suited for swift thrusts and tight melee.",
+            effect: "• <strong>+4 to hit, 1d6+2 Piercing damage</strong> (Finesse, Light)."
+        },
+        "spell scroll of absorb elements": {
+            name: "📜 Spell Scroll of Absorb Elements",
+            category: "SCROLL • 1st-Level Abjuration",
+            origin: "Seagrow Caves Altar Cache",
+            desc: "A parchment etched with crystalline wards that capture incoming elemental force.",
+            effect: "• <strong>Reaction (when taking Acid, Cold, Fire, Lightning, or Thunder damage):</strong> Grants Resistance to the triggering damage type until start of next turn + your next melee attack deals an extra <strong>1d6 elemental damage</strong>!"
+        },
+        "sling of the ridge-runner": {
+            name: "🏹 Sling of the Ridge-Runner (+1)",
+            category: "WEAPON • Uncommon Magical Sling",
+            origin: "Kobold Ridge Camp Commander Loot",
+            desc: "A reinforced dragon-leather sling etched with soaring wind glyphs.",
+            effect: "• <strong>+1 bonus to Attack and Damage rolls</strong> (1d4+1 bludgeoning).<br>• <strong>Ridge Hunter:</strong> Completely ignores Disadvantage at long range (up to 120 ft)!"
+        },
+        "compass rose": {
+            name: "📖 Compass Rose Log Fragment & Spellbook",
+            category: "QUEST LOGBOOK & MANUSCRIPT • Rare",
+            origin: "Captain's Cabin C4 (Wreck of the Compass Rose) / Eflein's Pack",
+            desc: "Waterlogged, salt-stained parchment leaves bound in brine-rotted naval leather. The ink is handwritten in erratic, grief-stricken elven script.",
+            effect: "• <strong>Spellbook Arcana:</strong> Contains prepared/scribable spells (<em>Mage Armor</em>, <em>Magic Missile</em>, <em>Shield</em>, <em>Thunderwave</em>, <em>Detect Magic</em>, <em>Flaming Sphere</em>).<br>• <strong>Key Lore Revelation:</strong> Deciphers Aleitha's tragedy, the Talisman of Orcus, and the exact ritual required to permanently end the beach zombie plague!",
+            manuscript: `<strong>[Excerpts from the Journal of Lady Aleitha aboard the Compass Rose]</strong><br><br>
+<em>"Decades ago, Captain Brastos commanded the Compass Rose. When his ship was reported lost in a violent storm off Stormwreck Isle, his betrothed, a noblewoman named Aleitha, went mad with grief. Desperate to reunite with her lost lover, she turned to dark forbidden rites, weaving a morbid Talisman of Orcus out of braided silver hair, sea pearls, and finger bones.<br><br>
+She brought the talisman aboard a rescue vessel to search for Brastos—but when her ship sank into the reef, the dark talisman sank into the submerged lower hold.<br><br>
+The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetual state of undead torment. You realize with absolute certainty:<br><br>
+<span style='color:#ef4444; font-weight:bold;'>The drowned zombies on the beach will never stop rising from the ocean depth every foggy tide until someone wades into the submerged hold of the Compass Rose, claims Aleitha's Talisman, and burns it upon Captain Brastos's grave at the Dragon's Rest cemetery!</span>"</em>`
+        }
+    };
+
+    function getItemDetails(rawItemName) {
+        const parsed = parseItemInfo(rawItemName);
+        const clean = parsed.name.toLowerCase().replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').replace(/\(.*?\)/g, '').trim();
+
+        for (let key in worldLootVault) {
+            if (clean.includes(key) || key.includes(clean)) {
+                return {
+                    ...worldLootVault[key],
+                    qty: parsed.qty,
+                    hasQty: parsed.hasQty,
+                    raw: rawItemName
+                };
+            }
+        }
+
+        return {
+            name: (parsed.emoji ? parsed.emoji + ' ' : '') + parsed.name,
+            category: "ADVENTURING GEAR • Loot",
+            origin: "Acquired during campaign exploration",
+            desc: "An item carried in the adventurer's pack.",
+            effect: `• <strong>Item Details:</strong> ${rawItemName}`,
+            qty: parsed.qty,
+            hasQty: parsed.hasQty,
+            raw: rawItemName
+        };
+    }
+
+    function openItemDetailsModal(index) {
+        const items = getStoredItems();
+        if (!items[index]) return;
+        const itemStr = items[index];
+        const details = getItemDetails(itemStr);
+        
+        document.getElementById('item-modal-title').innerHTML = `${details.name}`;
+        const body = document.getElementById('item-modal-body');
+        
+        let manuscriptHtml = '';
+        if (details.manuscript) {
+            manuscriptHtml = `
+                <div style="background:rgba(245,158,11,0.08); border-left:3px solid var(--accent-gold); border-radius:4px; padding:10px; font-family:'Georgia', serif; font-size:0.75rem; color:#fde68a; line-height:1.6; margin-top:2px;">
+                    <div style="font-family:'Cinzel', serif; font-size:0.7rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase; margin-bottom:4px;">📜 Read In-Game Manuscript:</div>
+                    ${details.manuscript}
+                </div>
+            `;
+        }
+
+        body.innerHTML = `
+            <div style="display:flex; flex-direction:column; gap:8px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:4px;">
+                    <span class="pill-badge" style="background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); color:#fde68a; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:700;">${details.category}</span>
+                    <span style="font-size:0.68rem; color:var(--text-muted); font-style:italic;">📍 ${details.origin}</span>
+                </div>
+                <div style="background:#090e1a; border:1px solid #1e293b; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#cbd5e1; font-style:italic; line-height:1.4;">
+                    "${details.desc}"
+                </div>
+                <div style="background:rgba(56,189,248,0.06); border:1px solid rgba(56,189,248,0.25); border-radius:6px; padding:8px 10px; font-size:0.78rem; color:#f8fafc; line-height:1.5;">
+                    <div style="font-size:0.7rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:4px;">⚡ In-Game Mechanics & Effects:</div>
+                    <div>${details.effect}</div>
+                </div>
+                ${manuscriptHtml}
+            </div>
+        `;
+
+        const actions = document.getElementById('item-modal-actions');
+        if (details.hasQty) {
+            actions.innerHTML = `
+                <button class="btn-act btn-act-pre" onclick="stepItemQty(${index}, -1); openItemDetailsModal(${index});" style="color:var(--accent-gold); border-color:rgba(245,158,11,0.4); font-size:0.72rem; padding:4px 8px;">🧪 Consume 1 (${details.qty} left)</button>
+            `;
+        } else {
+            actions.innerHTML = ``;
+        }
+
+        document.getElementById('item-modal').classList.add('active');
+    }
+
+    function closeItemModal() {
+        const modal = document.getElementById('item-modal');
+        if (modal) modal.classList.remove('active');
+    }
+
+    function closeItemModalOnBackdrop(e) {
+        if (e.target.id === 'item-modal') {
+            closeItemModal();
+        }
+    }
+
+    function getStoredItems() {
+        let stored = localStorage.getItem('dnd_inv_eflein_v21');
+        if (!stored) {
+            for (let i = 1; i <= 20; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
+            localStorage.removeItem('dnd_inv_eflein');
+            localStorage.setItem('dnd_inv_eflein_v21', JSON.stringify(defaultItems));
+            return [...defaultItems];
+        }
+        return JSON.parse(stored);
+    }
+
+    function saveStoredItems(items) {
+        localStorage.setItem('dnd_inv_eflein_v21', JSON.stringify(items));
+    }
+
+    // Universal Item Quantity Parsing & Formatting Engine
+    function parseItemInfo(itemStr) {
+        if (!itemStr) return { hasQty: false, qty: 1, emoji: '', name: '', raw: '' };
+        
+        // Match leading emojis/symbols
+        const emojiMatch = itemStr.match(/^([\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\s]+)/u);
+        const emoji = emojiMatch ? emojiMatch[1].trim() + ' ' : '';
+        let rest = (emojiMatch ? itemStr.slice(emojiMatch[0].length) : itemStr).trim();
+
+        let qty = 1;
+        let hasQty = false;
+        let name = rest;
+
+        // Pattern 1: Prefix "13x Item", "13 x Item", "x13 Item"
+        const prefixMatch = rest.match(/^(?:(\d+)\s*[xX]|[xX]\s*(\d+))\s+(.+)$/);
+        // Pattern 2: Suffix "Item x13", "Item 13x", "Item x 13"
+        const suffixMatch = rest.match(/^(.+?)\s+(?:[xX]\s*(\d+)|(\d+)\s*[xX])$/);
+        // Pattern 3: Parenthesized suffix "Item (x13)", "Item (13x)", "Item (13)"
+        const parenMatch = rest.match(/^(.+?)\s*\(\s*(?:[xX]\s*(\d+)|(\d+)\s*[xX]?)\s*\)$/);
+
+        if (prefixMatch) {
+            hasQty = true;
+            qty = parseInt(prefixMatch[1] || prefixMatch[2]) || 1;
+            name = prefixMatch[3].trim();
+        } else if (suffixMatch) {
+            hasQty = true;
+            qty = parseInt(suffixMatch[2] || suffixMatch[3]) || 1;
+            name = suffixMatch[1].trim();
+        } else if (parenMatch) {
+            hasQty = true;
+            qty = parseInt(parenMatch[2] || parenMatch[3]) || 1;
+            name = parenMatch[1].trim();
+        }
+
+        return {
+            hasQty: hasQty,
+            qty: qty,
+            emoji: emoji,
+            name: name,
+            raw: itemStr
+        };
+    }
+
+    function renderInventory() {
+        const list = document.getElementById('inventory-list');
+        if (!list) return;
+        const items = getStoredItems();
+        list.innerHTML = '';
+
+        if (items.length === 0) {
+            list.innerHTML = `<div style="text-align:center; color:var(--text-muted); font-size:0.75rem; padding:10px;">Inventory is empty.</div>`;
+            return;
+        }
+
+        items.forEach((item, index) => {
+            const parsed = parseItemInfo(item);
+            const div = document.createElement('div');
+            div.className = 'inv-row-item';
+
+            let controlsHtml = '';
+            if (parsed.hasQty) {
+                controlsHtml = `
+                    <div class="inv-stepper">
+                        <button class="btn-step-qty" onclick="stepItemQty(${index}, -1)" title="Use / Consume 1 (➖)">➖</button>
+                        <span class="inv-qty-val">${parsed.qty}x</span>
+                        <button class="btn-step-qty" onclick="stepItemQty(${index}, 1)" title="Add / Restock 1 (➕)">➕</button>
+                    </div>
+                    <button class="btn-del-item" onclick="deleteItem(${index})" title="Discard entire stack">✕</button>
+                `;
+                div.innerHTML = `
+                    <div class="inv-item-info" title="Click to view full description and lore">
+                        <span onclick="openItemDetailsModal(${index})" style="cursor:pointer; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">${parsed.emoji}${parsed.name}</span>
+                    </div>
+                    <div class="inv-controls">
+                        ${controlsHtml}
+                    </div>
+                `;
+            } else {
+                controlsHtml = `
+                    <div class="inv-stepper" style="border:none; background:transparent;">
+                        <button class="btn-step-qty" onclick="stepItemQty(${index}, 1)" title="Turn into stack / Add 1 (➕)" style="border:1px solid #334155; border-radius:3px; padding:1px 5px;">➕</button>
+                    </div>
+                    <button class="btn-del-item" onclick="deleteItem(${index})" title="Discard item">✕</button>
+                `;
+                div.innerHTML = `
+                    <div class="inv-item-info" title="Click to view full description and lore">
+                        <span onclick="openItemDetailsModal(${index})" style="cursor:pointer; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">${item}</span>
+                    </div>
+                    <div class="inv-controls">
+                        ${controlsHtml}
+                    </div>
+                `;
+            }
+
+            list.appendChild(div);
+        });
+    }
+
+    // Session Delta Tracking
+    function getSessionDelta() {
+        return {
+            added: JSON.parse(localStorage.getItem('dnd_delta_add_eflein') || '[]'),
+            removed: JSON.parse(localStorage.getItem('dnd_delta_rem_eflein') || '[]')
+        };
+    }
+
+    function saveSessionDelta(delta) {
+        localStorage.setItem('dnd_delta_add_eflein', JSON.stringify(delta.added));
+        localStorage.setItem('dnd_delta_rem_eflein', JSON.stringify(delta.removed));
+    }
+
+    function clearSessionDelta() {
+        localStorage.removeItem('dnd_delta_add_eflein');
+        localStorage.removeItem('dnd_delta_rem_eflein');
+    }
+
+    function recordDeltaItem(type, baseName, count = 1) {
+        if (!baseName || count <= 0) return;
+        const delta = getSessionDelta();
+        const normalizedName = baseName.replace(/^(\d+)\s*[xX]\s*/, '').trim();
+        
+        const oppositeType = type === 'added' ? 'removed' : 'added';
+        const currentList = delta[type];
+        const oppList = delta[oppositeType];
+
+        function findEntryIndex(list, name) {
+            return list.findIndex(entry => {
+                const entryName = entry.replace(/^(\d+)\s*[xX]\s*/, '').trim();
+                return entryName === name;
+            });
+        }
+
+        function getEntryCount(entry) {
+            const m = entry.match(/^(\d+)\s*[xX]\s*/);
+            return m ? parseInt(m[1]) : 1;
+        }
+
+        let oppIdx = findEntryIndex(oppList, normalizedName);
+        if (oppIdx !== -1) {
+            let oppCount = getEntryCount(oppList[oppIdx]);
+            if (oppCount > count) {
+                oppList[oppIdx] = `${oppCount - count}x ${normalizedName}`;
+            } else if (oppCount === count) {
+                oppList.splice(oppIdx, 1);
+            } else {
+                oppList.splice(oppIdx, 1);
+                let remaining = count - oppCount;
+                let currIdx = findEntryIndex(currentList, normalizedName);
+                if (currIdx !== -1) {
+                    let currCount = getEntryCount(currentList[currIdx]);
+                    currentList[currIdx] = `${currCount + remaining}x ${normalizedName}`;
+                } else {
+                    currentList.push(remaining > 1 ? `${remaining}x ${normalizedName}` : `1x ${normalizedName}`);
+                }
+            }
+        } else {
+            let currIdx = findEntryIndex(currentList, normalizedName);
+            if (currIdx !== -1) {
+                let currCount = getEntryCount(currentList[currIdx]);
+                currentList[currIdx] = `${currCount + count}x ${normalizedName}`;
+            } else {
+                currentList.push(count > 1 ? `${count}x ${normalizedName}` : `1x ${normalizedName}`);
+            }
+        }
+
+        saveSessionDelta(delta);
+    }
+
+    function stepItemQty(index, delta) {
+        const items = getStoredItems();
+        if (!items[index]) return;
+        const parsed = parseItemInfo(items[index]);
+        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+
+        if (delta < 0) {
+            const newQty = parsed.qty + delta;
+            recordDeltaItem('removed', cleanName, 1);
+            
+            if (newQty <= 0) {
+                const removed = items.splice(index, 1);
+                saveStoredItems(items);
+                renderInventory();
+                logRoll(`🗑️ <strong>Consumed last:</strong> "${parsed.emoji}${parsed.name}" is now depleted and removed.`);
+            } else {
+                items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
+                saveStoredItems(items);
+                renderInventory();
+                logRoll(`🧪 <strong>Consumed 1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} remaining</span>).`);
+            }
+        } else if (delta > 0) {
+            const newQty = parsed.qty + delta;
+            items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
+            saveStoredItems(items);
+            recordDeltaItem('added', cleanName, 1);
+            renderInventory();
+            logRoll(`🎒 <strong>Restocked +1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} total</span>).`);
+        }
+    }
+
+    function addItem() {
+        const input = document.getElementById('new-item-input');
+        const text = input.value.trim();
+        if (!text) return;
+        const items = getStoredItems();
+        items.push(text);
+        saveStoredItems(items);
+
+        const parsed = parseItemInfo(text);
+        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+        recordDeltaItem('added', cleanName, parsed.qty);
+
+        input.value = '';
+        renderInventory();
+        logRoll(`🎒 Added "${text}" to inventory.`);
+    }
+
+    function deleteItem(index) {
+        const items = getStoredItems();
+        if (!items[index]) return;
+        const itemStr = items[index];
+        const parsed = parseItemInfo(itemStr);
+        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+
+        items.splice(index, 1);
+        saveStoredItems(items);
+
+        recordDeltaItem('removed', cleanName, parsed.qty);
+
+        renderInventory();
+        logRoll(`🗑️ Removed/Discarded: "${itemStr}"`);
+    }
+
+    function resetInventory() {
+        if (confirm("Reset inventory and coin purse to official campaign loadout?")) {
+            curGP = DEFAULT_START_GP;
+            curSP = DEFAULT_START_SP;
+            updateGoldUI();
+            saveStoredItems(defaultItems);
+            clearSessionDelta();
+            renderInventory();
+            logRoll("🎒 Inventory, Gold Purse, and session delta reset to official campaign loadout.");
+        }
+    }
+
+    // 1-Click Session Delta Export Protocol
+    function exportSheetState() {
+        const delta = getSessionDelta();
+        let deltaParts = [];
+        if (delta.added.length > 0) {
+            deltaParts.push(`➕ Added: ${delta.added.join(', ')}`);
+        }
+        if (delta.removed.length > 0) {
+            deltaParts.push(`➖ Consumed/Removed: ${delta.removed.join(', ')}`);
+        }
+        const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
+        
+        const slotsStr = `L1(${spellSlots[1].current}/${spellSlots[1].max})${spellSlots[2].max > 0 ? ' L2('+spellSlots[2].current+'/'+spellSlots[2].max+')' : ''}${spellSlots[3].max > 0 ? ' L3('+spellSlots[3].current+'/'+spellSlots[3].max+')' : ''}`;
+        const stateStr = `🧙‍♂️ EFLEIN [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${curGP} GP, ${curSP} SP] • ${invSummary}`;
+        
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(stateStr).then(() => {
+                logRoll(`📋 <strong>Session Delta Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
+            }).catch(() => {
+                prompt("Copy Eflein's session export string:", stateStr);
+            });
+        } else {
+            prompt("Copy Eflein's session export string:", stateStr);
+        }
+    }
+
+    // Event Listeners
+    document.getElementById('hp-input').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') applyDamage();
+    });
+    document.getElementById('new-item-input').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') addItem();
+    });
+    document.getElementById('gold-input').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') applyGoldAdd();
+    });
+
+    // Init on Page Load
+    updateHPUI();
+    updateACDisplay();
+    updateHelpDisplay();
+    updateGoldUI();
+    renderSpellSlots();
+    renderSpellbook();
+    renderInventory();
+</script>
+
+</body>
+</html>
