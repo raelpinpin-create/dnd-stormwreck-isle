@@ -3146,18 +3146,18 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     }
 
     function getStoredItems() {
-        let stored = localStorage.getItem('dnd_inv_eflein_v22');
+        let stored = localStorage.getItem('dnd_inv_eflein_v23');
         if (!stored) {
-            for (let i = 1; i <= 21; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
+            for (let i = 1; i <= 22; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
             localStorage.removeItem('dnd_inv_eflein');
-            localStorage.setItem('dnd_inv_eflein_v22', JSON.stringify(defaultItems));
+            localStorage.setItem('dnd_inv_eflein_v23', JSON.stringify(defaultItems));
             return [...defaultItems];
         }
         return JSON.parse(stored);
     }
 
     function saveStoredItems(items) {
-        localStorage.setItem('dnd_inv_eflein_v22', JSON.stringify(items));
+        localStorage.setItem('dnd_inv_eflein_v23', JSON.stringify(items));
     }
 
     // Universal Item Quantity Parsing & Formatting Engine
