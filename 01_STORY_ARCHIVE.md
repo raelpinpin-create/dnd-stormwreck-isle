@@ -121,12 +121,15 @@
       - 🗡️ **General Varnoth:** Rested frontline vitals, Second Wind & Action Surge ready, Help Tokens at `1/2`, wealth updated to `8 GP, 6 SP`.
       - ❄️ **Vaelith:** Full `2/2` 2nd-level Pact Slots ready.
       - 🐍 **Thurible:** Coiled happily beside the party, basking in the cloister's warmth.
-  9. 💾 **Session 4 Conclusion & Checkpoint:** The party saved and concluded Session 4 in the Dragon's Rest village square by the Bahamut statue—fully rested, attuned to Level 3, outfitted with master alchemy potions and abyssal goggles, and staged at the cloister gates ready to venture south to the *Wreck of the Compass Rose* at the start of Session 5!
+  10. 💭 **Intermission Vignette: Eflein's Reverie (The Dream of the Empty Hearth):** 
+      While resting against the fountain basin in the village square before departure, Eflein slipped into an elven trance-dream. He relived the harrowing prologue of five years ago in Waterdeep—baker Corin’s frantic pounding, the midnight infiltration of the Grand Library, the celestial alignment puzzle, and the automated runite golem echoing her sorrowful voice (*"Intrusion contained... Eflein, if it is you... please turn back"*). 
+      He awoke with a gasp to the cool sea breeze of Stormwreck Isle, his fingers clutching **Lianna’s Farewell Letter**. The memory hardened his resolve tenfold: his wife is an ancient, legendary archmage who walked away from thousands of years of power for him, now summoned by Elminster to unearth ancient power across the Realms. He will conquer Stormwreck Isle, master the draconic leylines, and follow her to the ends of Faerûn!
+  11. 💾 **Session 4 Conclusion & Checkpoint:** The party saved and concluded Session 4 in the Dragon's Rest village square by the Bahamut statue—fully rested, attuned to Level 3, outfitted with master alchemy potions and abyssal goggles, and staged at the cloister gates ready to venture south to the *Wreck of the Compass Rose* at the start of Session 5!
 
 ---
 
 ## 🎯 Active Campaign Quests
-* [ ] **1. Primary Quest (Lost Wife):** Search Stormwreck Isle for Lianna. Geothermal notes recovered from B6 confirm her trail leads from the *Compass Rose* to the Clifftop Observatory!
+* [ ] **1. Primary Quest (The Archmage's Trail):** Trace the path of Eflein's wife **Lianna**—an ancient elven archmage recalled by Elminster. Geothermal notes recovered from Seagrow Caves confirm her trail leads from the *Compass Rose* directly to the Clifftop Observatory!
 * [x] **2. Seagrow Caves Fungal Blight (Chapter 2 — COMPLETED):** Fume Drakes cleared, Fire Snake tamed, Sinensa cured, Ruby Morels and Heartcaps gathered, and volcanic crystal shattered!
 * [ ] **3. Wreck of the Compass Rose (Chapter 3 — ACTIVE):** Healed and rallied with Vaelith at Level 3, raid the *Compass Rose*, defeat the Harpy Matriarch and Zombie Captain, rescue **Clyssavar's Silver Scale**, and cleanse Aleitha's Talisman at Dragon's Rest cemetery!
 * [ ] **4. The Three Metallic Dragon Special Quest:**

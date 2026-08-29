@@ -12,7 +12,7 @@
 * **Hit Points (HP):** **20 / 20** (Hit Dice: `3d6 + 6 CON` — Level 3 Upgraded) | **Armor Class (AC):** **12** *(15 with Mage Armor)* | **Speed:** 30 ft | **Passive Perception:** 13
 * **Spellcasting Specs:** Spell Save DC **14** | Spell Attack Bonus **+6** (with Awakened Scale) | **1st-Level Slots:** **4 / 4** *(Arcane Recovery used)* | **2nd-Level Slots:** **2 / 2** | 👘 **Robe of Arcane Reserve:** `1/1` | 🤝 **Help Tokens:** `2 / 2`
 * **Evocation Features:** 🔮 **Evocation Savant** | 💥 **Sculpt Spells** (Protects allies from AoE damage!)
-* **Key Items:** 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Murky Underwater Clarity), 🪄 **Wand of Magic Missiles (7 Charges)**, Astalagan's Awakened Amber Scale (+1 Focus/DC), Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand), Robe of Arcane Reserve (+1 Slot), Shortsword & Cutlass, Sling of the Ridge-Runner (+1), Scroll of Absorb Elements, Spore-Filter Rebreather Mask, 9 Potions of Healing, 5 Specialty Breads & Bagel (+2 AC), 28 gp 9 sp.
+* **Key Items:** 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Murky Underwater Clarity), 🪄 **Wand of Magic Missiles (7 Charges)**, Astalagan's Awakened Amber Scale (+1 Focus/DC), Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand), Robe of Arcane Reserve (+1 Slot), Shortsword & Cutlass, Sling of the Ridge-Runner (+1), Scroll of Absorb Elements, Spore-Filter Rebreather Mask, 9 Potions of Healing, 5 Specialty Breads & Bagel (+2 AC), 28 gp 9 sp.
 
 ### ❄️ 2. Vaelith Frostborne (Variant Human Warlock 3 — Frost Assassin / Blade Pact)
 * **Concept & Archetype:** Criminal / Spy Background | **Lawful Neutral** | **Frost Assassin & Battlefield Controller** (Tall, slim/bony build, snow-white hair, icy quiet resolve). Royal scion of the White Wyrm King.
@@ -61,12 +61,16 @@
 
 ### 📍 Complete Location & NPC Campaign Guide
 
-#### ⛩️ CHAPTER 1: DRAGON'S REST SANCTUARY (LEVEL 1 HUB & RESURGENCE)
-* **Beach & Dock:** **Encounter:** 2 Drowned Sailors (Zombies). Stepping off rowboat from Neverwinter. Resurgence saves **Blepp (Kobold)** & **Tarak**.
-* **A1: Path & Monastic Cells:** Cliffside stairs lined with vegetable gardens. Bronze dragon statue of Astalagan (Runara's father). Doorways lead to cells: Tarak (cell 2), **General Varnoth** (cell 3 - joins as Sidekick), Myla (cell 4), Kobolds (cells 5-6), Vacant cell for Eflein (cell 1).
-* **A2: Winch House & A3: Kitchen:** Pallet lowered 50ft to water for cargo. Shared dining where Tarak cooks favorite meals.
-* **A4: Library & A5: Temple of Bahamut:** Sanctuary at cliff apex. **Elder Runara (Adult Bronze Dragon)** tends Bahamut statue. Faint protective aura grants +1d4 to non-evil saving throws inside temple.
-* **Cloister Quests:**
+#### ⛩️ CHAPTER 1: DRAGONSREST SETTLEMENT & SANCTUARY (LEVEL 1 HUB & RESURGENCE)
+* **The Marble Stair Ascent (Settlement Entrance):** The primary path leading up into Dragonsrest from the shoreline below, consisting of ancient, weathered marble stairs carved directly into the seaside bluffs that open straight into the cloister. *(Encounter: 2 Drowned Sailors & Zombie Captain beach resurgence saving Blepp & Tarak).*
+* **Dragon Plaza (Village Square):** The vibrant open-air center of Dragonsrest, dominated by a weathered bronze dragon monument on a stone plinth. It serves as the primary gathering ground where local kobolds and residents set up pop-up market stalls, trade trinkets, and share daily news under the gaze of the statue. *(Site of Thurible's legendary idol dance & sanctuary celebrations).*
+* **Tarak's Herbal Area:** Set right along the edge of the ancient pool beneath the falls, where the constant mist and natural runoff nourish rare aquatic flora, mosses, and medicinal herbs used for brewing remedies.
+* **Temple of Bahamut:** Perched atop the high northern cliffs overlooking the cloister, serving as a peaceful sanctuary and shrine dedicated to the Platinum Dragon. Elder Runara tends the altar. Faint protective aura grants **+1d4 to non-evil saving throws** inside temple.
+* **Myla's Workshop:** A bustling smithy and artisan hub packed with forges, anvils, and racks of gear, providing weapons, repaired armor, and essential travel supplies.
+* **Cafeteria & Tavern:** The social center built into the eastern terrace, featuring shared dining tables, food prep areas, and local brews for residents and travelers to unwind. *(Blepp & Frub specialty bakery).*
+* **Quarters Area:** The residential quarters on the lower right terrace, offering communal rest spaces and private bunk rooms for the cloister’s inhabitants.
+* **Gardens:** Sprawling, organized farm plots on the western plateau cultivated with edible crops, root vegetables, and daily staples to sustain Dragonsrest.
+* **Cloister Quests & Hooks:**
   * *Tarak:* Sea Caves fungal blight (gives offering + 2 *Potions of Healing*).
   * *Varnoth & Rix:* Shipwreck investigation (*Compass Rose*).
   * *Runara:* Hands over **Moonstone Key** to Clifftop Observatory after proving worth.
@@ -458,43 +462,51 @@
 #### 💚 1. HEALING & RESTORATION (POTIONS, HERBS & ELIXIRS)
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
 | :--- | :--- | :--- | :--- | :--- |
-| 🧪 **Potion of Healing** | **HEAL • Uncommon Potion** | Party Supply (13 Flubs, 3 Eflein, 1 Vaelith, 1 Varnoth) | `50 gp` *(Craft: 25 gp / 3 Heartcaps)* | **Bonus Action:** Restores **`2d6 Hit Points`**.<br><strong>Full Action:</strong> Restores **`100% FULL MAX HP`**! |
-| 🍷 **Elixir of Health (Legendary)** | **HEAL • Legendary Potion** | Tarak / Ruby Morel (3 in Flubs' Pouch) | `250 gp` *(Craft: 1 Ruby Morel)* | Cures any disease, poison, blindness, deafness, and paralysis + grants **`+20 Temporary HP`**.<br>🕊️ **0 HP Miracle Revive:** If used on a 0 HP ally, restores them to **`100% FULL MAX HP`**! |
-| 🍄 **Heart Cap Mushrooms (Raw)** | **REAGENT • Uncommon Herb** | Area B2/B5 Beds (Seagrow Caves) | `10 gp / cluster` *(3 clusters = 1 Potion)* | Alchemical crafting reagent. Tarak brews 3 clusters into 1x Potion of Healing. |
-| 🍷 **The Ruby Morel (Raw)** | **REAGENT • Rare Fungal Relic** | Area B5 Fungal Throne (Seagrow Caves) | `150 gp` *(Sacred Fungal Relic)* | Sacred fungal relic. Tarak distills 1 morel into 1x Legendary Elixir of Health. |
+| 🧪 **Potion of Healing** | **HEAL • Uncommon Potion** | Party Supply (13 Flubs, 3 Eflein, 1 Vaelith, 1 Varnoth) | `50 GP` *(500 SP • Craft: 25 GP / 2 Heartcaps)* | **Bonus Action:** Restores **`2d6 Hit Points`**.<br><strong>Full Action:</strong> Restores **`100% FULL MAX HP`**! |
+| 🍷 **Elixir of Health (Legendary)** | **HEAL • Legendary Potion** | Tarak / Ruby Morel (3 in Flubs' Pouch) | `5,000 GP` *(Base)* / `15,000 GP` *(Royal Market)* | Cures any disease, poison, blindness, deafness, and paralysis + grants **`+20 Temporary HP`**.<br>🕊️ **0 HP Miracle Revive:** If used on a 0 HP ally, restores them to **`100% FULL MAX HP`**! Prized above gold by archmages & kings. |
+| 🍄 **Heart Cap Mushrooms (Raw)** | **REAGENT • Uncommon Herb** | Area B2/B5 Beds (Seagrow Caves) | `10 GP (100 SP) / cluster` *(2 clusters = 1 Potion)* | Alchemical crafting reagent. Tarak brews 2 clusters into 1x Potion of Healing. |
+| 🍷 **The Ruby Morel (Raw)** | **REAGENT • Rare Fungal Relic** | Area B5 Fungal Throne (Seagrow Caves) | `1,500 GP` *(Priceless Relic)* | Sacred fungal relic. Tarak distills 1 morel into 1x Legendary Elixir of Health. |
 
 #### ⚡ 2. BUFFS, ALCHEMY & COMBAT ENHANCERS
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
 | :--- | :--- | :--- | :--- | :--- |
-| 🐉 **Diluted Drake Blood Potion** | **BUFF • Rare Alchemy** | Tarak / Drake Sacs (2 in Flubs' Pouch) | `75 gp` *(Craft: Drake Sac)* | **Action to drink.** Grants **`+1 to all Attack Rolls and +2 to all Damage Rolls`** on all dice for the entire day (until next Long Rest)! |
-| 🔥 **Sharruth's Cinder-Stone** | **BUFF • Uncommon (Attune)** | Hot Springs / Basalt Fissures | `120 gp` *(Volcanic Relic)* | 1/Day Bonus Action: Weapon deals **`+1d6 Fire Damage`** for 1 min. Emits 10ft warm light; cold resistance. |
-| 🍄 **Wind Spores (4 Pouches)** | **BUFF • Common Consumable** | Hot Springs (Shared Vault) | `15 gp / pouch` *(40 gp set)* | Squeeze cap for oxygen cloud; creature does not need to breathe (underwater/vacuum) for **1 hour**. |
-| 💨 **Fume Smoke Flask** | **TACTICAL • Common Consumable** | Crafted from Fume Drakes | `20 gp` *(Craft: 10 gp + Gland)* | Thrown 20 ft. Creates 15-ft steam cloud for 1 min. DC 11 Con save or 1d6 fire + blinded inside. |
-| 🍾 **The Vintage of the Dawn Watch** | **BUFF • Rare Relic (Attuned: Flubs)** | Sacramental Parish Vessel | `Priceless Holy Relic` | Refills daily with 4 blessed wine draughts. Toast grants **`1d4+2 Temp HP & Adv vs Fear/Poison`**. +1 to Divine Healing. |
+| 🐉 **Diluted Drake Blood Potion** | **BUFF • Uncommon Alchemy** | Tarak / Drake Sacs (2 in Flubs' Pouch) | `150 GP` *(Craft: 75 GP + Drake Sac)* | **Action to drink.** Grants **`+1 to all Attack Rolls and +2 to all Damage Rolls`** on all dice for the entire day (until next Long Rest)! |
+| 🐉 **Pure Drake Blood Potion (Rare)** | **BUFF • Rare Combat Alchemy** | Tarak / Apex Drake Core | `500 GP` *(Craft: 250 GP)* | **Action to drink.** Grants **`+2 to all Attack Rolls and +4 to all Damage Rolls`** on all weapon & spell dice for 24 hours! |
+| 🔥 **Sharruth's Cinder-Stone** | **BUFF • Uncommon (Attune)** | Hot Springs / Basalt Fissures | `150 GP` *(Volcanic Relic)* | 1/Day Bonus Action: Weapon deals **`+1d6 Fire Damage`** for 1 min. Emits 10ft warm light; cold resistance. |
+| 🍄 **Wind Spores (4 Pouches)** | **BUFF • Common Consumable** | Hot Springs (Shared Vault) | `25 GP (250 SP) / pouch` *(60 GP set)* | Squeeze cap for oxygen cloud; creature does not need to breathe (underwater/vacuum) for **1 hour**. |
+| 💨 **Fume Smoke Flask** | **TACTICAL • Common Consumable** | Crafted from Fume Drakes | `20 GP (200 SP)` *(Craft: 10 GP + Gland)* | Thrown 20 ft. Creates 15-ft steam cloud for 1 min. DC 11 Con save or 1d6 fire + blinded inside. |
+| 🍾 **The Vintage of the Dawn Watch** | **BUFF • Sacred Relic (Attuned: Flubs)** | Sacramental Parish Heirloom | `Priceless Sacred Relic` | Refills daily with 4 blessed wine draughts. Toast grants **`1d4+2 Temp HP & Adv vs Fear/Poison`**. +1 to Divine Healing. Ancestral relic of Father Flubs. |
 
 #### ⚔️ 3. WEAPONS & OFFENSIVE ARSENAL
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
 | :--- | :--- | :--- | :--- | :--- |
-| 🗡️ **Mariner's Cutlass (+1)** | **WEAPON • Uncommon** | Zombie Captain / Shipwreck | `150 gp` | **+1 to hit and damage** (`1d6+3` slashing) and grants a **30 ft swimming speed**. |
-| 🏹 **Sling of the Ridge-Runner (+1)** | **WEAPON • Uncommon** | Kobold Camp (Eflein) | `100 gp` | **+1 to hit and damage** (`1d4+1` bludgeoning) and **ignores Disadvantage at long range (120 ft)**. |
-| 🪓 **Twin Notched Bone-Cleavers** | **WEAPON • Uncommon** | Fume Drake Boss (Varnoth) | `75 gp` | **+4 to hit**, **`1d6+2`** slashing + **`1d4 rend`** on double hit. |
-| 🪄 **Wand of Magic Missiles** | **OFFENSIVE • Uncommon** | Octopus Den B1 (7 Charges on Eflein) | `200 gp` | 7 charges. Spend charges to cast *Magic Missile* without spell slots. |
-| 🌊 **Mariner's Driftwood Wand** | **OFFENSIVE • Uncommon** | Shipwreck Coral Reef | `175 gp` | 3 charges (regains 1d3 at dawn). Cast *Shape Water* (1), *Gust* (1), or *Thunderwave* (2, DC 13). |
-| 💣 **Spitfire Flask (2 Flasks)** | **EXPLOSIVE • Common** | Alchemical Paste (Vaelith) | `25 gp / flask` | Thrown 20 ft. Explodes in 5-ft radius dealing **`2d4 Fire Damage`** (DC 11 Dex save for half). |
-| 💍 **Gilded Gallows Ring** | **OFFENSIVE • Uncommon (Attune)** | Tarak's former lockbox | `180 gp` | **+1 to Sleight of Hand** & Adv to hide items. 1/Day: Weapon deals **`+1d6 poison`** + speed 0 (DC 12 Con). |
+| 🗡️ **Mariner's Cutlass (+1)** | **WEAPON • Uncommon** | Zombie Captain / Shipwreck | `350 GP` | **+1 to hit and damage** (`1d6+3` slashing) and grants a **30 ft swimming speed**. |
+| ⚔️ **Azure Wolf Masterwork Longsword** | **WEAPON • Masterwork** | General Varnoth's Military Issue | `800 GP` | **+4 to hit, 1d8+2 Slashing (Versatile 1d10+2)**. Masterwork edge: **Crits on 19 or 20**! |
+| 🗡️ **Frostforged Katana (Pact Blade)** | **WEAPON • Magical Pact** | Bound to Vaelith Frostborne | `Priceless Pact Weapon` | **+4 to hit, 1d8+2 Slashing (Versatile 1d10+2)**. Slasher slow (-10ft speed on hit). Counts as magical. |
+| 🏹 **Sling of the Ridge-Runner (+1)** | **WEAPON • Uncommon** | Kobold Camp (Eflein) | `250 GP` | **+1 to hit and damage** (`1d4+1` bludgeoning) and **ignores Disadvantage at long range (120 ft)**. |
+| 🪓 **Twin Notched Bone-Cleavers** | **WEAPON • Uncommon** | Fume Drake Boss (Varnoth) | `75 GP` | **+4 to hit**, **`1d6+2`** slashing + **`1d4 rend`** on double hit. |
+| 🪄 **Wand of Magic Missiles** | **OFFENSIVE • Uncommon** | Octopus Den B1 (7 Charges on Eflein) | `450 GP` | 7 charges. Spend charges to cast *Magic Missile* without spell slots. |
+| 🌊 **Mariner's Driftwood Wand** | **OFFENSIVE • Uncommon** | Shipwreck Coral Reef | `250 GP` | 3 charges (regains 1d3 at dawn). Cast *Shape Water* (1), *Gust* (1), or *Thunderwave* (2, DC 13). |
+| 💣 **Spitfire Flask (2 Flasks)** | **EXPLOSIVE • Common** | Alchemical Paste (Vaelith) | `25 GP (250 SP) / flask` | Thrown 20 ft. Explodes in 5-ft radius dealing **`2d4 Fire Damage`** (DC 11 Dex save for half). |
+| 🏹 **Heavy Crossbow** | **WEAPON • Martial Ranged** | Neverwinter Armory (Varnoth) | `50 GP` | **+2 to hit, 1d10 Piercing** (Range 100/400 ft, Heavy, Two-Handed, Loading, 20 Bolts). |
+| 💍 **Gilded Gallows Ring** | **OFFENSIVE • Uncommon (Attune)** | Tarak's former lockbox | `250 GP` | **+1 to Sleight of Hand** & Adv to hide items. 1/Day: Weapon deals **`+1d6 poison`** + speed 0 (DC 12 Con). |
 
 #### 🛡️ 4. ARMOR, SHIELDS & PROTECTIVE GEAR
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
 | :--- | :--- | :--- | :--- | :--- |
-| 🥽 **Myla's Draconic Abyssal Goggles** | **GEAR • Uncommon** | Myla's Scrap (Equipped by Eflein) | `35 gp` *(28 gp disc.)* | Tinted bronze-rimed sea-quartz goggles. Grants **Darkvision 60 ft** and **Murky Underwater Clarity** (no sight penalties underwater). |
-| 🛡️ **Cloak of Protection** | **ARMOR • Uncommon (Attune)** | Ancient Crypt (Attuned by Vaelith) | `250 gp` | Grants **+1 to Armor Class (AC)** and **+1 to All Saving Throws**. |
-| 🛡️ **Dragon-Scale Buckler** | **SHIELD • Uncommon** | Kobold Champion | `80 gp` | Grants **+2 to Armor Class (AC)** and weighs half standard shield weight. |
-| 👢 **Boots of Elvenkind** | **GEAR • Uncommon** | Shipwreck Hold C9 | `200 gp` | Steps make no sound; Advantage on Dexterity (Stealth) checks relying on silence. |
-| 🤿 **Spore-Filter Rebreather Mask** | **GEAR • Common** | Myla's Scrap (Eflein) | `15 gp` | Grants **Advantage on CON Saves** vs cave spores, sulfur gas, toxic fumes, and fungal rot. |
-| 🔮 **Cracked Lodestone Bracelet** | **FOCUS • Uncommon** | Myla's Scrap (Eflein) | `45 gp` | Grants **+1 to Initiative** and allows *Mage Hand* to magnetically pull iron objects up to 15 ft. |
-| 💍 **Ring of Resistance** | **DEFENSE • Rare (Attune)** | Owlbear Lair / Sea Hag Cove | `300 gp` | Grants damage resistance to one chosen damage type (Cold, Fire, or Lightning). |
-| 🏮 **Myconid Spore-Lantern** | **UTILITY • Uncommon** | Gifted by Sinensa (Seagrow Caves) | `60 gp` | 30ft violet light; **+2 Perception** in dark. 1/Day: Ally gains Advantage vs Charmed/Frightened. |
-| 🔔 **Astalagan's Resonant Chime** | **DEFENSE • Uncommon** | Bahamut Altar / Cemetery | `120 gp` | 1/Day: Undead within 30 ft make **DC 13 WIS Save** or speed halved + lose reactions (1 min). |
+| 🥽 **Myla's Draconic Abyssal Goggles** | **GEAR • Uncommon** | Myla's Scrap (Equipped by Eflein) | `250 GP` *(175 GP disc.)* | Tinted bronze-rimmed sea-quartz goggles. Grants **Darkvision 60 ft** and **Murky Underwater Clarity** (no sight penalties underwater). |
+| 👘 **Robe of Arcane Reserve** | **GEAR • Uncommon (Attune)** | Sanctuary (Worn by Eflein) | `350 GP` | 1/Day Action: Channel the weave to regain **1 expended 1st-level spell slot**. |
+| 📜 **Spell Scroll of Absorb Elements** | **SCROLL • 1st-Level** | Seagrow Altar (Eflein's Pack) | `50 GP (500 SP)` | Reaction: Resistance to triggering element + next melee strike deals **+1d6 elemental damage**. |
+| 🛡️ **Cloak of Protection** | **ARMOR • Uncommon (Attune)** | Ancient Crypt (Attuned by Vaelith) | `400 GP` | Grants **+1 to Armor Class (AC)** and **+1 to All Saving Throws**. |
+| 🛡️ **Dragon-Scale Buckler** | **SHIELD • Uncommon** | Kobold Champion | `200 GP` | Grants **+2 to Armor Class (AC)** and weighs half standard shield weight (3 lbs). |
+| 🛡️ **Holy Wooden Shield** | **SHIELD • Holy Focus** | Dawn Watch (Father Flubs) | `20 GP (200 SP)` | Grants **+2 to AC** and serves as a holy focus for cleric spellcasting. |
+| 🛡️ **Kobold Shield** | **SHIELD • Common Gear** | Kobold Gift (Father Flubs) | `10 GP (100 SP)` | Grants **+2 to Armor Class (AC)**. |
+| 👢 **Boots of Elvenkind** | **GEAR • Uncommon** | Shipwreck Hold C9 | `300 GP` | Steps make no sound; Advantage on Dexterity (Stealth) checks relying on silence. |
+| 🤿 **Spore-Filter Rebreather Mask** | **GEAR • Common** | Myla's Scrap (Eflein) | `15 GP (150 SP)` | Grants **Advantage on CON Saves** vs cave spores, sulfur gas, toxic fumes, and fungal rot. |
+| 🔮 **Cracked Lodestone Bracelet** | **FOCUS • Uncommon** | Myla's Scrap (Eflein) | `200 GP` | Grants **+1 to Initiative** and allows *Mage Hand* to magnetically pull iron objects up to 15 ft. |
+| 💍 **Ring of Resistance** | **DEFENSE • Rare (Attune)** | Owlbear Lair / Sea Hag Cove | `500 GP` | Grants damage resistance to one chosen damage type (Cold, Fire, or Lightning). |
+| 🏮 **Myconid Spore-Lantern** | **UTILITY • Uncommon** | Gifted by Sinensa (Seagrow Caves) | `100 GP` | 30ft violet light; **+2 Perception** in dark. 1/Day: Ally gains Advantage vs Charmed/Frightened. |
+| 🔔 **Astalagan's Resonant Chime** | **DEFENSE • Uncommon** | Bahamut Altar / Cemetery | `200 GP` | 1/Day: Undead within 30 ft make **DC 13 WIS Save** or speed halved + lose reactions (1 min). |
 
 #### 👑 5. LEGENDARY DRAGON SCALES, QUEST KEYS & LOGBOOKS
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
@@ -502,11 +514,11 @@
 | ⚡ **Astalagan's Amber Scale** | **LEGENDARY SCALE** | Bahamut Statue (Wielded by Eflein) | `Priceless Ancient Relic` | **+1 Lightning Spell Attack & DC (DC 14, Hit +6)**. 1/Day Lightning Surge (+1d6). Cleanses Orcus curses on touch. |
 | ❄️ **Clyssavar's Silver Scale** | **LEGENDARY SCALE** | Compass Rose Wreck (Wielded by Vaelith) | `Priceless Ancient Relic` | **+1 to Attack & DC on all Cold Spells/Strikes**. Cold Resistance. 1/Day Glacial Burst (+1d6 Cold & -10ft speed). |
 | ☀️ **Turadaer's Solar Gold Scale** | **LEGENDARY SCALE** | Observatory D5 (Wielder: Flubs) | `Priceless Ancient Relic` | **+1 to AC & All Saves, +1 to Spell Attack & DC**. Radiant Bastion 10ft (+1d4). Beacon of Dawn 1/Day (2d8+WIS). |
-| 📖 **Compass Rose Log Fragment & Aleitha's Lament** | **QUEST LOGBOOK & MANUSCRIPT** | Cabin C4 / Eflein's Pack | `Priceless Story Clue` | Deciphers the origin of the beach zombies and the talisman cleansing ritual at Dragon's Rest. |
+| 📖 **Compass Rose Log Fragment & Aleitha's Lament** | **QUEST LOGBOOK & MANUSCRIPT** | Cabin C4 / Eflein's Pack | `Priceless Story Manuscript` | Deciphers the origin of the beach zombies and the talisman cleansing ritual at Dragon's Rest. |
 | 📿 **Aleitha's Braided Hair-Talisman** | **CURSED RELIC • Quest Key** | Sunken Hold C8 | `Priceless Cursed Relic` | Burn upon Captain Brastos's grave at Dragon's Rest to lift the island's zombie curse (+1 Saves 24h). |
-| 🗺️ **Crude Charcoal Cave Map** | **QUEST MAP • Common** | Kobold Spitfire Camp Firepit | `5 gp / 10 sp barter` | Dried fish skin showing high tides, mushroom rapport clues, and drake nest routes. |
-| 📖 **Lianna's Draconic Geothermal Folio** | **SCHOLARLY FOLIO • Rare** | Seagrow Caves B6 Ledge | `50 gp (+2 Arcana)` | Scholar notes on Sharruth's volcanic core, observatory constellation bridge, and 3 metallic scales. |
-| ⚡ **Sparkrender's Obsidian Comet Ritual Slates** | **DRACONIC JOURNAL • Rare** | Observatory Area D2/D4 | `100 gp to scholars` | Obsidian slates detailing the King-Killer Comet alignment, Aidron's sacrifice, and ascension tactics. |
+| 🗺️ **Crude Charcoal Cave Map** | **QUEST MAP • Common** | Kobold Spitfire Camp Firepit | `5 GP (50 SP barter)` | Dried fish skin showing high tides, mushroom rapport clues, and drake nest routes. |
+| 📖 **Lianna's Draconic Geothermal Folio** | **SCHOLARLY FOLIO • Rare** | Seagrow Caves B6 Ledge | `50 GP (500 SP)` | Scholar notes on Sharruth's volcanic core, observatory constellation bridge, and 3 metallic scales. |
+| ⚡ **Sparkrender's Obsidian Comet Ritual Slates** | **DRACONIC JOURNAL • Rare** | Observatory Area D2/D4 | `100 GP (1,000 SP)` | Obsidian slates detailing the King-Killer Comet alignment, Aidron's sacrifice, and ascension tactics. |
 | 🔑 **Moonstone Key** | **QUEST KEY • Rare** | Elder Runara | `Priceless Sanctuary Key` | Hexagonal prism. Activates hard-light bridge to Clifftop Observatory & Aidron's cage. |
 
 ---
@@ -554,11 +566,11 @@
 
 | Specialty Bread | Type | 💰 Cafeteria Cost / Barter | Mechanical Buff & Duration (DM Reference) |
 | :--- | :--- | :--- | :--- |
-| 🧀 **Cheese Bread** | Snack | `5 sp` *(or wild berries/honey)* | Restores **1d8 HP** + grants **+2 to Initiative** for the next 1 encounter. |
-| 🥩 **Steak Bread** | Snack | `8 sp` *(or cave rock salt)* | Restores **1d8 HP** + grants **+2 to Attack Rolls** for the next 1 encounter. |
-| 🐟 **Salmon Bread** | Snack | `6 sp` *(or fresh fish)* | Restores **1d8 HP** + grants **+4 Temporary HP**. |
-| 🌟 **Eflein's Special** | Snack | `1 gp` *(Custom Recipe)* | Restores **1d8 HP** + grants **+2 to all Skill Checks** until next Long Rest. |
-| 🥯 **Dragon's Rest Bagel** | Snack | `5 sp` *(or wild herbs)* | Restores **1d8 HP** + grants **+2 to Armor Class (AC)** until next Short Rest. |
+| 🧀 **Cheese Bread** | Snack | `5 SP` *(or wild berries/honey)* | Restores **1d8 HP** + grants **+2 to Initiative** for the next 1 encounter. |
+| 🥩 **Steak Bread** | Snack | `8 SP` *(or cave rock salt)* | Restores **1d8 HP** + grants **+2 to Attack Rolls** for the next 1 encounter. |
+| 🐟 **Salmon Bread** | Snack | `6 SP` *(or fresh fish)* | Restores **1d8 HP** + grants **+4 Temporary HP**. |
+| 🌟 **Eflein's Special** | Snack | `10 SP (1 GP)` *(Custom Recipe)* | Restores **1d8 HP** + grants **+2 to all Skill Checks** until next Long Rest. |
+| 🥯 **Dragon's Rest Bagel** | Snack | `8 SP` *(or wild herbs)* | Restores **1d8 HP** + grants **+2 to Armor Class (AC)** until next Short Rest. |
 
 ---
 

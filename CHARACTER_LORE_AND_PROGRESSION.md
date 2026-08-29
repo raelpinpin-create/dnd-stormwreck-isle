@@ -17,13 +17,14 @@ Each of the party members carries a deeply personal narrative thread woven direc
 
 ---
 
-## 🧙‍♂️ SECTION 2: EFLEIN — IN LIANNA'S FOOTSTEPS (THE DELINQUENT PRODIGY & THE ANCIENT DRAGON LANDS)
+## 🧙‍♂️ SECTION 2: EFLEIN — IN LIANNA'S FOOTSTEPS (THE DELINQUENT PRODIGY & THE ANCIENT ARCHMAGE'S TRAIL)
 
 ### 📜 Character Overview & Core Motivation
-* **Hero & Role:** Eflein (High Elf Evocation Wizard 2) — Master of AoE Arcane Blasting, Arcana Lore, and Tactical Battlefield Control.
+* **Hero & Role:** Eflein (High Elf Evocation Wizard 3) — Master of AoE Arcane Blasting, Arcana Lore, and Tactical Battlefield Control.
 * **Archetype:** Delinquent / Yankee Prodigy (Hands in pockets, slouching posture, razor-sharp arcane genius).
-* **Core Emotional Drive:** Discover why his brilliant wife **Lianna** journeyed to Stormwreck Isle 8 months ago, decode the ancient draconic secrets she unraveled, and follow her trail across the sea.
-* **The Backstory:** Eight months ago, Lianna—an esteemed arcanist and historian from Neverwinter—departed for Stormwreck Isle following rumors of ancient draconic wards and the volcanic entity **Sharruth**. She never returned. Eflein spent months searching mainland libraries before setting sail for the island with her favorite study book in hand: *The Secret Fires of Sharruth*.
+* **Core Emotional Drive:** Grow infinitely stronger and scour the Realms to find his wife **Lianna**—an ancient elven archmage who walked away from thousands of years of legendary power just to live a quiet life with him, now recalled by Elminster to unearth ancient power across Faerûn against an apocalyptic threat.
+* **The Grand Lore Revelation:** Both Eflein and Lianna are High Elves, but Lianna has lived for **thousands of years**. Under the direct tutelage of **Elminster**, she fought nameless cosmic terrors across the ages before choosing to bury her magic to live a humble life with Eflein in Waterdeep. Five years ago, Elminster summoned her back for a looming cataclysm. She left a secret sub-vault beneath their cottage sealed by wards only Eflein could solve, leaving her farewell letter.
+* **The Dragon's Rest Reverie (Session 4 Intermission):** Resting in the village square of Dragon's Rest after clearing Seagrow Caves, Eflein dozed off in the warm coastal breeze. In an elven trance-dream, he relived that fateful night 5 years ago—the panic at the door, the Grand Library, the celestial rings, and the automated runite golem echoing her gentle voice. Waking up with her jasmine-scented letter clutched in his hand, his resolve burned brighter than ever: *he will unearth the ancient draconic power of Stormwreck Isle and follow her across the cosmos.*
 
 ### 🗺️ Chapter-by-Chapter Investigation Trail for Eflein
 

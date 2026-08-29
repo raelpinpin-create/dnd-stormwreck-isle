@@ -1772,6 +1772,7 @@
         "🐟 Salmon Bread",
         "🌟 Eflein's Special Bread",
         "🥯 Dragon's Rest Bagel",
+        "📜 Lianna's Farewell Letter (The Archmage's Vow)",
         "📖 Compass Rose Log Fragment & Spellbook",
         "🏹 Sling of the Ridge-Runner (+1)",
         "👘 Robe of Arcane Reserve",
@@ -2968,9 +2969,9 @@
         },
         "the vintage of the dawn watch": {
             name: "🍾 The Vintage of the Dawn Watch",
-            category: "SACRED RELIC • Attuned Holy Vessel",
-            origin: "Father Flubs' Parish Relic Vessel",
-            desc: "An ornate ceramic wine jug consecrated to Eldath and Lathander.",
+            category: "SACRED RELIC • Attuned Holy Vessel (Priceless)",
+            origin: "Sacred Parish Relic of Father Flubs' Ancestral Line",
+            desc: "An ornate ceramic wine jug consecrated to Eldath and Lathander, engraved with fine golden holy script. A sacred parish relic passed down through generations of Father Flubs' ancestral bloodline.",
             effect: "• Refills daily at dawn with 4 draughts of blessed sacramental wine.<br>• <strong>Toasting Fellowship:</strong> Drinking or toasting grants <strong>1d4+2 Temp HP and Advantage against Fear & Poison</strong>.<br>• Provides continuous nourishment and +1 to all Divine Healing rolls."
         },
         "spitfire flask": {
@@ -3028,6 +3029,21 @@
             origin: "Kobold Ridge Camp Commander Loot",
             desc: "A reinforced dragon-leather sling etched with soaring wind glyphs.",
             effect: "• <strong>+1 bonus to Attack and Damage rolls</strong> (1d4+1 bludgeoning).<br>• <strong>Ridge Hunter:</strong> Completely ignores Disadvantage at long range (up to 120 ft)!"
+        },
+        "lianna's farewell letter": {
+            name: "📜 Lianna's Farewell Letter (The Archmage's Vow)",
+            category: "SACRED KEEPSAKE & ARTIFACT • Priceless",
+            origin: "Recovered from the Secret Sub-Vault beneath Eflein's Cottage in Waterdeep",
+            desc: "Heavy folded vellum parchment, worn at the creases from five years of being carried close to Eflein's chest. It still carries the faint, unmistakable fragrance of jasmine perfume.",
+            effect: "• <strong>The Archmage's Vow:</strong> A constant reminder of why Eflein took up his wand. Strengthens his resolve to unearth ancient draconic power and scour the multiverse to find his immortal wife.<br>• <strong>Priceless Emotional Anchor:</strong> Grants Eflein unwavering focus against existential dread.",
+            manuscript: `<strong>[The Handwritten Letter of Archmage Lianna]</strong><br><br>
+<em>"Eflein,<br><br>
+If you are reading this, your brilliance solved the wards I spent a lifetime perfecting. I prayed with all my soul that you would never find this place.<br><br>
+I am not the simple scholar you fell in love with. For centuries, I have walked the Realms under the tutelage of Elminster himself, fighting horrors that remain unnamed in history books. When my time was done, I chose to bury my magic, to choose an ordinary life, and to choose you.<br><br>
+Last night, Elminster spoke into my dreams. A great cataclysm stirs across the cosmic balance, threatening the fragile existence of our world. He is calling every archmage of the old guard back to the front lines to unearth ancient power before it is too late.<br><br>
+I left in the dead of night because knowing the scope of this war will place a target on your back. Do not search for me. Live your life in the sun we built together.<br><br>
+With all my heart across every age,<br>
+— <strong>Lianna</strong>"</em>`
         },
         "compass rose": {
             name: "📖 Compass Rose Log Fragment & Spellbook",
@@ -3130,18 +3146,18 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     }
 
     function getStoredItems() {
-        let stored = localStorage.getItem('dnd_inv_eflein_v21');
+        let stored = localStorage.getItem('dnd_inv_eflein_v22');
         if (!stored) {
-            for (let i = 1; i <= 20; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
+            for (let i = 1; i <= 21; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
             localStorage.removeItem('dnd_inv_eflein');
-            localStorage.setItem('dnd_inv_eflein_v21', JSON.stringify(defaultItems));
+            localStorage.setItem('dnd_inv_eflein_v22', JSON.stringify(defaultItems));
             return [...defaultItems];
         }
         return JSON.parse(stored);
     }
 
     function saveStoredItems(items) {
-        localStorage.setItem('dnd_inv_eflein_v21', JSON.stringify(items));
+        localStorage.setItem('dnd_inv_eflein_v22', JSON.stringify(items));
     }
 
     // Universal Item Quantity Parsing & Formatting Engine

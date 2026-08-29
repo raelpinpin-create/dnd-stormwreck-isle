@@ -15,7 +15,7 @@
 * **Class & Level:** **Wizard 3 (Evocation Arcana)**
 * **Background:** Sage
 * **Alignment:** **Chaotic Neutral**
-* **Archetype / Personality:** **Delinquent / Yankee Prodigy** — Brash attitude, sharp-tongued, defiant posture, fiercely pragmatic and protective of his own, with a chaotic neutral streak.
+* **Archetype / Personality:** **Delinquent / Yankee Prodigy** — Brash attitude, sharp-tongued, defiant posture, fiercely pragmatic and protective of his own, with a chaotic neutral streak. Driven by a burning desire to grow powerful enough to find his wife **Lianna**—an ancient elven archmage who lived thousands of years under Elminster before leaving on a cosmic quest.
 * **Appearance:** 5'8", tanned skin, sharp eyes, brawling posture, hands in pockets.
 * **Role in Party:** Primary Arcane Blaster & Area-of-Effect (AoE) Controller.
 
@@ -75,7 +75,16 @@
   * 🐟 **Salmon Bread** (Restores `1d8 HP` + grants `+4 Temporary HP`)
   * 🌟 **Eflein's Special Bread** (Restores `1d8 HP` + grants `+2 to all Skill Checks` until next Long Rest)
   * 🥯 **Dragon's Rest Bagel** (Restores `1d8 HP` + grants `+2 to Armor Class` until next Short Rest)
-* **Valuables & Story:** 📖 **Compass Rose Log Fragment & Spellbook** (Contains wizard spells + Lady Aleitha's grief-stricken journal revealing the Talisman of Orcus & the ritual to cleanse the beach zombies at Captain Brastos's grave!), Scholar's Pack.
+* **Valuables & Story:** 
+  * 📜 **Lianna's Farewell Letter (The Archmage's Vow):** Folded parchment smelling of jasmine perfume, kept inside his inner breast pocket.
+    > *"Eflein,  
+    > If you are reading this, your brilliance solved the wards I spent a lifetime perfecting. I prayed with all my soul that you would never find this place.  
+    > I am not the simple scholar you fell in love with. For centuries, I have walked the Realms under the tutelage of Elminster himself, fighting horrors that remain unnamed in history books. When my time was done, I chose to bury my magic, to choose an ordinary life, and to choose you.  
+    > Last night, Elminster spoke into my dreams. A great cataclysm stirs across the cosmic balance, threatening the fragile existence of our world. He is calling every archmage of the old guard back to the front lines to unearth ancient power before it is too late.  
+    > I left in the dead of night because knowing the scope of this war will place a target on your back. Do not search for me. Live your life in the sun we built together.  
+    > With all my heart across every age,  
+    > — Lianna"*
+  * 📖 **Compass Rose Log Fragment & Spellbook** (Contains wizard spells + Lady Aleitha's journal revealing the Talisman of Orcus & the grave purification ritual), Scholar's Pack.
 * **Personal Wealth:** `28 gp, 9 sp`.
 
 ---
@@ -94,7 +103,7 @@
 ## ⚔️ Combat Statistics
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
-| **Hit Points (HP)** | **2 / 24** | **CRITICAL CONDITION / BLOODIED** (Escaped *Compass Rose* at 2 HP) |
+| **Hit Points (HP)** | **24 / 24** | Hit Dice: `3d8 + 6 CON` (Fully Rested & Outfitted) |
 | **Armor Class (AC)** | **16** | *Armor of Shadows* (13 + 2 DEX) + **Cloak of Protection (+1)** |
 | **Initiative** | **+2** | Dex modifier |
 | **Speed** | **30 ft** | |
