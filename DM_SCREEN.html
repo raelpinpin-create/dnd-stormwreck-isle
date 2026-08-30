@@ -46,6 +46,14 @@
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #party-specs, #active-quests, #biomes-explorer, #npc-directory, #monsters-section, #loot-vault, #dm-rules-guide {
+            scroll-margin-top: 65px;
+        }
+
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             background-color: var(--bg-primary);
@@ -2102,7 +2110,19 @@
                     Dynamic side encounters across the basalt cliffs, foggy coves, rogue kobold camps, and volcanic ravines of Stormwreck Isle.
                 </p>
                 <div class="biome-sub-grid">
-                    <button class="chip-btn loc-chip" onclick="openLocationModal('sc_b0')">⛺ B0: Spitfire Ravine (Kobold Camp)</but            <div class="section-title">
+                    <button class="chip-btn loc-chip" onclick="openLocationModal('sc_b0')">⛺ B0: Spitfire Ravine (Kobold Camp)</button>
+                    <button class="chip-btn loc-chip" onclick="openLocationModal('wild_hotsprings')">♨️ Geothermal Hot Springs</button>
+                    <button class="chip-btn loc-chip" onclick="openLocationModal('wild_owlbear')">🦉 Screeching Owlbear Grove</button>
+                    <button class="chip-btn loc-chip" onclick="openLocationModal('wild_renegades')">🦎 Renegade Kobold Trails</button>
+                    <button class="chip-btn loc-chip" onclick="openLocationModal('wild_seahag')">🧜‍♀️ Sea Hag Grotto</button>
+                    <button class="chip-btn loc-chip" onclick="openLocationModal('wild_sharruth')">🌋 Sharruth's Volcanic Fissures</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: MASTER CAMPAIGN NPC DIRECTORY & OFFERINGS -->
+        <div id="npc-directory">
+            <div class="section-title">
                 <span>🎭 Section 3: Master Campaign NPC Directory & Offerings</span>
                 <small>Divided by Faction/Location • Click any NPC name for full profile modal • Interactive Met / Fallen status tracking</small>
             </div>
