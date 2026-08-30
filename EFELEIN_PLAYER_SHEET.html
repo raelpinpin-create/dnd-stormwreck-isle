@@ -762,9 +762,9 @@
                         <span class="vital-mini-lbl">INIT 🎲</span>
                         <span class="vital-mini-val" style="color:var(--accent-blue);">+3</span>
                     </div>
-                    <div class="vital-mini-box">
+                    <div class="vital-mini-box" title="Base Wizard DC 13, Hit +5 (+1 on Lightning spells via Astalagan's Scale)">
                         <span class="vital-mini-lbl">SPELL DC / HIT</span>
-                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 14 | +6</span>
+                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 13 | +5</span>
                     </div>
                 </div>
 
@@ -1016,9 +1016,9 @@
                                 </div>
                                 <span style="font-size:0.65rem; color:#38bdf8; font-weight:700;">EVOCATION</span>
                             </div>
-                            <div class="action-desc">Ranged 60ft. +6 to Hit, 1d8 Cold & slows target -10ft.</div>
+                            <div class="action-desc">Ranged 60ft. +5 to Hit, 1d8 Cold & slows target -10ft.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Ray of Frost Attack', 6)">❄️ Attack</button>
+                                <button class="btn-roll-action" onclick="rollD20('Ray of Frost Attack', 5)">❄️ Attack</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Ray of Frost Dmg', 8, 0, 'Cold')">💥 Damage</button>
                             </div>
                         </div>
@@ -1034,9 +1034,9 @@
                                 </div>
                                 <span style="font-size:0.65rem; color:#f87171; font-weight:700;">EVOCATION</span>
                             </div>
-                            <div class="action-desc">Ranged 120ft. +6 to Hit, 1d10 Fire & ignites flammable objects.</div>
+                            <div class="action-desc">Ranged 120ft. +5 to Hit, 1d10 Fire & ignites flammable objects.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Fire Bolt Attack', 6)">🔥 Attack</button>
+                                <button class="btn-roll-action" onclick="rollD20('Fire Bolt Attack', 5)">🔥 Attack</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Fire Bolt Dmg', 10, 0, 'Fire')">💥 Damage</button>
                             </div>
                         </div>
@@ -1343,10 +1343,10 @@
             range: "Self (15-foot cube)",
             components: "V, S",
             duration: "Instantaneous",
-            attackMod: "DC 14 Constitution Saving Throw",
+            attackMod: "DC 13 Constitution Saving Throw",
             damage: "2d8 Thunder Damage & 10ft Push (half on save)",
-            desc: "DC 14 Con: 2d8 thunder + 10ft push. Scales +1d8 per slot lvl.",
-            fullRules: "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a <strong>DC 14 Constitution saving throw</strong>. On a failed save, a creature takes <strong>2d8 thunder damage</strong> and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.<br><br>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you, and the spell emits a thunderous boom audible out to 300 feet.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can protect 2 allies in the cube to take 0 damage and automatically succeed on their save!",
+            desc: "DC 13 Con: 2d8 thunder + 10ft push. Scales +1d8 per slot lvl.",
+            fullRules: "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a <strong>DC 13 Constitution saving throw</strong>. On a failed save, a creature takes <strong>2d8 thunder damage</strong> and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.<br><br>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you, and the spell emits a thunderous boom audible out to 300 feet.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can protect 2 allies in the cube to take 0 damage and automatically succeed on their save!",
             upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st (3d8 at 2nd lvl, 4d8 at 3rd lvl).",
             flavor: "Eflein slams her palms together, releasing a deafening shockwave that sends foes and debris flying backwards.",
             prepared: true,
@@ -1365,16 +1365,16 @@
             range: "60 feet",
             components: "S, M (a drop of water or piece of ice)",
             duration: "Instantaneous",
-            attackMod: "+6 Spell Attack / DC 14 Dex Save (Burst)",
+            attackMod: "+5 Spell Attack / DC 13 Dex Save (Burst)",
             damage: "1d10 Piercing (Shard) + 2d6 Cold (Burst)",
-            desc: "+6 Hit: 1d10 pierc. Hit or miss: DC 14 Dex or (1+lvl)d6 cold burst.",
-            fullRules: "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack (<strong>+6 to hit</strong>). On a hit, the target takes <strong>1d10 piercing damage</strong>. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a <strong>DC 14 Dexterity saving throw</strong> or take <strong>2d6 cold damage</strong>.",
+            desc: "+5 Hit: 1d10 pierc. Hit or miss: DC 13 Dex or (1+lvl)d6 cold burst.",
+            fullRules: "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack (<strong>+5 to hit</strong>). On a hit, the target takes <strong>1d10 piercing damage</strong>. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a <strong>DC 13 Dexterity saving throw</strong> or take <strong>2d6 cold damage</strong>.",
             upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the cold explosion damage increases by 1d6 for each slot level above 1st (3d6 cold at 2nd lvl, 4d6 cold at 3rd lvl).",
             flavor: "Eflein condenses the humid sea mist into a jagged frost dagger, hurtling it forward before detonating in a shower of razor-sharp icy shrapnel.",
             prepared: true,
             hasLevelSelect: true,
             buttons: [
-                { label: "🎯 Attack", class: "btn-roll-action", costSlot: false, onClick: () => rollD20('Ice Knife Shard Attack', 6) },
+                { label: "🎯 Attack", class: "btn-roll-action", costSlot: false, onClick: () => rollD20('Ice Knife Shard Attack', 5) },
                 { label: "💥 Shard Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: () => rollFormulaDamage('Ice Knife Shard Damage', 10, 0, 'Piercing') },
                 { label: "❄️ Burst Damage", class: "btn-roll-action btn-roll-dmg", costSlot: false, onClick: (lvl) => rollIceKnifeBurst(lvl) }
             ]
@@ -1411,10 +1411,10 @@
             range: "Self (30-foot cone)",
             components: "S, M (a vial of meltwater)",
             duration: "Instantaneous",
-            attackMod: "DC 14 Constitution Saving Throw",
+            attackMod: "DC 13 Constitution Saving Throw",
             damage: "3d8 Cold Damage & Speed Reduced to 0",
-            desc: "30-ft cone. DC 14 Con: 3d8 cold + speed 0 until broken (Action).",
-            fullRules: "A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a <strong>DC 14 Constitution saving throw</strong>. On a failed save, a creature takes <strong>3d8 cold damage</strong> and is hindered by ice crystals until the spell ends: its speed is reduced to 0 until the ice is broken. On a successful save, a creature takes half as much damage and isn't hindered.<br><br>A creature hindered by the ice can use its action to break the ice from itself or another creature, ending the effect.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the cone so they take 0 damage and their speed is unaffected!",
+            desc: "30-ft cone. DC 13 Con: 3d8 cold + speed 0 until broken (Action).",
+            fullRules: "A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a <strong>DC 13 Constitution saving throw</strong>. On a failed save, a creature takes <strong>3d8 cold damage</strong> and is hindered by ice crystals until the spell ends: its speed is reduced to 0 until the ice is broken. On a successful save, a creature takes half as much damage and isn't hindered.<br><br>A creature hindered by the ice can use its action to break the ice from itself or another creature, ending the effect.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the cone so they take 0 damage and their speed is unaffected!",
             upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd (4d8 at 3rd lvl).",
             flavor: "Eflein unleashes a biting blizzard of permafrost from her fingertips, encasing enemies in jagged crystal rime that locks them in place.",
             prepared: true,
@@ -1433,10 +1433,10 @@
             range: "60 feet (10-ft radius sphere)",
             components: "V, S, M (a chip of mica)",
             duration: "Instantaneous",
-            attackMod: "DC 14 Constitution Saving Throw",
+            attackMod: "DC 13 Constitution Saving Throw",
             damage: "3d8 Thunder Damage (Disadv vs Inorganic)",
-            desc: "60ft • 10ft radius. DC 14 Con: 3d8 thunder (half on save).",
-            fullRules: "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a <strong>DC 14 Constitution saving throw</strong>. A creature takes <strong>3d8 thunder damage</strong> on a failed save, or half as much damage on a successful one.<br><br>A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.<br><br>A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the blast to take 0 damage!",
+            desc: "60ft • 10ft radius. DC 13 Con: 3d8 thunder (half on save).",
+            fullRules: "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a <strong>DC 13 Constitution saving throw</strong>. A creature takes <strong>3d8 thunder damage</strong> on a failed save, or half as much damage on a successful one.<br><br>A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.<br><br>A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the blast to take 0 damage!",
             upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd (4d8 at 3rd lvl).",
             flavor: "Eflein focuses resonant vibrations into a single focal point, shattering armor, bones, and stone in an explosive sonic boom.",
             prepared: false,
@@ -1478,10 +1478,10 @@
             range: "30 feet (5-ft wide line)",
             components: "V, S, M (a red dragon scale)",
             duration: "Instantaneous",
-            attackMod: "DC 14 Dexterity Saving Throw",
+            attackMod: "DC 13 Dexterity Saving Throw",
             damage: "3d8 Fire Damage (half on save)",
-            desc: "30ft Line (5ft wide). DC 14 Dex: 3d8 fire. Sculpt Spells protects!",
-            fullRules: "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a <strong>DC 14 Dexterity saving throw</strong>. A creature takes <strong>3d8 fire damage</strong> on a failed save, or half as much damage on a successful one.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the line so they take 0 damage and auto-pass their save!",
+            desc: "30ft Line (5ft wide). DC 13 Dex: 3d8 fire. Sculpt Spells protects!",
+            fullRules: "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a <strong>DC 13 Dexterity saving throw</strong>. A creature takes <strong>3d8 fire damage</strong> on a failed save, or half as much damage on a successful one.<br><br>🛡️ <strong>Sculpt Spells:</strong> Eflein can sculpt 3 allies out of the line so they take 0 damage and auto-pass their save!",
             upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd (4d8 at 3rd lvl).",
             flavor: "Eflein traces an incandescent draconic rune in the air, projecting a searing column of flame straight through enemy ranks.",
             prepared: false,
@@ -1694,13 +1694,13 @@
             range: "60 feet",
             components: "V, S",
             duration: "Instantaneous",
-            attackMod: "+6 Spell Attack",
+            attackMod: "+5 Spell Attack",
             damage: "1d8 Cold Damage & -10ft Target Speed",
-            desc: "Ranged 60ft. +6 to Hit, 1d8 Cold & slows target -10ft.",
-            fullRules: "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target (<strong>+6 to hit</strong>). On a hit, it takes <strong>1d8 cold damage</strong>, and its speed is reduced by 10 feet until the start of your next turn.<br><br>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            desc: "Ranged 60ft. +5 to Hit, 1d8 Cold & slows target -10ft.",
+            fullRules: "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target (<strong>+5 to hit</strong>). On a hit, it takes <strong>1d8 cold damage</strong>, and its speed is reduced by 10 feet until the start of your next turn.<br><br>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
             flavor: "A stream of crackling sub-zero energy leaps from Eflein's wand, freezing the ground beneath the target's boots.",
             modalButtons: [
-                { label: "❄️ Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Ray of Frost Attack', 6) },
+                { label: "❄️ Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Ray of Frost Attack', 5) },
                 { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Ray of Frost Dmg', 8, 0, 'Cold') }
             ]
         },
@@ -1712,13 +1712,13 @@
             range: "120 feet",
             components: "V, S",
             duration: "Instantaneous",
-            attackMod: "+6 Spell Attack",
+            attackMod: "+5 Spell Attack",
             damage: "1d10 Fire Damage & Ignites Flammable Objects",
-            desc: "Ranged 120ft. +6 to Hit, 1d10 Fire & ignites flammable objects.",
-            fullRules: "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target (<strong>+6 to hit</strong>). On a hit, the target takes <strong>1d10 fire damage</strong>. A flammable object hit by this spell ignites if it isn't being worn or carried.<br><br>The spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+            desc: "Ranged 120ft. +5 to Hit, 1d10 Fire & ignites flammable objects.",
+            fullRules: "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target (<strong>+5 to hit</strong>). On a hit, the target takes <strong>1d10 fire damage</strong>. A flammable object hit by this spell ignites if it isn't being worn or carried.<br><br>The spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
             flavor: "Eflein snaps her fingers, launching a blazing streak of arcane fire that explodes on impact and sets dry brush and sails ablaze.",
             modalButtons: [
-                { label: "🔥 Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Fire Bolt Attack', 6) },
+                { label: "🔥 Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Fire Bolt Attack', 5) },
                 { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Fire Bolt Dmg', 10, 0, 'Fire') }
             ]
         },
@@ -2365,7 +2365,7 @@
             rolls.push(r);
             total += r;
         }
-        logRoll(`🌊 <strong>Thunderwave (Level ${slotLevel} Slot • ${diceCount}d8):</strong> [${rolls.join(' + ')}] = <span style="color:#38bdf8; font-weight:700;">${total} Thunder Damage</span> + 10ft Push (DC 14 Con save for half)`);
+        logRoll(`🌊 <strong>Thunderwave (Level ${slotLevel} Slot • ${diceCount}d8):</strong> [${rolls.join(' + ')}] = <span style="color:#38bdf8; font-weight:700;">${total} Thunder Damage</span> + 10ft Push (DC 13 Con save for half)`);
     }
 
     function rollIceKnifeBurst(slotLevel) {
@@ -2377,7 +2377,7 @@
             burstRolls.push(r);
             burstTotal += r;
         }
-        logRoll(`❄️ <strong>Ice Knife Burst (Level ${slotLevel} Slot • ${burstDice}d6):</strong> [${burstRolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${burstTotal} Cold Damage</span> (DC 14 Dex save for creatures within 5ft)`);
+        logRoll(`❄️ <strong>Ice Knife Burst (Level ${slotLevel} Slot • ${burstDice}d6):</strong> [${burstRolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${burstTotal} Cold Damage</span> (DC 13 Dex save for creatures within 5ft)`);
     }
 
     function castInvisibilitySpell(slotLevel) {
@@ -2413,7 +2413,7 @@
             rolls.push(r);
             total += r;
         }
-        logRoll(`❄️ <strong>Rime's Binding Ice (Level ${slotLevel} Slot • 30ft Cone • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${total} Cold Damage</span> (DC 14 Con save for half). Failed saves: <span style="color:#67e8f9; font-weight:700;">Speed reduced to 0</span> until ice is broken (Action / DC 14 Athletics)!`);
+        logRoll(`❄️ <strong>Rime's Binding Ice (Level ${slotLevel} Slot • 30ft Cone • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${total} Cold Damage</span> (DC 13 Con save for half). Failed saves: <span style="color:#67e8f9; font-weight:700;">Speed reduced to 0</span> until ice is broken (Action / DC 13 Athletics)!`);
     }
 
     function rollShatterScaled(slotLevel) {
@@ -2426,7 +2426,7 @@
             rolls.push(r);
             total += r;
         }
-        logRoll(`💥 <strong>Shatter (Level ${slotLevel} Slot • 60ft • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#fbbf24; font-weight:700;">${total} Thunder Damage</span> (DC 14 Con save for half). Creatures of inorganic material (stone, crystal, metal) have Disadvantage!`);
+        logRoll(`💥 <strong>Shatter (Level ${slotLevel} Slot • 60ft • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#fbbf24; font-weight:700;">${total} Thunder Damage</span> (DC 13 Con save for half). Creatures of inorganic material (stone, crystal, metal) have Disadvantage!`);
     }
 
     function castSilenceSpell(isRitual) {
@@ -2444,7 +2444,7 @@
             rolls.push(r);
             total += r;
         }
-        logRoll(`🔥 <strong>Aganazzar's Scorcher (Level ${slotLevel} Slot • 30ft Line • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#f97316; font-weight:700;">${total} Fire Damage</span> (DC 14 Dex save for half). Sculpt Spells automatically protects chosen allies!`);
+        logRoll(`🔥 <strong>Aganazzar's Scorcher (Level ${slotLevel} Slot • 30ft Line • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#f97316; font-weight:700;">${total} Fire Damage</span> (DC 13 Dex save for half). Sculpt Spells automatically protects chosen allies!`);
     }
 
     function castAlterSelf(optionName) {
@@ -2855,7 +2855,7 @@
             category: "LEGENDARY SCALE • Attuned Focus",
             origin: "Bahamut Altar Statue / Bronze Dragon Triarch",
             desc: "A warm, humming amber dragon scale awakened in sacred spring water.",
-            effect: "• <strong>+1 to Lightning Spell Attacks & Save DC</strong> (DC 14, Hit +6)<br>• <strong>Lightning Surge (1/day):</strong> Deals +1d6 Lightning damage on a spell hit.<br>• <strong>Purifies Undead:</strong> Touch cleanses Orcus necrotic curses and repels drowned ghouls."
+            effect: "• <strong>+1 to Lightning Spell Attacks & Save DC</strong> (Lightning: DC 14, Hit +6 | Base Spells: DC 13, Hit +5)<br>• <strong>Lightning Surge (1/day):</strong> Deals +1d6 Lightning damage on a spell hit.<br>• <strong>Purifies Undead:</strong> Touch cleanses Orcus necrotic curses and repels drowned ghouls."
         },
         "clyssavar's rimefrost silver scale": {
             name: "❄️ Clyssavar's Rimefrost Silver Scale",

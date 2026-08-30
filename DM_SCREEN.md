@@ -10,7 +10,7 @@
 ### ⚡ 1. Eflein (High Elf Wizard 3 — Evocation Arcana)
 * **Concept & Archetype:** Sage Background | **Chaotic Neutral** | **Title:** **« Warden of the Living Grove »** | **Yankee / Delinquent Archetype** (Brash posture, sharp mouth, hands in pockets, fiercely pragmatic and protective).
 * **Hit Points (HP):** **20 / 20** (Hit Dice: `3d6 + 6 CON` — Level 3 Upgraded) | **Armor Class (AC):** **12** *(15 with Mage Armor)* | **Speed:** 30 ft | **Passive Perception:** 13
-* **Spellcasting Specs:** Spell Save DC **14** | Spell Attack Bonus **+6** (with Awakened Scale) | **1st-Level Slots:** **4 / 4** *(Arcane Recovery used)* | **2nd-Level Slots:** **2 / 2** | 👘 **Robe of Arcane Reserve:** `1/1` | 🤝 **Help Tokens:** `2 / 2`
+* **Spellcasting Specs:** Base Spell Save DC **13** *(DC 14 for Lightning)* | Base Spell Attack Bonus **+5** *(+6 for Lightning via Awakened Scale)* | **1st-Level Slots:** **4 / 4** *(Arcane Recovery used)* | **2nd-Level Slots:** **2 / 2** | 👘 **Robe of Arcane Reserve:** `1/1` | 🤝 **Help Tokens:** `2 / 2`
 * **Evocation Features:** 🔮 **Evocation Savant** | 💥 **Sculpt Spells** (Protects allies from AoE damage!)
 * **Key Items:** 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Murky Underwater Clarity), 🪄 **Wand of Magic Missiles (7 Charges)**, Astalagan's Awakened Amber Scale (+1 Focus/DC), Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand), Robe of Arcane Reserve (+1 Slot), Shortsword & Cutlass, Sling of the Ridge-Runner (+1), Scroll of Absorb Elements, Spore-Filter Rebreather Mask, 9 Potions of Healing, 5 Specialty Breads & Bagel (+2 AC), 28 gp 9 sp.
 
@@ -511,7 +511,7 @@
 #### 👑 5. LEGENDARY DRAGON SCALES, QUEST KEYS & LOGBOOKS
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
 | :--- | :--- | :--- | :--- | :--- |
-| ⚡ **Astalagan's Amber Scale** | **LEGENDARY SCALE** | Bahamut Statue (Wielded by Eflein) | `Priceless Ancient Relic` | **+1 Lightning Spell Attack & DC (DC 14, Hit +6)**. 1/Day Lightning Surge (+1d6). Cleanses Orcus curses on touch. |
+| ⚡ **Astalagan's Amber Scale** | **LEGENDARY SCALE** | Bahamut Statue (Wielded by Eflein) | `Priceless Ancient Relic` | **+1 to Lightning Spell Attacks & Save DC (Lightning: DC 14, Hit +6 \| Base Spells: DC 13, Hit +5)**. 1/Day Lightning Surge (+1d6). Cleanses Orcus curses on touch. |
 | ❄️ **Clyssavar's Silver Scale** | **LEGENDARY SCALE** | Compass Rose Wreck (Wielded by Vaelith) | `Priceless Ancient Relic` | **+1 to Attack & DC on all Cold Spells/Strikes**. Cold Resistance. 1/Day Glacial Burst (+1d6 Cold & -10ft speed). |
 | ☀️ **Turadaer's Solar Gold Scale** | **LEGENDARY SCALE** | Observatory D5 (Wielder: Flubs) | `Priceless Ancient Relic` | **+1 to AC & All Saves, +1 to Spell Attack & DC**. Radiant Bastion 10ft (+1d4). Beacon of Dawn 1/Day (2d8+WIS). |
 | 📖 **Compass Rose Log Fragment & Aleitha's Lament** | **QUEST LOGBOOK & MANUSCRIPT** | Cabin C4 / Eflein's Pack | `Priceless Story Manuscript` | Deciphers the origin of the beach zombies and the talisman cleansing ritual at Dragon's Rest. |

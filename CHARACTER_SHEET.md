@@ -41,8 +41,8 @@
 | **CHA** | 8 | -1 | -1 | Deception (-1), Intimidation (-1), Performance (-1), Persuasion (-1) |
 
 ## ✨ Arcane & Spellcasting (Level 3 Evocation)
-* **Spell Save DC:** **14** (`8 + 2 prof + 3 Int + 1 Awakened Scale`)
-* **Spell Attack Bonus:** **+6** (`+2 prof + 3 Int + 1 Awakened Scale`)
+* **Base Spell Save DC:** **13** (`8 + 2 prof + 3 Int`) • **DC 14 for Lightning spells** *(Astalagan's Scale)*
+* **Base Spell Attack Bonus:** **+5** (`+2 prof + 3 Int`) • **+6 for Lightning spells** *(Astalagan's Scale)*
 * **1st-Level Spell Slots:** `4 / 4` (1 slot recovered via Arcane Recovery on Short Rest!)
 * **2nd-Level Spell Slots:** `2 / 2` (Level 3 Unlocked!)
 * **Arcane Recovery:** `0 / 1` used today (Regained 1 1st-level slot during pre-travel Short Rest)
@@ -52,8 +52,8 @@
 * **Cantrips Known:** *Ray of Frost*, *Fire Bolt*, *Mage Hand* (15ft magnetic pull via Lodestone), *Prestidigitation*.
 * **Prepared Spells (6 Spells Prepared):** *Magic Missile*, *Shield*, *Thunderwave*, *Detect Magic*, *Ice Knife*, *Misty Step*, *Rime's Binding Ice*.
 * **Full Spellbook (15 Spells):** 
-  - *1st-Level:* *Magic Missile*, *Shield*, *Thunderwave*, *Detect Magic*, *Mage Armor*, *Ice Knife*, *Sleep*, *Comprehend Languages*, *Protection from Evil/Good*.
-  - *2nd-Level:* *Misty Step* (Bonus Action 30ft teleport), *Rime's Binding Ice* (30ft cone, 3d8 cold + speed 0), *Shatter* (DC 14 Con, 3d8 thunder AoE), *Invisibility* (Touch, Conc 1 hr, +1 target/slot lvl > 2), *Silence* (120ft, 20ft sphere, Ritual/Conc 10 min, soundproof), *Aganazzar's Scorcher* (30ft line, 3d8 fire), *Alter Self* (Aquatic Adaptation / Appearance / Natural Weapons +1), *Flaming Sphere*, *Scorching Ray*.
+  - *1st-Level:* *Magic Missile*, *Shield*, *Thunderwave* (DC 13 Con), *Detect Magic*, *Mage Armor*, *Ice Knife* (+5 hit, DC 13 Dex), *Sleep*, *Comprehend Languages*, *Protection from Evil/Good*.
+  - *2nd-Level:* *Misty Step* (Bonus Action 30ft teleport), *Rime's Binding Ice* (30ft cone, 3d8 cold + speed 0, DC 13 Con), *Shatter* (DC 13 Con, 3d8 thunder AoE), *Invisibility* (Touch, Conc 1 hr, +1 target/slot lvl > 2), *Silence* (120ft, 20ft sphere, Ritual/Conc 10 min, soundproof), *Aganazzar's Scorcher* (30ft line, 3d8 fire, DC 13 Dex), *Alter Self* (Aquatic Adaptation / Appearance / Natural Weapons +1), *Flaming Sphere*, *Scorching Ray*.
 
 ## 🎒 Inventory & Wealth
 * **Weapons:** 
