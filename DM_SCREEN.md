@@ -14,11 +14,14 @@
 * **Evocation Features:** 🔮 **Evocation Savant** | 💥 **Sculpt Spells** (Protects allies from AoE damage!)
 * **Key Items:** 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Murky Underwater Clarity), 🪄 **Wand of Magic Missiles (7 Charges)**, Astalagan's Awakened Amber Scale (+1 Focus/DC), Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand), Robe of Arcane Reserve (+1 Slot), Shortsword & Cutlass, Sling of the Ridge-Runner (+1), Scroll of Absorb Elements, Spore-Filter Rebreather Mask, 9 Potions of Healing, 5 Specialty Breads & Bagel (+2 AC), 28 gp 9 sp.
 
-### 🛡️ 2. Player Character 3 (New Hero — Level 3 Standby)
-* **Concept & Role:** New Table Companion | **Level 3 Milestone Ready** | Wielder of Clyssavar's Silver Scale.
-* **Transferred Loadout & Belongings:** 🛡️ **Cloak of Protection** (+1 AC, +1 to all Saving Throws), 💣 **2x Volatile Spitfire Flasks** (2d4 Fire AoE), 🧪 **1x Potion of Healing**, 🍞 **Kobold Sweetbread Roll**, 2 Steel Daggers, Thieves' Tools, Burglar's Pack, **15 gp, 8 sp**.
-* **Key Stats Snapshot:** Level 3 | 🤝 **Help Tokens:** `2 / 2` | Attuned to *Cloak of Protection* (+1 AC / +1 Saves).
-* **Destiny Item Slot:** ❄️ **Clyssavar's Silver Scale** (Trapped in Chapter 3 Compass Rose hold).
+### 🐾 2. Sylvar Link (Half-Tabaxi Bard 3 — College of Whispers)
+* **Concept & Archetype:** Entertainer Background | **Chaotic Good** | **Archetype:** **Blind Seismic Perceiver & Whispering Blade** (Charming femboy catboy, navigates the world through acoustic whiskers, floor vibrations, and tambourine rhythms like Toph; searching for his missing twin sister).
+* **Hit Points (HP):** **21 / 21** (Hit Dice: `3d8 CON +0`) | **Armor Class (AC):** **12** (Leather + 🛡️ Cloak of Protection) | **Speed:** 30 ft *(Feline Agility: 60 ft)* | **Passive Perception:** 13
+* **Bardic Spellcasting Specs:** Spell Save DC **13** | Spell Attack Bonus **+5** | **1st-Level Spell Slots:** **4 / 4** | **2nd-Level Spell Slots:** **2 / 2** | **Bardic Inspiration:** `3 / 3` (d6) | 🤝 **Help Tokens:** `2 / 2`
+* **College of Whispers Features:** 🧠 **Psychic Blades** (+2d6 Psychic damage on weapon hit, costs 1 Insp die), 👁️ **Words of Terror** (Seed paranoia in 1 min conversation, DC 13 Wis save or Frightened 1 hr).
+* **Senses & Special Traits:** 🐾 **Blind Seismic Sense / Acoustic Blindsight (30–60 ft)** (Immune to visual dark/blind penalties; senses heartbeats, tremors, and footsteps), 🎶 **Song of Rest** (+1d6 HP on Short Rest), 🐾 **Feline Agility** (Burst to 60 ft speed).
+* **Key Gear & Weapons:** 🛡️ **Cloak of Protection** (+1 AC / +1 Saves), 🗡️ **Rapier (+3 hit, 1d8+1 + 2d6 Psychic Blades)**, 🗡️ 2x Steel Daggers, 🪘 Tambourine (Focus), 🎸 Lute & Guitar, 💣 2x Spitfire Flasks (2d4 Fire), 🧪 1x Potion of Healing, 🍞 Kobold Sweetbread Roll, 115 gp 8 sp.
+* **Destiny Relic:** ❄️ **Clyssavar's Silver Harmonic Scale** (Trapped in Chapter 3 Compass Rose hold).
 
 #### 🍷 3. Father Flubs — Level 3 Life Domain Cleric
 * **Concept & Archetype:** Acolyte Background | **Neutral Good** | **Titles:** **« The Serpent Rider »** & **« Warden of the Living Grove »** | **Priest, War Veteran, Drunkard, Fire-Serpent Rider** (Keeper of Sharruth's volcanic secret; drinks and toasts to outrun the silence).
@@ -531,23 +534,23 @@ graph TD
 | **Very Hard** | **DC 25+** | Decipher ancient demonic runes without a key. |
 
 #### 📜 All 18 Skills Master Party Reference Guide
-| Attribute | Skill | When the DM Calls for This Roll | Eflein's Bonus | New Hero (Standby) | Father Flubs' Bonus |
+| Attribute | Skill | When the DM Calls for This Roll | Eflein's Bonus | Sylvar Link's Bonus | Father Flubs' Bonus |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| **STR** | **Athletics** | Climbing cliffs, swimming surf, jumping chasms, shoving enemies | `+0` | *TBD* | `+1` |
-| **DEX** | **Acrobatics** | Balancing on tightropes, staying on feet on slick ice, flips | `+2` | *TBD* | `+0` |
-| | **Sleight of Hand** | Palming objects, picking pockets, disarming small pins | `+2` | *TBD* | `+0` |
-| | **Stealth** | Sneaking past guards, slipping past sleeping dragons | `+2` | *TBD* | `+0` |
-| **INT** | **Arcana** | Recalling spell knowledge, magic items, planar portals, runes | **+5 ★** | *TBD* | `+1` |
-| | **History** | Recalling historic battles, ancient kingdoms, legends, figures | **+5 ★** | *TBD* | `+1` |
-| | **Investigation** | Searching rooms for secret doors, deducing clues from journals | **+5 ★** | *TBD* | `+1` |
-| | **Nature** | Identifying plants (Heart Cap mushrooms), terrain, weather | `+3` | *TBD* | `+1` |
-| | **Religion** | Recalling lore on gods (Bahamut), demon lords (Orcus), undead rites | **+5 ★** | *TBD* | **+3 ★** |
-| **WIS** | **Animal Handling** | Calming frightened mounts or wild beasts | `+1` | *TBD* | `+3` |
-| | **Insight** | Reading NPC motives, sensing lies, predicting opponent moves | `+1` | *TBD* | **+5 ★** |
-| | **Medicine** | Diagnosing illnesses, stabilizing a dying player (DC 10) | `+1` | *TBD* | **+5 ★** |
-| | **Perception** | Hearing faint footsteps, spotting ambushes, smelling sulfur | **+3 ★** | *TBD* | `+3` |
-| | **Survival** | Tracking zombies/animals, foraging food/water, wilderness nav | `+1` | *TBD* | `+3` |
-| **CHA** | **Deception** | Telling believable lies, disguising true intentions | `-1` | *TBD* | `+1` |
-| | **Intimidation** | Threatening enemies, coercing hostile kobolds to back down | `-1` | *TBD* | `+1` |
-| | **Performance** | Entertaining with music, acting, storytelling, or dance | `-1` | *TBD* | `+1` |
-| | **Persuasion** | Negotiating peacefully, convincing NPCs through diplomacy | `-1` | *TBD* | **+3 ★** |
+| **STR** | **Athletics** | Climbing cliffs, swimming surf, jumping chasms, shoving enemies | `+0` | `+0` *(Jack)* | `+1` |
+| **DEX** | **Acrobatics** | Balancing on tightropes, staying on feet on slick ice, flips | `+2` | **+3 ★** | `+0` |
+| | **Sleight of Hand** | Palming objects, picking pockets, disarming small pins | `+2` | `+2` *(Jack)* | `+0` |
+| | **Stealth** | Sneaking past guards, slipping past sleeping dragons | `+2` | `+2` *(Jack)* | `+0` |
+| **INT** | **Arcana** | Recalling spell knowledge, magic items, planar portals, runes | **+5 ★** | `-2` *(Jack)* | `+1` |
+| | **History** | Recalling historic battles, ancient kingdoms, legends, figures | **+5 ★** | `-2` *(Jack)* | `+1` |
+| | **Investigation** | Searching rooms for secret doors, deducing clues from journals | **+5 ★** | `-2` *(Jack)* | `+1` |
+| | **Nature** | Identifying plants (Heart Cap mushrooms), terrain, weather | `+3` | `-2` *(Jack)* | `+1` |
+| | **Religion** | Recalling lore on gods (Bahamut), demon lords (Orcus), undead rites | **+5 ★** | `-2` *(Jack)* | **+3 ★** |
+| **WIS** | **Animal Handling** | Calming frightened mounts or wild beasts | `+1` | `+2` *(Jack)* | `+3` |
+| | **Insight** | Reading NPC motives, sensing lies, predicting opponent moves | `+1` | **+3 ★** | **+5 ★** |
+| | **Medicine** | Diagnosing illnesses, stabilizing a dying player (DC 10) | `+1` | `+2` *(Jack)* | **+5 ★** |
+| | **Perception** | Hearing faint footsteps, spotting ambushes, smelling sulfur | **+3 ★** | **+3 ★** *(Cat's Talent)* | `+3` |
+| | **Survival** | Tracking zombies/animals, foraging food/water, wilderness nav | `+1` | `+2` *(Jack)* | `+3` |
+| **CHA** | **Deception** | Telling believable lies, disguising true intentions | `-1` | `+4` *(Jack)* | `+1` |
+| | **Intimidation** | Threatening enemies, coercing hostile kobolds to back down | `-1` | `+4` *(Jack)* | `+1` |
+| | **Performance** | Entertaining with music, acting, storytelling, or dance | `-1` | **+7 ★★ (Expertise)** | `+1` |
+| | **Persuasion** | Negotiating peacefully, convincing NPCs through diplomacy | `-1` | **+7 ★★ (Expertise)** | **+3 ★** |

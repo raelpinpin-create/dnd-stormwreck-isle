@@ -89,37 +89,74 @@
 
 ---
 
-# 🛡️ Player 2: New Hero (Standby / Reserved Slot)
-* **Status:** `⭐ ACTIVE CAMPAIGN SLOT • TRANSFERRED LOADOUT READY`
+# 🐾 Player 2: Sylvar Link
+* **Status:** `⭐ ACTIVE PARTY MEMBER • LEVEL 3 WHISPERS BARD`
+* **Player Name:** Shira
+* **Standalone Interactive HTML Sheet:** [`SYLVAR_PLAYER_SHEET.html`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/SYLVAR_PLAYER_SHEET.html)
 
 ## 📜 Character Profile
-* **Name:** *[Pending Table Introduction]*
-* **Race:** *[To be configured]*
-* **Class & Level:** **Level 3 Hero**
-* **Background:** *[To be configured]*
-* **Alignment:** *[To be configured]*
-* **Role in Party:** Core Adventuring Companion & Wielder of Clyssavar's Silver Scale.
+* **Name:** Sylvar Link
+* **Race:** Half-Tabaxi (Femboy Catboy)
+* **Class & Level:** **Bard 3 (College of Whispers)**
+* **Background:** Entertainer
+* **Alignment:** **Chaotic Good**
+* **Archetype / Role:** **Acoustic Infiltrator, Whispering Blade & Blind Seismic Perceiver** — Blind half-tabaxi bard who navigates the world through acoustic whiskers, floor tremors, and echoing tambourine vibrations (like Toph). Joyful, hyper, and carrying the memory of his missing twin sister, he channels subtle psychic whispers through his rapier and songs.
+* **Role in Party:** Secondary Martial Infiltrator, Psychic Striker, Social Face (Expertise +7 Performance/Persuasion), Crowd Control & Destined Wielder of Clyssavar's Silver Harmonic Scale.
 
-## ⚔️ Combat Statistics Snapshot
+## ⚔️ Combat Statistics
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
-| **Level** | **Level 3** | Starting at Level 3 alongside Eflein & Father Flubs |
-| **Help Tokens** | **2 / 2** | Help (+1d6 to ally within 30ft, 2/LR, +1 on SR) |
-| **Transferred AC Buff** | **+1 AC & +1 Saves** | Granted by attuned *Cloak of Protection* |
+| **Level** | **Level 3** | Bard (College of Whispers) |
+| **Hit Points (HP)** | **21 / 21** | Hit Dice: `3d8` (CON +0) |
+| **Armor Class (AC)** | **12** | Leather Armor (`11`) + 🛡️ Cloak of Protection (`+1`) |
+| **Initiative** | **+1** | DEX modifier |
+| **Speed** | **30 ft** | **Feline Agility:** Burst to **60 ft** for 1 turn (recharges on 0 ft move) |
+| **Proficiency Bonus** | **+2** | Tier 1 Standard |
+| **Spell Save DC** | **13** | `8 + 2 (PB) + 3 (CHA)` |
+| **Spell Attack Mod** | **+5** | `+2 (PB) + 3 (CHA)` |
+| **Bardic Inspiration** | **3 / 3 (d6)** | Recharges on Long Rest (CHA mod = 3 uses) |
+| **Help Tokens** | **2 / 2** | +1d6 to ally check within 30 ft (regains 1 on Short Rest, 2 on Long Rest) |
+| **Senses** | **Blind Seismic Sense (30–60 ft)** | Detects vibrations, acoustics & air disturbance; immune to visual blindness penalties |
 
-## 🎒 Transferred Inventory & Belongings
+## 📊 Ability Scores & Saving Throws (with Cloak of Protection +1)
+| Ability | Score | Mod | Save (Cloak) | Skills & Proficiencies |
+| :--- | :---: | :---: | :---: | :--- |
+| **STR** | 9 | -1 | **+0** | Athletics (+0) *(Jack of All Trades)* |
+| **DEX** | 13 | +1 | **+4 ★ (Prof)** | Acrobatics (+3 ★), Sleight of Hand (+2), Stealth (+2) |
+| **CON** | 10 | +0 | **+1** | — |
+| **INT** | 5 | -3 | **-2** | Arcana (-2), History (-2), Investigation (-2), Nature (-2), Religion (-2) |
+| **WIS** | 12 | +1 | **+2** | **Insight (+3 ★)**, **Perception (+3 ★ [Cat's Talent])**, Animal Handling (+2), Medicine (+2), Survival (+2) |
+| **CHA** | 17 | +3 | **+6 ★ (Prof)** | **Performance (+7 ★★ [Expertise])**, **Persuasion (+7 ★★ [Expertise])**, Deception (+4), Intimidation (+4) |
+
+## 🔮 Bardic Features & Spells (Level 3)
+* 🧠 **Psychic Blades (College of Whispers):** When hitting with a weapon attack (Rapier/Dagger), expend 1 Bardic Inspiration die to deal an extra **2d6 Psychic damage** (1/round on your turn).
+* 👁️ **Words of Terror (College of Whispers):** Speak with humanoid alone for 1 min; DC 13 Wis save or **Frightened** for 1 hour (1/Short or Long Rest).
+* 🪘 **Bardic Inspiration (d6):** Bonus Action to grant d6 inspiration to ally within 60 ft for 1 hour (3 uses/LR).
+* 🎶 **Song of Rest (d6):** Allies spending Hit Dice during Short Rest regain an extra **1d6 HP**.
+* 🃏 **Jack of All Trades:** Add +1 (half PB) to all unproficient ability checks.
+* 🐾 **Feline Agility:** Double speed (60 ft) for 1 turn. Recharges on turn with 0 ft movement.
+* **Spell Slots:** `4x` 1st-Level, `2x` 2nd-Level.
+  * **Cantrips (0):** *Dancing Lights*, *Vicious Mockery* (DC 13 Wis, `1d4` Psychic + Disadvantage on next attack).
+  * **1st-Level (4):** *Dissonant Whispers* (DC 13 Wis, `3d6` Psychic + flee), *Healing Word* (Bonus Action, `1d4+3` HP), *Charm Person* (DC 13 Wis), *Color Spray* (6d10 HP blinded).
+  * **2nd-Level (2):** *Calm Emotions* (20-ft sphere, DC 13 Cha), *Enthrall* (DC 13 Wis).
+
+## 🎒 Inventory & Wealth
 * **Attuned Magic Items & Apparel:**
-  * 🛡️ **Cloak of Protection** (`+1` to Armor Class and `+1` to all Saving Throws — Transferred from Vaelith).
-* **Weapons & Tools:**
-  * 🗡️ 2x Steel Daggers (`1d4+DEX` Piercing / Thrown 20/60).
-  * 🗝️ Thieves' Tools (For disarming traps and picking locks).
-  * 🎒 Burglar's / Traveler's Pack (Rations, waterskin, 50ft hempen rope, tinderbox).
+  * 🛡️ **Cloak of Protection** (`+1` to Armor Class and `+1` to all Saving Throws — Attuned).
+  * 🥋 **Leather Armor** (AC 11 base).
+* **Weapons & Musical Instruments:**
+  * 🗡️ **Steel Rapier:** `+3 to hit`, reach 5 ft. *Hit:* `1d8 + 1` piercing (Finesse). *With Psychic Blades:* `1d8+1 + 2d6 Psychic`!
+  * 🗡️ **2x Steel Daggers:** `+3 to hit`, range 20/60 ft. *Hit:* `1d4 + 1` piercing (Finesse, Light, Thrown).
+  * 🪘 **Tambourine** (Arcane & Bardic Focus, acoustic resonator).
+  * 🎸 **Lute & Guitar** (Fine wooden instruments).
 * **Consumables & Combat Alchemy:**
-  * 💣 **2x Volatile Spitfire Flasks** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex).
+  * 💣 **2x Spitfire Flasks** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex save for half).
   * 🧪 **1x Potion of Healing** (Bonus Action: `2d6 HP` | Full Action: `100% Full Max HP`).
-  * 🍞 **1x Kobold Sweetbread Roll** (Restores `1d4 HP` + grants `+1d4 Temporary HP`).
-* **Personal Wealth:** `15 gp, 8 sp` *(Transferred from Vaelith's purse)*.
-* **Destiny Item Slot:** ❄️ **Clyssavar's Silver Scale** *(To be claimed in Chapter 3 Compass Rose hold)*.
+  * 🍞 **1x Kobold Sweetbread Roll** (Blepp's honey ration: `1d4 HP` + `+1d4 Temp HP`).
+* **Gear & Packs:**
+  * 🎒 **Entertainer's Pack & Burglar's Pack:** Backpack, bedroll, 3 costumes, mirror, bullseye lantern, bell, 8 oil flasks, 9 rations, tinderbox, waterskin, thieves' tools.
+* **Personal Wealth:** `115 gp, 8 sp` *(100 GP background + 15 GP 8 SP transferred)*.
+* **Destiny Relic:** ❄️ **Clyssavar's Silver Harmonic Scale** *(Chapter 3 Compass Rose Submerged Hold C9)*.
 
 ---
 

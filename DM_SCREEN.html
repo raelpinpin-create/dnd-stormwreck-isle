@@ -1176,11 +1176,11 @@
                 </div>
             </div>
 
-            <!-- PLAYER CHARACTER 3 (NEW HERO STANDBY) CARD -->
-            <div class="card pc-card mb-4" id="card-vaelith">
+            <!-- SYLVAR LINK (HALF-TABAXI WHISPERS BARD 3) CARD -->
+            <div class="card pc-card mb-4" id="card-sylvar">
                 <div class="card-header">
-                    <h3 class="clickable-title" onclick="openQuestModal('quest_silver_scale')">🛡️ Player Character 3 (New Hero) — Level 3 Standby</h3>
-                    <span class="tag tag-uncommon">Slot Reserved / Incoming</span>
+                    <h3 class="clickable-title" onclick="openQuestModal('quest_sylvar')">🐾 Sylvar Link (Level 3 Whispers Bard)</h3>
+                    <span class="tag tag-uncommon" style="background:#581c87; color:#f3e8ff; border:1px solid #9333ea;">College of Whispers</span>
                 </div>
                 <div class="card-body">
                     <!-- INTERACTIVE VITALS TRACKER -->
@@ -1189,15 +1189,15 @@
                         <div class="tracker-card">
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
-                                <button class="tracker-btn danger-step" onclick="adjustCharStat('vaelith', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-good" id="val-vaelith-hp">24</span>
-                                <span class="tracker-max-label">/ 24</span>
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'hp', 1)">+</button>
+                                <button class="tracker-btn danger-step" onclick="adjustCharStat('sylvar', 'hp', -1)">-</button>
+                                <span class="tracker-num hp-good" id="val-sylvar-hp">21</span>
+                                <span class="tracker-max-label">/ 21</span>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'hp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
-                                <button class="tracker-mini-pill" onclick="adjustCharStat('vaelith', 'hp', -5)">-5</button>
-                                <button class="tracker-mini-pill" onclick="adjustCharStat('vaelith', 'hp', 5)">+5</button>
-                                <button class="tracker-mini-pill pill-gold" onclick="resetCharHp('vaelith')">Max</button>
+                                <button class="tracker-mini-pill" onclick="adjustCharStat('sylvar', 'hp', -5)">-5</button>
+                                <button class="tracker-mini-pill" onclick="adjustCharStat('sylvar', 'hp', 5)">+5</button>
+                                <button class="tracker-mini-pill pill-gold" onclick="resetCharHp('sylvar')">Max</button>
                             </div>
                         </div>
 
@@ -1205,13 +1205,13 @@
                         <div class="tracker-card">
                             <label>🛡️ TEMP HP</label>
                             <div class="tracker-stepper">
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'tempHp', -1)">-</button>
-                                <span class="tracker-num temp-hp-num" id="val-vaelith-tempHp">0</span>
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'tempHp', 1)">+</button>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'tempHp', -1)">-</button>
+                                <span class="tracker-num temp-hp-num" id="val-sylvar-tempHp">0</span>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'tempHp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
-                                <button class="tracker-mini-pill pill-cyan" onclick="adjustCharStat('vaelith', 'tempHp', 5)">+5 Temp</button>
-                                <button class="tracker-mini-pill" onclick="clearCharTempHp('vaelith')">Clear 0</button>
+                                <button class="tracker-mini-pill pill-cyan" onclick="adjustCharStat('sylvar', 'tempHp', 5)">+5 Temp</button>
+                                <button class="tracker-mini-pill" onclick="clearCharTempHp('sylvar')">Clear 0</button>
                             </div>
                         </div>
 
@@ -1219,29 +1219,29 @@
                         <div class="tracker-card">
                             <label>🛡️ ARMOR CLASS</label>
                             <div class="tracker-stepper">
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'tempAc', -1)">-</button>
-                                <span class="tracker-num ac-num" id="val-vaelith-ac">16</span>
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'tempAc', 1)">+</button>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'tempAc', -1)">-</button>
+                                <span class="tracker-num ac-num" id="val-sylvar-ac">12</span>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'tempAc', 1)">+</button>
                             </div>
-                            <div class="tracker-subtext" id="sub-vaelith-ac">Base: 16 (Armor + Cloak of Protection) | Temp: +0</div>
+                            <div class="tracker-subtext" id="sub-sylvar-ac">Base: 12 (Leather + Cloak of Protection) | Temp: +0</div>
                             <div class="tracker-quick-row">
-                                <button class="tracker-mini-pill pill-gold" onclick="adjustCharStat('vaelith', 'tempAc', 2)">+2 Shield</button>
-                                <button class="tracker-mini-pill" onclick="resetCharTempAc('vaelith')">0</button>
+                                <button class="tracker-mini-pill pill-gold" onclick="adjustCharStat('sylvar', 'tempAc', 2)">+2 Shield</button>
+                                <button class="tracker-mini-pill" onclick="resetCharTempAc('sylvar')">0</button>
                             </div>
                         </div>
 
-                        <!-- PACT / ABILITY SLOTS TRACKER -->
+                        <!-- BARDIC INSPIRATION TRACKER -->
                         <div class="tracker-card">
-                            <label>⚡ RESOURCE SLOTS</label>
+                            <label>🪘 INSPIRATION (d6)</label>
                             <div class="tracker-stepper">
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'pactSlots', -1)">-</button>
-                                <span class="tracker-num slots-num" id="val-vaelith-pactSlots">2</span>
-                                <span class="tracker-max-label">/ 2</span>
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'pactSlots', 1)">+</button>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'insp', -1)">-</button>
+                                <span class="tracker-num slots-num" id="val-sylvar-insp" style="color:#c084fc;">3</span>
+                                <span class="tracker-max-label">/ 3</span>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'insp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
-                                <button class="tracker-mini-pill pill-gold" onclick="resetCharSlots('vaelith', 'pactSlots')">Short Rest</button>
-                                <button class="tracker-mini-pill" onclick="setCharStat('vaelith', 'pactSlots', 0)">0</button>
+                                <button class="tracker-mini-pill pill-purple" onclick="rollSylvarPsychicBlades()">🧠 Blade +2d6</button>
+                                <button class="tracker-mini-pill pill-gold" onclick="resetCharSlots('sylvar', 'insp')">Reset</button>
                             </div>
                         </div>
 
@@ -1249,51 +1249,55 @@
                         <div class="tracker-card">
                             <label>🤝 HELP TOKENS</label>
                             <div class="tracker-stepper">
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'helpTokens', -1)">-</button>
-                                <span class="tracker-num" id="val-vaelith-helpTokens" style="color:#67e8f9;">2</span>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'helpTokens', -1)">-</button>
+                                <span class="tracker-num" id="val-sylvar-helpTokens" style="color:#67e8f9;">2</span>
                                 <span class="tracker-max-label">/ 2</span>
-                                <button class="tracker-btn" onclick="adjustCharStat('vaelith', 'helpTokens', 1)">+</button>
+                                <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'helpTokens', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
-                                <button class="tracker-mini-pill pill-cyan" onclick="rollHelpToken('vaelith')">🎲 Help +1d6</button>
-                                <button class="tracker-mini-pill" onclick="resetCharHelp('vaelith')">2 Max</button>
+                                <button class="tracker-mini-pill pill-cyan" onclick="rollHelpToken('sylvar')">🎲 Help +1d6</button>
+                                <button class="tracker-mini-pill" onclick="resetCharHelp('sylvar')">2 Max</button>
                             </div>
                         </div>
 
                         <!-- INITIATIVE STAT -->
                         <div class="tracker-card">
                             <label>⚡ INITIATIVE</label>
-                            <div style="font-family:'JetBrains Mono',monospace; font-size:1.18rem; font-weight:800; color:#86efac; margin:4px 0;">+2</div>
-                            <div class="tracker-subtext">Standby Modifier</div>
+                            <div style="font-family:'JetBrains Mono',monospace; font-size:1.18rem; font-weight:800; color:#86efac; margin:4px 0;">+1</div>
+                            <div class="tracker-subtext">DEX +1 • Feline Agility</div>
                         </div>
                     </div>
 
-                    <!-- TRANSFERRED LOADOUT & GEAR BAR -->
+                    <!-- SYLVAR LOADOUT & SPELL BAR -->
                     <div class="pc-resources-bar">
                         <div class="resource-chip">
                             <strong>🛡️ Cloak of Protection:</strong>
                             <span style="color:#86efac; font-weight:600;">+1 AC & +1 All Saves</span>
                         </div>
                         <div class="resource-chip">
-                            <strong>💣 Spitfire Flasks:</strong>
-                            <span style="color:#f59e0b; font-weight:600;">2x (2d4 Fire 20ft)</span>
+                            <strong>🗡️ Rapier Strike:</strong>
+                            <span style="color:#c084fc; font-weight:600;">+3 Hit (1d8+1 + 2d6 Psychic)</span>
                         </div>
                         <div class="resource-chip">
-                            <strong>🧪 Potion of Healing:</strong>
-                            <span style="color:#38bdf8; font-weight:600;">1x (2d6 / Full Max HP)</span>
+                            <strong>🔮 Spell Slots:</strong>
+                            <span style="color:#a78bfa; font-weight:600;">Lv1: 4/4 | Lv2: 2/2</span>
                         </div>
                         <div class="resource-chip">
-                            <strong>🪙 Coin Vault:</strong>
-                            <span style="color:#fbbf24; font-weight:600;">15 GP, 8 SP</span>
+                            <strong>🐾 Blind Tremorsense:</strong>
+                            <span style="color:#38bdf8; font-weight:600;">30–60 ft Blindsight</span>
+                        </div>
+                        <div class="resource-chip">
+                            <strong>🪙 Coin Purse:</strong>
+                            <span style="color:#fbbf24; font-weight:600;">115 GP, 8 SP</span>
                         </div>
                     </div>
 
                     <div class="pc-header-grid" style="margin-top:6px;">
                         <div>
-                            <p><strong>Status:</strong> <span style="color: #38bdf8; font-weight:bold;">Reserved Slot / Standby</span> | <strong>Destined Relic:</strong> ❄️ Clyssavar's Silver Scale</p>
-                            <p><strong>Transferred Inventory:</strong> Cloak of Protection (+1 AC/Saves), 2x Spitfire Flasks, 1x Potion of Healing, 1x Kobold Sweetbread Roll, 2x Steel Daggers, Thieves' Tools, Burglar's Pack, 15 GP, 8 SP.</p>
+                            <p><strong>Archetype:</strong> <span style="color: #c084fc; font-weight:bold;">Acoustic Infiltrator & Whispering Blade</span> | <strong>Destined Relic:</strong> ❄️ Clyssavar's Silver Harmonic Scale</p>
+                            <p><strong>Combat Loadout:</strong> Rapier (+3, 1d8+1), 2x Daggers, Tambourine (Focus), Leather Armor, Cloak of Protection (+1 AC/Saves), 2x Spitfire Flasks, Potion of Healing, Kobold Sweetbread Roll, 115 GP, 8 SP.</p>
                             <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">
-                                <em>Full abilities, spells, and modifiers will be populated upon character sheet generation.</em>
+                                <em>Skills: Performance (+7 Expertise), Persuasion (+7 Expertise), Acrobatics (+3), Insight (+3), Perception (+3). Full sheet: <a href="SYLVAR_PLAYER_SHEET.html" style="color:#c084fc; text-decoration:underline;">SYLVAR_PLAYER_SHEET.html</a></em>
                             </p>
                         </div>
                     </div>
@@ -1830,29 +1834,27 @@
                             </p>
                         </div>
 
-                        <!-- NEW HERO / CLYSSAVAR'S SILVER SCALE QUEST -->
-                        <div class="quest-box" style="border-left-color: #38bdf8; background:#0f172a; border-radius:6px; padding:12px; display:flex; flex-direction:column; justify-content:space-between;">
+                        <!-- SYLVAR LINK / CLYSSAVAR'S SILVER HARMONIC SCALE QUEST -->
+                        <div class="quest-box" style="border-left-color: #c084fc; background:#0f172a; border-radius:6px; padding:12px; display:flex; flex-direction:column; justify-content:space-between;">
                             <div>
                                 <div class="quest-header" style="margin-bottom:6px; border-bottom:1px solid #1e293b; padding-bottom:6px;">
-                                    <strong class="clickable-title" onclick="openQuestModal('quest_silver_scale')" style="color:#67e8f9; font-size:0.95rem;">🐉 The Silver Scale of Clyssavar</strong>
-                                    <span class="tag tag-uncommon" style="background:#152844; color:#93c5fd; border:1px solid #284c80; font-weight:700;">New Hero Arc</span>
+                                    <strong class="clickable-title" onclick="openQuestModal('quest_sylvar')" style="color:#c084fc; font-size:0.95rem;">🐾 Sylvar Link: The Acoustic Whisper & Clyssavar's Harmonics</strong>
+                                    <span class="tag tag-uncommon" style="background:#581c87; color:#f3e8ff; border:1px solid #9333ea; font-weight:700;">Sylvar Arc</span>
                                 </div>
                                 <p style="font-size: 0.78rem; color: #cbd5e1; margin-bottom: 6px;">
-                                    <strong>Core Goal:</strong> Raid the sunken hold of the <em>Compass Rose</em>, claim Clyssavar's Silver Scale, and channel its glacial power into the Tri-Draconic Convergence.
+                                    <strong>Core Goal:</strong> Follow clues to his missing twin sister, raid the sunken hold of the <em>Compass Rose</em>, bond with Clyssavar's Silver Harmonic Scale, and channel acoustic resonance into the Tri-Draconic Convergence.
                                 </p>
                                 <div class="quest-steps" style="margin-bottom:8px;">
                                     <ol style="font-size:0.76rem; padding-left:16px; margin:0;">
-                                        <li><strong>Arrival & Outfitting:</strong> Receive transferred loadout and rally at Dragon's Rest.</li>
-                                        <li><strong>Shipwreck Raid (Ch 3):</strong> Infiltrate <em>Compass Rose</em>; defeat the Drowned Queen Aleitha.</li>
-                                        <li><strong>The Sunken Vault (C9):</strong> Unlock the captain's chest; claim ❄️ <strong>Clyssavar's Silver Scale</strong>.</li>
+                                        <li><strong>Arrival & Harmonizing:</strong> Join the fellowship at Dragon's Rest, sensing island vibrations.</li>
+                                        <li><strong>Shipwreck Raid (Ch 3):</strong> Infiltrate <em>Compass Rose</em> with blind seismic sense; defeat Aleitha.</li>
+                                        <li><strong>The Sunken Vault (C9):</strong> Unlock chest with Ivory Key; bond with ❄️ <strong>Clyssavar's Silver Harmonic Scale</strong> (+1 DC/Atk, 60ft Blindsight).</li>
                                         <li><strong>Observatory (D5):</strong> Channel silver resonance in the Tri-Draconic Convergence!</li>
-                                        <li><strong>⚡ Climax:</strong> Shatter Sparkrender's siphon and seal Sharruth's volcanic core.</li>
+                                        <li><strong>⚡ Climax:</strong> Shatter Sparkrender's siphon, seal Sharruth, and follow sister's clues across the sea.</li>
                                     </ol>
                                 </div>
                             </div>
-                            <p style="font-size: 0.74rem; color: var(--accent-gold); margin: 0;">
-                                🔑 <em>Scale Reward:</em> <strong>Clyssavar's Silver Scale</strong> (+1 Cold Atk/DC, Cold Resist).
-                            </p>
+                            <button class="btn btn-outline" style="border-color:#c084fc; color:#c084fc; font-size:0.72rem; padding:3px 6px; width:100%; margin-top:6px;" onclick="openQuestModal('quest_sylvar')">📖 View Full Character Arc & Relic Lore</button>
                         </div>
 
                         <!-- FATHER FLUBS' PERSONAL QUEST -->
@@ -3184,30 +3186,51 @@
             rewards: "⚡ <strong>Astalagan's Awakened Amber Scale</strong> (+1 Spell Attack & DC, +1d6 Lightning damage surge 1/turn), +2 to Arcana checks permanently, Lianna's Coordinates to the Ancient Dragon Realm, and Level 5 Evocation Mastery.",
             color: "var(--accent-gold)"
         },
-        quest_silver_scale: {
-            title: "🐉 The Silver Scale of Clyssavar & The New Hero's Trial",
-            level: "🛡️ Character Destiny Arc • Core Strike Specialist / Relic Bearer",
-            giver: "Clyssavar the Silver Dragon & The Metallic Triarchs",
-            location: "Dragon's Rest (Arrival) ➔ Compass Rose Wreck (Ch 3) ➔ Observatory Apex (D5)",
-            summary: "Resting within the submerged hold of the Compass Rose shipwreck, Clyssavar's Silver Scale radiates ancient protective cold. As the party raids the wreck to break the island's zombie curse, the New Hero braves the flooded hold to recover and bond with the relic. By uniting the Silver Scale with Astalagan's Bronze Scale and Turadaer's Gold Scale, the party unleashes the Tri-Draconic Convergence atop the Clifftop Observatory to shut down Sparkrender's siphon and seal Sharruth's volcanic tomb forever!",
-            readAloud: "A pure, crystalline ring echoes through the salt air as the silver scale hums to life. Frost glitters along the edges of your blade and armor, cold not of death, but of unyielding, eternal resolve. In the reflection of the silver metal, the regal silhouette of an ancient silver dragon flares into view—Clyssavar's blessing has found its new guardian.",
-            dialogue: `"The silver scale does not belong to any tyrant or rogue. It responds only to those who stand in the breach to protect their companions." — Ancient Cloister Inscription`,
+        quest_sylvar: {
+            title: "🐾 Sylvar Link: The Acoustic Whisper & Clyssavar's Harmonics",
+            level: "🔮 Character Destiny Arc • Half-Tabaxi Whispers Bard 3",
+            giver: "Missing Twin Sister & Clyssavar the Silver Harmonic Wyrm",
+            location: "Dragon's Rest ➔ Compass Rose Wreck (C9) ➔ Clifftop Observatory (D5-D6)",
+            summary: "Blind since birth, Sylvar perceives the world through vibrations, acoustic whiskers, and tambourine beats (like Toph). While searching Faerûn for his missing twin sister who taught him to dance, Sylvar connects with Clyssavar's Silver Harmonic Scale in the flooded hold of the Compass Rose. Clyssavar, the ancient dragon of planar harmonics and whispering cold, resonates with Sylvar's acoustic sense—expanding his blindsight to 60 ft, amplifying his psychic blades, and providing key clues toward his sister's path across the sea!",
+            readAloud: "A pure, crystalline ring echoes through the salt air as the silver scale hums to life. A high-frequency acoustic pulse radiates across your skin, and suddenly your blind vision blossoms with astonishing clarity—you can hear the rhythmic pulsing of water against the cliffs, the heartbeat of your companions, and the ancient song of an ancient dragon. Clyssavar's harmonic blessing has found its guardian.",
+            dialogue: `"I may not have eyes for the light, but the entire world sings its secrets to my whiskers and tambourine. Let's make this song unforgettable!" — Sylvar Link`,
             steps: [
-                "1. ⛩️ <strong>Arrival & Outfitting (Ch 1 & 2):</strong> Arrive at Dragon's Rest, receive the transferred loadout (Cloak of Protection, Spitfire Flasks, Potion of Healing, rations, and coin), and integrate with Eflein, Father Flubs, and Varnoth.",
-                "2. 🚢 <strong>Shipwreck Raid & Submerged Hold (Ch 3 - C9):</strong> Infiltrate the <em>Compass Rose</em> wreck, defeat the Drowned Queen Aleitha, and unlock the captain's chest with Aleitha's Ivory Key to claim ❄️ <strong>Clyssavar's Silver Scale</strong>.",
-                "3. 📜 <strong>Unraveling the Tri-Draconic Lore:</strong> Decipher the ancient records describing how the three metallic dragon champions sealed the volcanic wyrm Sharruth centuries ago.",
-                "4. 🪐 <strong>Observatory Effigy & Convergence (Ch 4 - D5):</strong> Channel Clyssavar's silver resonance into the <strong>Tri-Draconic Convergence</strong> alongside Eflein's bronze lightning and Father Flubs' golden dawn.",
+                "1. ⛩️ <strong>Arrival & Harmonizing (Ch 1 & 2):</strong> Arrive at Dragon's Rest, receive the transferred loadout (Cloak of Protection, Spitfire Flasks, Potion of Healing, rations, and coin), and dance with the cloister residents while sensing deep volcanic hums.",
+                "2. 🚢 <strong>Shipwreck Raid & Submerged Hold (Ch 3 - C9):</strong> Infiltrate the <em>Compass Rose</em> wreck with blind seismic sense, defeat Aleitha the Drowned Queen, and unlock the captain's chest with Aleitha's Ivory Key to claim ❄️ <strong>Clyssavar's Silver Harmonic Scale</strong>.",
+                "3. 🪘 <strong>Awakening the Harmonic Blindsight:</strong> Attune to the Silver Scale, expanding acoustic blindsight to 60 ft, gaining +1 to Spell Save DC (DC 14) and +1 to Spell Attack (+6), Cold Resistance, and Crystalline Sound-Burst (+1d6 Cold/Psychic slow burst 1/day).",
+                "4. 🪐 <strong>Observatory Effigy & Convergence (Ch 4 - D5):</strong> Align the 4 Scholar Statues through seismic floor cues and channel Clyssavar's silver resonance into the <strong>Tri-Draconic Convergence</strong> alongside Eflein's bronze lightning and Father Flubs' golden dawn.",
                 "5. ⚡ <strong>THE GRAND CLIMAX:</strong> Shatter Sparkrender's comet siphon, rescue Aidron, and permanently seal Sharruth's subterranean tomb!",
-                "6. 🌟 <strong>Victory & Next Journey:</strong> Stand triumphant with the fellowship as Eflein discovers Lianna's star-atlas coordinates to the ancient dragon lands."
+                "6. 🌟 <strong>Victory & Next Journey:</strong> Stand triumphant with the fellowship as Eflein discovers Lianna's star-atlas coordinates to the ancient dragon lands, where clues to Sylvar's missing sister point!"
             ],
-            tactics: "Utilize the Cloak of Protection (+1 AC & Saves) on the frontline. In Chapter 3, activate the Silver Scale's Glacial Burst (+1d6 Cold & -10ft slow) to hinder mobile foes and keep squishy spellcasters protected.",
+            tactics: "Leverage blind tremorsense (immune to visual darkness/fog penalties in 30-60 ft). Combine Rapier attacks with Psychic Blades (+2d6 Psychic) and use Dissonant Whispers to force tough enemies to flee.",
             scenarios: [
-                "<strong>Scenario A (The Vanguard's Oath):</strong> The hero swears to wield the Silver Scale in defense of the realm, charting a voyage alongside Eflein to the ancient dragon lands.",
-                "<strong>Scenario B (Guardian of Dragon's Rest):</strong> The hero becomes the honored protector of the sanctuary, earning Runara's eternal gratitude.",
-                "<strong>Scenario C (Herald of the Triarchs):</strong> The dragon scales guide the party to the next chapter of their heroic legend across Faerûn."
+                "<strong>Scenario A (Voyage to the Ancient Dragon Lands):</strong> Sylvar boards the chartered ship alongside Eflein, Flubs, and Varnoth to trace his missing twin sister.",
+                "<strong>Scenario B (Harmonic Minstrel of Dragon's Rest):</strong> Sylvar stays at Dragon's Rest to study draconic harmonics under Elder Runara.",
+                "<strong>Scenario C (Sword Coast Legend):</strong> Sylvar tours the grand taverns of Waterdeep and Neverwinter, dazzling lords with his blind tambourine dance."
             ],
-            checks: "DC 12 Athletics/Acrobatics (navigate flooded wreck), DC 13 Constitution save (resist icy depths), DC 14 Dex/Wis save (channel Tri-Draconic Convergence).",
-            rewards: "❄️ <strong>Clyssavar's Silver Scale</strong> (+1 Cold Atk/DC, Cold Resistance, +1d6 Slow Burst 1/day), Cloak of Protection (+1 AC/Saves), and Level 5 Master Tier."
+            checks: "DC 12 Acrobatics (navigate flooded wreck), DC 13 Performance (harmonize tambourine with scale), DC 14 Wis/Cha save (channel Tri-Draconic Convergence).",
+            rewards: "❄️ <strong>Clyssavar's Silver Harmonic Scale</strong> (+1 DC/Atk, 60ft Blindsight, Cold Resistance, +1d6 Slow Burst 1/day), Cloak of Protection (+1 AC/Saves), and Level 5 Master Tier.",
+            color: "var(--accent-purple)"
+        },
+        quest_silver_scale: {
+            title: "🐾 Sylvar Link: The Acoustic Whisper & Clyssavar's Harmonics",
+            level: "🔮 Character Destiny Arc • Half-Tabaxi Whispers Bard 3",
+            giver: "Missing Twin Sister & Clyssavar the Silver Harmonic Wyrm",
+            location: "Dragon's Rest ➔ Compass Rose Wreck (C9) ➔ Clifftop Observatory (D5-D6)",
+            summary: "Blind since birth, Sylvar perceives the world through vibrations, acoustic whiskers, and tambourine beats (like Toph). While searching Faerûn for his missing twin sister who taught him to dance, Sylvar connects with Clyssavar's Silver Harmonic Scale in the flooded hold of the Compass Rose.",
+            readAloud: "A pure, crystalline ring echoes through the salt air as the silver scale hums to life. A high-frequency acoustic pulse radiates across your skin, and suddenly your blind vision blossoms with astonishing clarity.",
+            dialogue: `"I may not have eyes for the light, but the entire world sings its secrets to my whiskers and tambourine!" — Sylvar Link`,
+            steps: [
+                "1. ⛩️ <strong>Arrival & Harmonizing:</strong> Receive transferred loadout and rally at Dragon's Rest.",
+                "2. 🚢 <strong>Shipwreck Raid (Ch 3 - C9):</strong> Infiltrate <em>Compass Rose</em>; claim ❄️ <strong>Clyssavar's Silver Harmonic Scale</strong>.",
+                "3. 🪐 <strong>Observatory (D5):</strong> Channel silver resonance in the Tri-Draconic Convergence!",
+                "4. ⚡ <strong>Climax:</strong> Shatter Sparkrender's siphon, seal Sharruth, and follow sister's clues across the sea."
+            ],
+            tactics: "Combine Rapier strikes with Psychic Blades (+2d6 Psychic) and use acoustic blindsight to spot concealed enemies.",
+            scenarios: ["Voyage to the Ancient Dragon Lands", "Harmonic Minstrel of Dragon's Rest", "Sword Coast Legend"],
+            checks: "DC 12 Acrobatics, DC 13 Performance, DC 14 Wis/Cha save.",
+            rewards: "❄️ <strong>Clyssavar's Silver Harmonic Scale</strong>, Cloak of Protection, and Level 5 Master Tier.",
+            color: "var(--accent-purple)"
         },
         quest_father_flubs: {
             title: "🍷 Father Flubs: The Ward-Priest's Secret & Sharruth's Fall",
@@ -5217,18 +5240,18 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
     // 1-CLICK PARTY INITIATIVE FAST-ROLLER
     function rollFullPartyInit() {
         const eD20 = Math.floor(Math.random() * 20) + 1;
-        const vD20 = Math.floor(Math.random() * 20) + 1;
+        const sD20 = Math.floor(Math.random() * 20) + 1;
         const fD20 = Math.floor(Math.random() * 20) + 1;
         const gD20 = Math.floor(Math.random() * 20) + 1;
         
         const efleinInit = eD20 + 3; // Dex +2 + Lodestone +1
-        const vaelithInit = vD20 + 2; // Dex +2
+        const sylvarInit = sD20 + 1; // Dex +1
         const fatherFlubsInit = fD20 + 0; // Dex +0
         const varnothInit = gD20 + 1; // Dex +1
         
         const results = [
             { name: "⚡ Eflein", roll: `d20:${eD20}+3`, total: efleinInit },
-            { name: "🛡️ New Hero", roll: `d20:${vD20}+2`, total: vaelithInit },
+            { name: "🐾 Sylvar Link", roll: `d20:${sD20}+1`, total: sylvarInit },
             { name: "🛡️ Varnoth", roll: `d20:${gD20}+1`, total: varnothInit },
             { name: "🍷 Father Flubs", roll: `d20:${fD20}+0`, total: fatherFlubsInit }
         ].sort((a, b) => b.total - a.total);
@@ -5242,7 +5265,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
     // ==========================================
     // 🧙‍♂️ PARTY CHARACTER LIVE STATS & TRACKER ENGINE
     // ==========================================
-    const PARTY_STORAGE_KEY = "stormwreck_party_vitals_v2";
+    const PARTY_STORAGE_KEY = "stormwreck_party_vitals_v3";
 
     const DEFAULT_PARTY_DATA = {
         eflein: {
@@ -5260,18 +5283,18 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             lightningSurge: true,
             robeReserve: true
         },
-        vaelith: {
-            hp: 2,
-            maxHp: 24,
+        sylvar: {
+            hp: 21,
+            maxHp: 21,
             tempHp: 0,
-            baseAc: 16,
+            baseAc: 12,
             tempAc: 0,
-            pactSlots: 2,
-            maxPactSlots: 2,
+            insp: 3,
+            maxInsp: 3,
+            slots1: 4,
+            maxSlots1: 4,
             helpTokens: 2,
-            maxHelpTokens: 2,
-            aspect: 2,
-            maxAspect: 2
+            maxHelpTokens: 2
         },
         father_flubs: {
             hp: 24,
@@ -5303,13 +5326,16 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
 
     function loadPartyState() {
         try {
-            const saved = localStorage.getItem(PARTY_STORAGE_KEY);
+            const saved = localStorage.getItem(PARTY_STORAGE_KEY) || localStorage.getItem("stormwreck_party_vitals_v2");
             if (saved) {
                 const parsed = JSON.parse(saved);
                 partyState = Object.assign({}, DEFAULT_PARTY_DATA, parsed);
+                if (!partyState.sylvar) {
+                    partyState.sylvar = JSON.parse(JSON.stringify(DEFAULT_PARTY_DATA.sylvar));
+                }
                 // Ensure help tokens exist if loading an older save
-                ['eflein', 'vaelith', 'father_flubs', 'varnoth'].forEach(k => {
-                    if (typeof partyState[k].helpTokens === 'undefined') {
+                ['eflein', 'sylvar', 'father_flubs', 'varnoth'].forEach(k => {
+                    if (partyState[k] && typeof partyState[k].helpTokens === 'undefined') {
                         partyState[k].helpTokens = 2;
                         partyState[k].maxHelpTokens = 2;
                     }
@@ -5361,29 +5387,27 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         updateToggleBtn('btn-eflein-lightningSurge', e.lightningSurge, "Ready (+1d6)", "Expended");
         updateToggleBtn('btn-eflein-robeReserve', e.robeReserve, "Ready (+1 Slot)", "Empty");
 
-        // --- VAELITH ---
-        const v = partyState.vaelith;
-        const vHpEl = document.getElementById('val-vaelith-hp');
-        if (vHpEl) {
-            vHpEl.innerText = v.hp;
-            setHpColorClass(vHpEl, v.hp, v.maxHp);
+        // --- SYLVAR LINK ---
+        const s = partyState.sylvar || DEFAULT_PARTY_DATA.sylvar;
+        const sHpEl = document.getElementById('val-sylvar-hp');
+        if (sHpEl) {
+            sHpEl.innerText = s.hp;
+            setHpColorClass(sHpEl, s.hp, s.maxHp || 21);
         }
-        const vTempHpEl = document.getElementById('val-vaelith-tempHp');
-        if (vTempHpEl) vTempHpEl.innerText = v.tempHp;
+        const sTempHpEl = document.getElementById('val-sylvar-tempHp');
+        if (sTempHpEl) sTempHpEl.innerText = s.tempHp || 0;
 
-        const totalVaelithAc = 16 + v.tempAc;
-        const vAcEl = document.getElementById('val-vaelith-ac');
-        if (vAcEl) vAcEl.innerText = totalVaelithAc;
-        const vAcSub = document.getElementById('sub-vaelith-ac');
-        if (vAcSub) {
-            vAcSub.innerText = `Base: 16 (Shadows+Cloak) | Temp: ${v.tempAc >= 0 ? '+' + v.tempAc : v.tempAc}`;
+        const totalSylvarAc = 12 + (s.tempAc || 0);
+        const sAcEl = document.getElementById('val-sylvar-ac');
+        if (sAcEl) sAcEl.innerText = totalSylvarAc;
+        const sAcSub = document.getElementById('sub-sylvar-ac');
+        if (sAcSub) {
+            sAcSub.innerText = `Base: 12 (Leather+Cloak) | Temp: ${s.tempAc >= 0 ? '+' + s.tempAc : s.tempAc}`;
         }
-        const vPactEl = document.getElementById('val-vaelith-pactSlots');
-        if (vPactEl) vPactEl.innerText = v.pactSlots;
-        const vAspectEl = document.getElementById('val-vaelith-aspect');
-        if (vAspectEl) vAspectEl.innerText = `${v.aspect} / ${v.maxAspect}`;
-        const vHelpEl = document.getElementById('val-vaelith-helpTokens');
-        if (vHelpEl) vHelpEl.innerText = v.helpTokens;
+        const sInspEl = document.getElementById('val-sylvar-insp');
+        if (sInspEl) sInspEl.innerText = s.insp !== undefined ? s.insp : 3;
+        const sHelpEl = document.getElementById('val-sylvar-helpTokens');
+        if (sHelpEl) sHelpEl.innerText = s.helpTokens !== undefined ? s.helpTokens : 2;
 
         // --- FATHER FLUBS ---
         const h = partyState.father_flubs;
@@ -5435,6 +5459,47 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
 
         // --- STICKY FOOTER SYNC ---
         updateFooterQuickBar();
+    }
+
+    function rollSylvarPsychicBlades() {
+        if (!partyState.sylvar) partyState.sylvar = JSON.parse(JSON.stringify(DEFAULT_PARTY_DATA.sylvar));
+        if (partyState.sylvar.insp <= 0) {
+            alert("No Bardic Inspiration dice remaining! (3/Long Rest)");
+            return;
+        }
+        partyState.sylvar.insp -= 1;
+        savePartyState();
+        const p1 = Math.floor(Math.random() * 6) + 1;
+        const p2 = Math.floor(Math.random() * 6) + 1;
+        const tot = p1 + p2;
+        const box = document.getElementById('dm-init-console');
+        if (box) {
+            box.style.display = 'block';
+            box.innerHTML = `🧠 <strong>Sylvar Psychic Blades Infusion:</strong> Dealt <span style="color:#c084fc; font-weight:800;">${tot} Psychic Damage</span> [2d6: ${p1}+${p2}]! (${partyState.sylvar.insp}/3 inspiration remaining)`;
+        }
+    }
+
+    function updateFooterQuickBar() {
+        const e = partyState.eflein;
+        const s = partyState.sylvar || DEFAULT_PARTY_DATA.sylvar;
+        const h = partyState.father_flubs;
+        const g = partyState.varnoth;
+        
+        const bar = document.querySelector('.quick-bar');
+        if (!bar) return;
+        
+        const eAc = (e.mageArmor ? 15 : 12) + e.tempAc;
+        const sAc = 12 + (s.tempAc || 0);
+        const hAc = 16 + h.tempAc;
+        const gAc = 17 + g.tempAc;
+
+        bar.innerHTML = `
+            <div class="quick-item">🎲 <strong>DCs:</strong> Easy 10 | Mod 15 | Hard 20</div>
+            <div class="quick-item">⚡ <strong>Eflein:</strong> HP ${e.hp}/${e.maxHp}${e.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+e.tempHp+')</span>' : ''} | AC ${eAc} | Slots: ${e.slots1}/3 | 🤝 ${e.helpTokens}/2</div>
+            <div class="quick-item">🐾 <strong>Sylvar:</strong> HP ${s.hp}/${s.maxHp || 21}${s.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+s.tempHp+')</span>' : ''} | AC ${sAc} | Insp: ${s.insp}/3 | 🤝 ${s.helpTokens}/2</div>
+            <div class="quick-item">🍷 <strong>Father Flubs:</strong> HP ${h.hp}/${h.maxHp}${h.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+h.tempHp+')</span>' : ''} | AC ${hAc} | Slots: ${h.slots1}/3 | 🤝 ${h.helpTokens}/2</div>
+            <div class="quick-item">🛡️ <strong>Varnoth:</strong> HP ${g.hp}/${g.maxHp}${g.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+g.tempHp+')</span>' : ''} | AC ${gAc} | 🤝 ${g.helpTokens}/2</div>
+        `;
     }
 
     function setHpColorClass(el, current, max) {
