@@ -107,9 +107,9 @@
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
 | **Level** | **Level 3** | Bard (College of Whispers) |
-| **Hit Points (HP)** | **21 / 21** | Hit Dice: `3d8` (CON +0) |
-| **Armor Class (AC)** | **12** | Leather Armor (`11`) + 🛡️ Cloak of Protection (`+1`) |
-| **Initiative** | **+1** | DEX modifier |
+| **Hit Points (HP)** | **27 / 27** | Hit Dice: `3d8 + 6` (CON +2) |
+| **Armor Class (AC)** | **15** | Leather Armor (`11`) + DEX (`+3`) + 🛡️ Cloak of Protection (`+1`) |
+| **Initiative** | **+3** | DEX modifier |
 | **Speed** | **30 ft** | **Feline Agility:** Burst to **60 ft** for 1 turn (recharges on 0 ft move) |
 | **Proficiency Bonus** | **+2** | Tier 1 Standard |
 | **Spell Save DC** | **13** | `8 + 2 (PB) + 3 (CHA)` |
@@ -121,9 +121,9 @@
 ## 📊 Ability Scores & Saving Throws (with Cloak of Protection +1)
 | Ability | Score | Mod | Save (Cloak) | Skills & Proficiencies |
 | :--- | :---: | :---: | :---: | :--- |
-| **STR** | 9 | -1 | **+0** | Athletics (+0) *(Jack of All Trades)* |
-| **DEX** | 13 | +1 | **+4 ★ (Prof)** | Acrobatics (+3 ★), Sleight of Hand (+2), Stealth (+2) |
-| **CON** | 10 | +0 | **+1** | — |
+| **STR** | 8 | -1 | **+0** | Athletics (+0) *(Jack of All Trades)* |
+| **DEX** | 16 | +3 | **+6 ★ (Prof)** | **Acrobatics (+5 ★)**, Sleight of Hand (+4), Stealth (+4) |
+| **CON** | 14 | +2 | **+3** | Concentration checks (+2 base, +3 save) |
 | **INT** | 5 | -3 | **-2** | Arcana (-2), History (-2), Investigation (-2), Nature (-2), Religion (-2) |
 | **WIS** | 12 | +1 | **+2** | **Insight (+3 ★)**, **Perception (+3 ★ [Cat's Talent])**, Animal Handling (+2), Medicine (+2), Survival (+2) |
 | **CHA** | 17 | +3 | **+6 ★ (Prof)** | **Performance (+7 ★★ [Expertise])**, **Persuasion (+7 ★★ [Expertise])**, Deception (+4), Intimidation (+4) |
@@ -143,10 +143,10 @@
 ## 🎒 Inventory & Wealth
 * **Attuned Magic Items & Apparel:**
   * 🛡️ **Cloak of Protection** (`+1` to Armor Class and `+1` to all Saving Throws — Attuned).
-  * 🥋 **Leather Armor** (AC 11 base).
+  * 🥋 **Leather Armor** (AC 11 base + DEX +3 = AC 14 base).
 * **Weapons & Musical Instruments:**
-  * 🗡️ **Steel Rapier:** `+3 to hit`, reach 5 ft. *Hit:* `1d8 + 1` piercing (Finesse). *With Psychic Blades:* `1d8+1 + 2d6 Psychic`!
-  * 🗡️ **2x Steel Daggers:** `+3 to hit`, range 20/60 ft. *Hit:* `1d4 + 1` piercing (Finesse, Light, Thrown).
+  * 🗡️ **Steel Rapier:** `+5 to hit`, reach 5 ft. *Hit:* `1d8 + 3` piercing (Finesse). *With Psychic Blades:* `1d8+3 + 2d6 Psychic`!
+  * 🗡️ **Steel Dagger (2x):** `+5 to hit`, range 20/60 ft. *Hit:* `1d4 + 3` piercing (Finesse, Light, Thrown).
   * 🪘 **Tambourine** (Arcane & Bardic Focus, acoustic resonator).
   * 🎸 **Lute & Guitar** (Fine wooden instruments).
 * **Consumables & Combat Alchemy:**

@@ -737,7 +737,7 @@
 
             <!-- RESULT BANNER -->
             <div class="roll-result-display" id="roll-res">
-                🐾 Acoustic matrix initialized. Roll any attack, save, or skill check below!
+                🐾 Acoustic matrix initialized (DEX 16 / CHA 17). Roll any attack, save, or skill check below!
             </div>
         </section>
 
@@ -751,15 +751,15 @@
                 <div class="vitals-4box">
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">HIT POINTS</span>
-                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">21/21</span>
+                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">27/27</span>
                     </div>
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">ARMOR CLASS</span>
-                        <span class="vital-mini-val" id="ac-disp" style="color:var(--accent-gold);">12</span>
+                        <span class="vital-mini-val" id="ac-disp" style="color:var(--accent-gold);">15</span>
                     </div>
-                    <div class="vital-mini-box" onclick="rollD20('Initiative Roll (DEX +1)', 1)" style="cursor:pointer;" title="Click to roll Initiative (+1)">
+                    <div class="vital-mini-box" onclick="rollD20('Initiative Roll (DEX +3)', 3)" style="cursor:pointer;" title="Click to roll Initiative (+3)">
                         <span class="vital-mini-lbl">INIT 🎲</span>
-                        <span class="vital-mini-val" style="color:var(--accent-blue);">+1</span>
+                        <span class="vital-mini-val" style="color:var(--accent-blue);">+3</span>
                     </div>
                     <div class="vital-mini-box" title="Base Bard DC 13, Hit +5 (Charisma +3, Prof +2)">
                         <span class="vital-mini-lbl">SPELL DC / HIT</span>
@@ -839,22 +839,22 @@
                     </div>
                 </div>
 
-                <!-- 6 ABILITY SCORES STRIP -->
+                <!-- 6 ABILITY SCORES STRIP (UPGRADED STAT ARRAY) -->
                 <div class="ability-strip">
                     <div class="ability-box" onclick="rollD20('STR Check', -1)" title="Click to roll STR Check (-1)">
                         <div class="ability-name">STR</div>
-                        <div class="ability-score">9</div>
+                        <div class="ability-score">8</div>
                         <div class="ability-mod">-1</div>
                     </div>
-                    <div class="ability-box" onclick="rollD20('DEX Check', 1)" title="Click to roll DEX Check (+1)">
+                    <div class="ability-box" onclick="rollD20('DEX Check', 3)" title="Click to roll DEX Check (+3)">
                         <div class="ability-name">DEX</div>
-                        <div class="ability-score">13</div>
-                        <div class="ability-mod">+1</div>
+                        <div class="ability-score">16</div>
+                        <div class="ability-mod" style="color:var(--accent-blue); font-weight:700;">+3</div>
                     </div>
-                    <div class="ability-box" onclick="rollD20('CON Check', 0)" title="Click to roll CON Check (+0)">
+                    <div class="ability-box" onclick="rollD20('CON Check', 2)" title="Click to roll CON Check (+2)">
                         <div class="ability-name">CON</div>
-                        <div class="ability-score">10</div>
-                        <div class="ability-mod">+0</div>
+                        <div class="ability-score">14</div>
+                        <div class="ability-mod" style="color:var(--accent-green); font-weight:700;">+2</div>
                     </div>
                     <div class="ability-box" onclick="rollD20('INT Check', -3)" title="Click to roll INT Check (-3)">
                         <div class="ability-name">INT</div>
@@ -881,9 +881,9 @@
                     </div>
                     <ul class="stat-row-list">
                         <li class="stat-row-item prof-item" onclick="rollD20('Charisma Saving Throw ★', 6)"><span>Charisma Save ★</span><span>+6 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Dexterity Saving Throw ★', 4)"><span>Dexterity Save ★</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Dexterity Saving Throw ★', 6)"><span>Dexterity Save ★</span><span>+6 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Constitution Save', 3)"><span>Constitution Save</span><span>+3 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Wisdom Save', 2)"><span>Wisdom Save</span><span>+2 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Constitution Save', 1)"><span>Constitution Save</span><span>+1 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Strength Save', 0)"><span>Strength Save</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Intelligence Save', -2)"><span>Intelligence Save</span><span>-2 🎲</span></li>
                     </ul>
@@ -896,7 +896,7 @@
                         <span style="font-size:0.7rem; color:var(--text-dim);">Jack of All Trades (+1)</span>
                     </div>
                     <ul class="stat-row-list">
-                        <li class="stat-row-item prof-item" onclick="rollD20('Acrobatics (DEX) ★', 3)"><span>Acrobatics (DEX) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Acrobatics (DEX) ★', 5)"><span>Acrobatics (DEX) ★</span><span>+5 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Animal Handling (WIS)', 2)"><span>Animal Handling (WIS)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Arcana (INT)', -2)"><span>Arcana (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Athletics (STR)', 0)"><span>Athletics (STR)</span><span>+0 🎲</span></li>
@@ -911,8 +911,8 @@
                         <li class="stat-row-item prof-item" onclick="rollD20('Performance (CHA) ★ [Expertise]', 7)"><span>Performance (CHA) ★ [Expertise]</span><span>+7 🎲</span></li>
                         <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★ [Expertise]', 7)"><span>Persuasion (CHA) ★ [Expertise]</span><span>+7 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Religion (INT)', -2)"><span>Religion (INT)</span><span>-2 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 2)"><span>Sleight of Hand (DEX)</span><span>+2 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 2)"><span>Stealth (DEX)</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 4)"><span>Sleight of Hand (DEX)</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 4)"><span>Stealth (DEX)</span><span>+4 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Survival (WIS)', 2)"><span>Survival (WIS)</span><span>+2 🎲</span></li>
                     </ul>
                 </div>
@@ -989,10 +989,10 @@
                                 </div>
                                 <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">FINESSE</span>
                             </div>
-                            <div class="action-desc">Reach 5ft. +3 to Hit, 1d8+1 Piercing. Combines with Psychic Blades (+2d6)!</div>
+                            <div class="action-desc">Reach 5ft. <strong>+5 to Hit</strong>, <strong>1d8+3 Piercing</strong>. Combines with Psychic Blades (+2d6)!</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Rapier Attack', 3)">🗡️ Attack</button>
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Rapier Damage', 8, 1, 'Piercing')">💥 Damage</button>
+                                <button class="btn-roll-action" onclick="rollD20('Rapier Attack', 5)">🗡️ Attack (+5)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Rapier Damage', 8, 3, 'Piercing')">💥 1d8+3 Dmg</button>
                                 <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">⚡ +2d6 Psychic</button>
                             </div>
                         </div>
@@ -1008,10 +1008,10 @@
                                 </div>
                                 <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">LIGHT</span>
                             </div>
-                            <div class="action-desc">Reach 5ft / Range 20/60. +3 to Hit, 1d4+1 Piercing.</div>
+                            <div class="action-desc">Reach 5ft / Range 20/60. <strong>+5 to Hit</strong>, <strong>1d4+3 Piercing</strong>.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Dagger Attack', 3)">🗡️ Attack</button>
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Dagger Damage', 4, 1, 'Piercing')">💥 Damage</button>
+                                <button class="btn-roll-action" onclick="rollD20('Dagger Attack', 5)">🗡️ Attack (+5)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Dagger Damage', 4, 3, 'Piercing')">💥 1d4+3 Dmg</button>
                             </div>
                         </div>
 
@@ -1244,10 +1244,10 @@
 
     <script>
         // ==========================================
-        // 📊 CORE STATE & LOCALSTORAGE PERSISTENCE
+        // 📊 CORE STATE & LOCALSTORAGE PERSISTENCE (UPGRADED STATS)
         // ==========================================
-        const maxHP = 21;
-        let currentHP = 21;
+        const maxHP = 27;
+        let currentHP = 27;
         let tempHP = 0;
         let bardicInsp = 3;
         let helpTokens = 2;
@@ -1421,28 +1421,28 @@
                 category: "WONDROUS ITEM • Attuned",
                 origin: "Dragon's Rest Sanctuary",
                 desc: "A finely tailored twilight-grey cloak trimmed with shimmering silver embroidery.",
-                effect: "• <strong>+1 to Armor Class</strong> (Base AC 12).<br>• <strong>+1 to all Saving Throws</strong> (Str +0, Dex +4, Con +1, Int -2, Wis +2, Cha +6)."
+                effect: "• <strong>+1 to Armor Class</strong> (Base AC 15 with Leather + 16 DEX).<br>• <strong>+1 to all Saving Throws</strong> (Str +0, Dex +6, Con +3, Int -2, Wis +2, Cha +6)."
             },
             "leather armor": {
                 name: "🥋 Leather Armor",
                 category: "LIGHT ARMOR",
                 origin: "Starting Gear",
                 desc: "Supple, fitted boiled leather allowing silent fluid movements.",
-                effect: "• Sets base AC to 11 + DEX mod (+1) = AC 12."
+                effect: "• Sets base AC to 11 + DEX mod (+3) = AC 14 (15 with Cloak)."
             },
             "rapier": {
                 name: "🗡️ Steel Rapier",
                 category: "MARTIAL WEAPON • Finesse",
                 origin: "Bardic Loadout",
                 desc: "A flexible, razor-pointed steel blade with an ornate silver basket hilt.",
-                effect: "• <strong>+3 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 1 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+2d6 Psychic Damage</strong>!"
+                effect: "• <strong>+5 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 3 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+2d6 Psychic Damage</strong>!"
             },
             "dagger": {
                 name: "🗡️ Steel Dagger",
                 category: "SIMPLE WEAPON • Finesse, Light, Thrown",
                 origin: "Bardic Loadout",
                 desc: "Balanced throwing daggers with keen steel edges.",
-                effect: "• <strong>+3 to Hit</strong>, range 20/60 ft.<br>• <strong>1d4 + 1 Piercing Damage</strong>."
+                effect: "• <strong>+5 to Hit</strong>, range 20/60 ft.<br>• <strong>1d4 + 3 Piercing Damage</strong>."
             },
             "tambourine": {
                 name: "🪘 Tambourine",
@@ -1470,7 +1470,7 @@
                 category: "MAGIC POTION • Consumable",
                 origin: "Tarak's Herbal Dispensary",
                 desc: "A swirling crimson potion smelling of crushed winterberries.",
-                effect: "• <strong>Bonus Action:</strong> Restores <strong>2d6 Hit Points</strong>.<br>• <strong>Full Action (House Rule):</strong> Restores <strong>100% Full Max HP (21 HP)</strong>!"
+                effect: "• <strong>Bonus Action:</strong> Restores <strong>2d6 Hit Points</strong>.<br>• <strong>Full Action (House Rule):</strong> Restores <strong>100% Full Max HP (27 HP)</strong>!"
             },
             "sweetbread": {
                 name: "🍞 Kobold Sweetbread Roll",
@@ -1509,8 +1509,10 @@
 
         function loadSavedState() {
             try {
-                const savedHP = localStorage.getItem('sylvar_hp');
+                const savedHP = localStorage.getItem('sylvar_hp_v2');
                 if (savedHP !== null) currentHP = parseInt(savedHP);
+                else currentHP = 27;
+
                 const savedTemp = localStorage.getItem('sylvar_temp_hp');
                 if (savedTemp !== null) tempHP = parseInt(savedTemp);
                 const savedInsp = localStorage.getItem('sylvar_insp');
@@ -1535,7 +1537,7 @@
         }
 
         function saveSheetState() {
-            localStorage.setItem('sylvar_hp', currentHP);
+            localStorage.setItem('sylvar_hp_v2', currentHP);
             localStorage.setItem('sylvar_temp_hp', tempHP);
             localStorage.setItem('sylvar_insp', bardicInsp);
             localStorage.setItem('sylvar_help', helpTokens);
@@ -1651,7 +1653,7 @@
             }
 
             const acDisp = document.getElementById('ac-disp');
-            acDisp.innerText = isCloakAttuned ? '12' : '11';
+            acDisp.innerText = isCloakAttuned ? '15' : '14';
         }
 
         function applyDamage() {
@@ -1728,7 +1730,7 @@
             renderSpellSlots();
             updateCountersUI();
             saveSheetState();
-            logRoll(`⛺ <strong>Full Long Rest Completed:</strong> All HP (21/21), Spell Slots (4/4, 2/2), Bardic Inspiration (3/3), and Help Tokens (2/2) fully restored!`);
+            logRoll(`⛺ <strong>Full Long Rest Completed:</strong> All HP (27/27), Spell Slots (4/4, 2/2), Bardic Inspiration (3/3), and Help Tokens (2/2) fully restored!`);
         }
 
         // ==========================================
@@ -1762,12 +1764,12 @@
                 card.classList.add('active-buff');
                 badge.innerText = "ATTUNED";
                 badge.className = "toggle-badge on";
-                logRoll(`🛡️ <strong>Cloak of Protection Attuned:</strong> +1 AC (AC 12) and +1 to all Saving Throws.`);
+                logRoll(`🛡️ <strong>Cloak of Protection Attuned:</strong> +1 AC (AC 15) and +1 to all Saving Throws.`);
             } else {
                 card.classList.remove('active-buff');
                 badge.innerText = "OFF";
                 badge.className = "toggle-badge off";
-                logRoll(`🛡️ <strong>Cloak of Protection Removed:</strong> AC reduced to 11.`);
+                logRoll(`🛡️ <strong>Cloak of Protection Removed:</strong> AC reduced to 14.`);
             }
             renderVitals();
         }
@@ -2383,14 +2385,14 @@
                 school: "Melee Weapon",
                 castingTime: "1 Action",
                 range: "5 feet",
-                desc: "Finesse Martial Weapon: +3 to Hit, 1d8 + 1 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!"
+                desc: "Finesse Martial Weapon: +5 to Hit, 1d8 + 3 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!"
             },
             dagger: {
                 name: "🗡️ Steel Dagger",
                 school: "Finesse / Thrown",
                 castingTime: "1 Action",
                 range: "20/60 feet",
-                desc: "Finesse, Light, Thrown: +3 to Hit, 1d4 + 1 Piercing Damage."
+                desc: "Finesse, Light, Thrown: +5 to Hit, 1d4 + 3 Piercing Damage."
             },
             viciousmockery: {
                 name: "🎭 Vicious Mockery",
@@ -2445,7 +2447,7 @@
         // ==========================================
         function exportSheetState() {
             const items = getStoredItems();
-            const exportStr = `🐾 Sylvar Link (Lv 3 Whispers Bard) | HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: ${isCloakAttuned ? '12' : '11'} | Insp: ${bardicInsp}/3 | Help: ${helpTokens}/2 | Slots: [Lv1: ${spellSlots[1].current}/4, Lv2: ${spellSlots[2].current}/2] | Wealth: ${currentGP} GP, ${currentSP} SP | 📦 Inventory: (${items.length} items)`;
+            const exportStr = `🐾 Sylvar Link (Lv 3 Whispers Bard) | HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: ${isCloakAttuned ? '15' : '14'} | Insp: ${bardicInsp}/3 | Help: ${helpTokens}/2 | Slots: [Lv1: ${spellSlots[1].current}/4, Lv2: ${spellSlots[2].current}/2] | Wealth: ${currentGP} GP, ${currentSP} SP | 📦 Inventory: (${items.length} items)`;
 
             navigator.clipboard.writeText(exportStr).then(() => {
                 alert(`Copied Character State to Clipboard!\n\n${exportStr}`);

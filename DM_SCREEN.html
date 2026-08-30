@@ -1190,8 +1190,8 @@
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn danger-step" onclick="adjustCharStat('sylvar', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-good" id="val-sylvar-hp">21</span>
-                                <span class="tracker-max-label">/ 21</span>
+                                <span class="tracker-num hp-good" id="val-sylvar-hp">27</span>
+                                <span class="tracker-max-label">/ 27</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'hp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
@@ -1220,10 +1220,10 @@
                             <label>🛡️ ARMOR CLASS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'tempAc', -1)">-</button>
-                                <span class="tracker-num ac-num" id="val-sylvar-ac">12</span>
+                                <span class="tracker-num ac-num" id="val-sylvar-ac">15</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'tempAc', 1)">+</button>
                             </div>
-                            <div class="tracker-subtext" id="sub-sylvar-ac">Base: 12 (Leather + Cloak of Protection) | Temp: +0</div>
+                            <div class="tracker-subtext" id="sub-sylvar-ac">Base: 15 (Leather + DEX +3 + Cloak of Protection) | Temp: +0</div>
                             <div class="tracker-quick-row">
                                 <button class="tracker-mini-pill pill-gold" onclick="adjustCharStat('sylvar', 'tempAc', 2)">+2 Shield</button>
                                 <button class="tracker-mini-pill" onclick="resetCharTempAc('sylvar')">0</button>
@@ -1263,8 +1263,8 @@
                         <!-- INITIATIVE STAT -->
                         <div class="tracker-card">
                             <label>⚡ INITIATIVE</label>
-                            <div style="font-family:'JetBrains Mono',monospace; font-size:1.18rem; font-weight:800; color:#86efac; margin:4px 0;">+1</div>
-                            <div class="tracker-subtext">DEX +1 • Feline Agility</div>
+                            <div style="font-family:'JetBrains Mono',monospace; font-size:1.18rem; font-weight:800; color:#86efac; margin:4px 0;">+3</div>
+                            <div class="tracker-subtext">DEX +3 • Feline Agility</div>
                         </div>
                     </div>
 
@@ -1276,7 +1276,7 @@
                         </div>
                         <div class="resource-chip">
                             <strong>🗡️ Rapier Strike:</strong>
-                            <span style="color:#c084fc; font-weight:600;">+3 Hit (1d8+1 + 2d6 Psychic)</span>
+                            <span style="color:#c084fc; font-weight:600;">+5 Hit (1d8+3 + 2d6 Psychic)</span>
                         </div>
                         <div class="resource-chip">
                             <strong>🔮 Spell Slots:</strong>
@@ -1295,9 +1295,9 @@
                     <div class="pc-header-grid" style="margin-top:6px;">
                         <div>
                             <p><strong>Archetype:</strong> <span style="color: #c084fc; font-weight:bold;">Acoustic Infiltrator & Whispering Blade</span> | <strong>Destined Relic:</strong> ❄️ Clyssavar's Silver Harmonic Scale</p>
-                            <p><strong>Combat Loadout:</strong> Rapier (+3, 1d8+1), 2x Daggers, Tambourine (Focus), Leather Armor, Cloak of Protection (+1 AC/Saves), 2x Spitfire Flasks, Potion of Healing, Kobold Sweetbread Roll, 15 GP, 0 SP.</p>
+                            <p><strong>Combat Loadout:</strong> Rapier (+5, 1d8+3), 2x Daggers (+5, 1d4+3), Tambourine (Focus), Leather Armor, Cloak of Protection (+1 AC/Saves), 2x Spitfire Flasks, Potion of Healing, Kobold Sweetbread Roll, 15 GP, 0 SP.</p>
                             <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">
-                                <em>Skills: Performance (+5 ★), Persuasion (+5 ★), Acrobatics (+3 ★), Insight (+3 ★), Perception (+3 ★). Full sheet: <a href="SYLVAR_PLAYER_SHEET.html" style="color:#c084fc; text-decoration:underline;">SYLVAR_PLAYER_SHEET.html</a></em>
+                                <em>Skills: Performance (+7 ★), Persuasion (+7 ★), Acrobatics (+5 ★), Insight (+3 ★), Perception (+3 ★). Full sheet: <a href="SYLVAR_PLAYER_SHEET.html" style="color:#c084fc; text-decoration:underline;">SYLVAR_PLAYER_SHEET.html</a></em>
                             </p>
                         </div>
                     </div>
@@ -5284,10 +5284,10 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             robeReserve: true
         },
         sylvar: {
-            hp: 21,
-            maxHp: 21,
+            hp: 27,
+            maxHp: 27,
             tempHp: 0,
-            baseAc: 12,
+            baseAc: 15,
             tempAc: 0,
             insp: 3,
             maxInsp: 3,
@@ -5496,7 +5496,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         bar.innerHTML = `
             <div class="quick-item">🎲 <strong>DCs:</strong> Easy 10 | Mod 15 | Hard 20</div>
             <div class="quick-item">⚡ <strong>Eflein:</strong> HP ${e.hp}/${e.maxHp}${e.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+e.tempHp+')</span>' : ''} | AC ${eAc} | Slots: ${e.slots1}/3 | 🤝 ${e.helpTokens}/2</div>
-            <div class="quick-item">🐾 <strong>Sylvar:</strong> HP ${s.hp}/${s.maxHp || 21}${s.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+s.tempHp+')</span>' : ''} | AC ${sAc} | Insp: ${s.insp}/3 | 🤝 ${s.helpTokens}/2</div>
+            <div class="quick-item">🐾 <strong>Sylvar:</strong> HP ${s.hp}/${s.maxHp || 27}${s.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+s.tempHp+')</span>' : ''} | AC ${sAc} | Insp: ${s.insp}/3 | 🤝 ${s.helpTokens}/2</div>
             <div class="quick-item">🍷 <strong>Father Flubs:</strong> HP ${h.hp}/${h.maxHp}${h.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+h.tempHp+')</span>' : ''} | AC ${hAc} | Slots: ${h.slots1}/3 | 🤝 ${h.helpTokens}/2</div>
             <div class="quick-item">🛡️ <strong>Varnoth:</strong> HP ${g.hp}/${g.maxHp}${g.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+g.tempHp+')</span>' : ''} | AC ${gAc} | 🤝 ${g.helpTokens}/2</div>
         `;
