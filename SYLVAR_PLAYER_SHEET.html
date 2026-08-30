@@ -1073,11 +1073,11 @@
                             <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
                                 <div>
                                     <span style="font-size:0.68rem; font-weight:700; color:var(--accent-blue);">1st:</span>
-                                    <span id="slot-1-disp" style="font-size:0.72rem; font-weight:700; color:#f8fafc; font-family:'JetBrains Mono';">4 / 4</span>
+                                    <span id="slot-pips-1" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(1)">🟦 🟦 🟦 🟦 (4/4)</span>
                                 </div>
                                 <div style="display:flex; gap:2px;">
-                                    <button class="btn-act btn-act-pre" style="padding:1px 4px; font-size:0.65rem;" onclick="modSpellSlot(1, -1)">-</button>
-                                    <button class="btn-act btn-act-pre" style="padding:1px 4px; font-size:0.65rem;" onclick="modSpellSlot(1, 1)">+</button>
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(1, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(1, 1)" style="padding:0px 4px; font-size:0.65rem;">+</button>
                                 </div>
                             </div>
 
@@ -1085,19 +1085,23 @@
                             <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
                                 <div>
                                     <span style="font-size:0.68rem; font-weight:700; color:var(--accent-purple);">2nd:</span>
-                                    <span id="slot-2-disp" style="font-size:0.72rem; font-weight:700; color:#f8fafc; font-family:'JetBrains Mono';">2 / 2</span>
+                                    <span id="slot-pips-2" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(2)">🟦 🟦 (2/2)</span>
                                 </div>
                                 <div style="display:flex; gap:2px;">
-                                    <button class="btn-act btn-act-pre" style="padding:1px 4px; font-size:0.65rem;" onclick="modSpellSlot(2, -1)">-</button>
-                                    <button class="btn-act btn-act-pre" style="padding:1px 4px; font-size:0.65rem;" onclick="modSpellSlot(2, 1)">+</button>
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(2, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(2, 1)" style="padding:0px 4px; font-size:0.65rem;">+</button>
                                 </div>
                             </div>
 
                             <!-- Level 3 Slots (Locked) -->
-                            <div style="background:#090e1a; border:1px solid #1e293b; border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center; opacity:0.6;">
+                            <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
                                 <div>
                                     <span style="font-size:0.68rem; font-weight:700; color:#64748b;">3rd:</span>
-                                    <span style="font-size:0.68rem; color:#64748b;">🔒 Lv 5 Req</span>
+                                    <span id="slot-pips-3" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(3)"><span style="color:#ef4444; font-size:0.68rem; font-weight:700;">🔒 Lvl 5 Req</span></span>
+                                </div>
+                                <div style="display:flex; gap:2px;">
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(3, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
+                                    <button class="btn-act btn-act-pre" onclick="modSlotTier(3, 1)" style="padding:0px 4px; font-size:0.65rem;">+</button>
                                 </div>
                             </div>
                         </div>
@@ -1120,7 +1124,7 @@
                         <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-purple);">
                             <div style="display:flex; justify-content:space-between; align-items:center;">
                                 <div>
-                                    <strong style="color:var(--accent-purple);">🧠 Psychic Blades:</strong>
+                                    <strong style="color:var(--accent-purple); cursor:pointer;" onclick="openSpellDetailsModal('psychicblades')" onmouseover="this.style.color='#f8fafc'" onmouseout="this.style.color='var(--accent-purple)'">🧠 Psychic Blades: <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span></strong>
                                     <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">Deal +2d6 Psychic on weapon hit (Costs 1 Insp).</span>
                                 </div>
                                 <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">🗡️ Infuse (+2d6)</button>
@@ -1131,7 +1135,7 @@
                         <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-gold);">
                             <div style="display:flex; justify-content:space-between; align-items:center;">
                                 <div>
-                                    <strong style="color:var(--accent-gold);">👁️ Words of Terror:</strong>
+                                    <strong style="color:var(--accent-gold); cursor:pointer;" onclick="openSpellDetailsModal('wordsofterror')" onmouseover="this.style.color='#f8fafc'" onmouseout="this.style.color='var(--accent-gold)'">👁️ Words of Terror: <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span></strong>
                                     <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">1 min private talk ➔ DC 13 Wis save or Frightened 1 hr.</span>
                                 </div>
                                 <button class="btn-roll-action" style="background:#78350f; color:#fef3c7;" onclick="rollWordsOfTerrorAction()">🗣️ Seed Paranoia</button>
@@ -1142,7 +1146,7 @@
                         <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-green);">
                             <div style="display:flex; justify-content:space-between; align-items:center;">
                                 <div>
-                                    <strong style="color:var(--accent-green);">🎶 Song of Rest:</strong>
+                                    <strong style="color:var(--accent-green); cursor:pointer;" onclick="openSpellDetailsModal('songofrest')" onmouseover="this.style.color='#f8fafc'" onmouseout="this.style.color='var(--accent-green)'">🎶 Song of Rest: <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span></strong>
                                     <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">Allies spending Hit Dice on Short Rest gain extra +1d6 HP.</span>
                                 </div>
                                 <button class="btn-roll-action btn-roll-heal" onclick="rollSongOfRestAction()">🎶 +1d6 Rest Heal</button>
@@ -1257,27 +1261,32 @@
         let currentSP = 0;
         let advState = 'normal'; // 'normal', 'adv', 'dis'
 
+        let characterLevel = 3;
         let spellSlots = {
             1: { current: 4, max: 4, reqLevel: 1 },
             2: { current: 2, max: 2, reqLevel: 3 },
             3: { current: 0, max: 0, reqLevel: 5 }
         };
 
-        // Full Spells Known Dataset
+        // Full Spells Known Dataset with Complete D&D 5e Compendium Data
         const fullSpellbook = [
             {
                 id: 'dissonantwhispers',
-                name: 'Dissonant Whispers',
+                name: '🧠 Dissonant Whispers',
+                tag: '1st Lvl • 1 Action',
                 level: 1,
-                school: 'Enchantment',
+                school: '1st-Level Enchantment',
                 castingTime: '1 Action',
                 range: '60 feet',
-                components: 'V',
+                components: 'V (Verbal)',
                 duration: 'Instantaneous',
+                attackMod: 'DC 13 Wisdom Save',
+                damage: '3d6 Psychic Damage + Flee Reaction',
+                desc: 'Whisper a discordant psychic melody (DC 13 Wis save). Fail: 3d6 Psychic damage & immediately flees using its reaction.',
+                fullRules: 'You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a <strong>Wisdom saving throw (DC 13)</strong>. On a failed save, it takes <strong>3d6 psychic damage</strong> and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn\'t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn\'t have to move.',
+                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st (4d6 at 2nd level, 5d6 at 3rd level).',
+                flavor: 'Sylvar taps a rapid, haunting tempo on his tambourine, whispering an aberrant chord that rings directly inside the enemy\'s skull.',
                 hasLevelSelect: true,
-                desc: 'Whisper a discordant melody. DC 13 Wis save: 3d6 Psychic damage + immediately flee using reaction.',
-                fullRules: 'You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw (DC 13). On a failed save, it takes 3d6 Psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you.<br><br>The creature doesn\'t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn\'t have to move.',
-                upcastNotes: 'When cast using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.',
                 buttons: [
                     {
                         label: '🧠 Cast & Damage (-1 Slot)',
@@ -1289,17 +1298,21 @@
             },
             {
                 id: 'healingword',
-                name: 'Healing Word',
+                name: '💚 Healing Word',
+                tag: '1st Lvl • 1 Bonus Action',
                 level: 1,
-                school: 'Evocation',
+                school: '1st-Level Evocation',
                 castingTime: '1 Bonus Action',
                 range: '60 feet',
-                components: 'V',
+                components: 'V (Verbal)',
                 duration: 'Instantaneous',
+                attackMod: 'Automatic (Friendly Target)',
+                damage: '1d4 + 3 Hit Points Restored',
+                desc: 'Quick acoustic blessing heals a creature you can sense within 60 ft for 1d4 + 3 HP (Bonus Action).',
+                fullRules: 'A creature of your choice that you can see or sense within range regains hit points equal to <strong>1d4 + your spellcasting ability modifier (+3)</strong>. This spell has no effect on undead or constructs.',
+                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st (2d4+3 at 2nd level, 3d4+3 at 3rd level).',
+                flavor: 'Sylvar sings a sweet, melodic chord that matches an ally\'s heartbeat, knitting wounds with silver vibrational warmth.',
                 hasLevelSelect: true,
-                desc: 'A quick whispered melody restores 1d4 + 3 Hit Points to a creature you can sense within 60 ft.',
-                fullRules: 'A creature of your choice that you can see or sense within range regains hit points equal to 1d4 + your spellcasting ability modifier (+3). This spell has no effect on undead or constructs.',
-                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.',
                 buttons: [
                     {
                         label: '💚 Heal Target (-1 Slot)',
@@ -1311,17 +1324,21 @@
             },
             {
                 id: 'colorspray',
-                name: 'Color Spray',
+                name: '🌈 Color Spray',
+                tag: '1st Lvl • 1 Action',
                 level: 1,
-                school: 'Illusion',
+                school: '1st-Level Illusion',
                 castingTime: '1 Action',
                 range: 'Self (15-foot cone)',
                 components: 'V, S, M (colored sand)',
                 duration: '1 round',
+                attackMod: 'Automatic (Lowest HP First)',
+                damage: 'Blinds 6d10 Total HP of Creatures',
+                desc: '15-ft cone of dazzling light blinds creatures based on 6d10 total hit points in ascending order.',
+                fullRules: 'A dazzling array of flashing, colored light springs from your hand. Roll <strong>6d10</strong>; the total is how many hit points of creatures this spell can affect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn.',
+                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st (8d10 at 2nd level).',
+                flavor: 'Sylvar spins with his tambourine, throwing an explosion of sparkling, disorienting prismatic light.',
                 hasLevelSelect: true,
-                desc: 'Dazzling cone of colored light blinds creatures based on 6d10 total hit points in ascending order.',
-                fullRules: 'A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can affect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures).<br><br>Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn.',
-                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.',
                 buttons: [
                     {
                         label: '🌈 Cast Color Spray (-1 Slot)',
@@ -1333,17 +1350,21 @@
             },
             {
                 id: 'charmperson',
-                name: 'Charm Person',
+                name: '💖 Charm Person',
+                tag: '1st Lvl • 1 Action',
                 level: 1,
-                school: 'Enchantment',
+                school: '1st-Level Enchantment',
                 castingTime: '1 Action',
                 range: '30 feet',
-                components: 'V, S',
+                components: 'V, S (Verbal, Somatic)',
                 duration: '1 hour',
-                hasLevelSelect: true,
+                attackMod: 'DC 13 Wisdom Save',
+                damage: 'Charmed (Friendly Acquaintance)',
                 desc: 'Charm a humanoid within 30 ft (DC 13 Wis save). Target regards you as a friendly acquaintance.',
-                fullRules: 'You attempt to charm a humanoid you can see or sense within range. It must make a Wisdom saving throw (DC 13), and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it.',
+                fullRules: 'You attempt to charm a humanoid you can see or sense within range. It must make a <strong>Wisdom saving throw (DC 13)</strong>, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. When the spell ends, the creature knows it was charmed by you.',
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.',
+                flavor: 'With a feline purr and a playful flick of his ears, Sylvar laces charm directly into his spoken words.',
+                hasLevelSelect: true,
                 buttons: [
                     {
                         label: '💖 Cast Charm Person (-1 Slot)',
@@ -1355,17 +1376,21 @@
             },
             {
                 id: 'calmemotions',
-                name: 'Calm Emotions',
+                name: '🕊️ Calm Emotions',
+                tag: '2nd Lvl • 1 Action',
                 level: 2,
-                school: 'Enchantment',
+                school: '2nd-Level Enchantment',
                 castingTime: '1 Action',
                 range: '60 feet (20-ft sphere)',
-                components: 'V, S',
+                components: 'V, S (Verbal, Somatic)',
                 duration: 'Concentration, up to 1 minute',
-                hasLevelSelect: true,
+                attackMod: 'DC 13 Charisma Save',
+                damage: 'Suppresses Charmed/Frightened / Hostility',
                 desc: 'Suppress charmed/frightened conditions or make hostile humanoids indifferent in a 20-ft sphere (DC 13 Cha).',
-                fullRules: 'You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw (DC 13); a creature can choose to fail this save voluntarily. If a creature fails, you can suppress any charmed or frightened conditions, or make a hostile creature indifferent about creatures of your choice.',
-                upcastNotes: 'Casting at higher levels maintains the concentration duration.',
+                fullRules: 'You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a <strong>Charisma saving throw (DC 13)</strong>; a creature can choose to fail this save voluntarily. If a creature fails its saving throw, you can choose one of the following two effects: suppress any effect causing a target to be charmed or frightened, or make a target indifferent about creatures of your choice that it is hostile toward.',
+                upcastNotes: 'When cast at higher levels, the spell maintains its concentration duration.',
+                flavor: 'Sylvar plays a soft, rhythmic lullaby on his tambourine bells, draining tension and wrath from the air.',
+                hasLevelSelect: true,
                 buttons: [
                     {
                         label: '🕊️ Cast Calm Emotions (-1 Slot)',
@@ -1377,17 +1402,21 @@
             },
             {
                 id: 'enthrall',
-                name: 'Enthrall',
+                name: '✨ Enthrall',
+                tag: '2nd Lvl • 1 Action',
                 level: 2,
-                school: 'Enchantment',
+                school: '2nd-Level Enchantment',
                 castingTime: '1 Action',
                 range: '60 feet',
-                components: 'V, S',
+                components: 'V, S (Verbal, Somatic)',
                 duration: '1 minute',
-                hasLevelSelect: true,
-                desc: 'Weave distracting words. Targets make DC 13 Wis save or suffer Disadvantage on Perception to notice anyone else.',
-                fullRules: 'You weave a string of distracting words, causing creatures of your choice that you can see or sense within range to make a Wisdom saving throw (DC 13). Any creature that can\'t be charmed succeeds automatically. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends.',
+                attackMod: 'DC 13 Wisdom Save',
+                damage: 'Disadvantage on Perception vs Others',
+                desc: 'Captivating words give chosen targets Disadvantage on Perception to notice anyone other than you (DC 13 Wis).',
+                fullRules: 'You weave a string of distracting words, causing creatures of your choice that you can see or sense within range to make a <strong>Wisdom saving throw (DC 13)</strong>. Any creature that can\'t be charmed succeeds on this saving throw automatically. On a failed save, the target has <strong>disadvantage on Wisdom (Perception) checks</strong> made to perceive any creature other than you until the spell ends or until the target can no longer hear you.',
                 upcastNotes: 'Casting at higher levels maintains the full duration.',
+                flavor: 'Sylvar leaps into a mesmerizing acoustic dance, commanding the undivided attention of everyone nearby.',
+                hasLevelSelect: true,
                 buttons: [
                     {
                         label: '✨ Cast Enthrall (-1 Slot)',
@@ -1845,24 +1874,67 @@
         // 🔮 SPELL SLOTS & SPELLBOOK RENDERING
         // ==========================================
         function renderSpellSlots() {
-            document.getElementById('slot-1-disp').innerText = `${spellSlots[1].current} / ${spellSlots[1].max}`;
-            document.getElementById('slot-2-disp').innerText = `${spellSlots[2].current} / ${spellSlots[2].max}`;
-        }
-
-        function modSpellSlot(lvl, delta) {
-            if (spellSlots[lvl]) {
-                spellSlots[lvl].current = Math.max(0, Math.min(spellSlots[lvl].max, spellSlots[lvl].current + delta));
-                renderSpellSlots();
-                saveSheetState();
+            for (let lvl = 1; lvl <= 3; lvl++) {
+                const slot = spellSlots[lvl];
+                const el = document.getElementById(`slot-pips-${lvl}`);
+                if (!el) continue;
+                if (characterLevel < slot.reqLevel) {
+                    el.innerHTML = `<span style="color:#ef4444; font-size:0.68rem; font-weight:700;" title="Unlocks at Character Level ${slot.reqLevel} as per D&D 5e">🔒 Lvl ${slot.reqLevel} Req</span>`;
+                } else if (slot.max === 0) {
+                    el.innerHTML = `<span style="color:#64748b; font-size:0.72rem;">— (0/0)</span>`;
+                } else {
+                    let pips = "";
+                    for (let i = 0; i < slot.max; i++) {
+                        pips += (i < slot.current) ? "🟦 " : "⬛ ";
+                    }
+                    el.innerHTML = `${pips}<strong>(${slot.current}/${slot.max})</strong>`;
+                }
             }
         }
 
-        function refillAllSlots() {
-            spellSlots[1].current = 4;
-            spellSlots[2].current = 2;
+        function toggleSlotTier(lvl) {
+            const slot = spellSlots[lvl];
+            if (characterLevel < slot.reqLevel) {
+                logRoll(`🔒 <strong>Level ${lvl} Spell Slots Locked!</strong> Sylvar must reach <strong>Character Level ${slot.reqLevel}</strong> to unlock Level ${lvl} spell slots as per D&D 5e.`);
+                return;
+            }
+            if (slot.max === 0) {
+                slot.max = (lvl === 2 ? 2 : 2);
+                slot.current = slot.max;
+            } else {
+                slot.current = slot.current > 0 ? slot.current - 1 : slot.max;
+            }
             renderSpellSlots();
             saveSheetState();
-            logRoll(`🔄 <strong>All Spell Slots Refilled:</strong> 1st-Level (4/4), 2nd-Level (2/2).`);
+            logRoll(`Level ${lvl} Slots: ${slot.current}/${slot.max} available.`);
+        }
+
+        function modSlotTier(lvl, delta) {
+            const slot = spellSlots[lvl];
+            if (characterLevel < slot.reqLevel && delta > 0) {
+                logRoll(`🔒 <strong>Level ${lvl} Spell Slots Locked!</strong> Sylvar must reach <strong>Character Level ${slot.reqLevel}</strong> to unlock Level ${lvl} spell slots as per D&D 5e.`);
+                return;
+            }
+            if (delta > 0 && slot.max === 0) {
+                slot.max = (lvl === 2 ? 2 : 2);
+                slot.current = slot.max;
+            } else if (delta < 0 && slot.max > 0 && slot.current === 0) {
+                slot.max = Math.max(0, slot.max - 1);
+                slot.current = Math.min(slot.current, slot.max);
+            } else {
+                slot.current = Math.max(0, Math.min(slot.max, slot.current + delta));
+            }
+            renderSpellSlots();
+            saveSheetState();
+        }
+
+        function refillAllSlots() {
+            for (let lvl = 1; lvl <= 3; lvl++) {
+                spellSlots[lvl].current = spellSlots[lvl].max;
+            }
+            renderSpellSlots();
+            saveSheetState();
+            logRoll(`🟦 All Spell Slots restored to full capacity on Rest!`);
         }
 
         function renderSpellbook() {
@@ -2392,60 +2464,284 @@
         }
 
         // ==========================================
-        // ℹ️ COMPENDIUM & SPELL MODAL
+        // ℹ️ COMPENDIUM & SPELL MODAL ENGINE (D&D 5E STANDARD)
         // ==========================================
         const COMPENDIUM_DATA = {
             rapier: {
+                id: "rapier",
                 name: "🗡️ Steel Rapier",
-                school: "Melee Weapon",
+                school: "Martial Melee Weapon",
                 castingTime: "1 Action",
-                range: "5 feet",
-                desc: "Finesse Martial Weapon: +5 to Hit, 1d8 + 3 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!"
+                range: "5 feet reach",
+                components: "Finesse",
+                duration: "Instantaneous",
+                attackMod: "+5 to Hit (DEX + Proficiency)",
+                damage: "1d8 + 3 Piercing Damage",
+                desc: "Finesse Martial Weapon: +5 to Hit, 1d8 + 3 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!",
+                fullRules: "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.",
+                upcastNotes: "Can be infused with Psychic Blades for +2d6 Psychic Damage (costs 1 Bardic Inspiration).",
+                flavor: "Sylvar's rapier glides through the air like a conducting baton, striking with pinpoint acoustic precision.",
+                modalButtons: [
+                    {
+                        label: "🗡️ Attack (+5)",
+                        class: "btn-roll-action",
+                        onClick: () => rollD20('Rapier Attack', 5)
+                    },
+                    {
+                        label: "💥 1d8+3 Dmg",
+                        class: "btn-roll-action btn-roll-dmg",
+                        onClick: () => rollFormulaDamage('Rapier Damage', 8, 3, 'Piercing')
+                    }
+                ]
             },
             dagger: {
+                id: "dagger",
                 name: "🗡️ Steel Daggers",
-                school: "Finesse / Thrown",
+                school: "Simple Melee / Ranged Weapon",
                 castingTime: "1 Action",
-                range: "20/60 feet",
-                desc: "Finesse, Light, Thrown: +5 to Hit, 1d4 + 3 Piercing Damage."
+                range: "20/60 feet (Thrown)",
+                components: "Finesse, Light, Thrown",
+                duration: "Instantaneous",
+                attackMod: "+5 to Hit (DEX + Proficiency)",
+                damage: "1d4 + 3 Piercing Damage",
+                desc: "Finesse, Light, Thrown: +5 to Hit, 1d4 + 3 Piercing Damage.",
+                fullRules: "If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon.",
+                upcastNotes: "Can be thrown as a bonus action off-hand attack if two-weapon fighting.",
+                flavor: "Balanced throwing daggers with keen steel edges, kept tucked inside Sylvar's sash.",
+                modalButtons: [
+                    {
+                        label: "🗡️ Attack (+5)",
+                        class: "btn-roll-action",
+                        onClick: () => rollD20('Dagger Attack', 5)
+                    },
+                    {
+                        label: "💥 1d4+3 Dmg",
+                        class: "btn-roll-action btn-roll-dmg",
+                        onClick: () => rollFormulaDamage('Dagger Damage', 4, 3, 'Piercing')
+                    }
+                ]
             },
             viciousmockery: {
+                id: "viciousmockery",
                 name: "🎭 Vicious Mockery",
                 school: "Enchantment Cantrip",
                 castingTime: "1 Action",
                 range: "60 feet",
-                desc: "Target must succeed on a DC 13 Wisdom saving throw or take 1d4 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn."
+                components: "V (Verbal)",
+                duration: "Instantaneous",
+                attackMod: "DC 13 Wisdom Save",
+                damage: "1d4 Psychic Damage + Disadvantage on Next Attack",
+                desc: "Unleash a string of insults laced with subtle enchantments (DC 13 Wis save). Fail: takes 1d4 Psychic damage and has Disadvantage on next attack roll.",
+                fullRules: "You unleash a string of insults laced with subtle enchantments at one creature you can see or sense within range. If the target can hear you (though it need not understand you), it must succeed on a <strong>Wisdom saving throw (DC 13)</strong> or take <strong>1d4 psychic damage</strong> and have <strong>disadvantage on the next attack roll</strong> it makes before the end of its next turn.",
+                upcastNotes: "This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+                flavor: "Sylvar strikes a mocking chord on his tambourine and purrs a scathing acoustic insult that rings with psychic agony.",
+                modalButtons: [
+                    {
+                        label: "🎭 Cast (DC 13 Wis)",
+                        class: "btn-roll-action btn-roll-purple",
+                        onClick: () => castViciousMockery()
+                    },
+                    {
+                        label: "💥 1d4 Dmg",
+                        class: "btn-roll-action btn-roll-dmg",
+                        onClick: () => rollFormulaDamage('Vicious Mockery Dmg', 4, 0, 'Psychic')
+                    }
+                ]
             },
             dancinglights: {
+                id: "dancinglights",
                 name: "✨ Dancing Lights",
                 school: "Evocation Cantrip",
                 castingTime: "1 Action",
                 range: "120 feet",
-                desc: "Create up to 4 torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for up to 1 minute (Concentration)."
+                components: "V, S, M (a bit of phosphorus or wychwood)",
+                duration: "Concentration, up to 1 minute",
+                attackMod: "Utility (No Save)",
+                damage: "Creates 4 Floating Light Orbs (10-ft Radius Light)",
+                desc: "Create up to 4 torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for up to 1 minute (Concentration).",
+                fullRules: "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range.",
+                upcastNotes: "Cantrip — scales with character level utility.",
+                flavor: "Sylvar snaps his fingers to the beat of his tambourine, creating glowing pastel orbs that drift to his rhythm.",
+                modalButtons: [
+                    {
+                        label: "✨ Cast Dancing Lights",
+                        class: "btn-roll-action",
+                        onClick: () => castUtility("✨ Cast Dancing Lights (Creates 4 floating lights within 120ft • Conc 1m)")
+                    }
+                ]
+            },
+            psychicblades: {
+                id: "psychicblades",
+                name: "🧠 Psychic Blades",
+                school: "College of Whispers Feature",
+                castingTime: "Free Action (on weapon hit)",
+                range: "Self / Weapon Reach",
+                components: "1 Bardic Inspiration Die",
+                duration: "Instantaneous",
+                attackMod: "Automatic on Successful Weapon Hit",
+                damage: "+2d6 Psychic Damage",
+                desc: "When you hit a creature with a weapon attack, expend 1 use of Bardic Inspiration to deal an extra 2d6 psychic damage (1/round on your turn).",
+                fullRules: "When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra <strong>2d6 psychic damage</strong> to that target. You can do so only once per round on your turn. The psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, and 8d6 at 15th level.",
+                upcastNotes: "Increases to 3d6 at Bard Level 5, 5d6 at Level 10, and 8d6 at Level 15.",
+                flavor: "Sylvar's rapier blade hums with dark psychic resonance as he strikes through the mind of his target.",
+                modalButtons: [
+                    {
+                        label: "🗡️ Infuse Psychic Blades (+2d6)",
+                        class: "btn-roll-action btn-roll-purple",
+                        onClick: () => rollPsychicBladesStrike()
+                    }
+                ]
+            },
+            wordsofterror: {
+                id: "wordsofterror",
+                name: "👁️ Words of Terror",
+                school: "College of Whispers Feature",
+                castingTime: "1 Minute (Private Conversation)",
+                range: "Touch / Hearing Range",
+                components: "Spoken Words alone",
+                duration: "1 hour",
+                attackMod: "DC 13 Wisdom Save",
+                damage: "Frightened Condition (Paranoid Phobia)",
+                desc: "Speak to a humanoid alone for 1 minute (DC 13 Wis save). Fail: target is Frightened of you or a chosen creature for 1 hour.",
+                fullRules: "If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear in its mind. At the end of the conversation, the target must succeed on a <strong>Wisdom saving throw (DC 13)</strong> or be <strong>frightened</strong> of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. On a success, the target does not know that you attempted to frighten it.",
+                upcastNotes: "Recharges after a Short or Long Rest.",
+                flavor: "Sylvar leans in close, his blindfold hiding his gaze as he purrs insidious whispered truths that plant terror in the listener's heart.",
+                modalButtons: [
+                    {
+                        label: "🗣️ Seed Paranoia (Words of Terror)",
+                        class: "btn-roll-action",
+                        onClick: () => rollWordsOfTerrorAction()
+                    }
+                ]
+            },
+            songofrest: {
+                id: "songofrest",
+                name: "🎶 Song of Rest",
+                school: "Bard Class Feature",
+                castingTime: "Short Rest (Performance)",
+                range: "Hearing Range (All Allies)",
+                components: "Musical Performance",
+                duration: "Instantaneous during Short Rest",
+                attackMod: "Automatic (Allies Spending Hit Dice)",
+                damage: "+1d6 Extra HP Restored per Ally",
+                desc: "During a Short Rest, allies who spend Hit Dice regain an extra 1d6 Hit Points from your soothing music.",
+                fullRules: "You can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra <strong>1d6 hit points</strong>.",
+                upcastNotes: "Increases to 1d8 at 9th level, 1d10 at 13th level, and 1d12 at 17th level.",
+                flavor: "Sylvar strums a gentle meadow ballad of the Lush Peaks Clan, easing his companions' aching bones.",
+                modalButtons: [
+                    {
+                        label: "🎶 Perform Song of Rest (+1d6)",
+                        class: "btn-roll-action btn-roll-heal",
+                        onClick: () => rollSongOfRestAction()
+                    }
+                ]
             }
         };
 
-        function openSpellDetailsModal(id) {
-            const sp = fullSpellbook.find(s => s.id === id) || COMPENDIUM_DATA[id];
+        function openSpellDetailsModal(spellId) {
+            const sp = COMPENDIUM_DATA[spellId] || fullSpellbook.find(s => s.id === spellId);
             if (!sp) return;
 
-            document.getElementById('spell-modal-title').innerText = sp.name;
+            document.getElementById('spell-modal-title').innerHTML = `${sp.name}`;
             const body = document.getElementById('spell-modal-body');
-            const actions = document.getElementById('spell-modal-actions');
+
+            let combatStatsHtml = '';
+            if (sp.attackMod || sp.damage) {
+                combatStatsHtml = `
+                    <div style="background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:6px; padding:8px 10px; display:grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap:6px; font-size:0.75rem;">
+                        ${sp.attackMod ? `<div><span style="color:var(--text-dim); font-size:0.68rem; text-transform:uppercase; font-weight:700;">Attack / Save:</span><div style="font-weight:700; color:var(--accent-gold);">${sp.attackMod}</div></div>` : ''}
+                        ${sp.damage ? `<div><span style="color:var(--text-dim); font-size:0.68rem; text-transform:uppercase; font-weight:700;">Damage / Effect:</span><div style="font-weight:700; color:#f87171;">${sp.damage}</div></div>` : ''}
+                    </div>
+                `;
+            }
+
+            let upcastHtml = '';
+            if (sp.upcastNotes) {
+                upcastHtml = `
+                    <div style="background:rgba(192,132,252,0.08); border-left:3px solid var(--accent-purple); border-radius:4px; padding:7px 9px; font-size:0.75rem; color:#e9d5ff; line-height:1.4;">
+                        <div style="color:var(--accent-purple); text-transform:uppercase; font-size:0.68rem; font-weight:700; margin-bottom:2px;">🔮 At Higher Levels:</div>
+                        ${sp.upcastNotes}
+                    </div>
+                `;
+            }
+
+            let flavorHtml = '';
+            if (sp.flavor) {
+                flavorHtml = `
+                    <div style="background:#090e1a; border:1px solid #1e293b; border-radius:6px; padding:7px 10px; font-size:0.75rem; color:#cbd5e1; font-style:italic; line-height:1.4;">
+                        "${sp.flavor}"
+                    </div>
+                `;
+            }
 
             body.innerHTML = `
-                <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
-                    <span class="pill-badge pill-neutral">${sp.school || 'Spell'}</span>
-                    <span class="pill-badge pill-neutral">⏱️ ${sp.castingTime || '1 Action'}</span>
-                    <span class="pill-badge pill-neutral">📏 ${sp.range || 'Self'}</span>
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                    <!-- Badge Strip -->
+                    <div style="display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
+                        <span class="pill-badge" style="background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); color:#fde68a; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:700;">${sp.school || 'Spell'}</span>
+                        <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#93c5fd; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">⏱️ ${sp.castingTime || '1 Action'}</span>
+                        <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">📏 ${sp.range || 'Self'}</span>
+                        <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">🧩 ${sp.components || 'V, S'}</span>
+                        <span class="pill-badge" style="background:#1e293b; border:1px solid #334155; color:#cbd5e1; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:600;">⏳ ${sp.duration || 'Instantaneous'}</span>
+                    </div>
+
+                    ${combatStatsHtml}
+
+                    <!-- Full Rules & Mechanics -->
+                    <div style="background:rgba(56,189,248,0.05); border:1px solid rgba(56,189,248,0.22); border-radius:6px; padding:9px 11px; font-size:0.78rem; color:#f8fafc; line-height:1.5;">
+                        <div style="font-size:0.7rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:4px;">📖 D&D 5e Rules & Mechanics:</div>
+                        <div>${sp.fullRules || sp.desc}</div>
+                    </div>
+
+                    ${upcastHtml}
+                    ${flavorHtml}
                 </div>
-                <div style="font-size:0.8rem; color:#cbd5e1; line-height:1.5;">
-                    ${sp.fullRules || sp.desc}
-                </div>
-                ${sp.upcastNotes ? `<div style="background:#090e1a; border-left:3px solid var(--accent-purple); padding:6px 9px; font-size:0.75rem; color:#e9d5ff; margin-top:8px;"><strong>🔮 At Higher Levels:</strong> ${sp.upcastNotes}</div>` : ''}
             `;
 
-            actions.innerHTML = `<button class="btn-act btn-act-pre" onclick="closeSpellModal()">Close</button>`;
+            const actionsContainer = document.getElementById('spell-modal-actions');
+            actionsContainer.innerHTML = '';
+
+            if (sp.modalButtons) {
+                sp.modalButtons.forEach(btn => {
+                    const b = document.createElement('button');
+                    b.className = btn.class;
+                    b.innerHTML = btn.label;
+                    b.onclick = () => { btn.onClick(); };
+                    actionsContainer.appendChild(b);
+                });
+            } else if (sp.buttons) {
+                if (sp.hasLevelSelect) {
+                    const sel = document.createElement('select');
+                    sel.className = 'lvl-dropdown';
+                    sel.id = `modal-lvl-select-${sp.id}`;
+                    sel.innerHTML = `
+                        <option value="1">Lvl 1</option>
+                        <option value="2">Lvl 2</option>
+                        <option value="3">Lvl 3</option>
+                    `;
+                    actionsContainer.appendChild(sel);
+                }
+                sp.buttons.forEach((btn, bIdx) => {
+                    const b = document.createElement('button');
+                    b.className = btn.class;
+                    b.innerHTML = btn.label;
+                    b.onclick = () => {
+                        const modalSel = document.getElementById(`modal-lvl-select-${sp.id}`);
+                        const lvl = modalSel ? parseInt(modalSel.value) || 1 : 1;
+                        const mainSel = document.getElementById(`lvl-select-${sp.id}`);
+                        if (mainSel) mainSel.value = lvl;
+                        execSpellButton(sp.id, bIdx);
+                    };
+                    actionsContainer.appendChild(b);
+                });
+            }
+
+            const closeBtn = document.createElement('button');
+            closeBtn.className = 'btn-act btn-act-pre';
+            closeBtn.innerText = 'Close';
+            closeBtn.onclick = closeSpellModal;
+            actionsContainer.appendChild(closeBtn);
+
             document.getElementById('spell-modal').classList.add('active');
         }
 

@@ -190,10 +190,9 @@ Sylvar’s progression across Stormwreck Isle is a profound spiritual evolution 
   >  
   > *The scale weaves into a gleaming silver wind-tassel attached to your tambourine, humming in perfect time with your heartbeat."*
 * **The Mechanical Milestone (Level 4 Reached):**
-  * `+1` to Spell Save DC (DC 14) & `+1` to Spell Attack rolls (`+6`).
-  * **Immunity to Deafened** & **Thunder Damage Resistance**.
+  * `+1` to Initiative & `+1` to Spell Save DC (DC 14).
   * **Whispers on the Wind:** Advantage on all acoustic/hearing Perception checks.
-  * **Resonant Gale-Burst (1/Day):** When activating *Psychic Blades*, unleash a 10-ft shockwave of howling silver wind dealing `+1d6 Thunder damage` and pushing the target 10 ft away on a failed DC 13 Str save.
+  * **Resonant Gale-Burst (1/Day):** When activating *Psychic Blades*, unleash a 10-ft shockwave of howling silver wind dealing `+1d6 Thunder damage` and pushing the target 10 ft away on a failed DC 13 Str save (target also suffers Disadvantage on its next attack).
 
 #### ⚡ Chapter 4: Clifftop Observatory (The Tri-Draconic Convergence)
 * **The Basalt Ridge Trail (Area D1):** Sylvar senses severed Fume Drake bones along the trail, carved cleanly by twin-crescent blades.
@@ -213,10 +212,9 @@ Sylvar’s progression across Stormwreck Isle is a profound spiritual evolution 
 ## 🍷 SECTION 4: FATHER FLUBS — THE WARD-PRIEST'S SECRET & THE DRAGON'S GRAVE
 
 ### 📜 Character Overview & Core Motivation
-* **Hero & Class:** Father Flubs — Level 2 (Heading to Level 3) Human Life Domain Cleric of Eldath / Lathander.
-* **Core Drive:** Carrying the ancestral burden of his family's sacred vigil over Sharruth's tomb while confronting his own deep existential dread through wine, mirth, and divine devotion.
-* **Personality & Demeanor:** Jovial, warm, fond of fine vintages and self-deprecating jokes, yet harboring profound theological depth and fierce protective loyalty.
-* **Ideals:** Compassion, remembrance for the forgotten, and joyful defiance in the face of oblivion.
+* **Hero & Archetype:** Father Flubs (Hill Dwarf Life Domain Cleric 2) — Ancestral Ward-Priest, Drunken Preacher & Sacred Caretaker of the Living.
+* **The Core Premise:** Centuries ago, when the ancient metallic dragons Astalagan (Bronze), Clyssavar (Silver), and Turadaer (Gold) fought Sharruth, mortal ward-priests sustained their frontline vanguard. Turadaer blessed their order with a sacred golden scale and commanded them to build a parish on the new land to watch over the sleeping dragon's tomb. Father Flubs is the direct heir of this order.
+* **Personality & Philosophy:** Flubs uses irreverent humor and tavern banter as armor against deep existential fear. He drinks not out of carelessness, but to keep the dread of mortality at bay—yet in the heat of battle, his devotion to preserving every life in his flock is absolute.
 * **Bond:** The ancestral vigil he keeps for the ones nobody else remembers — and the drink he keeps beside it.
 * **Flaw:** He cannot be still with himself sober. Something always has to be in his hand or in the air: a cup, a punchline, a sermon, standing between him and the silence.
 
@@ -235,7 +233,7 @@ Sylvar’s progression across Stormwreck Isle is a profound spiritual evolution 
 * The spirits find peace, lifting the beach zombie curse and proving to Flubs that compassion, prayer, and memory outlast death. Reaches **Level 4 Milestone**!
 
 #### ⚡ Chapter 4: Clifftop Observatory (Turadaer's Gold Scale & Defending the Seal)
-* In the secret planetarium vault (D5) unlocked by Eflein's star math, Father Flubs discovers **Turadaer's Solar Gold Scale**, which bonds to his silver holy symbol and flask.
+* In the secret planetarium vault (D5) unlocked by Eflein's star math, Father Flubs discovers **Turadaer's Solar Gold Scale** (`+1 Radiant Damage on all attacks/spells & +1 Spell Save DC`, Radiant Bastion 10ft aura, Beacon of Dawn heal), which bonds to his silver holy symbol and flask.
 * **Confronting Sparkrender & The Dragon's Grave:** When Sparkrender attempts to shatter the ancient wards and siphon Sharruth's volcanic soul, Flubs stands on the very ground his ancestors swore to protect. He channels the Gold Scale into the **Tri-Draconic Convergence**, projecting a 20-ft radiant bastion that neutralizes the wyrmling's lightning breath and protects his party from annihilation.
 * **The Final Resolution:** With Sharruth sealed and Sparkrender defeated, Flubs realizes his life, his lineage, and the lives he saved have true permanence. He raises a triumphant toast to his companions under the starlit sky of Stormwreck Isle!
 
@@ -250,7 +248,7 @@ Sylvar’s progression across Stormwreck Isle is a profound spiritual evolution 
 
 ### 👑 The Shared Party Auras (Within 30 ft)
 1. ⚡ **Bronze Echo (Eflein):** Party gains **+5 ft movement speed & +2 to Initiative**.
-2. 🌪️ **Silver Echo (Sylvar Link):** Party gains **Thunder Resistance, Deafened Immunity & weapon attacks push targets 5 ft (Gale-Shock)**.
+2. 🌪️ **Silver Echo (Sylvar Link):** Party gains **+1 Initiative & weapon attacks push targets 5 ft (Gale-Shock)**.
 3. ☀️ **Gold Echo (Father Flubs):** Party gains **+1 to all Saving Throws & +5 Max/Current HP**.
 
 ### 💥 The Shared Ultimate — "Tri-Draconic Convergence" (1/Day Shared Action)
@@ -258,11 +256,11 @@ Sylvar’s progression across Stormwreck Isle is a profound spiritual evolution 
 
 ---
 
-## 📋 SECTION 6: QUICK DM TABLE REFERENCE SUMMARY
+## 📊 SECTION 6: DM QUICK-REFERENCE INTEGRATION TABLE
 
-| Chapter | 🧙‍♂️ Eflein (Scholar Arc) | 🐾 Sylvar Link (Acoustic Arc) | 🍷 Father Flubs (Secret Keeper Arc) |
+| Campaign Stage | Eflein (Lightning & Chrono-Arcana) | Sylvar Link (Acoustic Whispers & Vanguard Clues) | Father Flubs (Dawn Watch & Life-Preserving Vigil) |
 | :--- | :--- | :--- | :--- |
-| **Ch 1: Dragon's Rest** | Finds wife's bookmark & notes; awakens Bronze Scale (`+1` Lightning). | Arrives at sanctuary; recovers Lyra's carved charm & diamond whetstone from Myla. | Descendant of dragon-appointed ward-priests; wanders inland with wine. |
-| **Ch 2: Seagrow Caves** | Discovers wife's notes on geothermal crystals; cures fungal blight. | Awakens from hangover; connects with party; tunes acoustic senses to the island. | Rescued from spit; awakens at cave entrance; heals party against Fume Drakes & cures Sinensa. |
+| **Ch 1: Dragon's Rest** | Discovers Astalagan's Bronze Scale in the sacred spring; deciphers ancient draconic chronomancy. | Receives Lyra's carved lynx-charm by the fountain & diamond whetstone from Myla. | Sleeping off kobold captivity; awakened at B1 entrance to toast rescuers. |
+| **Ch 2: Seagrow Caves** | Uses lightning/arcane burst on Spore Servants; stabilizes Sovereign Sinensa. | Senses geothermal acoustic vibrations; supports allies with bardic inspiration & acoustic blindsight. | Recognizes Sharruth's geothermal breath in B6; unleashes *Preserve Life* to heal party (Level 3). |
 | **Ch 3: Cursed Shipwreck** | Finds wife's name on manifest & field note; tracks path to northern cliffs. | Finds twin-crescent slashes on mast & torn silk sash; claims Clyssavar's Silver Scale in C9 (Level 4). | Conducts vigil for forgotten drowned sailors; cleanses Aleitha's talisman on Brastos's grave. |
 | **Ch 4: Observatory** | Uses wife's constellation notes to solve puzzle; reads final letter; decides Sharruth fate. | Senses statue weight balance; channels Silver Scale in Tri-Draconic Convergence; hears Lyra's P.S. (Level 5). | Claims Gold Scale in vault; protects party against Sparkrender's siphon; confirms permanence. |
