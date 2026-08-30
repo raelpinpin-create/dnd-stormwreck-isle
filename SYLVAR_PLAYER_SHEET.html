@@ -21,7 +21,6 @@
             --accent-green: #22c55e;
             --accent-red: #ef4444;
             --accent-purple: #c084fc;
-            --accent-pink: #f472b6;
             --text-light: #f8fafc;
             --text-dim: #94a3b8;
             --text-muted: #64748b;
@@ -381,7 +380,7 @@
         .ability-mod { font-size: 0.72rem; font-weight: 600; color: var(--text-dim); }
         .ability-box.active-key .ability-mod { color: var(--accent-gold); }
 
-        /* Skills & Saves Lists */
+        /* Skills & Saves Lists (Gold Highlight Standard) */
         .stat-row-list {
             list-style: none;
             display: flex;
@@ -411,12 +410,6 @@
             font-weight: 600;
             background: rgba(245, 158, 11, 0.07);
             border-left: 3px solid var(--accent-gold);
-        }
-        .stat-row-item.expertise-item {
-            color: #f472b6;
-            font-weight: 700;
-            background: rgba(244, 114, 182, 0.1);
-            border-left: 3px solid #f472b6;
         }
 
         /* Action & Spell Cards */
@@ -503,7 +496,7 @@
         .btn-roll-purple { background: #581c87; color: #f3e8ff; border: 1px solid #9333ea; }
         .btn-roll-purple:hover { background: #6b21a8; }
 
-        /* Inventory List (Exact Eflein / Flubs Style) */
+        /* Inventory List */
         .inv-list-compact {
             display: flex;
             flex-direction: column;
@@ -896,7 +889,7 @@
                     </ul>
                 </div>
 
-                <!-- ALL 18 SKILLS MATRIX (INDIVIDUALLY SEPARATED) -->
+                <!-- ALL 18 SKILLS MATRIX (GOLD HIGHLIGHT STANDARD) -->
                 <div class="panel">
                     <div class="panel-title">
                         <span>🎯 All 18 Skills (Individual Rolls)</span>
@@ -915,8 +908,8 @@
                         <li class="stat-row-item" onclick="rollD20('Medicine (WIS)', 2)"><span>Medicine (WIS)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Nature (INT)', -2)"><span>Nature (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item prof-item" onclick="rollD20('Perception (WIS) ★ [Cat\'s Talent]', 3)"><span>Perception (WIS) ★ [Cat's Talent]</span><span>+3 🎲</span></li>
-                        <li class="stat-row-item expertise-item" onclick="rollD20('Performance (CHA) ★★ [Expertise]', 7)"><span>Performance (CHA) ★★ [Expertise]</span><span>+7 🎲</span></li>
-                        <li class="stat-row-item expertise-item" onclick="rollD20('Persuasion (CHA) ★★ [Expertise]', 7)"><span>Persuasion (CHA) ★★ [Expertise]</span><span>+7 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Performance (CHA) ★', 5)"><span>Performance (CHA) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★', 5)"><span>Persuasion (CHA) ★</span><span>+5 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Religion (INT)', -2)"><span>Religion (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 2)"><span>Sleight of Hand (DEX)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 2)"><span>Stealth (DEX)</span><span>+2 🎲</span></li>
@@ -924,7 +917,7 @@
                     </ul>
                 </div>
 
-                <!-- 💰 SLEEK GOLD & COIN PURSE (LEFT SIDE) -->
+                <!-- 💰 STARTER GOLD & COIN PURSE (15 GP, 0 SP) -->
                 <div class="panel" style="padding: 8px 10px; background: linear-gradient(135deg, #18150a 0%, #0d121c 100%); border: 1px solid rgba(245, 158, 11, 0.35); margin-top: 8px;">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 5px;">
                         <div style="display:flex; align-items:center; gap:5px;">
@@ -934,12 +927,12 @@
                         </div>
                         <div style="display:flex; align-items:center; gap:4px;">
                             <button class="btn-act btn-act-pre" onclick="openGoldHistoryModal()" style="font-size:0.68rem; padding:2px 6px; color:var(--accent-gold); border:1px solid rgba(245,158,11,0.4);" title="Open transaction history ledger">📜 Ledger</button>
-                            <button class="btn-act btn-act-pre" onclick="resetGoldPurse()" style="font-size:0.68rem; padding:2px 5px; color:#cbd5e1;" title="Reset gold to default starting 115 GP, 8 SP">🔄 Reset</button>
+                            <button class="btn-act btn-act-pre" onclick="resetGoldPurse()" style="font-size:0.68rem; padding:2px 5px; color:#cbd5e1;" title="Reset gold to default starting 15 GP, 0 SP">🔄 Reset</button>
                             <div style="display:flex; align-items:baseline; gap:4px; margin-left:3px;">
-                                <span id="gold-disp" style="font-size:1.15rem; font-weight:800; color:#facc15; font-family:'Inter', sans-serif;">115</span>
+                                <span id="gold-disp" style="font-size:1.15rem; font-weight:800; color:#facc15; font-family:'Inter', sans-serif;">15</span>
                                 <span style="font-size:0.7rem; font-weight:700; color:#fbbf24;">GP</span>
                                 <span style="color:var(--text-dim); font-size:0.75rem;">•</span>
-                                <span id="silver-disp" style="font-size:0.95rem; font-weight:700; color:#cbd5e1; font-family:'Inter', sans-serif;">8</span>
+                                <span id="silver-disp" style="font-size:0.95rem; font-weight:700; color:#cbd5e1; font-family:'Inter', sans-serif;">0</span>
                                 <span style="font-size:0.68rem; font-weight:600; color:#94a3b8;">SP</span>
                             </div>
                         </div>
@@ -974,7 +967,7 @@
 
             </div>
 
-            <!-- RIGHT COLUMN: ACTIONS (WEAPONS + CANTRIPS), SPELLBOOK WITH LEVEL DROPDOWN, RELICS, INVENTORY -->
+            <!-- RIGHT COLUMN: ACTIONS (WEAPONS + CANTRIPS), SPELLBOOK WITH LEVEL DROPDOWN, FEATURES, INVENTORY -->
             <div>
                 
                 <!-- ⚔️ ACTIONS & AT-WILL ATTACKS (WEAPONS + CANTRIPS) -->
@@ -1116,10 +1109,10 @@
                     </div>
                 </div>
 
-                <!-- 🌟 RELICS, RECOVERIES & ACTIVE CLASS FEATURES -->
+                <!-- 🌟 COLLEGE OF WHISPERS FEATURES -->
                 <div class="panel">
                     <div class="panel-title">
-                        <span>🗡️ College of Whispers Features & Relics</span>
+                        <span>🗡️ College of Whispers Features & Recoveries</span>
                     </div>
 
                     <div style="display:flex; flex-direction:column; gap:5px;">
@@ -1135,24 +1128,13 @@
                         </div>
 
                         <!-- Words of Terror -->
-                        <div class="action-card" style="background:#111827; border-left:3px solid #f472b6;">
+                        <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-gold);">
                             <div style="display:flex; justify-content:space-between; align-items:center;">
                                 <div>
-                                    <strong style="color:#f472b6;">👁️ Words of Terror:</strong>
+                                    <strong style="color:var(--accent-gold);">👁️ Words of Terror:</strong>
                                     <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">1 min private talk ➔ DC 13 Wis save or Frightened 1 hr.</span>
                                 </div>
-                                <button class="btn-roll-action" style="background:#831843; color:#fce7f3;" onclick="rollWordsOfTerrorAction()">🗣️ Seed Paranoia</button>
-                            </div>
-                        </div>
-
-                        <!-- Clyssavar's Silver Harmonic Scale -->
-                        <div class="action-card" style="background:#0e1728; border-left:3px solid #38bdf8;">
-                            <div style="display:flex; justify-content:space-between; align-items:center;">
-                                <div>
-                                    <strong style="color:#38bdf8;">❄️ Clyssavar's Silver Harmonic Scale:</strong>
-                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">+1 DC/Atk, 60ft Blindsight, Crystalline Sound-Burst (1/Day).</span>
-                                </div>
-                                <button class="btn-roll-action" style="background:#0284c7;" onclick="rollCrystallineSoundBurst()">❄️ Sound-Burst (+1d6)</button>
+                                <button class="btn-roll-action" style="background:#78350f; color:#fef3c7;" onclick="rollWordsOfTerrorAction()">🗣️ Seed Paranoia</button>
                             </div>
                         </div>
 
@@ -1166,10 +1148,18 @@
                                 <button class="btn-roll-action btn-roll-heal" onclick="rollSongOfRestAction()">🎶 +1d6 Rest Heal</button>
                             </div>
                         </div>
+
+                        <!-- Blind Seismic Sense -->
+                        <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-blue);">
+                            <div>
+                                <strong style="color:var(--accent-blue);">🐾 Acoustic Blindsight (30–60 ft):</strong>
+                                <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">Senses vibrations and sound echoes. Immune to blindness penalties within 30 ft.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 🎒 TRACKED INVENTORY & CONSUMABLES (EXACT EFLEIN / FLUBS ARCHITECTURE) -->
+                <!-- 🎒 TRACKED INVENTORY & CONSUMABLES -->
                 <div class="panel">
                     <div class="panel-title">
                         <span>🎒 Tracked Inventory & Consumables</span>
@@ -1243,7 +1233,7 @@
                     <div>
                         <div style="font-size:0.7rem; color:var(--text-muted); font-weight:700;">CURRENT BALANCE</div>
                         <div style="font-size:1.15rem; font-weight:800; color:#facc15;">
-                            <span id="modal-gold-disp">115</span> GP <span style="color:var(--text-dim); font-size:0.85rem;">•</span> <span id="modal-silver-disp" style="color:#cbd5e1;">8</span> SP
+                            <span id="modal-gold-disp">15</span> GP <span style="color:var(--text-dim); font-size:0.85rem;">•</span> <span id="modal-silver-disp" style="color:#cbd5e1;">0</span> SP
                         </div>
                     </div>
                     <button class="btn-act btn-act-pre" onclick="clearGoldHistory()" style="font-size:0.7rem; color:var(--accent-red);">Clear History</button>
@@ -1264,8 +1254,8 @@
         let helpTokens = 2;
         let isFelineReady = true;
         let isCloakAttuned = true;
-        let currentGP = 115;
-        let currentSP = 8;
+        let currentGP = 15;
+        let currentSP = 0;
         let advState = 'normal'; // 'normal', 'adv', 'dis'
 
         let spellSlots = {
@@ -1528,10 +1518,12 @@
                 if (savedInsp !== null) bardicInsp = parseInt(savedInsp);
                 const savedHelp = localStorage.getItem('sylvar_help');
                 if (savedHelp !== null) helpTokens = parseInt(savedHelp);
-                const savedGP = localStorage.getItem('sylvar_gp');
+                const savedGP = localStorage.getItem('sylvar_gp_v3');
                 if (savedGP !== null) currentGP = parseInt(savedGP);
-                const savedSP = localStorage.getItem('sylvar_sp');
+                else currentGP = 15;
+                const savedSP = localStorage.getItem('sylvar_sp_v3');
                 if (savedSP !== null) currentSP = parseInt(savedSP);
+                else currentSP = 0;
                 const savedSlots = localStorage.getItem('sylvar_slots');
                 if (savedSlots) {
                     const parsed = JSON.parse(savedSlots);
@@ -1548,8 +1540,8 @@
             localStorage.setItem('sylvar_temp_hp', tempHP);
             localStorage.setItem('sylvar_insp', bardicInsp);
             localStorage.setItem('sylvar_help', helpTokens);
-            localStorage.setItem('sylvar_gp', currentGP);
-            localStorage.setItem('sylvar_sp', currentSP);
+            localStorage.setItem('sylvar_gp_v3', currentGP);
+            localStorage.setItem('sylvar_sp_v3', currentSP);
             localStorage.setItem('sylvar_slots', JSON.stringify(spellSlots));
         }
 
@@ -2001,12 +1993,7 @@
         }
 
         function rollWordsOfTerrorAction() {
-            logRoll(`👁️ <strong>Words of Terror Seeded (1 Min Conversation):</strong> Target humanoid must make a <span style="color:#f472b6; font-weight:800;">DC 13 Wisdom Save</span> or be <strong>Frightened</strong> for 1 hour!`);
-        }
-
-        function rollCrystallineSoundBurst() {
-            const d6 = Math.floor(Math.random() * 6) + 1;
-            logRoll(`❄️ <strong>Clyssavar's Crystalline Sound-Burst (1/Day):</strong> Dealt <span style="color:#38bdf8; font-size:1.15rem; font-weight:800;">+${d6} Cold/Psychic Damage</span> and a high-frequency crystalline chime halves the target's speed!`);
+            logRoll(`👁️ <strong>Words of Terror Seeded (1 Min Conversation):</strong> Target humanoid must make a <span style="color:var(--accent-gold); font-weight:800;">DC 13 Wisdom Save</span> or be <strong>Frightened</strong> for 1 hour!`);
         }
 
         function rollSongOfRestAction() {
@@ -2018,17 +2005,18 @@
         // 🎒 TRACKED INVENTORY MANAGER (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
         function getStoredItems() {
-            let stored = localStorage.getItem('dnd_inv_sylvar_v2');
+            let stored = localStorage.getItem('dnd_inv_sylvar_v3');
             if (!stored) {
                 localStorage.removeItem('dnd_inv_sylvar');
-                localStorage.setItem('dnd_inv_sylvar_v2', JSON.stringify(defaultItems));
+                localStorage.removeItem('dnd_inv_sylvar_v2');
+                localStorage.setItem('dnd_inv_sylvar_v3', JSON.stringify(defaultItems));
                 return [...defaultItems];
             }
             return JSON.parse(stored);
         }
 
         function saveStoredItems(items) {
-            localStorage.setItem('dnd_inv_sylvar_v2', JSON.stringify(items));
+            localStorage.setItem('dnd_inv_sylvar_v3', JSON.stringify(items));
         }
 
         function parseItemInfo(itemStr) {
@@ -2162,7 +2150,7 @@
         }
 
         function resetInventory() {
-            localStorage.removeItem('dnd_inv_sylvar_v2');
+            localStorage.removeItem('dnd_inv_sylvar_v3');
             saveStoredItems([...defaultItems]);
             renderInventory();
             logRoll(`🔄 <strong>Inventory Reset:</strong> Restored to official starting loadout.`);
@@ -2244,7 +2232,7 @@
         }
 
         // ==========================================
-        // 💰 GOLD LEDGER & TRANSACTION SYSTEM
+        // 💰 GOLD LEDGER & TRANSACTION SYSTEM (15 GP, 0 SP)
         // ==========================================
         function updateGoldDisplay() {
             document.getElementById('gold-disp').innerText = currentGP;
@@ -2328,16 +2316,16 @@
         }
 
         function resetGoldPurse() {
-            currentGP = 115;
-            currentSP = 8;
+            currentGP = 15;
+            currentSP = 0;
             updateGoldDisplay();
             saveSheetState();
-            addGoldTransaction('reset', 'Purse Reset to Starting Loadout', 'Reset', '115 GP, 8 SP');
-            logRoll(`🔄 <strong>Gold Purse Reset:</strong> Starting wealth restored to 115 GP, 8 SP.`);
+            addGoldTransaction('reset', 'Purse Reset to Starter Loadout', 'Reset', '15 GP, 0 SP');
+            logRoll(`🔄 <strong>Gold Purse Reset:</strong> Starting wealth set to 15 GP, 0 SP.`);
         }
 
         function getGoldTransactions() {
-            const saved = localStorage.getItem('sylvar_tx_history');
+            const saved = localStorage.getItem('sylvar_tx_history_v3');
             return saved ? JSON.parse(saved) : [];
         }
 
@@ -2346,7 +2334,7 @@
             const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             txs.unshift({ type, reason, delta, total, time });
             if (txs.length > 30) txs.pop();
-            localStorage.setItem('sylvar_tx_history', JSON.stringify(txs));
+            localStorage.setItem('sylvar_tx_history_v3', JSON.stringify(txs));
         }
 
         function openGoldHistoryModal() {
@@ -2382,7 +2370,7 @@
         }
 
         function clearGoldHistory() {
-            localStorage.removeItem('sylvar_tx_history');
+            localStorage.removeItem('sylvar_tx_history_v3');
             openGoldHistoryModal();
         }
 

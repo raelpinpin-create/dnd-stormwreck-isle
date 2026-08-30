@@ -20,7 +20,7 @@
 * **Bardic Spellcasting Specs:** Spell Save DC **13** | Spell Attack Bonus **+5** | **1st-Level Spell Slots:** **4 / 4** | **2nd-Level Spell Slots:** **2 / 2** | **Bardic Inspiration:** `3 / 3` (d6) | 🤝 **Help Tokens:** `2 / 2`
 * **College of Whispers Features:** 🧠 **Psychic Blades** (+2d6 Psychic damage on weapon hit, costs 1 Insp die), 👁️ **Words of Terror** (Seed paranoia in 1 min conversation, DC 13 Wis save or Frightened 1 hr).
 * **Senses & Special Traits:** 🐾 **Blind Seismic Sense / Acoustic Blindsight (30–60 ft)** (Immune to visual dark/blind penalties; senses heartbeats, tremors, and footsteps), 🎶 **Song of Rest** (+1d6 HP on Short Rest), 🐾 **Feline Agility** (Burst to 60 ft speed).
-* **Key Gear & Weapons:** 🛡️ **Cloak of Protection** (+1 AC / +1 Saves), 🗡️ **Rapier (+3 hit, 1d8+1 + 2d6 Psychic Blades)**, 🗡️ 2x Steel Daggers, 🪘 Tambourine (Focus), 🎸 Lute & Guitar, 💣 2x Spitfire Flasks (2d4 Fire), 🧪 1x Potion of Healing, 🍞 Kobold Sweetbread Roll, 115 gp 8 sp.
+* **Key Gear & Weapons:** 🛡️ **Cloak of Protection** (+1 AC / +1 Saves), 🗡️ **Rapier (+3 hit, 1d8+1 + 2d6 Psychic Blades)**, 🗡️ 2x Steel Daggers, 🪘 Tambourine (Focus), 🎸 Lute & Guitar, 💣 2x Spitfire Flasks (2d4 Fire), 🧪 1x Potion of Healing, 🍞 Kobold Sweetbread Roll, 15 gp 0 sp.
 * **Destiny Relic:** ❄️ **Clyssavar's Silver Harmonic Scale** (Trapped in Chapter 3 Compass Rose hold).
 
 #### 🍷 3. Father Flubs — Level 3 Life Domain Cleric

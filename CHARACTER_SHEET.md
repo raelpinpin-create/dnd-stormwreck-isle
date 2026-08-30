@@ -155,7 +155,7 @@
   * 🍞 **1x Kobold Sweetbread Roll** (Blepp's honey ration: `1d4 HP` + `+1d4 Temp HP`).
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack:** Backpack, bedroll, 3 costumes, mirror, bullseye lantern, bell, 8 oil flasks, 9 rations, tinderbox, waterskin, thieves' tools.
-* **Personal Wealth:** `115 gp, 8 sp` *(100 GP background + 15 GP 8 SP transferred)*.
+* **Personal Wealth:** `15 gp, 0 sp` *(Starter Entertainer purse upon arrival)*.
 * **Destiny Relic:** ❄️ **Clyssavar's Silver Harmonic Scale** *(Chapter 3 Compass Rose Submerged Hold C9)*.
 
 ---
