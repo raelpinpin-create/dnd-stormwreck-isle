@@ -247,9 +247,9 @@ Sylvar’s progression across Stormwreck Isle is a profound spiritual evolution 
 ## ⚡ SECTION 5: THE TRI-DRACONIC RESONANCE & CAMPAIGN CLIMAX
 
 ### 👑 The Shared Party Auras (Within 30 ft)
-1. ⚡ **Bronze Echo (Eflein):** Party gains **+5 ft movement speed & +2 to Initiative**.
-2. 🌪️ **Silver Echo (Sylvar Link):** Party gains **+1 Initiative & weapon attacks push targets 5 ft (Gale-Shock)**.
-3. ☀️ **Gold Echo (Father Flubs):** Party gains **+1 to all Saving Throws & +5 Max/Current HP**.
+1. 🌪️ **Silver Echo (Sylvar Link • Clyssavar's Scale of the Zephyr):** Party gains **+10 ft Movement Speed**, **+2 to Initiative**, and **weapon attacks push targets 5 ft (Gale-Shock)**.
+2. ⚡ **Bronze Echo (Eflein • Astalagan's Bronze Scale):** Party gains **Lightning Damage Resistance** and **Static Overcharge** (*the first weapon attack or damage spell hit each ally lands on their turn deals an extra +1d4 Lightning Damage*).
+3. ☀️ **Gold Echo (Father Flubs • Turadaer's Gold Scale):** Party gains **+1 to all Saving Throws** and **+5 Max/Current HP**.
 
 ### 💥 The Shared Ultimate — "Tri-Draconic Convergence" (1/Day Shared Action)
 * When all three heroes channel their scales simultaneously, they unleash a 40-ft cone elemental breath attack dealing **2d8 Lightning + 2d8 Thunder/Wind + 2d8 Radiant damage** (DC 14 Dex save for half), shattering Sparkrender's defensive dragon shields or providing the harmonic frequency to decide the fate of Sharruth!

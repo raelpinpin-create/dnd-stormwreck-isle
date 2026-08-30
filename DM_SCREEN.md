@@ -358,15 +358,15 @@ graph TD
 
 * 🌪️ **Scale of the Zephyr (Clyssavar's Silver Scale - UPCOMING / CHAPTER 3):** 
   * *Intended Wielder:* **Sylvar Link (Whispers Bard)** | *Rarity:* 🌟 **LEGENDARY RELIC** (Attuned Universal Focus) | *Found:* Compass Rose Wreck (Secured in Chapter 3 in the submerged hold C9!)
-  * *Effect:* **+1 to Spell Attack Rolls & Save DC** (DC 14, Hit +6), **Immunity to Deafened**, **Resistance to Thunder Damage**, and **Advantage on saves vs being pushed or knocked prone by wind/blasts**.
+  * *Effect:* **+1 to Initiative & +1 to Spell Save DC** (DC 14).
   * 🍃 **Resonant Gale-Burst (1/day):** When hitting with a weapon attack or spell, deals **+1d6 Thunder damage** and forces a **DC 13 Strength Save** or the target is **pushed 10 ft back and has Disadvantage on its next attack roll**!
   * 👂 **Whispers on the Wind:** Advantage on Wisdom (Perception) checks that rely on hearing, acoustic vibrations, or atmospheric air currents.
 
 #### ⚡ THE TRI-DRACONIC RESONANCE (Shared Party Synergy & Combined Ultimate)
 * **🔗 Proximity Synergy (Within 30 ft):** When all 3 scales are reunited and wielded in combat, each wielder radiates a shared draconic passive to all allies:
-  - *Bronze Aura (Eflein):* Party gains **+5 ft speed & +2 to Initiative**.
-  - *Silver Aura (Sylvar Link):* Party gains **Thunder Resistance, Deafened Immunity, & weapon attacks buffet targets with wind (-5 ft speed)**.
-  - *Gold Aura (Father Flubs):* Party gains **+1 to all Saving Throws & +5 Max HP**.
+  - *Silver Aura (Sylvar Link • Clyssavar's Scale of the Zephyr):* Party gains **+10 ft Movement Speed**, **+2 to Initiative**, and **weapon attacks push targets 5 ft (Gale-Shock)**.
+  - *Bronze Aura (Eflein • Astalagan's Bronze Scale):* Party gains **Lightning Damage Resistance** and **Static Overcharge** (*first weapon attack or damage spell hit each ally lands on their turn deals an extra +1d4 Lightning Damage*).
+  - *Gold Aura (Father Flubs • Turadaer's Gold Scale):* Party gains **+1 to all Saving Throws & +5 Max/Current HP**.
 * **💥 Combined Ultimate — "Tri-Draconic Convergence" (1/Day Shared Action):**
   - When all 3 party members act in unison, they can unleash a combined 40-ft cone elemental blast (**2d8 Lightning + 2d8 Thunder/Wind + 2d8 Radiant**, DC 14 Dex for half) OR channel the harmonic frequency to unseal/seal ancient draconic wards (such as Sharruth's volcanic prison)!
 
