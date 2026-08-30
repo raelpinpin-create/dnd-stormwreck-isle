@@ -49,11 +49,11 @@
 * **👘 Robe of Arcane Reserve:** `1 / 1` per day (Action: Instantly regain 1 expended 1st-level spell slot!)
 * **🪄 Wand of Magic Missiles:** `7 / 7` Charges (Expends 1 charge for 3 auto-hit force darts, +1 dart/extra charge, 1d4+1 damage each).
 * **Features:** *Evocation Savant* (half copy cost/time), *Sculpt Spells* (protects allies from AoE damage).
-* **Cantrips Known:** *Ray of Frost*, *Shocking Grasp*, *Mage Hand* (15ft magnetic pull via Lodestone), *Prestidigitation*.
+* **Cantrips Known:** *Ray of Frost*, *Fire Bolt*, *Mage Hand* (15ft magnetic pull via Lodestone), *Prestidigitation*.
 * **Prepared Spells (6 Spells Prepared):** *Magic Missile*, *Shield*, *Thunderwave*, *Detect Magic*, *Ice Knife*, *Misty Step*, *Rime's Binding Ice*.
 * **Full Spellbook (15 Spells):** 
-  - *1st-Level:* *Magic Missile*, *Shield*, *Thunderwave*, *Detect Magic*, *Mage Armor*, *Ice Knife*, *Ray of Sickness*, *Sleep*, *Comprehend Languages*, *Protection from Evil/Good*.
-  - *2nd-Level:* *Misty Step* (Bonus Action 30ft teleport), *Rime's Binding Ice* (30ft cone, 3d8 cold + speed 0), *Shatter* (DC 14 Con, 3d8 thunder AoE), *Web* (20ft cube, DC 14 Dex or Restrained), *Aganazzar's Scorcher* (30ft line, 3d8 fire), *Alter Self* (Aquatic Adaptation / Appearance / Natural Weapons +1), *Flaming Sphere*, *Scorching Ray*.
+  - *1st-Level:* *Magic Missile*, *Shield*, *Thunderwave*, *Detect Magic*, *Mage Armor*, *Ice Knife*, *Sleep*, *Comprehend Languages*, *Protection from Evil/Good*.
+  - *2nd-Level:* *Misty Step* (Bonus Action 30ft teleport), *Rime's Binding Ice* (30ft cone, 3d8 cold + speed 0), *Shatter* (DC 14 Con, 3d8 thunder AoE), *Invisibility* (Touch, Conc 1 hr, +1 target/slot lvl > 2), *Silence* (120ft, 20ft sphere, Ritual/Conc 10 min, soundproof), *Aganazzar's Scorcher* (30ft line, 3d8 fire), *Alter Self* (Aquatic Adaptation / Appearance / Natural Weapons +1), *Flaming Sphere*, *Scorching Ray*.
 
 ## 🎒 Inventory & Wealth
 * **Weapons:** 

@@ -1023,21 +1023,21 @@
                             </div>
                         </div>
 
-                        <!-- Shocking Grasp -->
+                        <!-- Fire Bolt -->
                         <div class="action-card">
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <div class="action-card-title" onclick="openSpellDetailsModal('shockinggrasp')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
-                                        ⚡ Shocking Grasp (Cantrip) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('firebolt')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='#f87171'" onmouseout="this.style.color='#f8fafc'">
+                                        🔥 Fire Bolt (Cantrip) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
                                     </div>
-                                    <div style="font-size:0.67rem; font-weight:700; color:#fbbf24; margin-top:1px;">Cantrip • 1 Action</div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f87171; margin-top:1px;">Cantrip • 1 Action</div>
                                 </div>
-                                <span style="font-size:0.65rem; color:#fbbf24; font-weight:700;">EVOCATION</span>
+                                <span style="font-size:0.65rem; color:#f87171; font-weight:700;">EVOCATION</span>
                             </div>
-                            <div class="action-desc">Melee Touch. +6 to Hit, 1d8 Lightning & prevents reactions.</div>
+                            <div class="action-desc">Ranged 120ft. +6 to Hit, 1d10 Fire & ignites flammable objects.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Shocking Grasp Attack', 6)">⚡ Attack</button>
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Shocking Grasp Dmg', 8, 0, 'Lightning')">💥 Damage</button>
+                                <button class="btn-roll-action" onclick="rollD20('Fire Bolt Attack', 6)">🔥 Attack</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Fire Bolt Dmg', 10, 0, 'Fire')">💥 Damage</button>
                             </div>
                         </div>
 
@@ -1392,7 +1392,7 @@
             attackMod: "Tactical Teleportation (Bonus Action)",
             damage: "Teleport up to 30 feet to an unoccupied space",
             desc: "Teleport up to 30 feet to an unoccupied space you can see.",
-            fullRules: "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.<br><br>⚡ <strong>Bonus Action Economy:</strong> Because this uses only a Bonus Action, you can still cast a Cantrip (like <em>Ray of Frost</em> or <em>Shocking Grasp</em>) or take the Dash/Disengage Action on the same turn!",
+            fullRules: "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.<br><br>⚡ <strong>Bonus Action Economy:</strong> Because this uses only a Bonus Action, you can still cast a Cantrip (like <em>Ray of Frost</em> or <em>Fire Bolt</em>) or take the Dash/Disengage Action on the same turn!",
             upcastNotes: "Casting with higher-level slots grants no additional benefits.",
             flavor: "Eflein dissolves into a swirl of silvery mist and reappears instantaneously across the battlefield behind cover or atop high ground.",
             prepared: true,
@@ -1446,25 +1446,26 @@
             ]
         },
         {
-            id: "web",
-            name: "🕸️ Web",
-            tag: "2nd Lvl • Concentration",
-            tagColor: "#fbbf24",
-            school: "2nd-Level Conjuration",
-            castingTime: "1 Action",
-            range: "60 feet (20-ft cube)",
-            components: "V, S, M (a bit of spiderweb)",
-            duration: "Concentration, up to 1 hour",
-            attackMod: "DC 14 Dexterity Saving Throw",
-            damage: "Restrained Condition & Difficult Terrain (2d4 Fire if burned)",
-            desc: "60ft • 20ft cube. DC 14 Dex or Restrained. Difficult terrain.",
-            fullRules: "You conjure a mass of thick, sticky webbing at a point within range. The webs fill a 20-foot cube. The webs are difficult terrain and lightly obscure their area.<br><br>Each creature that starts its turn in the webs or enters them during its turn must make a <strong>DC 14 Dexterity saving throw</strong>. On a failed save, the creature is <strong>Restrained</strong> as long as it remains in the webs or until it breaks free (Action: DC 14 Strength check).<br><br>The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing <strong>2d4 fire damage</strong> to any creature that starts its turn in the fire.",
+            id: "silence",
+            name: "🤫 Silence",
+            tag: "2nd Lvl • Ritual • Conc",
+            tagColor: "#86efac",
+            school: "2nd-Level Illusion (Ritual)",
+            castingTime: "1 Action (or 10 min Ritual)",
+            range: "120 feet (20-ft radius sphere)",
+            components: "V, S",
+            duration: "Concentration, up to 10 minutes",
+            attackMod: "20ft Soundproof Sphere (Blocks Verbal Spells)",
+            damage: "Deafened, Thunder Immunity & Verbal Spell Suppression",
+            desc: "120ft • 20ft sphere. No sound. Creatures deafened, thunder immune, no verbal spells.",
+            fullRules: "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is <strong>immune to thunder damage</strong>, and creatures are <strong>deafened</strong> while entirely inside it.<br><br>Casting a spell that includes a verbal component is impossible there.<br><br>📜 <strong>Ritual Casting:</strong> Eflein can cast this without expending a spell slot by ritual casting for 10 minutes!",
             upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
-            flavor: "Eflein weaves dense strands of ethereal spider silk across the battlefield, anchoring and entangling advancing foes.",
+            flavor: "Eflein creates a zone of absolute, eerie acoustic void—smothering incantations, shouts, and clashing steel in total silence.",
             prepared: false,
             hasLevelSelect: false,
             buttons: [
-                { label: "🕸️ Cast Web (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castWebSpell() }
+                { label: "🤫 Cast Silence (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castSilenceSpell(false) },
+                { label: "📜 Cast Ritual", class: "btn-roll-action", costSlot: false, onClick: () => castSilenceSpell(true) }
             ]
         },
         {
@@ -1536,26 +1537,25 @@
             ]
         },
         {
-            id: "rsick",
-            name: "🤮 Ray of Sickness",
-            tag: "1st Lvl • 1 Action",
-            tagColor: "#f97316",
-            school: "1st-Level Necromancy",
+            id: "invis",
+            name: "👁️‍🗨️ Invisibility",
+            tag: "2nd Lvl • Concentration",
+            tagColor: "#fbbf24",
+            school: "2nd-Level Illusion",
             castingTime: "1 Action",
-            range: "60 feet",
-            components: "V, S",
-            duration: "Instantaneous",
-            attackMod: "+6 Spell Attack / DC 14 Con Save",
-            damage: "2d8 Poison Damage & Poisoned Condition",
-            desc: "+6 Hit: 2d8 poison dmg & DC 14 Con save vs Poisoned.",
-            fullRules: "A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target (<strong>+6 to hit</strong>). On a hit, the target takes <strong>2d8 poison damage</strong> and must make a <strong>DC 14 Constitution saving throw</strong>. On a failed save, it is also <strong>Poisoned</strong> until the end of your next turn (giving it disadvantage on attack rolls and ability checks).",
-            upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st (3d8 at 2nd lvl, 4d8 at 3rd lvl).",
-            flavor: "A beam of sickly viridian bile shoots from Eflein's palm, inducing sudden nausea and violent spasms in the target.",
+            range: "Touch",
+            components: "V, S, M (an eyelash encased in gum arabic)",
+            duration: "Concentration, up to 1 hour",
+            attackMod: "Tactical Stealth / Invisibility (Advantage on Attacks / Disadvantage to hit you)",
+            damage: "Target invisible until attacks/casts spell (+1 target per slot lvl > 2)",
+            desc: "Touch. Target turns invisible for 1 hr (conc). Ends on attack/spell.",
+            fullRules: "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.<br><br>⚡ <strong>Combat Benefits:</strong> Attack rolls against the invisible creature have Disadvantage, and the creature's attack rolls have Advantage!",
+            upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd (2 targets at 3rd lvl, 3 targets at 4th lvl).",
+            flavor: "Eflein weaves shimmering cloaking glamours around herself or an ally, bending ambient light and sound to vanish completely from sight.",
             prepared: false,
             hasLevelSelect: true,
             buttons: [
-                { label: "🎯 Attack", class: "btn-roll-action", costSlot: false, onClick: () => rollD20('Ray of Sickness Attack', 6) },
-                { label: "💥 Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollRayOfSicknessScaled(lvl) }
+                { label: "👁️‍🗨️ Cast Invisibility (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castInvisibilitySpell(lvl) }
             ]
         },
         {
@@ -1704,22 +1704,22 @@
                 { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Ray of Frost Dmg', 8, 0, 'Cold') }
             ]
         },
-        "shockinggrasp": {
-            id: "shockinggrasp",
-            name: "⚡ Shocking Grasp",
+        "firebolt": {
+            id: "firebolt",
+            name: "🔥 Fire Bolt",
             school: "Evocation Cantrip",
             castingTime: "1 Action",
-            range: "Touch",
+            range: "120 feet",
             components: "V, S",
             duration: "Instantaneous",
-            attackMod: "+6 Spell Attack (Advantage if target has metal armor)",
-            damage: "1d8 Lightning Damage & Prevents Reactions",
-            desc: "Melee Touch. +6 to Hit, 1d8 Lightning & prevents reactions.",
-            fullRules: "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target (<strong>+6 to hit</strong>). You have <strong>Advantage on the attack roll if the target is wearing armor made of metal</strong>.<br><br>On a hit, the target takes <strong>1d8 lightning damage</strong>, and <strong>it can't take reactions until the start of its next turn</strong>. (Allows you or allies to move away without triggering Opportunity Attacks!).<br><br>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
-            flavor: "Eflein grabs an attacker with sparks dancing across her fingers, jolting their nervous system and disabling their guard.",
+            attackMod: "+6 Spell Attack",
+            damage: "1d10 Fire Damage & Ignites Flammable Objects",
+            desc: "Ranged 120ft. +6 to Hit, 1d10 Fire & ignites flammable objects.",
+            fullRules: "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target (<strong>+6 to hit</strong>). On a hit, the target takes <strong>1d10 fire damage</strong>. A flammable object hit by this spell ignites if it isn't being worn or carried.<br><br>The spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+            flavor: "Eflein snaps her fingers, launching a blazing streak of arcane fire that explodes on impact and sets dry brush and sails ablaze.",
             modalButtons: [
-                { label: "⚡ Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Shocking Grasp Attack', 6) },
-                { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Shocking Grasp Dmg', 8, 0, 'Lightning') }
+                { label: "🔥 Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Fire Bolt Attack', 6) },
+                { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Fire Bolt Dmg', 10, 0, 'Fire') }
             ]
         },
         "magehand": {
@@ -2380,16 +2380,10 @@
         logRoll(`❄️ <strong>Ice Knife Burst (Level ${slotLevel} Slot • ${burstDice}d6):</strong> [${burstRolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${burstTotal} Cold Damage</span> (DC 14 Dex save for creatures within 5ft)`);
     }
 
-    function rollRayOfSicknessScaled(slotLevel) {
-        const diceCount = 1 + slotLevel; // Lvl 1: 2d8, Lvl 2: 3d8...
-        const rolls = [];
-        let total = 0;
-        for (let i = 0; i < diceCount; i++) {
-            const r = Math.floor(Math.random() * 8) + 1;
-            rolls.push(r);
-            total += r;
-        }
-        logRoll(`🤮 <strong>Ray of Sickness (Level ${slotLevel} Slot • ${diceCount}d8):</strong> [${rolls.join('+')}] = <span style="color:#86efac; font-weight:700;">${total} Poison Damage</span> & DC 14 Con save vs Poisoned!`);
+    function castInvisibilitySpell(slotLevel) {
+        const effectiveLvl = Math.max(2, slotLevel || 2);
+        const targets = Math.max(1, effectiveLvl - 1);
+        logRoll(`👁️‍🗨️ <strong>Invisibility (Level ${effectiveLvl} Slot • ${targets} Target${targets > 1 ? 's' : ''}):</strong> Touched creature turns completely invisible for up to 1 hour (Concentration)! Attacks against them have Disadvantage, and their attacks have Advantage. Ends early if they attack or cast a spell.`);
     }
 
     function rollSleepScaled(slotLevel) {
@@ -2435,8 +2429,9 @@
         logRoll(`💥 <strong>Shatter (Level ${slotLevel} Slot • 60ft • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#fbbf24; font-weight:700;">${total} Thunder Damage</span> (DC 14 Con save for half). Creatures of inorganic material (stone, crystal, metal) have Disadvantage!`);
     }
 
-    function castWebSpell() {
-        logRoll(`🕸️ <strong>Web (2nd-Level Conjuration • 60ft • 20ft Cube):</strong> Thick, sticky webs erupt! Area becomes difficult terrain and lightly obscured. Creatures entering or starting their turn must make a <span style="color:#fbbf24; font-weight:700;">DC 14 Dex Save</span> or become <span style="color:#ef4444; font-weight:700;">Restrained</span> (Action: DC 14 Str check to escape). If ignited, burning webs deal 2d4 fire damage!`);
+    function castSilenceSpell(isRitual) {
+        const typeStr = isRitual ? "Ritual (10 min • No Slot)" : "2nd-Level Slot";
+        logRoll(`🤫 <strong>Silence Cast (${typeStr} • 120ft • 20ft Sphere • Conc 10m):</strong> Total silence envelopes the 20-ft radius sphere! No sound can enter or leave. Creatures inside are deafened, immune to thunder damage, and cannot cast spells requiring Verbal components.`);
     }
 
     function rollAganazzarsScorcher(slotLevel) {
