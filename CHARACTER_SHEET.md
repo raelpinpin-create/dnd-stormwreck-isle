@@ -156,7 +156,7 @@
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack:** Backpack, bedroll, 3 costumes, mirror, bullseye lantern, bell, 8 oil flasks, 9 rations, tinderbox, waterskin, thieves' tools.
 * **Personal Wealth:** `15 gp, 0 sp` *(Starter Entertainer purse upon arrival)*.
-* **Destiny Relic:** ❄️ **Clyssavar's Silver Harmonic Scale** *(Chapter 3 Compass Rose Submerged Hold C9)*.
+* **Destiny Relic:** 🌪️ **Scale of the Zephyr (Clyssavar's Silver Scale of Wind & Vibrations)** *(Chapter 3 Compass Rose Submerged Hold C9 — +1 Spell DC/Hit, Immune to Deafened, Thunder Resistance, 1/Day +1d6 Gale-Burst with 10ft Push & Disadv, Whispers on the Wind)*.
 
 ---
 
@@ -314,13 +314,13 @@
 | Scale | Intended Wielder | Element & Focus | Granted Benefits |
 | :--- | :--- | :--- | :--- |
 | **1. Astalagan's Bronze Scale** *(Acquired)* | **Eflein (Wizard)** | Lightning Focus | `+1` Spell Attack & DC for Lightning spells, `+1d6` Lightning Surge (1/day), Purifies Undead. |
-| **2. Clyssavar's Silver Scale** *(Compass Rose Wreck)* | **New Hero (Player 3)** | Glacial Frost Focus | `+1` Attack & DC for Cold spells and weapon strikes, Cold Damage Resistance, `+1d6` Glacial Slow Burst (1/day). *(Trapped in the wreck; claimed in Chapter 3 after defeating the shipwreck bosses!)* |
+| **2. Scale of the Zephyr (Clyssavar's Silver Scale)** *(Compass Rose Wreck)* | **Sylvar Link (Whispers Bard)** | Wind & Acoustic Vibrations Focus | `+1` Spell Attack & DC, Immune to Deafened, Thunder Resistance, `+1d6` Gale-Burst with 10ft Push & Disadvantage (1/day), *Whispers on the Wind* (Adv on acoustic Perception). *(Claimed in Chapter 3 in hold C9!)* |
 | **3. Turadaer's Gold Scale** *(Observatory Vault)* | **Father Flubs (Life Cleric) / Varnoth** | Radiant Dawn & Healing Protection | `+1` AC or Saving Throws, 10-ft *Radiant Bastion Aura* (+1d4 to allies' first attack/save each round), 1/day *Beacon of Dawn* (heals 2d8+CON). |
 
 ### ⚡ The Tri-Draconic Resonance (Shared Party Synergy)
 * **🔗 Proximity Synergy (Within 30 ft):** When all 3 scales fight side-by-side:
   - *Bronze Aura (Eflein):* All party members gain `+5 ft` speed and `+2` Initiative.
-  - *Silver Aura (New Hero):* All party members gain Cold Resistance and weapon attacks chill enemies (`-5 ft` speed).
+  - *Silver Aura (Sylvar Link):* All party members gain Thunder Resistance, Deafened Immunity, and weapon attacks buffet targets with wind (`-5 ft` speed).
   - *Gold Aura (Father Flubs/Varnoth):* All party members gain `+1` to all Saving Throws and `+5` Max HP.
 * **💥 Combined Ultimate — "Tri-Draconic Convergence" (1/Day Shared Action):**
-  - All 3 wielders channel their scales simultaneously to unleash a 40-ft cone elemental blast (**2d8 Lightning + 2d8 Cold + 2d8 Radiant**, DC 14 Dex save for half) OR channel the energy to unseal/seal ancient draconic seals!
+  - All 3 wielders channel their scales simultaneously to unleash a 40-ft cone elemental blast (**2d8 Lightning + 2d8 Thunder/Wind + 2d8 Radiant**, DC 14 Dex save for half) OR channel the energy to unseal/seal ancient draconic seals!

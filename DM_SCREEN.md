@@ -368,21 +368,19 @@ graph TD
   * *Intended Wielder:* **Eflein (Wizard)** | *Rarity:* 🌟 **LEGENDARY RELIC** (Attuned Arcane Focus) | *Found:* Dragon's Rest Bahamut Statue
   * *Effect:* **+1 to Lightning Spell Attacks & Save DC** (DC 14, Hit +6), **+1d6 Lightning Surge (1/day)**, and **Purifies Undead**.
 
-* ❄️ **Clyssavar's Rimefrost Silver Scale (Silver Scale - UPCOMING / CHAPTER 3):** 
-  * *Intended Wielder:* **New Hero / Player 3 (Standby)** | *Rarity:* 🌟 **LEGENDARY RELIC** (Attuned Weapon/Focus) | *Found:* Compass Rose Wreck (Secured in Chapter 3 in the submerged hold!)
-  * *Effect:* **+1 to Attack & DC on all Cold Spells & Cold weapon strikes**, **Resistance to Cold Damage**, and **Glacial Slow Burst (1/day):** Deals **+1d6 Cold damage** and reduces enemy speed by an extra 10 ft.
-
-* ☀️ **Turadaer's Solar Gold Scale (Gold Scale - UPCOMING):** 
-  * *Intended Wielder:* **Father Flubs (Life Cleric)** | *Rarity:* 🌟 **LEGENDARY RELIC** (Attuned Holy Focus/Shield) | *Found:* Clifftop Observatory (D5 Planetarium Vault)
-  * *Effect:* **+1 to AC & All Saving Throws**, **+1 to Spell Attack Rolls & Save DC** (DC 14, Hit +6), **Radiant Bastion Aura (10 ft):** Allies in aura gain +1d4 to their first attack/save each round, and **Beacon of Dawn (1/day):** Restores **2d8 + WIS HP** to all allies within 30 ft.
+* 🌪️ **Scale of the Zephyr (Clyssavar's Silver Scale - UPCOMING / CHAPTER 3):** 
+  * *Intended Wielder:* **Sylvar Link (Whispers Bard)** | *Rarity:* 🌟 **LEGENDARY RELIC** (Attuned Universal Focus) | *Found:* Compass Rose Wreck (Secured in Chapter 3 in the submerged hold C9!)
+  * *Effect:* **+1 to Spell Attack Rolls & Save DC** (DC 14, Hit +6), **Immunity to Deafened**, **Resistance to Thunder Damage**, and **Advantage on saves vs being pushed or knocked prone by wind/blasts**.
+  * 🍃 **Resonant Gale-Burst (1/day):** When hitting with a weapon attack or spell, deals **+1d6 Thunder damage** and forces a **DC 13 Strength Save** or the target is **pushed 10 ft back and has Disadvantage on its next attack roll**!
+  * 👂 **Whispers on the Wind:** Advantage on Wisdom (Perception) checks that rely on hearing, acoustic vibrations, or atmospheric air currents.
 
 #### ⚡ THE TRI-DRACONIC RESONANCE (Shared Party Synergy & Combined Ultimate)
 * **🔗 Proximity Synergy (Within 30 ft):** When all 3 scales are reunited and wielded in combat, each wielder radiates a shared draconic passive to all allies:
   - *Bronze Aura (Eflein):* Party gains **+5 ft speed & +2 to Initiative**.
-  - *Silver Aura (New Hero):* Party gains **Cold Resistance & weapon attacks chill targets (-5 ft speed)**.
+  - *Silver Aura (Sylvar Link):* Party gains **Thunder Resistance, Deafened Immunity, & weapon attacks buffet targets with wind (-5 ft speed)**.
   - *Gold Aura (Father Flubs):* Party gains **+1 to all Saving Throws & +5 Max HP**.
 * **💥 Combined Ultimate — "Tri-Draconic Convergence" (1/Day Shared Action):**
-  - When all 3 party members act in unison, they can unleash a combined 40-ft cone breath attack (**2d8 Lightning + 2d8 Cold + 2d8 Radiant**, DC 14 Dex for half) OR channel the harmonic frequency to unseal/seal ancient draconic wards (such as Sharruth's volcanic prison)!
+  - When all 3 party members act in unison, they can unleash a combined 40-ft cone elemental blast (**2d8 Lightning + 2d8 Thunder/Wind + 2d8 Radiant**, DC 14 Dex for half) OR channel the harmonic frequency to unseal/seal ancient draconic wards (such as Sharruth's volcanic prison)!
 
 ---
 

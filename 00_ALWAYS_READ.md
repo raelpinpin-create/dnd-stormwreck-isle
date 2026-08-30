@@ -68,10 +68,9 @@
 
 ### 🐉 The Three Metallic Scales Questline Tracker
 * [x] **1. Astalagan's Bronze Scale (Wielder: Eflein):** Unearthed at Dragon's Rest statue base ➔ Awakened in blessed spring water (*+1 Lightning Spell Attack & DC, +1d6 Lightning Surge 1/day, Purifies Undead*).
-* [ ] **2. Clyssavar's Silver Scale (Wielder: New Hero / Player 3):** Sealed within the rotting hull of the **Compass Rose** (Claimed by the New Hero in Chapter 3 after defeating the shipwreck bosses!) (*+1 Cold Spell/Weapon Attack & DC, Cold Resistance, +1d6 Glacial Slow Burst 1/day*).
+* [ ] **2. Scale of the Zephyr / Clyssavar's Silver Scale (Wielder: Sylvar Link):** Sealed within the submerged hold C9 of the **Compass Rose** (Claimed in Chapter 3) (*+1 Spell Attack & DC, Immune to Deafened, Thunder Resistance, +1d6 Gale-Burst with 10ft Push & Disadvantage 1/day, Whispers on the Wind: Adv on acoustic/hearing Perception*).
 * [ ] **3. Turadaer's Gold Scale (Wielder: Father Flubs):** Sealed in secret planetarium vault at **Clifftop Observatory (Area D5)** (*+1 AC / Saves, +1 Spell Attack/DC, 10-ft Radiant Bastion Aura [+1d4 to ally attack/save], 1/day Beacon of Dawn heal*).
-* ⚡ **Tri-Draconic Convergence (Party Resonance):** When all 3 scales unite within 30 ft, party gains +5ft speed, +2 Init, Cold Resistance, +1 Saves, +5 Max HP, and 1/day 40-ft cone elemental blast (**2d8 Lightning + 2d8 Cold + 2d8 Radiant**). *(Full details in `DM_SCREEN.md` Section 4)*.
-* ⚡ **Tri-Draconic Convergence (Party Resonance):** When all 3 scales unite within 30 ft, party gains +5ft speed, +2 Init, Cold Resistance, +1 Saves, +5 Max HP, and 1/day 40-ft cone elemental blast (**2d8 Lightning + 2d8 Cold + 2d8 Radiant**). *(Full details in `DM_SCREEN.md` Section 4)*.
+* ⚡ **Tri-Draconic Convergence (Party Resonance):** When all 3 scales unite within 30 ft, party gains +5ft speed, +2 Init, Thunder Resistance & Deafened Immunity, +1 Saves, +5 Max HP, and 1/day 40-ft cone elemental blast (**2d8 Lightning + 2d8 Thunder/Wind + 2d8 Radiant**). *(Full details in `DM_SCREEN.md` Section 4)*.
 
 ---
 
