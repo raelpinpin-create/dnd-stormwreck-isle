@@ -503,7 +503,7 @@
         .btn-roll-purple { background: #581c87; color: #f3e8ff; border: 1px solid #9333ea; }
         .btn-roll-purple:hover { background: #6b21a8; }
 
-        /* Inventory List */
+        /* Inventory List (Exact Eflein / Flubs Style) */
         .inv-list-compact {
             display: flex;
             flex-direction: column;
@@ -1056,23 +1056,6 @@
                                 <button class="btn-roll-action" onclick="castUtility('✨ Cast Dancing Lights (Creates 4 floating lights within 120ft • Conc 1m)')">✨ Cast</button>
                             </div>
                         </div>
-
-                        <!-- Spitfire Flask -->
-                        <div class="action-card">
-                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
-                                <div>
-                                    <div class="action-card-title" onclick="openSpellDetailsModal('spitfire')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='#f87171'" onmouseout="this.style.color='#f8fafc'">
-                                        💣 Spitfire Flask (2 Flasks) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
-                                    </div>
-                                    <div style="font-size:0.67rem; font-weight:700; color:#f87171; margin-top:1px;">Thrown 20ft • 5ft AoE</div>
-                                </div>
-                                <span style="font-size:0.62rem; color:#f87171; font-weight:700; background:rgba(239,68,68,0.1); border:1px solid #ef4444; padding:1px 5px; border-radius:3px;">ALCHEMICAL</span>
-                            </div>
-                            <div class="action-desc">Explodes in 5ft radius dealing 2d4 Fire Damage (DC 11 Dex save for half).</div>
-                            <div class="action-btn-row">
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollSpitfireFlaskAction()">💣 Throw (2d4 Fire)</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -1186,20 +1169,20 @@
                     </div>
                 </div>
 
-                <!-- 🎒 TRACKED INVENTORY & CONSUMABLES -->
+                <!-- 🎒 TRACKED INVENTORY & CONSUMABLES (EXACT EFLEIN / FLUBS ARCHITECTURE) -->
                 <div class="panel">
                     <div class="panel-title">
                         <span>🎒 Tracked Inventory & Consumables</span>
                     </div>
 
-                    <div class="inv-list-compact" id="inv-list">
-                        <!-- Rendered by JS -->
+                    <div class="inv-list-compact" id="inventory-list">
+                        <!-- Rendered dynamically from localStorage -->
                     </div>
 
-                    <div style="display:flex; gap:4px; margin-top:4px;">
-                        <input type="text" id="new-item-name" placeholder="Add new loot or item..." style="flex:1; height:26px; font-size:0.74rem; padding:2px 6px; background:#0b1220; border:1px solid #334155; border-radius:3px; color:#cbd5e1;">
-                        <button class="btn-act btn-act-heal" onclick="addNewItem()" style="padding:2px 8px; font-size:0.72rem; font-weight:700;">+ Add</button>
-                        <button class="btn-act btn-act-pre" onclick="resetInventoryToDefault()" style="padding:2px 6px; font-size:0.68rem;">Reset</button>
+                    <div style="display:flex; gap:6px; margin-top:5px;">
+                        <input type="text" id="new-item-input" class="hp-input-num" style="flex:1; width:auto; text-align:left; padding:4px 7px;" placeholder="Add new loot or item...">
+                        <button class="btn-act" style="background:var(--accent-gold); color:#000; font-weight:700;" onclick="addItem()">+ Add</button>
+                        <button class="btn-act btn-act-pre" onclick="resetInventory()" title="Reset to official campaign loadout">🔄 Reset</button>
                     </div>
                 </div>
 
@@ -1219,6 +1202,21 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- 📦 ITEM DESCRIPTION MODAL (WORLD LOOT VAULT) -->
+    <div class="modal-overlay" id="item-modal" onclick="closeItemModalOnBackdrop(event)">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="item-modal-title" style="display:flex; align-items:center; gap:6px;">📦 Item Details</h3>
+                <button class="modal-close-btn" onclick="closeItemModal()">✕</button>
+            </div>
+            <div class="modal-body" id="item-modal-body"></div>
+            <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:space-between; align-items:center;">
+                <div id="item-modal-actions"></div>
+                <button class="btn-act btn-act-pre" onclick="closeItemModal()" style="padding:4px 12px; font-size:0.76rem; font-weight:600;">Close</button>
+            </div>
+        </div>
     </div>
 
     <!-- SPELL & ACTION DETAILS MODAL -->
@@ -1412,20 +1410,101 @@
             }
         ];
 
-        // Tracked Inventory Items
-        let trackedInventory = [
-            { name: "🛡️ Cloak of Protection (+1 AC & Saves)", qty: 1 },
-            { name: "🥋 Leather Armor (AC 11)", qty: 1 },
-            { name: "🗡️ Steel Rapier (1d8+1 Piercing)", qty: 1 },
-            { name: "🗡️ Steel Daggers (1d4+1 Piercing)", qty: 2 },
-            { name: "🪘 Tambourine (Arcane Focus & Resonator)", qty: 1 },
-            { name: "🎸 Lute & Wooden Guitar", qty: 2 },
-            { name: "💣 Spitfire Flasks (2d4 Fire AoE)", qty: 2 },
-            { name: "🧪 Potion of Healing (Bonus: 2d6 / Action: Full Max HP)", qty: 1 },
-            { name: "🍞 Kobold Sweetbread Roll (1d4 HP + Temp HP)", qty: 1 },
-            { name: "🎒 Entertainer's Pack (Costumes, Bedroll, Rations)", qty: 1 },
-            { name: "🗝️ Thieves' Tools & Burglar's Pack", qty: 1 }
+        // Official Master Inventory
+        const defaultItems = [
+            "🛡️ Cloak of Protection (+1 AC & Saves)",
+            "🥋 Leather Armor (AC 11)",
+            "🗡️ Steel Rapier",
+            "🗡️ 2x Steel Daggers",
+            "🪘 Tambourine (Arcane Focus & Resonator)",
+            "🎸 Lute & Wooden Guitar",
+            "💣 2x Spitfire Flasks",
+            "🧪 1x Potion of Healing",
+            "🍞 1x Kobold Sweetbread Roll",
+            "🎒 Entertainer's Pack",
+            "🗝️ Thieves' Tools & Burglar's Pack"
         ];
+
+        // World Loot Vault Dictionary for Sylvar
+        const worldLootVault = {
+            "cloak of protection": {
+                name: "🛡️ Cloak of Protection",
+                category: "WONDROUS ITEM • Attuned",
+                origin: "Dragon's Rest Sanctuary",
+                desc: "A finely tailored twilight-grey cloak trimmed with shimmering silver embroidery.",
+                effect: "• <strong>+1 to Armor Class</strong> (Base AC 12).<br>• <strong>+1 to all Saving Throws</strong> (Str +0, Dex +4, Con +1, Int -2, Wis +2, Cha +6)."
+            },
+            "leather armor": {
+                name: "🥋 Leather Armor",
+                category: "LIGHT ARMOR",
+                origin: "Starting Gear",
+                desc: "Supple, fitted boiled leather allowing silent fluid movements.",
+                effect: "• Sets base AC to 11 + DEX mod (+1) = AC 12."
+            },
+            "rapier": {
+                name: "🗡️ Steel Rapier",
+                category: "MARTIAL WEAPON • Finesse",
+                origin: "Bardic Loadout",
+                desc: "A flexible, razor-pointed steel blade with an ornate silver basket hilt.",
+                effect: "• <strong>+3 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 1 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+2d6 Psychic Damage</strong>!"
+            },
+            "dagger": {
+                name: "🗡️ Steel Daggers",
+                category: "SIMPLE WEAPON • Finesse, Light, Thrown",
+                origin: "Bardic Loadout",
+                desc: "Balanced throwing daggers with keen steel edges.",
+                effect: "• <strong>+3 to Hit</strong>, range 20/60 ft.<br>• <strong>1d4 + 1 Piercing Damage</strong>."
+            },
+            "tambourine": {
+                name: "🪘 Tambourine",
+                category: "ARCANE FOCUS & MUSICAL INSTRUMENT",
+                origin: "Lush Peaks Clan",
+                desc: "A brass-rimmed wooden tambourine whose jingles resonate at crystalline frequencies, helping Sylvar navigate through sound and rhythm.",
+                effect: "• Acts as Sylvar's Spellcasting Focus.<br>• Rhythmic beats enhance his blind acoustic seismic sense."
+            },
+            "lute": {
+                name: "🎸 Lute & Wooden Guitar",
+                category: "MUSICAL INSTRUMENT",
+                origin: "Entertainer's Gear",
+                desc: "Crafted from seasoned pine and rosewood, producing resonant melodies.",
+                effect: "• Used for Bardic performances, inspiring allies, and weaving subtle enchantments."
+            },
+            "spitfire": {
+                name: "💣 Spitfire Flask",
+                category: "ALCHEMICAL CONSUMABLE",
+                origin: "Dragon's Rest Alchemical Reserve",
+                desc: "A thick ceramic flask filled with volatile red phosphorus and mineral oil.",
+                effect: "• <strong>Thrown 20 ft:</strong> Explodes in a 5-ft radius dealing <strong>2d4 Fire Damage</strong> (DC 11 Dex save for half)."
+            },
+            "potion of healing": {
+                name: "🧪 Potion of Healing",
+                category: "MAGIC POTION • Consumable",
+                origin: "Tarak's Herbal Dispensary",
+                desc: "A swirling crimson potion smelling of crushed winterberries.",
+                effect: "• <strong>Bonus Action:</strong> Restores <strong>2d6 Hit Points</strong>.<br>• <strong>Full Action (House Rule):</strong> Restores <strong>100% Full Max HP (21 HP)</strong>!"
+            },
+            "sweetbread": {
+                name: "🍞 Kobold Sweetbread Roll",
+                category: "SPECIALTY RATION • Consumable",
+                origin: "Dragon's Rest Bakery (Blepp & Frub)",
+                desc: "Warm, honey-glazed cinnamon roll baked with cloister springwater.",
+                effect: "• Restores <strong>1d4 Hit Points</strong>. Excess overheal converts directly into <strong>Temporary HP</strong>!"
+            },
+            "entertainer": {
+                name: "🎒 Entertainer's Pack",
+                category: "ADVENTURING PACK",
+                origin: "Entertainer Background",
+                desc: "A backpack containing a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and disguise makeup.",
+                effect: "• Essential survival and performance gear for life on the road."
+            },
+            "thieves": {
+                name: "🗝️ Thieves' Tools & Burglar's Pack",
+                category: "SPECIALIZED TOOLS",
+                origin: "Adventurer's Gear",
+                desc: "A set of lockpicks, small files, tension wrenches, 50ft hempen rope, and lantern.",
+                effect: "• Used to pick mechanical locks, disarm traps, and explore dark structures."
+            }
+        };
 
         // ==========================================
         // 🔄 INITIALIZATION & RENDER
@@ -1459,8 +1538,6 @@
                     if (parsed[1]) spellSlots[1].current = parsed[1].current;
                     if (parsed[2]) spellSlots[2].current = parsed[2].current;
                 }
-                const savedInv = localStorage.getItem('sylvar_inv');
-                if (savedInv) trackedInventory = JSON.parse(savedInv);
             } catch (e) {
                 console.error("Failed to load local state:", e);
             }
@@ -1474,7 +1551,6 @@
             localStorage.setItem('sylvar_gp', currentGP);
             localStorage.setItem('sylvar_sp', currentSP);
             localStorage.setItem('sylvar_slots', JSON.stringify(spellSlots));
-            localStorage.setItem('sylvar_inv', JSON.stringify(trackedInventory));
         }
 
         // ==========================================
@@ -1910,13 +1986,6 @@
             logRoll(text);
         }
 
-        function rollSpitfireFlaskAction() {
-            const d1 = Math.floor(Math.random() * 4) + 1;
-            const d2 = Math.floor(Math.random() * 4) + 1;
-            const tot = d1 + d2;
-            logRoll(`💣 <strong>Spitfire Flask Thrown (20 ft):</strong> 5-ft radius explosion deals <span style="color:#f87171; font-size:1.1rem; font-weight:800;">${tot} Fire Damage</span> (2d4: ${d1}+${d2}, DC 11 Dex save for half)!`);
-        }
-
         function rollPsychicBladesStrike() {
             if (bardicInsp <= 0) {
                 alert("No Bardic Inspiration dice remaining to fuel Psychic Blades! (3/Long Rest)");
@@ -1946,75 +2015,232 @@
         }
 
         // ==========================================
-        // 🎒 TRACKED INVENTORY MANAGER
+        // 🎒 TRACKED INVENTORY MANAGER (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
+        function getStoredItems() {
+            let stored = localStorage.getItem('dnd_inv_sylvar_v2');
+            if (!stored) {
+                localStorage.removeItem('dnd_inv_sylvar');
+                localStorage.setItem('dnd_inv_sylvar_v2', JSON.stringify(defaultItems));
+                return [...defaultItems];
+            }
+            return JSON.parse(stored);
+        }
+
+        function saveStoredItems(items) {
+            localStorage.setItem('dnd_inv_sylvar_v2', JSON.stringify(items));
+        }
+
+        function parseItemInfo(itemStr) {
+            if (!itemStr) return { hasQty: false, qty: 1, emoji: '', name: '', raw: '' };
+            
+            const emojiMatch = itemStr.match(/^([\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\s]+)/u);
+            const emoji = emojiMatch ? emojiMatch[1].trim() + ' ' : '';
+            let rest = (emojiMatch ? itemStr.slice(emojiMatch[0].length) : itemStr).trim();
+
+            let qty = 1;
+            let hasQty = false;
+            let name = rest;
+
+            const prefixMatch = rest.match(/^(?:(\d+)\s*[xX]|[xX]\s*(\d+))\s+(.+)$/);
+            const suffixMatch = rest.match(/^(.+?)\s+(?:[xX]\s*(\d+)|(\d+)\s*[xX])$/);
+            const parenMatch = rest.match(/^(.+?)\s*\(\s*(?:[xX]\s*(\d+)|(\d+)\s*[xX]?)\s*\)$/);
+
+            if (prefixMatch) {
+                hasQty = true;
+                qty = parseInt(prefixMatch[1] || prefixMatch[2]) || 1;
+                name = prefixMatch[3].trim();
+            } else if (suffixMatch) {
+                hasQty = true;
+                qty = parseInt(suffixMatch[2] || suffixMatch[3]) || 1;
+                name = suffixMatch[1].trim();
+            } else if (parenMatch) {
+                hasQty = true;
+                qty = parseInt(parenMatch[2] || parenMatch[3]) || 1;
+                name = parenMatch[1].trim();
+            }
+
+            return { hasQty, qty, emoji, name, raw: itemStr };
+        }
+
         function renderInventory() {
-            const list = document.getElementById('inv-list');
+            const list = document.getElementById('inventory-list');
+            if (!list) return;
+            const items = getStoredItems();
             list.innerHTML = '';
 
-            trackedInventory.forEach((item, index) => {
-                const row = document.createElement('div');
-                row.className = 'inv-row-item';
-                row.innerHTML = `
-                    <span class="inv-item-info">${item.name}</span>
-                    <div class="inv-controls">
+            if (items.length === 0) {
+                list.innerHTML = `<div style="text-align:center; color:var(--text-muted); font-size:0.75rem; padding:10px;">Inventory is empty.</div>`;
+                return;
+            }
+
+            items.forEach((item, index) => {
+                const parsed = parseItemInfo(item);
+                const div = document.createElement('div');
+                div.className = 'inv-row-item';
+
+                let controlsHtml = '';
+                if (parsed.hasQty) {
+                    controlsHtml = `
                         <div class="inv-stepper">
-                            <button class="btn-step-qty" onclick="stepInvQty(${index}, -1)">-</button>
-                            <span class="inv-qty-val">${item.qty}</span>
-                            <button class="btn-step-qty" onclick="stepInvQty(${index}, 1)">+</button>
+                            <button class="btn-step-qty" onclick="stepItemQty(${index}, -1)" title="Use / Consume 1 (➖)">➖</button>
+                            <span class="inv-qty-val">${parsed.qty}x</span>
+                            <button class="btn-step-qty" onclick="stepItemQty(${index}, 1)" title="Add / Restock 1 (➕)">➕</button>
                         </div>
-                        <button class="btn-del-item" onclick="deleteInvItem(${index})" title="Delete item">✕</button>
-                    </div>
-                `;
-                list.appendChild(row);
+                        <button class="btn-del-item" onclick="deleteItem(${index})" title="Discard entire stack">✕</button>
+                    `;
+                    div.innerHTML = `
+                        <div class="inv-item-info" title="Click to view full description and lore">
+                            <span onclick="openItemDetailsModal(${index})" style="cursor:pointer; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">${parsed.emoji}${parsed.name}</span>
+                        </div>
+                        <div class="inv-controls">
+                            ${controlsHtml}
+                        </div>
+                    `;
+                } else {
+                    controlsHtml = `
+                        <div class="inv-stepper" style="border:none; background:transparent;">
+                            <button class="btn-step-qty" onclick="stepItemQty(${index}, 1)" title="Turn into stack / Add 1 (➕)" style="border:1px solid #334155; border-radius:3px; padding:1px 5px;">➕</button>
+                        </div>
+                        <button class="btn-del-item" onclick="deleteItem(${index})" title="Discard item">✕</button>
+                    `;
+                    div.innerHTML = `
+                        <div class="inv-item-info" title="Click to view full description and lore">
+                            <span onclick="openItemDetailsModal(${index})" style="cursor:pointer; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">${item}</span>
+                        </div>
+                        <div class="inv-controls">
+                            ${controlsHtml}
+                        </div>
+                    `;
+                }
+
+                list.appendChild(div);
             });
         }
 
-        function stepInvQty(index, delta) {
-            if (trackedInventory[index]) {
-                trackedInventory[index].qty = Math.max(0, trackedInventory[index].qty + delta);
-                if (trackedInventory[index].qty === 0) {
-                    trackedInventory.splice(index, 1);
+        function stepItemQty(index, delta) {
+            const items = getStoredItems();
+            if (!items[index]) return;
+            const parsed = parseItemInfo(items[index]);
+
+            if (parsed.hasQty) {
+                const newQty = parsed.qty + delta;
+                if (newQty <= 0) {
+                    items.splice(index, 1);
+                } else {
+                    items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`;
                 }
-                renderInventory();
-                saveSheetState();
+            } else {
+                if (delta > 0) {
+                    items[index] = `${parsed.emoji}2x ${parsed.name}`;
+                } else {
+                    items.splice(index, 1);
+                }
             }
+
+            saveStoredItems(items);
+            renderInventory();
         }
 
-        function deleteInvItem(index) {
-            if (trackedInventory[index]) {
-                trackedInventory.splice(index, 1);
-                renderInventory();
-                saveSheetState();
-            }
+        function deleteItem(index) {
+            const items = getStoredItems();
+            if (!items[index]) return;
+            items.splice(index, 1);
+            saveStoredItems(items);
+            renderInventory();
         }
 
-        function addNewItem() {
-            const input = document.getElementById('new-item-name');
+        function addItem() {
+            const input = document.getElementById('new-item-input');
             const val = input.value.trim();
             if (!val) return;
-            trackedInventory.push({ name: val, qty: 1 });
+            const items = getStoredItems();
+            items.push(val);
+            saveStoredItems(items);
             input.value = '';
             renderInventory();
-            saveSheetState();
         }
 
-        function resetInventoryToDefault() {
-            trackedInventory = [
-                { name: "🛡️ Cloak of Protection (+1 AC & Saves)", qty: 1 },
-                { name: "🥋 Leather Armor (AC 11)", qty: 1 },
-                { name: "🗡️ Steel Rapier (1d8+1 Piercing)", qty: 1 },
-                { name: "🗡️ Steel Daggers (1d4+1 Piercing)", qty: 2 },
-                { name: "🪘 Tambourine (Arcane Focus & Resonator)", qty: 1 },
-                { name: "🎸 Lute & Wooden Guitar", qty: 2 },
-                { name: "💣 Spitfire Flasks (2d4 Fire AoE)", qty: 2 },
-                { name: "🧪 Potion of Healing (Bonus: 2d6 / Action: Full Max HP)", qty: 1 },
-                { name: "🍞 Kobold Sweetbread Roll (1d4 HP + Temp HP)", qty: 1 },
-                { name: "🎒 Entertainer's Pack (Costumes, Bedroll, Rations)", qty: 1 },
-                { name: "🗝️ Thieves' Tools & Burglar's Pack", qty: 1 }
-            ];
+        function resetInventory() {
+            localStorage.removeItem('dnd_inv_sylvar_v2');
+            saveStoredItems([...defaultItems]);
             renderInventory();
-            saveSheetState();
+            logRoll(`🔄 <strong>Inventory Reset:</strong> Restored to official starting loadout.`);
+        }
+
+        // ==========================================
+        // 📦 ITEM DETAILS MODAL
+        // ==========================================
+        function getItemDetails(rawItemName) {
+            const parsed = parseItemInfo(rawItemName);
+            const clean = parsed.name.toLowerCase().replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').replace(/\(.*?\)/g, '').trim();
+
+            for (let key in worldLootVault) {
+                if (clean.includes(key) || key.includes(clean)) {
+                    return {
+                        ...worldLootVault[key],
+                        qty: parsed.qty,
+                        hasQty: parsed.hasQty,
+                        raw: rawItemName
+                    };
+                }
+            }
+
+            return {
+                name: (parsed.emoji ? parsed.emoji + ' ' : '') + parsed.name,
+                category: "ADVENTURING GEAR • Loot",
+                origin: "Acquired during campaign exploration",
+                desc: "An item carried in the adventurer's pack.",
+                effect: `• <strong>Item Details:</strong> ${rawItemName}`,
+                qty: parsed.qty,
+                hasQty: parsed.hasQty,
+                raw: rawItemName
+            };
+        }
+
+        function openItemDetailsModal(index) {
+            const items = getStoredItems();
+            if (!items[index]) return;
+            const itemStr = items[index];
+            const details = getItemDetails(itemStr);
+            
+            document.getElementById('item-modal-title').innerHTML = `${details.name}`;
+            const body = document.getElementById('item-modal-body');
+            
+            body.innerHTML = `
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:4px;">
+                        <span class="pill-badge" style="background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); color:#fde68a; font-size:0.68rem; padding:2px 8px; border-radius:4px; font-weight:700;">${details.category}</span>
+                        <span style="font-size:0.68rem; color:var(--text-muted); font-style:italic;">📍 ${details.origin}</span>
+                    </div>
+                    <div style="background:#090e1a; border:1px solid #1e293b; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#cbd5e1; font-style:italic; line-height:1.4;">
+                        "${details.desc}"
+                    </div>
+                    <div style="background:rgba(56,189,248,0.06); border:1px solid rgba(56,189,248,0.25); border-radius:6px; padding:8px 10px; font-size:0.78rem; color:#f8fafc; line-height:1.5;">
+                        <div style="font-size:0.7rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:4px;">⚡ In-Game Mechanics & Effects:</div>
+                        <div>${details.effect}</div>
+                    </div>
+                </div>
+            `;
+
+            const actions = document.getElementById('item-modal-actions');
+            if (details.hasQty) {
+                actions.innerHTML = `
+                    <button class="btn-act btn-act-pre" onclick="stepItemQty(${index}, -1); openItemDetailsModal(${index});" style="color:var(--accent-gold); border-color:rgba(245,158,11,0.4); font-size:0.72rem; padding:4px 8px;">🧪 Consume 1 (${details.qty} left)</button>
+                `;
+            } else {
+                actions.innerHTML = ``;
+            }
+
+            document.getElementById('item-modal').classList.add('active');
+        }
+
+        function closeItemModal() {
+            document.getElementById('item-modal').classList.remove('active');
+        }
+
+        function closeItemModalOnBackdrop(e) {
+            if (e.target.id === 'item-modal') closeItemModal();
         }
 
         // ==========================================
@@ -2191,13 +2417,6 @@
                 castingTime: "1 Action",
                 range: "120 feet",
                 desc: "Create up to 4 torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for up to 1 minute (Concentration)."
-            },
-            spitfire: {
-                name: "💣 Spitfire Flask",
-                school: "Alchemical Weapon",
-                castingTime: "1 Action",
-                range: "20 feet",
-                desc: "Volatile alchemical concoction. Thrown up to 20 feet, exploding in a 5-ft radius for 2d4 Fire Damage (DC 11 Dex save for half)."
             }
         };
 
@@ -2237,7 +2456,8 @@
         // 📋 1-CLICK EXPORT STATE STRING
         // ==========================================
         function exportSheetState() {
-            const exportStr = `🐾 Sylvar Link (Lv 3 Whispers Bard) | HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: ${isCloakAttuned ? '12' : '11'} | Insp: ${bardicInsp}/3 | Help: ${helpTokens}/2 | Slots: [Lv1: ${spellSlots[1].current}/4, Lv2: ${spellSlots[2].current}/2] | Wealth: ${currentGP} GP, ${currentSP} SP | 📦 Inventory: (Live Sync)`;
+            const items = getStoredItems();
+            const exportStr = `🐾 Sylvar Link (Lv 3 Whispers Bard) | HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: ${isCloakAttuned ? '12' : '11'} | Insp: ${bardicInsp}/3 | Help: ${helpTokens}/2 | Slots: [Lv1: ${spellSlots[1].current}/4, Lv2: ${spellSlots[2].current}/2] | Wealth: ${currentGP} GP, ${currentSP} SP | 📦 Inventory: (${items.length} items)`;
 
             navigator.clipboard.writeText(exportStr).then(() => {
                 alert(`Copied Character State to Clipboard!\n\n${exportStr}`);
