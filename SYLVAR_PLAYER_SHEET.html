@@ -908,8 +908,8 @@
                         <li class="stat-row-item" onclick="rollD20('Medicine (WIS)', 2)"><span>Medicine (WIS)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Nature (INT)', -2)"><span>Nature (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item prof-item" onclick="rollD20('Perception (WIS) ★ [Cat\'s Talent]', 3)"><span>Perception (WIS) ★ [Cat's Talent]</span><span>+3 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Performance (CHA) ★', 5)"><span>Performance (CHA) ★</span><span>+5 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★', 5)"><span>Persuasion (CHA) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Performance (CHA) ★ [Expertise]', 7)"><span>Performance (CHA) ★ [Expertise]</span><span>+7 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★ [Expertise]', 7)"><span>Persuasion (CHA) ★ [Expertise]</span><span>+7 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Religion (INT)', -2)"><span>Religion (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 2)"><span>Sleight of Hand (DEX)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 2)"><span>Stealth (DEX)</span><span>+2 🎲</span></li>
@@ -997,12 +997,12 @@
                             </div>
                         </div>
 
-                        <!-- Steel Daggers -->
+                        <!-- Steel Dagger -->
                         <div class="action-card">
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
                                     <div class="action-card-title" onclick="openSpellDetailsModal('dagger')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
-                                        🗡️ Steel Daggers (2) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                        🗡️ Steel Dagger <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Finesse / Thrown 20/60ft</div>
                                 </div>
@@ -1176,16 +1176,15 @@
                     </div>
                 </div>
 
-                <!-- 🗺️ ACTIVE CAMPAIGN QUESTS -->
+                <!-- 🗺️ ACTIVE CAMPAIGN QUESTS (100% SPOILER-FREE) -->
                 <div class="panel">
                     <div class="panel-title">
                         <span>📍 Active Campaign Quests</span>
                     </div>
                     <div style="font-size:0.74rem; color:var(--text-dim); line-height:1.45; display:flex; flex-direction:column; gap:4px;">
-                        <div>• <strong>Search for Missing Twin Sister:</strong> Searching coasts of Faerûn for the Lush Peaks Clan dancer.</div>
-                        <div>• <strong>Seagrow Caves Blight:</strong> Blight purged with the fellowship at Level 3.</div>
-                        <div>• <strong>Wreck of Compass Rose:</strong> Retrieve Clyssavar's Silver Harmonic Scale from hold C9 & cleanse Brastos's grave.</div>
-                        <div>• <strong>The Tri-Draconic Convergence:</strong> Harmonize Silver, Bronze, and Gold scales atop Clifftop Observatory!</div>
+                        <div>• <strong>Search for Missing Twin Sister:</strong> Follow acoustic whisper-echoes across Stormwreck Isle in search of your twin sister, a dancer of the Lush Peaks Clan.</div>
+                        <div>• <strong>The Cloister of Dragon's Rest:</strong> Travel alongside the fellowship to investigate strange island disturbances and seek the wisdom of Elder Runara.</div>
+                        <div>• <strong>Whispers of the Shallows:</strong> Rumors speak of an ancient shipwreck half-submerged in the foggy coastal shoals.</div>
                     </div>
                 </div>
 
@@ -1405,7 +1404,7 @@
             "🛡️ Cloak of Protection (+1 AC & Saves)",
             "🥋 Leather Armor (AC 11)",
             "🗡️ Steel Rapier",
-            "🗡️ 2x Steel Daggers",
+            "🗡️ 2x Steel Dagger",
             "🪘 Tambourine (Arcane Focus & Resonator)",
             "🎸 Lute & Wooden Guitar",
             "💣 2x Spitfire Flasks",
@@ -1439,7 +1438,7 @@
                 effect: "• <strong>+3 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 1 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+2d6 Psychic Damage</strong>!"
             },
             "dagger": {
-                name: "🗡️ Steel Daggers",
+                name: "🗡️ Steel Dagger",
                 category: "SIMPLE WEAPON • Finesse, Light, Thrown",
                 origin: "Bardic Loadout",
                 desc: "Balanced throwing daggers with keen steel edges.",
@@ -1518,10 +1517,10 @@
                 if (savedInsp !== null) bardicInsp = parseInt(savedInsp);
                 const savedHelp = localStorage.getItem('sylvar_help');
                 if (savedHelp !== null) helpTokens = parseInt(savedHelp);
-                const savedGP = localStorage.getItem('sylvar_gp_v3');
+                const savedGP = localStorage.getItem('sylvar_gp_v4');
                 if (savedGP !== null) currentGP = parseInt(savedGP);
                 else currentGP = 15;
-                const savedSP = localStorage.getItem('sylvar_sp_v3');
+                const savedSP = localStorage.getItem('sylvar_sp_v4');
                 if (savedSP !== null) currentSP = parseInt(savedSP);
                 else currentSP = 0;
                 const savedSlots = localStorage.getItem('sylvar_slots');
@@ -1540,8 +1539,8 @@
             localStorage.setItem('sylvar_temp_hp', tempHP);
             localStorage.setItem('sylvar_insp', bardicInsp);
             localStorage.setItem('sylvar_help', helpTokens);
-            localStorage.setItem('sylvar_gp_v3', currentGP);
-            localStorage.setItem('sylvar_sp_v3', currentSP);
+            localStorage.setItem('sylvar_gp_v4', currentGP);
+            localStorage.setItem('sylvar_sp_v4', currentSP);
             localStorage.setItem('sylvar_slots', JSON.stringify(spellSlots));
         }
 
@@ -2005,18 +2004,19 @@
         // 🎒 TRACKED INVENTORY MANAGER (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
         function getStoredItems() {
-            let stored = localStorage.getItem('dnd_inv_sylvar_v3');
+            let stored = localStorage.getItem('dnd_inv_sylvar_v4');
             if (!stored) {
                 localStorage.removeItem('dnd_inv_sylvar');
                 localStorage.removeItem('dnd_inv_sylvar_v2');
-                localStorage.setItem('dnd_inv_sylvar_v3', JSON.stringify(defaultItems));
+                localStorage.removeItem('dnd_inv_sylvar_v3');
+                localStorage.setItem('dnd_inv_sylvar_v4', JSON.stringify(defaultItems));
                 return [...defaultItems];
             }
             return JSON.parse(stored);
         }
 
         function saveStoredItems(items) {
-            localStorage.setItem('dnd_inv_sylvar_v3', JSON.stringify(items));
+            localStorage.setItem('dnd_inv_sylvar_v4', JSON.stringify(items));
         }
 
         function parseItemInfo(itemStr) {
@@ -2150,7 +2150,7 @@
         }
 
         function resetInventory() {
-            localStorage.removeItem('dnd_inv_sylvar_v3');
+            localStorage.removeItem('dnd_inv_sylvar_v4');
             saveStoredItems([...defaultItems]);
             renderInventory();
             logRoll(`🔄 <strong>Inventory Reset:</strong> Restored to official starting loadout.`);
@@ -2325,7 +2325,7 @@
         }
 
         function getGoldTransactions() {
-            const saved = localStorage.getItem('sylvar_tx_history_v3');
+            const saved = localStorage.getItem('sylvar_tx_history_v4');
             return saved ? JSON.parse(saved) : [];
         }
 
@@ -2334,7 +2334,7 @@
             const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             txs.unshift({ type, reason, delta, total, time });
             if (txs.length > 30) txs.pop();
-            localStorage.setItem('sylvar_tx_history_v3', JSON.stringify(txs));
+            localStorage.setItem('sylvar_tx_history_v4', JSON.stringify(txs));
         }
 
         function openGoldHistoryModal() {
@@ -2370,7 +2370,7 @@
         }
 
         function clearGoldHistory() {
-            localStorage.removeItem('sylvar_tx_history_v3');
+            localStorage.removeItem('sylvar_tx_history_v4');
             openGoldHistoryModal();
         }
 
@@ -2386,7 +2386,7 @@
                 desc: "Finesse Martial Weapon: +3 to Hit, 1d8 + 1 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!"
             },
             dagger: {
-                name: "🗡️ Steel Daggers",
+                name: "🗡️ Steel Dagger",
                 school: "Finesse / Thrown",
                 castingTime: "1 Action",
                 range: "20/60 feet",
