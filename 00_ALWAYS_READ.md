@@ -15,13 +15,13 @@
   - 🧪 **Master Brewing Batch:** Tarak crafted **12x Potions of Healing (Bonus: 2d6 HP / Action: 100% Full Heal)**, **3x Legendary Elixirs of Health (+20 Temp HP / Full 0 HP Revive)**, and **2x Diluted Drake Blood Potions (+1 ATK/+2 DMG)**.
   - 🥽 **Myla's Outfitting:** Eflein equipped **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Underwater Sight) and packed the **Dragon's Rest Bagel** (+2 AC).
   - 💭 **Eflein's Reverie (The Dream of the Empty Hearth):** Dozing off against the cloister fountain, Eflein experienced a vivid elven trance reliving that fateful night 5 years ago when his immortal wife **Lianna** vanished on Elminster's cosmic call, leaving behind her secret sub-vault and farewell letter. Waking with her jasmine-scented letter in his hands, his hunger to grow stronger and reach the ancient dragon lands burns with unprecedented intensity!
-  - ❄️ **Compass Rose Intel Briefing:** Vaelith briefed the party on harpies, drowned dead, and **Clyssavar's Silver Scale** trapped in the flooded hold.
+  - 📜 **Compass Rose Intel Briefing:** Elder Runara and General Varnoth briefed the party on the harpies, drowned dead, and **Clyssavar's Silver Scale** trapped in the flooded hold of the *Compass Rose*.
   - 🌟 **Level 3 Milestone Active:** Full party rested, attuned, and stage-ready for Chapter 3!
 * **Party State (FULL LEVEL 3 STATUS — POST-SHORT REST READY):** 
   - 🧙‍♂️ **Eflein:** **LEVEL 3 WIZARD (Evocation)** — **20 / 20 HP**, **4 / 4 1st-level & 2 / 2 2nd-level slots** *(Arcane Recovery used on Short Rest)*, **6 Prepared Spells**, **2 / 2 Help Tokens**, 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Underwater Clarity), 3 Potions of Healing (Bonus: 2d6 / Action: Full Heal), 5 Specialty Breads & Bagel (+2 AC), Wand of Magic Missiles (7/7), Awakened Amber Scale, Lodestone Bracelet, Spore Mask, Robe of Arcane Reserve, 28 gp 9 sp. *(AC 12 / 15 Mage Armor)*
   - 🍷 **Father Flubs:** **LEVEL 3 LIFE CLERIC** — **24 / 24 HP**, **3 / 4 1st-level & 2 / 2 2nd-level slots**, *Vintage of the Dawn Watch*, Preserve Life Ready, **2 / 2 Help Tokens** *(+1 regained on Short Rest)*, **🐍🏇 Thurible (Giant Fire Snake Battle Mount & Village Idol • Large Elemental • 32 HP, AC 14 • 10ft Cold Immunity Aura, Bite +4 [1d6+2+1d6 Fire], Whip Push DC 13)**, 13x Potions of Healing (Bonus: 2d6 / Action: Full Heal), 3x Elixirs of Health (Legendary: +20 Temp HP / 0 HP Full Revive), 2x Diluted Drake Blood Potions (+1 ATK, +2 DMG all day), 52 gp 5 sp. Titles: *« The Serpent Rider »* & *« Mascot of Dragon's Rest »*.
   - 🗡️ **General Varnoth:** **LEVEL 3 MARTIAL DEFENDER** — **29 / 29 HP**, AC 17, Improved Critical (19-20), Protection Reaction, **1 / 2 Help Tokens**, Second Wind ready, Action Surge ready, Longsword, Twin Bone-Cleavers, 1x Potion of Healing, 8 gp 6 sp.
-  - ❄️ **Vaelith Frostborne:** **LEVEL 3 WARLOCK (Pact of the Blade / White Dragon)** — **24 / 24 HP**, **2 / 2 2nd-level Pact Slots** *(Recharged on Short Rest)*, **2 / 2 Help Tokens**, Magical Ice Katana, *Armor of Shadows* (AC 16 w/ Cloak of Protection), 2 Spitfire Flasks, 1x Potion of Healing, 15 gp 8 sp.
+  - 🛡️ **Player Character 3 (New Hero — Standby / Reserved Slot):** **LEVEL 3 HERO** — Transferred Loadout: 🛡️ **Cloak of Protection** (+1 AC/Saves), 💣 **2x Volatile Spitfire Flasks** (2d4 Fire AoE), 🧪 **1x Potion of Healing**, 🍞 **Kobold Sweetbread Roll**, 2 Steel Daggers, Thieves' Tools, Burglar's Pack, **15 gp 8 sp**.
   - 🍄 **Shared Party Treasury Vault:** 4x Wind Spore Pouches.
 
 ---
@@ -30,7 +30,7 @@
 * 🎨 **Interactive HTML DM Screen (Visual Layout):** [`DM_SCREEN.html`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/DM_SCREEN.html)
 * 🛡️ **Master DM Screen & Cheat Sheet:** [`DM_SCREEN.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/DM_SCREEN.md)
 * 🧙‍♂️ **Eflein Visual Player Card:** [`EFELEIN_PLAYER_SHEET.html`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/EFELEIN_PLAYER_SHEET.html)
-* ❄️ **Vaelith Visual Player Card:** [`VAELITH_PLAYER_SHEET.html`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/VAELITH_PLAYER_SHEET.html)
+* ❄️ **Vaelith Visual Player Card (Archived / Recurring Lone Wolf):** [`VAELITH_PLAYER_SHEET.html`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/VAELITH_PLAYER_SHEET.html)
 * 🍷 **Father Flubs Visual Player Card:** [`FATHER_FLUBS_PLAYER_SHEET.html`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/FATHER_FLUBS_PLAYER_SHEET.html)
 * 🐍 **Thurible Visual Companion Sheet:** [`THURIBLE_COMPANION_SHEET.html`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/THURIBLE_COMPANION_SHEET.html)
 * 🛡️ **General Varnoth Character Card:** [`VARNOTH_PLAYER_SHEET.html`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/VARNOTH_PLAYER_SHEET.html)
@@ -54,21 +54,22 @@
 1. **Chapter 1: Dragon's Rest Exploration & Tarak Hook (COMPLETED):**
    * Eflein explored Dragon's Rest, met Elder Runara, awakened Astalagan's Scale, and met **Tarak the Herbalist** in Cell 2. Tarak gave 2 *Potions of Healing* and pleaded for help clearing the Seagrow Caves fungal blight!
 2. **Chapter 2: Seagrow Caves & Myconid Blight (COMPLETED — LEVEL 3 REACHED):**
-   * **Wilderness Camp:** Rescue Father Flubs, team up with Vaelith, and defeat the Kobold Camp! *(Completed)*
+   * **Wilderness Camp:** Rescue Father Flubs and defeat the Kobold Camp! *(Completed)*
    * **Cave Expedition (Session 3):** Eflein, Father Flubs, and Varnoth clear Fume Drakes, tame the Fire Snake, cure Sovereign Sinensa & the Myconids, collect Heart Cap mushrooms & Ruby Morels, uncover Lianna's geothermal notes, and shatter the volcanic crystal blocking Sharruth's fissure!
-   * **The Cave Cliffhanger:** Vaelith returns injured to Seagrow Caves, collapsing before the party and triggering Chapter 3!
+   * **The Departure & Standby:** Vaelith departs Dragon's Rest as an independent wanderer across Faerûn, opening the ranks for the incoming new hero as Chapter 3 begins!
 3. **Chapter 3: The Cursed Shipwreck (Compass Rose) — Level 3–4 Dungeon (ACTIVE):**
-   * **The Cave Climax Hook:** Vaelith warns the party in Seagrow Caves that Clyssavar's Silver Scale is trapped inside the submerged captain's hold of the *Compass Rose* and dark undead forces are attempting to claim it!
-   * **The Raid:** Full reunited 4-hero Level 3 party raids the *Compass Rose*, defeats **Aleitha, The Drowned Queen (Zombie Queen)** & the Zombie Captain, claims **Clyssavar's Silver Scale**, discovers the hidden **Ivory Bone Scroll Case**, cleanses Aleitha's Talisman on Brastos's grave, and reaches **Level 4 Milestone**!
+   * **The Shipwreck Hook:** The party learns that Clyssavar's Silver Scale is trapped inside the submerged captain's hold of the *Compass Rose* and dark undead forces are attempting to claim it!
+   * **The Raid:** Full reunited Level 3 party raids the *Compass Rose*, defeats **Aleitha, The Drowned Queen (Zombie Queen)** & the Zombie Captain, discovers and claims **Clyssavar's Silver Scale** (for the New Hero), cleanses Aleitha's Talisman on Brastos's grave, and reaches **Level 4 Milestone**!
 4. **Chapter 4: Clifftop Observatory & Sparkrender — Level 4–5 Apex Climax:**
    * Ascend the basalt spires with the Moonstone Key, solve the constellation puzzle to unseal Turadaer's Gold Scale, free Aidron (42–48 HP), and defeat Sparkrender (95–110 HP, 4d10 breath).
    * **Sparkrender's Grand Motive:** Siphoning Sharruth's volcanic soul using the King-Killer comet to become a Volcanic Thunder-Dragon!
-   * **Grand Climax:** Party activates the Tri-Draconic Convergence, sealing the volcano. Clyssavar descends to awaken Vaelith's True Draconic King Form; Eflein reads **Lianna's final letter** on the Draconic Star-Atlas and claims the coordinates to the lost ancient dragon lands! Party reaches **Level 5 Milestone**!
+   * **Grand Climax:** Party activates the Tri-Draconic Convergence, sealing the volcano. Eflein reads **Lianna's final letter** on the Draconic Star-Atlas and claims the coordinates to the lost ancient dragon lands! Party reaches **Level 5 Milestone**!
 
 ### 🐉 The Three Metallic Scales Questline Tracker
 * [x] **1. Astalagan's Bronze Scale (Wielder: Eflein):** Unearthed at Dragon's Rest statue base ➔ Awakened in blessed spring water (*+1 Lightning Spell Attack & DC, +1d6 Lightning Surge 1/day, Purifies Undead*).
-* [ ] **2. Clyssavar's Silver Scale (Wielder: Vaelith Frostborne):** Sealed within the rotting hull of the **Compass Rose** (Claimed by Vaelith in Chapter 3 after defeating the shipwreck bosses!) (*+1 Cold Spell/Weapon Attack & DC, Cold Resistance, +1d6 Glacial Slow Burst 1/day*).
+* [ ] **2. Clyssavar's Silver Scale (Wielder: New Hero / Player 3):** Sealed within the rotting hull of the **Compass Rose** (Claimed by the New Hero in Chapter 3 after defeating the shipwreck bosses!) (*+1 Cold Spell/Weapon Attack & DC, Cold Resistance, +1d6 Glacial Slow Burst 1/day*).
 * [ ] **3. Turadaer's Gold Scale (Wielder: Father Flubs):** Sealed in secret planetarium vault at **Clifftop Observatory (Area D5)** (*+1 AC / Saves, +1 Spell Attack/DC, 10-ft Radiant Bastion Aura [+1d4 to ally attack/save], 1/day Beacon of Dawn heal*).
+* ⚡ **Tri-Draconic Convergence (Party Resonance):** When all 3 scales unite within 30 ft, party gains +5ft speed, +2 Init, Cold Resistance, +1 Saves, +5 Max HP, and 1/day 40-ft cone elemental blast (**2d8 Lightning + 2d8 Cold + 2d8 Radiant**). *(Full details in `DM_SCREEN.md` Section 4)*.
 * ⚡ **Tri-Draconic Convergence (Party Resonance):** When all 3 scales unite within 30 ft, party gains +5ft speed, +2 Init, Cold Resistance, +1 Saves, +5 Max HP, and 1/day 40-ft cone elemental blast (**2d8 Lightning + 2d8 Cold + 2d8 Radiant**). *(Full details in `DM_SCREEN.md` Section 4)*.
 
 ---

@@ -65,29 +65,34 @@
 
 ---
 
-### ❄️ Vaelith Frostborne (Variant Human Warlock 3 — Frost Assassin / Blade Pact Scion)
-* **Role:** Stalker / Frost Striker & Battlefield Controller (Co-DM / Player Ally)
-* **Location:** Active Party (Dragon's Rest Village Square, 24/24 HP Rested & Outfitted)
-* **Interactive Card:** [**Vaelith Frostborne Player Sheet**](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/VAELITH_PLAYER_SHEET.html)
-* **Appearance:** A tall, slender, pale-skinned warrior with snow-white hair, piercing frost-blue slit eyes, and sweeping draconic bone patterns tracing his cheekbones. Wears dark midnight-blue leather over silver chainmail and the shimmering *Cloak of Protection*.
+---
+
+## 🐺 SECTION 1.5: WANDERING LONE WOLVES & LEGENDS OF FAERÛN
+
+### ❄️ Vaelith Frostborne (Variant Human Warlock 3 — Frost Assassin / Independent Wanderer)
+* **Status:** `⭐ ARCHIVED PC / RECURRING LONE WOLF NPC`
+* **Role:** Lone Wolf Adventurer & Wandering Frost Blade (Independent)
+* **Location:** Wandering the coastal outskirts, frontier settlements, and northern islands of Faerûn
+* **Interactive Archived Sheet:** [**Vaelith Frostborne Player Sheet**](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/VAELITH_PLAYER_SHEET.html)
+* **Appearance:** A tall, slender, pale-skinned warrior with snow-white hair, piercing frost-blue slit eyes, and sweeping draconic bone patterns tracing his cheekbones. Wears dark midnight-blue leather over silver chainmail, walking with quiet, predatory grace.
 * **Stat Block Snapshot (Level 3 Hexblade / Blade Pact):**
-  * **HP:** 24 / 24 | **AC:** 16 (*Armor of Shadows* 15 + *Cloak of Protection* +1) | **Initiative:** +2 | **Speed:** 30 ft
+  * **HP:** 24 / 24 | **AC:** 15 (*Armor of Shadows*) | **Initiative:** +2 | **Speed:** 30 ft
   * **Pact Specs:** Spell DC 13 | Spell Attack +5 | **2nd-Level Slots:** 2 / 2 (Short Rest Recharge).
   * **Key Attacks:** Magical Ice Katana (`+4 to hit`, `1d8+2` magical slashing, -10 ft enemy speed via *Slasher*), *Ray of Frost* (`+5 to hit`, `1d8` cold, -10 ft speed), *Frostbite* (DC 13 CON, `1d6` cold + Disadvantage).
   * **Key Spells:** *Armor of Agathys* (2nd lvl: 10 Temp HP, 10 Cold retaliation), *Hex*, *Rime's Binding Ice* (30ft cone, 3d8 cold + speed 0).
   * **Patron Feature:** 🐉 **Aspect of the White Dragon** (2x/LR: `1d10+3` Temp HP, Fear Immune, On-Hit DC 13 Wis Save or Frightened).
 
 #### 🧭 Psychological & Moral Dossier:
-* 🧭 **Core Philosophy & Worldview:** **Sovereign Solitude & Cold Pragmatism**. Believes relying on distant, fickle gods is a fool's bargain. Power resides in claiming one's inherited bloodline and mastering one's own frost. He is not cruel, but he believes survival demands cutting through weakness without hesitation.
-* 🎯 **Core Desire & Modus Operandi:** To unravel his royal blood connection to the **White Wyrm King** and **Iceclaws**, claim *Clyssavar's Silver Scale*, and awaken his true draconic birthright.
-* ⚡ **Immediate Current Problem (Independent of Players):** His premature solo infiltration into the *Compass Rose* nearly killed him; his ribs are still heavily bruised from zombie slams, and his Silver Scale harmonic frequency is buzzing painfully in his ears like tinnitus, warning him that necrotic death magic is corrupting the dragon bones.
-* 👥 **Who / What It Involves:** Clyssavar's Silver Scale in the ship's hold, the Drowned Queen Aleitha, and his begrudging reliance on Eflein and Flubs.
-* 🛠️ **How He Approaches It / Current Action:** Meditating on the basalt cliffs with his ice katana across his lap, synchronizing his breathing to the freezing sea spray, and preparing the tactical route through the flooded decks.
+* 🧭 **Core Philosophy & Worldview:** **Sovereign Solitude & Cold Pragmatism**. Believes power resides in claiming one's own destiny and mastering one's frost. Having parted ways with the Dragon's Rest fellowship, he travels the world alone, beholden to no master and bound to no party.
+* 🎯 **Core Desire & Modus Operandi:** Wander the Sword Coast and frozen wastes of the north, seeking ancient tombs, lost relics, and challenging foes to unlock the deepest mysteries of his frostborn origin.
+* ⚡ **Immediate Current Problem (Independent of Players):** Following rumors of ancient cryogenic rifts and lost northern ruins along the Sea of Swords.
+* 👥 **Who / What It Involves:** Ancient ruins, northern merchant ships, wild frontier beasts.
+* 🛠️ **How He Approaches It / Current Action:** Traveling by sea and mountain paths, taking mercenary contracts on his own terms, and appearing as an unexpected ally or neutral bystander in distant lands.
 * ⚖️ **Moral Stand & DM Roleplay Cues:**
-  * *Red Lines:* Despises chromatic dragon tyranny (especially Sparkrender's arrogance); will never kneel as a slave to any creature.
-  * *Gray Areas:* Will ruthlessly dispatch wounded enemies to prevent alarms; views social pleasantries as wasted air.
-  * *Voice & Demeanor:* Whispering, cold, measured tone like cracking lake ice. Rarely smiles, but gives a slight respectful nod when allies perform efficiently.
-  * *Dialogue Hook:* *"The storm doesn't negotiate with the trees it uproots. Draw your steel and keep your flank covered."*
+  * *Red Lines:* Despises tyranny and servitude; will never bow to chromatic dragons or planar overlords.
+  * *Gray Areas:* Pragmatic to the bone; offers aid only when it aligns with his journey or when respect has been earned.
+  * *Voice & Demeanor:* Whispering, measured tone like cracking winter ice. Calm, unhurried, razor-sharp.
+  * *Dialogue Hook:* *"The road is wider when walked alone. Tread carefully, traveler... winter comes for everything in the end."*
 
 ---
 

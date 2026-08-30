@@ -119,7 +119,8 @@
       - 🧙‍♂️ **Eflein:** Used *Arcane Recovery* to regain full 1st-level spell slots (`4/4`), consumed 6x *Potions of Healing* during emergency staging/prep (retaining 3x *Potions of Healing*), with personal wealth at `28 GP, 9 SP`.
       - 🍷 **Father Flubs:** Channel Divinity (*Preserve Life*) recharged and Help Tokens refreshed to `2/2`.
       - 🗡️ **General Varnoth:** Rested frontline vitals, Second Wind & Action Surge ready, Help Tokens at `1/2`, wealth updated to `8 GP, 6 SP`.
-      - ❄️ **Vaelith:** Full `2/2` 2nd-level Pact Slots ready.
+      - 🐺 **Vaelith's Departure (The Lone Wolf's Road):** Having assisted through Seagrow Caves and shared what he knew of the island, Vaelith parted ways with the fellowship to pursue his solo pilgrimage across Faerûn's icy northern shores in search of his true origin. His adventuring gear was passed on to the arriving companion.
+      - 🛡️ **Player Character 3 (New Hero — Standby):** Outfitted with the transferred loadout (Cloak of Protection, Spitfire Flasks, Potion of Healing, rations, 15 gp 8 sp), ready to step into the party lineup as Chapter 3 commences!
       - 🐍 **Thurible:** Coiled happily beside the party, basking in the cloister's warmth.
   10. 💭 **Intermission Vignette: Eflein's Reverie (The Dream of the Empty Hearth):** 
       While resting against the fountain basin in the village square before departure, Eflein slipped into an elven trance-dream. He relived the harrowing prologue of five years ago in Waterdeep—baker Corin’s frantic pounding, the midnight infiltration of the Grand Library, the celestial alignment puzzle, and the automated runite golem echoing her sorrowful voice (*"Intrusion contained... Eflein, if it is you... please turn back"*). 
@@ -131,8 +132,8 @@
 ## 🎯 Active Campaign Quests
 * [ ] **1. Primary Quest (The Archmage's Trail):** Trace the path of Eflein's wife **Lianna**—an ancient elven archmage recalled by Elminster. Geothermal notes recovered from Seagrow Caves confirm her trail leads from the *Compass Rose* directly to the Clifftop Observatory!
 * [x] **2. Seagrow Caves Fungal Blight (Chapter 2 — COMPLETED):** Fume Drakes cleared, Fire Snake tamed, Sinensa cured, Ruby Morels and Heartcaps gathered, and volcanic crystal shattered!
-* [ ] **3. Wreck of the Compass Rose (Chapter 3 — ACTIVE):** Healed and rallied with Vaelith at Level 3, raid the *Compass Rose*, defeat the Harpy Matriarch and Zombie Captain, rescue **Clyssavar's Silver Scale**, and cleanse Aleitha's Talisman at Dragon's Rest cemetery!
+* [ ] **3. Wreck of the Compass Rose (Chapter 3 — ACTIVE):** Raid the *Compass Rose*, defeat the Harpy Matriarch and Zombie Captain, recover **Clyssavar's Silver Scale**, and cleanse Aleitha's Talisman at Dragon's Rest cemetery!
 * [ ] **4. The Three Metallic Dragon Special Quest:**
   * [x] **Bronze Scale (Astalagan):** Acquired & Awakened at Dragon's Rest.
-  * [ ] **Silver Scale (Clyssavar):** Located at Compass Rose (Urgent Chapter 3 Objective!).
+  * [ ] **Silver Scale (Clyssavar):** Located at Compass Rose (Urgent Chapter 3 Objective for the New Hero!).
   * [ ] **Gold Scale (Turadaer):** Sealed in Clifftop Observatory Vault.

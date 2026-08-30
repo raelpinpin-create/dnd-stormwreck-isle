@@ -2,7 +2,7 @@
 
 > **Status:** Live & Auto-Updating  
 > **Party Level:** **LEVEL 3 MILESTONE REACHED**  
-> **Party Members:** Eflein (Wizard 3), Vaelith Frostborne (Warlock 3), Father Flubs (Life Cleric 3), General Varnoth (Sidekick Tank 3)
+> **Party Members:** Eflein (Wizard 3), New Hero (Player 3 Standby — Level 3), Father Flubs (Life Cleric 3), General Varnoth (Sidekick Tank 3)
 
 ---
 
@@ -89,73 +89,37 @@
 
 ---
 
-# ❄️ Player 2: Vaelith Frostborne
+# 🛡️ Player 2: New Hero (Standby / Reserved Slot)
+* **Status:** `⭐ ACTIVE CAMPAIGN SLOT • TRANSFERRED LOADOUT READY`
 
 ## 📜 Character Profile
-* **Name:** Vaelith Frostborne
-* **Race:** Variant Human / Custom Lineage
-* **Class & Level:** **Warlock 3 (Pact of the Blade / White Dragon)** *(Level 3 Full Upgrade!)*
-* **Background:** Criminal / Spy
-* **Alignment:** **Lawful Neutral**
-* **Archetype / Personality:** **Frost Assassin & Kiter** — Tall, slim/bony build, snow-white hair, icy quiet resolve, calculating and lethal. Royal scion of the White Wyrm King.
-* **Role in Party:** Battlefield Controller, Movement Speed Debuffer & Single-Target Frost Crowd Control.
+* **Name:** *[Pending Table Introduction]*
+* **Race:** *[To be configured]*
+* **Class & Level:** **Level 3 Hero**
+* **Background:** *[To be configured]*
+* **Alignment:** *[To be configured]*
+* **Role in Party:** Core Adventuring Companion & Wielder of Clyssavar's Silver Scale.
 
-## ⚔️ Combat Statistics
+## ⚔️ Combat Statistics Snapshot
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
-| **Hit Points (HP)** | **24 / 24** | Hit Dice: `3d8 + 6 CON` (Fully Rested & Outfitted) |
-| **Armor Class (AC)** | **16** | *Armor of Shadows* (13 + 2 DEX) + **Cloak of Protection (+1)** |
-| **Initiative** | **+2** | Dex modifier |
-| **Speed** | **30 ft** | |
+| **Level** | **Level 3** | Starting at Level 3 alongside Eflein & Father Flubs |
 | **Help Tokens** | **2 / 2** | Help (+1d6 to ally within 30ft, 2/LR, +1 on SR) |
-| **Passive Perception** | **11** | Base Wisdom |
-| **Proficiency Bonus** | **+2** | |
+| **Transferred AC Buff** | **+1 AC & +1 Saves** | Granted by attuned *Cloak of Protection* |
 
-## 📊 Ability Scores & Modifiers
-| Ability | Score | Modifier | Saving Throw (with Cloak) | Skill Proficiencies |
-| :--- | :---: | :---: | :---: | :--- |
-| **STR** | 8 | -1 | **+0** | Athletics (-1) |
-| **DEX** | 14 | +2 | **+3** | **Acrobatics (+4)**, **Stealth (+4)**, Sleight of Hand (+2 / Thieves' Tools: +4) |
-| **CON** | 14 | +2 | **+3** | — |
-| **INT** | 10 | +0 | **+1** | **Arcana (+2)**, History (+0), Investigation (+0), Nature (+0), Religion (+0) |
-| **WIS** | 12 | +1 | **+4 (Proficient + Cloak)** | Animal Handling (+1), Insight (+1), Medicine (+1), Perception (+1), Survival (+1) |
-| **CHA** | 16 | +3 | **+6 (Proficient + Cloak)** | **Deception (+5)**, Intimidation (+3), Performance (+3), Persuasion (+3) |
-
-## ❄️ Patron Abilities & Invocations
-* 🐉 **Aspect of the White Dragon (Ultimate):** 
-  * *Activation:* Bonus Action | *Charges:* `2 / 2` per Long Rest | *Duration:* 1 minute.
-  * *Glacial Mantle:* Instantly grants **1d10 + 3 Temporary HP**.
-  * *Dragon's Will:* Immune to the **Frightened** condition.
-  * *Glacial Shock (CC):* Once on each of your turns when you hit an enemy, they must succeed on a **DC 13 Wisdom Save** or become **Frightened** until the end of your next turn.
-* 🗡️ **Pact of the Blade (Level 3 Boon):** Can summon or bind a magical pact weapon at will. Bypasses non-magical weapon damage resistance. Can manifest the **Ice Katana** instantly from cold mist!
-* 🛡️ **Armor of Shadows (Invocation):** Cast *Mage Armor* on self at will without expending spell slots (Base AC 15, AC 16 with Cloak).
-* 🧊 **Hoarfrost Skin / Fiendish Vigor (Invocation):** Cast *False Life* on self at will without expending spell slots (grants `1d4 + 4` Temp HP buffer before battles).
-* 🗡️ **Slasher Feat (Control Master):** Once per turn when dealing slashing damage (Ice Katana), reduce the target's speed by **-10 ft**. On a Critical Hit, target suffers Disadvantage on all attack rolls for 1 turn.
-
-## 🔮 Pact Magic & Attacks (Level 3 - 2nd-Level Slots)
-* **Spell Save DC:** **13** (`8 + 2 PB + 3 CHA`)
-* **Spell Attack Bonus:** **+5** (`+2 PB + 3 CHA`)
-* **Pact Spell Slots:** `2 / 2` (All slots cast at **2nd-Level** — **Recharges on Short Rest!**)
-* **Attacks:**
-  * **Ice Katana (Pact Weapon - Finesse):** Melee Weapon Attack: `+4 to hit`, reach 5 ft. *Hit:* `1d8 + 2` magical slashing/piercing damage + Slasher (-10 ft target speed).
-  * **Ray of Frost (Cantrip):** Ranged Spell Attack: `+5 to hit`, range 60 ft. *Hit:* `1d8` cold damage & reduces target speed by 10 ft.
-  * **Frostbite (Cantrip):** Range 60 ft, **DC 13 CON Save**. *Hit:* `1d6` cold damage & target has Disadvantage on next weapon attack roll.
-  * **Prestidigitation (Cantrip):** At-will minor sensory frost effects, flash-freezing puddles into slick ice sheets (DC 11 Dex), object chilling, and frosting locks.
-* **Pact Spells Known (4 Spells):** 
-  - *Armor of Agathys* (Cast at 2nd-Level: **10 Temporary HP**, deals **10 Cold Damage** to any melee attacker while active!)
-  - *Rime's Binding Ice* (2nd-Level: 30-ft cone, **3d8 Cold Damage** + speed reduced to 0 until creature breaks ice, DC 13 Con save for half)
-  - *Hex* (1st/2nd-Level: +1d6 Necrotic on hit + Disadvantage on chosen ability checks, Concentration up to 8 hours!)
-  - *Expeditious Retreat* (Bonus Action Dash every turn, Concentration).
-
-## 🎒 Inventory & Wealth
-* **Weapons:** Ice Katana (Magical Pact Weapon), 2 Steel Daggers (`+4 to hit`, `1d4+2` pierc, Thrown).
-* **Apparel & Relics:** 🛡️ **Cloak of Protection** (+1 AC, +1 to all Saving Throws).
-* **Consumables & Combat Alchemy:** 
+## 🎒 Transferred Inventory & Belongings
+* **Attuned Magic Items & Apparel:**
+  * 🛡️ **Cloak of Protection** (`+1` to Armor Class and `+1` to all Saving Throws — Transferred from Vaelith).
+* **Weapons & Tools:**
+  * 🗡️ 2x Steel Daggers (`1d4+DEX` Piercing / Thrown 20/60).
+  * 🗝️ Thieves' Tools (For disarming traps and picking locks).
+  * 🎒 Burglar's / Traveler's Pack (Rations, waterskin, 50ft hempen rope, tinderbox).
+* **Consumables & Combat Alchemy:**
   * 💣 **2x Volatile Spitfire Flasks** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex).
-  * 🧪 **1x Potion of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP).
-  * 🍞 **Kobold Sweetbread Roll** (1d4 HP + 1d4 Temp HP).
-* **Kit & Tools:** Thieves' Tools (`+4` to disarm/pick locks), Spy/Burglar's Pack, Dark Hooded Robes.
-* **Wealth:** `15 gp, 8 sp`.
+  * 🧪 **1x Potion of Healing** (Bonus Action: `2d6 HP` | Full Action: `100% Full Max HP`).
+  * 🍞 **1x Kobold Sweetbread Roll** (Restores `1d4 HP` + grants `+1d4 Temporary HP`).
+* **Personal Wealth:** `15 gp, 8 sp` *(Transferred from Vaelith's purse)*.
+* **Destiny Item Slot:** ❄️ **Clyssavar's Silver Scale** *(To be claimed in Chapter 3 Compass Rose hold)*.
 
 ---
 
@@ -287,7 +251,7 @@
 ## 🛡️ Defender Features & Martial Actions (Level 3)
 * 💥 **Improved Critical (Level 3 Martial Role):** General Varnoth's weapon attacks score a critical hit on a roll of **19 or 20**!
 * ⚡ **Battle Readiness (Level 3 Feature):** General Varnoth has **Advantage on Initiative rolls**.
-* 🛡️ **Protection (Reaction):** When an enemy within 5 ft attacks an adjacent ally (Eflein, Vaelith, Father Flubs), Varnoth uses her reaction to impose **Disadvantage** on the attack roll (must have shield equipped).
+* 🛡️ **Protection (Reaction):** When an enemy within 5 ft attacks an adjacent ally (Eflein, Father Flubs, New Hero), Varnoth uses her reaction to impose **Disadvantage** on the attack roll (must have shield equipped).
 * 💨 **Second Wind (1/Short or Long Rest):** Bonus Action to regain **1d10 + 3 Hit Points** immediately (Ready).
 * ⚡ **Action Surge (1/Short or Long Rest):** Free Action. Push beyond limits to take **1 additional Action** on your turn! (Ready).
 * 🪓 **Shield Bash / Shove:** Athletics (+4) contest vs target ➔ knocks target **Prone** or shoves them 5 ft back.
@@ -313,13 +277,13 @@
 | Scale | Intended Wielder | Element & Focus | Granted Benefits |
 | :--- | :--- | :--- | :--- |
 | **1. Astalagan's Bronze Scale** *(Acquired)* | **Eflein (Wizard)** | Lightning Focus | `+1` Spell Attack & DC for Lightning spells, `+1d6` Lightning Surge (1/day), Purifies Undead. |
-| **2. Clyssavar's Silver Scale** *(Compass Rose Wreck)* | **Vaelith Frostborne (Warlock)** | Glacial Frost Focus | `+1` Attack & DC for all Cold spells and Cold weapon strikes, Cold Damage Resistance, `+1d6` Glacial Slow Burst (1/day). *(Trapped in the wreck; claimed in Chapter 3 after defeating the bosses!)* |
+| **2. Clyssavar's Silver Scale** *(Compass Rose Wreck)* | **New Hero (Player 3)** | Glacial Frost Focus | `+1` Attack & DC for Cold spells and weapon strikes, Cold Damage Resistance, `+1d6` Glacial Slow Burst (1/day). *(Trapped in the wreck; claimed in Chapter 3 after defeating the shipwreck bosses!)* |
 | **3. Turadaer's Gold Scale** *(Observatory Vault)* | **Father Flubs (Life Cleric) / Varnoth** | Radiant Dawn & Healing Protection | `+1` AC or Saving Throws, 10-ft *Radiant Bastion Aura* (+1d4 to allies' first attack/save each round), 1/day *Beacon of Dawn* (heals 2d8+CON). |
 
 ### ⚡ The Tri-Draconic Resonance (Shared Party Synergy)
 * **🔗 Proximity Synergy (Within 30 ft):** When all 3 scales fight side-by-side:
   - *Bronze Aura (Eflein):* All party members gain `+5 ft` speed and `+2` Initiative.
-  - *Silver Aura (Vaelith):* All party members gain Cold Resistance and weapon attacks chill enemies (`-5 ft` speed).
+  - *Silver Aura (New Hero):* All party members gain Cold Resistance and weapon attacks chill enemies (`-5 ft` speed).
   - *Gold Aura (Father Flubs/Varnoth):* All party members gain `+1` to all Saving Throws and `+5` Max HP.
 * **💥 Combined Ultimate — "Tri-Draconic Convergence" (1/Day Shared Action):**
   - All 3 wielders channel their scales simultaneously to unleash a 40-ft cone elemental blast (**2d8 Lightning + 2d8 Cold + 2d8 Radiant**, DC 14 Dex save for half) OR channel the energy to unseal/seal ancient draconic seals!

@@ -14,15 +14,11 @@
 * **Evocation Features:** 🔮 **Evocation Savant** | 💥 **Sculpt Spells** (Protects allies from AoE damage!)
 * **Key Items:** 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Murky Underwater Clarity), 🪄 **Wand of Magic Missiles (7 Charges)**, Astalagan's Awakened Amber Scale (+1 Focus/DC), Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand), Robe of Arcane Reserve (+1 Slot), Shortsword & Cutlass, Sling of the Ridge-Runner (+1), Scroll of Absorb Elements, Spore-Filter Rebreather Mask, 9 Potions of Healing, 5 Specialty Breads & Bagel (+2 AC), 28 gp 9 sp.
 
-### ❄️ 2. Vaelith Frostborne (Variant Human Warlock 3 — Frost Assassin / Blade Pact)
-* **Concept & Archetype:** Criminal / Spy Background | **Lawful Neutral** | **Frost Assassin & Battlefield Controller** (Tall, slim/bony build, snow-white hair, icy quiet resolve). Royal scion of the White Wyrm King.
-* **Hit Points (HP):** **24 / 24** (Fully Rested & Outfitted for Chapter 3) | **Armor Class (AC):** **16** (*Armor of Shadows* 15 + *Cloak of Protection* +1) | **Speed:** 30 ft | **Passive Perception:** 11
-* **Pact Magic Specs:** Spell Save DC **13** | Spell Attack Bonus **+5** | **2nd-Level Pact Slots:** **2 / 2** (Short Rest Recharge!) | 🤝 **Help Tokens:** `2 / 2`
-* **Patron Feature (The "Ult"):** 🐉 **Aspect of the White Dragon** (2x/Long Rest, 1 min, +`1d10+3` Temp HP, Fear Immune, On-Hit DC 13 Wis Save or Frightened CC).
-* **Boon & Invocations:** 🗡️ **Pact of the Blade** (Magical Ice Katana), *Armor of Shadows* (AC 15), *Hoarfrost Skin / Fiendish Vigor* (at-will False Life `1d4+4`), *Slasher Feat* (-10 ft enemy speed on katana slash).
-* **Key Attacks:** Ice Katana (+4 hit, `1d8+2` magical slash, -10 ft speed), Ray of Frost (+5 hit, `1d8` cold, -10 ft speed), Frostbite (DC 13 Con, `1d6` cold + Disadvantage).
-* **Key Spells:** Armor of Agathys (Cast at 2nd lvl: **10 Temp HP, 10 cold retaliation**), Hex, Expeditious Retreat, Rime's Binding Ice (2nd lvl: 30ft cone, **3d8 cold + speed 0**).
-* **Key Gear:** Cloak of Protection (+1 AC/Saves), 2 Spitfire Flasks, Potion of Healing, 15 gp, 8 sp.
+### 🛡️ 2. Player Character 3 (New Hero — Level 3 Standby)
+* **Concept & Role:** New Table Companion | **Level 3 Milestone Ready** | Wielder of Clyssavar's Silver Scale.
+* **Transferred Loadout & Belongings:** 🛡️ **Cloak of Protection** (+1 AC, +1 to all Saving Throws), 💣 **2x Volatile Spitfire Flasks** (2d4 Fire AoE), 🧪 **1x Potion of Healing**, 🍞 **Kobold Sweetbread Roll**, 2 Steel Daggers, Thieves' Tools, Burglar's Pack, **15 gp, 8 sp**.
+* **Key Stats Snapshot:** Level 3 | 🤝 **Help Tokens:** `2 / 2` | Attuned to *Cloak of Protection* (+1 AC / +1 Saves).
+* **Destiny Item Slot:** ❄️ **Clyssavar's Silver Scale** (Trapped in Chapter 3 Compass Rose hold).
 
 #### 🍷 3. Father Flubs — Level 3 Life Domain Cleric
 * **Concept & Archetype:** Acolyte Background | **Neutral Good** | **Titles:** **« The Serpent Rider »** & **« Warden of the Living Grove »** | **Priest, War Veteran, Drunkard, Fire-Serpent Rider** (Keeper of Sharruth's volcanic secret; drinks and toasts to outrun the silence).
@@ -43,18 +39,12 @@
 * **Defensive Features & Actions:** 🛡️ *Protection Reaction* (Disadvantage on attacks vs adjacent ally), 💨 *Second Wind* (1d10+3 HP — Ready), ⚡ *Action Surge* (1 Extra Action per Short Rest — Ready), 🪓 *Shield Bash* (Athletics +4 vs Prone).
 * **Equipment:** Splint Mail, Azure Wolf Steel Shield, Honed Longsword (+4 hit, 1d8+2/1d10+2, Crits on 19-20), Heavy Crossbow (+2 hit, 1d10), 🪓 Twin Notched Bone-Cleavers (Kobold Champion Trophy), 8 gp 6 sp.
 
-#### 🤫 DM SECRET REFERENCE: Vaelith Level 1–6 Milestone Blueprint (Do NOT spoil to players)
-| Level | Class Split | New Feature / Pick | DM Secret Implementation Notes |
-| :--- | :--- | :--- | :--- |
-| **Lvl 1** | Warlock 1 | • *Aspect of the White Dragon* (Ult) • Feat: *Slasher* • *Armor of Agathys*, *Hex* | Transformation unlocked. Katana hit + Slasher slows target by 10 ft. |
-| **Lvl 2 (Current)** | Warlock 2 | • Invocation 1: *Armor of Shadows* (AC 15) • Invocation 2: *Fiendish Vigor* | Sustained tankiness without burning slots. 2 short-rest spell slots. |
-| **Lvl 3** | Warlock 3 | • *Pact of the Blade* (Magical Ice Katana) • 2nd-Level Spells • *Rime's Binding Ice* | Katana is magical. Replace Fiendish Vigor with Improved Pact Weapon (+1 to hit/dmg). AoE root CC comes online. |
-| **Lvl 4** | Warlock 4 | • ASI: +2 CHA (CHA 18, Spell DC 15, Attack +7) • +1 Cantrip | Glacial Shock DC jumps to 15. More reliable freezing saves. |
-| **Lvl 5** | Warlock 5 | • 3rd-Level Spells • Invocation: *Thirsting Blade* (Extra Attack) • *Spirit Shroud* | Swings Katana twice per turn. Spirit Shroud adds +1d8 Cold per hit and stacks another -10 ft slow (-20 ft slow with Slasher). Armor of Agathys upcasts to 15 cold retaliation. |graph TD
+```mermaid
+graph TD
     A["⚓ PROLOGUE: Neverwinter Docks"] --> B["🏖️ CHAPTER 1: Dragon's Rest Beach"]
     B -->|"Defeat 2 Zombies"| C["⛩️ CLOISTER OF DRAGON'S REST"]
     C -->|"Talk to Tarak"| D["🍄 CHAPTER 2: Seagrow Caves (Level 2 - Eflein, Father Flubs, Varnoth)"]
-    D -->|"Return Victorious + Vaelith Brought Back Injured"| E["🚢 CHAPTER 3: Cursed Shipwreck (Level 3 - Full Party Reunited)"]
+    D -->|"Return Victorious + Stage for Compass Rose"| E["🚢 CHAPTER 3: Cursed Shipwreck (Level 3 - Full Party Assembled)"]
     E --> F["🗝️ UNLOCK MOONSTONE KEY"]
     F -->|"Level 4 Milestone"| G["⚡ CHAPTER 4: Clifftop Observatory (Final Boss Sparkrender)"]
 ```
@@ -76,14 +66,12 @@
   * *Runara:* Hands over **Moonstone Key** to Clifftop Observatory after proving worth.
 * 🎭 **Chapter 1 Character Story Beats:**
   * 🧙‍♂️ **Eflein:** Follows wife Lianna's footprints; learns Runara & Kilnip spoke with her 8 months ago; unearths Astalagan's Bronze Scale and awakens it in the sacred spring.
-  * ❄️ **Vaelith:** Infiltrates the island through the sea mist, scouting kobold movements and tracking draconic leylines.
   * 🍷 **Father Flubs:** Built his parish on the new land atop Sharruth's volcanic corpse to guard the secret; preaches god's mercy while drinking and joking past his dread of oblivion.
 
 #### 🍄 CHAPTER 2: SEAGROW CAVES (LEVEL 2 DUNGEON & FUNGAL BLIGHT)
 * **B0: Wilderness Spitfire Camp (Session 2 Intro Encounter):**
   * 🍖 **The Hostage:** Father Flubs (Level 2 Life Cleric) rescued from the kobold roasting spit!
   * 🦎 **The Enemies:** **5–6 Kobold Ambushers** + **1 Kobold Cleaver Champion** (Defeated & Cleared!).
-  * ❄️ **The Departure North:** As party marches to the caves, Vaelith shivers violently, muttering in Draconic as Clyssavar's Silver Scale leaks power from the *Compass Rose*. Vaelith dashes north on a solo mission!
 * **B1: Entrance Tunnel:** **Boss:** Spore Servant Octopus (AC 12, HP 58-65). Flooded at high tide; low tide exposes stone column walkways. Father Flubs awakens as sea mist hits his face!
 * **B2: Fungus Farm:** **Encounter:** 2-3 Violet Fungi (26-30 HP). **NPCs:** Sprouts Molen & Kraz, Adults Hipsiz & Rugoso. **Loot:** Heart Cap Mushrooms (Tarak brews into *Potions of Healing*). Lianna's geothermal notes found in upper alcove!
 * **B3: Larder:** **Encounter:** 6 Stirges emerge from ceiling nest. Sprouts Bispo, Valup, & Popple flee to B4.
@@ -95,24 +83,21 @@
   * 🧙‍♂️ **Eflein:** Discovers Lianna's discarded botanical margin notes on Sharruth's geothermal crystal vents, learning how the fungal blight is connected to Sharruth's stirrings, and uses arcane precision to shatter the crystal safely.
   * 🍷 **Father Flubs:** Awakens at B1; recognizes Sharruth's volcanic breathing pulsing in B6 crystals, sparking war memories of the dragon's fall; channels *Preserve Life*, *Bless*, and healing miracles to keep his comrades alive and stabilize Sinensa!
   * 🛡️ **Varnoth:** Commands frontline tactics, shielding Eflein from Fume Drake breath attacks.
-  * ❄️ **Vaelith (Off-Screen Solo):** Infiltrates the *Compass Rose* alone after feeling Clyssavar's scale leaking power; overwhelmed by undead and barely escapes, carried back empty-handed and injured to Dragon's Rest by kobolds.
 
 #### 🚢 CHAPTER 3: CURSED SHIPWRECK — COMPASS ROSE (LEVEL 3–4 DUNGEON & REEF)
 * **The Dramatic Chapter Transition Hook at Dragon's Rest:**
   * Eflein, Father Flubs, and Varnoth return victorious to Dragon's Rest and receive rewards from Runara and Tarak.
-  * Commotion at the gates: Panicked kobolds (Blepp, Rix) rush in carrying an **injured, empty-handed Vaelith Frostborne**.
-  * Vaelith is visibly changed and radiating potent frost power—he has unlocked **Level 3** along with the party!
-  * Vaelith warns that Clyssavar's Silver Scale is trapped inside the *Compass Rose* and dark undead forces are attempting to corrupt it. The cloister elders explain the rising danger: the sea itself has been poisoned by dark death magic ever since young Aleitha attempted a forbidden resurrection ritual to revive her drowned husband Brastos, cursing the reef with drowned zombies and transforming herself into **Aleitha, The Drowned Queen (Zombie Queen)**!
+  * The party prepares for their next journey as they learn that Clyssavar's Silver Scale is trapped inside the *Compass Rose* and dark undead forces are attempting to corrupt it. The cloister elders explain the rising danger: the sea itself has been poisoned by dark death magic ever since young Aleitha attempted a forbidden resurrection ritual to revive her drowned husband Brastos, cursing the reef with drowned zombies and transforming herself into **Aleitha, The Drowned Queen (Zombie Queen)**!
 * **C1: Main Deck & Quarterdeck (The Throne of the Drowned Queen):** **Boss:** **Aleitha, The Drowned Queen** (CR 2 Boss, AC 13, HP 55–65, Swim 30ft, Claws +5 [1d6+3+1d6 necro], Brine Bolt +5 [2d6+3 necro], Aura of the Drowned [1d4 necro 10ft aura], Sorrowful Dirge [DC 13 Wis Save or 2d8 psychic + Frightened]).
 * **C4: Captain's Quarters:** **Encounter:** 2 Drowned Zombies (28–32 HP) + Zombie Captain (48–55 HP, AC 11). Door barricaded (DC 10 Str). Defeating the room lets Eflein search the desk to find the *Compass Rose* Passenger Manifest signed by **Lianna** with star-math margin notes pointing to the Observatory! **Loot:** Desk compass (25 gp), cartographer's tools, 50 gp.
 * **C6: Crew Quarters:** Portrait of "Aleitha & Brastos — Together Forever". Trap floorboard ➔ dart (+5 hit, 1d4 + DC 11 Con save 1d6 poison). **Loot:** 200 gp in floor stash.
-* **C8: Lower Deck & Frost Cabin:** **Encounter:** 1 Zombie + 1 Ghoul lurking in knee-deep sloshing water (Paralyzing Claws DC 10). Inside a hidden frost-rimed iron lockbox, Vaelith unseals the 📜 **Ivory Bone Scroll Case** containing the *Frost King's Tri-Draconic Prophecy*!
-* **C9: Submerged Hold (The Sunken Vault):** Submerged hold where the Captain's Chest lies. Opened with Aleitha's Ivory Key, containing ❄️ **Clyssavar's Silver Scale** (+1 Cold Atk/DC, Cold Resist, +1d6 Slow Burst), the Captain's Logbook, *Boots of Elvenkind*, and 55 gp.
+* **C8: Lower Deck & Frost Cabin:** **Encounter:** 1 Zombie + 1 Ghoul lurking in knee-deep sloshing water (Paralyzing Claws DC 10). Inside a hidden frost-rimed iron lockbox, the party uncovers ancient Draconic records detailing the Tri-Draconic Convergence.
+* **C9: Submerged Hold (The Sunken Vault):** Submerged hold where the Captain's Chest lies. Opened with Aleitha's Ivory Key, containing ❄️ **Clyssavar's Silver Scale** (+1 Cold Atk/DC, Cold Resist, +1d6 Slow Burst — claimed by the New Hero), the Captain's Logbook, *Boots of Elvenkind*, and 55 gp.
   * **Side Quest Resolution:** Carry Aleitha's Braided Talisman to **Brastos's grave** in Dragon's Rest clifftop cemetery. Burying or burning it reunites their souls in peace, permanently lifting the island's zombie curse and causing the ghost shipwreck to dissolve peacefully into sea foam!
   * **Level 4 Milestone:** Party reaches **Level 4** (Feats / Ability Score Improvements, +HP pools, and expanded spell slots unlocked!).
 * 🎭 **Chapter 3 Character Story Beats:**
   * 🧙‍♂️ **Eflein:** Discovers the *Compass Rose* cargo manifest with passenger logs from Lianna's arrival; uses lightning arc spells across the flooded decks with *Sculpt Spells* to electrocute zombies without shocking allies!
-  * ❄️ **Vaelith:** Unseals the **Ivory Bone Scroll of the Frost King** in C8. Translates the Old Draconic prophecy revealing his royal bloodline as the true heir of the Northern Draconic Kings, claims Clyssavar's Silver Scale, and learns how to perform the Tri-Draconic Convergence atop the Clifftop Observatory!
+  * 🛡️ **New Hero:** Braves the flooded hold (C9) to recover and bond with **Clyssavar's Silver Scale**, awakening its cold resonance for the upcoming trial at the observatory!
   * 🍷 **Father Flubs:** Deeply moved by Aleitha and Brastos's tragic love and his own existential fear of oblivion; performs sacred funeral rites for the drowned sailors, cleanses Aleitha's talisman at Brastos's grave, and redeems the fallen queen.
 
 #### ⚡ CHAPTER 4: CLIFFTOP OBSERVATORY (LEVEL 4–5 CAMPAIGN CLIMAX & APEX BOSS)
@@ -126,7 +111,7 @@
   * **Sparkrender's Grand Motive (The Siphon of Sharruth):** Sparkrender is hunting all three ancient metallic dragon scales (Bronze, Silver, Gold). He plans to use the **King-Killer Star** comet passing overhead to violently shatter the 3-scale seal on Sharruth's undersea magma tomb and **siphon the sleeping Red Dragon's god-like primordial flame into his own body**, ascending into a catastrophic **Volcanic Thunder-Dragon**!
   * **NPC Ally:** Aidron (Bronze Wyrmling, 42–48 HP, AC 17) bound with 3 chains for Sparkrender's ritual. Freeing Aidron mid-fight grants Repulsion Breath (DC 12 Str) to push Sparkrender out of flight!
   * **Boss:** **Sparkrender (Apex Blue Wyrmling)** (CR 4 Apex Boss, AC 15, 95–110 HP, Fly 60ft, Multiattack Bite +5 [1d10+3 pierc + 1d6 lightn] / Claw +5 [1d6+3 slash], Lightning Breath [4d10 lightning, DC 13 Dex save for half]).
-  * 👑 **The Grand Climax — In-Person Descent of Iceclaws (The White Wyrm):** When Sparkrender falls, the storm clouds freeze into shimmering diamond dust and an ethereal aurora borealis covers the sky. **Iceclaws (The Primordial White Wyrm)** herself descends from the cosmos in person! Acknowledging Vaelith as the royal blood-scion of the **White Wyrm King**, she touches his chest with her glacial claw, permanently unlocking his flying **Aspect of the Dragon King (Apex Form)**! Party reaches **Level 5 Milestone (3rd-Level Spells, 2-Beam Cantrips & Master Tier)**.
+  * ⚡ **The Grand Climax — The Tri-Draconic Convergence:** Party activates the Tri-Draconic Convergence (Bronze, Silver, Gold), permanently sealing Sharruth's tomb. Eflein reads **Lianna's final letter** on the Draconic World Atlas. Party reaches **Level 5 Milestone (3rd-Level Spells, 2-Beam Cantrips & Master Tier)**.
 
 ---
 
@@ -148,32 +133,28 @@
      > — **Lianna**
 * **Rewards & Milestones:** ⚡ **Astalagan's Awakened Amber Scale** (+1 Spell Attack & DC, +1d6 Lightning damage surge 1/turn), +2 to Arcana checks permanently, Lianna's Star-Atlas Coordinates to the Ancient Dragon Realm (Next Campaign Hook!), and Level 5 Evocation Mastery.
 * **Branching DM Scenarios:**
-  * *Scenario A (The Voyage to the Dragon Lands):* Eflein rallies Vaelith, Father Flubs, and Varnoth to chart a vessel and set sail for the mysterious ancient dragon kingdom, seamlessly kicking off the party's next high-level campaign!
+  * *Scenario A (The Voyage to the Dragon Lands):* Eflein rallies the party to chart a vessel and set sail for the mysterious ancient dragon kingdom, seamlessly kicking off the party's next high-level campaign!
   * *Scenario B (The Cloister Archive):* Eflein copies the observatory's master celestial star charts into his own spellbook, earning Elder Runara's title of *Master Arcanist of the Dragon Spire*.
 
-#### ❄️ 2. Vaelith Frostborne's Destiny Arc: The White Wyrm King's Lineage & Descent of Iceclaws
-* **Hero:** Vaelith Frostborne (Variant Human Warlock 3 - Blade Pact) | **Archetype:** Frost Assassin & Battlefield Controller
-* **Core Motivation:** Answer the cryogenic vibration in his bloodline, uncover his direct lineage to the **Dragon King of the White Wyrms** and **Iceclaws (The Frost Mother)**, manifest his draconic Ice Katana, and awaken his true draconic birthright.
+#### 🛡️ 2. The New Hero's Destiny Arc: Heir of Clyssavar's Silver Scale
+* **Hero:** Player Character 3 (Level 3 Standby) | **Archetype:** Core Strike Specialist / Relic Bearer
+* **Core Motivation:** Uncover the lost power of the ancient Silver Dragon Clyssavar, survive the dangers of the shipwreck, and wield the Silver Scale in defense of the realm.
 * **Chapter Objectives & Awakening Trail:**
-  1. 🌊 **Sea Mist Infiltration (Ch 1):** Infiltrate through coastal fog, detecting the cryogenic leyline frequency calling him to the ancient scales.
-  2. ❄️ **The Solo Excursion & Level 3 Awakening (Ch 2 Solo Excursion):** Bolted north to the *Compass Rose* after feeling Clyssavar's scale leaking power under siege. Infiltrates the wreck alone, but overwhelmed by undead. Rescued and carried back empty-handed to Dragon's Rest at the end of Chapter 2, awakening at **Level 3** (*Pact of the Blade*, magical Ice Katana, *Rime's Binding Ice*) and alerting the party!
-  3. 📜 **Claiming the Silver Scale & The Frozen Ivory Bone Scroll (Ch 3 - C4/C8):** Defeating the Zombie Captain unlocks ❄️ **Clyssavar's Silver Scale** (+1 Cold Atk/DC, Cold Resist, +1d6 Slow Burst). In the frost-rimed lower hold (C8), Vaelith's Silver Scale resonates with an ancient **Ivory Bone Scroll Case** carved from a white dragon's rib, melting the glacial seal at his touch. Unrolling the scroll reveals the ancient **Old Draconic Inscription**:
-     > *« Ven veth cliss'krux, da vur rime-darastrix austrat. Si throden wux, Byr-Vaelith, darastrix-baham jennu. Thurirl martivir cliss'krux; persvek darastrix-vrak, wux gix vur rime. Veth spark-darastrix kothar vur comet-vrak; morndin wer tridraconic zith, vur arcaniss cliss'krux descendir wux gethrisjid darastrix-al »*
-     >
-     > **Old Draconic Translation (DM Read-Aloud):**
-     > *"When the northern sky turns to bleeding glass, the blood of the Frost Wyrm will call to its true Sovereign. You who walk the shadow with ice in your grip—you are not a beggar to patron gods, but the royal heir to the White Wyrm King. Gather the amber spark of Astalagan and the dawn light of Turadaer. When the false blue dragon claims the King-Killer Star atop the observatory, bring the three scales together in unison. Then, and only then, shall Iceclaws descend from the clouds to crown her King."*
-     >
-     > This confirms his royal Draconic King bloodline and provides the tactical blueprint for Chapter 4's Tri-Draconic Convergence!
-  4. 🪐 **Observatory Convergence (Ch 4 - D2/D5):** Channel Clyssavar's harmonic resonance into the **Tri-Draconic Resonance** alongside Eflein's lightning and Father Flubs' dawn to shatter Sparkrender's comet siphon!
-  5. 👑 **THE GRAND CLIMAX — IN-PERSON DESCENT OF ICECLAWS:** When Sparkrender falls and the ritual collapses, the storm clouds freeze into shimmering diamond dust. **Iceclaws (The Primordial White Wyrm) herself descends from the cosmos in person!** Acknowledging Vaelith as the royal blood-scion of the **White Wyrm King**, she touches his chest with her massive glacial claw:
-     > *"You have fought in the shadows. You have bled without hesitation. Stand tall, Vaelith... royal blood-scion of the White Wyrm King. The throne of ice recognizes its master."*
-     > She permanently awakens his **Aspect of the Dragon King (Apex Form)** (sprouting crystalline frost wings with **Fly Speed 30 ft**, +1 AC, `1d10+Level` Temp HP, +1d6 Cold & slow on katana strikes, and freezing royal aura)!
-* **Rewards & Milestones:** 👑 **Clyssavar's True Silver Scale** (+1 Cold Attack/DC, Cold Resistance), Permanent **Aspect of the Dragon King (Flying Apex Form)**, and Level 5 Master Tier.
-* **Branching DM Scenarios:**
-  * *Scenario A (The Sovereign's Embrace):* Vaelith fully embraces his draconic lineage, gaining ethereal ice horns/wings, cold immunity, and commanding absolute respect from draconic and winter creatures across Faerûn.
-  * *Scenario B (The Pragmatic King):* Vaelith uses his newfound frost authority as a weapon of ruthless discipline, protecting Eflein and his party while charting a path free of patron servitude.
-  * *Scenario C (Astral Herald):* Clyssavar grants Vaelith a vision of a greater threat awakening in Icewind Dale, setting up the party's next epic campaign!
+  1. ⛩️ **Arrival & Integration (Ch 1 & 2):** Arrive at Dragon's Rest, receive the transferred loadout (Cloak of Protection, Spitfire Flasks, Potion of Healing, rations, and coin), and join forces with Eflein, Father Flubs, and General Varnoth.
+  2. 🚢 **Claiming Clyssavar's Silver Scale (Ch 3 - C9):** Brave the submerged hold of the *Compass Rose*, unlock the captain's chest with Aleitha's Ivory Key, and claim ❄️ **Clyssavar's Silver Scale** (+1 Cold Attack/DC, Cold Resistance, +1d6 Slow Burst 1/day).
+  3. 🪐 **Observatory Convergence (Ch 4 - D5):** Channel Clyssavar's silver resonance alongside Eflein's bronze lightning and Father Flubs' golden dawn to power the **Tri-Draconic Convergence**, shutting down Sparkrender's siphon and stabilizing Sharruth's subterranean tomb!
+* **Rewards & Milestones:** ❄️ **Clyssavar's Silver Scale** (+1 Cold Atk/DC, Cold Resistance), Level 4 and Level 5 Master Milestones.
 
+#### 🍷 3. Father Flubs' Destiny Arc: The Ward-Priest's Secret & Turadaer's Dawn
+* **Hero:** Father Flubs (Human Life Domain Cleric 2) | **Archetype:** Priest, Ward-Healer Bloodline, Drunkard, Keeper of an Ancestral Secret
+* **Core Motivation:** Guard the secret of Sharruth's volcanic tomb decreed centuries ago by the three ancient dragons to his ancestral order, keep his companions alive through miraculous healing, and outrun the fear of oblivion through toasts, jokes, and sacred vigils for the forgotten dead.
+* **Chapter Objectives & Sacred Rites:**
+  1. ⛺ **The Spitfire Rescue & Seagrow Expedition (B0–B6):** Freed from the roasting spit; awakens at the basalt cave entrance (B1). When he senses Sharruth's geothermal breathing pulsing in the B6 crystals, he unleashes *Preserve Life*, *Bless*, and healing miracles to ensure no ally falls.
+  2. 🪦 **The Forgotten Dead of the Compass Rose (Ch 3):** Deeply moved by the forgotten drowned sailors, Father Flubs performs solemn funeral rites. He cleanses Aleitha's Orcus talisman upon Captain Brastos's grave at Dragon's Rest cemetery, dissolving the shipwreck and granting eternal rest.
+  3. ☀️ **Attuning to Turadaer's Gold Scale (Ch 4 - D5):** Discovers and attunes to ☀️ **Turadaer's Solar Gold Scale** in the secret planetarium vault.
+  4. 🛡️ **The Golden Aegis & Tri-Draconic Convergence:** Standing on the dragon's grave his ancestors swore to protect, Flubs channels the Gold Scale into the Tri-Draconic Convergence, creating an impenetrable 20-ft divine radiant barrier that neutralizes Sparkrender's catastrophic lightning breath!
+  5. 🍷 **The Toast of Permanence:** Celebrates with his companions atop the observatory, realizing that his life, his lineage, and the memory of those he saved are truly eternal.
+* **Rewards & Milestones:** ☀️ **Turadaer's Gold Scale** (+1 AC/Saves, Radiant Bastion 10ft aura: grants +1d4 to all ally saves, Beacon of Dawn heal), Keeper of the Dragon's Grave Title, and Level 5 Master Tier.
 #### 🍷 3. Father Flubs' Destiny Arc: The Ward-Priest's Secret & Turadaer's Dawn
 * **Hero:** Father Flubs (Human Life Domain Cleric 2) | **Archetype:** Priest, Ward-Healer Bloodline, Drunkard, Keeper of an Ancestral Secret
 * **Core Motivation:** Guard the secret of Sharruth's volcanic tomb decreed centuries ago by the three ancient dragons to his ancestral order, keep his companions alive through miraculous healing, and outrun the fear of oblivion through toasts, jokes, and sacred vigils for the forgotten dead.
@@ -385,7 +366,7 @@
   * *Effect:* **+1 to Lightning Spell Attacks & Save DC** (DC 14, Hit +6), **+1d6 Lightning Surge (1/day)**, and **Purifies Undead**.
 
 * ❄️ **Clyssavar's Rimefrost Silver Scale (Silver Scale - UPCOMING / CHAPTER 3):** 
-  * *Intended Wielder:* **Vaelith Frostborne (Warlock)** | *Rarity:* 🌟 **LEGENDARY RELIC** (Attuned Weapon/Focus) | *Found:* Compass Rose Wreck (Secured in Chapter 3 after defeating the shipwreck bosses that were trying to seize it!)
+  * *Intended Wielder:* **New Hero / Player 3 (Standby)** | *Rarity:* 🌟 **LEGENDARY RELIC** (Attuned Weapon/Focus) | *Found:* Compass Rose Wreck (Secured in Chapter 3 in the submerged hold!)
   * *Effect:* **+1 to Attack & DC on all Cold Spells & Cold weapon strikes**, **Resistance to Cold Damage**, and **Glacial Slow Burst (1/day):** Deals **+1d6 Cold damage** and reduces enemy speed by an extra 10 ft.
 
 * ☀️ **Turadaer's Solar Gold Scale (Gold Scale - UPCOMING):** 
@@ -395,7 +376,7 @@
 #### ⚡ THE TRI-DRACONIC RESONANCE (Shared Party Synergy & Combined Ultimate)
 * **🔗 Proximity Synergy (Within 30 ft):** When all 3 scales are reunited and wielded in combat, each wielder radiates a shared draconic passive to all allies:
   - *Bronze Aura (Eflein):* Party gains **+5 ft speed & +2 to Initiative**.
-  - *Silver Aura (Vaelith):* Party gains **Cold Resistance & weapon attacks chill targets (-5 ft speed)**.
+  - *Silver Aura (New Hero):* Party gains **Cold Resistance & weapon attacks chill targets (-5 ft speed)**.
   - *Gold Aura (Father Flubs):* Party gains **+1 to all Saving Throws & +5 Max HP**.
 * **💥 Combined Ultimate — "Tri-Draconic Convergence" (1/Day Shared Action):**
   - When all 3 party members act in unison, they can unleash a combined 40-ft cone breath attack (**2d8 Lightning + 2d8 Cold + 2d8 Radiant**, DC 14 Dex for half) OR channel the harmonic frequency to unseal/seal ancient draconic wards (such as Sharruth's volcanic prison)!
@@ -407,7 +388,7 @@
 #### 💚 1. HEALING & RESTORATION (POTIONS, HERBS & ELIXIRS)
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
 | :--- | :--- | :--- | :--- | :--- |
-| 🧪 **Potion of Healing** | **HEAL • Uncommon Potion** | Party Supply (13 Flubs, 3 Eflein, 1 Vaelith, 1 Varnoth) | `50 GP` *(500 SP • Craft: 25 GP / 2 Heartcaps)* | **Bonus Action:** Restores **`2d6 Hit Points`**.<br><strong>Full Action:</strong> Restores **`100% FULL MAX HP`**! |
+| 🧪 **Potion of Healing** | **HEAL • Uncommon Potion** | Party Supply (13 Flubs, 3 Eflein, 1 New Hero, 1 Varnoth) | `50 GP` *(500 SP • Craft: 25 GP / 2 Heartcaps)* | **Bonus Action:** Restores **`2d6 Hit Points`**.<br><strong>Full Action:</strong> Restores **`100% FULL MAX HP`**! |
 | 🍷 **Elixir of Health (Legendary)** | **HEAL • Legendary Potion** | Tarak / Ruby Morel (3 in Flubs' Pouch) | `5,000 GP` *(Base)* / `15,000 GP` *(Royal Market)* | Cures any disease, poison, blindness, deafness, and paralysis + grants **`+20 Temporary HP`**.<br>🕊️ **0 HP Miracle Revive:** If used on a 0 HP ally, restores them to **`100% FULL MAX HP`**! Prized above gold by archmages & kings. |
 | 🍄 **Heart Cap Mushrooms (Raw)** | **REAGENT • Uncommon Herb** | Area B2/B5 Beds (Seagrow Caves) | `10 GP (100 SP) / cluster` *(2 clusters = 1 Potion)* | Alchemical crafting reagent. Tarak brews 2 clusters into 1x Potion of Healing. |
 | 🍷 **The Ruby Morel (Raw)** | **REAGENT • Rare Fungal Relic** | Area B5 Fungal Throne (Seagrow Caves) | `1,500 GP` *(Priceless Relic)* | Sacred fungal relic. Tarak distills 1 morel into 1x Legendary Elixir of Health. |
@@ -427,12 +408,11 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 🗡️ **Mariner's Cutlass (+1)** | **WEAPON • Uncommon** | Zombie Captain / Shipwreck | `350 GP` | **+1 to hit and damage** (`1d6+3` slashing) and grants a **30 ft swimming speed**. |
 | ⚔️ **Azure Wolf Masterwork Longsword** | **WEAPON • Masterwork** | General Varnoth's Military Issue | `800 GP` | **+4 to hit, 1d8+2 Slashing (Versatile 1d10+2)**. Masterwork edge: **Crits on 19 or 20**! |
-| 🗡️ **Frostforged Katana (Pact Blade)** | **WEAPON • Magical Pact** | Bound to Vaelith Frostborne | `Priceless Pact Weapon` | **+4 to hit, 1d8+2 Slashing (Versatile 1d10+2)**. Slasher slow (-10ft speed on hit). Counts as magical. |
 | 🏹 **Sling of the Ridge-Runner (+1)** | **WEAPON • Uncommon** | Kobold Camp (Eflein) | `250 GP` | **+1 to hit and damage** (`1d4+1` bludgeoning) and **ignores Disadvantage at long range (120 ft)**. |
 | 🪓 **Twin Notched Bone-Cleavers** | **WEAPON • Uncommon** | Fume Drake Boss (Varnoth) | `75 GP` | **+4 to hit**, **`1d6+2`** slashing + **`1d4 rend`** on double hit. |
 | 🪄 **Wand of Magic Missiles** | **OFFENSIVE • Uncommon** | Octopus Den B1 (7 Charges on Eflein) | `450 GP` | 7 charges. Spend charges to cast *Magic Missile* without spell slots. |
 | 🌊 **Mariner's Driftwood Wand** | **OFFENSIVE • Uncommon** | Shipwreck Coral Reef | `250 GP` | 3 charges (regains 1d3 at dawn). Cast *Shape Water* (1), *Gust* (1), or *Thunderwave* (2, DC 13). |
-| 💣 **Spitfire Flask (2 Flasks)** | **EXPLOSIVE • Common** | Alchemical Paste (Vaelith) | `25 GP (250 SP) / flask` | Thrown 20 ft. Explodes in 5-ft radius dealing **`2d4 Fire Damage`** (DC 11 Dex save for half). |
+| 💣 **Spitfire Flask (2 Flasks)** | **EXPLOSIVE • Common** | Transferred to New Hero | `25 GP (250 SP) / flask` | Thrown 20 ft. Explodes in 5-ft radius dealing **`2d4 Fire Damage`** (DC 11 Dex save for half). |
 | 🏹 **Heavy Crossbow** | **WEAPON • Martial Ranged** | Neverwinter Armory (Varnoth) | `50 GP` | **+2 to hit, 1d10 Piercing** (Range 100/400 ft, Heavy, Two-Handed, Loading, 20 Bolts). |
 | 💍 **Gilded Gallows Ring** | **OFFENSIVE • Uncommon (Attune)** | Tarak's former lockbox | `250 GP` | **+1 to Sleight of Hand** & Adv to hide items. 1/Day: Weapon deals **`+1d6 poison`** + speed 0 (DC 12 Con). |
 
@@ -442,7 +422,7 @@
 | 🥽 **Myla's Draconic Abyssal Goggles** | **GEAR • Uncommon** | Myla's Scrap (Equipped by Eflein) | `250 GP` *(175 GP disc.)* | Tinted bronze-rimmed sea-quartz goggles. Grants **Darkvision 60 ft** and **Murky Underwater Clarity** (no sight penalties underwater). |
 | 👘 **Robe of Arcane Reserve** | **GEAR • Uncommon (Attune)** | Sanctuary (Worn by Eflein) | `350 GP` | 1/Day Action: Channel the weave to regain **1 expended 1st-level spell slot**. |
 | 📜 **Spell Scroll of Absorb Elements** | **SCROLL • 1st-Level** | Seagrow Altar (Eflein's Pack) | `50 GP (500 SP)` | Reaction: Resistance to triggering element + next melee strike deals **+1d6 elemental damage**. |
-| 🛡️ **Cloak of Protection** | **ARMOR • Uncommon (Attune)** | Ancient Crypt (Attuned by Vaelith) | `400 GP` | Grants **+1 to Armor Class (AC)** and **+1 to All Saving Throws**. |
+| 🛡️ **Cloak of Protection** | **ARMOR • Uncommon (Attune)** | Transferred to New Hero | `400 GP` | Grants **+1 to Armor Class (AC)** and **+1 to All Saving Throws**. |
 | 🛡️ **Dragon-Scale Buckler** | **SHIELD • Uncommon** | Kobold Champion | `200 GP` | Grants **+2 to Armor Class (AC)** and weighs half standard shield weight (3 lbs). |
 | 🛡️ **Holy Wooden Shield** | **SHIELD • Holy Focus** | Dawn Watch (Father Flubs) | `20 GP (200 SP)` | Grants **+2 to AC** and serves as a holy focus for cleric spellcasting. |
 | 🛡️ **Kobold Shield** | **SHIELD • Common Gear** | Kobold Gift (Father Flubs) | `10 GP (100 SP)` | Grants **+2 to Armor Class (AC)**. |
@@ -457,7 +437,7 @@
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
 | :--- | :--- | :--- | :--- | :--- |
 | ⚡ **Astalagan's Amber Scale** | **LEGENDARY SCALE** | Bahamut Statue (Wielded by Eflein) | `Priceless Ancient Relic` | **+1 to Lightning Spell Attacks & Save DC (Lightning: DC 14, Hit +6 \| Base Spells: DC 13, Hit +5)**. 1/Day Lightning Surge (+1d6). Cleanses Orcus curses on touch. |
-| ❄️ **Clyssavar's Silver Scale** | **LEGENDARY SCALE** | Compass Rose Wreck (Wielded by Vaelith) | `Priceless Ancient Relic` | **+1 to Attack & DC on all Cold Spells/Strikes**. Cold Resistance. 1/Day Glacial Burst (+1d6 Cold & -10ft speed). |
+| ❄️ **Clyssavar's Silver Scale** | **LEGENDARY SCALE** | Compass Rose Wreck (Wielded by New Hero) | `Priceless Ancient Relic` | **+1 to Attack & DC on all Cold Spells/Strikes**. Cold Resistance. 1/Day Glacial Burst (+1d6 Cold & -10ft speed). |
 | ☀️ **Turadaer's Solar Gold Scale** | **LEGENDARY SCALE** | Observatory D5 (Wielder: Flubs) | `Priceless Ancient Relic` | **+1 to AC & All Saves, +1 to Spell Attack & DC**. Radiant Bastion 10ft (+1d4). Beacon of Dawn 1/Day (2d8+WIS). |
 | 📖 **Compass Rose Log Fragment & Aleitha's Lament** | **QUEST LOGBOOK & MANUSCRIPT** | Cabin C4 / Eflein's Pack | `Priceless Story Manuscript` | Deciphers the origin of the beach zombies and the talisman cleansing ritual at Dragon's Rest. |
 | 📿 **Aleitha's Braided Hair-Talisman** | **CURSED RELIC • Quest Key** | Sunken Hold C8 | `Priceless Cursed Relic` | Burn upon Captain Brastos's grave at Dragon's Rest to lift the island's zombie curse (+1 Saves 24h). |
@@ -551,23 +531,23 @@
 | **Very Hard** | **DC 25+** | Decipher ancient demonic runes without a key. |
 
 #### 📜 All 18 Skills Master Party Reference Guide
-| Attribute | Skill | When the DM Calls for This Roll | Eflein's Bonus | Vaelith's Bonus | Father Flubs' Bonus |
+| Attribute | Skill | When the DM Calls for This Roll | Eflein's Bonus | New Hero (Standby) | Father Flubs' Bonus |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| **STR** | **Athletics** | Climbing cliffs, swimming surf, jumping chasms, shoving enemies | `+0` | `-1` | `+1` |
-| **DEX** | **Acrobatics** | Balancing on tightropes, staying on feet on slick ice, flips | `+2` | **+4 ★** | `+0` |
-| | **Sleight of Hand** | Palming objects, picking pockets, disarming small pins | `+2` | `+2` *(Tools: **+4 ★**)* | `+0` |
-| | **Stealth** | Sneaking past guards, slipping past sleeping dragons | `+2` | **+4 ★** | `+0` |
-| **INT** | **Arcana** | Recalling spell knowledge, magic items, planar portals, runes | **+5 ★** | **+2 ★** | `+1` |
-| | **History** | Recalling historic battles, ancient kingdoms, legends, figures | **+5 ★** | `+0` | `+1` |
-| | **Investigation** | Searching rooms for secret doors, deducing clues from journals | **+5 ★** | `+0` | `+1` |
-| | **Nature** | Identifying plants (Heart Cap mushrooms), terrain, weather | `+3` | `+0` | `+1` |
-| | **Religion** | Recalling lore on gods (Bahamut), demon lords (Orcus), undead rites | **+5 ★** | `+0` | **+3 ★** |
-| **WIS** | **Animal Handling** | Calming frightened mounts or wild beasts | `+1` | `+1` | `+3` |
-| | **Insight** | Reading NPC motives, sensing lies, predicting opponent moves | `+1` | `+1` | **+5 ★** |
-| | **Medicine** | Diagnosing illnesses, stabilizing a dying player (DC 10) | `+1` | `+1` | **+5 ★** |
-| | **Perception** | Hearing faint footsteps, spotting ambushes, smelling sulfur | **+3 ★** | `+1` | `+3` |
-| | **Survival** | Tracking zombies/animals, foraging food/water, wilderness nav | `+1` | `+1` | `+3` |
-| **CHA** | **Deception** | Telling believable lies, disguising true intentions | `-1` | **+5 ★** | `+1` |
-| | **Intimidation** | Threatening enemies, coercing hostile kobolds to back down | `-1` | `+3` | `+1` |
-| | **Performance** | Entertaining with music, acting, storytelling, or dance | `-1` | `+3` | `+1` |
-| | **Persuasion** | Negotiating peacefully, convincing NPCs through diplomacy | `-1` | `+3` | **+3 ★** |
+| **STR** | **Athletics** | Climbing cliffs, swimming surf, jumping chasms, shoving enemies | `+0` | *TBD* | `+1` |
+| **DEX** | **Acrobatics** | Balancing on tightropes, staying on feet on slick ice, flips | `+2` | *TBD* | `+0` |
+| | **Sleight of Hand** | Palming objects, picking pockets, disarming small pins | `+2` | *TBD* | `+0` |
+| | **Stealth** | Sneaking past guards, slipping past sleeping dragons | `+2` | *TBD* | `+0` |
+| **INT** | **Arcana** | Recalling spell knowledge, magic items, planar portals, runes | **+5 ★** | *TBD* | `+1` |
+| | **History** | Recalling historic battles, ancient kingdoms, legends, figures | **+5 ★** | *TBD* | `+1` |
+| | **Investigation** | Searching rooms for secret doors, deducing clues from journals | **+5 ★** | *TBD* | `+1` |
+| | **Nature** | Identifying plants (Heart Cap mushrooms), terrain, weather | `+3` | *TBD* | `+1` |
+| | **Religion** | Recalling lore on gods (Bahamut), demon lords (Orcus), undead rites | **+5 ★** | *TBD* | **+3 ★** |
+| **WIS** | **Animal Handling** | Calming frightened mounts or wild beasts | `+1` | *TBD* | `+3` |
+| | **Insight** | Reading NPC motives, sensing lies, predicting opponent moves | `+1` | *TBD* | **+5 ★** |
+| | **Medicine** | Diagnosing illnesses, stabilizing a dying player (DC 10) | `+1` | *TBD* | **+5 ★** |
+| | **Perception** | Hearing faint footsteps, spotting ambushes, smelling sulfur | **+3 ★** | *TBD* | `+3` |
+| | **Survival** | Tracking zombies/animals, foraging food/water, wilderness nav | `+1` | *TBD* | `+3` |
+| **CHA** | **Deception** | Telling believable lies, disguising true intentions | `-1` | *TBD* | `+1` |
+| | **Intimidation** | Threatening enemies, coercing hostile kobolds to back down | `-1` | *TBD* | `+1` |
+| | **Performance** | Entertaining with music, acting, storytelling, or dance | `-1` | *TBD* | `+1` |
+| | **Persuasion** | Negotiating peacefully, convincing NPCs through diplomacy | `-1` | *TBD* | **+3 ★** |
