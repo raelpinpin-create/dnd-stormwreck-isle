@@ -9,21 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-page: #070a14;
-            --bg-sheet: #0d1222;
-            --panel-bg: #12192e;
-            --panel-sub: #0b1120;
-            --card-border: #1e293b;
-            --card-border-hover: #c084fc;
-            --accent-purple: #c084fc;
-            --accent-purple-glow: #e879f9;
-            --accent-silver: #cbd5e1;
-            --accent-silver-glow: #f1f5f9;
-            --accent-pink: #f472b6;
+            --bg-page: #0b101d;
+            --bg-sheet: #0f1523;
+            --panel-bg: #151d30;
+            --panel-sub: #101726;
+            --card-border: #222d42;
+            --card-border-hover: #3b82f6;
             --accent-gold: #f59e0b;
             --accent-blue: #38bdf8;
+            --accent-cyan: #22d3ee;
             --accent-green: #22c55e;
             --accent-red: #ef4444;
+            --accent-purple: #c084fc;
+            --accent-pink: #f472b6;
             --text-light: #f8fafc;
             --text-dim: #94a3b8;
             --text-muted: #64748b;
@@ -48,15 +46,15 @@
             background-color: var(--bg-sheet);
             border: 1px solid var(--card-border);
             border-radius: 10px;
-            box-shadow: 0 12px 36px rgba(0,0,0,0.8);
+            box-shadow: 0 12px 36px rgba(0,0,0,0.75);
             overflow: hidden;
         }
 
         /* Top Header Banner */
         .header-banner {
-            background: linear-gradient(180deg, #1e1b4b 0%, #0f172a 100%);
+            background: linear-gradient(180deg, #182238 0%, #0f172a 100%);
             border-bottom: 1px solid var(--card-border);
-            padding: 14px 18px;
+            padding: 12px 18px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -66,9 +64,9 @@
 
         .header-title h1 {
             font-family: 'Cinzel', serif;
-            color: var(--accent-purple);
-            font-size: 1.6rem;
-            letter-spacing: 0.5px;
+            color: var(--accent-gold);
+            font-size: 1.55rem;
+            letter-spacing: 0.3px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -79,7 +77,7 @@
             color: var(--text-dim);
             font-size: 0.82rem;
             font-weight: 500;
-            margin-top: 2px;
+            margin-top: 1px;
         }
 
         .pill-badge-group {
@@ -96,19 +94,19 @@
             font-weight: 600;
             text-transform: uppercase;
         }
+        .pill-neutral { background: #334155; color: #f1f5f9; border: 1px solid #475569; }
         .pill-purple { background: #581c87; color: #f3e8ff; border: 1px solid #9333ea; }
-        .pill-silver { background: #334155; color: #f8fafc; border: 1px solid #64748b; }
-        .pill-pink { background: #831843; color: #fce7f3; border: 1px solid #db2777; }
+        .pill-blue { background: #0369a1; color: #f0f9ff; border: 1px solid #0284c7; }
 
         /* TOP PROMINENT DICE ROLLER CONSOLE */
         .top-dice-console {
-            background: #080c18;
+            background: #090e1b;
             border-bottom: 1px solid var(--card-border);
             padding: 10px 18px;
             display: flex;
             flex-direction: column;
             gap: 8px;
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.4);
         }
 
         .dice-controls-bar {
@@ -139,9 +137,9 @@
             font-family: 'Inter', sans-serif;
         }
         .dice-btn:hover {
-            border-color: var(--accent-purple);
-            color: var(--accent-purple);
-            background: rgba(192, 132, 252, 0.12);
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+            background: rgba(245, 158, 11, 0.1);
         }
 
         .dice-mod-group {
@@ -152,21 +150,21 @@
         }
 
         .roll-result-display {
-            background: linear-gradient(135deg, #151630 0%, #0a0d1a 100%);
+            background: linear-gradient(135deg, #0d1629 0%, #090f1e 100%);
             border: 1.5px solid var(--card-border);
             border-radius: 6px;
-            padding: 10px 16px;
+            padding: 8px 14px;
             font-family: 'Inter', sans-serif;
             font-size: 0.92rem;
-            line-height: 1.5;
             color: #f8fafc;
-            min-height: 44px;
-            display: block;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
             transition: all 0.2s ease;
         }
         .roll-result-display.highlight-roll {
-            border-color: var(--accent-purple);
-            box-shadow: 0 0 14px rgba(192, 132, 252, 0.35);
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 14px rgba(245, 158, 11, 0.25);
         }
 
         /* Main 2-Column Grid Layout */
@@ -196,7 +194,7 @@
         .panel-title {
             font-size: 0.84rem;
             font-weight: 700;
-            color: var(--accent-purple);
+            color: var(--accent-gold);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -299,1443 +297,1958 @@
             text-align: center;
             outline: none;
         }
-        .hp-input-num:focus { border-color: var(--accent-purple); }
+        .hp-input-num:focus { border-color: var(--accent-gold); }
 
-        .btn-ctrl {
-            background: #1e293b;
-            border: 1px solid var(--card-border);
-            color: var(--text-light);
+        .btn-act {
+            padding: 4px 8px;
+            border-radius: 4px;
             font-size: 0.72rem;
             font-weight: 600;
-            padding: 3px 7px;
-            border-radius: 4px;
             cursor: pointer;
+            border: none;
             transition: all 0.15s ease;
+            font-family: 'Inter', sans-serif;
         }
-        .btn-ctrl:hover {
-            background: #334155;
-            border-color: var(--text-dim);
-        }
-        .btn-heal { background: #14532d; border-color: #15803d; color: #dcfce7; }
-        .btn-heal:hover { background: #166534; }
-        .btn-dmg { background: #7f1d1d; border-color: #991b1b; color: #fee2e2; }
-        .btn-dmg:hover { background: #991b1b; }
-        .btn-temp { background: #0c4a6e; border-color: #0284c7; color: #e0f2fe; }
-        .btn-temp:hover { background: #0369a1; }
-        .btn-purple { background: #581c87; border-color: #9333ea; color: #f3e8ff; }
-        .btn-purple:hover { background: #6b21a8; }
+        .btn-act:active { transform: scale(0.97); }
+        .btn-act-dmg { background: #991b1b; color: #fee2e2; }
+        .btn-act-dmg:hover { background: #b91c1c; }
+        .btn-act-heal { background: #065f46; color: #d1fae5; }
+        .btn-act-heal:hover { background: #047857; }
+        .btn-act-temp { background: #0284c7; color: #f0f9ff; border: 1px solid #38bdf8; }
+        .btn-act-temp:hover { background: #0369a1; }
+        .btn-act-pre { background: #1e293b; color: var(--text-light); border: 1px solid var(--card-border); }
+        .btn-act-pre:hover { background: #334155; }
 
-        /* Ability Scores Grid (6 boxes) */
-        .ability-grid {
+        /* Dynamic Buffs / Toggles Bar */
+        .buffs-toggle-bar {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 1fr;
             gap: 6px;
             margin-bottom: 8px;
         }
 
-        .ability-card {
+        .toggle-btn-card {
             background: var(--panel-sub);
             border: 1px solid var(--card-border);
             border-radius: 6px;
-            padding: 6px 4px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.15s ease;
-        }
-        .ability-card:hover {
-            border-color: var(--accent-purple);
-            transform: translateY(-1px);
-        }
-
-        .ability-name {
-            font-size: 0.65rem;
-            font-weight: 700;
-            color: var(--text-dim);
-            text-transform: uppercase;
-        }
-
-        .ability-mod {
-            font-size: 1.15rem;
-            font-weight: 800;
-            color: var(--accent-purple-glow);
-            font-family: 'JetBrains Mono', monospace;
-            margin: 1px 0;
-        }
-
-        .ability-score {
-            font-size: 0.68rem;
-            color: var(--text-muted);
-        }
-
-        /* Saves & Skills Rows */
-        .check-row {
+            padding: 5px 8px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 3px 6px;
-            border-radius: 4px;
-            font-size: 0.76rem;
             cursor: pointer;
-            transition: background 0.15s ease;
+            transition: all 0.2s ease;
         }
-        .check-row:hover {
-            background: rgba(192, 132, 252, 0.12);
+        .toggle-btn-card:hover { border-color: var(--accent-gold); }
+        .toggle-btn-card.active-buff {
+            border-color: #38bdf8;
+            background: rgba(56, 189, 248, 0.12);
         }
-        .prof-star { color: var(--accent-purple-glow); margin-right: 4px; font-weight: bold; }
-        .expertise-star { color: #f472b6; margin-right: 4px; font-weight: bold; }
-        .jack-star { color: var(--text-muted); margin-right: 4px; }
-        .mod-pill {
-            font-family: 'JetBrains Mono', monospace;
+        .toggle-badge {
+            font-size: 0.65rem;
             font-weight: 700;
-            color: var(--text-light);
-            background: #0a0e1a;
-            padding: 1px 6px;
+            padding: 2px 6px;
             border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .toggle-badge.off { background: #334155; color: #94a3b8; }
+        .toggle-badge.on { background: #0284c7; color: #f0f9ff; }
+
+        /* Ability Scores Strip */
+        .ability-strip {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .ability-box {
+            background: var(--panel-sub);
             border: 1px solid var(--card-border);
-            font-size: 0.72rem;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px 2px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .ability-box:hover { border-color: var(--accent-gold); background: rgba(245, 158, 11, 0.08); }
+        .ability-box.active-key {
+            border: 1.5px solid var(--accent-gold);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .ability-name { font-size: 0.65rem; font-weight: 700; color: var(--text-dim); }
+        .ability-score { font-size: 1rem; font-weight: 700; color: var(--text-light); }
+        .ability-mod { font-size: 0.72rem; font-weight: 600; color: var(--text-dim); }
+        .ability-box.active-key .ability-mod { color: var(--accent-gold); }
+
+        /* Skills & Saves Lists */
+        .stat-row-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .stat-row-item {
+            font-size: 0.76rem;
+            color: var(--text-light);
+            padding: 3px 7px;
+            background: var(--panel-sub);
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            border: 1px solid transparent;
+        }
+        .stat-row-item:hover {
+            background: #1e293b;
+            border-color: var(--accent-blue);
+        }
+        .stat-row-item.prof-item {
+            color: var(--accent-gold);
+            font-weight: 600;
+            background: rgba(245, 158, 11, 0.07);
+            border-left: 3px solid var(--accent-gold);
+        }
+        .stat-row-item.expertise-item {
+            color: #f472b6;
+            font-weight: 700;
+            background: rgba(244, 114, 182, 0.1);
+            border-left: 3px solid #f472b6;
         }
 
         /* Action & Spell Cards */
-        .action-card {
-            background: var(--panel-sub);
-            border: 1px solid var(--card-border);
-            border-radius: 6px;
-            padding: 8px 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            margin-bottom: 6px;
-            transition: all 0.15s ease;
-        }
-        .action-card:hover {
-            border-color: var(--card-border-hover);
+        .action-grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 7px;
         }
 
-        .action-card-header {
+        @media (max-width: 600px) {
+            .action-grid-2col { grid-template-columns: 1fr; }
+        }
+
+        .action-card {
+            background-color: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 7px 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            transition: all 0.15s ease;
+        }
+        .action-card:hover { border-color: #3b82f6; }
+
+        .action-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+            font-size: 0.8rem;
+            font-weight: 700;
             gap: 4px;
         }
-
-        .action-title {
-            font-weight: 700;
-            color: #f8fafc;
-            font-size: 0.82rem;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-        }
-        .action-title:hover {
-            color: var(--accent-purple-glow);
-            text-decoration: underline;
-        }
-
-        .action-tags {
-            display: flex;
-            gap: 4px;
-            align-items: center;
-        }
-
-        .tag {
-            font-size: 0.62rem;
-            font-weight: 700;
-            padding: 1px 6px;
-            border-radius: 3px;
-            text-transform: uppercase;
-        }
-        .tag-action { background: #1e3a8a; color: #bfdbfe; }
-        .tag-bonus { background: #065f46; color: #a7f3d0; }
-        .tag-reaction { background: #831843; color: #fbcfe8; }
-        .tag-special { background: #4c1d95; color: #e9d5ff; }
-        .tag-passive { background: #334155; color: #cbd5e1; }
-        .tag-heal { background: #14532d; color: #bbf7d0; }
 
         .action-desc {
-            font-size: 0.74rem;
+            font-size: 0.72rem;
             color: var(--text-dim);
-            line-height: 1.4;
+            line-height: 1.35;
         }
 
-        .action-roll-btn {
-            background: #1e1b4b;
-            border: 1px solid #7c3aed;
-            color: #e9d5ff;
-            font-size: 0.72rem;
-            font-weight: 700;
-            padding: 3px 8px;
+        .action-btn-row {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 2px;
+        }
+
+        /* Sleek Dropdown for Spell Levels */
+        .lvl-dropdown {
+            background: #0b1120;
+            border: 1px solid #334155;
+            color: var(--accent-gold);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 2px 5px;
             border-radius: 4px;
+            outline: none;
             cursor: pointer;
+            font-family: 'Inter', sans-serif;
+        }
+        .lvl-dropdown:focus { border-color: var(--accent-blue); }
+
+        .btn-roll-action {
+            background: #0284c7;
+            color: #f0f9ff;
+            border: none;
+            border-radius: 4px;
+            padding: 3px 8px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-roll-action:hover { background: #0369a1; }
+        .btn-roll-dmg { background: #991b1b; color: #fee2e2; }
+        .btn-roll-dmg:hover { background: #b91c1c; }
+        .btn-roll-heal { background: #065f46; color: #d1fae5; }
+        .btn-roll-heal:hover { background: #047857; }
+        .btn-roll-purple { background: #581c87; color: #f3e8ff; border: 1px solid #9333ea; }
+        .btn-roll-purple:hover { background: #6b21a8; }
+
+        /* Inventory List */
+        .inv-list-compact {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            max-height: 165px;
+            overflow-y: auto;
+        }
+
+        .inv-row-item {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 4px;
+            padding: 3px 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.74rem;
+            gap: 6px;
+            transition: border-color 0.15s;
+        }
+        .inv-row-item:hover {
+            border-color: #334155;
+        }
+
+        .inv-item-info {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .inv-controls {
             display: inline-flex;
             align-items: center;
             gap: 4px;
-            transition: all 0.15s ease;
-            margin-top: 2px;
-            align-self: flex-start;
-        }
-        .action-roll-btn:hover {
-            background: #4338ca;
-            color: #ffffff;
-            border-color: #a78bfa;
+            flex-shrink: 0;
         }
 
-        /* Spell Slots Matrix */
-        .slots-tracker-row {
-            display: flex;
+        .inv-stepper {
+            display: inline-flex;
             align-items: center;
-            justify-content: space-between;
-            background: var(--panel-sub);
-            padding: 6px 10px;
-            border-radius: 6px;
-            border: 1px solid var(--card-border);
-            margin-bottom: 5px;
-        }
-
-        .slot-pill-group {
-            display: flex;
-            gap: 4px;
-            align-items: center;
-        }
-
-        .slot-checkbox {
-            appearance: none;
-            width: 18px;
-            height: 18px;
-            border: 1.5px solid var(--accent-purple);
+            background: #090e1a;
+            border: 1px solid #334155;
             border-radius: 4px;
-            background: #0a0d18;
+            padding: 1px 3px;
+            gap: 2px;
+        }
+
+        .btn-step-qty {
+            background: transparent;
+            border: none;
+            color: #94a3b8;
+            font-size: 0.68rem;
+            font-weight: 700;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            transition: all 0.15s ease;
+            padding: 1px 4px;
+            border-radius: 2px;
+            transition: all 0.15s;
+            line-height: 1;
         }
-        .slot-checkbox:checked {
-            background: var(--accent-purple);
-            box-shadow: 0 0 8px rgba(192, 132, 252, 0.6);
+        .btn-step-qty:hover {
+            background: #1e293b;
+            color: var(--accent-gold);
         }
-        .slot-checkbox:checked::after {
-            content: '✓';
-            color: #0b1120;
-            font-size: 11px;
-            font-weight: 900;
+        .btn-step-qty:active {
+            transform: scale(0.92);
+        }
+
+        .inv-qty-val {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            min-width: 22px;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .btn-del-item {
+            background: transparent;
+            border: none;
+            color: var(--accent-red);
+            font-weight: 700;
+            cursor: pointer;
+            padding: 1px 5px;
+            font-size: 0.85rem;
+            border-radius: 3px;
+            transition: all 0.15s;
+        }
+        .btn-del-item:hover {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
         }
 
         /* Modals */
-        dialog {
-            background: #0d1424;
-            border: 1px solid var(--card-border);
-            border-radius: 8px;
-            color: var(--text-light);
-            padding: 16px 20px;
-            max-width: 520px;
-            width: 90%;
-            box-shadow: 0 16px 40px rgba(0,0,0,0.9);
-            margin: auto;
-            outline: none;
-        }
-        dialog::backdrop {
-            background: rgba(0, 0, 0, 0.75);
-            backdrop-filter: blur(4px);
-        }
-
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(4, 7, 14, 0.78);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            z-index: 9999;
+            justify-content: center;
             align-items: center;
-            border-bottom: 1px solid var(--card-border);
-            padding-bottom: 8px;
-            margin-bottom: 10px;
+            padding: 16px;
         }
-
-        .modal-header h3 {
-            font-family: 'Cinzel', serif;
-            color: var(--accent-purple);
-            font-size: 1.15rem;
+        .modal-overlay.active {
+            display: flex;
         }
-
-        .close-modal-btn {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-size: 1.3rem;
-            cursor: pointer;
-        }
-        .close-modal-btn:hover { color: var(--text-light); }
-
-        .modal-body {
-            font-size: 0.8rem;
-            color: var(--text-dim);
-            line-height: 1.5;
+        .modal-card {
+            background: #0d1424;
+            border: 1.5px solid var(--accent-gold);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 480px;
+            max-height: 85vh;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85), 0 0 24px rgba(245, 158, 11, 0.2);
+            overflow: hidden;
+            animation: modalPop 0.18s ease-out;
         }
-
-        /* Gold Transaction List */
-        .tx-item {
+        @keyframes modalPop {
+            from { opacity: 0; transform: scale(0.96) translateY(8px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .modal-header {
+            background: linear-gradient(180deg, #1d2538 0%, #101828 100%);
+            border-bottom: 1px solid var(--card-border);
+            padding: 10px 14px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 4px 8px;
+        }
+        .modal-header h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .modal-close-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 2px 6px;
             border-radius: 4px;
-            background: #090d16;
-            margin-bottom: 4px;
-            font-size: 0.74rem;
+            transition: all 0.15s;
+        }
+        .modal-close-btn:hover {
+            color: #fff;
+            background: rgba(239, 68, 68, 0.2);
+        }
+        .modal-body {
+            padding: 12px 14px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .tx-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            max-height: 320px;
+            overflow-y: auto;
+        }
+        .tx-item {
+            background: var(--panel-sub);
+            border: 1px solid var(--card-border);
+            border-radius: 5px;
+            padding: 6px 9px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.76rem;
+            transition: all 0.15s;
         }
         .tx-gain { border-left: 3px solid var(--accent-green); }
         .tx-spend { border-left: 3px solid var(--accent-red); }
+        .tx-reset { border-left: 3px solid var(--accent-gold); }
         .tx-silver { border-left: 3px solid var(--accent-blue); }
-        .tx-reset { border-left: 3px solid var(--accent-purple); }
     </style>
 </head>
 <body>
-<div class="sheet-container">
 
-    <!-- Top Header Banner -->
-    <header class="header-banner">
-        <div class="header-title">
-            <h1>🐾 Sylvar Link <span>✨</span></h1>
-            <p>Half-Tabaxi • Bard (College of Whispers) Lv 3 • Entertainer • Chaotic Good</p>
-        </div>
-        <div class="pill-badge-group">
-            <span class="pill-badge pill-purple">College of Whispers</span>
-            <span class="pill-badge pill-silver">Blind Seismic Sense (30–60ft)</span>
-            <span class="pill-badge pill-pink">Feline Agility 60ft</span>
-            <button class="btn-ctrl btn-purple" onclick="exportDataString()" title="Export state string to clipboard">📋 Export Data</button>
-        </div>
-    </header>
-
-    <!-- Top Dice Roller Console -->
-    <section class="top-dice-console">
-        <div class="dice-controls-bar">
-            <div class="dice-buttons-group">
-                <span style="font-size:0.75rem; font-weight:700; color:var(--text-dim); margin-right:4px;">ROLL:</span>
-                <button class="dice-btn" onclick="rollSimple(20, 'd20')">d20</button>
-                <button class="dice-btn" onclick="rollSimple(4, 'd4')">d4</button>
-                <button class="dice-btn" onclick="rollSimple(6, 'd6')">d6</button>
-                <button class="dice-btn" onclick="rollSimple(8, 'd8')">d8</button>
-                <button class="dice-btn" onclick="rollSimple(10, 'd10')">d10</button>
-                <button class="dice-btn" onclick="rollSimple(12, 'd12')">d12</button>
-                <button class="dice-btn" onclick="rollSimple(100, 'd100')">d100</button>
+    <div class="sheet-container">
+        
+        <!-- HEADER BANNER -->
+        <header class="header-banner">
+            <div class="header-title">
+                <h1>🐾 SYLVAR LINK</h1>
+                <div style="font-size:0.85rem; font-weight:700; color:#fde68a; margin-top:2px; letter-spacing:0.5px;">
+                    « The Whispering Shadow »
+                </div>
+                <div style="font-size:0.75rem; color:var(--text-dim); margin-top:1px;">
+                    Level 3 Half-Tabaxi Bard • College of Whispers • Entertainer
+                </div>
             </div>
-            <div class="dice-mod-group">
-                <button class="btn-ctrl" id="btn-adv" onclick="toggleAdvantage()">Normal</button>
-                <button class="btn-ctrl btn-purple" onclick="spendHelpToken()">🤝 Help Token (+1d6)</button>
-                <button class="btn-ctrl btn-dmg" onclick="rollBardicInspiration()">🪘 Bardic Inspiration (d6)</button>
+            <div class="pill-badge-group">
+                <button class="btn-act btn-act-pre" onclick="exportSheetState()" style="color:var(--accent-gold); border:1px solid rgba(245, 158, 11, 0.4); display:flex; align-items:center; gap:4px;" title="Copy current HP, spell slots, and inventory to clipboard">📋 Export Data</button>
+                <span class="pill-badge pill-neutral">CHAOTIC GOOD</span>
+                <span class="pill-badge pill-purple">COLLEGE OF WHISPERS</span>
+                <span class="pill-badge pill-blue">BLIND SEISMIC SENSE</span>
             </div>
-        </div>
-        <div class="roll-result-display" id="roll-console-out">
-            🎲 <em>Console ready. Click any skill, ability, spell, or weapon to roll with full 5e math!</em>
-        </div>
-    </section>
+        </header>
 
-    <!-- Main 2-Column Grid -->
-    <main class="main-layout">
+        <!-- TOP PROMINENT DICE ROLLER CONSOLE -->
+        <section class="top-dice-console">
+            <div class="dice-controls-bar">
+                <div class="dice-buttons-group">
+                    <span style="font-size:0.75rem; font-weight:700; color:var(--text-dim); margin-right:2px;">🎲 Quick Roll:</span>
+                    <button class="dice-btn" onclick="rollCustomDie(20)">d20</button>
+                    <button class="dice-btn" onclick="rollCustomDie(12)">d12</button>
+                    <button class="dice-btn" onclick="rollCustomDie(10)">d10</button>
+                    <button class="dice-btn" onclick="rollCustomDie(8)">d8</button>
+                    <button class="dice-btn" onclick="rollCustomDie(6)">d6</button>
+                    <button class="dice-btn" onclick="rollCustomDie(4)">d4</button>
+                    <button class="dice-btn" onclick="rollCustomDie(100)">d100</button>
+                </div>
 
-        <!-- LEFT COLUMN (Vitals, HP, Stats, Saves, Skills, Senses) -->
-        <aside>
-            <!-- 4 Mini Vitals -->
-            <div class="vitals-4box">
-                <div class="vital-mini-box">
-                    <span class="vital-mini-lbl">AC</span>
-                    <span class="vital-mini-val" id="disp-ac" style="color:#a78bfa;">12</span>
-                    <small style="font-size:0.58rem; color:var(--text-muted);">Leather+Cloak</small>
-                </div>
-                <div class="vital-mini-box">
-                    <span class="vital-mini-lbl">INIT</span>
-                    <span class="vital-mini-val" style="cursor:pointer;" onclick="rollInitiative()">+1</span>
-                    <small style="font-size:0.58rem; color:var(--text-muted);">DEX +1</small>
-                </div>
-                <div class="vital-mini-box">
-                    <span class="vital-mini-lbl">SPEED</span>
-                    <span class="vital-mini-val" id="disp-speed">30 ft</span>
-                    <small style="font-size:0.58rem; color:var(--text-muted);" id="disp-speed-sub">Tabaxi</small>
-                </div>
-                <div class="vital-mini-box">
-                    <span class="vital-mini-lbl">PROF</span>
-                    <span class="vital-mini-val" style="color:var(--accent-purple);">+2</span>
-                    <small style="font-size:0.58rem; color:var(--text-muted);">Tier 1</small>
+                <div class="dice-mod-group">
+                    <span style="font-size:0.75rem; font-weight:600; color:var(--text-dim);">Mod:</span>
+                    <input type="number" id="dice-mod" class="hp-input-num" value="0" style="width:42px; padding:2px 4px; font-size:0.78rem;">
+                    <button class="btn-act btn-act-pre" onclick="modDiceMod(1)">+1</button>
+                    <button class="btn-act btn-act-pre" onclick="modDiceMod(-1)">-1</button>
+                    <button class="btn-act btn-act-pre" onclick="document.getElementById('dice-mod').value=0">0</button>
+                    <button class="btn-act btn-act-pre" id="btn-adv" onclick="toggleAdvantage('adv')">Adv</button>
+                    <button class="btn-act btn-act-pre" id="btn-dis" onclick="toggleAdvantage('dis')">Dis</button>
                 </div>
             </div>
 
-            <!-- HP Controller -->
-            <div class="hp-ctrl-container">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <span style="font-size:0.75rem; font-weight:700; color:var(--text-dim);">HIT POINTS</span>
-                    <span style="font-family:'JetBrains Mono'; font-weight:800; font-size:0.95rem;">
-                        <span id="cur-hp" style="color:var(--accent-green);">21</span> / <span id="max-hp">21</span>
-                        <span id="temp-hp-disp" style="color:var(--accent-blue); display:none;">(+<span id="cur-temp-hp">0</span> Temp)</span>
-                    </span>
-                </div>
-                <div class="hp-health-bar-bg">
-                    <div class="hp-health-bar-fill" id="hp-bar-fill"></div>
-                    <div class="hp-health-bar-temp" id="hp-bar-temp" style="width:0%;"></div>
-                </div>
-                <div class="hp-btn-row">
-                    <input type="number" class="hp-input-num" id="hp-delta-input" placeholder="Amt" min="1">
-                    <button class="btn-ctrl btn-heal" onclick="applyHeal()">Heal</button>
-                    <button class="btn-ctrl btn-dmg" onclick="applyDamage()">Damage</button>
-                    <button class="btn-ctrl btn-temp" onclick="applyTempHp()">+Temp</button>
-                    <button class="btn-ctrl" onclick="resetHpMax()">Max</button>
-                </div>
+            <!-- RESULT BANNER -->
+            <div class="roll-result-display" id="roll-res">
+                🐾 Acoustic matrix initialized. Roll any attack, save, or skill check below!
             </div>
-
-            <!-- Feline Agility & Help Tokens Tracker -->
-            <div class="panel">
-                <div class="panel-title">
-                    <span>⚡ Class & Racial Counters</span>
-                    <button class="btn-ctrl" onclick="restShortParty()">Short Rest</button>
-                </div>
-                <div style="display:flex; justify-content:space-between; align-items:center; background:var(--panel-sub); padding:6px 8px; border-radius:6px; border:1px solid var(--card-border); margin-bottom:4px;">
-                    <div>
-                        <strong style="color:#f472b6;">🐾 Feline Agility (Burst):</strong>
-                        <div style="font-size:0.68rem; color:var(--text-dim);">Double speed (60 ft) for 1 turn. Resets on 0 ft move.</div>
-                    </div>
-                    <button class="btn-ctrl" id="feline-btn" onclick="toggleFelineAgility()">Ready (30ft)</button>
-                </div>
-                <div style="display:flex; justify-content:space-between; align-items:center; background:var(--panel-sub); padding:6px 8px; border-radius:6px; border:1px solid var(--card-border); margin-bottom:4px;">
-                    <div>
-                        <strong style="color:var(--accent-purple);">🪘 Bardic Inspiration (d6):</strong>
-                        <div style="font-size:0.68rem; color:var(--text-dim);">Regain on Long Rest (CHA 17 = 3 max).</div>
-                    </div>
-                    <div style="display:flex; align-items:center; gap:4px;">
-                        <button class="btn-ctrl" onclick="modInsp(-1)">-</button>
-                        <span id="insp-disp" style="font-family:'JetBrains Mono'; font-weight:800; color:var(--accent-purple-glow);">3 / 3</span>
-                        <button class="btn-ctrl" onclick="modInsp(1)">+</button>
-                    </div>
-                </div>
-                <div style="display:flex; justify-content:space-between; align-items:center; background:var(--panel-sub); padding:6px 8px; border-radius:6px; border:1px solid var(--card-border);">
-                    <div>
-                        <strong style="color:#38bdf8;">🤝 Table Help Tokens:</strong>
-                        <div style="font-size:0.68rem; color:var(--text-dim);">+1d6 to ally check within 30 ft (Max 2).</div>
-                    </div>
-                    <div style="display:flex; align-items:center; gap:4px;">
-                        <button class="btn-ctrl" onclick="modHelp(-1)">-</button>
-                        <span id="help-disp" style="font-family:'JetBrains Mono'; font-weight:800; color:#38bdf8;">2 / 2</span>
-                        <button class="btn-ctrl" onclick="modHelp(1)">+</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ability Scores (6 Cards) -->
-            <div class="panel">
-                <div class="panel-title">Ability Scores</div>
-                <div class="ability-grid">
-                    <div class="ability-card" onclick="rollAbility('STR', -1, 'Strength Check')">
-                        <div class="ability-name">STR</div>
-                        <div class="ability-mod">-1</div>
-                        <div class="ability-score">Score: 9</div>
-                    </div>
-                    <div class="ability-card" onclick="rollAbility('DEX', 1, 'Dexterity Check')">
-                        <div class="ability-name">DEX</div>
-                        <div class="ability-mod">+1</div>
-                        <div class="ability-score">Score: 13</div>
-                    </div>
-                    <div class="ability-card" onclick="rollAbility('CON', 0, 'Constitution Check')">
-                        <div class="ability-name">CON</div>
-                        <div class="ability-mod">+0</div>
-                        <div class="ability-score">Score: 10</div>
-                    </div>
-                    <div class="ability-card" onclick="rollAbility('INT', -3, 'Intelligence Check')">
-                        <div class="ability-name">INT</div>
-                        <div class="ability-mod">-3</div>
-                        <div class="ability-score">Score: 5</div>
-                    </div>
-                    <div class="ability-card" onclick="rollAbility('WIS', 1, 'Wisdom Check')">
-                        <div class="ability-name">WIS</div>
-                        <div class="ability-mod">+1</div>
-                        <div class="ability-score">Score: 12</div>
-                    </div>
-                    <div class="ability-card" onclick="rollAbility('CHA', 3, 'Charisma Check')">
-                        <div class="ability-name">CHA</div>
-                        <div class="ability-mod">+3</div>
-                        <div class="ability-score">Score: 17</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Saving Throws (with Cloak of Protection +1) -->
-            <div class="panel">
-                <div class="panel-title">
-                    <span>Saving Throws</span>
-                    <small style="font-size:0.65rem; color:var(--text-muted);">+1 Cloak Active</small>
-                </div>
-                <div class="check-row" onclick="rollSave('STR', 0, 'Strength Save')">
-                    <span><span class="jack-star">○</span> Strength</span>
-                    <span class="mod-pill">+0</span>
-                </div>
-                <div class="check-row" onclick="rollSave('DEX', 4, 'Dexterity Save')">
-                    <span><span class="prof-star">★</span> Dexterity (Proficient)</span>
-                    <span class="mod-pill" style="color:var(--accent-purple-glow);">+4</span>
-                </div>
-                <div class="check-row" onclick="rollSave('CON', 1, 'Constitution Save')">
-                    <span><span class="jack-star">○</span> Constitution</span>
-                    <span class="mod-pill">+1</span>
-                </div>
-                <div class="check-row" onclick="rollSave('INT', -2, 'Intelligence Save')">
-                    <span><span class="jack-star">○</span> Intelligence</span>
-                    <span class="mod-pill">-2</span>
-                </div>
-                <div class="check-row" onclick="rollSave('WIS', 2, 'Wisdom Save')">
-                    <span><span class="jack-star">○</span> Wisdom</span>
-                    <span class="mod-pill">+2</span>
-                </div>
-                <div class="check-row" onclick="rollSave('CHA', 6, 'Charisma Save')">
-                    <span><span class="prof-star">★</span> Charisma (Proficient)</span>
-                    <span class="mod-pill" style="color:var(--accent-purple-glow);">+6</span>
-                </div>
-            </div>
-
-            <!-- 18 Skills (Jack of All Trades +1 / Expertise +7) -->
-            <div class="panel">
-                <div class="panel-title">
-                    <span>Skills (18)</span>
-                    <small style="font-size:0.65rem; color:var(--text-muted);">Jack of All Trades (+1)</small>
-                </div>
-                <div class="check-row" onclick="rollSkill('Acrobatics (Dex)', 3)">
-                    <span><span class="prof-star">★</span> Acrobatics (Dex)</span>
-                    <span class="mod-pill">+3</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Animal Handling (Wis)', 2)">
-                    <span><span class="jack-star">○</span> Animal Handling (Wis)</span>
-                    <span class="mod-pill">+2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Arcana (Int)', -2)">
-                    <span><span class="jack-star">○</span> Arcana (Int)</span>
-                    <span class="mod-pill">-2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Athletics (Str)', 0)">
-                    <span><span class="jack-star">○</span> Athletics (Str)</span>
-                    <span class="mod-pill">+0</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Deception (Cha)', 4)">
-                    <span><span class="jack-star">○</span> Deception (Cha)</span>
-                    <span class="mod-pill">+4</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('History (Int)', -2)">
-                    <span><span class="jack-star">○</span> History (Int)</span>
-                    <span class="mod-pill">-2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Insight (Wis)', 3)">
-                    <span><span class="prof-star">★</span> Insight (Wis)</span>
-                    <span class="mod-pill">+3</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Intimidation (Cha)', 4)">
-                    <span><span class="jack-star">○</span> Intimidation (Cha)</span>
-                    <span class="mod-pill">+4</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Investigation (Int)', -2)">
-                    <span><span class="jack-star">○</span> Investigation (Int)</span>
-                    <span class="mod-pill">-2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Medicine (Wis)', 2)">
-                    <span><span class="jack-star">○</span> Medicine (Wis)</span>
-                    <span class="mod-pill">+2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Nature (Int)', -2)">
-                    <span><span class="jack-star">○</span> Nature (Int)</span>
-                    <span class="mod-pill">-2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Perception (Wis)', 3)">
-                    <span><span class="prof-star">★</span> Perception (Wis) [Cat's Talent]</span>
-                    <span class="mod-pill">+3</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Performance (Cha)', 7)">
-                    <span><span class="expertise-star">★★</span> <strong>Performance (Cha) [Expertise]</strong></span>
-                    <span class="mod-pill" style="color:#f472b6; font-weight:800;">+7</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Persuasion (Cha)', 7)">
-                    <span><span class="expertise-star">★★</span> <strong>Persuasion (Cha) [Expertise]</strong></span>
-                    <span class="mod-pill" style="color:#f472b6; font-weight:800;">+7</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Religion (Int)', -2)">
-                    <span><span class="jack-star">○</span> Religion (Int)</span>
-                    <span class="mod-pill">-2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Sleight of Hand (Dex)', 2)">
-                    <span><span class="jack-star">○</span> Sleight of Hand (Dex)</span>
-                    <span class="mod-pill">+2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Stealth (Dex)', 2)">
-                    <span><span class="jack-star">○</span> Stealth (Dex)</span>
-                    <span class="mod-pill">+2</span>
-                </div>
-                <div class="check-row" onclick="rollSkill('Survival (Wis)', 2)">
-                    <span><span class="jack-star">○</span> Survival (Wis)</span>
-                    <span class="mod-pill">+2</span>
-                </div>
-            </div>
-
-            <!-- Sensory & Background Profile -->
-            <div class="panel">
-                <div class="panel-title">🐾 Senses & Personality</div>
-                <div style="font-size:0.75rem; color:var(--text-dim); display:flex; flex-direction:column; gap:4px;">
-                    <div>👁️ <strong>Blind Seismic Sense:</strong> Sees through floor vibrations, whisker acoustics, and air pressure (30–60 ft). Immune to dark/fog penalties in close range!</div>
-                    <div>💖 <strong>Personality:</strong> Joyful, hyper, loves beauty, entertainment, stories, and wine.</div>
-                    <div>💔 <strong>Bonds:</strong> Missing twin sister (taught him dance); The Lush Peaks Clan.</div>
-                    <div>⚠️ <strong>Flaws:</strong> Clumsy, fragile body (CON 10), heart over mind, skittish.</div>
-                </div>
-            </div>
-        </aside>
-
-        <!-- RIGHT COLUMN (Spells, Spell Slots, Weapons, College of Whispers, Items, Gold) -->
-        <section>
-
-            <!-- Spellcasting Overview & Spell Slot Tracker -->
-            <div class="panel">
-                <div class="panel-title">
-                    <span>🔮 Bardic Spellcasting (College of Whispers)</span>
-                    <small style="color:var(--text-muted);">DC 13 • Attack +5 • CHA (+3)</small>
-                </div>
-                
-                <!-- 1st Level Spell Slots (4) -->
-                <div class="slots-tracker-row">
-                    <div>
-                        <strong style="color:#a78bfa;">1st-Level Spell Slots:</strong>
-                        <span style="font-size:0.72rem; color:var(--text-dim); margin-left:6px;">4 Total</span>
-                    </div>
-                    <div class="slot-pill-group">
-                        <input type="checkbox" class="slot-checkbox" id="slot1-1" checked onchange="saveSpellSlots()">
-                        <input type="checkbox" class="slot-checkbox" id="slot1-2" checked onchange="saveSpellSlots()">
-                        <input type="checkbox" class="slot-checkbox" id="slot1-3" checked onchange="saveSpellSlots()">
-                        <input type="checkbox" class="slot-checkbox" id="slot1-4" checked onchange="saveSpellSlots()">
-                        <button class="btn-ctrl" style="margin-left:6px;" onclick="resetSlots(1)">Reset</button>
-                    </div>
-                </div>
-
-                <!-- 2nd Level Spell Slots (2) -->
-                <div class="slots-tracker-row">
-                    <div>
-                        <strong style="color:#c084fc;">2nd-Level Spell Slots:</strong>
-                        <span style="font-size:0.72rem; color:var(--text-dim); margin-left:6px;">2 Total</span>
-                    </div>
-                    <div class="slot-pill-group">
-                        <input type="checkbox" class="slot-checkbox" id="slot2-1" checked onchange="saveSpellSlots()">
-                        <input type="checkbox" class="slot-checkbox" id="slot2-2" checked onchange="saveSpellSlots()">
-                        <button class="btn-ctrl" style="margin-left:6px;" onclick="resetSlots(2)">Reset</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- College of Whispers Archetype Features -->
-            <div class="panel">
-                <div class="panel-title">🗡️ College of Whispers Archetype Features (Level 3)</div>
-                
-                <!-- Psychic Blades -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('feat_psychic_blades')">🧠 Psychic Blades (2d6 Psychic Damage)</span>
-                        <div class="action-tags">
-                            <span class="tag tag-bonus">ON HIT</span>
-                            <span class="tag tag-special">1 INSP DIE</span>
-                        </div>
-                    </div>
-                    <p class="action-desc">When you hit a creature with a weapon attack (Rapier/Dagger), you can expend <strong>1 use of Bardic Inspiration</strong> to deal an extra <strong>2d6 Psychic damage</strong> to the target (1/round on your turn).</p>
-                    <button class="action-roll-btn" onclick="rollPsychicBlades()">🗡️ Roll Psychic Blades (+2d6 Psychic)</button>
-                </div>
-
-                <!-- Words of Terror -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('feat_words_terror')">👁️ Words of Terror (Paranoia Seed)</span>
-                        <div class="action-tags">
-                            <span class="tag tag-action">1 MINUTE</span>
-                            <span class="tag tag-special">SHORT REST</span>
-                        </div>
-                    </div>
-                    <p class="action-desc">Speak to a humanoid alone for at least 1 minute. At conversation end, target makes a <strong>DC 13 Wisdom save</strong> or becomes <strong>Frightened</strong> of you or a chosen creature for 1 hour!</p>
-                    <button class="action-roll-btn" onclick="rollWordsTerror()">🗣️ Seed Paranoia (DC 13 Wis Save)</button>
-                </div>
-
-                <!-- Song of Rest -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('feat_song_rest')">🎶 Song of Rest (+1d6 Short Rest Healing)</span>
-                        <div class="action-tags"><span class="tag tag-passive">SHORT REST</span></div>
-                    </div>
-                    <p class="action-desc">Soothing oration/music helps revitalize allies during short rests. Any friendly creature regaining HP by spending Hit Dice regains an extra <strong>1d6 Hit Points</strong>.</p>
-                </div>
-            </div>
-
-            <!-- Weapons & Core Actions -->
-            <div class="panel">
-                <div class="panel-title">⚔️ Weapons & Combat Strikes</div>
-                
-                <!-- Rapier Strike -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('item_rapier')">🗡️ Rapier (Finesse Piercing)</span>
-                        <div class="action-tags">
-                            <span class="tag tag-action">ACTION</span>
-                            <span class="tag tag-passive">+3 TO HIT</span>
-                        </div>
-                    </div>
-                    <p class="action-desc"><strong>+3 to hit</strong>, reach 5 ft. <em>Hit:</em> <strong>1d8 + 1 Piercing damage</strong>. Can be empowered with <em>Psychic Blades</em> (+2d6 Psychic)!</p>
-                    <div style="display:flex; gap:6px; flex-wrap:wrap;">
-                        <button class="action-roll-btn" onclick="rollRapierAttack(false)">🗡️ Standard Strike (1d8+1)</button>
-                        <button class="action-roll-btn" style="background:#581c87; border-color:#9333ea;" onclick="rollRapierAttack(true)">⚡ Psychic Blade Strike (1d8+1 + 2d6)</button>
-                    </div>
-                </div>
-
-                <!-- Steel Dagger -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('item_dagger')">🗡️ Steel Daggers (2 Daggers)</span>
-                        <div class="action-tags">
-                            <span class="tag tag-action">ACTION</span>
-                            <span class="tag tag-passive">20/60 FT</span>
-                        </div>
-                    </div>
-                    <p class="action-desc"><strong>+3 to hit</strong>, range 20/60 ft. <em>Hit:</em> <strong>1d4 + 1 Piercing damage</strong> (Finesse, Light, Thrown).</p>
-                    <button class="action-roll-btn" onclick="rollDaggerAttack()">🗡️ Dagger Strike / Throw (1d4+1)</button>
-                </div>
-
-                <!-- Spitfire Flask -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('item_spitfire')">💣 Spitfire Flask (2 Flasks)</span>
-                        <div class="action-tags"><span class="tag tag-action">ACTION • 20 FT</span></div>
-                    </div>
-                    <p class="action-desc">Throw volatile flask up to 20 ft. Explodes in a 5-ft radius dealing <strong>2d4 Fire Damage</strong> (DC 11 Dex save for half).</p>
-                    <button class="action-roll-btn" style="background:#7f1d1d; border-color:#ef4444;" onclick="rollSpitfireFlask()">💣 Throw Spitfire Flask (2d4 Fire)</button>
-                </div>
-            </div>
-
-            <!-- Cantrips & Spells Known -->
-            <div class="panel">
-                <div class="panel-title">📜 Cantrips & Spells Known</div>
-                
-                <!-- Vicious Mockery -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('spell_vicious_mockery')">🎭 Vicious Mockery (Cantrip)</span>
-                        <div class="action-tags">
-                            <span class="tag tag-action">ACTION</span>
-                            <span class="tag tag-special">DC 13 WIS</span>
-                        </div>
-                    </div>
-                    <p class="action-desc">Unleash stinging psychic insults at a creature within 60 ft. Target must make a <strong>DC 13 Wisdom save</strong> or take <strong>1d4 Psychic damage</strong> and suffer <strong>Disadvantage</strong> on its next attack roll!</p>
-                    <button class="action-roll-btn" onclick="castViciousMockery()">🎭 Cast Vicious Mockery (1d4 + Disadvantage)</button>
-                </div>
-
-                <!-- Dissonant Whispers -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('spell_dissonant_whispers')">🧠 Dissonant Whispers (1st-Level)</span>
-                        <div class="action-tags">
-                            <span class="tag tag-action">ACTION</span>
-                            <span class="tag tag-special">DC 13 WIS</span>
-                        </div>
-                    </div>
-                    <p class="action-desc">Whisper a discordant psychic melody (60 ft). Target makes a <strong>DC 13 Wisdom save</strong>. On fail: takes <strong>3d6 Psychic damage</strong> and must immediately use its reaction to flee!</p>
-                    <button class="action-roll-btn" onclick="castDissonantWhispers()">🧠 Cast Dissonant Whispers (3d6 Psychic)</button>
-                </div>
-
-                <!-- Healing Word -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('spell_healing_word')">💚 Healing Word (1st-Level)</span>
-                        <div class="action-tags">
-                            <span class="tag tag-bonus">BONUS ACTION</span>
-                            <span class="tag tag-heal">60 FT</span>
-                        </div>
-                    </div>
-                    <p class="action-desc">A soothing word restores <strong>1d4 + 3 Hit Points</strong> to a creature you can see/sense within 60 ft.</p>
-                    <button class="action-roll-btn" style="background:#14532d; border-color:#22c55e;" onclick="castHealingWord()">💚 Cast Healing Word (1d4+3 HP)</button>
-                </div>
-
-                <!-- Color Spray -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('spell_color_spray')">🌈 Color Spray (1st-Level)</span>
-                        <div class="action-tags"><span class="tag tag-action">15-FT CONE</span></div>
-                    </div>
-                    <p class="action-desc">Dazzling array of light blinds creatures in a 15-ft cone based on <strong>6d10 total hit points</strong> affected in ascending order until end of next turn.</p>
-                    <button class="action-roll-btn" onclick="castColorSpray()">🌈 Cast Color Spray (Roll 6d10 HP)</button>
-                </div>
-
-                <!-- Charm Person -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('spell_charm_person')">💖 Charm Person (1st-Level)</span>
-                        <div class="action-tags"><span class="tag tag-action">DC 13 WIS • 1 HR</span></div>
-                    </div>
-                    <p class="action-desc">Attempt to charm 1 humanoid (30 ft) for 1 hour. Target regards you as a friendly acquaintance.</p>
-                </div>
-
-                <!-- Calm Emotions -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('spell_calm_emotions')">🕊️ Calm Emotions (2nd-Level)</span>
-                        <div class="action-tags"><span class="tag tag-action">20-FT SPHERE • DC 13 CHA</span></div>
-                    </div>
-                    <p class="action-desc">Suppress charmed/frightened conditions or make hostile creatures indifferent in a 20-ft radius sphere.</p>
-                </div>
-
-                <!-- Enthrall -->
-                <div class="action-card">
-                    <div class="action-card-header">
-                        <span class="action-title" onclick="openCompendium('spell_enthrall')">✨ Enthrall (2nd-Level)</span>
-                        <div class="action-tags"><span class="tag tag-action">DC 13 WIS • 60 FT</span></div>
-                    </div>
-                    <p class="action-desc">Distracting oration imposes Disadvantage on Wisdom (Perception) checks to notice anyone other than you.</p>
-                </div>
-            </div>
-
-            <!-- Destiny Relic: Clyssavar's Silver Harmonic Scale -->
-            <div class="panel" style="border-color:#64748b; background:linear-gradient(135deg, #0e1728 0%, #172554 100%);">
-                <div class="panel-title" style="color:#e2e8f0;">
-                    <span>❄️ Clyssavar's Silver Harmonic Scale (Destiny Relic)</span>
-                    <span class="tag tag-special">CHAPTER 3 RELIC</span>
-                </div>
-                <div style="font-size:0.75rem; color:#cbd5e1; display:flex; flex-direction:column; gap:5px;">
-                    <p><em>Centuries ago, Clyssavar the Silver Wyrm harnessed pure acoustic harmonics and cryogenic resonance to bind the fire dragon Sharruth. Resting in the flooded hold of the Compass Rose, this scale awaits Sylvar Link.</em></p>
-                    <div>• <strong>Whispering Harmonic Resonance:</strong> Grants <strong>+1 to Spell Save DC (DC 14)</strong> and <strong>+1 to Spell Attack rolls (+6)</strong> on psychic, sound, and enchantment spells.</div>
-                    <div>• <strong>Harmonic Blindsight (60 ft):</strong> Expands blind acoustic tremorsense to 60 ft, revealing muscle tension and lies (Advantage on Insight vs spoken deceit).</div>
-                    <div>• <strong>Crystalline Sound-Burst (1/Day):</strong> When using <em>Psychic Blades</em> or <em>Dissonant Whispers</em>, deals an extra <strong>+1d6 Cold/Psychic damage</strong> and rings with a crystalline chime that halves the target's speed!</div>
-                </div>
-            </div>
-
-            <!-- Gold Purse & Inventory Manager -->
-            <div class="panel">
-                <div class="panel-title">
-                    <span>💰 Gold Purse & Inventory</span>
-                    <button class="btn-ctrl" onclick="openTxModal()">Tx History</button>
-                </div>
-                <div style="display:flex; justify-content:space-between; align-items:center; background:var(--panel-sub); padding:8px 12px; border-radius:6px; border:1px solid var(--card-border); margin-bottom:8px;">
-                    <div>
-                        <span style="font-size:0.75rem; color:var(--text-dim); text-transform:uppercase; font-weight:700;">Current Balance:</span>
-                        <div style="font-family:'JetBrains Mono'; font-size:1.15rem; font-weight:800;">
-                            <span id="gold-disp" style="color:#facc15;">115</span> <span style="font-size:0.75rem; color:#fef08a;">GP</span>&nbsp;&nbsp;
-                            <span id="silver-disp" style="color:#cbd5e1;">8</span> <span style="font-size:0.75rem; color:#94a3b8;">SP</span>
-                        </div>
-                    </div>
-                    <div style="display:flex; gap:4px; align-items:center;">
-                        <button class="btn-ctrl" onclick="stepGold(1)">+1 GP</button>
-                        <button class="btn-ctrl" onclick="stepGold(-1)">-1 GP</button>
-                        <button class="btn-ctrl" onclick="stepSilver(1)">+1 SP</button>
-                        <button class="btn-ctrl" onclick="stepSilver(-1)">-1 SP</button>
-                    </div>
-                </div>
-
-                <!-- Quick Inventory List -->
-                <div style="font-size:0.73rem; color:var(--text-dim); display:flex; flex-direction:column; gap:3px;">
-                    <div>🛡️ <strong>Cloak of Protection:</strong> +1 AC (AC 12) & +1 to all Saving Throws (Attuned).</div>
-                    <div>🥋 <strong>Leather Armor:</strong> Base AC 11.</div>
-                    <div>🗡️ <strong>Rapier & 2x Daggers:</strong> Main finesse weapons.</div>
-                    <div>🪘 <strong>Tambourine:</strong> Arcane & Bardic focus, acoustic resonator.</div>
-                    <div>🎸 <strong>Lute & Guitar:</strong> Fine wooden instruments.</div>
-                    <div>💣 <strong>2x Spitfire Flasks:</strong> 20ft throw, 2d4 fire, DC 11 Dex.</div>
-                    <div>🧪 <strong>1x Potion of Healing:</strong> Bonus: 2d6 HP / Action: 100% Full Max HP.</div>
-                    <div>🥖 <strong>1x Kobold Sweetbread Roll:</strong> Blepp's cinnamon honey treat.</div>
-                    <div>🎒 <strong>Entertainer & Burglar Packs:</strong> Bedroll, mirror, 3 costumes, lantern, 8 oil flasks, 9 rations, thieves' tools.</div>
-                </div>
-            </div>
-
         </section>
-    </main>
 
-</div>
-
-<!-- Compendium Modal -->
-<dialog id="compendium-modal">
-    <div class="modal-header">
-        <h3 id="modal-item-title">Item Name</h3>
-        <button class="close-modal-btn" onclick="closeCompendium()">✕</button>
-    </div>
-    <div class="modal-body" id="modal-item-body"></div>
-</dialog>
-
-<!-- Gold Transaction Modal -->
-<dialog id="tx-modal">
-    <div class="modal-header">
-        <h3>💰 Gold Ledger & Transactions</h3>
-        <button class="close-modal-btn" onclick="closeTxModal()">✕</button>
-    </div>
-    <div class="modal-body">
-        <div style="display:flex; justify-content:space-between; align-items:center; background:#090d16; padding:8px; border-radius:6px; margin-bottom:8px;">
-            <strong style="color:var(--text-light);">Current Balance:</strong>
-            <span style="font-family:'JetBrains Mono'; font-size:1rem; font-weight:800; color:#facc15;">
-                <span id="modal-gold-disp">115</span> GP, <span id="modal-silver-disp">8</span> SP
-            </span>
-        </div>
-        <div style="display:flex; gap:6px; margin-bottom:8px;">
-            <input type="number" id="tx-gold-input" placeholder="GP Amount" style="background:#090d16; border:1px solid var(--card-border); color:#f8fafc; padding:4px 8px; border-radius:4px; width:90px;">
-            <input type="text" id="tx-reason-input" placeholder="Reason / Loot Note" style="background:#090d16; border:1px solid var(--card-border); color:#f8fafc; padding:4px 8px; border-radius:4px; flex:1;">
-            <button class="btn-ctrl btn-heal" onclick="applyTxAdd()">+ Add</button>
-            <button class="btn-ctrl btn-dmg" onclick="applyTxSpend()">- Spend</button>
-        </div>
-        <div id="modal-tx-list" style="max-height:220px; overflow-y:auto;"></div>
-    </div>
-</dialog>
-
-<script>
-    // --- LIVE STATE & LOCALSTORAGE ENGINE ---
-    const DEFAULT_MAX_HP = 21;
-    const DEFAULT_START_GP = 115;
-    const DEFAULT_START_SP = 8;
-
-    let curHP = parseInt(localStorage.getItem('sylvar_cur_hp')) || DEFAULT_MAX_HP;
-    let tempHP = parseInt(localStorage.getItem('sylvar_temp_hp')) || 0;
-    let bardicInsp = parseInt(localStorage.getItem('sylvar_insp')) !== null && !isNaN(parseInt(localStorage.getItem('sylvar_insp'))) ? parseInt(localStorage.getItem('sylvar_insp')) : 3;
-    let helpTokens = parseInt(localStorage.getItem('sylvar_help')) !== null && !isNaN(parseInt(localStorage.getItem('sylvar_help'))) ? parseInt(localStorage.getItem('sylvar_help')) : 2;
-    let curGP = parseInt(localStorage.getItem('sylvar_gp')) || DEFAULT_START_GP;
-    let curSP = parseInt(localStorage.getItem('sylvar_sp')) || DEFAULT_START_SP;
-    let isFelineActive = false;
-    let advMode = 'normal'; // 'normal', 'adv', 'dis'
-
-    function saveState() {
-        localStorage.setItem('sylvar_cur_hp', curHP);
-        localStorage.setItem('sylvar_temp_hp', tempHP);
-        localStorage.setItem('sylvar_insp', bardicInsp);
-        localStorage.setItem('sylvar_help', helpTokens);
-        localStorage.setItem('sylvar_gp', curGP);
-        localStorage.setItem('sylvar_sp', curSP);
-        updateUI();
-    }
-
-    function updateUI() {
-        document.getElementById('cur-hp').innerText = curHP;
-        document.getElementById('max-hp').innerText = DEFAULT_MAX_HP;
-        
-        const tempDisp = document.getElementById('temp-hp-disp');
-        const tempVal = document.getElementById('cur-temp-hp');
-        if (tempHP > 0) {
-            tempDisp.style.display = 'inline';
-            tempVal.innerText = tempHP;
-        } else {
-            tempDisp.style.display = 'none';
-        }
-
-        const hpPct = Math.max(0, Math.min(100, (curHP / DEFAULT_MAX_HP) * 100));
-        const fillBar = document.getElementById('hp-bar-fill');
-        fillBar.style.width = hpPct + '%';
-        if (hpPct > 50) fillBar.style.background = 'var(--accent-green)';
-        else if (hpPct > 25) fillBar.style.background = 'var(--accent-gold)';
-        else fillBar.style.background = 'var(--accent-red)';
-
-        document.getElementById('insp-disp').innerText = `${bardicInsp} / 3`;
-        document.getElementById('help-disp').innerText = `${helpTokens} / 2`;
-        document.getElementById('gold-disp').innerText = curGP;
-        document.getElementById('silver-disp').innerText = curSP;
-        
-        const modalG = document.getElementById('modal-gold-disp');
-        const modalS = document.getElementById('modal-silver-disp');
-        if (modalG) modalG.innerText = curGP;
-        if (modalS) modalS.innerText = curSP;
-    }
-
-    // --- HP CONTROLLER ---
-    function applyHeal() {
-        const input = document.getElementById('hp-delta-input');
-        const amt = parseInt(input.value) || 0;
-        if (amt <= 0) return;
-        curHP = Math.min(DEFAULT_MAX_HP, curHP + amt);
-        input.value = '';
-        saveState();
-        logRoll(`💚 <strong>Healed +${amt} HP:</strong> HP is now <span style="color:#86efac; font-weight:700;">${curHP}/${DEFAULT_MAX_HP}</span>.`);
-    }
-
-    function applyDamage() {
-        const input = document.getElementById('hp-delta-input');
-        const amt = parseInt(input.value) || 0;
-        if (amt <= 0) return;
-        
-        let remDmg = amt;
-        if (tempHP > 0) {
-            if (tempHP >= remDmg) {
-                tempHP -= remDmg;
-                remDmg = 0;
-            } else {
-                remDmg -= tempHP;
-                tempHP = 0;
-            }
-        }
-        curHP = Math.max(0, curHP - remDmg);
-        input.value = '';
-        saveState();
-        logRoll(`💥 <strong>Took ${amt} Damage:</strong> HP is now <span style="color:#fca5a5; font-weight:700;">${curHP}/${DEFAULT_MAX_HP}</span> ${tempHP > 0 ? '(+' + tempHP + ' Temp)' : ''}.`);
-    }
-
-    function applyTempHp() {
-        const input = document.getElementById('hp-delta-input');
-        const amt = parseInt(input.value) || 0;
-        if (amt <= 0) return;
-        tempHP = Math.max(tempHP, amt); // 5e rule: non-stacking, take highest
-        input.value = '';
-        saveState();
-        logRoll(`🛡️ <strong>Gained Temporary HP:</strong> Current Temp HP is now <span style="color:#38bdf8; font-weight:700;">+${tempHP}</span>.`);
-    }
-
-    function resetHpMax() {
-        curHP = DEFAULT_MAX_HP;
-        tempHP = 0;
-        saveState();
-        logRoll(`✨ <strong>Hit Points Restored:</strong> Fully reset to <span style="color:#86efac; font-weight:700;">${DEFAULT_MAX_HP}/${DEFAULT_MAX_HP}</span>.`);
-    }
-
-    // --- FELINE AGILITY & HELP TOKENS ---
-    function toggleFelineAgility() {
-        isFelineActive = !isFelineActive;
-        const btn = document.getElementById('feline-btn');
-        const speedDisp = document.getElementById('disp-speed');
-        const speedSub = document.getElementById('disp-speed-sub');
-        if (isFelineActive) {
-            btn.innerText = "Active (60ft)";
-            btn.className = "btn-ctrl btn-purple";
-            speedDisp.innerText = "60 ft";
-            speedDisp.style.color = "#f472b6";
-            speedSub.innerText = "Agility Active!";
-            logRoll(`🐾 <strong>Feline Agility Activated!</strong> Speed doubled to <span style="color:#f472b6; font-weight:800;">60 ft</span> for this turn!`);
-        } else {
-            btn.innerText = "Ready (30ft)";
-            btn.className = "btn-ctrl";
-            speedDisp.innerText = "30 ft";
-            speedDisp.style.color = "#f8fafc";
-            speedSub.innerText = "Tabaxi";
-            logRoll(`🐾 <strong>Feline Agility Reset:</strong> Speed returned to 30 ft.`);
-        }
-    }
-
-    function modInsp(delta) {
-        bardicInsp = Math.max(0, Math.min(3, bardicInsp + delta));
-        saveState();
-    }
-
-    function modHelp(delta) {
-        helpTokens = Math.max(0, Math.min(2, helpTokens + delta));
-        saveState();
-    }
-
-    function spendHelpToken() {
-        if (helpTokens <= 0) {
-            alert("No Help Tokens remaining! Regain on Short/Long rest.");
-            return;
-        }
-        helpTokens -= 1;
-        saveState();
-        const d6 = Math.floor(Math.random() * 6) + 1;
-        logRoll(`🤝 <strong>Help Token Spent:</strong> Granted ally <span style="color:#38bdf8; font-size:1.1rem; font-weight:800;">+${d6}</span> on their check within 30 ft! (${helpTokens}/2 tokens remaining)`);
-    }
-
-    function rollBardicInspiration() {
-        if (bardicInsp <= 0) {
-            alert("No Bardic Inspiration dice remaining! (3/Long Rest)");
-            return;
-        }
-        bardicInsp -= 1;
-        saveState();
-        const d6 = Math.floor(Math.random() * 6) + 1;
-        logRoll(`🪘 <strong>Bardic Inspiration Granted (d6):</strong> Rolled <span style="color:#c084fc; font-size:1.1rem; font-weight:800;">+${d6}</span>! (${bardicInsp}/3 dice remaining)`);
-    }
-
-    function restShortParty() {
-        helpTokens = Math.min(2, helpTokens + 1);
-        isFelineActive = false;
-        document.getElementById('feline-btn').innerText = "Ready (30ft)";
-        document.getElementById('feline-btn').className = "btn-ctrl";
-        document.getElementById('disp-speed').innerText = "30 ft";
-        document.getElementById('disp-speed').style.color = "#f8fafc";
-        saveState();
-        logRoll(`☕ <strong>Short Rest Completed:</strong> +1 Help Token restored (${helpTokens}/2), Feline Agility ready, Song of Rest adds +1d6 to all spent Hit Dice!`);
-    }
-
-    // --- DICE ENGINE ---
-    function toggleAdvantage() {
-        const btn = document.getElementById('btn-adv');
-        if (advMode === 'normal') {
-            advMode = 'adv';
-            btn.innerText = 'Advantage (2d20kh1)';
-            btn.className = 'btn-ctrl btn-heal';
-        } else if (advMode === 'adv') {
-            advMode = 'dis';
-            btn.innerText = 'Disadvantage (2d20kl1)';
-            btn.className = 'btn-ctrl btn-dmg';
-        } else {
-            advMode = 'normal';
-            btn.innerText = 'Normal';
-            btn.className = 'btn-ctrl';
-        }
-    }
-
-    function rollD20Core() {
-        const r1 = Math.floor(Math.random() * 20) + 1;
-        if (advMode === 'normal') return { roll: r1, raw: `${r1}`, isCrit: r1 === 20, isFumble: r1 === 1 };
-        const r2 = Math.floor(Math.random() * 20) + 1;
-        if (advMode === 'adv') {
-            const chosen = Math.max(r1, r2);
-            return { roll: chosen, raw: `[${r1}, ${r2}] ➔ ${chosen}`, isCrit: chosen === 20, isFumble: chosen === 1 };
-        } else {
-            const chosen = Math.min(r1, r2);
-            return { roll: chosen, raw: `[${r1}, ${r2}] ➔ ${chosen}`, isCrit: chosen === 20, isFumble: chosen === 1 };
-        }
-    }
-
-    function logRoll(htmlStr) {
-        const consoleEl = document.getElementById('roll-console-out');
-        consoleEl.innerHTML = htmlStr;
-        consoleEl.classList.remove('highlight-roll');
-        void consoleEl.offsetWidth; // trigger reflow
-        consoleEl.classList.add('highlight-roll');
-    }
-
-    function rollSimple(sides, label) {
-        const r = Math.floor(Math.random() * sides) + 1;
-        logRoll(`🎲 <strong>${label} Roll:</strong> <span style="font-family:'JetBrains Mono'; font-weight:800; font-size:1.1rem; color:#facc15;">${r}</span> (1d${sides})`);
-    }
-
-    function rollInitiative() {
-        const d = rollD20Core();
-        const tot = d.roll + 1;
-        logRoll(`🏁 <strong>Initiative Roll:</strong> ${d.raw} + 1 = <span style="font-family:'JetBrains Mono'; font-weight:800; font-size:1.15rem; color:#c084fc;">${tot}</span> ${d.isCrit ? '🔥 CRIT!' : ''}`);
-    }
-
-    function rollAbility(stat, mod, label) {
-        const d = rollD20Core();
-        const tot = d.roll + mod;
-        const sign = mod >= 0 ? `+${mod}` : `${mod}`;
-        logRoll(`🎲 <strong>${label}:</strong> ${d.raw} ${sign} = <span style="font-family:'JetBrains Mono'; font-weight:800; font-size:1.1rem; color:#a78bfa;">${tot}</span>`);
-    }
-
-    function rollSave(stat, mod, label) {
-        const d = rollD20Core();
-        const tot = d.roll + mod;
-        const sign = mod >= 0 ? `+${mod}` : `${mod}`;
-        logRoll(`🛡️ <strong>${label}:</strong> ${d.raw} ${sign} = <span style="font-family:'JetBrains Mono'; font-weight:800; font-size:1.1rem; color:#c084fc;">${tot}</span>`);
-    }
-
-    function rollSkill(name, mod) {
-        const d = rollD20Core();
-        const tot = d.roll + mod;
-        const sign = mod >= 0 ? `+${mod}` : `${mod}`;
-        logRoll(`✨ <strong>${name}:</strong> ${d.raw} ${sign} = <span style="font-family:'JetBrains Mono'; font-weight:800; font-size:1.15rem; color:#f472b6;">${tot}</span> ${d.isCrit ? '🌟 NAT 20!' : ''}`);
-    }
-
-    // --- COMBAT & SPELL ACTIONS ---
-    function rollRapierAttack(withPsychic) {
-        const d = rollD20Core();
-        const hitTot = d.roll + 3;
-        const d8 = Math.floor(Math.random() * 8) + 1;
-        let dmgTot = d8 + 1;
-        let psychicDmg = 0;
-        let psychicStr = "";
-
-        if (d.isCrit) dmgTot += 8 + (Math.floor(Math.random() * 8) + 1); // Brutal crit
-
-        if (withPsychic) {
-            if (bardicInsp <= 0) {
-                alert("No Bardic Inspiration remaining to fuel Psychic Blades!");
-            } else {
-                bardicInsp -= 1;
-                saveState();
-                const p1 = Math.floor(Math.random() * 6) + 1;
-                const p2 = Math.floor(Math.random() * 6) + 1;
-                psychicDmg = p1 + p2;
-                psychicStr = ` + <span style="color:#c084fc; font-weight:700;">${psychicDmg} Psychic</span> [2d6: ${p1}+${p2}]`;
-            }
-        }
-
-        logRoll(`🗡️ <strong>Rapier Strike:</strong> Attack ${d.raw} + 3 = <span style="color:#facc15; font-weight:800;">${hitTot}</span> to hit! ➔ <em>Damage:</em> <span style="color:#f87171; font-weight:800;">${dmgTot} Piercing</span> (1d8:${d8} + 1)${psychicStr} ${d.isCrit ? '🔥 CRIT!' : ''}`);
-    }
-
-    function rollDaggerAttack() {
-        const d = rollD20Core();
-        const hitTot = d.roll + 3;
-        const d4 = Math.floor(Math.random() * 4) + 1;
-        const dmgTot = d.isCrit ? (d4 + 4 + Math.floor(Math.random() * 4) + 1 + 1) : (d4 + 1);
-        logRoll(`🗡️ <strong>Steel Dagger:</strong> Attack ${d.raw} + 3 = <span style="color:#facc15; font-weight:800;">${hitTot}</span> to hit! ➔ <em>Damage:</em> <span style="color:#f87171; font-weight:800;">${dmgTot} Piercing</span> (1d4:${d4} + 1)`);
-    }
-
-    function rollPsychicBlades() {
-        if (bardicInsp <= 0) {
-            alert("No Bardic Inspiration remaining! (3/Long Rest)");
-            return;
-        }
-        bardicInsp -= 1;
-        saveState();
-        const p1 = Math.floor(Math.random() * 6) + 1;
-        const p2 = Math.floor(Math.random() * 6) + 1;
-        const tot = p1 + p2;
-        logRoll(`🧠 <strong>Psychic Blades Infusion:</strong> Dealt <span style="color:#c084fc; font-size:1.15rem; font-weight:800;">${tot} Psychic Damage</span> (2d6: ${p1}+${p2}) on weapon strike! (${bardicInsp}/3 dice remaining)`);
-    }
-
-    function rollWordsTerror() {
-        logRoll(`👁️ <strong>Words of Terror Seeded:</strong> Target humanoid must make a <span style="color:#f472b6; font-weight:800;">DC 13 Wisdom Save</span> or be Frightened for 1 hour!`);
-    }
-
-    function rollSpitfireFlask() {
-        const d1 = Math.floor(Math.random() * 4) + 1;
-        const d2 = Math.floor(Math.random() * 4) + 1;
-        const tot = d1 + d2;
-        logRoll(`💣 <strong>Spitfire Flask Thrown (20 ft):</strong> 5-ft radius explosion deals <span style="color:#f87171; font-size:1.1rem; font-weight:800;">${tot} Fire Damage</span> (2d4: ${d1}+${d2}, DC 11 Dex save for half)!`);
-    }
-
-    function castViciousMockery() {
-        const d4 = Math.floor(Math.random() * 4) + 1;
-        logRoll(`🎭 <strong>Vicious Mockery:</strong> Target makes <span style="color:#facc15; font-weight:800;">DC 13 Wisdom Save</span>. On fail: takes <span style="color:#c084fc; font-weight:800;">${d4} Psychic Damage</span> and suffers <strong>Disadvantage</strong> on next attack roll!`);
-    }
-
-    function castDissonantWhispers() {
-        const d1 = Math.floor(Math.random() * 6) + 1;
-        const d2 = Math.floor(Math.random() * 6) + 1;
-        const d3 = Math.floor(Math.random() * 6) + 1;
-        const tot = d1 + d2 + d3;
-        logRoll(`🧠 <strong>Dissonant Whispers:</strong> Target makes <span style="color:#facc15; font-weight:800;">DC 13 Wisdom Save</span>. On fail: takes <span style="color:#c084fc; font-size:1.1rem; font-weight:800;">${tot} Psychic Damage</span> (3d6: ${d1}+${d2}+${d3}) and must immediately flee using its reaction!`);
-    }
-
-    function castHealingWord() {
-        const d4 = Math.floor(Math.random() * 4) + 1;
-        const tot = d4 + 3;
-        logRoll(`💚 <strong>Healing Word Cast:</strong> Restores <span style="color:#86efac; font-size:1.1rem; font-weight:800;">+${tot} Hit Points</span> (1d4:${d4} + 3 CHA) to target within 60 ft!`);
-    }
-
-    function castColorSpray() {
-        let total = 0;
-        let rolls = [];
-        for (let i = 0; i < 6; i++) {
-            let r = Math.floor(Math.random() * 10) + 1;
-            rolls.push(r);
-            total += r;
-        }
-        logRoll(`🌈 <strong>Color Spray Cast:</strong> Affects <span style="color:#f472b6; font-size:1.1rem; font-weight:800;">${total} HP of creatures</span> in a 15-ft cone with Blindness! [6d10: ${rolls.join('+')}]`);
-    }
-
-    // --- SPELL SLOTS PERSISTENCE ---
-    function saveSpellSlots() {
-        const slots = {
-            s1_1: document.getElementById('slot1-1').checked,
-            s1_2: document.getElementById('slot1-2').checked,
-            s1_3: document.getElementById('slot1-3').checked,
-            s1_4: document.getElementById('slot1-4').checked,
-            s2_1: document.getElementById('slot2-1').checked,
-            s2_2: document.getElementById('slot2-2').checked
-        };
-        localStorage.setItem('sylvar_slots', JSON.stringify(slots));
-    }
-
-    function loadSpellSlots() {
-        const saved = localStorage.getItem('sylvar_slots');
-        if (!saved) return;
-        try {
-            const slots = JSON.parse(saved);
-            if (slots.s1_1 !== undefined) document.getElementById('slot1-1').checked = slots.s1_1;
-            if (slots.s1_2 !== undefined) document.getElementById('slot1-2').checked = slots.s1_2;
-            if (slots.s1_3 !== undefined) document.getElementById('slot1-3').checked = slots.s1_3;
-            if (slots.s1_4 !== undefined) document.getElementById('slot1-4').checked = slots.s1_4;
-            if (slots.s2_1 !== undefined) document.getElementById('slot2-1').checked = slots.s2_1;
-            if (slots.s2_2 !== undefined) document.getElementById('slot2-2').checked = slots.s2_2;
-        } catch (e) {}
-    }
-
-    function resetSlots(tier) {
-        if (tier === 1) {
-            document.getElementById('slot1-1').checked = true;
-            document.getElementById('slot1-2').checked = true;
-            document.getElementById('slot1-3').checked = true;
-            document.getElementById('slot1-4').checked = true;
-        } else if (tier === 2) {
-            document.getElementById('slot2-1').checked = true;
-            document.getElementById('slot2-2').checked = true;
-        }
-        saveSpellSlots();
-        logRoll(`🔄 <strong>Level ${tier} Spell Slots Reset to Full!</strong>`);
-    }
-
-    // --- GOLD TRANSACTION ENGINE ---
-    function normalizeCoins() {
-        if (curSP >= 10) {
-            curGP += Math.floor(curSP / 10);
-            curSP = curSP % 10;
-        }
-        while (curSP < 0 && curGP > 0) {
-            curGP -= 1;
-            curSP += 10;
-        }
-        if (curGP <= 0 && curSP < 0) {
-            curGP = 0;
-            curSP = 0;
-        }
-    }
-
-    function stepGold(delta) {
-        let totalSP = (curGP * 10) + curSP;
-        totalSP = Math.max(0, totalSP + (delta * 10));
-        curGP = Math.floor(totalSP / 10);
-        curSP = totalSP % 10;
-        saveState();
-        logRoll(`💰 <strong>Gold Adjusted (${delta > 0 ? '+' : ''}${delta} GP):</strong> Total: <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP.`);
-    }
-
-    function stepSilver(delta) {
-        curSP += delta;
-        normalizeCoins();
-        saveState();
-        logRoll(`🥈 <strong>Silver Adjusted (${delta > 0 ? '+' : ''}${delta} SP):</strong> Total: <span style="color:#facc15; font-weight:700;">${curGP} GP</span>, ${curSP} SP.`);
-    }
-
-    function openTxModal() {
-        document.getElementById('tx-modal').showModal();
-        renderTxList();
-    }
-
-    function closeTxModal() {
-        document.getElementById('tx-modal').close();
-    }
-
-    function getTxHistory() {
-        const h = localStorage.getItem('sylvar_tx_history');
-        return h ? JSON.parse(h) : [];
-    }
-
-    function logTx(type, label, delta, total) {
-        const history = getTxHistory();
-        history.unshift({ type, label, delta, total, time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) });
-        if (history.length > 30) history.pop();
-        localStorage.setItem('sylvar_tx_history', JSON.stringify(history));
-        renderTxList();
-    }
-
-    function applyTxAdd() {
-        const amt = parseInt(document.getElementById('tx-gold-input').value) || 0;
-        const memo = document.getElementById('tx-reason-input').value.trim();
-        if (amt <= 0) return;
-        curGP += amt;
-        document.getElementById('tx-gold-input').value = '';
-        document.getElementById('tx-reason-input').value = '';
-        saveState();
-        logTx('gain', memo || 'Earned Gold', `+${amt} GP`, `${curGP} GP, ${curSP} SP`);
-    }
-
-    function applyTxSpend() {
-        const amt = parseInt(document.getElementById('tx-gold-input').value) || 0;
-        const memo = document.getElementById('tx-reason-input').value.trim();
-        if (amt <= 0) return;
-        let totalSP = (curGP * 10) + curSP;
-        if (amt * 10 > totalSP) {
-            alert("Insufficient gold funds!");
-            return;
-        }
-        totalSP -= (amt * 10);
-        curGP = Math.floor(totalSP / 10);
-        curSP = totalSP % 10;
-        document.getElementById('tx-gold-input').value = '';
-        document.getElementById('tx-reason-input').value = '';
-        saveState();
-        logTx('spend', memo || 'Spent Gold', `-${amt} GP`, `${curGP} GP, ${curSP} SP`);
-    }
-
-    function renderTxList() {
-        const list = document.getElementById('modal-tx-list');
-        const history = getTxHistory();
-        if (history.length === 0) {
-            list.innerHTML = `<div style="text-align:center; color:var(--text-muted); padding:10px; font-size:0.75rem;">No recorded transactions yet.</div>`;
-            return;
-        }
-        list.innerHTML = history.map(item => `
-            <div class="tx-item ${item.type === 'spend' ? 'tx-spend' : 'tx-gain'}">
-                <div>
-                    <strong>${item.label}</strong> <small style="color:var(--text-muted); font-size:0.65rem;">• ${item.time}</small>
-                    <div style="font-size:0.68rem; color:var(--text-dim);">Balance: ${item.total}</div>
+        <!-- MAIN 2-COLUMN LAYOUT -->
+        <div class="main-layout">
+            
+            <!-- LEFT COLUMN: VITALS, TOGGLES, ABILITIES, SAVES & 18 INDIVIDUAL SKILLS -->
+            <div>
+                
+                <!-- 4-BOX VITALS -->
+                <div class="vitals-4box">
+                    <div class="vital-mini-box">
+                        <span class="vital-mini-lbl">HIT POINTS</span>
+                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">21/21</span>
+                    </div>
+                    <div class="vital-mini-box">
+                        <span class="vital-mini-lbl">ARMOR CLASS</span>
+                        <span class="vital-mini-val" id="ac-disp" style="color:var(--accent-gold);">12</span>
+                    </div>
+                    <div class="vital-mini-box" onclick="rollD20('Initiative Roll (DEX +1)', 1)" style="cursor:pointer;" title="Click to roll Initiative (+1)">
+                        <span class="vital-mini-lbl">INIT 🎲</span>
+                        <span class="vital-mini-val" style="color:var(--accent-blue);">+1</span>
+                    </div>
+                    <div class="vital-mini-box" title="Base Bard DC 13, Hit +5 (Charisma +3, Prof +2)">
+                        <span class="vital-mini-lbl">SPELL DC / HIT</span>
+                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 13 | +5</span>
+                    </div>
                 </div>
-                <div style="font-weight:800; font-family:'JetBrains Mono'; color:${item.type === 'spend' ? 'var(--accent-red)' : 'var(--accent-green)'};">
-                    ${item.delta}
+
+                <!-- INTEGRATED HP & TEMPORARY HP CONTROLLER -->
+                <div class="hp-ctrl-container">
+                    <div class="hp-health-bar-bg">
+                        <div class="hp-health-bar-fill" id="hp-bar" style="width: 100%;"></div>
+                        <div class="hp-health-bar-temp" id="hp-temp-bar" style="width: 0%;"></div>
+                    </div>
+                    
+                    <div style="display:flex; flex-direction:column; gap:6px;">
+                        <!-- Top Row: Spacious Number Input + Damage/Heal Buttons -->
+                        <div style="display:flex; align-items:center; gap:6px; width:100%;">
+                            <input type="number" id="hp-input" class="hp-input-num" placeholder="Enter amount..." min="1" max="999" style="flex:1; height:34px; font-size:0.92rem; text-align:left; padding:4px 10px; font-weight:600; background:#0b1220; border:1.5px solid var(--card-border); border-radius:4px;">
+                            <button class="btn-act btn-act-dmg" onclick="applyDamage()" style="padding:6px 14px; height:34px; font-size:0.84rem; font-weight:700;" title="Take custom damage">💥 Take Damage</button>
+                            <button class="btn-act btn-act-heal" onclick="applyHeal()" style="padding:6px 14px; height:34px; font-size:0.84rem; font-weight:700;" title="Heal custom amount">💚 Heal HP</button>
+                        </div>
+                        <!-- Bottom Row: Small +/- Steppers with Clear Temp and Rests -->
+                        <div style="display:flex; align-items:center; justify-content:space-between; gap:4px; width:100%;">
+                            <div style="display:flex; gap:4px;">
+                                <button class="btn-act btn-act-dmg" style="padding: 4px 9px; font-size: 0.76rem; font-weight:700;" onclick="stepHP(-1)" title="Decrease 1 HP">➖ -1</button>
+                                <button class="btn-act btn-act-heal" style="padding: 4px 9px; font-size: 0.76rem; font-weight:700;" onclick="stepHP(1)" title="Increase 1 HP">➕ +1</button>
+                            </div>
+                            <div style="display:flex; gap:4px;">
+                                <button class="btn-act btn-act-pre" onclick="clearTempHP()" style="padding:4px 8px; font-size:0.72rem; color:#94a3b8;" title="Clear Temp HP">🛡️ Clear Temp</button>
+                                <button class="btn-act btn-act-pre" onclick="takeShortRest()" style="padding:4px 8px; font-size:0.72rem; color:var(--accent-blue);" title="Short Rest (Song of Rest +1d6 & +1 Help Token)">☕ Short Rest</button>
+                                <button class="btn-act btn-act-pre" onclick="resetHP()" style="padding:4px 8px; font-size:0.72rem; color:var(--accent-green);" title="Full Long Rest (Restore HP, Slots, Inspiration & Help)">⛺ Long Rest</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- DYNAMIC ABILITY / BUFF TOGGLES -->
+                <div class="buffs-toggle-bar">
+                    <!-- Feline Agility Toggle -->
+                    <div class="toggle-btn-card" id="card-feline-toggle" onclick="toggleFelineAgilityBuff()">
+                        <div>
+                            <div style="font-size:0.74rem; font-weight:700;">🐾 Feline Agility</div>
+                            <div style="font-size:0.66rem; color:var(--text-dim);" id="sub-feline">Speed: 30 ft</div>
+                        </div>
+                        <span class="toggle-badge on" id="badge-feline">READY (60ft)</span>
+                    </div>
+
+                    <!-- Cloak of Protection Toggle -->
+                    <div class="toggle-btn-card active-buff" id="card-cloak-toggle" onclick="toggleCloakBuff()">
+                        <div>
+                            <div style="font-size:0.74rem; font-weight:700;">🛡️ Cloak of Protection</div>
+                            <div style="font-size:0.66rem; color:var(--text-dim);">+1 AC & Saves</div>
+                        </div>
+                        <span class="toggle-badge on" id="badge-cloak">ATTUNED</span>
+                    </div>
+                </div>
+
+                <!-- BARDIC INSPIRATION & HELP TOKENS TRACKERS -->
+                <div class="panel" style="padding: 7px 10px; gap:6px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-size:0.76rem; font-weight:700; color:var(--accent-purple);">🪘 Bardic Inspiration (d6):</span>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <span id="insp-tokens-disp" style="font-weight:700; color:var(--accent-purple); font-size:0.88rem;">3 / 3</span>
+                            <button class="btn-act btn-roll-purple" onclick="rollBardicInspDie()" style="padding:2px 7px; font-size:0.7rem;">🎲 Roll d6</button>
+                            <button class="btn-act btn-act-pre" onclick="modBardicInsp(1)" style="padding:2px 5px; font-size:0.68rem;">+1</button>
+                            <button class="btn-act btn-act-pre" onclick="resetBardicInsp()" style="padding:2px 5px; font-size:0.68rem;">Reset</button>
+                        </div>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(255,255,255,0.06); padding-top:5px;">
+                        <span style="font-size:0.76rem; font-weight:700; color:#67e8f9;">🤝 Table Help Tokens:</span>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <span id="help-tokens-disp" style="font-weight:700; color:#67e8f9; font-size:0.88rem;">2 / 2</span>
+                            <button class="btn-act btn-act-temp" onclick="rollHelpToken()" style="padding:2px 7px; font-size:0.7rem;">🎲 Spend (+1d6)</button>
+                            <button class="btn-act btn-act-pre" onclick="modHelpToken(1)" style="padding:2px 5px; font-size:0.68rem; color:#67e8f9;">+1</button>
+                            <button class="btn-act btn-act-pre" onclick="resetHelpTokens()" style="padding:2px 5px; font-size:0.68rem;">Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 ABILITY SCORES STRIP -->
+                <div class="ability-strip">
+                    <div class="ability-box" onclick="rollD20('STR Check', -1)" title="Click to roll STR Check (-1)">
+                        <div class="ability-name">STR</div>
+                        <div class="ability-score">9</div>
+                        <div class="ability-mod">-1</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('DEX Check', 1)" title="Click to roll DEX Check (+1)">
+                        <div class="ability-name">DEX</div>
+                        <div class="ability-score">13</div>
+                        <div class="ability-mod">+1</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('CON Check', 0)" title="Click to roll CON Check (+0)">
+                        <div class="ability-name">CON</div>
+                        <div class="ability-score">10</div>
+                        <div class="ability-mod">+0</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('INT Check', -3)" title="Click to roll INT Check (-3)">
+                        <div class="ability-name">INT</div>
+                        <div class="ability-score">5</div>
+                        <div class="ability-mod">-3</div>
+                    </div>
+                    <div class="ability-box" onclick="rollD20('WIS Check', 1)" title="Click to roll WIS Check (+1)">
+                        <div class="ability-name">WIS</div>
+                        <div class="ability-score">12</div>
+                        <div class="ability-mod">+1</div>
+                    </div>
+                    <div class="ability-box active-key" onclick="rollD20('CHA Check', 3)" title="Click to roll CHA Check (+3)">
+                        <div class="ability-name">CHA</div>
+                        <div class="ability-score">17</div>
+                        <div class="ability-mod">+3</div>
+                    </div>
+                </div>
+
+                <!-- SAVING THROWS PANEL -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🛡️ Saving Throws</span>
+                        <span style="font-size:0.7rem; color:var(--text-dim);">+1 Cloak Active</span>
+                    </div>
+                    <ul class="stat-row-list">
+                        <li class="stat-row-item prof-item" onclick="rollD20('Charisma Saving Throw ★', 6)"><span>Charisma Save ★</span><span>+6 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Dexterity Saving Throw ★', 4)"><span>Dexterity Save ★</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Wisdom Save', 2)"><span>Wisdom Save</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Constitution Save', 1)"><span>Constitution Save</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Strength Save', 0)"><span>Strength Save</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Intelligence Save', -2)"><span>Intelligence Save</span><span>-2 🎲</span></li>
+                    </ul>
+                </div>
+
+                <!-- ALL 18 SKILLS MATRIX (INDIVIDUALLY SEPARATED) -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🎯 All 18 Skills (Individual Rolls)</span>
+                        <span style="font-size:0.7rem; color:var(--text-dim);">Jack of All Trades (+1)</span>
+                    </div>
+                    <ul class="stat-row-list">
+                        <li class="stat-row-item prof-item" onclick="rollD20('Acrobatics (DEX) ★', 3)"><span>Acrobatics (DEX) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Animal Handling (WIS)', 2)"><span>Animal Handling (WIS)</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Arcana (INT)', -2)"><span>Arcana (INT)</span><span>-2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Athletics (STR)', 0)"><span>Athletics (STR)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Deception (CHA)', 4)"><span>Deception (CHA)</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('History (INT)', -2)"><span>History (INT)</span><span>-2 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Insight (WIS) ★', 3)"><span>Insight (WIS) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Intimidation (CHA)', 4)"><span>Intimidation (CHA)</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Investigation (INT)', -2)"><span>Investigation (INT)</span><span>-2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Medicine (WIS)', 2)"><span>Medicine (WIS)</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Nature (INT)', -2)"><span>Nature (INT)</span><span>-2 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Perception (WIS) ★ [Cat\'s Talent]', 3)"><span>Perception (WIS) ★ [Cat's Talent]</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item expertise-item" onclick="rollD20('Performance (CHA) ★★ [Expertise]', 7)"><span>Performance (CHA) ★★ [Expertise]</span><span>+7 🎲</span></li>
+                        <li class="stat-row-item expertise-item" onclick="rollD20('Persuasion (CHA) ★★ [Expertise]', 7)"><span>Persuasion (CHA) ★★ [Expertise]</span><span>+7 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Religion (INT)', -2)"><span>Religion (INT)</span><span>-2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 2)"><span>Sleight of Hand (DEX)</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 2)"><span>Stealth (DEX)</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Survival (WIS)', 2)"><span>Survival (WIS)</span><span>+2 🎲</span></li>
+                    </ul>
+                </div>
+
+                <!-- 💰 SLEEK GOLD & COIN PURSE (LEFT SIDE) -->
+                <div class="panel" style="padding: 8px 10px; background: linear-gradient(135deg, #18150a 0%, #0d121c 100%); border: 1px solid rgba(245, 158, 11, 0.35); margin-top: 8px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 5px;">
+                        <div style="display:flex; align-items:center; gap:5px;">
+                            <span style="font-size:0.95rem;">💰</span>
+                            <span style="color:var(--accent-gold); font-size:0.75rem; font-weight:800; letter-spacing:0.5px;">GOLD PURSE</span>
+                            <span style="font-size:0.62rem; color:var(--text-muted); font-weight:600; background:rgba(255,255,255,0.05); padding:1px 4px; border-radius:3px; border:1px solid rgba(255,255,255,0.1);" title="Standard 5e Economy: 10 Silver = 1 Gold">10 SP = 1 GP</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <button class="btn-act btn-act-pre" onclick="openGoldHistoryModal()" style="font-size:0.68rem; padding:2px 6px; color:var(--accent-gold); border:1px solid rgba(245,158,11,0.4);" title="Open transaction history ledger">📜 Ledger</button>
+                            <button class="btn-act btn-act-pre" onclick="resetGoldPurse()" style="font-size:0.68rem; padding:2px 5px; color:#cbd5e1;" title="Reset gold to default starting 115 GP, 8 SP">🔄 Reset</button>
+                            <div style="display:flex; align-items:baseline; gap:4px; margin-left:3px;">
+                                <span id="gold-disp" style="font-size:1.15rem; font-weight:800; color:#facc15; font-family:'Inter', sans-serif;">115</span>
+                                <span style="font-size:0.7rem; font-weight:700; color:#fbbf24;">GP</span>
+                                <span style="color:var(--text-dim); font-size:0.75rem;">•</span>
+                                <span id="silver-disp" style="font-size:0.95rem; font-weight:700; color:#cbd5e1; font-family:'Inter', sans-serif;">8</span>
+                                <span style="font-size:0.68rem; font-weight:600; color:#94a3b8;">SP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 1: Amount Input + Optional Reason + Spend/Add -->
+                    <div style="display:flex; align-items:center; gap:4px; margin-bottom:5px;">
+                        <input type="number" id="gold-input" class="hp-input-num" placeholder="GP..." min="1" max="99999" style="width:54px; height:26px; font-size:0.78rem; text-align:left; padding:2px 6px; font-weight:600; background:#0b1220; border:1px solid rgba(245,158,11,0.3); border-radius:3px; color:#fef08a;">
+                        <input type="text" id="gold-reason-input" placeholder="Memo / Reason (optional)..." style="flex:1; height:26px; font-size:0.72rem; padding:2px 6px; background:#0b1220; border:1px solid #334155; border-radius:3px; color:#cbd5e1;">
+                        <button class="btn-act btn-act-dmg" onclick="applyGoldSpend()" style="padding:2px 8px; height:26px; font-size:0.72rem; font-weight:700;" title="Spend entered GP">- Spend</button>
+                        <button class="btn-act btn-act-heal" onclick="applyGoldAdd()" style="padding:2px 8px; height:26px; font-size:0.72rem; font-weight:700; background:linear-gradient(135deg, #ca8a04 0%, #a16207 100%); color:#fff;" title="Add entered GP">+ Add</button>
+                    </div>
+
+                    <!-- Row 2: Sleek Quick Steppers -->
+                    <div style="display:flex; align-items:center; justify-content:space-between; gap:3px;">
+                        <div style="display:flex; gap:2px; align-items:center;">
+                            <button class="btn-act btn-act-dmg" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(-5)">-5</button>
+                            <button class="btn-act btn-act-dmg" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(-1)">-1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(1)">+1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(5)">+5</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 5px; font-size:0.68rem; font-weight:700;" onclick="stepGold(10)">+10</button>
+                        </div>
+                        <div style="display:flex; gap:2px; align-items:center;">
+                            <span style="font-size:0.65rem; color:var(--text-dim); font-weight:600;">SP:</span>
+                            <button class="btn-act btn-act-dmg" style="padding:2px 4px; font-size:0.65rem; font-weight:700;" onclick="stepSilver(-5)">-5</button>
+                            <button class="btn-act btn-act-pre" style="padding:2px 4px; font-size:0.65rem;" onclick="stepSilver(-1)">-1</button>
+                            <button class="btn-act btn-act-pre" style="padding:2px 4px; font-size:0.65rem;" onclick="stepSilver(1)">+1</button>
+                            <button class="btn-act btn-act-heal" style="padding:2px 4px; font-size:0.65rem; font-weight:700;" onclick="stepSilver(5)">+5</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        `).join('');
-    }
 
-    // --- COMPENDIUM DATASET ---
-    const COMPENDIUM = {
-        feat_psychic_blades: {
-            title: "🧠 Psychic Blades (College of Whispers)",
-            body: `<strong>Level 3 Whispers Feature:</strong> When you hit a creature with a weapon attack, you can expend 1 use of Bardic Inspiration to deal an extra <strong>2d6 Psychic damage</strong> to that target.<br><br>• You can do this only once per round on your turn.<br>• Increases to 3d6 at 5th level, 5d6 at 10th level, and 8d6 at 15th level.`
-        },
-        feat_words_terror: {
-            title: "👁️ Words of Terror (College of Whispers)",
-            body: `<strong>Level 3 Whispers Feature:</strong> If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a <strong>DC 13 Wisdom saving throw</strong> or be <strong>Frightened</strong> of you or another chosen creature for 1 hour.<br><br>• Ends early if attacked/damaged or witnesses allies damaged.<br>• If it succeeds, it has no hint that you tried to frighten it.<br>• Recharges on a Short or Long Rest.`
-        },
-        feat_song_rest: {
-            title: "🎶 Song of Rest (Bard Feature)",
-            body: `You can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra <strong>1d6 Hit Points</strong>.`
-        },
-        item_rapier: {
-            title: "🗡️ Steel Rapier",
-            body: `<strong>Finesse Martial Weapon:</strong> +3 to hit, reach 5 ft. Deals <strong>1d8 + 1 Piercing damage</strong>. Can be combined with College of Whispers <em>Psychic Blades</em> for +2d6 Psychic damage on hit!`
-        },
-        item_dagger: {
-            title: "🗡️ Steel Daggers",
-            body: `<strong>Finesse, Light, Thrown (20/60 ft):</strong> +3 to hit, deals <strong>1d4 + 1 Piercing damage</strong>.`
-        },
-        item_spitfire: {
-            title: "💣 Spitfire Flask",
-            body: `<strong>Volatile Alchemical Weapon:</strong> Thrown 20 ft. Explodes in 5-ft radius dealing <strong>2d4 Fire Damage</strong> (DC 11 Dex save for half).`
-        },
-        spell_vicious_mockery: {
-            title: "🎭 Vicious Mockery (Enchantment Cantrip)",
-            body: `<strong>Range 60 ft • Action:</strong> Target creature must succeed on a <strong>DC 13 Wisdom saving throw</strong> or take <strong>1d4 Psychic damage</strong> and have <strong>Disadvantage</strong> on the next attack roll it makes before the end of its next turn.`
-        },
-        spell_dissonant_whispers: {
-            title: "🧠 Dissonant Whispers (1st-Level Enchantment)",
-            body: `<strong>Range 60 ft • Action:</strong> Whisper a discordant melody. Target makes a <strong>DC 13 Wisdom saving throw</strong>. On fail: takes <strong>3d6 Psychic damage</strong> and must immediately use its reaction to move as far as its speed allows away from you. Half damage and no movement on success.`
-        },
-        spell_healing_word: {
-            title: "💚 Healing Word (1st-Level Evocation)",
-            body: `<strong>Range 60 ft • Bonus Action:</strong> Target creature you can see/sense regains <strong>1d4 + 3 Hit Points</strong>.`
-        },
-        spell_color_spray: {
-            title: "🌈 Color Spray (1st-Level Illusion)",
-            body: `<strong>Self (15-ft cone) • Action:</strong> Dazzling colored light springs from your hand. Roll <strong>6d10</strong>; that total is how many HP of creatures are affected with Blindness until the end of your next turn in ascending HP order.`
-        },
-        spell_charm_person: {
-            title: "💖 Charm Person (1st-Level Enchantment)",
-            body: `<strong>Range 30 ft • Action • Duration: 1 hour:</strong> Attempt to charm 1 humanoid. DC 13 Wisdom saving throw (with Advantage if in combat). On fail: regards you as a friendly acquaintance.`
-        },
-        spell_calm_emotions: {
-            title: "🕊️ Calm Emotions (2nd-Level Enchantment)",
-            body: `<strong>Range 60 ft • 20-ft radius sphere • Concentration (1 min):</strong> Each humanoid makes a DC 13 Charisma save. On fail: suppress Charmed/Frightened conditions, or make hostile targets indifferent.`
-        },
-        spell_enthrall: {
-            title: "✨ Enthrall (2nd-Level Enchantment)",
-            body: `<strong>Range 60 ft • Duration: 1 min:</strong> Weave a distracting string of words. Creatures make a DC 13 Wisdom save. On fail: target has Disadvantage on Wisdom (Perception) checks to perceive any creature other than you.`
+            <!-- RIGHT COLUMN: ACTIONS (WEAPONS + CANTRIPS), SPELLBOOK WITH LEVEL DROPDOWN, RELICS, INVENTORY -->
+            <div>
+                
+                <!-- ⚔️ ACTIONS & AT-WILL ATTACKS (WEAPONS + CANTRIPS) -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>⚔️ Actions & At-Will Attacks (Weapons + Cantrips)</span>
+                        <span style="font-size:0.7rem; color:var(--accent-blue);">At-Will / Unlimited</span>
+                    </div>
+
+                    <div class="action-grid-2col">
+                        <!-- Steel Rapier -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('rapier')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🗡️ Steel Rapier <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Melee Weapon • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">FINESSE</span>
+                            </div>
+                            <div class="action-desc">Reach 5ft. +3 to Hit, 1d8+1 Piercing. Combines with Psychic Blades (+2d6)!</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="rollD20('Rapier Attack', 3)">🗡️ Attack</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Rapier Damage', 8, 1, 'Piercing')">💥 Damage</button>
+                                <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">⚡ +2d6 Psychic</button>
+                            </div>
+                        </div>
+
+                        <!-- Steel Daggers -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('dagger')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🗡️ Steel Daggers (2) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Finesse / Thrown 20/60ft</div>
+                                </div>
+                                <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">LIGHT</span>
+                            </div>
+                            <div class="action-desc">Reach 5ft / Range 20/60. +3 to Hit, 1d4+1 Piercing.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="rollD20('Dagger Attack', 3)">🗡️ Attack</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Dagger Damage', 4, 1, 'Piercing')">💥 Damage</button>
+                            </div>
+                        </div>
+
+                        <!-- Vicious Mockery -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('viciousmockery')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-purple)'" onmouseout="this.style.color='#f8fafc'">
+                                        🎭 Vicious Mockery (Cantrip) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:var(--accent-purple); margin-top:1px;">Cantrip • 1 Action • 60ft</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:var(--accent-purple); font-weight:700;">ENCHANTMENT</span>
+                            </div>
+                            <div class="action-desc">DC 13 Wis Save. On fail: 1d4 Psychic & Disadvantage on next attack!</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action btn-roll-purple" onclick="castViciousMockery()">🎭 Cast (DC 13 Wis)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Vicious Mockery Dmg', 4, 0, 'Psychic')">💥 1d4 Dmg</button>
+                            </div>
+                        </div>
+
+                        <!-- Dancing Lights -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('dancinglights')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='#f8fafc'">
+                                        ✨ Dancing Lights (Cantrip) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#38bdf8; margin-top:1px;">Cantrip • 1 Action • 120ft</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:#38bdf8; font-weight:700;">EVOCATION</span>
+                            </div>
+                            <div class="action-desc">Create up to 4 torch-like glowing lights within 120ft (Concentration 1m).</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="castUtility('✨ Cast Dancing Lights (Creates 4 floating lights within 120ft • Conc 1m)')">✨ Cast</button>
+                            </div>
+                        </div>
+
+                        <!-- Spitfire Flask -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('spitfire')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='#f87171'" onmouseout="this.style.color='#f8fafc'">
+                                        💣 Spitfire Flask (2 Flasks) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f87171; margin-top:1px;">Thrown 20ft • 5ft AoE</div>
+                                </div>
+                                <span style="font-size:0.62rem; color:#f87171; font-weight:700; background:rgba(239,68,68,0.1); border:1px solid #ef4444; padding:1px 5px; border-radius:3px;">ALCHEMICAL</span>
+                            </div>
+                            <div class="action-desc">Explodes in 5ft radius dealing 2d4 Fire Damage (DC 11 Dex save for half).</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollSpitfireFlaskAction()">💣 Throw (2d4 Fire)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🔮 BARDIC SPELLS KNOWN & SCALABLE CASTING -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🔮 Bardic Spells Known (College of Whispers)</span>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span style="font-size:0.72rem; color:var(--text-dim);">6 Spells Known</span>
+                            <button class="btn-act btn-act-pre" onclick="refillAllSlots()" style="font-size:0.68rem; color:var(--accent-gold);">⛺ Refill Slots</button>
+                        </div>
+                    </div>
+
+                    <!-- MULTI-TIER SPELL SLOT TRACKER (LEVEL 1, 2, 3) -->
+                    <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:6px 8px; display:flex; flex-direction:column; gap:4px; margin-bottom:5px;">
+                        <div style="font-size:0.68rem; font-weight:700; color:var(--text-dim); text-transform:uppercase; display:flex; justify-content:space-between;">
+                            <span>🔮 Spell Slots by Level</span>
+                            <span style="font-size:0.64rem; color:var(--text-muted); font-weight:normal;">Auto-deducts on cast</span>
+                        </div>
+                        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:5px;">
+                            <!-- Level 1 Slots -->
+                            <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <span style="font-size:0.68rem; font-weight:700; color:var(--accent-blue);">1st:</span>
+                                    <span id="slot-1-disp" style="font-size:0.72rem; font-weight:700; color:#f8fafc; font-family:'JetBrains Mono';">4 / 4</span>
+                                </div>
+                                <div style="display:flex; gap:2px;">
+                                    <button class="btn-act btn-act-pre" style="padding:1px 4px; font-size:0.65rem;" onclick="modSpellSlot(1, -1)">-</button>
+                                    <button class="btn-act btn-act-pre" style="padding:1px 4px; font-size:0.65rem;" onclick="modSpellSlot(1, 1)">+</button>
+                                </div>
+                            </div>
+
+                            <!-- Level 2 Slots -->
+                            <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <span style="font-size:0.68rem; font-weight:700; color:var(--accent-purple);">2nd:</span>
+                                    <span id="slot-2-disp" style="font-size:0.72rem; font-weight:700; color:#f8fafc; font-family:'JetBrains Mono';">2 / 2</span>
+                                </div>
+                                <div style="display:flex; gap:2px;">
+                                    <button class="btn-act btn-act-pre" style="padding:1px 4px; font-size:0.65rem;" onclick="modSpellSlot(2, -1)">-</button>
+                                    <button class="btn-act btn-act-pre" style="padding:1px 4px; font-size:0.65rem;" onclick="modSpellSlot(2, 1)">+</button>
+                                </div>
+                            </div>
+
+                            <!-- Level 3 Slots (Locked) -->
+                            <div style="background:#090e1a; border:1px solid #1e293b; border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center; opacity:0.6;">
+                                <div>
+                                    <span style="font-size:0.68rem; font-weight:700; color:#64748b;">3rd:</span>
+                                    <span style="font-size:0.68rem; color:#64748b;">🔒 Lv 5 Req</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2-COLUMN GRID OF SCALABLE SPELLS -->
+                    <div class="action-grid-2col" id="spellbook-grid">
+                        <!-- Rendered by JS -->
+                    </div>
+                </div>
+
+                <!-- 🌟 RELICS, RECOVERIES & ACTIVE CLASS FEATURES -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🗡️ College of Whispers Features & Relics</span>
+                    </div>
+
+                    <div style="display:flex; flex-direction:column; gap:5px;">
+                        <!-- Psychic Blades -->
+                        <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-purple);">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <strong style="color:var(--accent-purple);">🧠 Psychic Blades:</strong>
+                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">Deal +2d6 Psychic on weapon hit (Costs 1 Insp).</span>
+                                </div>
+                                <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">🗡️ Infuse (+2d6)</button>
+                            </div>
+                        </div>
+
+                        <!-- Words of Terror -->
+                        <div class="action-card" style="background:#111827; border-left:3px solid #f472b6;">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <strong style="color:#f472b6;">👁️ Words of Terror:</strong>
+                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">1 min private talk ➔ DC 13 Wis save or Frightened 1 hr.</span>
+                                </div>
+                                <button class="btn-roll-action" style="background:#831843; color:#fce7f3;" onclick="rollWordsOfTerrorAction()">🗣️ Seed Paranoia</button>
+                            </div>
+                        </div>
+
+                        <!-- Clyssavar's Silver Harmonic Scale -->
+                        <div class="action-card" style="background:#0e1728; border-left:3px solid #38bdf8;">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <strong style="color:#38bdf8;">❄️ Clyssavar's Silver Harmonic Scale:</strong>
+                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">+1 DC/Atk, 60ft Blindsight, Crystalline Sound-Burst (1/Day).</span>
+                                </div>
+                                <button class="btn-roll-action" style="background:#0284c7;" onclick="rollCrystallineSoundBurst()">❄️ Sound-Burst (+1d6)</button>
+                            </div>
+                        </div>
+
+                        <!-- Song of Rest -->
+                        <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-green);">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <strong style="color:var(--accent-green);">🎶 Song of Rest:</strong>
+                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">Allies spending Hit Dice on Short Rest gain extra +1d6 HP.</span>
+                                </div>
+                                <button class="btn-roll-action btn-roll-heal" onclick="rollSongOfRestAction()">🎶 +1d6 Rest Heal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🎒 TRACKED INVENTORY & CONSUMABLES -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>🎒 Tracked Inventory & Consumables</span>
+                    </div>
+
+                    <div class="inv-list-compact" id="inv-list">
+                        <!-- Rendered by JS -->
+                    </div>
+
+                    <div style="display:flex; gap:4px; margin-top:4px;">
+                        <input type="text" id="new-item-name" placeholder="Add new loot or item..." style="flex:1; height:26px; font-size:0.74rem; padding:2px 6px; background:#0b1220; border:1px solid #334155; border-radius:3px; color:#cbd5e1;">
+                        <button class="btn-act btn-act-heal" onclick="addNewItem()" style="padding:2px 8px; font-size:0.72rem; font-weight:700;">+ Add</button>
+                        <button class="btn-act btn-act-pre" onclick="resetInventoryToDefault()" style="padding:2px 6px; font-size:0.68rem;">Reset</button>
+                    </div>
+                </div>
+
+                <!-- 🗺️ ACTIVE CAMPAIGN QUESTS -->
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>📍 Active Campaign Quests</span>
+                    </div>
+                    <div style="font-size:0.74rem; color:var(--text-dim); line-height:1.45; display:flex; flex-direction:column; gap:4px;">
+                        <div>• <strong>Search for Missing Twin Sister:</strong> Searching coasts of Faerûn for the Lush Peaks Clan dancer.</div>
+                        <div>• <strong>Seagrow Caves Blight:</strong> Blight purged with the fellowship at Level 3.</div>
+                        <div>• <strong>Wreck of Compass Rose:</strong> Retrieve Clyssavar's Silver Harmonic Scale from hold C9 & cleanse Brastos's grave.</div>
+                        <div>• <strong>The Tri-Draconic Convergence:</strong> Harmonize Silver, Bronze, and Gold scales atop Clifftop Observatory!</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SPELL & ACTION DETAILS MODAL -->
+    <div class="modal-overlay" id="spell-modal" onclick="closeSpellModalOnBackdrop(event)">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="spell-modal-title">✨ Spell Details</h3>
+                <button class="modal-close-btn" onclick="closeSpellModal()">✕</button>
+            </div>
+            <div class="modal-body" id="spell-modal-body"></div>
+            <div style="padding: 10px 14px; background:#090e1a; border-top:1px solid var(--card-border); display:flex; justify-content:flex-end; gap:6px;" id="spell-modal-actions"></div>
+        </div>
+    </div>
+
+    <!-- GOLD TRANSACTION HISTORY MODAL -->
+    <div class="modal-overlay" id="gold-modal" onclick="closeGoldHistoryModalOnBackdrop(event)">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>💰 Gold Ledger & Transaction History</h3>
+                <button class="modal-close-btn" onclick="closeGoldHistoryModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div style="display:flex; justify-content:space-between; align-items:center; background:#090e1a; padding:8px 12px; border-radius:6px;">
+                    <div>
+                        <div style="font-size:0.7rem; color:var(--text-muted); font-weight:700;">CURRENT BALANCE</div>
+                        <div style="font-size:1.15rem; font-weight:800; color:#facc15;">
+                            <span id="modal-gold-disp">115</span> GP <span style="color:var(--text-dim); font-size:0.85rem;">•</span> <span id="modal-silver-disp" style="color:#cbd5e1;">8</span> SP
+                        </div>
+                    </div>
+                    <button class="btn-act btn-act-pre" onclick="clearGoldHistory()" style="font-size:0.7rem; color:var(--accent-red);">Clear History</button>
+                </div>
+                <div class="tx-list" id="modal-tx-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==========================================
+        // 📊 CORE STATE & LOCALSTORAGE PERSISTENCE
+        // ==========================================
+        const maxHP = 21;
+        let currentHP = 21;
+        let tempHP = 0;
+        let bardicInsp = 3;
+        let helpTokens = 2;
+        let isFelineReady = true;
+        let isCloakAttuned = true;
+        let currentGP = 115;
+        let currentSP = 8;
+        let advState = 'normal'; // 'normal', 'adv', 'dis'
+
+        let spellSlots = {
+            1: { current: 4, max: 4, reqLevel: 1 },
+            2: { current: 2, max: 2, reqLevel: 3 },
+            3: { current: 0, max: 0, reqLevel: 5 }
+        };
+
+        // Full Spells Known Dataset
+        const fullSpellbook = [
+            {
+                id: 'dissonantwhispers',
+                name: 'Dissonant Whispers',
+                level: 1,
+                school: 'Enchantment',
+                castingTime: '1 Action',
+                range: '60 feet',
+                components: 'V',
+                duration: 'Instantaneous',
+                hasLevelSelect: true,
+                desc: 'Whisper a discordant melody. DC 13 Wis save: 3d6 Psychic damage + immediately flee using reaction.',
+                fullRules: 'You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw (DC 13). On a failed save, it takes 3d6 Psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you.<br><br>The creature doesn\'t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn\'t have to move.',
+                upcastNotes: 'When cast using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.',
+                buttons: [
+                    {
+                        label: '🧠 Cast & Damage (-1 Slot)',
+                        class: 'btn-roll-action btn-roll-purple',
+                        costSlot: true,
+                        onClick: (lvl) => rollDissonantWhispers(lvl)
+                    }
+                ]
+            },
+            {
+                id: 'healingword',
+                name: 'Healing Word',
+                level: 1,
+                school: 'Evocation',
+                castingTime: '1 Bonus Action',
+                range: '60 feet',
+                components: 'V',
+                duration: 'Instantaneous',
+                hasLevelSelect: true,
+                desc: 'A quick whispered melody restores 1d4 + 3 Hit Points to a creature you can sense within 60 ft.',
+                fullRules: 'A creature of your choice that you can see or sense within range regains hit points equal to 1d4 + your spellcasting ability modifier (+3). This spell has no effect on undead or constructs.',
+                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.',
+                buttons: [
+                    {
+                        label: '💚 Heal Target (-1 Slot)',
+                        class: 'btn-roll-action btn-roll-heal',
+                        costSlot: true,
+                        onClick: (lvl) => rollHealingWord(lvl)
+                    }
+                ]
+            },
+            {
+                id: 'colorspray',
+                name: 'Color Spray',
+                level: 1,
+                school: 'Illusion',
+                castingTime: '1 Action',
+                range: 'Self (15-foot cone)',
+                components: 'V, S, M (colored sand)',
+                duration: '1 round',
+                hasLevelSelect: true,
+                desc: 'Dazzling cone of colored light blinds creatures based on 6d10 total hit points in ascending order.',
+                fullRules: 'A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can affect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures).<br><br>Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn.',
+                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.',
+                buttons: [
+                    {
+                        label: '🌈 Cast Color Spray (-1 Slot)',
+                        class: 'btn-roll-action',
+                        costSlot: true,
+                        onClick: (lvl) => rollColorSpray(lvl)
+                    }
+                ]
+            },
+            {
+                id: 'charmperson',
+                name: 'Charm Person',
+                level: 1,
+                school: 'Enchantment',
+                castingTime: '1 Action',
+                range: '30 feet',
+                components: 'V, S',
+                duration: '1 hour',
+                hasLevelSelect: true,
+                desc: 'Charm a humanoid within 30 ft (DC 13 Wis save). Target regards you as a friendly acquaintance.',
+                fullRules: 'You attempt to charm a humanoid you can see or sense within range. It must make a Wisdom saving throw (DC 13), and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it.',
+                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.',
+                buttons: [
+                    {
+                        label: '💖 Cast Charm Person (-1 Slot)',
+                        class: 'btn-roll-action',
+                        costSlot: true,
+                        onClick: (lvl) => castCharmPerson(lvl)
+                    }
+                ]
+            },
+            {
+                id: 'calmemotions',
+                name: 'Calm Emotions',
+                level: 2,
+                school: 'Enchantment',
+                castingTime: '1 Action',
+                range: '60 feet (20-ft sphere)',
+                components: 'V, S',
+                duration: 'Concentration, up to 1 minute',
+                hasLevelSelect: true,
+                desc: 'Suppress charmed/frightened conditions or make hostile humanoids indifferent in a 20-ft sphere (DC 13 Cha).',
+                fullRules: 'You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw (DC 13); a creature can choose to fail this save voluntarily. If a creature fails, you can suppress any charmed or frightened conditions, or make a hostile creature indifferent about creatures of your choice.',
+                upcastNotes: 'Casting at higher levels maintains the concentration duration.',
+                buttons: [
+                    {
+                        label: '🕊️ Cast Calm Emotions (-1 Slot)',
+                        class: 'btn-roll-action',
+                        costSlot: true,
+                        onClick: (lvl) => castCalmEmotions(lvl)
+                    }
+                ]
+            },
+            {
+                id: 'enthrall',
+                name: 'Enthrall',
+                level: 2,
+                school: 'Enchantment',
+                castingTime: '1 Action',
+                range: '60 feet',
+                components: 'V, S',
+                duration: '1 minute',
+                hasLevelSelect: true,
+                desc: 'Weave distracting words. Targets make DC 13 Wis save or suffer Disadvantage on Perception to notice anyone else.',
+                fullRules: 'You weave a string of distracting words, causing creatures of your choice that you can see or sense within range to make a Wisdom saving throw (DC 13). Any creature that can\'t be charmed succeeds automatically. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends.',
+                upcastNotes: 'Casting at higher levels maintains the full duration.',
+                buttons: [
+                    {
+                        label: '✨ Cast Enthrall (-1 Slot)',
+                        class: 'btn-roll-action',
+                        costSlot: true,
+                        onClick: (lvl) => castEnthrall(lvl)
+                    }
+                ]
+            }
+        ];
+
+        // Tracked Inventory Items
+        let trackedInventory = [
+            { name: "🛡️ Cloak of Protection (+1 AC & Saves)", qty: 1 },
+            { name: "🥋 Leather Armor (AC 11)", qty: 1 },
+            { name: "🗡️ Steel Rapier (1d8+1 Piercing)", qty: 1 },
+            { name: "🗡️ Steel Daggers (1d4+1 Piercing)", qty: 2 },
+            { name: "🪘 Tambourine (Arcane Focus & Resonator)", qty: 1 },
+            { name: "🎸 Lute & Wooden Guitar", qty: 2 },
+            { name: "💣 Spitfire Flasks (2d4 Fire AoE)", qty: 2 },
+            { name: "🧪 Potion of Healing (Bonus: 2d6 / Action: Full Max HP)", qty: 1 },
+            { name: "🍞 Kobold Sweetbread Roll (1d4 HP + Temp HP)", qty: 1 },
+            { name: "🎒 Entertainer's Pack (Costumes, Bedroll, Rations)", qty: 1 },
+            { name: "🗝️ Thieves' Tools & Burglar's Pack", qty: 1 }
+        ];
+
+        // ==========================================
+        // 🔄 INITIALIZATION & RENDER
+        // ==========================================
+        function initSheet() {
+            loadSavedState();
+            renderVitals();
+            renderSpellSlots();
+            renderSpellbook();
+            renderInventory();
+            updateGoldDisplay();
         }
-    };
 
-    function openCompendium(id) {
-        const item = COMPENDIUM[id];
-        if (!item) return;
-        document.getElementById('modal-item-title').innerHTML = item.title;
-        document.getElementById('modal-item-body').innerHTML = item.body;
-        document.getElementById('compendium-modal').showModal();
-    }
+        function loadSavedState() {
+            try {
+                const savedHP = localStorage.getItem('sylvar_hp');
+                if (savedHP !== null) currentHP = parseInt(savedHP);
+                const savedTemp = localStorage.getItem('sylvar_temp_hp');
+                if (savedTemp !== null) tempHP = parseInt(savedTemp);
+                const savedInsp = localStorage.getItem('sylvar_insp');
+                if (savedInsp !== null) bardicInsp = parseInt(savedInsp);
+                const savedHelp = localStorage.getItem('sylvar_help');
+                if (savedHelp !== null) helpTokens = parseInt(savedHelp);
+                const savedGP = localStorage.getItem('sylvar_gp');
+                if (savedGP !== null) currentGP = parseInt(savedGP);
+                const savedSP = localStorage.getItem('sylvar_sp');
+                if (savedSP !== null) currentSP = parseInt(savedSP);
+                const savedSlots = localStorage.getItem('sylvar_slots');
+                if (savedSlots) {
+                    const parsed = JSON.parse(savedSlots);
+                    if (parsed[1]) spellSlots[1].current = parsed[1].current;
+                    if (parsed[2]) spellSlots[2].current = parsed[2].current;
+                }
+                const savedInv = localStorage.getItem('sylvar_inv');
+                if (savedInv) trackedInventory = JSON.parse(savedInv);
+            } catch (e) {
+                console.error("Failed to load local state:", e);
+            }
+        }
 
-    function closeCompendium() {
-        document.getElementById('compendium-modal').close();
-    }
+        function saveSheetState() {
+            localStorage.setItem('sylvar_hp', currentHP);
+            localStorage.setItem('sylvar_temp_hp', tempHP);
+            localStorage.setItem('sylvar_insp', bardicInsp);
+            localStorage.setItem('sylvar_help', helpTokens);
+            localStorage.setItem('sylvar_gp', currentGP);
+            localStorage.setItem('sylvar_sp', currentSP);
+            localStorage.setItem('sylvar_slots', JSON.stringify(spellSlots));
+            localStorage.setItem('sylvar_inv', JSON.stringify(trackedInventory));
+        }
 
-    // --- 1-CLICK STATE EXPORT (THIRD-PARTY HOSTING SUPPORT) ---
-    function exportDataString() {
-        const slot1Used = [1,2,3,4].filter(i => !document.getElementById(`slot1-${i}`).checked).length;
-        const slot2Used = [1,2].filter(i => !document.getElementById(`slot2-${i}`).checked).length;
-        
-        const exportStr = `🐾 Sylvar Link (Lv 3 Whispers Bard) | HP: ${curHP}/${DEFAULT_MAX_HP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | AC: 12 | Insp: ${bardicInsp}/3 | Help: ${helpTokens}/2 | Slots: [Lv1: ${4-slot1Used}/4, Lv2: ${2-slot2Used}/2] | Wealth: ${curGP} GP, ${curSP} SP | 📦 Inventory: (Live Sync)`;
-        
-        navigator.clipboard.writeText(exportStr).then(() => {
-            alert(`Copied Character State to Clipboard!\n\n${exportStr}`);
-            logRoll(`📋 <strong>Exported State String to Clipboard:</strong><br><small style="color:var(--text-muted); font-family:'JetBrains Mono';">${exportStr}</small>`);
-        }).catch(() => {
-            prompt("Copy state string:", exportStr);
-        });
-    }
+        // ==========================================
+        // 🎲 PROMINENT ROLLER & CONSOLE
+        // ==========================================
+        function logRoll(htmlMsg) {
+            const res = document.getElementById('roll-res');
+            res.innerHTML = htmlMsg;
+            res.classList.remove('highlight-roll');
+            void res.offsetWidth;
+            res.classList.add('highlight-roll');
+        }
 
-    // Initialize UI on load
-    window.addEventListener('DOMContentLoaded', () => {
-        updateUI();
-        loadSpellSlots();
-    });
-</script>
+        function toggleAdvantage(type) {
+            const btnAdv = document.getElementById('btn-adv');
+            const btnDis = document.getElementById('btn-dis');
+            if (advState === type) {
+                advState = 'normal';
+                btnAdv.style.background = '#1e293b';
+                btnAdv.style.color = 'var(--text-light)';
+                btnDis.style.background = '#1e293b';
+                btnDis.style.color = 'var(--text-light)';
+            } else {
+                advState = type;
+                if (type === 'adv') {
+                    btnAdv.style.background = '#065f46';
+                    btnAdv.style.color = '#d1fae5';
+                    btnDis.style.background = '#1e293b';
+                    btnDis.style.color = 'var(--text-light)';
+                } else {
+                    btnDis.style.background = '#991b1b';
+                    btnDis.style.color = '#fee2e2';
+                    btnAdv.style.background = '#1e293b';
+                    btnAdv.style.color = 'var(--text-light)';
+                }
+            }
+        }
+
+        function modDiceMod(delta) {
+            const el = document.getElementById('dice-mod');
+            el.value = (parseInt(el.value) || 0) + delta;
+        }
+
+        function rollD20(label, bonus = 0) {
+            const manualMod = parseInt(document.getElementById('dice-mod').value) || 0;
+            const r1 = Math.floor(Math.random() * 20) + 1;
+            const r2 = Math.floor(Math.random() * 20) + 1;
+            let finalD20 = r1;
+            let rollStr = `d20: ${r1}`;
+
+            if (advState === 'adv') {
+                finalD20 = Math.max(r1, r2);
+                rollStr = `Adv [${r1}, ${r2}] ➔ ${finalD20}`;
+            } else if (advState === 'dis') {
+                finalD20 = Math.min(r1, r2);
+                rollStr = `Dis [${r1}, ${r2}] ➔ ${finalD20}`;
+            }
+
+            const total = finalD20 + bonus + manualMod;
+            const signBonus = bonus >= 0 ? `+${bonus}` : `${bonus}`;
+            const signManual = manualMod !== 0 ? (manualMod > 0 ? ` + ${manualMod}` : ` - ${Math.abs(manualMod)}`) : '';
+            const isCrit = finalD20 === 20;
+            const isFumble = finalD20 === 1;
+
+            logRoll(`🎲 <strong>${label}:</strong> ${rollStr} ${signBonus}${signManual} = <span style="font-size:1.15rem; font-weight:800; color:${isCrit ? '#22c55e' : (isFumble ? '#ef4444' : 'var(--accent-gold)')}; font-family:'JetBrains Mono';">${total}</span> ${isCrit ? '🔥 CRITICAL HIT!' : ''} ${isFumble ? '💀 CRITICAL MISS!' : ''}`);
+        }
+
+        function rollCustomDie(sides) {
+            const manualMod = parseInt(document.getElementById('dice-mod').value) || 0;
+            const r = Math.floor(Math.random() * sides) + 1;
+            const tot = r + manualMod;
+            logRoll(`🎲 <strong>d${sides} Roll:</strong> [${r}] ${manualMod !== 0 ? (manualMod > 0 ? '+ ' + manualMod : '- ' + Math.abs(manualMod)) : ''} = <span style="font-size:1.1rem; font-weight:800; color:var(--accent-gold); font-family:'JetBrains Mono';">${tot}</span>`);
+        }
+
+        function rollFormulaDamage(label, diceSides, mod = 0, type = '') {
+            const manualMod = parseInt(document.getElementById('dice-mod').value) || 0;
+            const r = Math.floor(Math.random() * diceSides) + 1;
+            const total = r + mod + manualMod;
+            logRoll(`💥 <strong>${label}:</strong> (1d${diceSides}:${r}) ${mod >= 0 ? '+' + mod : mod} ${manualMod !== 0 ? '+' + manualMod : ''} = <span style="font-size:1.1rem; font-weight:800; color:#f87171; font-family:'JetBrains Mono';">${total} ${type} Damage</span>`);
+        }
+
+        // ==========================================
+        // ❤️ VITALS & HP CONTROLLER
+        // ==========================================
+        function renderVitals() {
+            const hpDisp = document.getElementById('hp-disp');
+            const hpBar = document.getElementById('hp-bar');
+            const hpTempBar = document.getElementById('hp-temp-bar');
+
+            if (tempHP > 0) {
+                hpDisp.innerHTML = `${currentHP}/${maxHP} <span style="color:#38bdf8; font-size:0.8rem;">(+${tempHP} Temp)</span>`;
+            } else {
+                hpDisp.innerText = `${currentHP}/${maxHP}`;
+            }
+
+            const pct = Math.max(0, Math.min(100, (currentHP / maxHP) * 100));
+            hpBar.style.width = pct + '%';
+            if (pct > 50) hpBar.style.backgroundColor = 'var(--accent-green)';
+            else if (pct > 25) hpBar.style.backgroundColor = 'var(--accent-gold)';
+            else hpBar.style.backgroundColor = 'var(--accent-red)';
+
+            if (tempHP > 0) {
+                const tempPct = Math.min(100, (tempHP / maxHP) * 100);
+                hpTempBar.style.width = tempPct + '%';
+            } else {
+                hpTempBar.style.width = '0%';
+            }
+
+            const acDisp = document.getElementById('ac-disp');
+            acDisp.innerText = isCloakAttuned ? '12' : '11';
+        }
+
+        function applyDamage() {
+            const input = document.getElementById('hp-input');
+            const amt = parseInt(input.value) || 0;
+            if (amt <= 0) return;
+
+            let rem = amt;
+            if (tempHP > 0) {
+                if (tempHP >= rem) {
+                    tempHP -= rem;
+                    rem = 0;
+                } else {
+                    rem -= tempHP;
+                    tempHP = 0;
+                }
+            }
+            currentHP = Math.max(0, currentHP - rem);
+            input.value = '';
+            renderVitals();
+            saveSheetState();
+            logRoll(`💥 <strong>Took ${amt} Damage:</strong> HP is now <span style="color:#f87171; font-weight:700;">${currentHP}/${maxHP}</span> ${tempHP > 0 ? '(+' + tempHP + ' Temp)' : ''}.`);
+        }
+
+        function applyHeal() {
+            const input = document.getElementById('hp-input');
+            const amt = parseInt(input.value) || 0;
+            if (amt <= 0) return;
+
+            currentHP = Math.min(maxHP, currentHP + amt);
+            input.value = '';
+            renderVitals();
+            saveSheetState();
+            logRoll(`💚 <strong>Healed +${amt} HP:</strong> HP is now <span style="color:#86efac; font-weight:700;">${currentHP}/${maxHP}</span>.`);
+        }
+
+        function stepHP(delta) {
+            if (delta > 0) currentHP = Math.min(maxHP, currentHP + delta);
+            else currentHP = Math.max(0, currentHP + delta);
+            renderVitals();
+            saveSheetState();
+        }
+
+        function clearTempHP() {
+            tempHP = 0;
+            renderVitals();
+            saveSheetState();
+            logRoll(`🛡️ <strong>Cleared Temporary HP.</strong>`);
+        }
+
+        function takeShortRest() {
+            const heal = Math.floor(maxHP * 0.25);
+            currentHP = Math.min(maxHP, currentHP + heal);
+            helpTokens = Math.min(2, helpTokens + 1);
+            isFelineReady = true;
+            document.getElementById('card-feline-toggle').classList.add('active-buff');
+            document.getElementById('badge-feline').innerText = "READY (60ft)";
+            document.getElementById('sub-feline').innerText = "Speed: 30 ft";
+            renderVitals();
+            updateCountersUI();
+            saveSheetState();
+            logRoll(`☕ <strong>Short Rest Completed:</strong> Restored +${heal} HP (${currentHP}/${maxHP}), +1 Help Token restored (${helpTokens}/2), Feline Agility ready, Song of Rest grants +1d6 to spent Hit Dice!`);
+        }
+
+        function resetHP() {
+            currentHP = maxHP;
+            tempHP = 0;
+            bardicInsp = 3;
+            helpTokens = 2;
+            spellSlots[1].current = 4;
+            spellSlots[2].current = 2;
+            isFelineReady = true;
+            renderVitals();
+            renderSpellSlots();
+            updateCountersUI();
+            saveSheetState();
+            logRoll(`⛺ <strong>Full Long Rest Completed:</strong> All HP (21/21), Spell Slots (4/4, 2/2), Bardic Inspiration (3/3), and Help Tokens (2/2) fully restored!`);
+        }
+
+        // ==========================================
+        // ⚡ TOGGLES & COUNTERS
+        // ==========================================
+        function toggleFelineAgilityBuff() {
+            isFelineReady = !isFelineReady;
+            const card = document.getElementById('card-feline-toggle');
+            const badge = document.getElementById('badge-feline');
+            const sub = document.getElementById('sub-feline');
+            if (isFelineReady) {
+                card.classList.add('active-buff');
+                badge.innerText = "READY (60ft)";
+                badge.className = "toggle-badge on";
+                sub.innerText = "Speed: 30 ft";
+                logRoll(`🐾 <strong>Feline Agility Ready:</strong> Speed returned to 30 ft.`);
+            } else {
+                card.classList.remove('active-buff');
+                badge.innerText = "ACTIVE (60ft)";
+                badge.className = "toggle-badge off";
+                sub.innerText = "Speed: 60 ft!";
+                logRoll(`🐾 <strong>Feline Agility Burst Activated!</strong> Speed doubled to <span style="color:#f472b6; font-weight:800;">60 ft</span> for this turn!`);
+            }
+        }
+
+        function toggleCloakBuff() {
+            isCloakAttuned = !isCloakAttuned;
+            const card = document.getElementById('card-cloak-toggle');
+            const badge = document.getElementById('badge-cloak');
+            if (isCloakAttuned) {
+                card.classList.add('active-buff');
+                badge.innerText = "ATTUNED";
+                badge.className = "toggle-badge on";
+                logRoll(`🛡️ <strong>Cloak of Protection Attuned:</strong> +1 AC (AC 12) and +1 to all Saving Throws.`);
+            } else {
+                card.classList.remove('active-buff');
+                badge.innerText = "OFF";
+                badge.className = "toggle-badge off";
+                logRoll(`🛡️ <strong>Cloak of Protection Removed:</strong> AC reduced to 11.`);
+            }
+            renderVitals();
+        }
+
+        function updateCountersUI() {
+            document.getElementById('insp-tokens-disp').innerText = `${bardicInsp} / 3`;
+            document.getElementById('help-tokens-disp').innerText = `${helpTokens} / 2`;
+        }
+
+        function modBardicInsp(delta) {
+            bardicInsp = Math.max(0, Math.min(3, bardicInsp + delta));
+            updateCountersUI();
+            saveSheetState();
+        }
+
+        function resetBardicInsp() {
+            bardicInsp = 3;
+            updateCountersUI();
+            saveSheetState();
+        }
+
+        function rollBardicInspDie() {
+            if (bardicInsp <= 0) {
+                alert("No Bardic Inspiration dice remaining! (3/Long Rest)");
+                return;
+            }
+            bardicInsp -= 1;
+            updateCountersUI();
+            saveSheetState();
+            const d6 = Math.floor(Math.random() * 6) + 1;
+            logRoll(`🪘 <strong>Bardic Inspiration Granted (d6):</strong> Rolled <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${d6}</span> to ally within 60 ft! (${bardicInsp}/3 dice left)`);
+        }
+
+        function modHelpToken(delta) {
+            helpTokens = Math.max(0, Math.min(2, helpTokens + delta));
+            updateCountersUI();
+            saveSheetState();
+        }
+
+        function resetHelpTokens() {
+            helpTokens = 2;
+            updateCountersUI();
+            saveSheetState();
+        }
+
+        function rollHelpToken() {
+            if (helpTokens <= 0) {
+                alert("No Help Tokens remaining! (2/Long Rest, +1 on Short Rest)");
+                return;
+            }
+            helpTokens -= 1;
+            updateCountersUI();
+            saveSheetState();
+            const d6 = Math.floor(Math.random() * 6) + 1;
+            logRoll(`🤝 <strong>Help Token Spent:</strong> Granted ally <span style="color:#67e8f9; font-size:1.15rem; font-weight:800;">+${d6}</span> on their check within 30 ft! (${helpTokens}/2 tokens left)`);
+        }
+
+        // ==========================================
+        // 🔮 SPELL SLOTS & SPELLBOOK RENDERING
+        // ==========================================
+        function renderSpellSlots() {
+            document.getElementById('slot-1-disp').innerText = `${spellSlots[1].current} / ${spellSlots[1].max}`;
+            document.getElementById('slot-2-disp').innerText = `${spellSlots[2].current} / ${spellSlots[2].max}`;
+        }
+
+        function modSpellSlot(lvl, delta) {
+            if (spellSlots[lvl]) {
+                spellSlots[lvl].current = Math.max(0, Math.min(spellSlots[lvl].max, spellSlots[lvl].current + delta));
+                renderSpellSlots();
+                saveSheetState();
+            }
+        }
+
+        function refillAllSlots() {
+            spellSlots[1].current = 4;
+            spellSlots[2].current = 2;
+            renderSpellSlots();
+            saveSheetState();
+            logRoll(`🔄 <strong>All Spell Slots Refilled:</strong> 1st-Level (4/4), 2nd-Level (2/2).`);
+        }
+
+        function renderSpellbook() {
+            const grid = document.getElementById('spellbook-grid');
+            grid.innerHTML = '';
+
+            fullSpellbook.forEach(sp => {
+                const card = document.createElement('div');
+                card.className = 'action-card';
+
+                let lvlDropdownHtml = '';
+                if (sp.hasLevelSelect) {
+                    lvlDropdownHtml = `
+                        <select class="lvl-dropdown" id="lvl-select-${sp.id}">
+                            <option value="1">Lvl 1</option>
+                            <option value="2">Lvl 2</option>
+                        </select>
+                    `;
+                }
+
+                let btnHtml = '';
+                sp.buttons.forEach((btn, idx) => {
+                    btnHtml += `<button class="${btn.class}" onclick="execSpellButton('${sp.id}', ${idx})">${btn.label}</button>`;
+                });
+
+                card.innerHTML = `
+                    <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                        <div>
+                            <div class="action-card-title" onclick="openSpellDetailsModal('${sp.id}')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                ${sp.name} <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                            </div>
+                            <div style="font-size:0.67rem; font-weight:700; color:var(--accent-blue); margin-top:1px;">Level ${sp.level} • ${sp.castingTime}</div>
+                        </div>
+                        <span style="font-size:0.62rem; color:var(--accent-gold); font-weight:700; background:rgba(245,158,11,0.1); border:1px solid var(--accent-gold); padding:1px 5px; border-radius:3px;">${sp.school.toUpperCase()}</span>
+                    </div>
+                    <div class="action-desc">${sp.desc}</div>
+                    <div class="action-btn-row">
+                        ${lvlDropdownHtml}
+                        ${btnHtml}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function getSelectedSpellLevel(spellId) {
+            const select = document.getElementById(`lvl-select-${spellId}`);
+            return select ? parseInt(select.value) || 1 : 1;
+        }
+
+        function execSpellButton(spellId, btnIdx) {
+            const sp = fullSpellbook.find(s => s.id === spellId);
+            if (!sp || !sp.buttons[btnIdx]) return;
+            const btn = sp.buttons[btnIdx];
+            const lvl = getSelectedSpellLevel(spellId);
+
+            if (btn.costSlot) {
+                if (spellSlots[lvl] && spellSlots[lvl].max > 0) {
+                    if (spellSlots[lvl].current > 0) {
+                        spellSlots[lvl].current--;
+                        renderSpellSlots();
+                        saveSheetState();
+                    } else {
+                        logRoll(`⚠️ <strong>0 Level ${lvl} Spell Slots remaining!</strong> Choose another slot tier or rest.`);
+                        return;
+                    }
+                }
+            }
+            btn.onClick(lvl);
+        }
+
+        // ==========================================
+        // 🔮 SPELL LOGIC & ROLL FUNCTIONS
+        // ==========================================
+        function rollDissonantWhispers(slotLevel) {
+            const dice = 2 + slotLevel; // Lvl 1: 3d6, Lvl 2: 4d6
+            const rolls = [];
+            let total = 0;
+            for (let i = 0; i < dice; i++) {
+                const r = Math.floor(Math.random() * 6) + 1;
+                rolls.push(r);
+                total += r;
+            }
+            logRoll(`🧠 <strong>Dissonant Whispers (Level ${slotLevel} Slot • ${dice}d6):</strong> [${rolls.join('+')}] = <span style="color:var(--accent-purple); font-size:1.1rem; font-weight:800;">${total} Psychic Damage</span> + must flee using reaction (DC 13 Wis save for half)!`);
+        }
+
+        function rollHealingWord(slotLevel) {
+            const dice = slotLevel; // Lvl 1: 1d4+3, Lvl 2: 2d4+3
+            const rolls = [];
+            let total = 3; // +3 CHA
+            for (let i = 0; i < dice; i++) {
+                const r = Math.floor(Math.random() * 4) + 1;
+                rolls.push(r);
+                total += r;
+            }
+            logRoll(`💚 <strong>Healing Word (Level ${slotLevel} Slot):</strong> [${rolls.join('+')}] + 3 CHA = <span style="color:#86efac; font-size:1.1rem; font-weight:800;">+${total} HP Restored</span> to target within 60 ft!`);
+        }
+
+        function rollColorSpray(slotLevel) {
+            const dice = 4 + (2 * slotLevel); // Lvl 1: 6d10, Lvl 2: 8d10
+            const rolls = [];
+            let total = 0;
+            for (let i = 0; i < dice; i++) {
+                const r = Math.floor(Math.random() * 10) + 1;
+                rolls.push(r);
+                total += r;
+            }
+            logRoll(`🌈 <strong>Color Spray (Level ${slotLevel} Slot • ${dice}d10):</strong> [${rolls.join('+')}] = <span style="color:#f472b6; font-size:1.1rem; font-weight:800;">${total} HP Affected</span> with Blindness in 15-ft cone!`);
+        }
+
+        function castCharmPerson(slotLevel) {
+            logRoll(`💖 <strong>Charm Person (Level ${slotLevel} Slot • 30ft):</strong> Target humanoid makes <span style="color:var(--accent-gold); font-weight:800;">DC 13 Wisdom Save</span>. On fail: regarded as friendly acquaintance for 1 hour!`);
+        }
+
+        function castCalmEmotions(slotLevel) {
+            logRoll(`🕊️ <strong>Calm Emotions (Level ${slotLevel} Slot • 20ft Sphere):</strong> Humanoids make <span style="color:var(--accent-gold); font-weight:800;">DC 13 Charisma Save</span>. On fail: suppress Charmed/Frightened conditions or make hostile targets indifferent!`);
+        }
+
+        function castEnthrall(slotLevel) {
+            logRoll(`✨ <strong>Enthrall (Level ${slotLevel} Slot • 60ft):</strong> Targets make <span style="color:var(--accent-gold); font-weight:800;">DC 13 Wisdom Save</span>. On fail: Disadvantage on Perception to notice anyone other than you!`);
+        }
+
+        function castViciousMockery() {
+            logRoll(`🎭 <strong>Vicious Mockery:</strong> Target makes <span style="color:var(--accent-gold); font-weight:800;">DC 13 Wisdom Save</span>. On fail: takes 1d4 Psychic Damage and suffers <strong>Disadvantage</strong> on its next attack!`);
+        }
+
+        function castUtility(text) {
+            logRoll(text);
+        }
+
+        function rollSpitfireFlaskAction() {
+            const d1 = Math.floor(Math.random() * 4) + 1;
+            const d2 = Math.floor(Math.random() * 4) + 1;
+            const tot = d1 + d2;
+            logRoll(`💣 <strong>Spitfire Flask Thrown (20 ft):</strong> 5-ft radius explosion deals <span style="color:#f87171; font-size:1.1rem; font-weight:800;">${tot} Fire Damage</span> (2d4: ${d1}+${d2}, DC 11 Dex save for half)!`);
+        }
+
+        function rollPsychicBladesStrike() {
+            if (bardicInsp <= 0) {
+                alert("No Bardic Inspiration dice remaining to fuel Psychic Blades! (3/Long Rest)");
+                return;
+            }
+            bardicInsp -= 1;
+            updateCountersUI();
+            saveSheetState();
+            const p1 = Math.floor(Math.random() * 6) + 1;
+            const p2 = Math.floor(Math.random() * 6) + 1;
+            const tot = p1 + p2;
+            logRoll(`🧠 <strong>Psychic Blades Infused (-1 Insp):</strong> Dealt <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${tot} Psychic Damage</span> (2d6: ${p1}+${p2}) on weapon hit! (${bardicInsp}/3 dice left)`);
+        }
+
+        function rollWordsOfTerrorAction() {
+            logRoll(`👁️ <strong>Words of Terror Seeded (1 Min Conversation):</strong> Target humanoid must make a <span style="color:#f472b6; font-weight:800;">DC 13 Wisdom Save</span> or be <strong>Frightened</strong> for 1 hour!`);
+        }
+
+        function rollCrystallineSoundBurst() {
+            const d6 = Math.floor(Math.random() * 6) + 1;
+            logRoll(`❄️ <strong>Clyssavar's Crystalline Sound-Burst (1/Day):</strong> Dealt <span style="color:#38bdf8; font-size:1.15rem; font-weight:800;">+${d6} Cold/Psychic Damage</span> and a high-frequency crystalline chime halves the target's speed!`);
+        }
+
+        function rollSongOfRestAction() {
+            const d6 = Math.floor(Math.random() * 6) + 1;
+            logRoll(`🎶 <strong>Song of Rest (+1d6 Short Rest Heal):</strong> Rolled <span style="color:#86efac; font-size:1.15rem; font-weight:800;">+${d6} Extra HP</span> for all allies spending Hit Dice during this short rest!`);
+        }
+
+        // ==========================================
+        // 🎒 TRACKED INVENTORY MANAGER
+        // ==========================================
+        function renderInventory() {
+            const list = document.getElementById('inv-list');
+            list.innerHTML = '';
+
+            trackedInventory.forEach((item, index) => {
+                const row = document.createElement('div');
+                row.className = 'inv-row-item';
+                row.innerHTML = `
+                    <span class="inv-item-info">${item.name}</span>
+                    <div class="inv-controls">
+                        <div class="inv-stepper">
+                            <button class="btn-step-qty" onclick="stepInvQty(${index}, -1)">-</button>
+                            <span class="inv-qty-val">${item.qty}</span>
+                            <button class="btn-step-qty" onclick="stepInvQty(${index}, 1)">+</button>
+                        </div>
+                        <button class="btn-del-item" onclick="deleteInvItem(${index})" title="Delete item">✕</button>
+                    </div>
+                `;
+                list.appendChild(row);
+            });
+        }
+
+        function stepInvQty(index, delta) {
+            if (trackedInventory[index]) {
+                trackedInventory[index].qty = Math.max(0, trackedInventory[index].qty + delta);
+                if (trackedInventory[index].qty === 0) {
+                    trackedInventory.splice(index, 1);
+                }
+                renderInventory();
+                saveSheetState();
+            }
+        }
+
+        function deleteInvItem(index) {
+            if (trackedInventory[index]) {
+                trackedInventory.splice(index, 1);
+                renderInventory();
+                saveSheetState();
+            }
+        }
+
+        function addNewItem() {
+            const input = document.getElementById('new-item-name');
+            const val = input.value.trim();
+            if (!val) return;
+            trackedInventory.push({ name: val, qty: 1 });
+            input.value = '';
+            renderInventory();
+            saveSheetState();
+        }
+
+        function resetInventoryToDefault() {
+            trackedInventory = [
+                { name: "🛡️ Cloak of Protection (+1 AC & Saves)", qty: 1 },
+                { name: "🥋 Leather Armor (AC 11)", qty: 1 },
+                { name: "🗡️ Steel Rapier (1d8+1 Piercing)", qty: 1 },
+                { name: "🗡️ Steel Daggers (1d4+1 Piercing)", qty: 2 },
+                { name: "🪘 Tambourine (Arcane Focus & Resonator)", qty: 1 },
+                { name: "🎸 Lute & Wooden Guitar", qty: 2 },
+                { name: "💣 Spitfire Flasks (2d4 Fire AoE)", qty: 2 },
+                { name: "🧪 Potion of Healing (Bonus: 2d6 / Action: Full Max HP)", qty: 1 },
+                { name: "🍞 Kobold Sweetbread Roll (1d4 HP + Temp HP)", qty: 1 },
+                { name: "🎒 Entertainer's Pack (Costumes, Bedroll, Rations)", qty: 1 },
+                { name: "🗝️ Thieves' Tools & Burglar's Pack", qty: 1 }
+            ];
+            renderInventory();
+            saveSheetState();
+        }
+
+        // ==========================================
+        // 💰 GOLD LEDGER & TRANSACTION SYSTEM
+        // ==========================================
+        function updateGoldDisplay() {
+            document.getElementById('gold-disp').innerText = currentGP;
+            document.getElementById('silver-disp').innerText = currentSP;
+            const mg = document.getElementById('modal-gold-disp');
+            const ms = document.getElementById('modal-silver-disp');
+            if (mg) mg.innerText = currentGP;
+            if (ms) ms.innerText = currentSP;
+        }
+
+        function normalizeCoins() {
+            if (currentSP >= 10) {
+                currentGP += Math.floor(currentSP / 10);
+                currentSP = currentSP % 10;
+            }
+            while (currentSP < 0 && currentGP > 0) {
+                currentGP -= 1;
+                currentSP += 10;
+            }
+            if (currentGP <= 0 && currentSP < 0) {
+                currentGP = 0;
+                currentSP = 0;
+            }
+        }
+
+        function stepGold(delta) {
+            let totalSP = (currentGP * 10) + currentSP;
+            totalSP = Math.max(0, totalSP + (delta * 10));
+            currentGP = Math.floor(totalSP / 10);
+            currentSP = totalSP % 10;
+            updateGoldDisplay();
+            saveSheetState();
+            logRoll(`💰 <strong>Gold Adjusted (${delta > 0 ? '+' : ''}${delta} GP):</strong> Total: <span style="color:#facc15; font-weight:700;">${currentGP} GP</span>, ${currentSP} SP.`);
+        }
+
+        function stepSilver(delta) {
+            currentSP += delta;
+            normalizeCoins();
+            updateGoldDisplay();
+            saveSheetState();
+            logRoll(`🥈 <strong>Silver Adjusted (${delta > 0 ? '+' : ''}${delta} SP):</strong> Total: <span style="color:#facc15; font-weight:700;">${currentGP} GP</span>, ${currentSP} SP.`);
+        }
+
+        function applyGoldSpend() {
+            const input = document.getElementById('gold-input');
+            const amt = parseInt(input.value) || 0;
+            const memoInput = document.getElementById('gold-reason-input');
+            const memo = memoInput.value.trim() || "Purchased Goods / Payment";
+            if (amt <= 0) return;
+
+            let totalSP = (currentGP * 10) + currentSP;
+            if (amt * 10 > totalSP) {
+                alert("Insufficient gold funds!");
+                return;
+            }
+            totalSP -= (amt * 10);
+            currentGP = Math.floor(totalSP / 10);
+            currentSP = totalSP % 10;
+            input.value = '';
+            memoInput.value = '';
+            updateGoldDisplay();
+            saveSheetState();
+            addGoldTransaction('spend', memo, `-${amt} GP`, `${currentGP} GP, ${currentSP} SP`);
+            logRoll(`💰 <strong>Spent ${amt} GP:</strong> <em>"${memo}"</em> (Balance: ${currentGP} GP, ${currentSP} SP).`);
+        }
+
+        function applyGoldAdd() {
+            const input = document.getElementById('gold-input');
+            const amt = parseInt(input.value) || 0;
+            const memoInput = document.getElementById('gold-reason-input');
+            const memo = memoInput.value.trim() || "Loot / Quest Reward";
+            if (amt <= 0) return;
+
+            currentGP += amt;
+            input.value = '';
+            memoInput.value = '';
+            updateGoldDisplay();
+            saveSheetState();
+            addGoldTransaction('gain', memo, `+${amt} GP`, `${currentGP} GP, ${currentSP} SP`);
+            logRoll(`💰 <strong>Earned +${amt} GP:</strong> <em>"${memo}"</em> (Balance: ${currentGP} GP, ${currentSP} SP).`);
+        }
+
+        function resetGoldPurse() {
+            currentGP = 115;
+            currentSP = 8;
+            updateGoldDisplay();
+            saveSheetState();
+            addGoldTransaction('reset', 'Purse Reset to Starting Loadout', 'Reset', '115 GP, 8 SP');
+            logRoll(`🔄 <strong>Gold Purse Reset:</strong> Starting wealth restored to 115 GP, 8 SP.`);
+        }
+
+        function getGoldTransactions() {
+            const saved = localStorage.getItem('sylvar_tx_history');
+            return saved ? JSON.parse(saved) : [];
+        }
+
+        function addGoldTransaction(type, reason, delta, total) {
+            const txs = getGoldTransactions();
+            const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            txs.unshift({ type, reason, delta, total, time });
+            if (txs.length > 30) txs.pop();
+            localStorage.setItem('sylvar_tx_history', JSON.stringify(txs));
+        }
+
+        function openGoldHistoryModal() {
+            const modal = document.getElementById('gold-modal');
+            const list = document.getElementById('modal-tx-list');
+            const txs = getGoldTransactions();
+
+            if (txs.length === 0) {
+                list.innerHTML = `<div style="text-align:center; color:var(--text-muted); font-size:0.75rem; padding:12px;">No recorded transactions yet.</div>`;
+            } else {
+                list.innerHTML = txs.map(t => `
+                    <div class="tx-item ${t.type === 'spend' ? 'tx-spend' : (t.type === 'gain' ? 'tx-gain' : 'tx-reset')}">
+                        <div>
+                            <strong>${t.reason}</strong> <small style="color:var(--text-muted); font-size:0.65rem;">• ${t.time}</small>
+                            <div style="font-size:0.68rem; color:var(--text-dim);">Balance: ${t.total}</div>
+                        </div>
+                        <div style="font-weight:800; font-family:'JetBrains Mono'; color:${t.type === 'spend' ? 'var(--accent-red)' : 'var(--accent-green)'};">
+                            ${t.delta}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            modal.classList.add('active');
+        }
+
+        function closeGoldHistoryModal() {
+            document.getElementById('gold-modal').classList.remove('active');
+        }
+
+        function closeGoldHistoryModalOnBackdrop(e) {
+            if (e.target.id === 'gold-modal') closeGoldHistoryModal();
+        }
+
+        function clearGoldHistory() {
+            localStorage.removeItem('sylvar_tx_history');
+            openGoldHistoryModal();
+        }
+
+        // ==========================================
+        // ℹ️ COMPENDIUM & SPELL MODAL
+        // ==========================================
+        const COMPENDIUM_DATA = {
+            rapier: {
+                name: "🗡️ Steel Rapier",
+                school: "Melee Weapon",
+                castingTime: "1 Action",
+                range: "5 feet",
+                desc: "Finesse Martial Weapon: +3 to Hit, 1d8 + 1 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!"
+            },
+            dagger: {
+                name: "🗡️ Steel Daggers",
+                school: "Finesse / Thrown",
+                castingTime: "1 Action",
+                range: "20/60 feet",
+                desc: "Finesse, Light, Thrown: +3 to Hit, 1d4 + 1 Piercing Damage."
+            },
+            viciousmockery: {
+                name: "🎭 Vicious Mockery",
+                school: "Enchantment Cantrip",
+                castingTime: "1 Action",
+                range: "60 feet",
+                desc: "Target must succeed on a DC 13 Wisdom saving throw or take 1d4 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn."
+            },
+            dancinglights: {
+                name: "✨ Dancing Lights",
+                school: "Evocation Cantrip",
+                castingTime: "1 Action",
+                range: "120 feet",
+                desc: "Create up to 4 torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for up to 1 minute (Concentration)."
+            },
+            spitfire: {
+                name: "💣 Spitfire Flask",
+                school: "Alchemical Weapon",
+                castingTime: "1 Action",
+                range: "20 feet",
+                desc: "Volatile alchemical concoction. Thrown up to 20 feet, exploding in a 5-ft radius for 2d4 Fire Damage (DC 11 Dex save for half)."
+            }
+        };
+
+        function openSpellDetailsModal(id) {
+            const sp = fullSpellbook.find(s => s.id === id) || COMPENDIUM_DATA[id];
+            if (!sp) return;
+
+            document.getElementById('spell-modal-title').innerText = sp.name;
+            const body = document.getElementById('spell-modal-body');
+            const actions = document.getElementById('spell-modal-actions');
+
+            body.innerHTML = `
+                <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+                    <span class="pill-badge pill-neutral">${sp.school || 'Spell'}</span>
+                    <span class="pill-badge pill-neutral">⏱️ ${sp.castingTime || '1 Action'}</span>
+                    <span class="pill-badge pill-neutral">📏 ${sp.range || 'Self'}</span>
+                </div>
+                <div style="font-size:0.8rem; color:#cbd5e1; line-height:1.5;">
+                    ${sp.fullRules || sp.desc}
+                </div>
+                ${sp.upcastNotes ? `<div style="background:#090e1a; border-left:3px solid var(--accent-purple); padding:6px 9px; font-size:0.75rem; color:#e9d5ff; margin-top:8px;"><strong>🔮 At Higher Levels:</strong> ${sp.upcastNotes}</div>` : ''}
+            `;
+
+            actions.innerHTML = `<button class="btn-act btn-act-pre" onclick="closeSpellModal()">Close</button>`;
+            document.getElementById('spell-modal').classList.add('active');
+        }
+
+        function closeSpellModal() {
+            document.getElementById('spell-modal').classList.remove('active');
+        }
+
+        function closeSpellModalOnBackdrop(e) {
+            if (e.target.id === 'spell-modal') closeSpellModal();
+        }
+
+        // ==========================================
+        // 📋 1-CLICK EXPORT STATE STRING
+        // ==========================================
+        function exportSheetState() {
+            const exportStr = `🐾 Sylvar Link (Lv 3 Whispers Bard) | HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: ${isCloakAttuned ? '12' : '11'} | Insp: ${bardicInsp}/3 | Help: ${helpTokens}/2 | Slots: [Lv1: ${spellSlots[1].current}/4, Lv2: ${spellSlots[2].current}/2] | Wealth: ${currentGP} GP, ${currentSP} SP | 📦 Inventory: (Live Sync)`;
+
+            navigator.clipboard.writeText(exportStr).then(() => {
+                alert(`Copied Character State to Clipboard!\n\n${exportStr}`);
+                logRoll(`📋 <strong>Exported State String to Clipboard:</strong><br><small style="color:var(--text-muted); font-family:'JetBrains Mono';">${exportStr}</small>`);
+            }).catch(() => {
+                prompt("Copy character state string:", exportStr);
+            });
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', initSheet);
+    </script>
 </body>
 </html>
