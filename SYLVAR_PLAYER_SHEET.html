@@ -997,12 +997,12 @@
                             </div>
                         </div>
 
-                        <!-- Steel Dagger -->
+                        <!-- Steel Daggers -->
                         <div class="action-card">
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
                                     <div class="action-card-title" onclick="openSpellDetailsModal('dagger')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
-                                        🗡️ Steel Dagger <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                        🗡️ Steel Daggers <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Finesse / Thrown 20/60ft</div>
                                 </div>
@@ -1404,7 +1404,7 @@
             "🛡️ Cloak of Protection (+1 AC & Saves)",
             "🥋 Leather Armor (AC 11)",
             "🗡️ Steel Rapier",
-            "🗡️ 2x Steel Dagger",
+            "🗡️ 2x Steel Daggers",
             "🪘 Tambourine (Arcane Focus & Resonator)",
             "🎸 Lute & Wooden Guitar",
             "💣 2x Spitfire Flasks",
@@ -1438,7 +1438,7 @@
                 effect: "• <strong>+5 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 3 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+2d6 Psychic Damage</strong>!"
             },
             "dagger": {
-                name: "🗡️ Steel Dagger",
+                name: "🗡️ Steel Daggers",
                 category: "SIMPLE WEAPON • Finesse, Light, Thrown",
                 origin: "Bardic Loadout",
                 desc: "Balanced throwing daggers with keen steel edges.",
@@ -2006,27 +2006,28 @@
         // 🎒 TRACKED INVENTORY MANAGER (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
         function getStoredItems() {
-            let stored = localStorage.getItem('dnd_inv_sylvar_v4');
+            let stored = localStorage.getItem('dnd_inv_sylvar_v5');
             if (!stored) {
                 localStorage.removeItem('dnd_inv_sylvar');
                 localStorage.removeItem('dnd_inv_sylvar_v2');
                 localStorage.removeItem('dnd_inv_sylvar_v3');
-                localStorage.setItem('dnd_inv_sylvar_v4', JSON.stringify(defaultItems));
+                localStorage.removeItem('dnd_inv_sylvar_v4');
+                localStorage.setItem('dnd_inv_sylvar_v5', JSON.stringify(defaultItems));
                 return [...defaultItems];
             }
             return JSON.parse(stored);
         }
 
         function saveStoredItems(items) {
-            localStorage.setItem('dnd_inv_sylvar_v4', JSON.stringify(items));
+            localStorage.setItem('dnd_inv_sylvar_v5', JSON.stringify(items));
         }
 
         function parseItemInfo(itemStr) {
             if (!itemStr) return { hasQty: false, qty: 1, emoji: '', name: '', raw: '' };
             
-            const emojiMatch = itemStr.match(/^([\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\s]+)/u);
+            const emojiMatch = itemStr.match(/^([\p{Extended_Pictographic}\u{FE00}-\u{FE0F}\u{200D}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F300}-\u{1FAFF}\s]+)/u);
             const emoji = emojiMatch ? emojiMatch[1].trim() + ' ' : '';
-            let rest = (emojiMatch ? itemStr.slice(emojiMatch[0].length) : itemStr).trim();
+            let rest = (emojiMatch ? itemStr.slice(emojiMatch[0].length) : itemStr).replace(/^[\u{FE00}-\u{FE0F}\u{200D}\s]+/u, '').trim();
 
             let qty = 1;
             let hasQty = false;
@@ -2152,7 +2153,7 @@
         }
 
         function resetInventory() {
-            localStorage.removeItem('dnd_inv_sylvar_v4');
+            localStorage.removeItem('dnd_inv_sylvar_v5');
             saveStoredItems([...defaultItems]);
             renderInventory();
             logRoll(`🔄 <strong>Inventory Reset:</strong> Restored to official starting loadout.`);
@@ -2388,7 +2389,7 @@
                 desc: "Finesse Martial Weapon: +5 to Hit, 1d8 + 3 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!"
             },
             dagger: {
-                name: "🗡️ Steel Dagger",
+                name: "🗡️ Steel Daggers",
                 school: "Finesse / Thrown",
                 castingTime: "1 Action",
                 range: "20/60 feet",
