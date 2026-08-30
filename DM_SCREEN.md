@@ -364,7 +364,7 @@ graph TD
 
 #### ⚡ THE TRI-DRACONIC RESONANCE (Shared Party Synergy & Combined Ultimate)
 * **🔗 Proximity Synergy (Within 30 ft):** When all 3 scales are reunited and wielded in combat, each wielder radiates a shared draconic passive to all allies:
-  - *Silver Aura (Sylvar Link • Clyssavar's Scale of the Zephyr):* Party gains **+10 ft Movement Speed**, **+2 to Initiative**, and **weapon attacks push targets 5 ft (Gale-Shock)**.
+  - *Silver Aura (Sylvar Link • Clyssavar's Scale of the Zephyr):* Party gains **+10 ft Movement Speed** and **+2 to Initiative**.
   - *Bronze Aura (Eflein • Astalagan's Bronze Scale):* Party gains **Lightning Damage Resistance** and **Static Overcharge** (*first weapon attack or damage spell hit each ally lands on their turn deals an extra +1d4 Lightning Damage*).
   - *Gold Aura (Father Flubs • Turadaer's Gold Scale):* Party gains **+1 to all Saving Throws & +5 Max/Current HP**.
 * **💥 Combined Ultimate — "Tri-Draconic Convergence" (1/Day Shared Action):**
