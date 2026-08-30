@@ -221,42 +221,38 @@
 * 🦉🐻 **Taming the Screeching Owlbear (Wilderness Ridge Grove):**
   * **Objective:** Slay or tame territorial apex owlbear using brass whistle (DC 12 STR to grab / DC 10 Animal Handling).
   * **Reward:** **Azure Wolf Heavy Cloak**, 45 gp, and Owlbear Feather Focus (+1 Nature/Survival).
-* 🥐 **Sanctuary Specialty Bread Barter (Blepp & Frub):**
-  * **Objective:** Bring wild honey, cave salt, or rare berries from travels back to cloister kitchen.
-  * **Reward:** 🧀 *Cheese Bread* (+2 Init), 🥩 *Steak Bread* (+2 Hit), 🐟 *Salmon Bread* (+4 Temp HP).
-* 📖 **Lianna's Scattered Draconic Folios (Eflein's Wife Trail):**
-  * **Objective:** Collect 4 missing research folios (Library A4 ➔ Seagrow B6 ➔ Shipwreck C4 ➔ Observatory D4).
-  * **Reward:** Unlocks true secrets of Sharruth's volcanic core + **+2 to Arcana Checks** permanently.
-
----
-
-## 🎭 SECTION 2: MASTER NPC & ALLY DIRECTORY (WITH MET STATUS & COMBAT STATS)
+* 🥐 **Sanctuary Specialty Bread Bart## 🎭 SECTION 2: MASTER NPC & ALLY DIRECTORY (WITH PHILOSOPHY & LIVE DILEMMAS)
 
 ### 📊 Master Campaign NPC Fast Reference Table (Divided by Faction & Met Status)
 
-| Region / Faction | NPC Name & Title | Status / World State | AC | HP | INIT | Speed | STR | DEX | CON | INT | WIS | CHA | Key Actions / Offerings / Spells | 🗣️ Voice & Roleplay Cue |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **🛡️ Party Companions** | 🛡️ **General Varnoth** | `⭐ MET & ACTIVE` | 17 | 22 | **+0** | 30 ft | **+4★** | **+0** | **+4★** | **+1** | **+2** | **+1** | Longsword (+4 hit, 1d8+2/1d10+2) + 🛡️ Protection Reaction + 💨 Second Wind (1d10+2) | Low, raspy battlefield authority. *"Keep your head down, kid."* |
-| **⛩️ Dragon's Rest** | 🐉 **Elder Runara** | `⭐ MET & ACTIVE` | 19 | 212 | **+0** | Fly 80 | **+6** | **+0** | **+5** | **+2** | **+7★** | **+8★** | Multiattack (Bite +8, 2d10+5) + Lightning Breath (12d10) + Repulsion Breath | Serene, gentle, maternal ancient wisdom. *"May Bahamut guide your peace."* |
-| | 🌿 **Tarak** | `⭐ MET & ACTIVE` | 13 | 27 | **+3** | 30 ft | **+0** | **+5★** | **+1** | **+1** | **+2** | **+0** | Daggers (+5 hit, 1d4+3) + Cunning Action + Potion Brewing (Potions & Ruby Morel Elixir) | Former assassin atoning. Calm, dry, quiet. *"The soil doesn't judge yesterday."* |
-| | 🛠️ **Myla "Goggles"** | `⭐ MET & ACTIVE` | 12 | 10 | **+2** | Fly 30 | **-2** | **+2** | **+0** | **+2** | **-1** | **-1** | Alchemical Flame (DC 12 Dex, 1d6 fire) + *Myla's Scrap* (Discounts for cantrip sparks!) | Chirpy, hyperactive squeaks. *"Cast a spark and I'll knock off 10%!"* |
-| | 🦎 **Blepp & Frub** | `⭐ MET & ACTIVE` | 12 | 7 | **+2** | 30 ft | **-2** | **+2** | **+0** | **-1** | **-1** | **-1** | Kitchen Dagger (+4, 1d4+2) + Trades Specialty Rolls for wild berries & spices | Superstitious baker, high-pitched squeaks. *"My dagger is dragon-blessed!"* |
-| | 📚 **Kilnip** | `🕊️ Sanctuary Citizen` | 11 | 7 | **+1** | 30 ft | **-2** | **+1** | **+0** | **+2** | **+1** | **-1** | Library Keeper • Draconic Scholar • Holds Lianna's bookmark & library notes | Sleepy, sweet insomniac reader. *"Lianna had the kindest handwriting."* |
-| | 🕊️ **Rix** | `🕊️ Sanctuary Citizen` | 12 | 9 | **+1** | 30 ft | **-2** | **+1** | **+1** | **+0** | **+2** | **+0** | Temple Acolyte • Assists with Bahamut incense & tells terrible dragon puns | Pious, cheerful acolyte. *"Why do dragons sleep on gold? Sweet dreams!"* |
-| | 🕊️ **Agga, Laylee, Mumpo, Zark** | `🕊️ Sanctuary Citizen` | 12 | 8 | **+1** | 30 ft | **-1** | **+1** | **+1** | **+1** | **+0** | **+0** | Monastery Logistics, Tinkering, Scouting, and Beach Switchback Sentry | Diverse kobold quirks (stern supervisor, apprentice, sentry). |
-| **🍄 Seagrow Caves** | 🍄 **Spore-Tender Pips** | `🍄 Cave Guide` | 10 | 7 | **+0** | 20 ft | **-1** | **+0** | **+0** | **-1** | **+1** | **-2** | Telepathic Rapport Spores (30ft link, 1 hour) • Guides party through safe mushroom paths | Silent; projects moss smells, warm green colors, and emotional waves. |
-| | 🍄 **Sovereign Sinensa** | `⏳ UNMET / COMATOSE` | 13 | 60 | **+0** | 20 ft | **+1** | **+0** | **+2** | **+1** | **+3** | **+0** | Hallucination Spores (DC 12 Con) + Pacifying Spores (DC 12 Con) + Animating Spores | Gentle communal telepathic leader; comatose under sulfur fume blight in B5. |
-| **⚡ Clifftop Observatory** | 🐉 **Aidron** | `⏳ RESCUE TARGET (D6)` | 17 | 32 | **+0** | Fly 60 | **+3** | **+0** | **+2** | **+2** | **+1** | **+2** | Bite (+5 hit, 1d10+3) + Repulsion Breath (30ft, DC 12 Str Save or pushed 30 ft) | Proud, hot-headed young bronze dragon. *"Break these chains!"* |
-| | 🦇 **Mek & Minn** | `⏳ PRISONERS (D2)` | 13 | 14 | **+3** | Fly 30 | **-2** | **+3** | **+0** | **-1** | **-1** | **-1** | Trapped by Stirges in D2 Rotunda effigies; reveals Sparkrender's journal location | Terrified, high-pitched squawks pleading for rescue from stirges. |
+| Region / Faction | NPC Name & Title | Status / World State | AC | HP | INIT | Speed | 🧭 Core Philosophy & ⚡ Immediate Problem | 🗣️ Voice & Roleplay Cue |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **🛡️ Party Companions** | 🛡️ **General Varnoth** | `⭐ MET & ACTIVE` | 17 | 29 | **+0★** | 30 ft | **🧭 Pragmatic Redemptive Duty:** Peace requires iron vigilance.<br>⚡ *Peg leg rot & guilt over failing to sprint to the reef in time.* | Low, raspy battlefield authority. *"Keep your head down, kid. Check your corners."* |
+| | 🐍🔥 **Thurible** | `⭐ ACTIVE MASCOT` | 14 | 32 | **+2** | 30 ft | **🧭 Primal Warmth & Pack Loyalty:** Heat is love, cold is agony.<br>⚡ *Morning ocean fog makes tail stiff; wants to sleep in baking oven.* | Deep rhythmic boiler-purrs, gentle hiss of steam, sweetbread puppy-tilts. |
+| | ❄️ **Vaelith Frostborne** | `⭐ MET & ACTIVE` | 16 | 24 | **+2** | 30 ft | **🧭 Sovereign Solitude & Cold Pragmatism:** Rely only on bloodline frost.<br>⚡ *Bruised ribs from solo reef run; Silver Scale frequency buzzing in ears.* | Whispering, cold, measured tone like cracking ice. *"The storm doesn't negotiate."* |
+| **⛩️ Dragon's Rest** | 🐉 **Elder Runara** | `⭐ MET & ACTIVE` | 19 | 212 | **+0** | Fly 80 | **🧭 Restorative Pacifism:** Cycles of draconic blood-feuds must end.<br>⚡ *Apprentice Aidron rejected peace and stormed off to Sparkrender's spire.* | Serene, gentle, maternal ancient wisdom. *"May Bahamut guide your peace."* |
+| | 🌿 **Tarak** | `⭐ MET & ACTIVE` | 13 | 27 | **+3** | 30 ft | **🧭 Penitent Quietism:** Past sins atoned by nurturing life and healing.<br>⚡ *Myconids placed octopus guardian; Heart Cap mushroom supply cut off.* | Former assassin atoning. Calm, dry, quiet. *"The soil doesn't judge yesterday."* |
+| | 🛠️ **Myla "Goggles"** | `⭐ MET & ACTIVE` | 12 | 10 | **+2** | Fly 30 | **🧭 Technological Optimism:** Ingenuity conquers physical trauma.<br>⚡ *Twin brothers abandoned her and joined Sparkrender; hopes to save them.* | Chirpy, hyperactive squeaks. *"Cast a spark and I'll knock off 10%!"* |
+| | 📋 **Agga** | `🕊️ Sanctuary Citizen` | 12 | 8 | **+1** | 30 ft | **🧭 Stoic Utilitarian Order:** Tranquility exists through strict supply tallies.<br>⚡ *Pantry salt caked by ocean fog; youngsters slacking on sweeping.* | Brisk, dry, no-nonsense supervisor. *"If you have time to lean, grab a broom."* |
+| | 🦎 **Blepp & Frub** | `⭐ MET & ACTIVE` | 12 | 7 | **+2** | 30 ft | **🧭 Animistic Fatalism & Curiosity:** Luck charms and hot bread ward off evil.<br>⚡ *Sourdough starter cold; nearly bitten by beach zombies yesterday.* | Superstitious baker, high squeaks. *"My dagger blocked a dragon's sneeze!"* |
+| | 📚 **Kilnip** | `🕊️ Sanctuary Citizen` | 11 | 7 | **+1** | 30 ft | **🧭 Archival Preservationism:** Written truth immortalizes the soul.<br>⚡ *Mildew creeping onto Lianna's ancient star charts; needs blotting sand.* | Sleepy, sweet insomniac reader. *"Lianna had the kindest handwriting."* |
+| | ⚙️ **Laylee** | `🕊️ Sanctuary Citizen` | 12 | 8 | **+2** | Fly 30 | **🧭 Empirical Tinkerism:** You learn by building and blowing things up.<br>⚡ *Banned from forge after singeing kitchen; sneaking parts for grapple claw.* | Wide-eyed, energetic squeaks with soot on snout. *"It reorganized very loudly!"* |
+| | 🪙 **Mumpo** | `🕊️ Sanctuary Citizen` | 12 | 8 | **+2** | 30 ft | **🧭 Audacious Bravado:** Greatness belongs to bold tricksters.<br>⚡ *Terrified of losing the dragon scale he 'stole' from Runara's temple.* | Cocky theatrical stage-whispers. *"You're looking at a master thief!"* |
+| | 🕊️ **Rix** | `🕊️ Sanctuary Citizen` | 12 | 9 | **+1** | 30 ft | **🧭 Devotional Levity:** Humor and prayer keep darkness from poisoning souls.<br>⚡ *Incense brazier cracked in gale; heard singing voice lure ship to reef.* | Pious, cheerful acolyte. *"Why do dragons sleep on gold? Sweet dreams!"* |
+| | 🗡️ **Zark** | `🕊️ Sanctuary Citizen` | 13 | 10 | **+2** | 30 ft | **🧭 Aggressive Fortress Defense:** Peace without spears is an open banquet.<br>⚡ *Seagulls stealing fish bait; paranoid of pirate raiders in sea mist.* | Fierce, snappy cliff barking. *"Halt right there, gas-spore face! State business!"* |
+| **🍄 Seagrow Caves** | 🍄 **Spore-Tender Pips** | `🍄 Cave Guide` | 10 | 7 | **+0** | 20 ft | **🧭 Innocent Telepathic Connection:** Minds that touch cannot hate.<br>⚡ *Sulfur fumes drying sprout nursery; octopus guardian won't let him out.* | Silent; telepathic petrichor, lavender smells, and gentle sensory pulses. |
+| | 🍄 **Sovereign Sinensa** | `⏳ UNMET / COMATOSE` | 13 | 60 | **+0** | 20 ft | **🧭 Mycelial Harmony:** All living things are interconnected threads.<br>⚡ *Comatose from B6 volcanic sulfur fumes; nursery rotting without care.* | Deep harmonic telepathic resonance. *« The roots weep burning sulfur... »* |
+| **⚡ Clifftop Observatory** | 🐉 **Aidron** | `⏳ RESCUE TARGET (D6)` | 17 | 32 | **+0** | Fly 60 | **🧭 Militant Righteousness:** Evil must be actively crushed in battle.<br>⚡ *Bound in iron chains in D6; terrified of Sparkrender's comet sacrifice.* | Proud, hot-headed young bronze dragon. *"Undo these chains and watch me fly!"* |
+| | 🦇 **Mek & Minn** | `⏳ PRISONERS (D2)` | 13 | 14 | **+3** | Fly 30 | **🧭 Survivalist Cowardice:** Cling to whoever has the biggest fangs.<br>⚡ *Trapped by 8 stirges while painting effigies; eager to trade secrets.* | Terrified, high-pitched squawks pleading for rescue from stirges. |
 
 ---
 
-## ⚔️ SECTION 3: MONSTER STAT BLOCKS & BIOME ENEMY DIRECTORY
+## ⚔️ SECTION 3: MONSTER STAT BLOCKS & BIOME ENEMY DIRECTORY (WITH PHILOSOPHY & MORALS)
 
 ### 📊 Master Enemy Fast Reference & Combat Modifiers Table (Divided by Biome)
 
 | Region / Biome | Enemy Name & Encounter Role | CR | INIT | HP | AC | Speed | STR | DEX | CON | INT | WIS | CHA | Main Attack (+Hit, Range, Dmg) | Save DC / Special Ability |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **🏖️ Dragon's Rest & Beach** | 🧟 **Zombie Captain** *(🏆 BEACH RESURGENCE BOSS)* | 1 | **-1** | 38-42 | 10 | 25 ft | **+2** | **-1** | **+3** | **-2** | **+2★** | **-1** | Cutlass **+4** (1d6+2 slash) + Slam **+4** (1d6+2) | Undead Fortitude (DC 5+dmg Con) |
 | | 🧟 **Drowned Sailor (Zombie)** *(Beach Ambush)* | 1/4 | **-2** | 28-32 | 9 | 20 ft | **+1** | **-2** | **+3** | **-4** | **+0★** | **-3** | Slam **+3** (1d6+2 bludgeon) | Undead Fortitude (DC 5+dmg Con) |
 | **🍄 Seagrow Caves** | 🐍 **Fire Snake & Fume Drakes** *(🏆 B6 CORE CLIMAX BOSS)* | 1 | **+2** | 30-35 | 14 | 30 ft | **+1** | **+2** | **+0** | **-4** | **+0** | **-1** | Bite **+4** (1d4+2 + 1d6 fire) | Heated Body: 1d6 fire on contact |
@@ -282,142 +278,91 @@
 
 ---
 
-### 💀 DETAILED MONSTER STAT BLOCKS
+### 💀 DETAILED MONSTER & THINKING CREATURE STAT BLOCKS
 
-#### 1. 🧟‍♂️ Zombie Captain / Deck Officer — Medium Undead (CR 1 Boss)
-* **Description:** *A bloated, waterlogged corpse of a high-ranking naval officer. Tattered navy-blue wool clings to his rotting shoulders, encrusted with barnacles, sea glass, and dried blood. Saltwater drools from his jagged teeth, and in his blue-grey grip he clutches a chipped steel cutlass with grim, supernatural hatred.*
-* **AC:** 10 (Armor scraps) | **HP:** **38 – 42 HP** | **Speed:** 25 ft | Darkvision 60 ft
-* **Stats:** STR 15 (+2) | DEX 8 (-1) | CON 16 (+3) | INT 6 (-2) | WIS 10 (+2★) | CHA 8 (-1)
-* **Undead Fortitude:** If damage reduces to 0 HP, makes a **CON Save (DC 5 + damage taken)**. On success, drops to **1 HP instead**! (Fails on Radiant damage or Critical Hits).
-* **Multiattack:** 2 Attacks (`+4 to hit`). *Hit 1 (Cutlass):* **5 (1d6 + 2)** slashing. *Hit 2 (Slam):* **5 (1d6 + 2)** bludgeoning.
-* 💎 **Possible Loot Drops (Lead DM Choice):**
-  1. 🧭 **Silver Pocket Compass** (25 gp) + Ship Logbook Page
-  2. 🗡️ **Zombie Captain's Cutlass** (+4 to hit, 1d6+2 slashing, grants 30ft swim speed)
-  3. 🧪 1 *Potion of Healing* + `2d6 sp`
-
-#### 2. 🧟 Drowned Sailor (Zombie) — Medium Undead (CR 1/4)
-* **Description:** *Pale, waterlogged corpses dressed in shredded sailor smocks and brine-soaked trousers. Sea foam and black kelp leak from their slack mouths as they shamble forward with wet, gurgling moans, driven by the lingering necromantic prayer of Aleitha to Orcus.*
-* **AC:** 9 | **HP:** **28 – 32 HP** | **Speed:** 20 ft | Darkvision 60 ft | Immune: Poison
-* **Stats:** STR 13 (+1) | DEX 6 (-2) | CON 16 (+3) | INT 3 (-4) | WIS 6 (+0★) | CHA 5 (-3)
-* **Undead Fortitude:** DC `5 + damage taken` CON Save to drop to 1 HP instead of dying.
-* **Slam Attack:** `+3 to hit`, reach 5ft, **5 (1d6 + 2)** bludgeoning damage.
-* 💎 **Possible Loot Drops:** `1d4 gp` in tarnished Neverwinter coins, rusted iron dagger, bone dice.
-
-#### 3. 💀 Skeleton Sailor — Medium Undead (CR 1/4)
-* **Description:** *Bleached, clattering human bones tied together with rotting rigging and sea canvas. Red pinpricks of necromantic malice burn inside their hollow eye sockets as they draw rusted cutlasses and notched shortbows with unnatural, jerky speed.*
-* **AC:** 13 (Armor scraps) | **HP:** **20 – 24 HP** | **Speed:** 30 ft | Vulnerable: Bludgeoning
-* **Stats:** STR 10 (+0) | DEX 14 (+2) | CON 15 (+2) | INT 6 (-2) | WIS 8 (-1) | CHA 5 (-3)
-* **Scimitar / Shortbow:** `+4 to hit`, reach 5ft / range 80/320ft, **5 (1d6 + 2)** slashing or piercing damage.
-* 💎 **Possible Loot Drops:** Usable Scimitar or Shortbow + 12 arrows, `1d6 sp`, silk bandana.
-
-#### 4. 🦎 Kobold Dragon-Worshiper / Ambusher — Small Humanoid (CR 1/8)
-* **Description:** *Small, wiry reptilian humanoids standing barely 3 feet tall, covered in reddish-brown scales with sharp snouts, horn stubs, and twitching tails. Clad in patched leather scraps and grease-stained cloaks, they brandish crude bone daggers and fire slings with high-pitched yelps.*
-* **AC:** 13 (Leather + Scraps) | **HP:** **14 – 18 HP** | **Speed:** 30 ft | Darkvision 60 ft
-* **Stats:** STR 7 (-2) | DEX 15 (+2) | CON 12 (+1) | INT 8 (-1) | WIS 8 (-1) | CHA 8 (-1)
-* **Pack Tactics:** **Advantage on Attack Rolls** against a creature if at least one ally is within 5 ft of the target.
-* **Dagger / Scimitar:** `+4 to hit`, reach 5ft, **4 (1d4 + 2)** piercing damage.
-* **Sling / Fire Pot:** `+4 to hit`, range 30/120ft, **4 (1d4 + 2)** bludgeoning + 1 fire.
-* 💎 **Possible Loot Drops (Roll 1d4):**
-  1. 🪙 `1d6 cp, 1d4 sp` + small polished blue glass bead
-  2. 🪨 Dragon-tooth carving (2 gp) or sling + 20 stones
-  3. 💣 1 **Kobold Fire-Pot** (clay flask: 2d4 fire damage in 5ft radius, DC 11 Dex)
-  4. 🍞 Dried smoked fish & roasted wild tubers (1 ration)
-
-#### 5. 🦇 Winged Kobold (Urd Skirmisher) — Small Humanoid (CR 1/4)
-* **Description:** *Kobolds born with wide, leathery bat-like wings that grant them aerial mobility. They consider themselves divinely favored by dragons, screeching gleefully from 30 feet in the air as they drop heavy jagged rocks and volatile incendiary clay pots onto ground targets.*
-* **AC:** 13 | **HP:** **18 – 22 HP** | **Speed:** 30 ft, Fly 30 ft | Pack Tactics
-* **Stats:** STR 7 (-2) | DEX 16 (+3) | CON 10 (+0) | INT 8 (-1) | WIS 8 (-1) | CHA 8 (-1)
-* **Dropped Rock / Fire Bomb:** `+5 to hit`, one target directly below within 30 ft, **6 (1d6 + 3)** bludgeoning / fire damage.
-* 💎 **Possible Loot Drops:** 1d2 Blue Wyrmling feathers, `1d6 sp`, copper spark-ring.
-
-#### 6. 🛡️ Kobold Cleaver Champion / Dragonshield — Small Humanoid (CR 1/2 Boss)
-* **Description:** *A burly, battle-hardened kobold veteran clad in heavy scavenged scale mail and wielding a painted dragon-crest iron buckler. He wields twin jagged iron cleavers with surprising savagery, leaping from high rocks to slam shield-first into unsuspecting heroes.*
-* **AC:** 15 (Scale Mail + Shield) or 14 (Dual Cleavers) | **HP:** **32 – 38 HP** | **Speed:** 25 ft
-* **Stats:** STR 12 (+1) | DEX 15 (+2) | CON 14 (+2) | INT 8 (-1) | WIS 10 (+0) | CHA 10 (+0)
-* **Dragon's Heart:** Advantage on saves against being Frightened or Paralyzed. Pack Tactics active.
-* **Spear / Cleavers:** `+4 to hit`, **5 (1d6 + 2)** piercing/slashing damage.
-* **Shield Bash / Rend (Bonus Action):** **DC 12 STR Save** or knocked **Prone** (or +1d4 bleed on dual cleavers).
-* 💎 **Possible Boss Loot Drops (Roll 1d3):**
-  1. 🛡️ Polished Dragon-Scale Buckler (+2 AC, lightweight)
-  2. 🏹 **Sling of the Ridge-Runner (+1)** (+1 hit/dmg, 120ft without disadvantage)
-  3. 🪙 Leather pouch containing `2d6 gp, 12 sp` + 2 rough quartz crystals (10 gp)
-
-#### ⛺ KOBOLD SPITFIRE CAMP MASTER STASH (Chest by the Fire Pit)
-* 🍾 **Father Flubs' Lost Vintage Elven Wine Jug** (Drinking restores 1d4 HP / grants +1 Inspiration on toast).
-* 🗺️ **Crude Charcoal Cave Map** (Dried fish skin: hints at flooded entrance B1 and Fume Drakes in Seagrow Caves).
-* 💣 **2x Volatile Spitfire Flasks** (Deals 2d4 fire in 5ft radius, DC 11 Dex).
-* 🪙 **Camp Chest Wealth:** `18 sp, 45 cp`, 1 polished agate stone (10 gp).
-
-#### 7. 💨 Fume Drake (Seagrow Caves) — Small Dragon (CR 1/4)
-* **Description:** *Sleek, serpentine draconic creatures made of hardened volcanic glass and boiling steam. Their glassy scales glow with inner amber magma veins, and thick streams of acrid, eye-watering sulfur gas billow continuously from their nostrils and toothy maws.*
-* **AC:** 12 | **HP:** **28 – 32 HP** | **Speed:** 30 ft, Fly 30 ft | Immune: Poison
-* **Stats:** STR 10 (+0) | DEX 14 (+2) | CON 13 (+1) | INT 4 (-3) | WIS 10 (+0) | CHA 6 (-2)
-* **Death Burst:** When reduced to 0 HP, explodes in scalding sulfur fumes (10ft radius, **DC 11 DEX Save** or **4 (1d8)** fire/steam).
-* **Scalding Bite:** `+4 to hit`, reach 5ft, **5 (1d6 + 2)** piercing + **2 (1d4)** fire damage.
-* **Scalding Breath (Recharge 5-6):** 15ft cone. **DC 11 CON Save**. Takes **7 (2d6)** fire/poison damage on fail (half on save).
-* 💎 **Possible Loot Drops:** 1d2 **Fume Drake Venom Sacs**, `2d4 sp`, glowing spore pouch (5 sp).
-
-#### 8. 🌿 Violet Fungus — Medium Plant (CR 1/4)
-* **Description:** *A 4-foot-tall bulbous mushroom with a slimy, deep purple umbrella cap and a cluster of four rubbery, whip-like rotting tentacles. It remains completely motionless among harmless mushroom patches until living prey approaches within 10 feet.*
-* **AC:** 6 | **HP:** **26 – 30 HP** | **Speed:** 5 ft | Blindsight 30 ft
-* **Stats:** STR 3 (-4) | DEX 1 (-5) | CON 12 (+1) | INT 1 (-5) | WIS 3 (-4) | CHA 1 (-5)
-* **Rotting Touch (1-4 Attacks):** `+2 to hit`, reach 10ft, **4 (1d8)** necrotic damage.
-* 💎 **Possible Loot Drops:** `1d4` **Heart Cap Mushrooms** (Cures Sinensa!), Bioluminescent Spores.
-
-#### 9. 🐙 Spore Servant Octopus (Cave Boss) — Large Plant (CR 1 Boss)
-* **Description:** *A massive, 12-foot sea octopus reanimated into a relentless fungal automaton by Sovereign Sinensa's spores. Its rubbery grey skin is heavily encrusted with bioluminescent moss, shelf mushrooms, and glowing violet mycelium tendrils. Its bulbous eyes are milky and vacant, while its eight 15-foot tentacles writhe through the water, dripping toxic amber spores.*
-* **AC:** 12 | **HP:** **58 – 65 HP** | **Speed:** 5 ft, Swim 50 ft | Immune: Poison, Charmed, Frightened
-* **Stats:** STR 16 (+3) | DEX 14 (+2) | CON 14 (+2) | INT 2 (-4) | WIS 10 (+0) | CHA 1 (-5)
-* **Crushing Tentacle:** `+5 to hit`, reach 15ft, **7 (1d8 + 3)** bludgeoning + **Grappled & Restrained (DC 13 Escape)**.
-* **Toxic Spore Cloud (Recharge 5-6):** 20ft radius cloud. **DC 12 CON Save** or takes **7 (2d6)** poison damage + Blinded 1 turn.
-* 💎 **Possible Boss Loot Drops:** `1d4+1` Heart Caps, Sunken chest (`15 gp, 20 sp`, 🪄 *Wand of Magic Missiles* / *Ring of Swimming*).
-
-#### 10. ⚡ Sparkrender (Blue Dragon Wyrmling) — Medium Dragon (CR 4 APEX FINAL BOSS)
+#### 1. ⚡ Sparkrender (Blue Dragon Wyrmling) — Medium Dragon (CR 4 APEX FINAL BOSS)
 * **Description:** *A sleek, predatory young blue dragon with iridescent azure scales as hard as tempered steel. A single sharp, ridged horn sweeps back from his snout, and crackling blue arcs of lightning sizzle across his spine and claws. Empowered by the stolen King-Killer Comet ritual, he boasts in Draconic that the ancient power of all five dead dragons of Stormwreck Isle belongs to him.*
 * **AC:** 15 (Natural Scales) | **HP:** **95 – 110 HP** | **Speed:** 30 ft, Burrow 15 ft, Fly 60 ft | Immune: Lightning
 * **Stats:** STR 17 (+3) | DEX 10 (+2★) | CON 15 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)
 * **Perception:** +4 | **Stealth:** +2
 * **Multiattack:** Makes 1 Bite attack (`+5 to hit`, **8 [1d10 + 3]** piercing + **3 [1d6]** lightning) and 1 Claw attack (`+5 to hit`, **6 [1d6 + 3]** slashing).
 * **Lightning Breath (Recharge 5-6):** 30ft line (5ft wide). **DC 13 DEX Save**. Takes **22 (4d10)** lightning damage on fail (half on save).
+* 🧭 **Core Philosophy:** **Draconic Social Darwinism**. Chromatic dragons are the rightful apex tyrants of Toril; the weak exist only to fuel the ascension of the strong.
+* ⚡ **Immediate Active Dilemma:** The King-Killer Star comet window closes in hours; must align 5 effigies and execute Aidron's blood sacrifice to siphon Sharruth's magma flame.
+* ⚖️ **Moral Stand & RP Hooks:** Snarl-laced, haughty arrogance. Refuses retreat until bloodied under 15 HP. *"Bow before the blood of Eldenemir, or be turned to glass!"*
 * 💎 **Direct Monster Drop:** ⚡ **Sparkrender's Azure Scale** (*Wyrmling Relic — Lightning Resist, +1 Lightning Attack/DC, +1d6 Surge 1/day*).
 
-#### 11. 👑 Aleitha, The Drowned Queen (Zombie Queen) — Medium Undead (CR 2 Boss)
+#### 2. 👑 Aleitha, The Drowned Queen (Zombie Queen) — Medium Undead (CR 2 Boss)
 * **Description:** *Once a devoted young sailor, Aleitha was consumed and twisted by dark necromantic magic when her forbidden ritual to resurrect her drowned husband Brastos went terribly wrong. Now a tragic, terrifying undead queen, she glides across the waterlogged decks of the Compass Rose with pale, barnacle-encrusted skin, hair of writhing black kelp, and milk-white eyes burning with supernatural sorrow. Around her neck hangs the braided hair-talisman pulsing with dark, abyssal necromancy that animates every corpse on the reef.*
 * **AC:** 13 (Natural Brine Armor) | **HP:** **55 – 65 HP** | **Speed:** 30 ft, Swim 30 ft | Darkvision 60 ft
-* **Damage Resistances:** Cold, Necrotic; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks | **Immunities:** Poison, Charmed, Frightened
+* **Damage Resistances:** Cold, Necrotic; Nonmagical Physical Attacks | **Immunities:** Poison, Charmed, Frightened
 * **Stats:** STR 14 (+2) | DEX 14 (+2) | CON 16 (+3) | INT 12 (+1) | WIS 14 (+2) | CHA 16 (+3)
-* **Undead Fortitude:** If damage reduces her to 0 HP, she makes a **CON Save (DC 5 + damage taken)**. On success, drops to **1 HP instead** (fails on Radiant damage or Critical Hits).
-* **Aura of the Drowned (10 ft):** Seawater within 10 ft of Aleitha churns with freezing necrotic mana. Any non-undead creature that starts its turn in the water takes **3 (1d4)** necrotic damage and has its speed reduced by 10 ft.
-* **Sorrowful Dirge (Recharge 5-6):** Aleitha sings a haunting, grief-stricken lament for Brastos. Each living creature within 30 ft must succeed on a **DC 13 Wisdom Saving Throw** or take **9 (2d8)** psychic damage and be **Frightened** for 1 minute (can repeat save at end of its turn).
-* **Multiattack:** Makes 2 attacks: 1 with Rime-Crusted Claws and 1 with Brine Death Bolt.
-* **Rime-Crusted Claws:** `+5 to hit`, reach 5 ft. *Hit:* **6 (1d6 + 3)** slashing + **3 (1d6)** necrotic damage.
-* **Brine Death Bolt (Ranged Spell):** `+5 to hit`, range 60 ft. *Hit:* **10 (2d6 + 3)** necrotic damage.
-* **Grasp of the Deep (Recharge 4-6):** Spectral water tendrils erupt from the deck targeting one creature within 30 ft. Target must make a **DC 13 Strength Save** or be pulled 15 ft toward Aleitha and **Grappled & Restrained** (DC 13 escape).
-* 💎 **Direct Boss Drops & Artifacts:**
-  1. 📿 **Aleitha's Braided Talisman** (*Woven hair & bone — Take to Brastos's grave to break the island's zombie curse forever!*)
-  2. 🗝️ **Ivory Captain's Key** (*Unlocks the submerged hold chest containing Clyssavar's Silver Scale!*)
-  3. 👢 **Boots of Elvenkind** or 💍 **Ring of Water Walking** + `55 gp, 30 sp` in ancient Neverwinter coin.
+* **Undead Fortitude:** DC 5+dmg CON Save to drop to 1 HP instead of dying (fails on Radiant/Crits).
+* **Aura of the Drowned (10 ft):** Seawater within 10 ft deals **3 (1d4)** necrotic damage & slows living targets by 10 ft.
+* **Sorrowful Dirge (Recharge 5-6):** DC 13 Wis Save within 30 ft or take **9 (2d8)** psychic damage and be **Frightened for 1 min**.
+* **Multiattack:** 1 Claws (`+5 to hit`, 1d6+3 slash + 1d6 necro) + 1 Brine Death Bolt (`+5 to hit`, 60ft, 2d6+3 necro).
+* **Grasp of the Deep (Recharge 4-6):** DC 13 STR Save or pulled 15 ft and **Grappled & Restrained**.
+* 🧭 **Core Philosophy:** **Tragic Romantic Absolutism**. Love transcends life, death, and gods; she would tear open the Abyss to hold Brastos again.
+* ⚡ **Immediate Active Dilemma:** Tethered to the cursed wreck by Orcus's dark curse; cannot walk to Brastos's grave on the hill.
+* ⚖️ **Moral Stand & RP Hooks:** Ethereal, weeping voice. Attacks out of grief; ceases hostility if party pledges to carry her talisman to Brastos's grave. *"Where is he? Tell me Brastos still waits on the hill... or drown with me!"*
+* 💎 **Direct Boss Drops:** 📿 **Aleitha's Braided Talisman** (Bury on Brastos's grave to cleanse island curse), 🗝️ **Ivory Captain's Key** (Unlocks Clyssavar's Silver Scale), 👢 **Boots of Elvenkind** + 55 gp.
 
-#### 12. 🐍 Fire Snake — Medium Elemental (CR 1)
-* **Description:** *A 9-foot-long undulating serpent composed of molten magma and flickering crimson flames. As it coils across basalt stone, intense heat ripples through the air, scorching stone and igniting anything that comes within reach of its incandescent body.*
-* **AC:** 14 | **HP:** **30 – 35 HP** | **Speed:** 30 ft | Immune: Fire | Vulnerable: Cold
-* **Stats:** STR 12 (+1) | DEX 14 (+2) | CON 11 (+0) | INT 2 (-4) | WIS 10 (+0) | CHA 8 (-1)
-* **Heated Body:** Touching or hitting with a melee attack within 5 ft deals **3 (1d6) fire damage**.
-* **Flaming Bite / Constrict:** `+4 to hit`, reach 5ft, **4 (1d4 + 2)** piercing + **3 (1d6)** fire damage. Target is **Grappled (DC 12 Escape)**.
-* 💎 **Possible Loot Drops:** Glowing Fire Gem Gland (15 gp value).
+#### 3. 🧟‍♂️ Zombie Captain / Deck Officer — Medium Undead (CR 1 Boss)
+* **Description:** *A bloated, waterlogged corpse in tattered naval coat with barnacles and chipped steel cutlass.*
+* **AC:** 11 | **HP:** **48 – 55 HP** | **Speed:** 25 ft | Stats: STR +2, DEX -1, CON +3, INT -2, WIS +2★, CHA -1
+* **Undead Fortitude:** DC 5+dmg CON Save to stay at 1 HP.
+* **Multiattack:** 2 Attacks (+4 hit): Cutlass `1d6+2` slashing + Slam `1d6+2` bludgeoning.
+* 🧭 **Core Philosophy:** **Twisted Maritime Duty**. Must maintain command and protect cargo lockbox.
+* ⚡ **Immediate Active Dilemma:** Strongbox fell through rotted floorboards into flooded hold C9; lacks strength to retrieve it.
+* 💎 **Loot Drops:** 🧭 **Silver Pocket Compass** (25 gp), 🗡️ **Zombie Captain's Cutlass** (grants 30ft swim speed), 1 Potion of Healing.
 
-#### 13. 🦉🐻 Owlbear — Large Monstrosity (CR 3 Boss)
-* **Description:** *A hulking, 8-foot-tall predator that possesses the savage, muscle-bound body and thick brown fur of a grizzly bear, capped with the feathered head, razor curved beak, and huge nocturnal dish-eyes of an owl. Stranded on the island after a performing troupe's ship wrecked on the northern reefs, it wears a tarnished brass circus training whistle around its neck.*
-* **AC:** 13 (Natural Armor) | **HP:** **58 – 65 HP** | **Speed:** 40 ft | Keen Sight & Smell (Perception +3)
-* **Stats:** STR 20 (+5) | DEX 12 (+1) | CON 17 (+3) | INT 3 (-4) | WIS 12 (+1) | CHA 7 (-2)
-* **Multiattack:** Beak `+7 to hit` (**10 (1d10 + 5)** piercing) + Claw `+7 to hit` (**14 (2d8 + 5)** slashing).
-* 💎 **Possible Boss Drops:** Thick Owlbear Pelt (25 gp), Razor Talons, 💍 *Ring of Resistance*.
+#### 4. 🦅 The Harpy of the Crow's Nest — Medium Monstrosity (CR 1)
+* **Description:** *Vulture-bodied predator with human torso, human head, and heavy bone club.*
+* **AC:** 11 | **HP:** **38 HP** | **Speed:** 20 ft, Fly 40 ft | Stats: STR +1, DEX +1, CON +1, INT -2, WIS +0, CHA +1
+* **Luring Song:** Hypnotic melody within 300 ft; DC 11 Wis Save or Charmed and compelled to walk toward harpy.
+* **Multiattack:** Claws (+3 hit, 2d4+1 slash) + Club (+3 hit, 1d4+1 bludgeon).
+* 🧭 **Core Philosophy:** **Hedonistic Predator Vanity**. Sailors are prey to be lured and feasted on.
+* ⚡ **Immediate Active Dilemma:** Shoal wrecks slowed down for three days; belly empty; suspects thieves in crow's nest.
+* ⚖️ **Moral Stand & RP Hooks:** Bloodthirsty, but can be bargained with if bribed with gold or if nest gems are held hostage.
 
-#### 14. 🧜‍♀️ Sea Hag / Cove Witch — Medium Fey (CR 2)
-* **Description:** *A terrifying, gaunt aquatic hag with greenish, slimy skin covered in barnacles and sea lice. Her hair is a tangle of rotting black seaweed, and her yellow-toothed grin twists with spite as her milky, bulbous eyes channel the terrifying horror of the dark abyss.*
-* **AC:** 14 | **HP:** **48 – 55 HP** | **Speed:** 30 ft, Swim 40 ft | Amphibious | Darkvision 60 ft
+#### 5. 🧜‍♀️ Sea Hag / Cove Witch — Medium Fey (CR 2 Boss)
+* **Description:** *Aquatic hag with slimy greenish skin, seaweed hair, and milky eyes of abyssal spite.*
+* **AC:** 14 | **HP:** **48 – 55 HP** | **Speed:** 30 ft, Swim 40 ft | Amphibious
 * **Stats:** STR 16 (+3) | DEX 13 (+1) | CON 16 (+3) | INT 12 (+1) | WIS 12 (+1) | CHA 13 (+1)
-* **Horrific Appearance:** Any humanoid within 30 ft must make a **DC 11 WIS Save** or be **Frightened for 1 min**.
+* **Horrific Appearance:** 30ft radius, DC 11 Wis Save or Frightened for 1 min.
+* **Death Glare:** Targets 1 Frightened creature; DC 11 Wis Save or drops to **0 Hit Points**!
+* **Claws:** `+5 to hit`, reach 5ft, **10 (2d6 + 3)** slashing.
+* 🧭 **Core Philosophy:** **Spiteful Aesthetic Corruption**. Revels in dragging beauty and virtue into deformity and drowning.
+* ⚡ **Immediate Active Dilemma:** Clam-cracking sea otters disturbing bone totems; running out of corpse fat for cauldron.
+* 💎 **Loot Drops:** 🍷 *Elixir of Health*, Black Pearl (30 gp), Cursed Bone Charm.
+
+#### 6. 🦉🐻 The Circus Owlbear — Large Monstrosity (CR 3 Boss)
+* **Description:** *8-foot-tall predator with grizzly bear fur, purple feathers, and owl beak, wearing a tarnished brass whistle.*
+* **AC:** 13 | **HP:** **58 – 65 HP** | **Speed:** 40 ft | STR +5, DEX +1, CON +3, INT -4, WIS +1, CHA -2
+* **Multiattack:** Beak `+7 to hit` (1d10+5) + Claw `+7 to hit` (2d8+5).
+* 🧭 **Core Philosophy:** **Confused Beast Loyalty**. Remembers circus whistle and fish treats, but terrified and territorial.
+* ⚡ **Immediate Active Dilemma:** 4-inch ironwood splinter wedged in left hind paw pad causing screeching agony.
+* ⚖️ **Taming Mechanic:** Blow brass whistle (DC 10 Animal Handling) or remove splinter (DC 12 Medicine) ➔ becomes docile companion!
+* 💎 **Loot Drops:** Thick Owlbear Pelt (25 gp), Razor Talons, 💍 *Ring of Resistance*.
+
+#### 7. 🐙 Spore Servant Octopus — Large Plant (CR 1 Boss)
+* **Description:** *12-foot sea octopus carcass reanimated by Sinensa's spores, covered in shelf fungi.*
+* **AC:** 12 | **HP:** **58 – 65 HP** | **Speed:** 5 ft, Swim 50 ft | STR +3, DEX +2, CON +2
+* **Crushing Tentacle:** `+5 to hit`, reach 15ft, **7 (1d8 + 3)** bludgeon + **Grappled & Restrained (DC 13)**.
+* **Toxic Spore Cloud (Recharge 5-6):** 20ft sphere, DC 12 Con Save or 7 (2d6) poison + Blinded 1 turn.
+* 🧭 **Core Drive:** Automated cave defense protocol left by Sinensa before falling into sulfur coma. Pacified with food scraps.
+
+#### 8. 💨 Fume Drake — Small Dragon (CR 1/4)
+* **Description:** *Serpentine draconic elemental made of hardened volcanic glass and boiling sulfur steam.*
+* **AC:** 12 | **HP:** **28 – 32 HP** | **Speed:** 30 ft, Fly 30 ft | Immune: Poison, Fire
+* **Death Burst:** Explodes on death: DC 11 Dex Save or 4 (1d8) fire/steam within 10 ft.
+* **Scalding Bite / Breath:** Bite +4 (1d6+2 + 1d4 fire) | Scalding Breath (15ft cone, DC 11 Con, 2d6 psn/fire).
+
+#### 9. 🦎 Kobold Ambushers & Renegades — Small Humanoid (CR 1/8)
+* **Description:** *Wiry reptilian scavengers with crude bone daggers and fire-sling pots.*
+* **AC:** 13 | **HP:** **14 – 18 HP** | **Speed:** 30 ft | Pack Tactics
+* **Dagger / Sling:** +4 to hit (1d4+2 piercing or bludgeoning + 1 fire).
+* 🧭 **Renegade Philosophy:** Reject all dragon masters; fighting out of starvation. Easily bribed with 5 gp or rations!
 * **Death Glare:** Target 1 Frightened creature within 30 ft. **DC 11 WIS Save** or target drops to **0 Hit Points**!
 * **Claws:** `+5 to hit`, reach 5ft, **10 (2d6 + 3)** slashing damage.
 * 💎 **Possible Loot Drops:** 🍷 *Elixir of Health*, Black Pearl (30 gp), Cursed Bone Charm.

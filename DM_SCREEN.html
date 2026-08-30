@@ -3457,7 +3457,7 @@
         modal.showModal();
     }
 
-    // NPC MASTER DATASET
+    // NPC MASTER DATASET (WITH COMPLETE PHILOSOPHY, MORALS & ACTIVE PROBLEMS)
     const NPC_DATA = {
         varnoth: {
             name: "General Varnoth Wender",
@@ -3465,7 +3465,12 @@
             voice: "Low, raspy, calm, dry battlefield authority. Speaks with the weight of 30 campaigns.",
             look: "Striking female warrior with sharp eyes, a fierce scar across her left eye, silver-streaked dark hair tied in a combat ponytail, and a polished peg leg below her right knee.",
             alignment: "Lawful Neutral / Good",
-            stats: "AC 17 (Splint Mail + Shield) | HP 22/22 | Init +0 | Speed 30 ft | STR +2, DEX +0, CON +2, INT +1, WIS +2, CHA +1",
+            philosophy: "<strong>Pragmatic Redemptive Duty.</strong> True peace is not passive wishing; it is an active fortress built by those willing to stand guard in the rain. Redemption is earned daily by protecting the fragile from the horrors she once unleashed.",
+            problem: "Peg leg wood rot from salt air causing severe friction blisters; deeply tormented by survivor's guilt over failing to sprint to the reef in time when the shipwreck survivors drowned.",
+            involves: "Tarak (for medicinal willowbark salve), cloister carpenters (for teak wood peg replacement), the restless spirits of the drowned reef.",
+            approach: "Stoically bears the physical pain without complaining; stands extra watch shifts at the switchback gate to keep watch for coastal threats.",
+            morals: "<strong>Absolute Red Line:</strong> Never abandon a comrade under fire or harm a non-combatant. Disdains glory-seekers; respects quiet competence.",
+            stats: "AC 17 (Splint Mail + Shield) | HP 29/29 | Init +0★ | Speed 30 ft | STR +4★, DEX +0, CON +4★, INT +1, WIS +2, CHA +1",
             saves: "STR (+4 ★), CON (+4 ★), WIS (+2), INT (+1), CHA (+1), DEX (+0)",
             actions: [
                 "🗡️ Azure Wolf Longsword: +4 to hit, 1d8+2 slashing (1H) or 1d10+2 (2H).",
@@ -3482,6 +3487,11 @@
             voice: "Serene, warm, soothing, maternal ancient wisdom. Radiates effortless divine calm.",
             look: "Elderly human woman with weathered brown skin, white hair in tight braids, and kindly hazel eyes, dressed in simple white monastic robes. Her true form is a colossal, shimmering 60-foot Bronze Dragon.",
             alignment: "Lawful Good",
+            philosophy: "<strong>Restorative Pacifism & Cycle-Breaking.</strong> The ancient war between Chromatics and Metallics is a poison that destroys innocent lives across centuries. True strength lies in refusing to strike first and guiding lost souls toward peace.",
+            problem: "Her former student Aidron rejected her pacifism in bitter anger and stormed off to confront Sparkrender alone, walking directly into a deadly trap.",
+            involves: "Aidron (captive Bronze Wyrmling in D6), Sparkrender (corrupted rival), the party of mortal heroes.",
+            approach: "Refuses to intervene directly with draconic force (which would shatter the sanctuary's neutrality and ignite open island war); tests and equips worthy mortals with ancient knowledge.",
+            morals: "<strong>Absolute Red Line:</strong> Will never execute a creature without offering genuine repentance. Accepts any sinner who lays down their blade.",
             stats: "AC 19 (Natural) | HP 212 (17d12+102) | Init +0 | Speed 40 ft, Fly 80 ft, Swim 40 ft | CR 13 (10,000 XP)",
             saves: "DEX +5, CON +11, WIS +7, CHA +9 | Senses: Blindsight 60ft, Darkvision 120ft, Passive Perception 22",
             actions: [
@@ -3499,6 +3509,11 @@
             voice: "Soft-spoken, polite, helpful, secretive. Tone turns icy and sharp if his neck tattoos or past are pressed.",
             look: "Middle-aged human man with tanned freckled skin, graying auburn hair and beard, and faded neck tattoos incorporating a gold hangman's noose. Wears dirt-stained gardening robes.",
             alignment: "Lawful Neutral",
+            philosophy: "<strong>Penitent Quietism.</strong> Sins of blood cannot be washed away with holy words, only balanced by cultivating life and alleviating suffering. The earth does not judge past murders; it only asks for water.",
+            problem: "The Seagrow Myconid colony deployed a giant spore octopus guardian that severed his Heart Cap mushroom supply, stalling his batch of healing salves.",
+            involves: "Sovereign Sinensa (comatose myconid leader), Spore-Tender Pips, sanctuary medicine pantry.",
+            approach: "Cultivating substitute coastal weeds while rationing remaining potions; quietly assessing whether visiting adventurers can clear the fungal blockage peacefully.",
+            morals: "<strong>Absolute Red Line:</strong> Refuses to craft lethal poisons ever again, even in self-defense. Will defend the monastery with non-lethal blade strikes.",
             stats: "AC 13 | HP 27 (6d8) | Init +3 | Speed 30 ft | DEX +3, INT +1, WIS +3, CHA +0",
             saves: "DEX +5, INT +3 | Skills: Deception +5, Insight +4, Medicine +4, Nature +3",
             actions: [
@@ -3514,6 +3529,11 @@
             voice: "Fast-talking, chirpy, energetic, enthusiastic squeaks and clicks.",
             look: "Bright orange-scaled winged kobold wearing oversized tinted brass welding goggles, a heavy leather tool apron loaded with calipers and vials, and a leather sling on her left wing.",
             alignment: "Lawful Good",
+            philosophy: "<strong>Technological Optimism.</strong> Any physical handicap or social oppression can be conquered with sufficient brass gears, alchemy, and creative problem-solving.",
+            problem: "Her twin brothers Mek and Minn abandoned the cloister to serve Sparkrender out of fear and dragon-worship; she fears they will be sacrificed in the comet ritual.",
+            involves: "Mek & Minn (trapped in D2), Sparkrender's cult, cloister workshop supplies.",
+            approach: "Building a lightweight spring-powered grappling hook launcher to scale the northern cliffs and rescue her siblings before the King-Killer comet passes.",
+            morals: "<strong>Absolute Red Line:</strong> Never hoard inventions or overcharge travelers in mortal peril. Always offers a 10% discount for cantrips that teach young kobolds.",
             stats: "AC 12 | HP 10 (3d6) | Init +2 | Speed 30 ft, Fly 10 ft | INT 15 (+2), DEX 14 (+2)",
             saves: "INT +4 | Skills: Arcana +4 | Inquiring Mind: Casts Detect Magic 1/day",
             actions: [
@@ -3529,6 +3549,11 @@
             voice: "Sleepy, soft, enthusiastic, sweet, talkative.",
             look: "Small mottled green-scaled kobold with heavy dark rings under her eyes, carrying stacks of parchment taller than herself.",
             alignment: "Lawful Good",
+            philosophy: "<strong>Archival Preservationism.</strong> Written memory is the only true immortality. If the stories of lost scholars are preserved, their souls never truly fade.",
+            problem: "Salt air mildew is creeping across Lianna's ancient celestial charts; she is out of volcanic drying sand and hasn't slept in 48 hours trying to scrape spores by hand.",
+            involves: "Lianna's preserved research folios, cloister archive, coastal humidity.",
+            approach: "Rationing tallow candles and delicately copying fading Draconic star glyphs onto fresh parchment before the ink flakes off.",
+            morals: "<strong>Absolute Red Line:</strong> Burning or defacing a book is an unforgivable sacrilege. Will literally throw herself over rare manuscripts to protect them.",
             stats: "AC 12 | HP 5 | Init +2 | Speed 30 ft | Pack Tactics | Sunlight Sensitivity",
             saves: "INT +2, WIS +1 | Skills: History +3, Arcana +2",
             actions: ["🗡️ Dagger: +4 to hit, 1d4+2 piercing."],
@@ -3541,7 +3566,12 @@
             voice: "High-pitched, excitable Yik-yak chatter, eager questions.",
             look: "Small yellow and brown-scaled kobolds dusted in white flour, wearing oversized baker aprons.",
             alignment: "Lawful Good",
-            stats: "AC 12 | HP 5 | Init +2 | Speed 30 ft | Pack Tactics",
+            philosophy: "<strong>Animistic Fatalism & Culinary Warmth.</strong> The world is ruled by capricious spirits and lucky tokens, but hot baked bread can soften the hardest dragon's heart.",
+            problem: "The sourdough starter went cold in yesterday's gale, and Blepp almost lost his lucky kitchen dagger to a shambling beach zombie while foraging wild sea-parsley.",
+            involves: "Kitchen oven draft, wild yeast cultures, coastal zombies on the beach.",
+            approach: "Begging travelers for hot embers or fire cantrips to re-heat the clay oven, while offering specialty rolls for rare spice donations.",
+            morals: "<strong>Absolute Red Line:</strong> No one leaves Dragon's Rest on an empty stomach, regardless of race, alignment, or coin purse.",
+            stats: "AC 12 | HP 7 | Init +2 | Speed 30 ft | Pack Tactics",
             saves: "DEX +2",
             actions: ["🗡️ Dagger: +4 to hit, 1d4+2 piercing."],
             rp: "Blepp is convinced his ordinary kitchen dagger is supernaturally lucky. Frub asks 50 questions a minute about everything visitors do. Bake delicious specialty breads.",
@@ -3553,6 +3583,11 @@
             voice: "Silent / Telepathic Rapport Spores (projects smells, colors, and emotional waves).",
             look: "2-foot-tall mushroom person with a glowing violet and amber cap, gentle bulbous eyes, and spongy root-tendril feet.",
             alignment: "Lawful Neutral",
+            philosophy: "<strong>Innocent Telepathic Connection.</strong> Conflict only exists when minds are isolated. If creatures can share sensations and scents, empathy is inevitable.",
+            problem: "Sulfur fumes from area B6 are drying out the sprout nursery mycelium, and the giant octopus guardian in B1 won't let him out to reach Elder Runara.",
+            involves: "Sovereign Sinensa (comatose), the drying fungal nursery, entrance octopus.",
+            approach: "Sneaking through narrow fissure cracks to send telepathic distress ripples (petrichor and violet flashes) to surface visitors.",
+            morals: "<strong>Absolute Red Line:</strong> Violence is a tragic biological failure; only strikes in defense of fragile fungal sprouts.",
             stats: "AC 10 | HP 7 (2d6) | Init +0 | Speed 10 ft | Vulnerability: Fire | Darkvision 120 ft",
             saves: "CON +0, WIS +1",
             actions: [
@@ -3568,6 +3603,11 @@
             voice: "Telepathic Rapport Spores (echoing, deep, peaceful harmonic consciousness).",
             look: "8-foot-tall magnificent myconid leader with a wide umbrella cap bioluminescent with deep violet, emerald, and ruby crystals. Currently comatose and blotched with black blight.",
             alignment: "Lawful Neutral",
+            philosophy: "<strong>Mycelial Interconnected Harmony.</strong> All living things on Stormwreck Isle are branches of the same underground root system. Pain in one part of the island wounds the whole.",
+            problem: "Comatose from breathing volcanic sulfur fumes from B6; her dream-state is haunted by visions of Sharruth's magma dragon awakening.",
+            involves: "Seagrow Caves sprout nursery, the orange fire crystal in B6, Fire Snake.",
+            approach: "Channels lingering subconscious telepathic pulses to guide compassionate adventurers toward the Ruby Morel cure.",
+            morals: "<strong>Absolute Red Line:</strong> Individual ego is meaningless compared to collective colony survival; welcomes all peaceful travelers into the colony meld.",
             stats: "AC 13 (Natural) | HP 60 (8d10+16) | Init +0 | Speed 30 ft | Darkvision 120 ft | CR 2",
             saves: "CON +4, WIS +4",
             actions: [
@@ -3584,6 +3624,11 @@
             voice: "Proud, defiant, hot-headed, youthful draconic roar.",
             look: "Bear-sized young bronze dragon with gleaming copper-bronze scales, fierce green eyes, and heavy iron chains binding his wings and claws to the floor.",
             alignment: "Lawful Good",
+            philosophy: "<strong>Militant Righteousness.</strong> Tyrants and chromatic evil cannot be reasoned with over tea; they must be actively crushed in battle before they strike.",
+            problem: "Bound in three heavy iron chains in D6, with Sparkrender preparing to slit his throat during the comet's zenith.",
+            involves: "Sparkrender (captor), Elder Runara (former mentor), heroes with thieves' tools / heavy blades.",
+            approach: "Roaring insults at Sparkrender's kobolds and holding his Repulsion Breath ready the exact second a lock is picked.",
+            morals: "<strong>Absolute Red Line:</strong> Disdains cowardice; will never abandon innocent captives. Demands honor in single combat.",
             stats: "AC 17 (Natural) | HP 32 (5d8+10) | Init +0 | Speed 30 ft, Fly 60 ft, Swim 30 ft | CR 2 (450 XP)",
             saves: "DEX +2, CON +4, WIS +2, CHA +4 | Immune: Lightning",
             actions: [
@@ -3600,6 +3645,11 @@
             voice: "Pious, cheerful, eager, loves telling awful dragon-themed dad jokes.",
             look: "Small green-and-bronze scaled kobold in a white prayer scarf, carrying brass censers.",
             alignment: "Lawful Good",
+            philosophy: "<strong>Devotional Levity.</strong> Sacred duties shouldn't be grim. Laughter and cheerful reverence keep the mind pure and ward off shadow.",
+            problem: "The bronze incense brazier cracked during the high tide gale; he is desperately trying to patch it with melted beeswax before evening prayers.",
+            involves: "Bahamut temple censers, graveyard wind drafts, sea banshee rumors.",
+            approach: "Chanting hymns at top volume while sealing cracks, and making newcomers laugh with awful dragon puns.",
+            morals: "<strong>Absolute Red Line:</strong> Desecration of Bahamut's altar or mocking true grief is intolerable.",
             stats: "AC 12 | HP 9 | Init +1 | Speed 30 ft | Pack Tactics",
             saves: "WIS +2, DEX +1",
             actions: ["🗡️ Dagger: +3 to hit, 1d4+1 piercing."],
@@ -3612,6 +3662,11 @@
             voice: "No-nonsense, stern, brisk, quietly proud and efficient.",
             look: "Older brownish-scaled kobold with a slate board tucked under her arm and a ring of keys at her hip.",
             alignment: "Lawful Good",
+            philosophy: "<strong>Stoic Utilitarian Order.</strong> Sanctuary tranquility is not maintained by divine grace alone, but by strict inventory counts, swept floors, and dry grain stores.",
+            problem: "The sea fog caked salt into the pantry flour casks, and the younger kobolds are slacking on cellar maintenance.",
+            involves: "Pantry supplies, winch mechanism, lazy apprentice kobolds.",
+            approach: "Barking orders with a wooden pointer while personally inspecting every cellar barrel with ruthless efficiency.",
+            morals: "<strong>Absolute Red Line:</strong> Wastefulness and laziness during crisis are unforgivable crimes.",
             stats: "AC 12 | HP 8 | Init +1 | Speed 30 ft | Pack Tactics",
             saves: "INT +1, WIS +1",
             actions: ["🗡️ Dagger: +3 to hit, 1d4+1 piercing."],
@@ -3624,6 +3679,11 @@
             voice: "Eager, wide-eyed, fast squeaks with soot on her snout.",
             look: "Young winged kobold with small leathery wings and copper welding goggles around her neck.",
             alignment: "Lawful Good",
+            philosophy: "<strong>Empirical Tinkerism.</strong> You don't truly understand a machine until you take it apart, modify it, and survive the small explosion.",
+            problem: "Banned from the main forge after accidentally singeing Blepp's apron; trying to secretly scavenge copper wire for an automatic fish-scaler.",
+            involves: "Myla's scrap bin, Blepp's kitchen, dangerous mechanical springs.",
+            approach: "Trading shiny ocean shells with visitors in exchange for stray nails, wire scraps, or broken iron buckles.",
+            morals: "<strong>Absolute Red Line:</strong> Never build weapons meant to hurt sanctuary friends; only builds tools and gadgets.",
             stats: "AC 12 | HP 8 | Init +2 | Speed 30 ft, Fly 30 ft | Pack Tactics",
             saves: "DEX +2, INT +1",
             actions: ["🗡️ Dagger: +4 to hit, 1d4+2 piercing."],
@@ -3636,6 +3696,11 @@
             voice: "Audaciously cocky, dramatic whispers, boastful.",
             look: "Nimble yellow-scaled kobold wearing a polished bronze dragon scale as a proud chest medal.",
             alignment: "Chaotic Good",
+            philosophy: "<strong>Audacious Bravado.</strong> The smallest lizard can live like a king if they have lightning reflexes and the guts to grab what they want.",
+            problem: "Terrified that Elder Runara will discover he 'stole' the bronze scale medal from the temple altar (unaware Runara dropped it intentionally).",
+            involves: "Runara's dropped bronze scale, southern reef salvage, snooping cloister guards.",
+            approach: "Lurking around visitor quarters offering 'exclusive guide tips' to earn enough coin to buy an official pardon.",
+            morals: "<strong>Absolute Red Line:</strong> Never steals from someone poorer or weaker than himself; only targets pompous big folk.",
             stats: "AC 12 | HP 8 | Init +2 | Speed 30 ft | Pack Tactics",
             saves: "DEX +2, CHA +1",
             actions: ["🗡️ Dagger: +4 to hit, 1d4+2 piercing."],
@@ -3648,6 +3713,11 @@
             voice: "Rude, snappy, loves shouting ridiculous insults from high perches.",
             look: "Fierce red-scaled kobold clutching a sharp wooden shortspear with shell adornments.",
             alignment: "Lawful Neutral",
+            philosophy: "<strong>Aggressive Fortress Defense.</strong> A sanctuary without sharp spears and watchful sentries is just a buffet for pirate raiders and zombies.",
+            problem: "Seagulls keep stealing his salted bait fish, and he spotted green witch lights near the northern sea grotto last night.",
+            involves: "Beach switchback trail, Sea Hag covens, screeching gulls.",
+            approach: "Sharpening spear tips with basalt rocks while shouting aggressive warning challenges at anything moving on the beach.",
+            morals: "<strong>Absolute Red Line:</strong> Will never abandon his post or let an unvetted armed stranger pass without Runara's nod.",
             stats: "AC 13 | HP 10 | Init +2 | Speed 30 ft | Pack Tactics",
             saves: "STR +1, DEX +2",
             actions: ["🗡️ Shortspear: +4 to hit, reach 5ft or thrown 20/60ft, 1d6+2 piercing."],
@@ -3660,6 +3730,11 @@
             voice: "Terrified, high-pitched squawking, frantic gratitude if rescued.",
             look: "Two battered winged kobolds covered in stirge bites, trapped in the rotunda dragon effigies.",
             alignment: "Neutral",
+            philosophy: "<strong>Survivalist Cowardice & Draconic Awe.</strong> Small folk survive by bowing to the biggest fangs in the cave; heroism gets you eaten.",
+            problem: "Trapped inside draconic stone effigies in D2 with 8 bloodthirsty stirges circling their perch, starving and terrified.",
+            involves: "Sparkrender (tyrant master), stirge swarm, Myla (sister at Dragon's Rest).",
+            approach: "Cowering in stone niches and screeching for mercy, ready to trade Sparkrender's deepest secrets for a single safe escort home.",
+            morals: "<strong>Absolute Red Line:</strong> Will betray Sparkrender immediately if shown kindness, but will panic and flee if attacked.",
             stats: "AC 13 | HP 14 | Init +3 | Speed 30 ft, Fly 30 ft | Pack Tactics",
             saves: "DEX +3",
             actions: ["🗡️ Dagger: +5 to hit, 1d4+3 piercing.", "🪨 Dropped Rock: +5 to hit, 1d6+3 bludgeoning."],
@@ -3728,7 +3803,7 @@
         }
     }
 
-    // MONSTER MASTER DATASET WITH COMPREHENSIVE DESCRIPTIONS & INITIATIVE
+    // MONSTER MASTER DATASET WITH COMPREHENSIVE PHILOSOPHY, INITIATIVE & COMBAT STATS
     const MONSTER_DATA = {
         sparkrender: {
             name: "Sparkrender (Blue Dragon Wyrmling)",
@@ -3740,6 +3815,9 @@
             speed: "30 ft., burrow 15 ft., fly 60 ft.",
             stats: "STR 17 (+3) | DEX 10 (+2★) | CON 15 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)",
             senses: "Blindsight 10 ft., Darkvision 60 ft., Passive Perception 14 | Immune: Lightning",
+            philosophy: "<strong>Draconic Social Darwinism.</strong> Chromatic dragons are the rightful apex tyrants of Toril; the weak exist only to fuel the ascension of the strong. Compassion is the cowardice of metallic dragons like Runara.",
+            problem: "The astrological window of the King-Killer Star comet closes in mere hours; must align all 5 elemental effigies and execute Aidron's blood sacrifice to siphon Sharruth's magma flame before dawn.",
+            morals: "<strong>Red Lines & Flaws:</strong> Haughty arrogance prevents him from retreating early. Refuses to treat mortals as equals, but panics and bargains wildly if bloodied below 15 HP.",
             desc: "A sleek, predatory young blue dragon with iridescent azure scales as hard as tempered steel. A single sharp, ridged horn sweeps back from his snout, and crackling blue arcs of lightning sizzle across his spine and claws. Empowered by the stolen King-Killer Comet ritual, he boasts in Draconic that the ancient power of all five dead dragons of Stormwreck Isle belongs to him.",
             traits: [
                 "👑 Arrogant Tyrant: Boasts in Draconic and channels comet energy. Refuses to retreat until reduced to 15 HP or less.",
@@ -3770,7 +3848,10 @@
             speed: "5 ft., swim 50 ft.",
             stats: "STR 16 (+3) | DEX 14 (+2) | CON 14 (+2) | INT 2 (-4) | WIS 10 (+0) | CHA 1 (-5)",
             senses: "Blindsight 30 ft. (blind beyond), Passive Perception 8 | Immune: Poison, Charmed, Frightened, Paralyzed",
-            desc: "A massive, 12-foot sea octopus carcass that washed into the caves months ago and was reanimated by Sovereign Sinensa's spores to act as an entrance guardian. Its rubbery grey skin is encrusted with bioluminescent moss, shelf mushrooms, and glowing violet mycelium tendrils. Because Sinensa is comatose from volcanic sulfur fumes and unable to command it, it operates purely on lingering instinct: attacking any creature entering the pool unless pacified with food scraps or animal handling.",
+            philosophy: "<strong>Instinctive Fungal Guardianship.</strong> Reanimated by Sinensa's spores to protect the inner mushroom colony; acts without malice, guided purely by fungal spore protocols.",
+            problem: "With Sovereign Sinensa comatose from volcanic fumes, it cannot recognize friendly visitors or distinguish allies from threats.",
+            morals: "Not malicious; will immediately cease hostility and allow passage if offered compost, fish scraps, or soothed with DC 11 Animal Handling.",
+            desc: "A massive, 12-foot sea octopus carcass that washed into the caves months ago and was reanimated by Sovereign Sinensa's spores to act as an entrance guardian. Its rubbery grey skin is encrusted with bioluminescent moss, shelf mushrooms, and glowing violet mycelium tendrils.",
             traits: [
                 "🫁 Hold Breath: Can survive out of water for up to 1 hour.",
                 "🌿 Unguided Defense Protocol: Attacks non-myconids entering the pool unless pacified with rotten compost/fish (Advantage on checks)."
@@ -3796,6 +3877,9 @@
             speed: "40 ft.",
             stats: "STR 20 (+5) | DEX 12 (+1) | CON 17 (+3) | INT 3 (-4) | WIS 12 (+1) | CHA 7 (-2)",
             senses: "Darkvision 60 ft., Passive Perception 15 | Skills: Perception +3",
+            philosophy: "<strong>Traumatized Beast Loyalty.</strong> Remembers the familiar whistles and treats of its shipwrecked circus troupe, but is terrified, confused, and territorial in the wild.",
+            problem: "A 4-inch jagged ironwood splinter is wedged deep into its left hind paw pad, causing screeching agony and driving it into blind predatory frenzies.",
+            morals: "Can be permanently tamed! Blowing its brass circus whistle (DC 10 Animal Handling) or extracting the paw splinter (DC 12 Medicine) turns it into a loyal sanctuary pet.",
             desc: "A hulking, 8-foot-tall predator that possesses the savage, muscle-bound body and thick brown fur of a grizzly bear, capped with the feathered head, razor curved beak, and huge nocturnal dish-eyes of an owl. Stranded on the island after a performing troupe's ship wrecked on the northern reefs, it wears a tarnished brass circus training whistle around its neck.",
             traits: [
                 "👁️ Keen Sight & Smell: Advantage on Wisdom (Perception) checks relying on sight or smell.",
@@ -3823,6 +3907,9 @@
             speed: "25 ft.",
             stats: "STR 15 (+2) | DEX 8 (-1) | CON 16 (+3) | INT 6 (-2) | WIS 10 (+2★) | CHA 8 (-1)",
             senses: "Darkvision 60 ft., Passive Perception 10 | Immune: Poison",
+            philosophy: "<strong>Twisted Maritime Duty.</strong> The ship has not sunken in his mind; orders must be enforced, the quarters defended, and the cargo lockbox guarded against mutineers.",
+            problem: "The captain's iron lockbox slipped through rotted deck timbers into flooded hold C9; he lacks the physical dexterity to dive down and recover it.",
+            morals: "Driven by undead malice toward living sailors; momentarily pauses if presented with official naval command papers or an Admiral's insignia.",
             desc: "A bloated, waterlogged corpse of a high-ranking naval officer. Tattered navy-blue wool clings to his rotting shoulders, encrusted with barnacles, sea glass, and dried blood. Saltwater drools from his jagged teeth, and in his blue-grey grip he clutches a chipped steel cutlass with grim, supernatural hatred.",
             traits: [
                 "🧟 Undead Fortitude: If damage reduces to 0 HP, makes a CON Save (DC 5 + damage taken). On success, drops to 1 HP instead! (Fails on Radiant or Crits)."
@@ -3849,6 +3936,9 @@
             speed: "20 ft.",
             stats: "STR 13 (+1) | DEX 6 (-2) | CON 16 (+3) | INT 3 (-4) | WIS 6 (+0★) | CHA 5 (-3)",
             senses: "Darkvision 60 ft., Passive Perception 8 | Immune: Poison",
+            philosophy: "<strong>Abyssal Necromantic Agony.</strong> Mindless hunger driven by the endless freezing cold of the deep trench.",
+            problem: "Trapped in perpetual suffering, drawn helplessly to the warmth of living souls.",
+            morals: "No conscious moral agency; permanently laid to rest once Aleitha's talisman is buried on Brastos's grave.",
             desc: "Pale, waterlogged corpses dressed in shredded sailor smocks and brine-soaked trousers. Sea foam and black kelp leak from their slack mouths as they shamble forward with wet, gurgling moans, driven by the lingering necromantic prayer of Aleitha to Orcus.",
             traits: [
                 "🧟 Undead Fortitude: DC 5+dmg CON Save to drop to 1 HP instead of dying."
@@ -3867,6 +3957,9 @@
             speed: "30 ft.",
             stats: "STR 10 (+0) | DEX 14 (+2) | CON 15 (+2) | INT 6 (-2) | WIS 8 (-1) | CHA 5 (-3)",
             senses: "Darkvision 60 ft., Passive Perception 9 | Vulnerable: Bludgeoning | Immune: Poison",
+            philosophy: "<strong>Rattling Automaton Vigil.</strong> Bound by ancient dark oaths to patrol the forecastle rigging for eternity.",
+            problem: "Salt spray eroding fragile spinal joints, causing clattering delays on draw speed.",
+            morals: "Automaton of bone; executes attack routines until crushed by blunt force.",
             desc: "Bleached, clattering human bones tied together with rotting rigging and sea canvas. Red pinpricks of necromantic malice burn inside their hollow eye sockets as they draw rusted cutlasses and notched shortbows with unnatural, jerky speed.",
             traits: ["💀 Brittle Bones: Takes double damage from bludgeoning strikes (e.g. Father Flubs' mace!)."],
             actions: [
@@ -3886,6 +3979,9 @@
             speed: "30 ft.",
             stats: "STR 7 (-2) | DEX 15 (+2) | CON 12 (+1) | INT 8 (-1) | WIS 8 (-1) | CHA 8 (-1)",
             senses: "Darkvision 60 ft., Passive Perception 8 | Sunlight Sensitivity",
+            philosophy: "<strong>Opportunistic Scavenger Pack.</strong> Safety is found only in the pack; shiny dragon relics and full bellies ensure survival.",
+            problem: "Starving on barren wilderness ridges; terrified that Sparkrender will incinerate them for failing to gather food.",
+            morals: "Easily bribed! Will surrender and share secret trails for 5 gp or hot food, and can be directed to seek shelter at Dragon's Rest.",
             desc: "Small, wiry reptilian humanoids standing barely 3 feet tall, covered in reddish-brown scales with sharp snouts, horn stubs, and twitching tails. Clad in patched leather scraps and grease-stained cloaks, they brandish crude bone daggers and fire slings with high-pitched yelps.",
             traits: [
                 "🤝 Pack Tactics: Advantage on attack rolls against a creature if at least one ally is within 5 ft."
@@ -3907,6 +4003,9 @@
             speed: "30 ft., fly 30 ft.",
             stats: "STR 7 (-2) | DEX 16 (+3) | CON 10 (+0) | INT 8 (-1) | WIS 8 (-1) | CHA 8 (-1)",
             senses: "Darkvision 60 ft., Passive Perception 8 | Pack Tactics",
+            philosophy: "<strong>Aerial Chosen Elite.</strong> Kobolds with wings are divinely blessed by dragons; ground-crawlers exist to be mocked and bombarded.",
+            problem: "Gale winds tearing wing membranes, and running out of volatile incendiary clay pots.",
+            morals: "Cowardly when forced onto the ground; surrenders immediately if grounded with spells or nets.",
             desc: "Kobolds born with wide, leathery bat-like wings that grant them aerial mobility. They consider themselves divinely favored by dragons, screeching gleefully from 30 feet in the air as they drop heavy jagged rocks and volatile incendiary clay pots onto ground targets.",
             traits: ["🦇 Aerial Bomber: Flies out of melee reach, dropping rocks and volatile pots."],
             actions: [
@@ -3925,6 +4024,9 @@
             speed: "25 ft.",
             stats: "STR 12 (+1) | DEX 15 (+2) | CON 14 (+2) | INT 8 (-1) | WIS 10 (+0) | CHA 10 (+0)",
             senses: "Darkvision 60 ft., Passive Perception 10 | Pack Tactics",
+            philosophy: "<strong>Martial Draconic Pride.</strong> Strength and fear rule the warband; only the fiercest cleavers earn a dragon's praise and extra food rations.",
+            problem: "Underlings are whispering mutiny because Sparkrender hasn't delivered on his promise of dragon-fire power.",
+            morals: "Honors martial duels; will yield leadership and parley if defeated honorably in single combat without magic tricks.",
             desc: "A burly, battle-hardened kobold veteran clad in heavy scavenged scale mail and wielding a painted dragon-crest iron buckler. He wields twin jagged iron cleavers with surprising savagery, leaping from high rocks to slam shield-first into unsuspecting heroes.",
             traits: ["🐉 Dragon's Heart: Advantage on saves against being Frightened or Paralyzed."],
             actions: [
@@ -3948,6 +4050,9 @@
             speed: "30 ft., fly 30 ft.",
             stats: "STR 10 (+0) | DEX 14 (+2) | CON 13 (+1) | INT 4 (-3) | WIS 10 (+0) | CHA 6 (-2)",
             senses: "Darkvision 60 ft., Passive Perception 10 | Immune: Poison, Fire",
+            philosophy: "<strong>Elemental Fire Instinct.</strong> Feed on heat, magma fumes, and volcanic sulfur; cold water and open winds are lethal threats.",
+            problem: "The B6 core fissure is cooling as the orange egg crystallizes, restricting their feeding grounds.",
+            morals: "Pure elemental draconic instinct; territorial around volcanic vents.",
             desc: "Sleek, serpentine draconic creatures made of hardened volcanic glass and boiling steam. Their glassy scales glow with inner amber magma veins, and thick streams of acrid, eye-watering sulfur gas billow continuously from their nostrils and toothy maws.",
             traits: [
                 "💥 Death Burst: When it dies, explodes in a 10ft cloud. DC 11 Dex save or take 4 (1d8) fire/steam damage."
@@ -3969,6 +4074,9 @@
             speed: "5 ft.",
             stats: "STR 3 (-4) | DEX 1 (-5) | CON 12 (+1) | INT 1 (-5) | WIS 3 (-4) | CHA 1 (-5)",
             senses: "Blindsight 30 ft. (blind beyond), Passive Perception 6",
+            philosophy: "<strong>Sessile Carnivorous Decomposition.</strong> Breaking down flesh and bone into fertile fungal soil for the cave nursery.",
+            problem: "Sulfur air drying out the damp loam soil around its base.",
+            morals: "Mindless subterranean plant hazard.",
             desc: "A 4-foot-tall bulbous mushroom with a slimy, deep purple umbrella cap and a cluster of four rubbery, whip-like rotting tentacles. It remains completely motionless among harmless mushroom patches until living prey approaches within 10 feet.",
             traits: [
                 "🌿 False Appearance: Indistinguishable from ordinary mushroom patch while motionless (DC 18 Investigation to spot)."
@@ -3989,6 +4097,9 @@
             speed: "30 ft., swim 30 ft.",
             stats: "STR 14 (+2) | DEX 14 (+2) | CON 16 (+3) | INT 12 (+1) | WIS 14 (+2) | CHA 16 (+3)",
             senses: "Darkvision 60 ft., Passive Perception 12",
+            philosophy: "<strong>Tragic Romantic Absolutism.</strong> Love is stronger than mortality, gods, and cosmic law. She would tear open the Abyss and drown the whole Sword Coast to see her husband Brastos smile once more.",
+            problem: "Tethered to the waterlogged quarterdeck by Orcus's abyssal curse; she cannot walk the 2 miles inland to reach Brastos's hilltop grave at Dragon's Rest.",
+            morals: "<strong>Red Lines & Tragic Redemption:</strong> Attacks out of bottomless despair. If heroes vow to carry her braided hair talisman to Brastos's grave, she peacefully weeps, surrenders the Silver Scale key, and dissolves into ocean mist.",
             desc: "Once a devoted young sailor, Aleitha was consumed and twisted by dark death magic when her forbidden ritual to resurrect her drowned husband Brastos went terribly wrong. Now a tragic, terrifying undead queen, she glides across the waterlogged decks in sea-tattered bridal shrouds, clutching a glowing necromantic hair-talisman around her neck.",
             traits: [
                 "🛡️ Undead Fortitude: If damage reduces to 0 HP, makes DC 5 + damage taken CON Save. On success, drops to 1 HP instead (fails on Radiant damage or Critical Hits).",
@@ -4018,6 +4129,9 @@
             speed: "30 ft.",
             stats: "STR 12 (+1) | DEX 14 (+2) | CON 11 (+0) | INT 2 (-4) | WIS 10 (+0) | CHA 8 (-1)",
             senses: "Darkvision 60 ft., Passive Perception 10 | Immune: Fire | Vulnerable: Cold",
+            philosophy: "<strong>Primal Magma Combustion.</strong> Consume basalt and ignite stone; fire is life, water is death.",
+            problem: "Trapped inside the cooling orange crystal egg blocking the volcanic vent in B6.",
+            morals: "Fiercely aggressive when exposed to cold.",
             desc: "A 9-foot-long undulating serpent composed of molten magma and flickering crimson flames. It incubates inside the orange elemental fire egg crystal in Seagrow Caves B6, which blocks the volcanic vent. Shattering the crystal to vent the poisonous sulfur fumes releases the Fire Snake in a blast of intense heat.",
             traits: [
                 "🔥 Heated Body: A creature that touches the snake or hits it with melee within 5ft takes 3 (1d6) fire damage."
@@ -4038,6 +4152,9 @@
             speed: "30 ft., swim 40 ft.",
             stats: "STR 16 (+3) | DEX 13 (+1) | CON 16 (+3) | INT 12 (+1) | WIS 12 (+1) | CHA 13 (+1)",
             senses: "Darkvision 60 ft., Passive Perception 11 | Amphibious",
+            philosophy: "<strong>Spiteful Aesthetic Corruption.</strong> True pleasure is dragging beauty and virtue down into hideous deformity and cold drowning.",
+            problem: "Playful sea otters keep shattering her bone divination totems, and she is running out of drowned sailor fat for her potion cauldron.",
+            morals: "Cruel and deceitful; but loves trading dark prophecies and twisted bargains for rare occult relics.",
             desc: "A terrifying, gaunt aquatic hag with greenish, slimy skin covered in barnacles and sea lice. Her hair is a tangle of rotting black seaweed, and her yellow-toothed grin twists with spite as her milky, bulbous eyes channel the terrifying horror of the dark abyss.",
             traits: [
                 "😱 Horrific Appearance: Humanoids within 30ft seeing hag make DC 11 Wis save or be Frightened for 1 min.",
@@ -4057,6 +4174,9 @@
             speed: "10 ft., fly 40 ft.",
             stats: "STR 4 (-3) | DEX 16 (+3) | CON 11 (+0) | INT 2 (-4) | WIS 8 (-1) | CHA 6 (-2)",
             senses: "Darkvision 60 ft., Passive Perception 9",
+            philosophy: "<strong>Parasitic Blood Instinct.</strong> Swarm in the dark, drain warm blood, survive.",
+            problem: "Lack of large mammals on the northern clifftops forcing them to swarm smaller kobold scouts.",
+            morals: "Mindless bloodthirsty beast.",
             desc: "Vicious, four-winged bat-like parasites with rust-red chitinous bodies and a long, needle-sharp proboscis. They swarm in dark cavern ceilings, diving down in clusters to drive their hollow beaks into exposed flesh and engorge on warm blood.",
             traits: [
                 "💉 Blood Drain: +5 to hit, 5 (1d4+3) pierc + attaches to target. While attached, deals 5 (1d4+3) blood drain dmg automatically at start of turn (Detach: DC 10 STR check)."
@@ -4959,6 +5079,29 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
                 <strong style="color:var(--accent-gold); font-size:0.95rem;">${npc.role}</strong>
                 <p style="font-size:0.78rem; color:var(--text-muted); margin-top:2px;">Alignment: ${npc.alignment}</p>
             </div>
+
+            ${npc.philosophy ? `
+                <h4>🧭 Core Philosophy & Worldview</h4>
+                <div style="background:#0c1524; border-left:3px solid #38bdf8; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; color:#e0f2fe; line-height:1.4;">
+                    ${npc.philosophy}
+                </div>
+            ` : ''}
+
+            ${npc.problem ? `
+                <h4>⚡ Immediate Active Dilemma (Independent of Party)</h4>
+                <div style="background:#1c1417; border-left:3px solid #f87171; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; line-height:1.4;">
+                    <p style="margin-bottom:4px;"><strong style="color:#fca5a5;">Current Problem:</strong> <span style="color:#fecaca;">${npc.problem}</span></p>
+                    ${npc.involves ? `<p style="margin-bottom:4px;"><strong style="color:#fca5a5;">Who / What It Involves:</strong> <span style="color:#cbd5e1;">${npc.involves}</span></p>` : ''}
+                    ${npc.approach ? `<p style="margin-bottom:0;"><strong style="color:#fca5a5;">Current Approach:</strong> <span style="color:#cbd5e1;">${npc.approach}</span></p>` : ''}
+                </div>
+            ` : ''}
+
+            ${npc.morals ? `
+                <h4>⚖️ Moral Stand & DM Roleplay Cues</h4>
+                <div style="background:#131d20; border-left:3px solid #34d399; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; color:#d1fae5; line-height:1.4;">
+                    ${npc.morals}
+                </div>
+            ` : ''}
             
             <h4>👁️ Appearance & Visual Vibe</h4>
             <p>${npc.look}</p>
@@ -4997,6 +5140,27 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
                 <strong style="color:#fca5a5; font-size:0.95rem;">${m.name}</strong>
                 <p style="font-size:0.78rem; color:var(--text-muted); margin-top:2px;">${m.type} • CR: <span style="color:var(--accent-gold); font-weight:bold;">${m.cr}</span> • Initiative: <span style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">${m.init || '+0'}</span></p>
             </div>
+
+            ${m.philosophy ? `
+                <h4>🧭 Philosophy & Creature Mindset</h4>
+                <div style="background:#0c1524; border-left:3px solid #38bdf8; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; color:#e0f2fe; line-height:1.4;">
+                    ${m.philosophy}
+                </div>
+            ` : ''}
+
+            ${m.problem ? `
+                <h4>⚡ Immediate Active Dilemma / Conflict</h4>
+                <div style="background:#1c1417; border-left:3px solid #f87171; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; color:#fecaca; line-height:1.4;">
+                    ${m.problem}
+                </div>
+            ` : ''}
+
+            ${m.morals ? `
+                <h4>⚖️ Moral Stand, Weakness & Roleplay Hooks</h4>
+                <div style="background:#131d20; border-left:3px solid #34d399; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; color:#d1fae5; line-height:1.4;">
+                    ${m.morals}
+                </div>
+            ` : ''}
 
             <h4>👁️ Creature Visual & Lore Description</h4>
             <p style="font-style:italic; color:#e2e8f0; margin-bottom:12px;">${m.desc}</p>
