@@ -112,6 +112,7 @@
   * *Red Lines:* Will never strike first or seek vengeance; will not allow anyone to violate sanctuary laws within Dragon's Rest.
   * *Gray Areas:* Keeps her true dragon identity and hoard secret; allows mortal heroes to face perilous tests rather than solving everything with her CR 13 might.
   * *Voice & Demeanor:* Deep, soothing, melodic maternal warmth. Speaks with calm deliberation, radiating immense ancient power held in gentle restraint.
+  * *Memories of Lianna & Lyra (8 Months Ago):* Fondly remembers Lianna researching in the library and her fierce, twin-blade tabaxi bodyguard **Lyra** (Sylvar's twin sister) meditating by the fountain, humming a meadow tune and carving a charm for a brother she loved dearly.
   * *Dialogue Hook:* *"Every weapon forged is a promise to bleed. Here, we lay down our promises and seek what remains."*
 
 ---

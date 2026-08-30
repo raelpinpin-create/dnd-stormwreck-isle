@@ -92,65 +92,53 @@ graph TD
   * Eflein, Father Flubs, and Varnoth return victorious to Dragon's Rest and receive rewards from Runara and Tarak.
   * The party prepares for their next journey as they learn that Clyssavar's Silver Scale is trapped inside the *Compass Rose* and dark undead forces are attempting to corrupt it. The cloister elders explain the rising danger: the sea itself has been poisoned by dark death magic ever since young Aleitha attempted a forbidden resurrection ritual to revive her drowned husband Brastos, cursing the reef with drowned zombies and transforming herself into **Aleitha, The Drowned Queen (Zombie Queen)**!
 * **C1: Main Deck & Quarterdeck (The Throne of the Drowned Queen):** **Boss:** **Aleitha, The Drowned Queen** (CR 2 Boss, AC 13, HP 55–65, Swim 30ft, Claws +5 [1d6+3+1d6 necro], Brine Bolt +5 [2d6+3 necro], Aura of the Drowned [1d4 necro 10ft aura], Sorrowful Dirge [DC 13 Wis Save or 2d8 psychic + Frightened]).
-* **C4: Captain's Quarters:** **Encounter:** 2 Drowned Zombies (28–32 HP) + Zombie Captain (48–55 HP, AC 11). Door barricaded (DC 10 Str). Defeating the room lets Eflein search the desk to find the *Compass Rose* Passenger Manifest signed by **Lianna** with star-math margin notes pointing to the Observatory! **Loot:** Desk compass (25 gp), cartographer's tools, 50 gp.
+* **C4: Captain's Quarters:** **Encounter:** 2 Drowned Zombies (28–32 HP) + Zombie Captain (48–55 HP, AC 11). Door barricaded (DC 10 Str). Defeating the room lets Eflein search the desk to find the *Compass Rose* Passenger Manifest signed by **Lianna** and **Lianna's Field Journal Note** (detailing Clyssavar's wind/thunder harmonics in hold C9, her vanguard Lyra holding the deck against swarming dead/harpies, and the star-math clue pointing to the Observatory!). **Loot:** Desk compass (25 gp), cartographer's tools, 50 gp.
 * **C6: Crew Quarters:** Portrait of "Aleitha & Brastos — Together Forever". Trap floorboard ➔ dart (+5 hit, 1d4 + DC 11 Con save 1d6 poison). **Loot:** 200 gp in floor stash.
-* **C8: Lower Deck & Frost Cabin:** **Encounter:** 1 Zombie + 1 Ghoul lurking in knee-deep sloshing water (Paralyzing Claws DC 10). Inside a hidden frost-rimed iron lockbox, the party uncovers ancient Draconic records detailing the Tri-Draconic Convergence.
-* **C9: Submerged Hold (The Sunken Vault):** Submerged hold where the Captain's Chest lies. Opened with Aleitha's Ivory Key, containing ❄️ **Clyssavar's Silver Scale** (+1 Cold Atk/DC, Cold Resist, +1d6 Slow Burst — claimed by the New Hero), the Captain's Logbook, *Boots of Elvenkind*, and 55 gp.
+* **C8: Lower Deck & Frost Cabin:** **Encounter:** 1 Zombie + 1 Ghoul lurking in knee-deep sloshing water (Paralyzing Claws DC 10). Inside a hidden iron lockbox, the party uncovers ancient Draconic records detailing the Tri-Draconic Convergence.
+* **C9: Submerged Hold (The Sunken Vault):** Submerged hold where the Captain's Chest lies. Opened with Aleitha's Ivory Key, containing 🌪️ **Scale of the Zephyr (Clyssavar's Silver Scale)** (+1 Spell Atk/DC, Immune to Deafened, Thunder Resist, +1d6 Gale-Burst with 10ft Push & Disadv 1/day, Whispers on the Wind — claimed and awakened by Sylvar Link), the Captain's Logbook, *Boots of Elvenkind*, and 55 gp.
   * **Side Quest Resolution:** Carry Aleitha's Braided Talisman to **Brastos's grave** in Dragon's Rest clifftop cemetery. Burying or burning it reunites their souls in peace, permanently lifting the island's zombie curse and causing the ghost shipwreck to dissolve peacefully into sea foam!
   * **Level 4 Milestone:** Party reaches **Level 4** (Feats / Ability Score Improvements, +HP pools, and expanded spell slots unlocked!).
 * 🎭 **Chapter 3 Character Story Beats:**
-  * 🧙‍♂️ **Eflein:** Discovers the *Compass Rose* cargo manifest with passenger logs from Lianna's arrival; uses lightning arc spells across the flooded decks with *Sculpt Spells* to electrocute zombies without shocking allies!
-  * 🛡️ **New Hero:** Braves the flooded hold (C9) to recover and bond with **Clyssavar's Silver Scale**, awakening its cold resonance for the upcoming trial at the observatory!
+  * 🧙‍♂️ **Eflein:** Discovers Lianna's handwritten note and passenger signature; uses lightning arc spells across the flooded decks with *Sculpt Spells* to electrocute zombies without shocking allies!
+  * 🐾 **Sylvar Link:** Discovers twin-crescent blade gouges in the main mast and Lyra's torn crimson sash; braves the submerged hold (C9) to bond with **Clyssavar's Silver Scale**, experiencing the acoustic epiphany of the Zephyr Awakening and unlocking Level 4!
   * 🍷 **Father Flubs:** Deeply moved by Aleitha and Brastos's tragic love and his own existential fear of oblivion; performs sacred funeral rites for the drowned sailors, cleanses Aleitha's talisman at Brastos's grave, and redeems the fallen queen.
 
 #### ⚡ CHAPTER 4: CLIFFTOP OBSERVATORY (LEVEL 4–5 CAMPAIGN CLIMAX & APEX BOSS)
-* **D1: Overlook:** 2 Dragon Statues with moonstone key slots. Inserting key creates shimmering energy bridge across to D2!
+* **D1: Overlook:** 2 Dragon Statues with moonstone key slots. Inserting key creates shimmering energy bridge across to D2! Trail shows severed Fume Drake bones cleanly cleaved by Lyra's twin blades.
 * **D2: Rotunda Ruins:** **Encounter:** 2 Winged Kobolds (Mek & Minn) fighting 8 Stirges. Central astronomical planet model & 5 Dragon Effigies (Astalagan, Clyssavar, Eldenemir, Sharruth, Turadaer).
 * **D3: Kobold Camp & D4: Study:** 5 Kobolds + 1 Kobold Champion (32–38 HP, AC 15). Black Journal with explosive rune trap (2d10 force). Clue: *"Point your eyes toward the Dragon's light"*. **Loot:** Potion of Lightning Resistance + 10 gp.
 * **D5: Observatory Tower & Secret Planetarium Vault:** 
-  * 🧩 **Scholar Statue Constellation Puzzle:** Rotate 4 Scholar Statues to point southeast at Dragon of Dawn constellation ➔ floor lowers forming spiral staircase to D6 & opens secret vault!
+  * 🧩 **Scholar Statue Constellation Puzzle:** Sylvar senses the floor vibrations and weight balance of the 4 Scholar Statues while Eflein uses Lianna's math to rotate them toward the Dragon of Dawn constellation ➔ floor lowers forming spiral staircase to D6 & opens secret vault!
   * ☀️ **Turadaer's Gold Scale:** Resting inside the secret planetarium vault!
 * **D6: Secret Vault & Apex Ritual Battle:**
   * **Sparkrender's Grand Motive (The Siphon of Sharruth):** Sparkrender is hunting all three ancient metallic dragon scales (Bronze, Silver, Gold). He plans to use the **King-Killer Star** comet passing overhead to violently shatter the 3-scale seal on Sharruth's undersea magma tomb and **siphon the sleeping Red Dragon's god-like primordial flame into his own body**, ascending into a catastrophic **Volcanic Thunder-Dragon**!
   * **NPC Ally:** Aidron (Bronze Wyrmling, 42–48 HP, AC 17) bound with 3 chains for Sparkrender's ritual. Freeing Aidron mid-fight grants Repulsion Breath (DC 12 Str) to push Sparkrender out of flight!
   * **Boss:** **Sparkrender (Apex Blue Wyrmling)** (CR 4 Apex Boss, AC 15, 95–110 HP, Fly 60ft, Multiattack Bite +5 [1d10+3 pierc + 1d6 lightn] / Claw +5 [1d6+3 slash], Lightning Breath [4d10 lightning, DC 13 Dex save for half]).
-  * ⚡ **The Grand Climax — The Tri-Draconic Convergence:** Party activates the Tri-Draconic Convergence (Bronze, Silver, Gold), permanently sealing Sharruth's tomb. Eflein reads **Lianna's final letter** on the Draconic World Atlas. Party reaches **Level 5 Milestone (3rd-Level Spells, 2-Beam Cantrips & Master Tier)**.
+  * ⚡ **The Grand Climax — The Tri-Draconic Convergence:** Party activates the Tri-Draconic Convergence (Bronze Lightning, Silver Zephyr Thunder, Gold Solar Radiant), permanently sealing Sharruth's tomb. Eflein and Sylvar read **Lianna's final letter** on the Draconic World Atlas confirming Lianna and Lyra chartered a ship to the lost Ancient Dragon Lands! Party reaches **Level 5 Milestone (3rd-Level Spells, 2-Beam Cantrips & Master Tier)**.
 
 ---
 
 ### 🎭 SECTION 1.4: INDIVIDUAL HERO DESTINY QUESTS & DEEP PERSONAL ARCS
 
 #### 🧙‍♂️ 1. Eflein's Destiny Arc: In Lianna's Footsteps (The Delinquent Prodigy & The Ancient Dragon Lands)
-* **Hero:** Eflein (High Elf Evocation Wizard 2) | **Archetype:** Delinquent / Yankee Prodigy
+* **Hero:** Eflein (High Elf Evocation Wizard 2/3) | **Archetype:** Delinquent / Yankee Prodigy
 * **Core Motivation:** Discover why his brilliant wife Lianna journeyed to Stormwreck Isle 8 months ago, decode the ancient draconic secrets she unraveled, and follow her trail to the next realm.
 * **Chapter Objectives & Investigation Trail:**
   1. 📖 **Dragon's Rest Library (A4):** Speak with insomniac kobold Kilnip. Kilnip returns Lianna's dragon-bone bookmark and her annotated copy of *The Secret Fires of Sharruth*, detailing the 3 Metallic Dragon Scales and Sharruth's volcanic seal.
   2. 🍄 **Seagrow Crystal Conduits (B6):** Discover Lianna's discarded botanical margin notes explaining how Sharruth's geothermal magma veins supercharge fungal spores; learns how to safely vent toxic brimstone.
-  3. 🚢 **Shipwreck Passenger Logbook (C4):** Recover the *Compass Rose* manifest proving Lianna surveyed the underwater dragon bones before ascending to the Clifftop Observatory.
+  3. 🚢 **Shipwreck Passenger Logbook & Note (C4):** Recover the *Compass Rose* manifest and Lianna's field note detailing Clyssavar's wind/thunder harmonics and Lyra holding the deck.
   4. 🔭 **Observatory Planetarium (D4-D5):** Use Lianna's stellar math notes to disarm the explosive rune trap and align the 4 Scholar Statues to the Dragon of Dawn constellation without triggering magical alarms.
   5. ⚡ **Astalagan's Resonance & Volcano Stabilization:** Channel Astalagan's bronze scale into the Tri-Draconic Convergence, shutting down Sparkrender's comet siphon and securing the island!
-  6. 📜 **The Climax Revelation & Lianna's Final Letter:** After Sparkrender is defeated, Eflein accesses the **Ancient Draconic World Atlas** carved into the observatory floor. On a stone plinth, he finds Lianna's final letter left specifically for him:
-     > *"I found it. The ancient star atlas here gave me the exact coordinates to the lost ancient dragon lands across the sea—a realm surging with untamed, primordial magic.*
-     >
-     > *I've already chartered a ship to get a head start. I left the statue alignments and math in my notes so you wouldn't blow yourself up on the rune traps. Clean up this messy blue lizard, get your hands out of your pockets, and come find me if you can, delinquent."*
-     > — **Lianna**
+  6. 📜 **The Climax Revelation & Lianna's Final Letter:** After Sparkrender is defeated, Eflein accesses the **Ancient Draconic World Atlas** carved into the observatory floor. On a stone plinth, he finds Lianna's final letter left specifically for him (with the P.S. about Lyra pacing the docks).
 * **Rewards & Milestones:** ⚡ **Astalagan's Awakened Amber Scale** (+1 Spell Attack & DC, +1d6 Lightning damage surge 1/turn), +2 to Arcana checks permanently, Lianna's Star-Atlas Coordinates to the Ancient Dragon Realm (Next Campaign Hook!), and Level 5 Evocation Mastery.
 * **Branching DM Scenarios:**
-  * *Scenario A (The Voyage to the Dragon Lands):* Eflein rallies the party to chart a vessel and set sail for the mysterious ancient dragon kingdom, seamlessly kicking off the party's next high-level campaign!
+  * *Scenario A (The Voyage to the Dragon Lands):* Eflein rallies Sylvar, Flubs, and Varnoth to chart a vessel and set sail for the mysterious ancient dragon kingdom, seamlessly kicking off the party's next high-level campaign!
   * *Scenario B (The Cloister Archive):* Eflein copies the observatory's master celestial star charts into his own spellbook, earning Elder Runara's title of *Master Arcanist of the Dragon Spire*.
 
-#### 🛡️ 2. The New Hero's Destiny Arc: Heir of Clyssavar's Silver Scale
-* **Hero:** Player Character 3 (Level 3 Standby) | **Archetype:** Core Strike Specialist / Relic Bearer
-* **Core Motivation:** Uncover the lost power of the ancient Silver Dragon Clyssavar, survive the dangers of the shipwreck, and wield the Silver Scale in defense of the realm.
+#### 🐾 2. Sylvar Link's Destiny Arc: The Path of Acoustic Enlightenment & The Sister's Vanguard
+* **Hero:** Sylvar Link (Half-Tabaxi Whispers Bard 3) | **Archetype:** Blind Seismic Perceiver / Whispering Blade / Seeking Sister
+* **Core Motivation:** Trace the footsteps of his twin sister Lyra (Chosen Warrior of the Lush Peaks Clan), transcend the perceived limits of his blindness through acoustic draconic harmony, and reclaim his family's bond.
 * **Chapter Objectives & Awakening Trail:**
-  1. ⛩️ **Arrival & Integration (Ch 1 & 2):** Arrive at Dragon's Rest, receive the transferred loadout (Cloak of Protection, Spitfire Flasks, Potion of Healing, rations, and coin), and join forces with Eflein, Father Flubs, and General Varnoth.
-  2. 🚢 **Claiming Clyssavar's Silver Scale (Ch 3 - C9):** Brave the submerged hold of the *Compass Rose*, unlock the captain's chest with Aleitha's Ivory Key, and claim ❄️ **Clyssavar's Silver Scale** (+1 Cold Attack/DC, Cold Resistance, +1d6 Slow Burst 1/day).
-  3. 🪐 **Observatory Convergence (Ch 4 - D5):** Channel Clyssavar's silver resonance alongside Eflein's bronze lightning and Father Flubs' golden dawn to power the **Tri-Draconic Convergence**, shutting down Sparkrender's siphon and stabilizing Sharruth's subterranean tomb!
-* **Rewards & Milestones:** ❄️ **Clyssavar's Silver Scale** (+1 Cold Atk/DC, Cold Resistance), Level 4 and Level 5 Master Milestones.
-
-#### 🍷 3. Father Flubs' Destiny Arc: The Ward-Priest's Secret & Turadaer's Dawn
-* **Hero:** Father Flubs (Human Life Domain Cleric 2) | **Archetype:** Priest, Ward-Healer Bloodline, Drunkard, Keeper of an Ancestral Secret
-* **Core Motivation:** Guard the secret of Sharruth's volcanic tomb decreed centuries ago by the three ancient dragons to his ancestral order, keep his companions alive through miraculous healing, and outrun the fear of oblivion through toasts, jokes, and sacred vigils for the forgotten dead.
 * **Chapter Objectives & Sacred Rites:**
   1. ⛺ **The Spitfire Rescue & Seagrow Expedition (B0–B6):** Freed from the roasting spit; awakens at the basalt cave entrance (B1). When he senses Sharruth's geothermal breathing pulsing in the B6 crystals, he unleashes *Preserve Life*, *Bless*, and healing miracles to ensure no ally falls.
   2. 🪦 **The Forgotten Dead of the Compass Rose (Ch 3):** Deeply moved by the forgotten drowned sailors, Father Flubs performs solemn funeral rites. He cleanses Aleitha's Orcus talisman upon Captain Brastos's grave at Dragon's Rest cemetery, dissolving the shipwreck and granting eternal rest.

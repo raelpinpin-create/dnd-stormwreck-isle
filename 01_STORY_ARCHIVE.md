@@ -20,20 +20,21 @@
 * Ages ago, three metallic dragon champions (**Astalagan**, **Clyssavar**, and **Turadaer**) fought and imprisoned the violent red dragon **Sharruth** beneath the ocean floor, forming **Stormwreck Isle**. Sharruth lies sleeping in magma deep within the island's volcanic crust.
 * **Elder Runara** established the sanctuary of **Dragon's Rest** atop the basalt cliffs as a refuge of peace.
 
-### ✉️ The Mysterious Letter & Wife's Trail
-* Eflein came to Stormwreck Isle seeking clues about his brilliant missing wife, **Lianna**.
-* **Elder Runara's Lead:** Elder Runara personally welcomed Lianna when she visited Dragon's Rest **8 months ago**, before she headed toward the Clifftop Observatory to study the Ancient Draconic World Atlas.
+### ✉️ The Dual Vanguard Trail: Lianna & Lyra (8 Months Ago)
+* **Eflein's Quest:** Came to Stormwreck Isle seeking clues about his brilliant missing wife, **Lianna**—an ancient archmage recalled by Elminster.
+* **Sylvar's Quest:** Came seeking his protective twin sister, **Lyra**—Chosen Warrior of the Lush Peaks Clan, hired as Lianna's sworn vanguard.
+* **Elder Runara's Lead:** Elder Runara personally welcomed both Lianna and Lyra when they visited Dragon's Rest **8 months ago**. Runara recalls Lyra carving a wooden lynx-charm by the fountain while Lianna studied in the library, before the two marched to the *Compass Rose* and the Clifftop Observatory.
 * **Wife's Handwritten Bookmark & Graphite Notes:** Discovered by Eflein inside *The Secret Fires of Sharruth* in the Cloister Library: 
   * Bookmark message: *"If the key is denied to you, look to the stars above the threshold..."*
-  * ✏️ **Graphite Pencil Notes:** Faint marginalia in his wife's handwriting calculated the **exact constellation degree angles** needed to align the **4 Scholar Statues** to the **Dragon of Dawn constellation** at the Clifftop Observatory, unlocking the secret planetarium vault containing **Turadaer's Gold Scale** and disarming the explosive rune traps!
-  * 🧊 **Silver Dragon Relic:** Ancient texts and bloodline resonance reveal that **Clyssavar the Silver Dragon** infused his scale magic into the northern coastal waters, resting within the submerged hull of the *Compass Rose*.
-  * 🗺️ **The Grand Revelation:** Unlocking the observatory's stone star-atlas points to a lost ancient dragon realm across the sea where Lianna has sailed ahead, daring Eflein to finish his business here and catch up with her!
+  * ✏️ **Graphite Pencil Notes:** Faint marginalia in Lianna's handwriting calculating the **exact constellation degree angles** needed to align the **4 Scholar Statues** at the Clifftop Observatory, unlocking the vault containing **Turadaer's Gold Scale**.
+* 🌪️ **Clyssavar's Silver Scale Resonance:** Ancient texts and acoustic vibrations reveal that **Clyssavar the Silver Dragon** infused his wind, thunder, and planar harmonics into the northern coastal waters, resting within the submerged hold C9 of the *Compass Rose*.
+* 🗺️ **The Grand Revelation:** Unlocking the observatory's stone star-atlas points to a lost ancient dragon realm across the sea where Lianna and Lyra have chartered a vessel together, awaiting the arrival of their husband and brother!
 
-### 🚢 The Curse of the Compass Rose & The Silver Scale Resonance
+### 🚢 The Curse of the Compass Rose & The Silver Zephyr
 * The drowned sailors rising from the sea belong to the shipwrecked vessel *Compass Rose*.
 * **Aleitha's Talisman:** Crafted out of grief by Aleitha, bound to the demon lord Orcus. To permanently break the undead curse, the talisman must be retrieved from the submerged hold and burned on Captain Brastos's grave at Dragon's Rest.
 * **Purification Miracle:** Touching Astalagan's Awakened Amber Scale to a defeated zombie purifies the Orcus curse, transforming the undead back into a peaceful dead human sailor.
-* ❄️ **Clyssavar's Silver Scale Disturbance:** Dark forces and harpies near the *Compass Rose* began disturbing the sacred resting place of Clyssavar's Silver Scale, causing cryogenic shockwaves to leak across the island's leylines and summoning Vaelith Frostborne to the north.
+* 🌪️ **Clyssavar's Zephyr Scale Resonance:** Dark forces and harpies near the *Compass Rose* disturbed the sacred resting place of Clyssavar's Silver Scale, causing violent thunder and gale shockwaves to vibrate across the sea leylines, drawing Sylvar Link straight to the island.
 
 ---
 
