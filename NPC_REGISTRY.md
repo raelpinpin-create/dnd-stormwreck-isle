@@ -32,6 +32,7 @@
   * *Red Lines:* Will never abandon a wounded subordinate or ally; will not tolerate torture or dishonorable slaughter of surrendered foes.
   * *Gray Areas:* Willing to use lethal force preemptively if ambushers threaten the camp; unhesitatingly pragmatic in tactical skirmishes.
   * *Voice & Demeanor:* Low, gravelly, quiet military authority. Dry humor. Doesn't raise her voice—just fixes you with her good eye.
+  * *Bonds & Comedic Lore:* Deeply fond of Sylvar Link after drinking him under the table during his legendary Neko Maid tavern night—though she still playfully curses the monumental hangover that threw off her sword swings in Seagrow Caves!
   * *Dialogue Hook:* *"Pain is just your body reminding you that you survived the last mistake, kid. Keep your shield up and check your corners."*
 
 ---
@@ -107,12 +108,12 @@
 * 🎯 **Core Desire & Modus Operandi:** To guide weary mortals and young dragons toward peaceful contemplation, maintaining the sanctuary as a beacon of Bahamut's mercy while keeping Sharruth's volcanic tomb undisturbed.
 * ⚡ **Immediate Current Problem (Independent of Players):** Her young bronze dragon apprentice **Aidron** bitterly rejected her pacifist teachings five days ago, calling her a senile coward, and stormed off to the Clifftop Observatory. She knows the blue wyrmling Sparkrender lurks there, but she dares not fly over in dragon form because an open dragon clash would tear open the island's old wounds and draw ruin to the cloister.
 * 👥 **Who / What It Involves:** Aidron (her headstrong student), Sparkrender, the sanctuary residents, and the Moonstone Key.
-* 🛠️ **How She Approaches It / Current Action:** Spends hours in meditation in the Temple of Bahamut, patiently testing the hearts of visiting adventurers (Eflein, Flubs, Vaelith) with local tasks to see if they possess the wisdom and courage to rescue Aidron without triggering open war.
+* 🛠️ **How She Approaches It / Current Action:** Spends hours in meditation in the Temple of Bahamut, patiently testing the hearts of visiting adventurers (Eflein, Flubs, Sylvar) with local tasks to see if they possess the wisdom and courage to rescue Aidron without triggering open war.
 * ⚖️ **Moral Stand & DM Roleplay Cues:**
   * *Red Lines:* Will never strike first or seek vengeance; will not allow anyone to violate sanctuary laws within Dragon's Rest.
   * *Gray Areas:* Keeps her true dragon identity and hoard secret; allows mortal heroes to face perilous tests rather than solving everything with her CR 13 might.
   * *Voice & Demeanor:* Deep, soothing, melodic maternal warmth. Speaks with calm deliberation, radiating immense ancient power held in gentle restraint.
-  * *Memories of Lianna & Lyra (8 Months Ago):* Fondly remembers Lianna researching in the library and her fierce, twin-blade tabaxi bodyguard **Lyra** (Sylvar's twin sister) meditating by the fountain, humming a meadow tune and carving a charm for a brother she loved dearly.
+  * *Memories of Lianna & Lyra (8 Months Ago):* Fondly remembers Lianna researching in the library and her fierce, twin-blade tabaxi bodyguard **Lyra** (Sylvar's twin sister) meditating by the fountain, humming a meadow tune and carving a charm for a brother she loved dearly. Shared drinks and warm laughter with Sylvar during his tavern celebration, gifting him 5 GP for his devotion.
   * *Dialogue Hook:* *"Every weapon forged is a promise to bleed. Here, we lay down our promises and seek what remains."*
 
 ---
@@ -145,8 +146,9 @@
 * 🧭 **Core Philosophy & Worldview:** **Technological Optimism & Earned Resilience**. Believes physical weakness or broken wings are merely design challenges waiting for the right spring, gear, or alchemical compound. Ingenuity conquers brute force.
 * 🎯 **Core Desire & Modus Operandi:** To build marvelous inventions, outfit the cloister with reliable defense gadgets, and prove to Runara that kobolds can be brilliant creators, not just ditch-diggers.
 * ⚡ **Immediate Current Problem (Independent of Players):** Her twin brothers, Mek and Minn, abandoned her to be eaten by stirges when her wing was torn, fleeing to serve Sparkrender. She is torn between burning anger at their cowardice and a desperate sisterly hope that they haven't been sacrificed by the blue dragon.
-* 👥 **Who / What It Involves:** Mek & Minn (at the Observatory), Sparkrender, apprentice Laylee, and her workshop scrap supply.
-* 🛠️ **How She Approaches It / Current Action:** Working 18-hour shifts inventing alchemical flame throwers, testing grappling winches, and offering heavy discounts to adventurers who promise to bring back news from the southeastern spires.
+* 🔒 **Top-Secret Project:** Currently assembling a **confidential draconic defense device & harmonic resonator** under wraps in her backroom, commissioned directly by Elder Runara as a secret countermeasure against Sparkrender.
+* 👥 **Who / What It Involves:** Mek & Minn (at the Observatory), Sparkrender, Elder Runara, apprentice Laylee, and her workshop scrap supply.
+* 🛠️ **How She Approaches It / Current Action:** Working 18-hour shifts inventing alchemical flame throwers, testing grappling winches, assembling Runara's secret device, and trading with travelers.
 * ⚖️ **Moral Stand & DM Roleplay Cues:**
   * *Red Lines:* Will never build torture devices or sabotage sanctuary gear; fiercely loyal to Elder Runara.
   * *Gray Areas:* Willing to test unstable alchemical prototypes on monsters without safety trials.
@@ -162,9 +164,9 @@
 #### 🧭 Psychological & Moral Dossier:
 * 🧭 **Core Philosophy & Worldview:** **Stoic Utilitarian Order**. Believes peace is sustained by clean cell floors, counted bushels of oats, and strict schedules—not idealistic speeches.
 * 🎯 **Core Desire & Modus Operandi:** Maintain immaculate order and prevent the cloister from running out of food, firewood, or clean bandages.
-* ⚡ **Immediate Current Problem (Independent of Players):** Ocean humidity has caked three barrels of salt in the cellar, root stores are running low, and the younger kobolds keep abandoning their sweeping duties to gawk at the new visitors.
+* ⚡ **Immediate Current Problem (Independent of Players):** Ocean humidity has caked three barrels of salt in the cellar, root stores are running low, and the younger kobolds keep abandoning their sweeping duties to gawk at the new visitors (and replay Sylvar's Macarena dance steps!).
 * 👥 **Who / What It Involves:** The kitchen team (Blepp & Frub), storeroom inventory, incoming rowboat shipments.
-* 🛠️ **How She Approaches It / Current Action:** Aggressively auditing pantry tallies on her slate, tapping her foot, and handing brooms to anyone standing idle for more than ten seconds.
+* 🛠️ **How She Approaches It / Current Action:** Aggressively auditing pantry tallies on her slate, tapping her foot, and handing brooms to anyone standing idle for more than ten seconds (though she secretly enjoyed Sylvar's Nat 20 tavern performance after he charmed her for permission).
 * ⚖️ **Moral Stand & DM Roleplay Cues:**
   * *Red Lines:* Zero tolerance for food waste, theft, or laziness.
   * *Voice & Demeanor:* Brisk, dry, no-nonsense, stern. Speaks with clipped efficiency.
@@ -275,20 +277,21 @@
 
 ---
 
-### 🗡️ Zark (Craggy Cliff Sentry & Switchback Guard)
-* **Identity:** Fierce red-scaled kobold with a notched wooden spear, perched on the 150-ft cliff landing.
+### 🗡️❤️ Zik (Craggy Cliff Sentry, Switchback Guard & Sylvar's Paramour)
+* **Identity:** Fierce, proud red-scaled kobold with a notched spear and polished brass scales, stationed on the 150-ft cliff landing.
 * **Stat Snapshot:** AC 13 | HP 10 | STR +1, DEX +2 | Athletics +3, Perception +2 | Shortspear +4 (1d6+2).
+* **Relationship Status:** `💖 In Love with Sylvar Link` (Seduced by the half-tabaxi bard, slow-danced together in the tavern, and spent an intimate night together).
 
 #### 🧭 Psychological & Moral Dossier:
-* 🧭 **Core Philosophy & Worldview:** **Aggressive Vigilance & Fortress Defense**. Believes peace without sharp spears is just an open invitation for pirates, monsters, and drakes to eat your clan.
-* 🎯 **Core Desire & Modus Operandi:** Guard the 150-foot marble stairs with an iron grip and make sure no threat reaches the monastery unannounced.
-* ⚡ **Immediate Current Problem (Independent of Players):** A flock of bold coastal gulls keeps diving down to snatch his dried fish rations, and he spotted suspicious silhouettes in the northern mist, making him hyper-paranoid of an impending pirate raid.
-* 👥 **Who / What It Involves:** The cliff switchback stairs, sea gulls, approaching boats.
-* 🛠️ **How He Approaches It / Current Action:** Sharpening his spear tip with basalt stone, screaming colorful insults at passing birds and rowboats, and demanding full identification from anyone stepping onto the stairs.
+* 🧭 **Core Philosophy & Worldview:** **Aggressive Vigilance Melted by Passion**. Believed peace without sharp spears is an invitation for danger—until a charming, blind catboy bard walked into his post with joint salves, sweet purrs, and teasing banter that completely stole his heart.
+* 🎯 **Core Desire & Modus Operandi:** Guard the 150-foot stairs with fierce dedication, prove to the sanctuary he is a brave and capable warrior, and sneak away to the tavern whenever Sylvar is playing.
+* ⚡ **Immediate Current Problem (Independent of Players):** Daydreaming about Sylvar's slow dance and warm fur during his shifts; gets flustered and tongue-tied whenever someone mentions the tavern or catboys.
+* 👥 **Who / What It Involves:** Sylvar Link (his beloved bard), the cliff switchback stairs, passing cloister residents who tease him about blushing through his red scales.
+* 🛠️ **How He Approaches It / Current Action:** Sharpening his spear tip with extra vigor to look heroic, checking his reflection in polished bronze buttons, and watching the plaza for a glimpse of Sylvar.
 * ⚖️ **Moral Stand & DM Roleplay Cues:**
-  * *Red Lines:* Completely loyal to the sanctuary; will fight to the death at the choke point.
-  * *Voice & Demeanor:* Raspy, snappy, loud, comically hostile barking.
-  * *Dialogue Hook:* *"Halt right there, gas-spore face! State your business before I turn your trousers into fishing net!"*
+  * *Red Lines:* Completely loyal to Dragon's Rest and fiercely protective of Sylvar; will spear anyone who insults his paramour.
+  * *Voice & Demeanor:* Tries to sound raspy, gruff, and authoritative, but turns flustered, squeaky, and shy whenever Sylvar or romantic topics arise.
+  * *Dialogue Hook:* *"H-halt! Identify yourself! ...Wait, are you friends with Sylvar? Look, if you see him, tell him I... I kept the ribbon he dropped. Ahem! Move along!"*
 
 ---
 
@@ -486,6 +489,22 @@
 * **Identity:** 8-foot-tall purple-feathered predator with a brass training whistle around its neck (AC 13, HP 58–65, CR 3).
 * **Philosophy & Current Problem:** **Confused Beast Loyalty & Territorial Instinct**. Stranded after a circus troupe's shipwreck. It has a painful 4-inch ironwood splinter wedged deep into the pad of its left hind paw, driving it into a screeching frenzy.
 * **Current Action:** Thrashing in its briar ravine to ward off intruders. If an adventurer grabs the brass whistle (DC 12 STR) and blows it (DC 10 Animal Handling) or removes the splinter (DC 12 Medicine), it instantly calms into a purring, affectionate protector!
+
+### ⚓ Harbormaster Barnaby (Grizzled Dwarf of Neverwinter Docks)
+* **Identity:** Grizzled, pipe-smoking dwarf with a sea-salt encrusted beard, ink-stained fingers, and heavy brass harbormaster stamps.
+* **Location:** Neverwinter Harbor (Salt-Crusted Manifest Shack).
+* **Stat Snapshot:** AC 14 (Chain Shirt) | HP 34 | STR +2, CON +3, WIS +2 | Insight +4, Perception +4 | Warhammer +4 (1d8+2).
+
+#### 🧭 Psychological & Moral Dossier:
+* 🧭 **Core Philosophy & Worldview:** **Cold Transactional Pragmatism & Harbor Darwinism**. Having watched forty years of adventurers sail off into the mist and barely ten percent return, he regards sentimentality as an unaffordable luxury. If an adventurer can't survive a dock shakedown, they won't survive the open sea.
+* 🎯 **Core Desire & Modus Operandi:** Collect harbor manifests and passenger fees accurately, smoke his cherrywood pipe in peace, and ignore tragic sob stories unless paid handsomely.
+* ⚡ **Immediate Current Problem:** Coastal gales are causing delays across the northern shipping lanes, and adventurers keep pestering him about old manifests from months ago.
+* 👥 **Who / What It Involves:** Outgoing fishing skiffs, charter vessels, Sylvar Link, and the mysterious secretive patron from 8 months ago.
+* 🛠️ **Approach & Current Action:** Stamping ledgers with mechanical indifference, charging exorbitant silver fees for private information, and warning fools about Stormwreck Isle's razor reefs.
+* ⚖️ **Moral Stand & DM RP Cues:**
+  * *Red Lines:* Won't falsify harbor security logs or harbor pirates wanted by Neverwinter's High Guard.
+  * *Voice & Demeanor:* Deep, raspy Scottish-dwarf burr, smelling heavily of pipeweed and smoked herring. Slams his wooden stamp down between sentences.
+  * *Dialogue Hook:* *"Aye, I remember 'em. 8 months ago. Secretive patron, hired a half-tabaxi merc with crescent blades as the vanguard. Never saw either come back through my harbor. You want a skiff? That'll cost ya every coin in your pockets, kid."*
 
 ---
 

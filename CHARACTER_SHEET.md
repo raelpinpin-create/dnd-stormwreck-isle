@@ -100,7 +100,8 @@
 * **Class & Level:** **Bard 3 (College of Whispers)**
 * **Background:** Entertainer
 * **Alignment:** **Chaotic Good**
-* **Archetype / Role:** **Acoustic Infiltrator, Whispering Blade & Blind Seismic Perceiver** — Blind half-tabaxi bard who navigates the world through acoustic whiskers, floor tremors, and echoing tambourine vibrations (like Toph). Joyful, hyper, and carrying the memory of his missing twin sister, he channels subtle psychic whispers through his rapier and songs.
+* **Archetype / Role:** **Acoustic Infiltrator, Whispering Blade & Blind Seismic Perceiver** — Blind half-tabaxi bard who navigates the world through acoustic whiskers, floor tremors, and echoing tambourine vibrations (like Toph). Joyful, hyper, and carrying the memory of his missing twin sister **Lyra**, he channels subtle psychic whispers through his rapier and songs.
+* **Prologue Origin & Sanctuary Exploits:** Followed rumors of Lyra from Neverwinter Docks (investigating with Harbormaster Barnaby) to Stormwreck Isle. After surviving a violent reef crash, he ascended to Dragon's Rest, met General Varnoth, and threw a legendary **Nat 20 Neko Maid tavern dance extravaganza** (sparking a monastery-wide Macarena conga line and giving Varnoth a glorious hangover!). Performed courier runs for Tarak, uncovered Myla's secret contraption, charmed sentry Zik into a romantic slow dance and overnight romance, and is currently waking up by the fountain ready to embark on Chapter 3!
 * **Role in Party:** Secondary Martial Infiltrator, Psychic Striker, Social Face (Expertise +7 Performance/Persuasion), Crowd Control & Destined Wielder of Clyssavar's Silver Harmonic Scale.
 
 ## ⚔️ Combat Statistics
@@ -144,6 +145,7 @@
 * **Attuned Magic Items & Apparel:**
   * 🛡️ **Cloak of Protection** (`+1` to Armor Class and `+1` to all Saving Throws — Attuned).
   * 🥋 **Leather Armor** (AC 11 base + DEX +3 = AC 14 base).
+  * 👗 **Neko Maid Costume** (Legendary Nat 20 Performance outfit; black and white frilled maid dress with cat ears and ribbon tail-wrap).
 * **Weapons & Musical Instruments:**
   * 🗡️ **Steel Rapier:** `+5 to hit`, reach 5 ft. *Hit:* `1d8 + 3` piercing (Finesse). *With Psychic Blades:* `1d8+3 + 2d6 Psychic`!
   * 🗡️ **Steel Dagger (2x):** `+5 to hit`, range 20/60 ft. *Hit:* `1d4 + 3` piercing (Finesse, Light, Thrown).
@@ -155,7 +157,7 @@
   * 🍞 **1x Kobold Sweetbread Roll** (Blepp's honey ration: `1d4 HP` + `+1d4 Temp HP`).
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack:** Backpack, bedroll, 3 costumes, mirror, bullseye lantern, bell, 8 oil flasks, 9 rations, tinderbox, waterskin, thieves' tools.
-* **Personal Wealth:** `15 gp, 0 sp` *(Starter Entertainer purse upon arrival)*.
+* **Personal Wealth:** `15 gp, 0 sp` *(5 gp gift from Runara + 10 gp courier earnings from Tarak)*.
 * **Destiny Relic:** 🌪️ **Scale of the Zephyr (Clyssavar's Silver Scale of Wind & Vibrations)** *(Chapter 3 Compass Rose Submerged Hold C9 — +1 Spell DC/Hit, Immune to Deafened, Thunder Resistance, 1/Day +1d6 Gale-Burst with 10ft Push & Disadv, Whispers on the Wind)*.
 
 ---
@@ -261,7 +263,7 @@
 * **Class & Level:** **Martial Defender 3 (Sidekick Tank)** *(Level 3 Full Upgrade!)*
 * **Background:** Veteran Commander (Azure Wolves)
 * **Alignment:** **Lawful Neutral / Good**
-* **Archetype / Personality:** **Battle-Scarred Commander** — Fierce facial scar, wooden peg leg below right knee, raspy authoritative voice, unshakeable frontline defender.
+* **Archetype / Personality:** **Battle-Scarred Commander** — Fierce facial scar, wooden peg leg below right knee, raspy authoritative voice, unshakeable frontline defender. Deeply amused and protective of Sylvar Link after drinking heavily with him during the legendary Neko Maid tavern night (which gave her the infamous hangover during the Seagrow Caves expedition!).
 * **Role in Party:** Primary Frontline Tank, Damage Sponge, Enemy Taunter & Ally Protector.
 
 ## ⚔️ Combat Statistics

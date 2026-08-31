@@ -6,7 +6,8 @@
 ---
 
 ## 📍 Campaign Timeline & Status
-* **Prologue:** *The Voyage to Stormwreck Isle* — **COMPLETED**
+* **Prologue A (Eflein):** *The Voyage to Stormwreck Isle* — **COMPLETED**
+* **Prologue B (Sylvar Link):** *The Trail in the Mist & The Tavern Extravaganza* — **COMPLETED**
 * **Chapter 1:** *Welcome to Dragon's Rest & Sanctuary Exploration* — **COMPLETED** *(Level 2 Reached!)*
 * **Chapter 2:** *Seagrow Caves & The Fungal Blight* — **COMPLETED** *(Level 3 Reached!)*
 * **Chapter 3:** *Wreck of the Compass Rose (The Zombie Curse & Silver Scale)* — **ACTIVE / IN PROGRESS**
@@ -40,12 +41,29 @@
 
 ## 📝 Chronological Session Logs
 
-### ⛵ Session 0 (Prologue): The Voyage to Stormwreck Isle
+### ⛵ Session 0A (Prologue — Eflein): The Voyage to Stormwreck Isle
 * **Location:** Neverwinter Docks ➔ Dragon's Rest Beach, Stormwreck Isle
 * **Chronological Events:**
   1. Eflein, a High Elf Wizard seeking clues about his lost wife, departed Neverwinter Harbor aboard *The Swift Seagull*.
   2. Breathing in the island air, Eflein performed a **Natural 20 Arcana Check**, sensing ancient draconic ley-lines and dormant dragon-magic pulsing within the volcanic bedrock.
   3. Arrived at the beach dock via rowboat, preparing to ascend to Dragon's Rest.
+
+### 🐾 Session 0B (Prologue — Sylvar Link): The Trail in the Mist & The Tavern Extravaganza
+* **Location:** Neverwinter Docks ➔ Shattered Reef ➔ Dragon's Rest (Sanctuary Square, Tavern, Workshop & Cliff Landing)
+* **Chronological Events:**
+  1. **Neverwinter Docks & Harbormaster Barnaby:** Sylvar investigated the harbor for whispers of his missing twin sister **Lyra** (Lush Peaks vanguard). He pressed grizzled dwarf Harbormaster Barnaby, who recalled chartering a vessel 8 months ago with a secretive patron and a fierce half-tabaxi warrior wielding twin crescent blades. Sylvar paid his remaining coin to charter a rough fishing skiff.
+  2. **Violent Reef Crash:** Draconic acoustic vibrations hummed through the sea floor before razor-coral tore the skiff's hull open. Sylvar was tossed into the freezing surf, washing ashore on the black sand beach with his coin purse lost.
+  3. **Acoustic Beach Scan & Eflein's Leftovers:** Using acoustic and seismic senses, Sylvar detected two freshly slain drowned zombies twenty paces away—one cleanly bladed, the other scorched with arcane frost and lightning (the aftermath of Eflein's battle hours prior!). Hearing temple bells, Sylvar climbed the 150-ft cliff stairway.
+  4. **Courtyard Gate & Meeting Varnoth:** Reaching Dragon's Rest, Sylvar mapped the courtyard, noting the disturbed earth and silver chips by the bronze dragon statue. He was greeted by **General Varnoth** (*"You look like you wrestled a reef and lost, kid"*).
+  5. **The Legendary Neko Maid Tavern Night (Nat 20 Performance):** Sylvar persuaded Agga to let him perform in the tavern. Donning his **Neko Maid outfit**, Sylvar rolled a **Natural 20 on Performance**! The rhythm drove the sanctuary wild; all the kobolds formed a giant **Macarena conga line**, dancing and drinking all night!
+  6. **The General's Hangover & Runara's Lore:** Varnoth drank heavily with the crowd, resulting in the **monumental hangover** that caused her attack misses during Seagrow Caves in Sessions 2–4! Elder Runara joined the party, sharing drinks and recounting fond memories of Lyra carving a wooden charm by the fountain 8 months ago. Sylvar failed an Athletics check trying to carry drunk Varnoth to bed and fell flat, before getting a free basement room.
+  7. **Morning Busking & Tarak's Errands:** Next morning, after seeing Varnoth and Eflein head south, Sylvar busked in the plaza and took delivery jobs for **Tarak**:
+     - *Myla's Smithy:* Delivered herbs and detected Myla secretly building a confidential defense contraption for Runara.
+     - *Cliff Sentry Zik:* Delivered joint salves to the rude sentry kobold **Zik**, seducing him with catboy charm and inviting him to the tavern.
+     - *Runara's Blessing:* Received **5 GP** and observatory lore from Elder Runara.
+     - *Tarak's Bounty:* Collected **10 GP** from Tarak (total wealth: **15 GP**).
+  8. **Night 2 Romance with Zik:** At the evening show, Zik sat front row. Sylvar charmed him, pulled him into a romantic slow dance, and the two spent an intimate night and long morning together.
+  9. **The Sunlit Courtyard Snooze (Epilogue):** Stepping out into the late afternoon sun on Day 3 pleasantly plastered and relaxed, Sylvar curled up by the fountain to snooze like a warm stray cat—right before Eflein, Father Flubs on Thurible, and Varnoth marched back into the courtyard!
 
 ### ⚔️ Session 1: Sanctuary Exploration, Relic Awakening & Nighttime Shipwreck Battle
 * **Location:** Dragon's Rest Sanctuary ➔ Beach Shipwreck ➔ Guest Cell 1
@@ -113,20 +131,20 @@
       - 🍷 **3x Elixirs of Health (Legendary):** Distilled from the 3 sacred Ruby Morels (Cures any disease/poison, grants **+20 Temp HP**, or revives a fallen 0 HP ally to **100% Full Max HP**!).
       - 🐉 **2x Diluted Drake Blood Potions:** Alchemically refined from 2 Fume Drake venom/blood sacs (Grants **+1 to Attack Rolls and +2 to Damage Rolls** for 24 hours until next Long Rest!).
   7. **Myla's Outfitting Shop & Cafeteria Restock:** Eflein visited *Myla’s Scrap & Sorcery* and the cloister kitchen, purchasing:
-     - 🥽 **Myla's Draconic Abyssal Goggles:** Custom-fitted bronze and amber goggles granting **Darkvision 60 ft** and **Murky Underwater Clarity** (perfect for navigating the flooded hold of the *Compass Rose*!).
-     - 🥯 **Dragon's Rest Bagel:** Fresh cafeteria specialty bread granting **+2 to Armor Class** until next Short Rest.
-     - *Personal Wealth updated to 28 GP, 9 SP.*
+      - 🥽 **Myla's Draconic Abyssal Goggles:** Custom-fitted bronze and amber goggles granting **Darkvision 60 ft** and **Murky Underwater Clarity** (perfect for navigating the flooded hold of the *Compass Rose*!).
+      - 🥯 **Dragon's Rest Bagel:** Fresh cafeteria specialty bread granting **+2 to Armor Class** until next Short Rest.
+      - *Personal Wealth updated to 28 GP, 9 SP.*
   8. **Sanctuary Short Rest & Final Staging for the Compass Rose:** The party gathered at the cliffside courtyard to rest, hone their weapons, and plan their expedition:
       - 🧙‍♂️ **Eflein:** Used *Arcane Recovery* to regain full 1st-level spell slots (`4/4`), consumed 6x *Potions of Healing* during emergency staging/prep (retaining 3x *Potions of Healing*), with personal wealth at `28 GP, 9 SP`.
       - 🍷 **Father Flubs:** Channel Divinity (*Preserve Life*) recharged and Help Tokens refreshed to `2/2`.
       - 🗡️ **General Varnoth:** Rested frontline vitals, Second Wind & Action Surge ready, Help Tokens at `1/2`, wealth updated to `8 GP, 6 SP`.
       - 🐺 **Vaelith's Departure (The Lone Wolf's Road):** Having assisted through Seagrow Caves and shared what he knew of the island, Vaelith parted ways with the fellowship to pursue his solo pilgrimage across Faerûn's icy northern shores in search of his true origin. His adventuring gear was passed on to the arriving companion.
-      - 🛡️ **Player Character 3 (New Hero — Standby):** Outfitted with the transferred loadout (Cloak of Protection, Spitfire Flasks, Potion of Healing, rations, 15 gp 8 sp), ready to step into the party lineup as Chapter 3 commences!
-      - 🐍 **Thurible:** Coiled happily beside the party, basking in the cloister's warmth.
+      - 🐾 **Sylvar Link (The New Hero Arrives):** Rested and pleasantly hungover from his epic 2-day tavern extravaganza and romance with Sentry Zik, Sylvar woke up from his sunlit cat-nap by the fountain as Eflein, Flubs on Thurible, and Varnoth entered the square. Reunited with the vanguard, outfitted with his gear (Cloak of Protection, Spitfire Flasks, Potion of Healing, Sweetbread, 15 gp), Sylvar stands ready to step into the party lineup as Chapter 3 commences!
+      - 🐍 **Thurible:** Coiled happily beside the party, basking in the cloister's warmth and greeting the snoozing catboy with friendly steam purrs.
   10. 💭 **Intermission Vignette: Eflein's Reverie (The Dream of the Empty Hearth):** 
       While resting against the fountain basin in the village square before departure, Eflein slipped into an elven trance-dream. He relived the harrowing prologue of five years ago in Waterdeep—baker Corin’s frantic pounding, the midnight infiltration of the Grand Library, the celestial alignment puzzle, and the automated runite golem echoing her sorrowful voice (*"Intrusion contained... Eflein, if it is you... please turn back"*). 
       He awoke with a gasp to the cool sea breeze of Stormwreck Isle, his fingers clutching **Lianna’s Farewell Letter**. The memory hardened his resolve tenfold: his wife is an ancient, legendary archmage who walked away from thousands of years of power for him, now summoned by Elminster to unearth ancient power across the Realms. He will conquer Stormwreck Isle, master the draconic leylines, and follow her to the ends of Faerûn!
-  11. 💾 **Session 4 Conclusion & Checkpoint:** The party saved and concluded Session 4 in the Dragon's Rest village square by the Bahamut statue—fully rested, attuned to Level 3, outfitted with master alchemy potions and abyssal goggles, and staged at the cloister gates ready to venture south to the *Wreck of the Compass Rose* at the start of Session 5!
+  11. 💾 **Session 4 Conclusion & Checkpoint:** The party saved and concluded Session 4 in the Dragon's Rest village square by the Bahamut statue—fully assembled with Sylvar Link, rested, attuned to Level 3, outfitted with master alchemy potions and abyssal goggles, and staged at the cloister gates ready to venture south to the *Wreck of the Compass Rose* at the start of Session 5!
 
 ---
 

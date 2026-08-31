@@ -2289,21 +2289,37 @@
                             <td>🗝️ <strong>Scavenger Clues:</strong> Trades rumors of hidden sea chests along the southern reef in exchange for shiny coins.</td>
                             <td>Cocky, boastful rogue. <em>"I'm the fastest hands on this rock."</em></td>
                         </tr>
-                        <tr id="npc-row-zark" class="row-npc-unmet">
+                        <tr id="npc-row-zark" class="row-npc-met">
                             <td>
-                                <strong class="clickable-title" onclick="openNpcModal('zark')">🗡️ Zark</strong>
-                                <span class="tag tag-unmet" style="font-size:0.68rem; margin-left:4px;">Cliff Sentry</span>
+                                <strong class="clickable-title" onclick="openNpcModal('zark')">🗡️❤️ Zik</strong>
+                                <span class="tag tag-met" style="font-size:0.68rem; margin-left:4px;">Cliff Sentry & Paramour</span>
                             </td>
                             <td>
-                                <select class="npc-status-select status-unmet" id="npc-select-zark" onchange="setNpcStatus('zark', this.value)">
-                                    <option value="met">🟢 Met & Active</option>
-                                    <option value="unmet" selected>⚪ Not Met</option>
+                                <select class="npc-status-select status-met" id="npc-select-zark" onchange="setNpcStatus('zark', this.value)">
+                                    <option value="met" selected>🟢 Met & Active</option>
+                                    <option value="unmet">⚪ Not Met</option>
                                     <option value="dead">☠️ Fallen / Dead</option>
                                 </select>
                             </td>
                             <td>Beach Switchback Sentry (A1 Cliff Stairs)</td>
-                            <td>🛡️ <strong>Coastal Sentry Reports:</strong> Alerts party of incoming sea fog, shipwreck sightings, and rogue kobold movement.</td>
-                            <td>Feisty, snappy sentry. <em>"Halt! State your business or face the spear!"</em></td>
+                            <td>💖 <strong>Sylvar's Smitten Paramour:</strong> Seduced by Sylvar Link during courier runs; attended the tavern show and spent the night together. Daydreams on duty while guarding the stairs.</td>
+                            <td>Proud sentry barking softened by shy romantic squeaks. <em>"H-halt! Look, tell Sylvar I kept his ribbon!"</em></td>
+                        </tr>
+                        <tr id="npc-row-barnaby" class="row-npc-met">
+                            <td>
+                                <strong class="clickable-title" onclick="openNpcModal('barnaby')">⚓ Barnaby</strong>
+                                <span class="tag tag-met" style="font-size:0.68rem; margin-left:4px;">Neverwinter Docks</span>
+                            </td>
+                            <td>
+                                <select class="npc-status-select status-met" id="npc-select-barnaby" onchange="setNpcStatus('barnaby', this.value)">
+                                    <option value="met" selected>🟢 Met & Active</option>
+                                    <option value="unmet">⚪ Not Met</option>
+                                    <option value="dead">☠️ Fallen / Dead</option>
+                                </select>
+                            </td>
+                            <td>Harbormaster (Neverwinter Harbor)</td>
+                            <td>📜 <strong>8-Month Vanguard Lead:</strong> Confirmed the secretive patron chartered a ship with half-tabaxi merc Lyra as vanguard 8 months ago.</td>
+                            <td>Gruff Scottish-dwarf burr, smells of pipeweed. <em>"Survival is earned, kid. Harbor manifests don't lie."</em></td>
                         </tr>
 
                         <!-- GROUP 2: SEAGROW CAVES MYCONID COLONY -->
@@ -3685,21 +3701,38 @@
             loot: "Lucky Bronze Scale, 1 gp."
         },
         zark: {
-            name: "Zark (Cliff Sentry)",
-            role: "Beach Switchback Guard",
-            voice: "Rude, snappy, loves shouting ridiculous insults from high perches.",
-            look: "Fierce red-scaled kobold clutching a sharp wooden shortspear with shell adornments.",
-            alignment: "Lawful Neutral",
-            philosophy: "<strong>Aggressive Fortress Defense.</strong> A sanctuary without sharp spears and watchful sentries is just a buffet for pirate raiders and zombies.",
-            problem: "Seagulls keep stealing his salted bait fish, and he spotted green witch lights near the northern sea grotto last night.",
-            involves: "Beach switchback trail, Sea Hag covens, screeching gulls.",
-            approach: "Sharpening spear tips with basalt rocks while shouting aggressive warning challenges at anything moving on the beach.",
-            morals: "<strong>Absolute Red Line:</strong> Will never abandon his post or let an unvetted armed stranger pass without Runara's nod.",
+            name: "Zik (Cliff Sentry & Sylvar's Paramour)",
+            role: "Beach Switchback Guard & Paramour",
+            voice: "Proud, raspy sentry barking softened by shy romantic squeaks.",
+            look: "Fierce red-scaled kobold clutching a sharp wooden shortspear, wearing polished brass scales and a dropped satin ribbon.",
+            alignment: "Chaotic Good / Neutral",
+            philosophy: "<strong>Aggressive Fortress Defense Melted by Love.</strong> Believed spears were the only law—until Sylvar Link walked into his life with sweet purrs and medicine.",
+            problem: "Daydreaming about Sylvar's slow dance and warm fur during his shifts; gets flustered whenever someone mentions catboys or the tavern.",
+            involves: "Sylvar Link (his beloved bard), beach switchback trail, cloister teasing.",
+            approach: "Sharpening spear tips with extra vigor to look heroic, checking his reflection in bronze buttons, and watching the plaza for Sylvar.",
+            morals: "<strong>Absolute Red Line:</strong> Will spear anyone who insults Sylvar or threatens Dragon's Rest.",
             stats: "AC 13 | HP 10 | Init +2 | Speed 30 ft | Pack Tactics",
             saves: "STR +1, DEX +2",
             actions: ["🗡️ Shortspear: +4 to hit, reach 5ft or thrown 20/60ft, 1d6+2 piercing."],
-            rp: "Guards the 150-ft cliff stairs. Shouts insults at visiting sailors before letting them up to the cloister.",
-            loot: "Polished Shortspear, Shark Tooth Necklace, 6 sp."
+            rp: "Guards the 150-ft cliff stairs. Seduced by Sylvar Link; slow-danced at the tavern and spent an intimate night together.",
+            loot: "Polished Shortspear, Sylvar's Satin Ribbon, 6 sp."
+        },
+        barnaby: {
+            name: "Harbormaster Barnaby",
+            role: "Grizzled Dwarf of Neverwinter Docks",
+            voice: "Deep raspy Scottish-dwarf burr, smells of pipeweed and smoked herring.",
+            look: "Stout, salt-crusted dwarf with ink-stained fingers, thick woolen coat, and heavy brass harbormaster stamps.",
+            alignment: "True Neutral",
+            philosophy: "<strong>Cold Transactional Pragmatism.</strong> Empathy doesn't pay harbor taxes; survival is earned through vigilance.",
+            problem: "Northern gale storms causing merchant delays; adventurers pestering him about old manifests from 8 months ago.",
+            involves: "Neverwinter manifests, outgoing fishing skiffs, Sylvar Link, Lianna & Lyra's charter.",
+            approach: "Stamping ledgers with mechanical indifference and charging silver fees for private travel records.",
+            morals: "<strong>Absolute Red Line:</strong> Never falsifies official harbor manifests.",
+            stats: "AC 14 | HP 34 | Init +0 | Speed 25 ft",
+            saves: "CON +3, WIS +2",
+            actions: ["🔨 Warhammer: +4 to hit, 1d8+2 bludgeoning."],
+            rp: "Stationed at Neverwinter Harbor. Recalls chartering a vessel 8 months ago with a secretive patron and half-tabaxi vanguard Lyra.",
+            loot: "Harbor Seal Ring, Pipeweed Pouch, 15 gp."
         },
         mek_minn: {
             name: "Mek & Minn (Winged Kobolds)",
@@ -3731,7 +3764,8 @@
         agga: 'unmet',
         laylee: 'unmet',
         mumpo: 'unmet',
-        zark: 'unmet',
+        zark: 'met',
+        barnaby: 'met',
         pips: 'unmet',
         sinensa: 'unmet',
         aidron: 'unmet',
@@ -4172,7 +4206,7 @@
             readAloud: "Ancient, weathered marble stairs carved directly into the towering seaside bluffs lead upward from the shoreline below. The salty ocean breeze whips around the stone risers as they open straight into the bustling cloister above.",
             dmNotes: "The primary path leading up into Dragonsrest from the shoreline below, consisting of ancient, weathered marble stairs carved directly into the seaside bluffs that open straight into the cloister. Encounter: 2 Drowned Sailors (Zombies) & Zombie Captain beach resurgence saving Blepp & Tarak.",
             hazards: "Slippery wet marble near base (DC 10 Acrobatics if dashing in combat).",
-            encounters: "Drowned Sailors (Zombies) & Zombie Captain (resurgence). Sentry Zark watching from upper landing.",
+            encounters: "Drowned Sailors (Zombies) & Zombie Captain (resurgence). Sentry Zik watching from upper landing.",
             loot: "Tarnished Neverwinter copper coins (1d4 gp), driftwood salvage, rowboat tethered at base."
         },
         dr_dragon_plaza: {
@@ -4181,7 +4215,7 @@
             readAloud: "A vibrant open-air square forms the beating heart of Dragonsrest. In the center stands a weathered bronze dragon monument on a stone plinth. Kobolds and residents bustle about colorful pop-up stalls, trading curiosities, dried herbs, and news beneath the watchful gaze of the statue.",
             dmNotes: "The vibrant open-air center of Dragonsrest, dominated by a weathered bronze dragon monument on a stone plinth. It serves as the primary gathering ground where local kobolds and residents set up pop-up market stalls, trade trinkets, and share daily news under the gaze of the statue. (Site of Thurible's legendary idol dance & sanctuary celebrations!).",
             hazards: "None. Sanctuary aura.",
-            encounters: "Kobolds (Agga, Blepp, Frub, Kilnip, Laylee, Mumpo, Zark), Thurible the Fire Snake, General Varnoth.",
+            encounters: "Kobolds (Agga, Blepp, Frub, Kilnip, Laylee, Mumpo, Zik), Thurible the Fire Snake, General Varnoth.",
             loot: "Astalagan's Bronze Scale (unearthed at statue plinth base), trader trinkets, copper charms."
         },
         dr_tarak_herbal: {
