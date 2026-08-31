@@ -2728,6 +2728,13 @@
                                 <td style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#facc15;">Priceless Sacred Relic</td>
                                 <td>Refills daily with 4 blessed wine draughts. Toast grants <strong>1d4+2 Temp HP & Adv vs Fear/Poison</strong>. +1 to Divine Healing. Ancestral relic of Father Flubs.</td>
                             </tr>
+                            <tr>
+                                <td><span style="color:#fde047; font-weight:700; cursor:pointer; text-decoration:underline dotted rgba(253,224,71,0.6);" onclick="openItemModal('galvanic_grounder')">🧲⚡ The Galvanic Ley-Grounder 👆</span></td>
+                                <td><span class="tag tag-buff">TACTICAL PYLON • Rare</span></td>
+                                <td>Myla's Scrap & Sorcery (Runara Commission)</td>
+                                <td style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#facc15;">1,200 GP (Priceless)</td>
+                                <td>Action to deploy into stone floor: 20-ft Grounding Aura (Lightning Resistance + Adv on DEX Saves vs breath/shocks). Static Capacitor: stores charge when hit by lightning; Bonus Action to discharge <strong>3d8 Thunder/Shock</strong> in 15-ft cone (DC 13 Dex) or empower attack!</td>
+                            </tr>
 
                             <!-- CATEGORY 3: WEAPONS & OFFENSIVE ARSENAL -->
                             <tr class="loot-row-header-weapon"><td colspan="5">⚔️ WEAPONS & OFFENSIVE ARSENAL</td></tr>
@@ -3477,14 +3484,14 @@
         runara: {
             name: "Elder Runara (Adult Bronze Dragon)",
             role: "Leader of Dragon's Rest Sanctuary",
-            voice: "Serene, warm, soothing, maternal ancient wisdom. Radiates effortless divine calm.",
+            voice: "Serene, warm, soothing, maternal ancient wisdom. Radiates effortless divine calm holding colossal power in gentle restraint.",
             look: "Elderly human woman with weathered brown skin, white hair in tight braids, and kindly hazel eyes, dressed in simple white monastic robes. Her true form is a colossal, shimmering 60-foot Bronze Dragon.",
             alignment: "Lawful Good",
             philosophy: "<strong>Restorative Pacifism & Cycle-Breaking.</strong> The ancient war between Chromatics and Metallics is a poison that destroys innocent lives across centuries. True strength lies in refusing to strike first and guiding lost souls toward peace.",
             problem: "Her former student Aidron rejected her pacifism in bitter anger and stormed off to confront Sparkrender alone, walking directly into a deadly trap.",
-            involves: "Aidron (captive Bronze Wyrmling in D6), Sparkrender (corrupted rival), the party of mortal heroes.",
-            approach: "Refuses to intervene directly with draconic force (which would shatter the sanctuary's neutrality and ignite open island war); tests and equips worthy mortals with ancient knowledge.",
-            morals: "<strong>Absolute Red Line:</strong> Will never execute a creature without offering genuine repentance. Accepts any sinner who lays down their blade.",
+            involves: "Aidron (captive Bronze Wyrmling in D6), Sparkrender (corrupted rival), Sharruth's volcanic tomb, Myla (building her countermeasure), the party of mortal heroes.",
+            approach: "<strong>Why She Refuses to Fly to the Observatory (4 Sacred Pillars):</strong><br>1. 🌋 <strong>Sharruth Leyline Rupture:</strong> Unleashing Adult Dragon power on the basalt cliffs would crack the volcanic fault lines and awaken Sharruth, sinking the island in fire.<br>2. ⚡ <strong>Comet Siphon Trap:</strong> Sparkrender is using the comet to siphon dragon souls; an Adult Dragon's presence would supercharge his ritual into godhood.<br>3. ⛩️ <strong>Sanctuary Ward Collapse:</strong> The cloister's holy ward is tethered to her presence; leaving drops the barrier and leaves innocent kobolds defenseless.<br>4. 🕊️ <strong>The Lesson of Aidron:</strong> Brute force validates Aidron's 'might-makes-right' belief; the cycle ends only when mortal champions choose wisdom and courage over tyranny.",
+            morals: "<strong>Absolute Red Line:</strong> Will never execute a creature without offering genuine repentance. Accepts any sinner who lays down their blade. Refuses to reveal her dragon form unless the sanctuary faces total annihilation.",
             stats: "AC 19 (Natural) | HP 212 (17d12+102) | Init +0 | Speed 40 ft, Fly 80 ft, Swim 40 ft | CR 13 (10,000 XP)",
             saves: "DEX +5, CON +11, WIS +7, CHA +9 | Senses: Blindsight 60ft, Darkvision 120ft, Passive Perception 22",
             actions: [
@@ -3493,7 +3500,7 @@
                 "💨 Repulsion Breath (Recharge 5-6): 30-ft cone. DC 19 Str save or pushed 60 ft away.",
                 "✨ Change Shape: Magically transforms into Humanoid or Beast while retaining game statistics."
             ],
-            rp: "Dedicated to ending the eternal cycle of draconic vengeance. Guarded the island for centuries after slaying the blue dragon Eldenemir. Hands over the Moonstone Key to the heroes.",
+            rp: "Dedicated to ending the eternal cycle of draconic vengeance. Commissioned Myla to build The Galvanic Ley-Grounder to protect the heroes. Bestows the Moonstone Key to worthy champions.",
             loot: "Moonstone Key (Quest Item), Dragon's Rest Sanctuary Blessings (+1d4 saves inside temple)."
         },
         tarak: {
@@ -3524,8 +3531,8 @@
             alignment: "Lawful Good",
             philosophy: "<strong>Technological Optimism.</strong> Any physical handicap or social oppression can be conquered with sufficient brass gears, alchemy, and creative problem-solving.",
             problem: "Her twin brothers Mek and Minn abandoned the cloister to serve Sparkrender out of fear and dragon-worship; she fears they will be sacrificed in the comet ritual.",
-            involves: "Mek & Minn (trapped in D2), Sparkrender's cult, cloister workshop supplies.",
-            approach: "Building a lightweight spring-powered grappling hook launcher to scale the northern cliffs and rescue her siblings before the King-Killer comet passes.",
+            involves: "Mek & Minn (trapped in D2), Sparkrender's cult, Elder Runara, cloister workshop supplies.",
+            approach: "Secretly assembling <strong>The Galvanic Ley-Grounder (The 'Spark-Tamer' Pylon)</strong> for Elder Runara to protect the party from Sparkrender's 4d10 lightning breath!",
             morals: "<strong>Absolute Red Line:</strong> Never hoard inventions or overcharge travelers in mortal peril. Always offers a 10% discount for cantrips that teach young kobolds.",
             stats: "AC 12 | HP 10 (3d6) | Init +2 | Speed 30 ft, Fly 10 ft | INT 15 (+2), DEX 14 (+2)",
             saves: "INT +4 | Skills: Arcana +4 | Inquiring Mind: Casts Detect Magic 1/day",
@@ -3533,8 +3540,8 @@
                 "🗡️ Dagger: +4 to hit, 1d4+2 piercing.",
                 "🔥 Alchemical Flame (Recharge 6): 15-ft cone. DC 12 Dex save for 10 (3d6) fire damage."
             ],
-            rp: "Maimed by stirges in the past and saved by Runara. Runs Myla's Scrap & Sorcery. Gives a 10% discount if spellcasters entertain apprentice kobolds with cantrips.",
-            loot: "Shop Inventory: Potions of Healing (50gp), Spore-Mask (10gp), Climbing Kit (25gp), Inks (25gp), Alchemist's Fire (50gp)."
+            rp: "Brilliant artificer who was saved by Runara after stirges maimed her wing. Commissioned by Runara to build the Galvanic Ley-Grounder. Sells Abyssal Goggles, climbing gear, and alchemy. Gives a 10% discount if spellcasters entertain apprentice kobolds with cantrips.",
+            loot: "The Galvanic Ley-Grounder (Runara Project), Shop Inventory (Potions of Healing 50gp, Spore-Mask 10gp, Climbing Kit 25gp, Alchemist's Fire 50gp)."
         },
         kilnip: {
             name: "Kilnip",
@@ -4734,6 +4741,16 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             desc: "A sealed clay canister packed with condensed sulfur-ash.",
             effect: "• <strong>Action to Throw (20 ft range):</strong> Creates a 15-ft radius cloud of heavy scalding steam for 1 min. Creatures inside make **DC 11 CON Save** or take 1d6 fire damage and are **Blinded** while inside.",
             placement: "Crafted by Myla for the party."
+        },
+        galvanic_grounder: {
+            name: "🧲⚡ The Galvanic Ley-Grounder (The 'Spark-Tamer' Pylon)",
+            category: "TACTICAL PYLON • Rare Wondrous Artifact",
+            tagClass: "tag-legendary",
+            location: "Myla's Scrap & Sorcery Workshop (Top-Secret Project for Elder Runara)",
+            cost: "1,200 GP (Priceless Sanctuary Artifact)",
+            desc: "A 3-foot deployable clockwork pylon crafted from polished bronze plates, spinning copper galvanic coils, and rare alchemical flux powders. Etched with ancient Bahamut lightning-warding runes.",
+            effect: "• <strong>Action to Deploy:</strong> Slam into stone/ground to project a <strong>20-foot radius Grounding Aura</strong>.<br>• <strong>Lightning Shield:</strong> All allies inside the aura gain <strong>Resistance to Lightning Damage</strong> and <strong>Advantage on Dexterity Saving Throws</strong> vs breath weapons and electric traps.<br>• <strong>Static Capacitor (Reaction):</strong> Whenever lightning strikes inside the aura, the pylon stores 1 charge.<br>• <strong>Capacitor Discharge (Bonus Action):</strong> Spend the charge to unleash a <strong>3d8 Thunder/Shock wave in a 15-ft cone (DC 13 Dex save for half)</strong> or channel it into an ally's next attack to deal <strong>+2d8 Lightning damage</strong>!",
+            placement: "Crafted by Myla at Elder Runara's confidential request to equip the heroes against Sparkrender at the Clifftop Observatory."
         },
 
         // 4. WEAPONS & COMBAT GEAR

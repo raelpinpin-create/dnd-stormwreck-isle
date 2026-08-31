@@ -106,15 +106,22 @@
 #### 🧭 Psychological & Moral Dossier:
 * 🧭 **Core Philosophy & Worldview:** **Restorative Pacifism & Generational Reconciliation**. Believes the ancient blood-feuds between chromatic and metallic dragons—and the bloody wars of mortals—are tragic cycles that can only be severed by offering unconditional sanctuary, patience, and moral education. Violence only creates more ghosts.
 * 🎯 **Core Desire & Modus Operandi:** To guide weary mortals and young dragons toward peaceful contemplation, maintaining the sanctuary as a beacon of Bahamut's mercy while keeping Sharruth's volcanic tomb undisturbed.
-* ⚡ **Immediate Current Problem (Independent of Players):** Her young bronze dragon apprentice **Aidron** bitterly rejected her pacifist teachings five days ago, calling her a senile coward, and stormed off to the Clifftop Observatory. She knows the blue wyrmling Sparkrender lurks there, but she dares not fly over in dragon form because an open dragon clash would tear open the island's old wounds and draw ruin to the cloister.
-* 👥 **Who / What It Involves:** Aidron (her headstrong student), Sparkrender, the sanctuary residents, and the Moonstone Key.
-* 🛠️ **How She Approaches It / Current Action:** Spends hours in meditation in the Temple of Bahamut, patiently testing the hearts of visiting adventurers (Eflein, Flubs, Sylvar) with local tasks to see if they possess the wisdom and courage to rescue Aidron without triggering open war.
-* ⚖️ **Moral Stand & DM Roleplay Cues:**
-  * *Red Lines:* Will never strike first or seek vengeance; will not allow anyone to violate sanctuary laws within Dragon's Rest.
-  * *Gray Areas:* Keeps her true dragon identity and hoard secret; allows mortal heroes to face perilous tests rather than solving everything with her CR 13 might.
-  * *Voice & Demeanor:* Deep, soothing, melodic maternal warmth. Speaks with calm deliberation, radiating immense ancient power held in gentle restraint.
-  * *Memories of Lianna & Lyra (8 Months Ago):* Fondly remembers Lianna researching in the library and her fierce, twin-blade tabaxi bodyguard **Lyra** (Sylvar's twin sister) meditating by the fountain, humming a meadow tune and carving a charm for a brother she loved dearly. Shared drinks and warm laughter with Sylvar during his tavern celebration, gifting him 5 GP for his devotion.
-  * *Dialogue Hook:* *"Every weapon forged is a promise to bleed. Here, we lay down our promises and seek what remains."*
+* ⚡ **Immediate Current Problem (Independent of Players):** Her young bronze dragon apprentice **Aidron** bitterly rejected her pacifist teachings five days ago, calling her a senile coward, and stormed off to the Clifftop Observatory. She knows the blue wyrmling Sparkrender has captured him, yet she is bound by four sacred, high-stakes reasons that forbid her from taking flight herself.
+* 👥 **Who / What It Involves:** Aidron (her headstrong student), Sparkrender, Sharruth's volcanic tomb, Myla (building her secret countermeasure), and the Moonstone Key.
+* 🛠️ **How She Approaches It / Current Action:** Spends hours in meditation in the Temple of Bahamut, quietly testing the hearts of visiting adventurers (Eflein, Flubs, Sylvar) with local tasks, while secretly commissioning Myla to construct **The Galvanic Ley-Grounder** to arm the party against Sparkrender's lethal lightning breath.
+
+#### 🚫 Why Runara Refuses to Fly to the Observatory (The 4 Sacred Pillars):
+1. 🌋 **The Sharruth Leyline Rupture (Tectonic Threat):** Beneath the island sleeps **Sharruth**, the primordial Red Dragon sealed in magma. If an Adult Bronze Dragon (CR 13) unleashes her full weight, wing-buffets, and lightning breath on the fragile basalt spires, the seismic shockwaves **would crack the volcanic fault lines**, awakening Sharruth and sinking Stormwreck Isle in apocalyptic fire.
+2. ⚡ **The Comet Siphon Trap (Sparkrender's Ambush):** Sparkrender is using the passing *King-Killer Star* comet to siphon draconic souls. Currently, he only has the wyrmling Aidron. If an **Adult Dragon of Runara’s colossal power** enters the celestial vortex, Sparkrender's ritual matrix could siphon *her* life force—instantly ascending him into an unstoppable Volcanic Thunder-Dragon god!
+3. ⛩️ **The Sanctuary Ward of Bahamut:** The holy abjuration barrier shielding Dragon's Rest is **physically tethered to Runara's presence**. The instant she flies away, the ward collapses, leaving the innocent kobolds (Blepp, Frub, Kilnip, Laylee) and repentant souls defenceless against swarming zombies and harpies.
+4. 🕊️ **The Lesson of Aidron (Breaking the Cycle):** Aidron believed *"might makes right"* and fled to prove brute force solves all problems. If Runara swoops in and crushes Sparkrender with dragon might, it validates Aidron's toxic belief. Runara believes the cycle of dragon wars ends only when mortal champions choose wisdom, courage, and restraint over draconic tyranny.
+
+#### ⚖️ Moral Stand & DM Roleplay Cues:
+* *Red Lines:* Will never strike first or seek vengeance; will not allow anyone to violate sanctuary laws within Dragon's Rest; will not reveal her dragon form unless the sanctuary itself faces total extinction.
+* *Gray Areas:* Keeps her true dragon identity and hoard secret; allows mortal heroes to face perilous tests rather than solving everything with her CR 13 might.
+* *Voice & Demeanor:* Deep, soothing, melodic maternal warmth. Speaks with calm deliberation, radiating immense ancient power held in gentle restraint.
+* *Memories of Lianna & Lyra (8 Months Ago):* Fondly remembers Lianna researching in the library and her fierce, twin-blade tabaxi bodyguard **Lyra** (Sylvar's twin sister) meditating by the fountain, humming a meadow tune and carving a charm for a brother she loved dearly. Shared drinks and warm laughter with Sylvar during his tavern celebration, gifting him 5 GP for his devotion.
+* *Dialogue Hook:* *"Every weapon forged is a promise to bleed. Here, we lay down our promises and seek what remains."*
 
 ---
 
@@ -146,9 +153,9 @@
 * 🧭 **Core Philosophy & Worldview:** **Technological Optimism & Earned Resilience**. Believes physical weakness or broken wings are merely design challenges waiting for the right spring, gear, or alchemical compound. Ingenuity conquers brute force.
 * 🎯 **Core Desire & Modus Operandi:** To build marvelous inventions, outfit the cloister with reliable defense gadgets, and prove to Runara that kobolds can be brilliant creators, not just ditch-diggers.
 * ⚡ **Immediate Current Problem (Independent of Players):** Her twin brothers, Mek and Minn, abandoned her to be eaten by stirges when her wing was torn, fleeing to serve Sparkrender. She is torn between burning anger at their cowardice and a desperate sisterly hope that they haven't been sacrificed by the blue dragon.
-* 🔒 **Top-Secret Project:** Currently assembling a **confidential draconic defense device & harmonic resonator** under wraps in her backroom, commissioned directly by Elder Runara as a secret countermeasure against Sparkrender.
+* 🔒 **Top-Secret Project (The Galvanic Ley-Grounder):** Currently assembling **The Galvanic Ley-Grounder (The "Spark-Tamer" Pylon)**—a clockwork-and-copper galvanic pylon commissioned secretly by Elder Runara to absorb and redirect Sparkrender's lethal 4d10 lightning breath during the Chapter 4 climax!
 * 👥 **Who / What It Involves:** Mek & Minn (at the Observatory), Sparkrender, Elder Runara, apprentice Laylee, and her workshop scrap supply.
-* 🛠️ **How She Approaches It / Current Action:** Working 18-hour shifts inventing alchemical flame throwers, testing grappling winches, assembling Runara's secret device, and trading with travelers.
+* 🛠️ **How She Approaches It / Current Action:** Working 18-hour shifts inventing alchemical flame throwers, testing grappling winches, calibrating the Galvanic Ley-Grounder, and trading with travelers.
 * ⚖️ **Moral Stand & DM Roleplay Cues:**
   * *Red Lines:* Will never build torture devices or sabotage sanctuary gear; fiercely loyal to Elder Runara.
   * *Gray Areas:* Willing to test unstable alchemical prototypes on monsters without safety trials.
