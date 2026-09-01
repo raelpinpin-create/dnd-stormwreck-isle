@@ -147,23 +147,23 @@
   11. 💾 **Session 4 Conclusion & Checkpoint:** The party saved and concluded Session 4 in the Dragon's Rest village square by the Bahamut statue—fully assembled with Sylvar Link, rested, attuned to Level 3, outfitted with master alchemy potions and abyssal goggles, and staged at the cloister gates ready to venture south to the *Wreck of the Compass Rose* at the start of Session 5!
 
 ### 🩸🌌 Session 5: The Wreck of the Compass Rose & The Planar Tear (The Nat 1 Master Key)
-* **Location:** *Wreck of the Compass Rose* (Toril) ➔ **Malgorath: The Weeping Planes** (Alien Extraplanar Dimension)
+* **Location:** *Wreck of the Compass Rose* (Toril) ➔ **Mal'Goroth: The Weeping Planes** (Alien Extraplanar Dimension)
 * **Chronological Events:**
   1. **The Voyage to the Dragon Bones:** The party rowed 2.5 miles northwest past the fossilized dragon bones jutting from the surf, arriving at the algae-slick carcass of the *Compass Rose*.
   2. **The Talisman Cleansing Ritual:** Father Flubs inspected Aleitha's Braided Hair-Talisman to perform a holy purification ritual and break the island's drowned zombie curse.
   3. **The Catastrophic Natural 1 (The Master Key):** Father Flubs rolled a **Natural 1**. Instead of purifying the relic, his unguided, desperate Life-Domain magic acted as the **exact master key** required to blow the hinges off the 500-year-old anti-life seal!
   4. **The Unsealing of Moros:** The talisman imploded, releasing **Moros, The Pale Sovereign**—a 10-foot-tall, chalk-white, skin-warped god from an alien dimension who fell to his knees weeping tears of molten starlight, begging the priest to save his people.
-  5. **The Dimensional Shift:** The party took Moros's hand, tearing open reality and transporting the entire expedition (Eflein, Sylvar, Flubs, Varnoth, Zik, Thurible) into the dying *Fear & Hunger* style nightmare world of **Malgorath: The Weeping Planes**!
+  5. **The Dimensional Shift:** The party took Moros's hand, tearing open reality and transporting the entire expedition (Eflein, Sylvar, Flubs, Varnoth, Zik, Thurible) into the dying *Fear & Hunger* style nightmare world of **Mal'Goroth: The Weeping Planes**!
   6. **The Living Hearth:** Thurible's 10-ft boiling elemental heat aura activated, keeping the freezing, calcifying ash winds at bay as the party stands on the black glass plateau beneath two weeping red moons.
-  7. **Mini-Campaign Initiated:** The party begins the **Malgorath Mini-Campaign** (tracked in `MALGORATH (THE WEEPING PLANES)`), uncovering the Skyfall Talisman's Neverwinter Vault origins (#77-B) and the first subtle seeds of the Great Multiverse Cataclysm!
+  7. **Mini-Campaign Initiated:** The party begins the **Mal'Goroth Mini-Campaign** (tracked in `MAL'GOROTH (THE WEEPING PLANES)`), uncovering the Skyfall Talisman's Neverwinter Vault origins (#77-B) and the first subtle seeds of the Great Multiverse Cataclysm!
 
 ---
 
 ## 🎯 Active Campaign Quests
 * [ ] **1. Primary Quest (The Archmage's Trail):** Trace the path of Eflein's wife **Lianna**—an ancient elven archmage recalled by Elminster to prevent the Great Multiverse Cataclysm.
-* [ ] **2. 🩸 The Malgorath Planar Odyssey (Active Mini-Campaign):** Survive the Charnel Wastes, navigate Moros's paranoia, uncover the Silent Harvester's Siphon spires, and find a way back to Toril!
+* [ ] **2. 🩸 The Mal'Goroth Planar Odyssey (Active Mini-Campaign):** Survive the Charnel Wastes, navigate Moros's paranoia, uncover the Silent Harvester's Siphon spires, and find a way back to Toril!
 * [x] **3. Seagrow Caves Fungal Blight (Chapter 2 — COMPLETED):** Fume Drakes cleared, Fire Snake tamed, Sinensa cured, Ruby Morels and Heartcaps gathered, and volcanic crystal shattered!
-* [ ] **4. Wreck of the Compass Rose & Silver Scale (Chapter 3 — PAUSED / INTERDIMENSIONAL):** Return from Malgorath to claim **Clyssavar's Silver Scale** and cleanse Aleitha's Talisman at Dragon's Rest cemetery!
+* [ ] **4. Wreck of the Compass Rose & Silver Scale (Chapter 3 — PAUSED / INTERDIMENSIONAL):** Return from Mal'Goroth to claim **Clyssavar's Silver Scale** and cleanse Aleitha's Talisman at Dragon's Rest cemetery!
 * [ ] **5. The Three Metallic Dragon Special Quest:**
   * [x] **Bronze Scale (Astalagan):** Acquired & Awakened at Dragon's Rest.
   * [ ] **Silver Scale (Clyssavar):** Located at Compass Rose (Urgent Chapter 3 Objective for the New Hero!).

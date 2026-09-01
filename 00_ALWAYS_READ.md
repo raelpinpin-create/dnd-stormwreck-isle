@@ -5,16 +5,16 @@
 ---
 
 ## 📍 Live Scene & Situation
-* **Current Chapter:** Chapter 3.5 (The Interdimensional Detour): **MALGORATH — THE WEEPING PLANES**!
+* **Current Chapter:** Chapter 3.5 (The Interdimensional Detour): **MAL'GOROTH — THE WEEPING PLANES**!
 * **Current Location:** The Charnel Wastes (Extraplanar Black Glass Plateau under the Weeping Red Moons)
-* **Session Checkpoint & Save State:** **Session 5 In-Progress (The Planar Tear)!** While attempting to purify Aleitha's Braided Hair-Talisman on the deck of the *Compass Rose*, Father Flubs rolled a **Natural 1**, inadvertently acting as the master key to shatter the 500-year seal on **Moros, The Pale Sovereign**. Moros begged for salvation, and the entire party (Eflein, Sylvar, Flubs, Varnoth, Zik, Thurible) took his hand and was pulled into the dying *Fear & Hunger* style nightmare realm of **Malgorath: The Weeping Planes**!
-* **Mini-Campaign Hub:** [`D:\Dungeons and Dragons Campaigns\MALGORATH (THE WEEPING PLANES)`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/MALGORATH%20(THE%20WEEPING%20PLANES)/00_ALWAYS_READ.md)
+* **Session Checkpoint & Save State:** **Session 5 In-Progress (The Planar Tear)!** While attempting to purify Aleitha's Braided Hair-Talisman on the deck of the *Compass Rose*, Father Flubs rolled a **Natural 1**, inadvertently acting as the master key to shatter the 500-year seal on **Moros, The Pale Sovereign**. Moros begged for salvation, and the entire party (Eflein, Sylvar, Flubs, Varnoth, Zik, Thurible) took his hand and was pulled into the dying *Fear & Hunger* style nightmare realm of **Mal'Goroth: The Weeping Planes**!
+* **Mini-Campaign Hub:** [`D:\Dungeons and Dragons Campaigns\MAL'GOROTH (THE WEEPING PLANES)`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/MAL'GOROTH%20(THE%20WEEPING%20PLANES)/00_ALWAYS_READ.md)
 * **Active Story Highlights & Milestones:**
   - 🍄 **Seagrow Caves Cleared & Rewards Secured:** Sovereign Sinensa cured, 3x Ruby Morels, 9x Heartcap Mushrooms, 100 gp, 4x Wind Spore Pouches, and Lianna’s Geothermal Folio secured!
   - 🐍✨ **The Legendary Idol Dance of Thurible (Double Nat 20s!):** Thurible crowned the Unanimous Official Sacred Mascot & Hearth-Guardian of Dragon's Rest!
   - 🧪 **Master Brewing Batch:** Tarak crafted 12x Potions of Healing, 3x Legendary Elixirs of Health, and 2x Diluted Drake Blood Potions.
   - 🥽 **Myla's Outfitting:** Eflein equipped Myla's Draconic Abyssal Goggles (Darkvision 60ft & Underwater Sight).
-  - 🩸🌌 **The Nat 1 Master Key & The Dimensional Shift:** Flubs's botched purification broke Moros's talisman seal, revealing the Skyfall Meteorite relic from Neverwinter Vault #77-B and transporting the expedition into Malgorath to face a dying god's plea and uncover the first subtle seeds of the Great Multiverse Cataclysm!
+  - 🩸🌌 **The Nat 1 Master Key & The Dimensional Shift:** Flubs's botched purification broke Moros's talisman seal, revealing the Skyfall Meteorite relic from Neverwinter Vault #77-B and transporting the expedition into Mal'Goroth to face a dying god's plea and uncover the first subtle seeds of the Great Multiverse Cataclysm!
   - 🌟 **Level 3 Active:** Full party intact in the red ash, huddled around Thurible's 10-ft Living Hearth aura!
 * **Party State (FULL LEVEL 3 STATUS — POST-SHORT REST READY):** 
   - 🧙‍♂️ **Eflein:** **LEVEL 3 WIZARD (Evocation)** — **20 / 20 HP**, **4 / 4 1st-level & 2 / 2 2nd-level slots** *(Arcane Recovery used on Short Rest)*, **6 Prepared Spells**, **2 / 2 Help Tokens**, 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Underwater Clarity), 3 Potions of Healing (Bonus: 2d6 / Action: Full Heal), 5 Specialty Breads & Bagel (+2 AC), Wand of Magic Missiles (7/7), Awakened Amber Scale, Lodestone Bracelet, Spore Mask, Robe of Arcane Reserve, 28 gp 9 sp. *(AC 12 / 15 Mage Armor)*
