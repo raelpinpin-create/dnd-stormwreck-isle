@@ -77,7 +77,12 @@
   * 🥯 **Dragon's Rest Bagel** (Restores `1d8 HP` + grants `+2 to Armor Class` until next Short Rest)
 * **Valuables & Story:** 
   * 📜 **Lianna's Farewell Letter (The Archmage's Vow):** Folded parchment smelling of jasmine perfume, kept inside his inner breast pocket.
-  * 📜 **Lianna's Reef Letter (Compass Rose Anomaly Notes):** Recovered from the *Compass Rose* zombies, confirming Lianna's research into planar dimensional anomalies.
+  * 📜 **Lianna's Reef Letter (Compass Rose Anomaly Notes):** Recovered from the *Compass Rose* zombies:
+    > *"I found it. There is ancient magic trapped down in the flooded hold—a harmonic frequency unlike anything in the Academy textbooks.  
+    > I managed to take the arcane measurements I needed, but the dark death magic pooling in these waters is getting too unstable to linger. Drowned sailors are clawing up through the bilge and harpies are swarming the shattered rigging. My half-tabaxi guard is currently holding the main deck alone, carving a bloodied path through the rotting crew to buy me time to seal this desk.  
+    > I am heading up the basalt cliffs toward the Clifftop Observatory. The ancient star-apparatus up there holds the key to deciphering something massive... something the elders in Candlekeep thought was just a fairy tale.  
+    > If anyone reads this—Eflein, if you are somewhere out there—calculate the planar declination by three degrees, and come see what I found.  
+    > — Lianna"*
   * 📖 **Compass Rose Log Fragment & Spellbook** (Contains wizard spells + Lady Aleitha's journal revealing the Talisman of Orcus & the grave purification ritual), Scholar's Pack.
 * **Personal Wealth:** `28 gp, 9 sp`.
 

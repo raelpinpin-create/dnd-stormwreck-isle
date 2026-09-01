@@ -167,7 +167,12 @@
      - 🐉 **Pure Drakeblood Vial:** Claimed by **Father Flubs** *(Grants +2 ATK / +3 DMG when imbibed!)*.
   5. **Boarding the Compass Rose & Lianna’s Letter:**
      - The party reached the fossilized white dragon bones impaling the shattered hull of the *Compass Rose*.
-     - Clearing a pack of waterlogged drowned zombies on the main deck, Eflein discovered another **Cryptic Planar Letter from his wife Lianna**, confirming that she had studied the dimensional anomalies on this exact reef before heading to the Observatory!
+     - Clearing a pack of waterlogged drowned zombies on the main deck, Eflein discovered **Lianna's Letter from the Compass Rose**:
+       > *"I found it. There is ancient magic trapped down in the flooded hold—a harmonic frequency unlike anything in the Academy textbooks.  
+       > I managed to take the arcane measurements I needed, but the dark death magic pooling in these waters is getting too unstable to linger. Drowned sailors are clawing up through the bilge and harpies are swarming the shattered rigging. My half-tabaxi guard is currently holding the main deck alone, carving a bloodied path through the rotting crew to buy me time to seal this desk.  
+       > I am heading up the basalt cliffs toward the Clifftop Observatory. The ancient star-apparatus up there holds the key to deciphering something massive... something the elders in Candlekeep thought was just a fairy tale.  
+       > If anyone reads this—Eflein, if you are somewhere out there—calculate the planar declination by three degrees, and come see what I found.  
+       > — Lianna"*
   6. **The Weeping Queen: Aleitha’s Peaceful Redemption:**
      - Dropping into the flooded lower decks, **General Varnoth and Sentry Zik hid behind the waterlogged spice crates** while the core trio (**Sylvar, Father Flubs, and Eflein**) confronted **Aleitha, The Drowned Queen**.
      - Finding Aleitha weeping in her shredded bridal shroud, Sylvar and Eflein used gentle persuasion to calm her grief. 
