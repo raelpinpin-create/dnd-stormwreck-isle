@@ -70,9 +70,8 @@
   * 🤿 **Spore-Filter Rebreather Mask** (Advantage on CON saves vs spores/fumes/gas)
 * **Consumables & Rations:** 
   * 🧪 **Potion of Water Breathing** *(Trophy from the Sea Hag)*
-  * 🧪 **3x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
+  * 🧪 **2x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
   * 🧀 **Cheese Bread** (Restores `1d8 HP` + grants `+2 to Initiative` for 1 encounter)
-  * 🥩 **Philly Cheese Steak Bread** (Restores `1d8 HP` + grants `+2 to Attack Rolls` for 1 encounter)
   * 🐟 **Salmon Bread** (Restores `1d8 HP` + grants `+4 Temporary HP`)
   * 🌟 **Eflein's Special Bread** (Restores `1d8 HP` + grants `+2 to all Skill Checks` until next Long Rest)
   * 🥯 **Dragon's Rest Bagel** (Restores `1d8 HP` + grants `+2 to Armor Class` until next Short Rest)
