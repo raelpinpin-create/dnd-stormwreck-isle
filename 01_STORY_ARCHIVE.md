@@ -146,16 +146,54 @@
       He awoke with a gasp to the cool sea breeze of Stormwreck Isle, his fingers clutching **Lianna’s Farewell Letter**. The memory hardened his resolve tenfold: his wife is an ancient, legendary archmage who walked away from thousands of years of power for him, now summoned by Elminster to unearth ancient power across the Realms. He will conquer Stormwreck Isle, master the draconic leylines, and follow her to the ends of Faerûn!
   11. 💾 **Session 4 Conclusion & Checkpoint:** The party saved and concluded Session 4 in the Dragon's Rest village square by the Bahamut statue—fully assembled with Sylvar Link, rested, attuned to Level 3, outfitted with master alchemy potions and abyssal goggles, and staged at the cloister gates ready to venture south to the *Wreck of the Compass Rose* at the start of Session 5!
 
-### 🩸🌌 Session 5: The Wreck of the Compass Rose & The Planar Tear (The Nat 1 Master Key)
-* **Location:** *Wreck of the Compass Rose* (Toril) ➔ **Mal'Goroth: The Weeping Planes** (Alien Extraplanar Dimension)
-* **Chronological Events:**
-  1. **The Voyage to the Dragon Bones:** The party rowed 2.5 miles northwest past the fossilized dragon bones jutting from the surf, arriving at the algae-slick carcass of the *Compass Rose*.
-  2. **The Talisman Cleansing Ritual:** Father Flubs inspected Aleitha's Braided Hair-Talisman to perform a holy purification ritual and break the island's drowned zombie curse.
-  3. **The Catastrophic Natural 1 (The Master Key):** Father Flubs rolled a **Natural 1**. Instead of purifying the relic, his unguided, desperate Life-Domain magic acted as the **exact master key** required to blow the hinges off the 500-year-old anti-life seal!
-  4. **The Unsealing of Moros:** The talisman imploded, releasing **Moros, The Pale Sovereign**—a 10-foot-tall, chalk-white, skin-warped god from an alien dimension who fell to his knees weeping tears of molten starlight, begging the priest to save his people.
-  5. **The Dimensional Shift:** The party took Moros's hand, tearing open reality and transporting the entire expedition (Eflein, Sylvar, Flubs, Varnoth, Zik, Thurible) into the dying *Fear & Hunger* style nightmare world of **Mal'Goroth: The Weeping Planes**!
-  6. **The Living Hearth:** Thurible's 10-ft boiling elemental heat aura activated, keeping the freezing, calcifying ash winds at bay as the party stands on the black glass plateau beneath two weeping red moons.
-  7. **Mini-Campaign Initiated:** The party begins the **Mal'Goroth Mini-Campaign** (tracked in `MAL'GOROTH (THE WEEPING PLANES)`), uncovering the Skyfall Talisman's Neverwinter Vault origins (#77-B) and the first subtle seeds of the Great Multiverse Cataclysm!
+### 🩸🌌 Session 5: Journey to the Compass Rose & The Planar Tear (The Nat 1 of the Century)
+* **Location:** Dragon's Rest Reefs ➔ Sea Hag's Grotto ➔ *Wreck of the Compass Rose* (Toril) ➔ **Mal'Goroth: The Weeping Planes** (Alien Dimension)
+* **Chronological Events & Battle Breakdown:**
+  1. **A Lighthearted Departure & Banter with Sylvar:** The expedition departed Dragon's Rest in high spirits, cracking jokes and getting to know their charismatic, blind whiskers-bard **Sylvar Link**.
+  2. **The Sea Hag Ambush & Varnoth's Near-Death Traumatic Stasis:**
+     - Along the rocky reef shoals, the party encountered a terrifying **Sea Hag (Cove Witch)** lurking in the brackish shallows.
+     - The Sea Hag seeped directly into **General Varnoth’s deepest psychological fears**, locking the scarred veteran in a state of absolute horror with her *Horrific Appearance* and *Death Glare*.
+     - Varnoth collapsed, **literally dying for a second** as her heart stopped in the freezing water!
+     - Through the desperate CPR and radiant healing of Father Flubs and the party, Varnoth was pulled back from the threshold of death.
+  3. **Varnoth’s Heartbreaking Confession (The Wolves Guild & Merimar):**
+     - Shivering and weeping in the brine, General Varnoth finally opened up about the haunting trauma that drove her to hide at Dragon's Rest.
+     - She revealed her past as a decorated General of the **Wolves Guild** in Neverwinter. Decades ago, her regiment was sent north to clear what were believed to be ordinary mountain bandits.
+     - In reality, the bandits were **devils in disguise** plotting to conquer the northern territories. Her entire company was systematically butchered.
+     - Her beloved sister, **Merimar**, and her fellow soldiers fought to their dying breaths, sacrificing their lives to hold the line so Varnoth could escape—telling her that *Neverwinter needed her strength to survive*. Varnoth has carried that agonizing survivor's guilt ever since.
+  4. **Loot Claimed from the Slain Sea Hag:**
+     - 🧪 **Potion of Water Breathing:** Claimed by **Eflein**.
+     - 📿 **Enlightened Bone Talisman:** Claimed by **Father Flubs** *(Grants Turn Undead 1/Long Rest!)*.
+     - 🪙 **400 Gold Pieces:** Claimed by **Sylvar Link** *(Personal Wealth updated to 415 GP!)*.
+     - 🐉 **Pure Drakeblood Vial:** Claimed by **Father Flubs** *(Grants +2 ATK / +3 DMG when imbibed!)*.
+  5. **Boarding the Compass Rose & Lianna’s Letter:**
+     - The party reached the fossilized white dragon bones impaling the shattered hull of the *Compass Rose*.
+     - Clearing a pack of waterlogged drowned zombies on the main deck, Eflein discovered another **Cryptic Planar Letter from his wife Lianna**, confirming that she had studied the dimensional anomalies on this exact reef before heading to the Observatory!
+  6. **The Weeping Queen: Aleitha’s Peaceful Redemption:**
+     - Dropping into the flooded lower decks, **General Varnoth and Sentry Zik hid behind the waterlogged spice crates** while the core trio (**Sylvar, Father Flubs, and Eflein**) confronted **Aleitha, The Drowned Queen**.
+     - Finding Aleitha weeping in her shredded bridal shroud, Sylvar and Eflein used gentle persuasion to calm her grief. 
+     - Seeing the radiant presence of Father Flubs, Aleitha wept openly, pleading: *« Save me... Priest... Save Brastos and save me from this dark... »*
+     - Flubs channeled his sacred divine light. Blessed by holy peace, Aleitha willingly ended her cursed undeath, dissolving into ocean mist and leaving behind **Aleitha’s Farewell Letter** and the **Braided Hair-Talisman**.
+  7. **The Lifetime Natural 1 of the Century (The Shattered Seal):**
+     - Inside the quiet lower deck of the caravel, Father Flubs prepared to perform a cleansing ritual on the braided talisman to lift the island's curse once and for all.
+     - Father Flubs rolled a **LIFETIME NATURAL 1 OF THE CENTURY**!
+     - **BAMMM!**
+     - The entire world went dead silent. The waves stopped crashing. The ocean rain froze mid-air.
+     - A suffocating, blinding white-grey fog enveloped the ship, completely blinding everyone. 
+     - Deep tremors rattled the ship's timbers. The talisman pulsed with violent, alien starlight, and Flubs dropped it to the deck.
+  8. **The Sudden Vanishing of Varnoth & Zik:**
+     - Out in the fog, General Varnoth screamed for help—and her scream abruptly **vanished into thin air**!
+     - Sentry Zik panicked, shouting: *« VARNOTH! WHERE ARE— »* before his voice cut off and he disappeared as well!
+  9. **The Emergence of Moros, The Pale Sovereign:**
+     - Left standing alone in the silent mist, Sylvar, Eflein, and Father Flubs heard wet, heavy breathing.
+     - Towering 10 feet above them emerged **Moros, The Pale Sovereign**—a porcelain-skinned, pure-white skinwalker entity with no hair, no nose, and no mouth, possessing terrifying cyclopean eyes capable of banishing mortals to the "Other Side".
+     - Moros spoke with an unnatural telepathic chime: *« Where is the priest... who freed me...? »*
+     - Flubs's Nat 1 had accidentally acted as the **exact master key** required to shatter the 500-year-old anti-life seal on an ancient extraplanar relic—originally forged in an alien universe, drifted across the void, and locked in Neverwinter Vault #77-B before Aleitha stole it!
+  10. **The Planar Departure into Mal'Goroth:**
+      - Moros dropped to his knees and begged Father Flubs: *« Help my people... free my people... take my hand... »*
+      - The party deliberated intensely, persuaded Moros to let all of them travel together, and clasped his massive porcelain hand!
+      - Reality tore open in a vortex of blood-red starlight, transporting Eflein, Sylvar, Flubs, and Thurible across the multiverse into the vast, red-skied nightmare wastelands of **Mal'Goroth: The Weeping Planes**!
+  11. **The Special Campaign Odyssey Begins:**
+      - Now stranded in a grim, *Fear & Hunger* style dying world, the heroes must search the ash for the banished Varnoth and Zik, uncover the truth behind Moros and his cocooned "people", and find a way back home to Toril!
 
 ---
 

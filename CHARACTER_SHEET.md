@@ -69,6 +69,7 @@
   * 📜 **Spell Scroll of *Absorb Elements*** (1st-Level Abjuration Reaction)
   * 🤿 **Spore-Filter Rebreather Mask** (Advantage on CON saves vs spores/fumes/gas)
 * **Consumables & Rations:** 
+  * 🧪 **Potion of Water Breathing** *(Trophy from the Sea Hag)*
   * 🧪 **3x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
   * 🧀 **Cheese Bread** (Restores `1d8 HP` + grants `+2 to Initiative` for 1 encounter)
   * 🥩 **Philly Cheese Steak Bread** (Restores `1d8 HP` + grants `+2 to Attack Rolls` for 1 encounter)
@@ -77,13 +78,7 @@
   * 🥯 **Dragon's Rest Bagel** (Restores `1d8 HP` + grants `+2 to Armor Class` until next Short Rest)
 * **Valuables & Story:** 
   * 📜 **Lianna's Farewell Letter (The Archmage's Vow):** Folded parchment smelling of jasmine perfume, kept inside his inner breast pocket.
-    > *"Eflein,  
-    > If you are reading this, your brilliance solved the wards I spent a lifetime perfecting. I prayed with all my soul that you would never find this place.  
-    > I am not the simple scholar you fell in love with. For centuries, I have walked the Realms under the tutelage of Elminster himself, fighting horrors that remain unnamed in history books. When my time was done, I chose to bury my magic, to choose an ordinary life, and to choose you.  
-    > Last night, Elminster spoke into my dreams. A great cataclysm stirs across the cosmic balance, threatening the fragile existence of our world. He is calling every archmage of the old guard back to the front lines to unearth ancient power before it is too late.  
-    > I left in the dead of night because knowing the scope of this war will place a target on your back. Do not search for me. Live your life in the sun we built together.  
-    > With all my heart across every age,  
-    > — Lianna"*
+  * 📜 **Lianna's Reef Letter (Compass Rose Anomaly Notes):** Recovered from the *Compass Rose* zombies, confirming Lianna's research into planar dimensional anomalies.
   * 📖 **Compass Rose Log Fragment & Spellbook** (Contains wizard spells + Lady Aleitha's journal revealing the Talisman of Orcus & the grave purification ritual), Scholar's Pack.
 * **Personal Wealth:** `28 gp, 9 sp`.
 
@@ -157,7 +152,7 @@
   * 🍞 **1x Kobold Sweetbread Roll** (Blepp's honey ration: `1d4 HP` + `+1d4 Temp HP`).
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack:** Backpack, bedroll, 3 costumes, mirror, bullseye lantern, bell, 8 oil flasks, 9 rations, tinderbox, waterskin, thieves' tools.
-* **Personal Wealth:** `15 gp, 0 sp` *(5 gp gift from Runara + 10 gp courier earnings from Tarak)*.
+* **Personal Wealth:** `415 gp, 0 sp` *(+400 gp looted from the Sea Hag's Grotto!)*.
 * **Destiny Relic:** 🌪️ **Scale of the Zephyr (Clyssavar's Silver Scale of Wind & Vibrations)** *(Chapter 3 Compass Rose Submerged Hold C9 — +1 Spell DC/Hit, Immune to Deafened, Thunder Resistance, 1/Day +1d6 Gale-Burst with 10ft Push & Disadv, Whispers on the Wind)*.
 
 ---
@@ -202,6 +197,7 @@
 * **2nd-Level Spell Slots:** `2 / 2` (Level 3 Domain & Spell Slots Unlocked!)
 * **Channel Divinity (1/Short or Long Rest):** `1 / 1` Ready!
   * 🕊️ **Preserve Life:** As an Action, restore up to **15 Hit Points** (5 × Cleric Level) distributed among any bloodied creatures within 30 ft (cannot heal above 50% max HP).
+  * 📿 **Enlightened Turn Undead:** Granted via *Enlightened Bone Talisman* (1/Long Rest Action: Turn Undead within 30 ft, DC 13 Wisdom save).
 * **Life Domain Features:**
   * 💚 **Disciple of Life:** Whenever Flubs casts a healing spell of 1st level or higher, the target regains an additional **`2 + Spell's Level`** Hit Points!
 * **Cantrips Known:** *Sacred Flame* (DC 13 Dex, 1d8 radiant), *Guidance* (+1d4 to any ability check), *Thaumaturgy* (booming voice, tremors, flickering flames), *Toll the Dead* (DC 13 Wis, 1d8/1d12 necrotic).
@@ -214,26 +210,12 @@
 * **Size, Type & Vitals:** **Large Elemental (Mount)** | **AC 14** | **HP 32 / 32** (Scales +8 HP per Cleric Level) | **Speed:** 30 ft, Climb 30 ft, Swim 30 ft | **Initiative:** +2
 * **Bond & Origin:** Soothed & tamed with a **Nat 21 Animal Handling & Nat 21 Persuasion** in Area B6 of Seagrow Caves; crowned **Official Sacred Village Mascot of Dragon's Rest** after a legendary **Nat 20 Persuasion & Nat 20 Performance** idol dance routine!
 * **Interactive Mount Card:** [**Thurible Companion Sheet**](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/THURIBLE_COMPANION_SHEET.html)
-* **Mounted Combat & Rider Synergy:**
-  * 🐍🏇 **Mount of the Serpent Rider:** Father Flubs mounts Thurible as a controlled battle steed. While mounted, Flubs gains elevated tactical vantage, 30 ft slithering/climbing speed up sheer cliffs and 30 ft swim through volcanic waters, and is shielded from extreme heat and freezing cold through their sacred bond.
-* **Attuned Level Scaling (Level 3 Attunement):**
-  * **Hit Points:** `32 / 32` (`8 x Flubs' Level` + CON = 32 at Lvl 3, scales to 40 at Lvl 4, 48 at Lvl 5).
-  * **Attack Modifiers:** `+4 to Hit` (`DEX +2 + Flubs PB +2`).
-  * **Saving Throw DC:** `DC 13` (Matches Father Flubs' Spell Save DC).
 * **Special Traits & Actions:**
   * 🕯️ **Living Hearth (Aura of Volcanic Radiance):** Sheds bright light in a 10-ft radius and dim light for an additional 10 ft. Father Flubs and all allies within 10 ft gain complete **IMMUNITY TO COLD DAMAGE** and complete immunity to extreme cold weather/freezing effects!
   * 🐍 **Molten Bite (Melee Action):** `+4 to hit`, reach 5 ft. *Hit:* `1d6 + 2` piercing + `1d6` fire damage (Avg 9.0 dmg).
   * 💥 **Molten Tail Whip (Pushback Action):** `+4 to hit`, reach 10 ft. *Hit:* `1d4 + 2` bludgeoning + `1d6` fire damage (Avg 8.0 dmg), and the target must succeed on a **DC 13 Strength Saving Throw** or be **pushed 10 ft straight back**!
   * 🌊 **Tail Constrict (Grapple Action):** `+4 to hit`, reach 5 ft. *Hit:* `1d4 + 2` bludgeoning + `1d4` fire damage (Avg 7.0 dmg), and the target is **Grappled & Restrained** (Escape DC 13 Athletics/Acrobatics).
   * ♨️ **Embers of Comfort (1/Day):** Thurible breathes gentle warm embers on a willing creature, granting `1d6 + 2` Temporary Hit Points.
-
-## 🍾 Sacred Relic: "The Vintage of the Dawn Watch"
-* **Item Type:** Sanctified Sacramental Jug & Holy Symbol *(Attuned to Father Flubs)*
-* **Daily Renewal:** Refilled each morning at dawn with rich, spiced sacramental vintage.
-* **Relic Flavor & Fulfillment:**
-  * 🍷 **Spiritual Fulfillment & Full Nourishment:** A drink provides rich, wholesome satisfaction—completely satisfying daily food and water requirements, warming the body against cold drafts, slaking thirst, and filling the soul with peace and comfort.
-  * 🍾 **Fellowship Toast:** Father Flubs uncorks the jug and raises a toast with his allies. Raises spirits, eases party tension, and brings warmth and camaraderie to the fellowship.
-  * 🍷 **Savory Sip:** Father Flubs enjoys a comforting sip to savor the divine vintage, soothing weariness and lifting morale.
 
 ## 🎒 Inventory & Wealth
 * **Armor & Shields:** 
@@ -245,12 +227,15 @@
   * Light Crossbow + 20 bolts
 * **Sacred Vessels & Relics:**
   * 🍾 **Father Flubs' Reclaimed Vintage Wine Jug** (The Vintage of the Dawn Watch • Holy Symbol)
+  * 📿 **Enlightened Bone Talisman** *(Trophy from the Sea Hag • Grants Turn Undead 1/Long Rest)*
 * **Consumables, Potions & Alchemy:**
+  * 🐉 **Pure Drakeblood Vial** *(Legendary Alchemy • Grants +2 to Attack Rolls & +3 to Damage Rolls for 24 hours!)*
   * 🧪 **13x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
   * 🍷 **3x Elixir of Health (Legendary)** (Cures any disease, grants **+20 Temporary HP**; if used to revive an ally at 0 HP, restores them to **100% FULL MAX HP**!)
   * 🧪 **2x Diluted Drake Blood Potions** (Grants **+1 to Attack Rolls and +2 to Damage Rolls** for the entire day until next Long Rest!)
+  * 📜 **Aleitha's Farewell Letter** (Tragic testament of love and plea to be buried on Brastos's grave).
   * Priest's Pack, Altar Vestments, Tinderbox, 5 Sticks of Incense, Censer.
-* **Wealth:** `52 gp, 5 sp` *(12 gp baseline + 40 gp rewarded)*.
+* **Wealth:** `52 gp, 5 sp`.
 
 ---
 
@@ -261,9 +246,9 @@
 * **Name:** General Varnoth
 * **Race:** Human
 * **Class & Level:** **Martial Defender 3 (Sidekick Tank)** *(Level 3 Full Upgrade!)*
-* **Background:** Veteran Commander (Azure Wolves)
+* **Background:** Veteran Commander (Azure Wolves Guild of Neverwinter)
 * **Alignment:** **Lawful Neutral / Good**
-* **Archetype / Personality:** **Battle-Scarred Commander** — Fierce facial scar, wooden peg leg below right knee, raspy authoritative voice, unshakeable frontline defender. Deeply amused and protective of Sylvar Link after drinking heavily with him during the legendary Neko Maid tavern night (which gave her the infamous hangover during the Seagrow Caves expedition!).
+* **Archetype / Personality:** **Battle-Scarred Commander** — Fierce facial scar, wooden peg leg below right knee, raspy authoritative voice, unshakeable frontline defender. Deeply traumatized by the massacre of her mercenary company by disguised devils in northern Neverwinter, where her beloved sister **Merimar** gave her life so Varnoth could escape. Overcoming near-death fear against the Sea Hag, she is fiercely protective of the party.
 * **Role in Party:** Primary Frontline Tank, Damage Sponge, Enemy Taunter & Ally Protector.
 
 ## ⚔️ Combat Statistics
@@ -277,25 +262,13 @@
 | **Passive Perception** | **14** | Base Wisdom (+2) + PB (+2) |
 | **Proficiency Bonus** | **+2** | |
 
-## 📊 Ability Scores & Modifiers
-| Ability | Score | Modifier | Saving Throw | Skill Proficiencies |
-| :--- | :---: | :---: | :---: | :--- |
-| **STR** | 14 | +2 | **+4 (Proficient)** | **Athletics (+4 ★)** |
-| **DEX** | 10 | +0 | +0 | Acrobatics (+0), Sleight of Hand (+0), Stealth (+0) |
-| **CON** | 14 | +2 | **+4 (Proficient)** | — |
-| **INT** | 12 | +1 | +1 | **History (+3 ★ — Military Tactics)**, Arcana (+1), Investigation (+1), Nature (+1), Religion (+1) |
-| **WIS** | 14 | +2 | +2 | **Perception (+4 ★)**, **Insight (+4 ★)**, Medicine (+2), Survival (+2), Animal Handling (+2) |
-| **CHA** | 12 | +1 | +1 | **Intimidation (+3 ★)**, **Persuasion (+3 ★)**, Deception (+1), Performance (+1) |
-
 ## 🛡️ Defender Features & Martial Actions (Level 3)
 * 💥 **Improved Critical (Level 3 Martial Role):** General Varnoth's weapon attacks score a critical hit on a roll of **19 or 20**!
 * ⚡ **Battle Readiness (Level 3 Feature):** General Varnoth has **Advantage on Initiative rolls**.
-* 🛡️ **Protection (Reaction):** When an enemy within 5 ft attacks an adjacent ally (Eflein, Father Flubs, New Hero), Varnoth uses her reaction to impose **Disadvantage** on the attack roll (must have shield equipped).
+* 🛡️ **Protection (Reaction):** When an enemy within 5 ft attacks an adjacent ally (Eflein, Father Flubs, Sylvar), Varnoth uses her reaction to impose **Disadvantage** on the attack roll (must have shield equipped).
 * 💨 **Second Wind (1/Short or Long Rest):** Bonus Action to regain **1d10 + 3 Hit Points** immediately (Ready).
 * ⚡ **Action Surge (1/Short or Long Rest):** Free Action. Push beyond limits to take **1 additional Action** on your turn! (Ready).
-* 🪓 **Shield Bash / Shove:** Athletics (+4) contest vs target ➔ knocks target **Prone** or shoves them 5 ft back.
 * ⚔️ **Azure Wolf Longsword (1-Handed):** `+4 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d8 + 2` slashing damage.
-* ⚔️ **Azure Wolf Longsword (2-Handed Versatile):** `+4 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d10 + 2` slashing damage (AC drops to 15 without shield).
 * 🏹 **Heavy Crossbow:** `+2 to hit` (Crits on 19-20), range 100/400 ft. *Hit:* `1d10` piercing damage.
 * 🪵 **Peg Leg Kick / Unarmed Strike:** `+4 to hit`, reach 5 ft. *Hit:* `1d4 + 2` bludgeoning damage.
 
@@ -306,7 +279,7 @@
   * ⚔️ Honed Azure Wolf Longsword
   * 🏹 Heavy Crossbow + 20 Crossbow Bolts
   * 🪓 **Twin Notched Bone-Cleavers** *(Trophy from the Kobold Champion)*
-* **Kit & Tools:** Mason's Tools, Mercenary Commander Badge (Azure Wolves), Whetstone, Traveler's Pack.
+* **Kit & Tools:** Mason's Tools, Mercenary Commander Badge (Azure Wolves Guild), Whetstone, Traveler's Pack.
 * **Wealth:** `8 gp, 6 sp`.
 
 ---
