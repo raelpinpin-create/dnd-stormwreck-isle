@@ -272,6 +272,30 @@ graph TD
 * ⚖️ **Moral Stand & RP Hooks:** Ethereal, weeping voice. Attacks out of grief; ceases hostility if party pledges to carry her talisman to Brastos's grave. *"Where is he? Tell me Brastos still waits on the hill... or drown with me!"*
 * 💎 **Direct Boss Drops:** 📿 **Aleitha's Braided Talisman** (Bury on Brastos's grave to cleanse island curse), 🗝️ **Ivory Captain's Key** (Unlocks Clyssavar's Silver Scale), 👢 **Boots of Elvenkind** + 55 gp.
 
+#### 2.5. 👁️🤍 MOROS, THE PALE SOVEREIGN (Avatar of the Void-Talisman — CR 4 APEX TALISMAN BOSS)
+* **Description:** *A terrifying, 10-foot-tall entity from a shattered alien dimension, summoned when the dark talisman's demonic seal is ruptured. He is sculpted from seamless, alabaster-white void porcelain, cloaked in tattered ghostly shrouds that bleed cold white mist into reality. He has no mouth or nose—only a single, blinding cyclopean Void Eye that burns with cold white starlight. With a single piercing glance, he can sever a creature's tether to Toril and banish them into his Ashen Null-Dimension!*
+* **AC:** 14 (Chalk-White Void Carapace) | **HP:** **88 – 96 HP** | **Speed:** 30 ft, Hover 30 ft | Large Aberration / Undead
+* **Damage Resistances:** Necrotic, Cold, Psychic; Bludgeoning/Piercing/Slashing from nonmagical attacks | **Vulnerabilities:** Radiant, Thunder (Vibrations shatter his void form!)
+* **Immunities:** Poison, Charmed, Frightened, Paralyzed, Exhaustion
+* **Stats:** STR 16 (+3) | DEX 14 (+2) | CON 16 (+3) | INT 16 (+3) | WIS 15 (+2) | CHA 18 (+4)
+* **Traits:**
+  * 👁️ **Aura of the Ashen Void (15 ft):** Gravity feels weightless and freezing. Any living creature starting its turn within 15 ft takes **4 (1d8)** Cold damage.
+  * 🌀 **Dimensional Phase (Reaction):** When hit by an attack, Moros temporarily phases out of reality: halves the damage taken and teleports 10 ft to an unoccupied space.
+  * ⚓ **The Two Pale Soul-Anchors:** Two glowing alabaster crystals float 15 ft in the air above the deck (**AC 12, 18 HP each, Vulnerable to Lightning & Thunder**). While active, banished allies are locked inside the Null-Dimension. Destroying an anchor immediately spits out a banished ally!
+* **Actions:**
+  * ⚔️ **Multiattack:** Makes 2 attacks: 1 with the *Pale Reaver Cleave* and 1 with *Eye of the Null-Gaze*.
+  * 🗡️ **Pale Reaver Cleave:** Melee Weapon Attack: `+6 to hit`, reach 10 ft., one target. Hit: **14 (2d8 + 3)** slashing damage + **7 (2d6)** Cold/Necrotic damage.
+  * 👁️ **Eye of the Null-Gaze (Ranged Force Beam):** Ranged Spell Attack: `+6 to hit`, range 60 ft. Hit: **13 (3d6 + 3)** Force damage.
+  * 🌀 **VOID BANISHMENT GAZE (Recharge 5–6 / Narrative Apex Action):** Moros opens his cyclopean eye wide, flooding a 30-ft cone with blinding white light. One or two chosen targets must succeed on a **DC 13 Charisma Saving Throw** or be **instantly banished into the Ashen Null-Dimension!**
+    * *Banished Targets (General Varnoth & Sentry Zik):* Pulled into a colorless void prison, fighting off shadowy void-wraiths.
+    * **How to Save Them:**
+      1. **Shatter the 2 Soul-Anchors:** Each destroyed anchor releases one banished hero back onto the battlefield at full fighting strength!
+      2. **Harmonic Resonance (Sylvar's Silver Scale):** Unleashing the *Scale of the Zephyr* thunder pulse shatters all anchors simultaneously!
+      3. **Defeating Moros:** When Moros hits 0 HP, his porcelain body cracks and implodes into stardust, collapsing the void and returning all banished souls safely to the deck!
+* 🧭 **Core Philosophy:** **The Absolute Null.** All material realities are fleeting noise that must be gathered and erased into pure, motionless white silence.
+* 🗣️ **Voice & Roleplay Cues:** Silent telepathic chime that rings in everyone's skulls like ringing glass. *"Flesh decays. Love rots. Enter the White Silence."*
+* 💎 **Direct Drop:** 📿 **Purified Talisman Core** (Can be safely taken to Brastos's grave) + 💎 **Shard of the Void-Eye** (Can be socketed by Myla for +1 Spell Attack or +1 AC!).
+
 #### 3. 🧟‍♂️ Zombie Captain / Deck Officer — Medium Undead (CR 1 Boss)
 * **Description:** *A bloated, waterlogged corpse in tattered naval coat with barnacles and chipped steel cutlass.*
 * **AC:** 11 | **HP:** **52 – 60 HP** | **Speed:** 25 ft | Stats: STR +2, DEX -1, CON +3, INT -2, WIS +2★, CHA -1
