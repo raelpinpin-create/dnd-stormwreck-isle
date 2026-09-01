@@ -1257,7 +1257,7 @@
         let helpTokens = 2;
         let isFelineReady = true;
         let isCloakAttuned = true;
-        let currentGP = 15;
+        let currentGP = 415;
         let currentSP = 0;
         let advState = 'normal'; // 'normal', 'adv', 'dis'
 
@@ -1572,7 +1572,7 @@
                 if (savedHelp !== null) helpTokens = parseInt(savedHelp);
                 const savedGP = localStorage.getItem('sylvar_gp_v4');
                 if (savedGP !== null) currentGP = parseInt(savedGP);
-                else currentGP = 15;
+                else currentGP = 415;
                 const savedSP = localStorage.getItem('sylvar_sp_v4');
                 if (savedSP !== null) currentSP = parseInt(savedSP);
                 else currentSP = 0;
@@ -2413,12 +2413,12 @@
         }
 
         function resetGoldPurse() {
-            currentGP = 15;
+            currentGP = 415;
             currentSP = 0;
             updateGoldDisplay();
             saveSheetState();
-            addGoldTransaction('reset', 'Purse Reset to Starter Loadout', 'Reset', '15 GP, 0 SP');
-            logRoll(`🔄 <strong>Gold Purse Reset:</strong> Starting wealth set to 15 GP, 0 SP.`);
+            addGoldTransaction('reset', 'Purse Reset (Includes 400 GP Sea Hag Loot)', 'Reset', '415 GP, 0 SP');
+            logRoll(`🔄 <strong>Gold Purse Reset:</strong> Starting wealth set to 415 GP, 0 SP.`);
         }
 
         function getGoldTransactions() {
