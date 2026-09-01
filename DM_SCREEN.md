@@ -214,39 +214,32 @@ graph TD
 | **⚓ Neverwinter Harbor** | ⚓ **Harbormaster Barnaby** | `⭐ MET (PROLOGUE)` | 14 | 34 | **+0** | 25 ft | **🧭 Transactional Harbor Darwinism:** Survival is earned, empathy doesn't pay taxes.<br>⚡ *Shipping lanes stalled by gales; chartered Lianna & Lyra 8 months ago.* | Gruff Scottish-dwarf burr, smells of pipeweed. *"Aye, 8 months ago. Merc with crescent blades."* |
 | **🍄 Seagrow Caves** | 🍄 **Spore-Tender Pips** | `🍄 Cave Guide` | 10 | 7 | **+0** | 20 ft | **🧭 Innocent Telepathic Connection:** Minds that touch cannot hate.<br>⚡ *Sulfur fumes drying sprout nursery; octopus guardian won't let him out.* | Silent; telepathic petrichor, lavender smells, and gentle sensory pulses. |
 | | 🍄 **Sovereign Sinensa** | `⏳ UNMET / COMATOSE` | 13 | 60 | **+0** | 20 ft | **🧭 Mycelial Harmony:** All living things are interconnected threads.<br>⚡ *Comatose from B6 volcanic sulfur fumes; nursery rotting without care.* | Deep harmonic telepathic resonance. *« The roots weep burning sulfur... »* |
-| **⚡ Clifftop Observatory** | 🐉 **Aidron** | `⏳ RESCUE TARGET (D6)` | 17 | 32 | **+0** | Fly 60 | **🧭 Militant Righteousness:** Evil must be actively crushed in battle.<br>⚡ *Bound in iron chains in D6; terrified of Sparkrender's comet sacrifice.* | Proud, hot-headed young bronze dragon. *"Undo these chains and watch me fly!"* |
-| | 🦇 **Mek & Minn** | `⏳ PRISONERS (D2)` | 13 | 14 | **+3** | Fly 30 | **🧭 Survivalist Cowardice:** Cling to whoever has the biggest fangs.<br>⚡ *Trapped by 8 stirges while painting effigies; eager to trade secrets.* | Terrified, high-pitched squawks pleading for rescue from stirges. |
-
----
-
-## ⚔️ SECTION 3: MONSTER STAT BLOCKS & BIOME ENEMY DIRECTORY (WITH PHILOSOPHY & MORALS)
-
-### 📊 Master Enemy Fast Reference & Combat Modifiers Table (Divided by Biome)
-
-| Region / Biome | Enemy Name & Encounter Role | CR | INIT | HP | AC | Speed | STR | DEX | CON | INT | WIS | CHA | Main Attack (+Hit, Range, Dmg) | Save DC / Special Ability |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **🏖️ Dragon's Rest & Beach** | 🧟 **Zombie Captain** *(🏆 BEACH RESURGENCE BOSS)* | 1 | **-1** | 38-42 | 10 | 25 ft | **+2** | **-1** | **+3** | **-2** | **+2★** | **-1** | Cutlass **+4** (1d6+2 slash) + Slam **+4** (1d6+2) | Undead Fortitude (DC 5+dmg Con) |
-| | 🧟 **Drowned Sailor (Zombie)** *(Beach Ambush)* | 1/4 | **-2** | 28-32 | 9 | 20 ft | **+1** | **-2** | **+3** | **-4** | **+0★** | **-3** | Slam **+3** (1d6+2 bludgeon) | Undead Fortitude (DC 5+dmg Con) |
-| **🍄 Seagrow Caves** | 🐍 **Fire Snake & Fume Drakes** *(🏆 B6 CORE CLIMAX BOSS)* | 1 | **+2** | 30-35 | 14 | 30 ft | **+1** | **+2** | **+0** | **-4** | **+0** | **-1** | Bite **+4** (1d4+2 + 1d6 fire) | Heated Body: 1d6 fire on contact |
-| | 🐙 **Spore Octopus** *(B1 Entrance Guardian)* | 1 | **+2** | 58-65 | 12 | Swim 50 | **+3** | **+2** | **+2** | **-4** | **+0** | **-5** | Tentacle **+5** (1d8+3 + Grapple DC 13) | Spore Cloud: DC 12 Con (2d6 poison) |
-| | 💨 **Fume Drake** *(B6 Fissure Minion)* | 1/4 | **+2** | 28-32 | 12 | Fly 30 | **+0** | **+2** | **+1** | **-3** | **+0** | **-2** | Bite **+4** (1d6+2 + 1d4 fire) | Breath: DC 11 Con (2d6 psn/fire) \| Death Burst |
-| | 🌿 **Violet Fungus** *(B2 Farm Hazard)* | 1/4 | **-5** | 26-30 | 6 | 5 ft | **-4** | **-5** | **+1** | **-5** | **-4** | **-5** | Rotting Touch **+2** (1d8 necrotic, 10ft) | False Appearance (Looks like mushroom) |
-| | 🦟 **Stirges** *(B3 Larder Swarm)* | 1/8 | **+3** | 8-12 | 14 | Fly 40 | **-3** | **+3** | **+0** | **-4** | **-1** | **-2** | Proboscis **+5** (1d4+3 pierc + Attach) | Blood Drain: 1d4+3 auto dmg each turn |
-| **🚢 Compass Rose Shipwreck (Lvl 3–4)** | 👑 **Aleitha, The Drowned Queen** *(🏆 SHIPWRECK ZOMBIE QUEEN BOSS)* | 2 | **+2** | 55-65 | 13 | 30 ft, Swim 30 | **+2** | **+2** | **+3** | **+1** | **+2** | **+3** | Claws **+5** (1d6+2 slash + 1d6 necro) / Brine Bolt **+5** (2d6+3 necro) | Aura of Drowned (1d4 necro 10ft) \| Dirge: DC 13 Wis (2d8 psych + Fear) |
-| | 🧟 **Zombie Captain** *(🏆 C4 CABIN ELITE MINION)* | 1 | **-1** | 48-55 | 11 | 25 ft | **+2** | **-1** | **+3** | **-2** | **+2★** | **-1** | Cutlass **+4** (1d6+2 slash) + Slam **+4** (1d6+2) | Undead Fortitude (DC 5+dmg Con) |
-| | 🧟 **Drowned Sailor (Zombie)** *(C4 Cabin & C8 Hold)* | 1/4 | **-2** | 28-32 | 9 | 20 ft | **+1** | **-2** | **+3** | **-4** | **+0★** | **-3** | Slam **+3** (1d6+2 bludgeon) | Undead Fortitude (DC 5+dmg Con) |
-| | 💀 **Skeleton Sailor** *(C2 Forecastle Patrol)* | 1/4 | **+2** | 20-24 | 13 | 30 ft | **+0** | **+2** | **+2** | **-2** | **-1** | **-3** | Scimitar **+4** (1d6+2 slash) / Bow **+4** (1d6+2) | Vulnerable Bludgeoning |
-| **⚡ Clifftop Observatory (Lvl 4–5)** | 🐉 **Sparkrender** *(👑 CAMPAIGN APEX FINAL BOSS)* | 4 | **+2** | 95-110 | 15 | Fly 60 | **+3** | **+2★** | **+4★** | **+1** | **+2★** | **+3★** | Bite **+5** (1d10+3 pierc + 1d6 light) + Claw **+5** (1d6+3) | Breath: 30ft line, DC 13 Dex (4d10 light, half on save) |
-| | 🛡️ **Kobold Champion** *(🏆 D3 CAMP COMMANDER)* | 1/2 | **+2** | 32-38 | 15 | 25 ft | **+1** | **+2** | **+2** | **-1** | **+0** | **+0** | Spear/Cleavers **+4** (1d6+2) | Shield Bash: DC 12 Str Save or Prone |
-| | 🦇 **Winged Kobold (Urd)** *(D2 & D3 Aerial Guard)* | 1/4 | **+3** | 18-22 | 13 | Fly 30 | **-2** | **+3** | **+0** | **-1** | **-1** | **-1** | Dropped Bomb **+5** (1d6+3 bludgeon/fire) | Pack Tactics (Aerial Bomber) |
-| | 🦎 **Kobold Ambusher** *(D3 Tower Guard)* | 1/8 | **+2** | 14-18 | 13 | 30 ft | **-2** | **+2** | **+1** | **-1** | **-1** | **-1** | Dagger **+4** (1d4+2) / Sling **+4** (1d4+2+1 fire) | Pack Tactics (Advantage near ally) |
-| | 🦟 **Stirges** *(D2 Rotunda Battle)* | 1/8 | **+3** | 8-12 | 14 | Fly 40 | **-3** | **+3** | **+0** | **-4** | **-1** | **-2** | Proboscis **+5** (1d4+3 pierc + Attach) | Blood Drain: 1d4+3 auto dmg each turn |
-| **🌲 Island Wilderness & Grottos** | 🦉🐻 **Apex Owlbear** *(🏆 WILDERNESS APEX CR 3)* | 3 | **+1** | 58-65 | 13 | 40 ft | **+5** | **+1** | **+3** | **-4** | **+1** | **-2** | Beak **+7** (1d10+5) + Claw **+7** (2d8+5) | Keen Sight & Smell (Perception +3) |
-| | 🧜‍♀️ **Sea Hag / Cove Witch** *(🏆 GROTTO BOSS CR 2)* | 2 | **+1** | 48-55 | 14 | Swim 40 | **+3** | **+1** | **+3** | **+1** | **+1** | **+1** | Claws **+5** (2d6+3 slash) | Horrific Appearance (DC 11) / Death Glare (0 HP!) |
-| | 🛡️ **Kobold Cleaver Champion** *(🏆 SPITFIRE / RIDGE CAMP BOSS)* | 1/2 | **+2** | 28-34 | 15 | 25 ft | **+1** | **+2** | **+2** | **-1** | **+0** | **+0** | Spear/Cleavers **+4** (1d6+2) | Shield Bash: DC 12 Str Save or Prone |
-| | 🦎 **Kobold Ambushers** *(Wilderness Ridge Trails & B0 Camp)* | 1/8 | **+2** | 14-18 | 13 | 30 ft | **-2** | **+2** | **+1** | **-1** | **-1** | **-1** | Dagger **+4** (1d4+2) / Sling **+4** (1d4+2+1 fire) | Pack Tactics (Advantage near ally) |
-| | 🦇 **Winged Kobold (Urd)** *(Wilderness Ambush Scout)* | 1/4 | **+3** | 18-22 | 13 | Fly 30 | **-2** | **+3** | **+0** | **-1** | **-1** | **-1** | Dropped Bomb **+5** (1d6+3 bludgeon/fire) | Pack Tactics (Aerial Bomber) |
-| | 💨 **Fume Drake** *(Hot Springs Encounter)* | 1/4 | **+2** | 28-32 | 12 | Fly 30 | **+0** | **+2** | **+1** | **-3** | **+0** | **-2** | Bite **+4** (1d6+2 + 1d4 fire) | Breath: DC 11 Con (2d6 psn/fire) \| Death Burst |
+| **⚡ Clifftop Observatory** | 🐉 **Aidron** | `⏳ RE| Region / Biome | Enemy Name & Encounter Role | CR | INIT | HP | AC | Speed | STR | DEX | CON | INT | WIS | CHA | Main Attack (+Hit, Range, Dmg) | Save DC / Special Ability |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **🏖️ Dragon's Rest & Beach** | 🧟 **Zombie Captain** *(🏆 BEACH RESURGENCE BOSS)* | 1 | **-1** | 48-55 | 11 | 25 ft | **+2** | **-1** | **+3** | **-2** | **+2★** | **-1** | Cutlass **+4** (1d8+3 slash + 1d4 necro) + Slam **+4** (1d6+3 + 1d4 necro) | Undead Fortitude (DC 5+dmg Con) |
+| | 🧟 **Drowned Sailor (Zombie)** *(Beach Ambush)* | 1/4 | **-2** | 32-36 | 9 | 20 ft | **+1** | **-2** | **+3** | **-4** | **+0★** | **-3** | Slam **+3** (1d8+2 bludgeon + 1d4 rot) | Undead Fortitude (DC 5+dmg Con) |
+| **🍄 Seagrow Caves** | 🐍 **Fire Snake & Fume Drakes** *(🏆 B6 CORE CLIMAX BOSS)* | 1 | **+2** | 32-38 | 14 | 30 ft | **+1** | **+2** | **+0** | **-4** | **+0** | **-1** | Bite **+4** (1d6+2 + 1d6 fire) + Whip **+4** (1d6+2 + 1d6 fire) | Heated Body: 1d6 fire on contact |
+| | 🐙 **Spore Octopus** *(B1 Entrance Guardian)* | 1 | **+2** | 65-72 | 12 | Swim 50 | **+3** | **+2** | **+2** | **-4** | **+0** | **-5** | Tentacle **+5** (2d6+3 + Grapple DC 13) | Spore Cloud: DC 12 Con (3d6 poison) |
+| | 💨 **Fume Drake** *(B6 Fissure Minion)* | 1/4 | **+2** | 28-32 | 12 | Fly 30 | **+0** | **+2** | **+1** | **-3** | **+0** | **-2** | Bite **+4** (1d8+2 + 1d6 fire) | Breath: DC 11 Con (3d6 psn/fire) \| Death Burst (2d6 fire) |
+| | 🌿 **Violet Fungus** *(B2 Farm Hazard)* | 1/4 | **-5** | 28-34 | 6 | 5 ft | **-4** | **-5** | **+1** | **-5** | **-4** | **-5** | Rotting Touch **+2** (2d8 necrotic, 10ft) | False Appearance (Looks like mushroom) |
+| | 🦟 **Stirges** *(B3 Larder Swarm)* | 1/8 | **+3** | 10-14 | 14 | Fly 40 | **-3** | **+3** | **+0** | **-4** | **-1** | **-2** | Proboscis **+5** (1d4+3 pierc + Attach) | Blood Drain: 1d6+3 auto dmg each turn |
+| **🚢 Compass Rose Shipwreck (Lvl 3–4)** | 👑 **Aleitha, The Drowned Queen** *(🏆 SHIPWRECK ZOMBIE QUEEN BOSS)* | 3 | **+2** | 65-75 | 13 | 30 ft, Swim 30 | **+2** | **+2** | **+3** | **+1** | **+2** | **+3** | Claws **+5** (1d8+3 slash + 2d6 necro) / Brine Bolt **+5** (3d6+3 necro + 1d4 cold) | Aura of Drowned (1d6+2 necro 10ft) \| Dirge: DC 13 Wis (3d8 psych + Fear) |
+| | 🧟 **Zombie Captain** *(🏆 C4 CABIN ELITE MINION)* | 1 | **-1** | 52-60 | 11 | 25 ft | **+2** | **-1** | **+3** | **-2** | **+2★** | **-1** | Cutlass **+4** (1d8+3 slash + 1d4 necro) + Slam **+4** (1d6+3 bludgeon + 1d4 necro) | Undead Fortitude (DC 5+dmg Con) |
+| | 🧟 **Drowned Sailor (Zombie)** *(C4 Cabin & C8 Hold)* | 1/4 | **-2** | 32-36 | 9 | 20 ft | **+1** | **-2** | **+3** | **-4** | **+0★** | **-3** | Slam **+3** (1d8+2 bludgeon + 1d4 rot) | Undead Fortitude (DC 5+dmg Con) |
+| | 💀 **Skeleton Sailor** *(C2 Forecastle Patrol)* | 1/4 | **+2** | 22-26 | 13 | 30 ft | **+0** | **+2** | **+2** | **-2** | **-1** | **-3** | Scimitar **+4** (1d6+2 slash + 1d4 cold) / Bow **+4** (1d8+2) | Vulnerable Bludgeoning |
+| | 🧟‍♂️ **Drowned Ghoul** *(C8 Lower Deck Scavenger)* | 1 | **+2** | 34-40 | 12 | 30 ft | **+1** | **+2** | **+0** | **-2** | **+0** | **-1** | Bite **+4** (2d8+2 pierc) + Claws **+4** (2d6+2 slash + DC 11 Paralyze) | Coup de Grace vs Paralyzed (+1d6 necro) |
+| | 🦅 **Harpy of the Crow's Nest** *(C1 Aerial Ambush)* | 1 | **+1** | 42-48 | 11 | Fly 40 | **+1** | **+1** | **+1** | **-2** | **+0** | **+1** | Claws **+4** (2d6+2 slash) + Bone Club **+4** (1d8+3 bludgeon + 1d4 bleed) | Luring Song: DC 12 Wis (300ft charm) |
+| **⚡ Clifftop Observatory (Lvl 4–5)** | 🐉 **Sparkrender** *(👑 CAMPAIGN APEX FINAL BOSS)* | 4 | **+2** | 110-125 | 15 | Fly 60 | **+4** | **+2★** | **+4★** | **+1** | **+2★** | **+3★** | Bite **+6** (2d10+4 pierc + 2d6 light) + Claw **+6** (2d6+4 slash) | Breath: 30ft line, DC 14 Dex (6d10 light, half on save) |
+| | 🛡️ **Kobold Champion** *(🏆 D3 CAMP COMMANDER)* | 1/2 | **+2** | 36-42 | 15 | 25 ft | **+1** | **+2** | **+2** | **-1** | **+0** | **+0** | Dual Cleavers **+4** (1d8+2 slash + 1d4 rend, 2 attacks) | Shield Bash: DC 12 Str Save or Prone |
+| | 🦇 **Winged Kobold (Urd)** *(D2 & D3 Aerial Guard)* | 1/4 | **+3** | 18-22 | 13 | Fly 30 | **-2** | **+3** | **+0** | **-1** | **-1** | **-1** | Dropped Fire Bomb **+5** (2d6+2 fire/bludgeon AoE) | Pack Tactics (Aerial Bomber) |
+| | 🦎 **Kobold Ambusher** *(D3 Tower Guard)* | 1/8 | **+2** | 14-18 | 13 | 30 ft | **-2** | **+2** | **+1** | **-1** | **-1** | **-1** | Dagger **+4** (1d4+2) / Fire Sling **+4** (1d4+2 + 1d4 fire) | Pack Tactics (Advantage near ally) |
+| | 🦟 **Stirges** *(D2 Rotunda Battle)* | 1/8 | **+3** | 10-14 | 14 | Fly 40 | **-3** | **+3** | **+0** | **-4** | **-1** | **-2** | Proboscis **+5** (1d4+3 pierc + Attach) | Blood Drain: 1d6+3 auto dmg each turn |
+| **🌲 Island Wilderness & Grottos** | 🦉🐻 **Apex Owlbear** *(🏆 WILDERNESS APEX CR 3)* | 3 | **+1** | 68-76 | 13 | 40 ft | **+5** | **+1** | **+3** | **-4** | **+1** | **-2** | Beak **+7** (2d8+5) + Claw **+7** (2d10+5) | Multiattack (Avg 30 dmg/round!) |
+| | 🧜‍♀️ **Sea Hag / Cove Witch** *(🏆 GROTTO BOSS CR 2)* | 2 | **+1** | 55-65 | 14 | Swim 40 | **+3** | **+1** | **+3** | **+1** | **+1** | **+1** | Claws **+5** (2d8+3 slash + 1d6 cold/rot) | Horrific Appearance (DC 11) / Death Glare (0 HP!) |
+| | 🛡️ **Kobold Cleaver Champion** *(🏆 SPITFIRE / RIDGE CAMP BOSS)* | 1/2 | **+2** | 32-38 | 15 | 25 ft | **+1** | **+2** | **+2** | **-1** | **+0** | **+0** | Twin Cleavers **+4** (1d8+2 slash + 1d4 rend, 2 attacks) | Shield Bash: DC 12 Str Save or Prone |
+| | 🦎 **Kobold Ambushers** *(Wilderness Ridge Trails & B0 Camp)* | 1/8 | **+2** | 14-18 | 13 | 30 ft | **-2** | **+2** | **+1** | **-1** | **-1** | **-1** | Dagger **+4** (1d4+2) / Sling **+4** (1d4+2 + 1d4 fire) | Pack Tactics (Advantage near ally) |
+| | 🦇 **Winged Kobold (Urd)** *(Wilderness Ambush Scout)* | 1/4 | **+3** | 18-22 | 13 | Fly 30 | **-2** | **+3** | **+0** | **-1** | **-1** | **-1** | Dropped Bomb **+5** (2d6+2 fire/bludgeon AoE) | Pack Tactics (Aerial Bomber) |
+| | 💨 **Fume Drake** *(Hot Springs Encounter)* | 1/4 | **+2** | 28-32 | 12 | Fly 30 | **+0** | **+2** | **+1** | **-3** | **+0** | **-2** | Bite **+4** (1d8+2 + 1d6 fire) | Breath: DC 11 Con (3d6 psn/fire) \| Death Burst (2d6 fire) |
 
 ---
 
@@ -254,26 +247,26 @@ graph TD
 
 #### 1. ⚡ Sparkrender (Blue Dragon Wyrmling) — Medium Dragon (CR 4 APEX FINAL BOSS)
 * **Description:** *A sleek, predatory young blue dragon with iridescent azure scales as hard as tempered steel. A single sharp, ridged horn sweeps back from his snout, and crackling blue arcs of lightning sizzle across his spine and claws. Empowered by the stolen King-Killer Comet ritual, he boasts in Draconic that the ancient power of all five dead dragons of Stormwreck Isle belongs to him.*
-* **AC:** 15 (Natural Scales) | **HP:** **95 – 110 HP** | **Speed:** 30 ft, Burrow 15 ft, Fly 60 ft | Immune: Lightning
-* **Stats:** STR 17 (+3) | DEX 10 (+2★) | CON 15 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)
+* **AC:** 15 (Natural Scales) | **HP:** **110 – 125 HP** | **Speed:** 30 ft, Burrow 15 ft, Fly 60 ft | Immune: Lightning
+* **Stats:** STR 18 (+4) | DEX 10 (+2★) | CON 16 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)
 * **Perception:** +4 | **Stealth:** +2
-* **Multiattack:** Makes 1 Bite attack (`+5 to hit`, **8 [1d10 + 3]** piercing + **3 [1d6]** lightning) and 1 Claw attack (`+5 to hit`, **6 [1d6 + 3]** slashing).
-* **Lightning Breath (Recharge 5-6):** 30ft line (5ft wide). **DC 13 DEX Save**. Takes **22 (4d10)** lightning damage on fail (half on save).
+* **Multiattack:** Makes 1 Bite attack (`+6 to hit`, **15 [2d10 + 4]** piercing + **7 [2d6]** lightning) and 1 Claw attack (`+6 to hit`, **11 [2d6 + 4]** slashing).
+* **Lightning Breath (Recharge 5-6):** 30ft line (5ft wide). **DC 14 DEX Save**. Takes **33 (6d10)** lightning damage on fail (half on save).
 * 🧭 **Core Philosophy:** **Draconic Social Darwinism**. Chromatic dragons are the rightful apex tyrants of Toril; the weak exist only to fuel the ascension of the strong.
 * ⚡ **Immediate Active Dilemma:** The King-Killer Star comet window closes in hours; must align 5 effigies and execute Aidron's blood sacrifice to siphon Sharruth's magma flame.
-* ⚖️ **Moral Stand & RP Hooks:** Snarl-laced, haughty arrogance. Refuses retreat until bloodied under 15 HP. *"Bow before the blood of Eldenemir, or be turned to glass!"*
+* ⚖️ **Moral Stand & RP Hooks:** Snarl-laced, haughty arrogance. Refuses retreat until bloodied under 20 HP. *"Bow before the blood of Eldenemir, or be turned to glass!"*
 * 💎 **Direct Monster Drop:** ⚡ **Sparkrender's Azure Scale** (*Wyrmling Relic — Lightning Resist, +1 Lightning Attack/DC, +1d6 Surge 1/day*).
 
-#### 2. 👑 Aleitha, The Drowned Queen (Zombie Queen) — Medium Undead (CR 2 Boss)
+#### 2. 👑 Aleitha, The Drowned Queen (Zombie Queen) — Medium Undead (CR 3 Boss)
 * **Description:** *Once a devoted young sailor, Aleitha was consumed and twisted by dark necromantic magic when her forbidden ritual to resurrect her drowned husband Brastos went terribly wrong. Now a tragic, terrifying undead queen, she glides across the waterlogged decks of the Compass Rose with pale, barnacle-encrusted skin, hair of writhing black kelp, and milk-white eyes burning with supernatural sorrow. Around her neck hangs the braided hair-talisman pulsing with dark, abyssal necromancy that animates every corpse on the reef.*
-* **AC:** 13 (Natural Brine Armor) | **HP:** **55 – 65 HP** | **Speed:** 30 ft, Swim 30 ft | Darkvision 60 ft
+* **AC:** 13 (Natural Brine Armor) | **HP:** **65 – 75 HP** | **Speed:** 30 ft, Swim 30 ft | Darkvision 60 ft
 * **Damage Resistances:** Cold, Necrotic; Nonmagical Physical Attacks | **Immunities:** Poison, Charmed, Frightened
 * **Stats:** STR 14 (+2) | DEX 14 (+2) | CON 16 (+3) | INT 12 (+1) | WIS 14 (+2) | CHA 16 (+3)
 * **Undead Fortitude:** DC 5+dmg CON Save to drop to 1 HP instead of dying (fails on Radiant/Crits).
-* **Aura of the Drowned (10 ft):** Seawater within 10 ft deals **3 (1d4)** necrotic damage & slows living targets by 10 ft.
-* **Sorrowful Dirge (Recharge 5-6):** DC 13 Wis Save within 30 ft or take **9 (2d8)** psychic damage and be **Frightened for 1 min**.
-* **Multiattack:** 1 Claws (`+5 to hit`, 1d6+3 slash + 1d6 necro) + 1 Brine Death Bolt (`+5 to hit`, 60ft, 2d6+3 necro).
-* **Grasp of the Deep (Recharge 4-6):** DC 13 STR Save or pulled 15 ft and **Grappled & Restrained**.
+* **Aura of the Drowned (10 ft):** Seawater within 10 ft deals **5 (1d6 + 2)** necrotic damage & slows living targets by 10 ft.
+* **Sorrowful Dirge (Recharge 5-6):** DC 13 Wis Save within 30 ft or take **14 (3d8)** psychic damage and be **Frightened for 1 min**.
+* **Multiattack:** 1 Claws (`+5 to hit`, **11 [1d8+3 slash + 2d6 necro]**) + 1 Brine Death Bolt (`+5 to hit`, 60ft, **14 [3d6+3 necro + 1d4 cold]**).
+* **Grasp of the Deep (Recharge 4-6):** DC 13 STR Save or pulled 15 ft, **Grappled & Restrained**, taking **7 (2d6)** crushing bludgeoning damage.
 * 🧭 **Core Philosophy:** **Tragic Romantic Absolutism**. Love transcends life, death, and gods; she would tear open the Abyss to hold Brastos again.
 * ⚡ **Immediate Active Dilemma:** Tethered to the cursed wreck by Orcus's dark curse; cannot walk to Brastos's grave on the hill.
 * ⚖️ **Moral Stand & RP Hooks:** Ethereal, weeping voice. Attacks out of grief; ceases hostility if party pledges to carry her talisman to Brastos's grave. *"Where is he? Tell me Brastos still waits on the hill... or drown with me!"*
@@ -281,69 +274,65 @@ graph TD
 
 #### 3. 🧟‍♂️ Zombie Captain / Deck Officer — Medium Undead (CR 1 Boss)
 * **Description:** *A bloated, waterlogged corpse in tattered naval coat with barnacles and chipped steel cutlass.*
-* **AC:** 11 | **HP:** **48 – 55 HP** | **Speed:** 25 ft | Stats: STR +2, DEX -1, CON +3, INT -2, WIS +2★, CHA -1
+* **AC:** 11 | **HP:** **52 – 60 HP** | **Speed:** 25 ft | Stats: STR +2, DEX -1, CON +3, INT -2, WIS +2★, CHA -1
 * **Undead Fortitude:** DC 5+dmg CON Save to stay at 1 HP.
-* **Multiattack:** 2 Attacks (+4 hit): Cutlass `1d6+2` slashing + Slam `1d6+2` bludgeoning.
+* **Multiattack:** 2 Attacks (+4 hit): Cutlass **8 (1d8+3)** slashing + **3 (1d4)** necrotic/brine, AND Slam **7 (1d6+3)** bludgeoning + **3 (1d4)** necrotic.
 * 🧭 **Core Philosophy:** **Twisted Maritime Duty**. Must maintain command and protect cargo lockbox.
 * ⚡ **Immediate Active Dilemma:** Strongbox fell through rotted floorboards into flooded hold C9; lacks strength to retrieve it.
 * 💎 **Loot Drops:** 🧭 **Silver Pocket Compass** (25 gp), 🗡️ **Zombie Captain's Cutlass** (grants 30ft swim speed), 1 Potion of Healing.
 
 #### 4. 🦅 The Harpy of the Crow's Nest — Medium Monstrosity (CR 1)
 * **Description:** *Vulture-bodied predator with human torso, human head, and heavy bone club.*
-* **AC:** 11 | **HP:** **38 HP** | **Speed:** 20 ft, Fly 40 ft | Stats: STR +1, DEX +1, CON +1, INT -2, WIS +0, CHA +1
-* **Luring Song:** Hypnotic melody within 300 ft; DC 11 Wis Save or Charmed and compelled to walk toward harpy.
-* **Multiattack:** Claws (+3 hit, 2d4+1 slash) + Club (+3 hit, 1d4+1 bludgeon).
+* **AC:** 11 | **HP:** **42 – 48 HP** | **Speed:** 20 ft, Fly 40 ft | Stats: STR +1, DEX +1, CON +1, INT -2, WIS +0, CHA +1
+* **Luring Song:** Hypnotic melody within 300 ft; DC 12 Wis Save or Charmed and compelled to walk toward harpy.
+* **Multiattack:** Claws (+4 hit, **9 [2d6+2]** slashing) + Bone Club (+4 hit, **8 [1d8+3]** bludgeoning + **3 [1d4]** bleed). (Avg 17-20 dmg/turn).
 * 🧭 **Core Philosophy:** **Hedonistic Predator Vanity**. Sailors are prey to be lured and feasted on.
 * ⚡ **Immediate Active Dilemma:** Shoal wrecks slowed down for three days; belly empty; suspects thieves in crow's nest.
 * ⚖️ **Moral Stand & RP Hooks:** Bloodthirsty, but can be bargained with if bribed with gold or if nest gems are held hostage.
 
 #### 5. 🧜‍♀️ Sea Hag / Cove Witch — Medium Fey (CR 2 Boss)
 * **Description:** *Aquatic hag with slimy greenish skin, seaweed hair, and milky eyes of abyssal spite.*
-* **AC:** 14 | **HP:** **48 – 55 HP** | **Speed:** 30 ft, Swim 40 ft | Amphibious
+* **AC:** 14 | **HP:** **55 – 65 HP** | **Speed:** 30 ft, Swim 40 ft | Amphibious
 * **Stats:** STR 16 (+3) | DEX 13 (+1) | CON 16 (+3) | INT 12 (+1) | WIS 12 (+1) | CHA 13 (+1)
 * **Horrific Appearance:** 30ft radius, DC 11 Wis Save or Frightened for 1 min.
 * **Death Glare:** Targets 1 Frightened creature; DC 11 Wis Save or drops to **0 Hit Points**!
-* **Claws:** `+5 to hit`, reach 5ft, **10 (2d6 + 3)** slashing.
+* **Claws:** `+5 to hit`, reach 5ft, **15 (2d8 + 3 + 1d6 cold/rot)** slashing.
 * 🧭 **Core Philosophy:** **Spiteful Aesthetic Corruption**. Revels in dragging beauty and virtue into deformity and drowning.
 * ⚡ **Immediate Active Dilemma:** Clam-cracking sea otters disturbing bone totems; running out of corpse fat for cauldron.
 * 💎 **Loot Drops:** 🍷 *Elixir of Health*, Black Pearl (30 gp), Cursed Bone Charm.
 
 #### 6. 🦉🐻 The Circus Owlbear — Large Monstrosity (CR 3 Boss)
 * **Description:** *8-foot-tall predator with grizzly bear fur, purple feathers, and owl beak, wearing a tarnished brass whistle.*
-* **AC:** 13 | **HP:** **58 – 65 HP** | **Speed:** 40 ft | STR +5, DEX +1, CON +3, INT -4, WIS +1, CHA -2
-* **Multiattack:** Beak `+7 to hit` (1d10+5) + Claw `+7 to hit` (2d8+5).
+* **AC:** 13 | **HP:** **68 – 76 HP** | **Speed:** 40 ft | STR +5, DEX +1, CON +3, INT -4, WIS +1, CHA -2
+* **Multiattack:** Beak `+7 to hit` (**14 [2d8 + 5]** piercing) + Claw `+7 to hit` (**16 [2d10 + 5]** slashing). (Avg ~30 dmg/round).
 * 🧭 **Core Philosophy:** **Confused Beast Loyalty**. Remembers circus whistle and fish treats, but terrified and territorial.
 * ⚡ **Immediate Active Dilemma:** 4-inch ironwood splinter wedged in left hind paw pad causing screeching agony.
-* ⚖️ **Taming Mechanic:** Blow brass whistle (DC 10 Animal Handling) or remove splinter (DC 12 Medicine) ➔ becomes docile companion!
 * 💎 **Loot Drops:** Thick Owlbear Pelt (25 gp), Razor Talons, 💍 *Ring of Resistance*.
 
 #### 7. 🐙 Spore Servant Octopus — Large Plant (CR 1 Boss)
 * **Description:** *12-foot sea octopus carcass reanimated by Sinensa's spores, covered in shelf fungi.*
-* **AC:** 12 | **HP:** **58 – 65 HP** | **Speed:** 5 ft, Swim 50 ft | STR +3, DEX +2, CON +2
-* **Crushing Tentacle:** `+5 to hit`, reach 15ft, **7 (1d8 + 3)** bludgeon + **Grappled & Restrained (DC 13)**.
-* **Toxic Spore Cloud (Recharge 5-6):** 20ft sphere, DC 12 Con Save or 7 (2d6) poison + Blinded 1 turn.
+* **AC:** 12 | **HP:** **65 – 72 HP** | **Speed:** 5 ft, Swim 50 ft | STR +3, DEX +2, CON +2
+* **Crushing Tentacle:** `+5 to hit`, reach 15ft, **10 (2d6 + 3)** bludgeon + **Grappled & Restrained (DC 13)**.
+* **Toxic Spore Cloud (Recharge 5-6):** 20ft sphere, DC 12 Con Save or **10 (3d6)** poison + Blinded 1 turn.
 * 🧭 **Core Drive:** Automated cave defense protocol left by Sinensa before falling into sulfur coma. Pacified with food scraps.
 
 #### 8. 💨 Fume Drake — Small Dragon (CR 1/4)
 * **Description:** *Serpentine draconic elemental made of hardened volcanic glass and boiling sulfur steam.*
 * **AC:** 12 | **HP:** **28 – 32 HP** | **Speed:** 30 ft, Fly 30 ft | Immune: Poison, Fire
-* **Death Burst:** Explodes on death: DC 11 Dex Save or 4 (1d8) fire/steam within 10 ft.
-* **Scalding Bite / Breath:** Bite +4 (1d6+2 + 1d4 fire) | Scalding Breath (15ft cone, DC 11 Con, 2d6 psn/fire).
+* **Death Burst:** Explodes on death: DC 11 Dex Save or **7 (2d6)** fire/steam within 10 ft.
+* **Scalding Bite / Breath:** Bite +4 (**1d8+2 + 1d6 fire**) | Scalding Breath (15ft cone, DC 11 Con, **11 [3d6]** psn/fire).
 
 #### 9. 🦎 Kobold Ambushers & Renegades — Small Humanoid (CR 1/8)
 * **Description:** *Wiry reptilian scavengers with crude bone daggers and fire-sling pots.*
 * **AC:** 13 | **HP:** **14 – 18 HP** | **Speed:** 30 ft | Pack Tactics
-* **Dagger / Sling:** +4 to hit (1d4+2 piercing or bludgeoning + 1 fire).
+* **Dagger / Sling:** +4 to hit (**1d4+2** piercing or bludgeoning + **1d4 fire**).
 * 🧭 **Renegade Philosophy:** Reject all dragon masters; fighting out of starvation. Easily bribed with 5 gp or rations!
-* **Death Glare:** Target 1 Frightened creature within 30 ft. **DC 11 WIS Save** or target drops to **0 Hit Points**!
-* **Claws:** `+5 to hit`, reach 5ft, **10 (2d6 + 3)** slashing damage.
-* 💎 **Possible Loot Drops:** 🍷 *Elixir of Health*, Black Pearl (30 gp), Cursed Bone Charm.
 
-#### 15. 🦟 Stirges (Cave Bloodsuckers) — Tiny Beast (CR 1/8)
+#### 10. 🦟 Stirges (Cave Bloodsuckers) — Tiny Beast (CR 1/8)
 * **Description:** *Vicious, four-winged bat-like parasites with rust-red chitinous bodies and a long, needle-sharp proboscis. They swarm in dark cavern ceilings, diving down in clusters to drive their hollow beaks into exposed flesh and engorge on warm blood.*
-* **AC:** 14 (Natural Armor) | **HP:** **8 – 12 HP** | **Speed:** 10 ft, Fly 40 ft | Darkvision 60 ft
+* **AC:** 14 (Natural Armor) | **HP:** **10 – 14 HP** | **Speed:** 10 ft, Fly 40 ft | Darkvision 60 ft
 * **Stats:** STR 4 (-3) | DEX 16 (+3) | CON 11 (+0) | INT 2 (-4) | WIS 8 (-1) | CHA 6 (-2)
-* **Blood Drain Proboscis:** `+5 to hit`, reach 5ft, **5 (1d4 + 3)** piercing + Stirge attaches. Deals **5 (1d4 + 3)** blood drain dmg automatically at start of turn (Detach: DC 10 STR check).
+* **Blood Drain Proboscis:** `+5 to hit`, reach 5ft, **5 (1d4 + 3)** piercing + Stirge attaches. Deals **6 (1d6 + 3)** blood drain dmg automatically at start of turn (Detach: DC 10 STR check).
 * 💎 **Possible Loot Drops:** `1d4` insect chitin plates (5 sp).
 
 ---

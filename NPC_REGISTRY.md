@@ -376,7 +376,7 @@
 ## 🚢 SECTION 4: THE WRECK OF THE COMPASS ROSE & REEF DENIZENS
 
 ### 👑 Aleitha, The Drowned Queen (Zombie Queen of the Compass Rose — Chapter 3 Boss)
-* **Identity:** Medium Undead Queen in sea-tattered bridal shrouds, kelp hair, glowing hair-talisman (AC 13, HP 55–65, CR 2).
+* **Identity:** Medium Undead Queen in sea-tattered bridal shrouds, kelp hair, glowing hair-talisman (AC 13, HP 65–75, CR 3).
 * **Location:** The Wreck of the *Compass Rose* (Quarterdeck / Main Deck C1).
 
 #### 🧭 Psychological & Moral Dossier:
@@ -394,7 +394,7 @@
 ---
 
 ### 🧟 Zombie Captain / Deck Officer (Cursed Shipmaster)
-* **Identity:** Bloated, waterlogged officer in rotted navy coat and chipped cutlass (AC 11, HP 48–55, CR 1).
+* **Identity:** Bloated, waterlogged officer in rotted navy coat and chipped cutlass (AC 11, HP 52–60, CR 1).
 * **Location:** Captain's Quarters (Area C4).
 * **Philosophy & Current Problem:** **Hollow Maritime Duty**. Believes he must maintain command of the vessel and guard the ship's manifest and strongbox. His heavy sea chest fell through the rotted floorboards into the flooded hold (C9) and he lacks the strength to dive down and recover it.
 * **Current Action:** Barricaded in his cabin, slamming against the door whenever the ship's wheel is touched, attacking any living soul who breaches his quarters.
@@ -402,14 +402,14 @@
 ---
 
 ### 🧟 The Ghoulish Scavenger (Lower Deck Opportunist in C8)
-* **Identity:** Cunning, feral ghoul lurking in 18 inches of sloshing seawater (AC 12, HP 22, CR 1).
+* **Identity:** Cunning, feral ghoul lurking in 18 inches of sloshing seawater (AC 12, HP 34–40, CR 1).
 * **Philosophy & Current Problem:** **Primal Carnal Opportunism**. Driven by insatiable hunger for tender living flesh; hates the taste of cold, rubbery drowned zombies.
 * **Current Action:** Hiding behind floating spice crates in the dark shadows of C8, waiting for an adventurer to engage a zombie before leaping out to paralyze them with venomous claws.
 
 ---
 
 ### 🦅 The Harpy of the Crow's Nest (Singing Predator atop C1)
-* **Identity:** Vulture-bodied monstrosity with human torso and bone club (AC 11, HP 38, CR 1).
+* **Identity:** Vulture-bodied monstrosity with human torso and bone club (AC 11, HP 42–48, CR 1).
 * **Location:** Crow's Nest (Area C1).
 * **Philosophy & Current Problem:** **Hedonistic Predator Vanity**. Believes the sky and sea belong to creatures with sweet voices and sharp talons; sailors exist only to be lured onto the rocks and eaten.
 * **Immediate Problem:** Merchant ships have avoided the shoal for three days, her stomach is empty, and she suspects someone is climbing the mast to steal her shiny gold hoard.
@@ -420,7 +420,7 @@
 ## ⚡ SECTION 5: CLIFFTOP OBSERVATORY CULT & PRISONERS
 
 ### 🐉 Sparkrender (Campaign Climax Boss — Blue Dragon Wyrmling)
-* **Identity:** Sleek, azure-scaled chromatic dragon crackling with lightning (AC 15, HP 95–110, CR 4).
+* **Identity:** Sleek, azure-scaled chromatic dragon crackling with lightning (AC 15, HP 110–125, CR 4).
 * **Location:** Observatory Tower & Rotunda (Area D5 / D6).
 
 #### 🧭 Psychological & Moral Dossier:
