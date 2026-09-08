@@ -808,7 +808,7 @@
                     <div class="toggle-btn-card" id="card-cd-toggle" onclick="triggerPreserveLife()">
                         <div>
                             <div style="font-size:0.74rem; font-weight:700;">🕊️ Preserve Life</div>
-                            <div style="font-size:0.66rem; color:var(--text-dim);" id="sub-cd">1/Short Rest (15 HP)</div>
+                            <div style="font-size:0.66rem; color:var(--text-dim);" id="sub-cd">1/Short Rest (20 HP)</div>
                         </div>
                         <span class="toggle-badge on" id="badge-cd">READY</span>
                     </div>
@@ -978,7 +978,7 @@
                             </div>
                             <div class="action-desc">Melee 5ft • +3 to Hit • 1d6+1 Bludgeoning Damage.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Heavy Mace Attack', 3)">🔨 Attack</button>
+                                <button class="btn-roll-action" onclick="rollD20('Heavy Mace Attack', 3)">🔨 Attack (+3)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Heavy Mace Damage', 6, 1, 'Bludgeoning')">💥 Damage</button>
                             </div>
                         </div>
@@ -994,9 +994,9 @@
                                 </div>
                                 <span style="font-size:0.65rem; color:#facc15; font-weight:700;">EVOCATION</span>
                             </div>
-                            <div class="action-desc">60ft • DC 13 Dex save (ignores cover) or 1d8 Radiant.</div>
+                            <div class="action-desc">60ft • DC 14 Dex save (ignores cover) or 1d8 Radiant.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Sacred Flame Dmg', 8, 0, 'Radiant (DC 13 Dex save)')">🔥 1d8 Radiant</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Sacred Flame Dmg', 8, 0, 'Radiant (DC 14 Dex save)')">🔥 1d8 Radiant (DC 14)</button>
                             </div>
                         </div>
 
@@ -1120,12 +1120,12 @@
                                     <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">1st Lvl • 1 Action</div>
                                 </div>
                                 <select id="lvl-select-cure" class="lvl-dropdown">
-                                    <option value="1">Lvl 1 (1d8+6)</option>
-                                    <option value="2">Lvl 2 (2d8+7)</option>
-                                    <option value="3">Lvl 3 (3d8+8)</option>
+                                    <option value="1">Lvl 1 (1d8+7)</option>
+                                    <option value="2">Lvl 2 (2d8+8)</option>
+                                    <option value="3">Lvl 3 (3d8+9)</option>
                                 </select>
                             </div>
-                            <div class="action-desc">Touch • 1 Action. Restores 1d8/lvl + 3 WIS + (2+lvl Disciple of Life).</div>
+                            <div class="action-desc">Touch • 1 Action. Restores 1d8/lvl + 4 WIS + (2+lvl Disciple of Life).</div>
                             <div class="action-btn-row">
                                 <button class="btn-roll-action btn-roll-heal" onclick="rollCureWounds()">💚 Cast & Heal</button>
                             </div>
@@ -1141,12 +1141,12 @@
                                     <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">1st Lvl • Bonus Action</div>
                                 </div>
                                 <select id="lvl-select-hword" class="lvl-dropdown">
-                                    <option value="1">Lvl 1 (1d4+6)</option>
-                                    <option value="2">Lvl 2 (2d4+7)</option>
-                                    <option value="3">Lvl 3 (3d4+8)</option>
+                                    <option value="1">Lvl 1 (1d4+7)</option>
+                                    <option value="2">Lvl 2 (2d4+8)</option>
+                                    <option value="3">Lvl 3 (3d4+9)</option>
                                 </select>
                             </div>
-                            <div class="action-desc">Bonus Action • 60ft. Restores 1d4/lvl + 3 WIS + (2+lvl Disciple of Life).</div>
+                            <div class="action-desc">Bonus Action • 60ft. Restores 1d4/lvl + 4 WIS + (2+lvl Disciple of Life).</div>
                             <div class="action-btn-row">
                                 <button class="btn-roll-action btn-roll-heal" onclick="rollHealingWord()">🍷 Cast & Heal</button>
                             </div>
@@ -1187,10 +1187,10 @@
                                 </div>
                                 <span style="font-size:0.68rem; color:var(--accent-purple); font-weight:600;">EVOCATION</span>
                             </div>
-                            <div class="action-desc">60 ft • 1 min (No Conc). Bonus Action strike each turn: +5 hit, 1d8+3 Force damage!</div>
+                            <div class="action-desc">60 ft • 1 min (No Conc). Bonus Action strike each turn: +6 hit, 1d8+4 Force damage!</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Spiritual Weapon Strike', 5)">🗡️ Attack (+5)</button>
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollSpiritualWeaponDmg()">💥 1d8+3 Force</button>
+                                <button class="btn-roll-action" onclick="rollD20('Spiritual Weapon Strike', 6)">🗡️ Attack (+6)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollSpiritualWeaponDmg()">💥 1d8+4 Force</button>
                             </div>
                         </div>
 
@@ -1209,9 +1209,9 @@
                                     <option value="3">Lvl 3 (6d6)</option>
                                 </select>
                             </div>
-                            <div class="action-desc">120 ft • +5 Hit • 4d6 (+1d6/lvl) Radiant. Next ally attack has Advantage!</div>
+                            <div class="action-desc">120 ft • +6 Hit • 4d6 (+1d6/lvl) Radiant. Next ally attack has Advantage!</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Guiding Bolt Attack', 5)">☀️ Attack (+5)</button>
+                                <button class="btn-roll-action" onclick="rollD20('Guiding Bolt Attack', 6)">☀️ Attack (+6)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollGuidingBolt()">💥 Radiant Dmg</button>
                             </div>
                         </div>
@@ -1265,7 +1265,7 @@
                                 </div>
                                 <span style="font-size:0.68rem; color:#67e8f9; font-weight:600;">ABJURATION</span>
                             </div>
-                            <div class="action-desc">30 ft • 1 min. Any creature attacking warded ally must pass <strong>DC 13 Wis Save</strong> or lose attack.</div>
+                            <div class="action-desc">30 ft • 1 min. Any creature attacking warded ally must pass <strong>DC 14 Wis Save</strong> or lose attack.</div>
                             <div class="action-btn-row">
                                 <button class="btn-roll-action" style="background:#0f766e;" onclick="castSanctuary()">🕊️ Cast Sanctuary (-1 Slot)</button>
                             </div>
@@ -1299,8 +1299,8 @@
 
                     <div style="display:flex; flex-direction:column; gap:5px;">
                         <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
-                            <span>🕊️ <strong>Preserve Life (Channel Divinity • 1/Short Rest):</strong> Restore up to 15 HP distributed among bloodied allies within 30ft.</span>
-                            <button class="btn-roll-action" style="background:#059669;" onclick="triggerPreserveLife()">🕊️ Preserve Life (15 HP)</button>
+                            <span>🕊️ <strong>Preserve Life (Channel Divinity • 1/Short Rest):</strong> Restore up to 20 HP distributed among bloodied allies within 30ft.</span>
+                            <button class="btn-roll-action" style="background:#059669;" onclick="triggerPreserveLife()">🕊️ Preserve Life (20 HP)</button>
                         </div>
                         <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <span>🌿 <strong>Disciple of Life (Passive):</strong> Healing spells of 1st level+ automatically heal extra <code>2 + Spell Level</code> HP!</span>
@@ -1752,8 +1752,8 @@
             fullRules: "A heavy iron mace consecrated to Eldath and Lathander with a reinforced flanged head.<br><br>• <strong>Attack Roll:</strong> d20 + 3 vs target AC.<br>• <strong>Damage:</strong> 1d6 + 1 bludgeoning damage.",
             flavor: "Father Flubs swings the sacred ceremonial mace with divine conviction, battering armor and sundering undead bones.",
             modalButtons: [
-                { label: "🔨 Attack Roll", class: "btn-roll-action", onClick: () => rollD20('Heavy Mace Attack', 3) },
-                { label: "💥 Damage Roll", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Heavy Mace Damage', 6, 1, 'Bludgeoning') }
+                { label: "🔨 Attack (+3)", class: "btn-roll-action", onClick: () => rollD20('Heavy Mace Attack', 3) },
+                { label: "💥 Damage", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Heavy Mace Damage', 6, 1, 'Bludgeoning') }
             ]
         },
         "sacredflame": {
@@ -1764,13 +1764,13 @@
             range: "60 feet",
             components: "V, S",
             duration: "Instantaneous",
-            attackMod: "DC 13 Dexterity Saving Throw",
+            attackMod: "DC 14 Dexterity Saving Throw",
             damage: "1d8 Radiant Damage (Ignores Cover!)",
-            desc: "60ft • DC 13 Dex save (ignores cover) or 1d8 Radiant.",
-            fullRules: "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a <strong>DC 13 Dexterity saving throw</strong> or take <strong>1d8 radiant damage</strong>.<br><br>The target gains <strong>no benefit from cover</strong> for this saving throw.<br><br>The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            desc: "60ft • DC 14 Dex save (ignores cover) or 1d8 Radiant.",
+            fullRules: "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a <strong>DC 14 Dexterity saving throw</strong> or take <strong>1d8 radiant damage</strong>.<br><br>The target gains <strong>no benefit from cover</strong> for this saving throw.<br><br>The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
             flavor: "A column of sacred solar fire descends from above upon the target, bypassing shields and half-cover.",
             modalButtons: [
-                { label: "🔥 Roll 1d8 Radiant", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Sacred Flame Dmg', 8, 0, 'Radiant (DC 13 Dex save)') }
+                { label: "🔥 1d8 Radiant (DC 14)", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Sacred Flame Dmg', 8, 0, 'Radiant (DC 14 Dex save)') }
             ]
         },
         "guidance": {
@@ -1801,7 +1801,7 @@
             attackMod: "Divine Wonders & Manifestations",
             damage: "Sensory effects, booming voice, tremors",
             desc: "Booms voice 3x louder, flickers flames, creates tremors.",
-            fullRules: "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects:<br><br>• Your voice booms up to three times as loud as normal for 1 minute.<br>• You cause flames to flicker, brighten, dim, or change color for 1 minute.<br>• You cause harmless tremors in the ground for 1 minute.<br>• You create an instantaneous sound that originates from a point of your choice within range.<br>• You instantaneously cause an unlocked door or window to fly open or slam shut.<br>• You alter the appearance of your eyes for 1 minute.<br><br>You can have up to 3 effects active simultaneously.",
+            fullRules: "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects:<br><br>• Your voice booms up to three times as loud as normal for 1 minute.<br>• You cause flames to flicker, brighten, dim, or change color for 1 minute.<br>• You cause harmless tremors in the ground for 1 minute.<br>• You create an instantaneous sound that originates from a point of your choice within range.<br>• You instantaneously cause an unlocked door or window to fly open or slam shut.<br>• You alter the appearance of your eyes for 1 minute.<br>• You can have up to 3 effects active simultaneously.",
             flavor: "Father Flubs' gentle demeanor expands into thunderous authority, projecting his voice across mountainsides and shaking cavern stones.",
             modalButtons: [
                 { label: "✨ Cast Thaumaturgy", class: "btn-roll-action", onClick: () => castUtility('✨ <strong>Thaumaturgy:</strong> Booming voice (3x loud), flickering torches, spectral tremors, or swinging doors!') }
@@ -1833,9 +1833,9 @@
             components: "V, S",
             duration: "Instantaneous",
             attackMod: "Divine Touch Healing",
-            damage: "1d8 + 3 WIS + (2+lvl Disciple of Life) = 1d8+6 HP at 1st lvl",
-            desc: "Touch • 1 Action. Restores 1d8/lvl + 3 WIS + (2+lvl Disciple of Life).",
-            fullRules: "A creature you touch regains a number of hit points equal to <strong>1d8 + your spellcasting ability modifier (+3 WIS)</strong>.<br><br>🌿 <strong>Disciple of Life:</strong> Whenever you use a spell of 1st level or higher to restore hit points, the creature regains additional hit points equal to <strong>2 + the spell's level</strong>.<br>• 1st Level Slot: 1d8 + 3 + 3 = <strong>1d8 + 6 HP</strong><br>• 2nd Level Slot: 2d8 + 3 + 4 = <strong>2d8 + 7 HP</strong><br>• 3rd Level Slot: 3d8 + 3 + 5 = <strong>3d8 + 8 HP</strong>",
+            damage: "1d8 + 4 WIS + (2+lvl Disciple of Life) = 1d8+7 HP at 1st lvl",
+            desc: "Touch • 1 Action. Restores 1d8/lvl + 4 WIS + (2+lvl Disciple of Life).",
+            fullRules: "A creature you touch regains a number of hit points equal to <strong>1d8 + your spellcasting ability modifier (+4 WIS)</strong>.<br><br>🌿 <strong>Disciple of Life:</strong> Whenever you use a spell of 1st level or higher to restore hit points, the creature regains additional hit points equal to <strong>2 + the spell's level</strong>.<br>• 1st Level Slot: 1d8 + 4 + 3 = <strong>1d8 + 7 HP</strong><br>• 2nd Level Slot: 2d8 + 4 + 4 = <strong>2d8 + 8 HP</strong><br>• 3rd Level Slot: 3d8 + 4 + 5 = <strong>3d8 + 9 HP</strong>",
             upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 + 1 for each slot level above 1st.",
             flavor: "Golden restorative warmth flows through Father Flubs' touch, knitting lacerations, mending bone, and soothing pain.",
             modalButtons: [
@@ -1851,9 +1851,9 @@
             components: "V (Verbal)",
             duration: "Instantaneous",
             attackMod: "Ranged Bonus Action Healing",
-            damage: "1d4 + 3 WIS + (2+lvl Disciple of Life) = 1d4+6 HP at 1st lvl",
-            desc: "Bonus Action • 60ft. Restores 1d4/lvl + 3 WIS + (2+lvl Disciple of Life).",
-            fullRules: "A creature of your choice that you can see within range regains hit points equal to <strong>1d4 + your spellcasting ability modifier (+3 WIS)</strong>.<br><br>🌿 <strong>Disciple of Life:</strong> Adds <strong>2 + spell level</strong> bonus HP.<br>• 1st Level: 1d4 + 3 + 3 = <strong>1d4 + 6 HP</strong><br>• 2nd Level: 2d4 + 3 + 4 = <strong>2d4 + 7 HP</strong><br><br>⚡ <strong>Bonus Action:</strong> Can be cast swiftly while still using an Action to attack with Heavy Mace or cast a cantrip!",
+            damage: "1d4 + 4 WIS + (2+lvl Disciple of Life) = 1d4+7 HP at 1st lvl",
+            desc: "Bonus Action • 60ft. Restores 1d4/lvl + 4 WIS + (2+lvl Disciple of Life).",
+            fullRules: "A creature of your choice that you can see within range regains hit points equal to <strong>1d4 + your spellcasting ability modifier (+4 WIS)</strong>.<br><br>🌿 <strong>Disciple of Life:</strong> Adds <strong>2 + spell level</strong> bonus HP.<br>• 1st Level: 1d4 + 4 + 3 = <strong>1d4 + 7 HP</strong><br>• 2nd Level: 2d4 + 4 + 4 = <strong>2d4 + 8 HP</strong><br><br>⚡ <strong>Bonus Action:</strong> Can be cast swiftly while still using an Action to attack with Heavy Mace or cast a cantrip!",
             upcastNotes: "When cast with a slot of 2nd level or higher, healing increases by 1d4 + 1 for each slot level above 1st.",
             flavor: "Father Flubs speaks a quiet prayer of renewal that echoes across the battlefield, invigorating a distant fallen comrade.",
             modalButtons: [
@@ -1885,15 +1885,15 @@
             range: "60 feet",
             components: "V, S",
             duration: "1 minute (No Concentration required!)",
-            attackMod: "+5 Melee Spell Attack",
-            damage: "1d8 + 3 Force Damage each turn",
-            desc: "60 ft • 1 min (No Conc). Bonus Action strike each turn: +5 hit, 1d8+3 Force damage!",
-            fullRules: "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack (<strong>+5 to hit</strong>) against a creature within 5 feet of the weapon. On a hit, the target takes <strong>1d8 + 3 force damage</strong>.<br><br>As a <strong>Bonus Action on any of your turns</strong>, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.<br><br>🛡️ <strong>No Concentration:</strong> You can keep Spiritual Weapon attacking every turn while simultaneously maintaining concentration on <em>Bless</em> or <em>Shield of Faith</em>!",
+            attackMod: "+6 Melee Spell Attack",
+            damage: "1d8 + 4 Force Damage each turn",
+            desc: "60 ft • 1 min (No Conc). Bonus Action strike each turn: +6 hit, 1d8+4 Force damage!",
+            fullRules: "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack (<strong>+6 to hit</strong>) against a creature within 5 feet of the weapon. On a hit, the target takes <strong>1d8 + 4 force damage</strong>.<br><br>As a <strong>Bonus Action on any of your turns</strong>, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.<br><br>🛡️ <strong>No Concentration:</strong> You can keep Spiritual Weapon attacking every turn while simultaneously maintaining concentration on <em>Bless</em> or <em>Shield of Faith</em>!",
             upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above 2nd.",
             flavor: "A glowing sacramental chalice and flanged mace made of pure radiant light manifests in midair, battering enemies on Father Flubs' command.",
             modalButtons: [
-                { label: "🗡️ Attack (+5)", class: "btn-roll-action", onClick: () => rollD20('Spiritual Weapon Strike', 5) },
-                { label: "💥 1d8+3 Force", class: "btn-roll-action btn-roll-dmg", onClick: () => rollSpiritualWeaponDmg() }
+                { label: "🗡️ Attack (+6)", class: "btn-roll-action", onClick: () => rollD20('Spiritual Weapon Strike', 6) },
+                { label: "💥 1d8+4 Force", class: "btn-roll-action btn-roll-dmg", onClick: () => rollSpiritualWeaponDmg() }
             ]
         },
         "guidingbolt": {
@@ -1904,14 +1904,14 @@
             range: "120 feet",
             components: "V, S",
             duration: "1 round",
-            attackMod: "+5 Ranged Spell Attack",
+            attackMod: "+6 Ranged Spell Attack",
             damage: "4d6 Radiant Damage + Next Ally Attack has Advantage",
-            desc: "120 ft • +5 Hit • 4d6 (+1d6/lvl) Radiant. Next ally attack has Advantage!",
-            fullRules: "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target (<strong>+5 to hit</strong>). On a hit, the target takes <strong>4d6 radiant damage</strong>, and the next attack roll made against this target before the end of your next turn has <strong>Advantage</strong>, thanks to the mystical dim light glittering on the target.",
+            desc: "120 ft • +6 Hit • 4d6 (+1d6/lvl) Radiant. Next ally attack has Advantage!",
+            fullRules: "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target (<strong>+6 to hit</strong>). On a hit, the target takes <strong>4d6 radiant damage</strong>, and the next attack roll made against this target before the end of your next turn has <strong>Advantage</strong>, thanks to the mystical dim light glittering on the target.",
             upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st (5d6 at 2nd lvl, 6d6 at 3rd lvl).",
             flavor: "Father Flubs channels a blinding bolt of dawnlight that sears the target and marks their weak points with glowing solar motes for his companions.",
             modalButtons: [
-                { label: "☀️ Attack (+5)", class: "btn-roll-action", onClick: () => rollD20('Guiding Bolt Attack', 5) },
+                { label: "☀️ Attack (+6)", class: "btn-roll-action", onClick: () => rollD20('Guiding Bolt Attack', 6) },
                 { label: "💥 Radiant Dmg", class: "btn-roll-action btn-roll-dmg", onClick: () => rollGuidingBolt() }
             ]
         },
@@ -1958,10 +1958,10 @@
             range: "30 feet",
             components: "V, S, M (a small silver mirror)",
             duration: "1 minute (No Concentration!)",
-            attackMod: "DC 13 Wisdom Saving Throw Warding",
+            attackMod: "DC 14 Wisdom Saving Throw Warding",
             damage: "Prevents enemy attacks against warded creature",
-            desc: "30 ft • 1 min. Any creature attacking warded ally must pass DC 13 Wis Save or lose attack.",
-            fullRules: "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a <strong>DC 13 Wisdom saving throw</strong>. On a failed save, the creature must choose a new target or lose its attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.<br><br>If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.",
+            desc: "30 ft • 1 min. Any creature attacking warded ally must pass DC 14 Wis Save or lose attack.",
+            fullRules: "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a <strong>DC 14 Wisdom saving throw</strong>. On a failed save, the creature must choose a new target or lose its attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.<br><br>If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.",
             flavor: "An aura of sacred peace descends upon the target, staying the hands of hostile attackers with sudden remorse.",
             modalButtons: [
                 { label: "🕊️ Cast Sanctuary (-1 Slot)", class: "btn-roll-action", onClick: () => castSanctuary() }
@@ -2097,7 +2097,7 @@
         if (!deductSlotIfAvailable(slotLvl)) return;
         const diceCount = slotLvl;
         const lifeBonus = 2 + slotLvl;
-        const wisBonus = 3;
+        const wisBonus = 4;
         const totalBonus = wisBonus + lifeBonus;
 
         const rolls = [];
@@ -2108,7 +2108,7 @@
             rollSum += r;
         }
         const total = rollSum + totalBonus;
-        logRoll(`💚 <strong>Cure Wounds (Level ${slotLvl} Slot • ${diceCount}d8+${totalBonus}):</strong> [${rolls.join('+')}] + ${totalBonus} (WIS 3 + Life Domain ${lifeBonus}) = <span style="color:#4ade80; font-weight:700;">+${total} HP Healed</span>!`);
+        logRoll(`💚 <strong>Cure Wounds (Level ${slotLvl} Slot • ${diceCount}d8+${totalBonus}):</strong> [${rolls.join('+')}] + ${totalBonus} (WIS 4 + Life Domain ${lifeBonus}) = <span style="color:#4ade80; font-weight:700;">+${total} HP Healed</span>!`);
     }
 
     function rollHealingWord() {
@@ -2116,7 +2116,7 @@
         if (!deductSlotIfAvailable(slotLvl)) return;
         const diceCount = slotLvl;
         const lifeBonus = 2 + slotLvl;
-        const wisBonus = 3;
+        const wisBonus = 4;
         const totalBonus = wisBonus + lifeBonus;
 
         const rolls = [];
@@ -2127,7 +2127,7 @@
             rollSum += r;
         }
         const total = rollSum + totalBonus;
-        logRoll(`🍷 <strong>Healing Word (Level ${slotLvl} Slot • Bonus Action • ${diceCount}d4+${totalBonus}):</strong> [${rolls.join('+')}] + ${totalBonus} (WIS 3 + Life Domain ${lifeBonus}) = <span style="color:#4ade80; font-weight:700;">+${total} HP Healed</span>!`);
+        logRoll(`🍷 <strong>Healing Word (Level ${slotLvl} Slot • Bonus Action • ${diceCount}d4+${totalBonus}):</strong> [${rolls.join('+')}] + ${totalBonus} (WIS 4 + Life Domain ${lifeBonus}) = <span style="color:#4ade80; font-weight:700;">+${total} HP Healed</span>!`);
     }
 
     function rollGuidingBolt() {
@@ -2158,8 +2158,8 @@
 
     function rollSpiritualWeaponDmg() {
         const d8 = Math.floor(Math.random() * 8) + 1;
-        const total = d8 + 3;
-        logRoll(`🗡️ <strong>Spiritual Weapon Strike (2nd-Level • Bonus Action):</strong> [d8:${d8} + 3 WIS] = <span style="color:#c084fc; font-weight:700;">${total} Force Damage</span>! Can strike again next turn as a Bonus Action!`);
+        const total = d8 + 4;
+        logRoll(`🗡️ <strong>Spiritual Weapon Strike (2nd-Level • Bonus Action):</strong> [d8:${d8} + 4 WIS] = <span style="color:#c084fc; font-weight:700;">${total} Force Damage</span>! Can strike again next turn as a Bonus Action!`);
     }
 
     function castLesserRestoration() {
@@ -2185,7 +2185,7 @@
 
     function castSanctuary() {
         if (!deductSlotIfAvailable(1)) return;
-        logRoll(`🕊️ <strong>Sanctuary Cast (1st-Level Slot • Bonus Action • 30 ft):</strong> Expended 1 Divine Spell Slot. Wards an ally with protective grace. Any enemy targeting the warded creature must first make a <span style="color:var(--accent-gold); font-weight:700;">DC 13 Wisdom Saving Throw</span> or lose the attack!`);
+        logRoll(`🕊️ <strong>Sanctuary Cast (1st-Level Slot • Bonus Action • 30 ft):</strong> Expended 1 Divine Spell Slot. Wards an ally with protective grace. Any enemy targeting the warded creature must first make a <span style="color:var(--accent-gold); font-weight:700;">DC 14 Wisdom Saving Throw</span> or lose the attack!`);
     }
 
     function castSpeakWithAnimals(isRitual) {
