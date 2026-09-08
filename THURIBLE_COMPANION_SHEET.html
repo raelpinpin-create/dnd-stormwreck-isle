@@ -389,14 +389,14 @@
             <div class="header-title">
                 <h1>🐍🔥 THURIBLE</h1>
                 <div style="font-size:0.75rem; color:#fed7aa; margin-top:2px;">
-                    Sacred Giant Fire Snake Mount & Battle Companion (Ridden by Father Flubs)
+                    Sacred Giant Fire Snake Mount & Battle Companion (Level 4 • Ridden by Father Flubs)
                 </div>
             </div>
             <div class="pill-badge-group">
                 <button class="btn-act btn-act-pre" onclick="exportSheetState()" style="font-size:0.75rem; font-weight:700; color:var(--accent-orange); border:1px solid rgba(249, 115, 22, 0.4); display:flex; align-items:center; gap:4px; padding:4px 10px; cursor:pointer;" title="1-Click copy current HP and condition to clipboard">📋 Export Data</button>
                 <span class="pill-badge pill-flame">🔥 FIRE IMMUNE</span>
                 <span class="pill-badge pill-blue">❄️ AURA: COLD IMMUNITY</span>
-                <span class="pill-badge pill-gold">LARGE ELEMENTAL MOUNT</span>
+                <span class="pill-badge pill-gold">LARGE ELEMENTAL MOUNT (LVL 4)</span>
             </div>
         </header>
 
@@ -428,7 +428,7 @@
         <div class="vitals-4box">
             <div class="vital-mini-box">
                 <span class="vital-mini-lbl">HIT POINTS</span>
-                <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">32/32</span>
+                <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">40/40</span>
             </div>
             <div class="vital-mini-box">
                 <span class="vital-mini-lbl">ARMOR CLASS</span>
@@ -621,33 +621,39 @@
     </div>
 
 <script>
-    let curHP = 32;
-    let maxHP = 32;
+    let curHP = 40;
+    let maxHP = 40;
     let tempHP = 0;
     let rollMode = 'norm';
 
     // Stored HP Engine
     function initHP() {
-        const stored = localStorage.getItem('dnd_hp_thurible');
+        const stored = localStorage.getItem('dnd_hp_thurible_v4');
         if (stored) {
             try {
                 const data = JSON.parse(stored);
-                curHP = (data.cur !== undefined && !isNaN(parseInt(data.cur))) ? parseInt(data.cur) : 32;
+                curHP = (data.cur !== undefined && !isNaN(parseInt(data.cur))) ? parseInt(data.cur) : 40;
                 tempHP = (data.temp !== undefined && !isNaN(parseInt(data.temp))) ? parseInt(data.temp) : 0;
             } catch(e) {
-                curHP = 32;
+                curHP = 40;
                 tempHP = 0;
             }
+        } else {
+            localStorage.removeItem('dnd_hp_thurible');
+            localStorage.removeItem('dnd_hp_thurible_v2');
+            localStorage.removeItem('dnd_hp_thurible_v3');
+            curHP = 40;
+            tempHP = 0;
         }
         updateHPUI();
     }
 
     function saveHP() {
-        localStorage.setItem('dnd_hp_thurible', JSON.stringify({ cur: curHP, temp: tempHP }));
+        localStorage.setItem('dnd_hp_thurible_v4', JSON.stringify({ cur: curHP, temp: tempHP }));
     }
 
     function updateHPUI() {
-        if (isNaN(curHP)) curHP = 32;
+        if (isNaN(curHP)) curHP = 40;
         if (isNaN(tempHP)) tempHP = 0;
         const hpDisp = document.getElementById('hp-disp');
         const hpBar = document.getElementById('hp-bar');
@@ -668,7 +674,7 @@
     }
 
     function stepHP(delta) {
-        if (isNaN(curHP)) curHP = 32;
+        if (isNaN(curHP)) curHP = 40;
         if (delta > 0) {
             curHP = Math.min(maxHP, curHP + delta);
             logRoll(`💚 Thurible HP +${delta} ➔ ${curHP}/${maxHP}`);
@@ -683,7 +689,7 @@
         const input = document.getElementById('hp-input');
         const amt = parseInt(input.value) || 0;
         if (amt <= 0) return;
-        if (isNaN(curHP)) curHP = 32;
+        if (isNaN(curHP)) curHP = 40;
         if (tempHP > 0) {
             if (amt <= tempHP) {
                 tempHP -= amt;
@@ -704,7 +710,7 @@
         const input = document.getElementById('hp-input');
         const amt = parseInt(input.value) || 0;
         if (amt <= 0) return;
-        if (isNaN(curHP)) curHP = 32;
+        if (isNaN(curHP)) curHP = 40;
         curHP = Math.min(maxHP, curHP + amt);
         input.value = '';
         updateHPUI();

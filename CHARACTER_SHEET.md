@@ -70,12 +70,10 @@
   * 📜 **Spell Scroll of *Absorb Elements*** (1st-Level Abjuration Reaction)
   * 🤿 **Spore-Filter Rebreather Mask** (Advantage on CON saves vs spores/fumes/gas)
 * **Consumables & Rations:** 
-  * 🧪 **Potion of Water Breathing** *(Trophy from the Sea Hag)*
-  * 🧪 **2x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
+  * 🧪 **1x Potion of Water Breathing** *(Trophy from the Sea Hag)*
+  * 🍷 **1x Elixir of Health (Legendary)** *(Distilled from The Ruby Morel)*
   * 🧀 **Cheese Bread** (Restores `1d8 HP` + grants `+2 to Initiative` for 1 encounter)
-  * 🐟 **Salmon Bread** (Restores `1d8 HP` + grants `+4 Temporary HP`)
   * 🌟 **Eflein's Special Bread** (Restores `1d8 HP` + grants `+2 to all Skill Checks` until next Long Rest)
-  * 🥯 **Dragon's Rest Bagel** (Restores `1d8 HP` + grants `+2 to Armor Class` until next Short Rest)
 * **Valuables & Story:** 
   * 📜 **Lianna's Farewell Letter (The Archmage's Vow):** Folded parchment smelling of jasmine perfume, kept inside his inner breast pocket.
   * 📜 **Lianna's Reef Letter (Compass Rose Anomaly Notes):** Recovered from the *Compass Rose* zombies.
@@ -142,12 +140,14 @@
   * 👗 **Neko Maid Costume** (Legendary Nat 20 Performance outfit; black and white frilled maid dress with cat ears and ribbon tail-wrap).
 * **Weapons & Musical Instruments:**
   * 🗡️ **Steel Rapier:** `+6 to hit`, reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse). *With Psychic Blades:* `1d8+4 + 2d6 Psychic`!
-  * 🗡️ **Steel Dagger (2x):** `+6 to hit`, range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).
+  * 🗡️ **Sentry Zik's Dagger (+1):** `+7 to hit`, range 20/60 ft. *Hit:* `1d4 + 5` piercing (Finesse, Light, Thrown).
+  * 🗡️ **Steel Daggers (2x):** `+6 to hit`, range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).
   * 🪘 **Tambourine** (Arcane & Bardic Focus, acoustic resonator).
   * 🎸 **Lute & Guitar** (Fine wooden instruments).
-* **Consumables & Combat Alchemy:**
-  * 💣 **2x Spitfire Flasks** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex save for half).
-  * 🧪 **1x Potion of Healing** (Bonus Action: `2d6 HP` | Full Action: `100% Full Max HP`).
+* **Consumables, Keepsakes & Combat Alchemy:**
+  * 🪶 **Sentry Zik's Remains & Silk Ribbon** (Solemn memorial urn of the brave kobold hero of Dragon's Rest).
+  * 🍷 **1x Elixir of Health (Legendary)** (Distilled from The Ruby Morel; cures all diseases/poisons, +20 Temp HP or 100% Full Max HP revive).
+  * 💣 **1x Spitfire Flask** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex save for half).
   * 🍞 **1x Kobold Sweetbread Roll** (Blepp's honey ration: `1d4 HP` + `+1d4 Temp HP`).
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack**, Thieves' tools.
@@ -219,13 +219,16 @@
 ## 🎒 Inventory & Wealth
 * **Armor & Shields:** Scale Mail Armor (Base AC 14), Holy Wooden Shield (+2 AC), Kobold Shield.
 * **Weapons:** Ceremonial Heavy Mace (`+4 hit`, `1d6+2` bludgeoning), Light Crossbow + 20 bolts.
-* **Sacred Vessels & Relics:**
+* **Sacred Vessels, Charms & Relics:**
   * 🍾 **Father Flubs' Reclaimed Vintage Wine Jug** (The Vintage of the Dawn Watch • Holy Symbol)
-  * 📿 **Enlightened Bone Talisman** *(Grants Turn Undead 1/Long Rest)*
+  * 📿 **The Enlightened Bone Charm** *(Grants Advantage on Wisdom Saves vs Charmed/Frightened & Turn Undead)*
+  * 🏴‍☠️ **1x Pirate Hat** *(Swagger of the high seas; Advantage on Intimidation vs sailors/bandits)*
+  * 🔘 **1x "3-Circle" Amulet** *(Planar Alignment Key from Clifftop Observatory)*
 * **Consumables, Potions & Alchemy:**
-  * 🐉 **Pure Drakeblood Vial** *(Grants +2 to Attack Rolls & +3 to Damage Rolls for 24 hours!)*
-  * 🧪 **13x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
-  * 🍷 **3x Elixir of Health (Legendary)** (Cures any disease, grants **+20 Temporary HP**; if used to revive an ally at 0 HP, restores them to **100% FULL MAX HP**!)
+  * 🐉 **Jar of Pure Drake Blood** *(Potent pyromantic distillation for refining or weapon coatings)*
+  * 🏺 **1x Jar of Animal Remains** *(Alchemical specimen for sacred sanctification rites)*
+  * 🧪 **10x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
+  * 🍷 **1x Elixir of Health (Legendary)** (Cures any disease, grants **+20 Temporary HP**; if used to revive an ally at 0 HP, restores them to **100% FULL MAX HP**!)
   * 🧪 **2x Diluted Drake Blood Potions** (Grants **+1 to Attack Rolls and +2 to Damage Rolls** for 24 hours!)
   * Priest's Pack, Altar Vestments, Incense, Censer.
 * **Wealth:** `52 gp, 5 sp`.
@@ -285,6 +288,8 @@
   * ⚔️ Honed Azure Wolf Longsword
   * 🏹 Heavy Crossbow + 20 Crossbow Bolts
   * 🪓 **Twin Notched Bone-Cleavers** *(Trophy from the Kobold Champion)*
+* **Potions & Consumables:**
+  * 🍷 **1x Elixir of Health (Legendary)** (Distilled from The Ruby Morel; cures all diseases/poisons, +20 Temp HP or 100% Full Max HP revive).
   * 🧪 **1x Potion of Healing** (100% Full 36 HP Heal)
 * **Kit & Tools:** Mason's Tools, Mercenary Commander Badge (Azure Wolves Guild), Whetstone, Traveler's Pack.
 * **Wealth:** `8 gp, 6 sp`.

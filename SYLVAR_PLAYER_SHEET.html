@@ -1435,10 +1435,12 @@
             "👗 Neko Maid Costume (Nat 20 Performance Outfit)",
             "🗡️ Steel Rapier",
             "🗡️ 2x Steel Daggers",
+            "🗡️ Sentry Zik's Dagger (+1)",
+            "🪶 Sentry Zik's Remains & Silk Ribbon",
+            "🍷 1x Elixir of Health (Legendary)",
             "🪘 Tambourine (Arcane Focus & Resonator)",
             "🎸 Lute & Wooden Guitar",
-            "💣 2x Spitfire Flasks",
-            "🧪 1x Potion of Healing",
+            "💣 1x Spitfire Flask",
             "🍞 1x Kobold Sweetbread Roll",
             "🎒 Entertainer's Pack",
             "🗝️ Thieves' Tools & Burglar's Pack"
@@ -1480,6 +1482,41 @@
                 origin: "Bardic Loadout",
                 desc: "Balanced throwing daggers with keen steel edges.",
                 effect: "• <strong>+6 to Hit</strong>, range 20/60 ft.<br>• <strong>1d4 + 4 Piercing Damage</strong>."
+            },
+            "zik's dagger": {
+                name: "🗡️ Sentry Zik's Dagger (+1)",
+                category: "MARTIAL WEAPON • +1 Magic Dagger",
+                origin: "Carried by Sentry Zik (The Brave Kobold Defender)",
+                desc: "A razor-sharp ceremonial kobold dagger forged from tempered basalt steel and tipped with draconic obsidian.",
+                effect: "• <strong>+7 to Hit</strong> (DEX +4, Prof +2, +1 Magic), range 20/60 ft.<br>• <strong>1d4 + 5 Piercing Damage</strong>.<br>• Light, Finesse, Thrown. Can be thrown as an off-hand attack or infused with <em>Psychic Blades</em>!"
+            },
+            "sentry zik's dagger": {
+                name: "🗡️ Sentry Zik's Dagger (+1)",
+                category: "MARTIAL WEAPON • +1 Magic Dagger",
+                origin: "Carried by Sentry Zik (The Brave Kobold Defender)",
+                desc: "A razor-sharp ceremonial kobold dagger forged from tempered basalt steel and tipped with draconic obsidian.",
+                effect: "• <strong>+7 to Hit</strong> (DEX +4, Prof +2, +1 Magic), range 20/60 ft.<br>• <strong>1d4 + 5 Piercing Damage</strong>.<br>• Light, Finesse, Thrown. Can be thrown as an off-hand attack or infused with <em>Psychic Blades</em>!"
+            },
+            "zik's remains": {
+                name: "🪶 Sentry Zik's Remains & Silk Ribbon",
+                category: "SACRED KEEPSAKE & SOLEMN RELIC",
+                origin: "Recovered from the Clifftop Observatory / Dragon's Rest Memorial",
+                desc: "The gathered ashes and polished scales of Sentry Zik, tenderly wrapped in Sylvar's performance silk ribbon and kept in an engraved urn.",
+                effect: "• <strong>Priceless Emotional Anchor:</strong> Commemorates the fallen hero of Dragon's Rest who stood fearless against abyssal horrors.<br>• Grants advantage on saves against despair and existential dread while carried."
+            },
+            "sentry zik's remains": {
+                name: "🪶 Sentry Zik's Remains & Silk Ribbon",
+                category: "SACRED KEEPSAKE & SOLEMN RELIC",
+                origin: "Recovered from the Clifftop Observatory / Dragon's Rest Memorial",
+                desc: "The gathered ashes and polished scales of Sentry Zik, tenderly wrapped in Sylvar's performance silk ribbon and kept in an engraved urn.",
+                effect: "• <strong>Priceless Emotional Anchor:</strong> Commemorates the fallen hero of Dragon's Rest who stood fearless against abyssal horrors.<br>• Grants advantage on saves against despair and existential dread while carried."
+            },
+            "elixir of health": {
+                name: "🍷 Elixir of Health (Legendary)",
+                category: "HEAL • Legendary Relic Potion",
+                origin: "Distilled from The Ruby Morel (Seagrow Caves)",
+                desc: "A thick, glowing crimson elixir that radiates radiant warmth and divine vitality.",
+                effect: "• <strong>Action to Drink:</strong> Cures any disease, poison, blindness, deafness, and paralysis + grants <strong>+20 Temporary HP</strong>.<br>• 🕊️ <strong>0 HP Miracle Revive:</strong> If administered to a dying/0 HP ally, instantly revives them to <strong>100% FULL MAX HP (31 HP)</strong>!"
             },
             "tambourine": {
                 name: "🪘 Tambourine",
@@ -2101,20 +2138,18 @@
         // 🎒 TRACKED INVENTORY & SESSION DELTA ENGINE (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
         function getStoredItems() {
-            let stored = localStorage.getItem('dnd_inv_sylvar_v5');
+            let stored = localStorage.getItem('dnd_inv_sylvar_v6');
             if (!stored) {
+                for (let i = 1; i <= 5; i++) localStorage.removeItem(`dnd_inv_sylvar_v${i}`);
                 localStorage.removeItem('dnd_inv_sylvar');
-                localStorage.removeItem('dnd_inv_sylvar_v2');
-                localStorage.removeItem('dnd_inv_sylvar_v3');
-                localStorage.removeItem('dnd_inv_sylvar_v4');
-                localStorage.setItem('dnd_inv_sylvar_v5', JSON.stringify(defaultItems));
+                localStorage.setItem('dnd_inv_sylvar_v6', JSON.stringify(defaultItems));
                 return [...defaultItems];
             }
             return JSON.parse(stored);
         }
 
         function saveStoredItems(items) {
-            localStorage.setItem('dnd_inv_sylvar_v5', JSON.stringify(items));
+            localStorage.setItem('dnd_inv_sylvar_v6', JSON.stringify(items));
         }
 
         function parseItemInfo(itemStr) {

@@ -1008,7 +1008,7 @@
             <div class="card pc-card mb-4" id="card-eflein">
                 <div class="card-header">
                     <h3 class="clickable-title" onclick="openNpcModal('eflein')">⚡ Eflein — High Elf Evocation Wizard</h3>
-                    <span class="tag tag-rare">Level 3 Wizard</span>
+                    <span class="tag tag-rare">Level 4 Wizard</span>
                 </div>
                 <div class="card-body">
                     <!-- INTERACTIVE VITALS TRACKER -->
@@ -1018,8 +1018,8 @@
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn danger-step" onclick="adjustCharStat('eflein', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-good" id="val-eflein-hp">20</span>
-                                <span class="tracker-max-label">/ 20</span>
+                                <span class="tracker-num hp-good" id="val-eflein-hp">26</span>
+                                <span class="tracker-max-label">/ 26</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('eflein', 'hp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
@@ -1105,7 +1105,7 @@
                         </div>
                         <div class="resource-chip">
                             <strong>📖 Arcane Recovery (1/Day):</strong>
-                            <button id="btn-eflein-arcaneRecovery" class="resource-toggle-btn ready" onclick="toggleResource('eflein', 'arcaneRecovery')">Ready (1 Slot)</button>
+                            <button id="btn-eflein-arcaneRecovery" class="resource-toggle-btn ready" onclick="toggleResource('eflein', 'arcaneRecovery')">Ready (2 Slots)</button>
                         </div>
                         <div class="resource-chip">
                             <strong>⚡ Astalagan's Surge (1/Day):</strong>
@@ -1123,7 +1123,7 @@
                             <p><strong>Archetype:</strong> Yankee / Delinquent — Brash posture, sharp mouth, hands in pockets, fiercely pragmatic and protective.</p>
                             <p><strong>Class Powers:</strong> 🔮 <strong>Evocation Savant</strong> | 💥 <strong>Sculpt Spells</strong> (Protects allies from AoE spell damage!)</p>
                             <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">
-                                <strong>Spell Save DC:</strong> <span style="color:var(--accent-gold); font-weight:bold;">14</span> (8+2PB+3INT+1Scale) | <strong>Spell Attack:</strong> <span style="color:var(--accent-gold); font-weight:bold;">+6</span>
+                                <strong>Spell Save DC:</strong> <span style="color:var(--accent-gold); font-weight:bold;">14</span> (DC 15 Lightning) | <strong>Spell Attack:</strong> <span style="color:var(--accent-gold); font-weight:bold;">+6</span> (+7 Lightning)
                             </p>
                         </div>
                     </div>
@@ -1132,7 +1132,7 @@
                         <div><label>STR</label><span>10 (+0)</span></div>
                         <div><label>DEX</label><span>15 (+2)</span></div>
                         <div><label>CON</label><span>14 (+2)</span></div>
-                        <div><label>INT ★</label><span>16 (+3)</span></div>
+                        <div><label>INT ★</label><span>18 (+4)</span></div>
                         <div><label>WIS ★</label><span>12 (+1)</span></div>
                         <div><label>CHA</label><span>8 (-1)</span></div>
                     </div>
@@ -1142,19 +1142,19 @@
                     <div class="skills-matrix">
                         <div class="skill-item"><span>Acrobatics (DEX)</span><span class="mod">+2</span></div>
                         <div class="skill-item"><span>Animal Handling (WIS)</span><span class="mod">+1</span></div>
-                        <div class="skill-item proficient"><span>Arcana (INT) ★</span><span class="mod">+5</span></div>
+                        <div class="skill-item proficient"><span>Arcana (INT) ★</span><span class="mod">+6</span></div>
                         <div class="skill-item"><span>Athletics (STR)</span><span class="mod">+0</span></div>
                         <div class="skill-item"><span>Deception (CHA)</span><span class="mod">-1</span></div>
-                        <div class="skill-item proficient"><span>History (INT) ★</span><span class="mod">+5</span></div>
+                        <div class="skill-item proficient"><span>History (INT) ★</span><span class="mod">+6</span></div>
                         <div class="skill-item proficient"><span>Insight (WIS) ★</span><span class="mod">+3</span></div>
                         <div class="skill-item"><span>Intimidation (CHA)</span><span class="mod">-1</span></div>
-                        <div class="skill-item proficient"><span>Investigation (INT) ★</span><span class="mod">+5</span></div>
+                        <div class="skill-item proficient"><span>Investigation (INT) ★</span><span class="mod">+6</span></div>
                         <div class="skill-item"><span>Medicine (WIS)</span><span class="mod">+1</span></div>
-                        <div class="skill-item"><span>Nature (INT)</span><span class="mod">+3</span></div>
+                        <div class="skill-item"><span>Nature (INT)</span><span class="mod">+4</span></div>
                         <div class="skill-item proficient"><span>Perception (WIS) ★</span><span class="mod">+3</span></div>
                         <div class="skill-item"><span>Performance (CHA)</span><span class="mod">-1</span></div>
                         <div class="skill-item"><span>Persuasion (CHA)</span><span class="mod">-1</span></div>
-                        <div class="skill-item"><span>Religion (INT)</span><span class="mod">+3</span></div>
+                        <div class="skill-item"><span>Religion (INT)</span><span class="mod">+4</span></div>
                         <div class="skill-item"><span>Sleight of Hand (DEX)</span><span class="mod">+2</span></div>
                         <div class="skill-item"><span>Stealth (DEX)</span><span class="mod">+2</span></div>
                         <div class="skill-item"><span>Survival (WIS)</span><span class="mod">+1</span></div>
@@ -1163,31 +1163,31 @@
                     <div class="grid-2" style="margin-top:6px;">
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">🛡️ Saves & Prepared Spells</h4>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Saves:</strong> <strong>INT (+5 ★)</strong>, <strong>WIS (+3 ★)</strong>, DEX (+2), CON (+2), STR (+0), CHA (-1).</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Prepared (5):</strong> Magic Missile (3x 1d4+1), Shield (+5 AC reaction), Thunderwave (2d8 thunder, DC 13 Con), Detect Magic, Ice Knife (+5 hit, 1d10 pierc + 2d6 cold, DC 13 Dex).</p>
-                            <p style="font-size: 0.78rem;">• <strong>Cantrips:</strong> Ray of Frost (+5 hit, 1d8 cold), Fire Bolt (+5 hit, 1d10 fire, 120ft, ignites objects), Mage Hand (15ft pull), Prestidigitation.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Saves:</strong> <strong>INT (+6 ★)</strong>, <strong>WIS (+3 ★)</strong>, DEX (+2), CON (+2), STR (+0), CHA (-1).</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Prepared (8):</strong> Magic Missile, Shield (+5 AC), Thunderwave (2d8 thunder, DC 14 Con), Detect Magic, Ice Knife (+6 hit, DC 14 Dex), Misty Step (30ft BA), Rime's Binding Ice (3d8 cold, DC 14 Con), Shatter (3d8 thunder, DC 14 Con).</p>
+                            <p style="font-size: 0.78rem;">• <strong>Cantrips:</strong> Ray of Frost (+6 hit, 1d8 cold), Fire Bolt (+6 hit, 1d10 fire, 120ft), Mage Hand (15ft pull), Prestidigitation, Shocking Grasp.</p>
                         </div>
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">⚔️ Attacks & Key Weapons</h4>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🏹 <strong>Sling of the Ridge-Runner (+1):</strong> +5 hit, 1d4+3 bludgeon, 30/120ft (no disadv).</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🏹 <strong>Sling / Bow of Ridge-Runner (+1):</strong> +5 hit, 1d4+3 bludgeon, 30/120ft (no disadv).</p>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🗡️ <strong>Zombie Captain's Cutlass:</strong> +4 hit, 1d6+2 slash (swimming speed 30ft).</p>
-                            <p style="font-size: 0.78rem;">• ⚡ <strong>Astalagan's Amber Scale:</strong> +1 to Lightning Spells (DC 14 / +6 hit), 1/Day +1d6 Lightning Surge, Cleanses curses.</p>
+                            <p style="font-size: 0.78rem;">• ⚡ <strong>Astalagan's Awakened Amber Scale:</strong> +1 DC/Hit to Lightning Spells, 1/Day +1d6 Lightning Surge, Purifies Undead.</p>
                         </div>
                     </div>
 
                     <div style="background-color: #090e18; border: 1px solid var(--border-color); padding: 8px 12px; border-radius: 5px; margin-top: 10px;">
                         <strong style="color: var(--accent-gold); font-size: 0.82rem;">🎒 Complete Tracked Inventory:</strong>
                         <p style="font-size: 0.78rem; color: #cbd5e1; margin-top: 3px;">
-                            📜 Lianna's Farewell Letter (The Archmage's Vow) | 🥽 Myla's Draconic Abyssal Goggles (Darkvision 60ft & Underwater Clarity) | ⚡ Astalagan's Awakened Amber Scale | 🪄 Wand of Magic Missiles (7 Charges) | 👘 Robe of Arcane Reserve | 🧲 Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand) | 🏹 Sling (+1) & Shortsword & Zombie Captain's Cutlass | 📜 Scroll of Absorb Elements | 🤿 Spore-Filter Mask | 🧪 9 Potions of Healing | 🍞 5 Specialty Breads & Bagel (+2 AC) | 📖 Spellbook | 💰 28 gp, 9 sp.
+                            📜 Lianna's Letters (The Archmage's Vow & Reef Letter) | 🥽 Myla's Draconic Abyssal Goggles (Darkvision 60ft & Underwater Clarity) | ⚡ Astalagan's Awakened Amber Scale | 🪄 Wand of Magic Missiles (7 Charges) | 👘 Robe of Arcane Reserve | 🧲 Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand) | 🏹 Sling (+1) & Shortsword & Zombie Captain's Cutlass | 📜 Scroll of Absorb Elements | 🤿 Spore-Filter Mask | 🧪 1x Potion of Water Breathing | 🍷 1x Elixir of Health (Legendary) | 🧀 Cheese Bread & 🌟 Eflein's Special Bread | 📖 Spellbook (17 spells) | 💰 28 gp, 9 sp.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- SYLVAR LINK (HALF-TABAXI WHISPERS BARD 3) CARD -->
+            <!-- SYLVAR LINK (HALF-TABAXI WHISPERS BARD 4) CARD -->
             <div class="card pc-card mb-4" id="card-sylvar">
                 <div class="card-header">
-                    <h3 class="clickable-title" onclick="openQuestModal('quest_sylvar')">🐾 Sylvar Link (Level 3 Whispers Bard)</h3>
+                    <h3 class="clickable-title" onclick="openQuestModal('quest_sylvar')">🐾 Sylvar Link (Level 4 Whispers Bard)</h3>
                     <span class="tag tag-uncommon" style="background:#581c87; color:#f3e8ff; border:1px solid #9333ea;">College of Whispers</span>
                 </div>
                 <div class="card-body">
@@ -1198,8 +1198,8 @@
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn danger-step" onclick="adjustCharStat('sylvar', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-good" id="val-sylvar-hp">27</span>
-                                <span class="tracker-max-label">/ 27</span>
+                                <span class="tracker-num hp-good" id="val-sylvar-hp">31</span>
+                                <span class="tracker-max-label">/ 31</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'hp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
@@ -1228,10 +1228,10 @@
                             <label>🛡️ ARMOR CLASS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'tempAc', -1)">-</button>
-                                <span class="tracker-num ac-num" id="val-sylvar-ac">15</span>
+                                <span class="tracker-num ac-num" id="val-sylvar-ac">16</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'tempAc', 1)">+</button>
                             </div>
-                            <div class="tracker-subtext" id="sub-sylvar-ac">Base: 15 (Leather + DEX +3 + Cloak of Protection) | Temp: +0</div>
+                            <div class="tracker-subtext" id="sub-sylvar-ac">Base: 16 (Leather + DEX +4 + Cloak of Protection) | Temp: +0</div>
                             <div class="tracker-quick-row">
                                 <button class="tracker-mini-pill pill-gold" onclick="adjustCharStat('sylvar', 'tempAc', 2)">+2 Shield</button>
                                 <button class="tracker-mini-pill" onclick="resetCharTempAc('sylvar')">0</button>
@@ -1243,8 +1243,8 @@
                             <label>🪘 INSPIRATION (d6)</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'insp', -1)">-</button>
-                                <span class="tracker-num slots-num" id="val-sylvar-insp" style="color:#c084fc;">3</span>
-                                <span class="tracker-max-label">/ 3</span>
+                                <span class="tracker-num slots-num" id="val-sylvar-insp" style="color:#c084fc;">4</span>
+                                <span class="tracker-max-label">/ 4</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'insp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
@@ -1271,8 +1271,8 @@
                         <!-- INITIATIVE STAT -->
                         <div class="tracker-card">
                             <label>⚡ INITIATIVE</label>
-                            <div style="font-family:'JetBrains Mono',monospace; font-size:1.18rem; font-weight:800; color:#86efac; margin:4px 0;">+3</div>
-                            <div class="tracker-subtext">DEX +3 • Feline Agility</div>
+                            <div style="font-family:'JetBrains Mono',monospace; font-size:1.18rem; font-weight:800; color:#86efac; margin:4px 0;">+4</div>
+                            <div class="tracker-subtext">DEX +4 • Feline Agility</div>
                         </div>
                     </div>
 
@@ -1284,11 +1284,11 @@
                         </div>
                         <div class="resource-chip">
                             <strong>🗡️ Rapier Strike:</strong>
-                            <span style="color:#c084fc; font-weight:600;">+5 Hit (1d8+3 + 2d6 Psychic)</span>
+                            <span style="color:#c084fc; font-weight:600;">+6 Hit (1d8+4 + 2d6 Psychic)</span>
                         </div>
                         <div class="resource-chip">
                             <strong>🔮 Spell Slots:</strong>
-                            <span style="color:#a78bfa; font-weight:600;">Lv1: 4/4 | Lv2: 2/2</span>
+                            <span style="color:#a78bfa; font-weight:600;">Lv1: 4/4 | Lv2: 3/3</span>
                         </div>
                         <div class="resource-chip">
                             <strong>🐾 Blind Tremorsense:</strong>
@@ -1296,16 +1296,16 @@
                         </div>
                         <div class="resource-chip">
                             <strong>🪙 Coin Purse:</strong>
-                            <span style="color:#fbbf24; font-weight:600;">15 GP, 0 SP</span>
+                            <span style="color:#fbbf24; font-weight:600;">415 GP, 0 SP</span>
                         </div>
                     </div>
 
                     <div class="pc-header-grid" style="margin-top:6px;">
                         <div>
                             <p><strong>Archetype:</strong> <span style="color: #c084fc; font-weight:bold;">Acoustic Infiltrator & Whispering Blade</span> | <strong>Destined Relic:</strong> 🌪️ Scale of the Zephyr (Clyssavar's Silver Scale)</p>
-                            <p><strong>Combat Loadout:</strong> Rapier (+5, 1d8+3), 2x Daggers (+5, 1d4+3), Tambourine (Focus), Leather Armor, Cloak of Protection (+1 AC/Saves), 2x Spitfire Flasks, Potion of Healing, Kobold Sweetbread Roll, 15 GP, 0 SP.</p>
+                            <p><strong>Combat Loadout:</strong> 🗡️ Rapier (+6, 1d8+4), 🗡️ <strong>Sentry Zik's Dagger (+1)</strong> (+7, 1d4+5), 2x Daggers (+6, 1d4+4), 🪶 <strong>Sentry Zik's Remains & Silk Ribbon</strong>, 🍷 <strong>1x Elixir of Health (Legendary)</strong>, 💣 1x Spitfire Flask, 🛡️ Cloak of Protection, 🪘 Tambourine, 🎸 Lute & Guitar, 👗 Neko Maid Costume, 415 GP.</p>
                             <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">
-                                <em>Skills: Performance (+7 ★), Persuasion (+7 ★), Acrobatics (+5 ★), Insight (+3 ★), Perception (+3 ★). Full sheet: <a href="SYLVAR_PLAYER_SHEET.html" style="color:#c084fc; text-decoration:underline;">SYLVAR_PLAYER_SHEET.html</a></em>
+                                <em>Skills: Performance (+8 ★), Persuasion (+8 ★), Acrobatics (+6 ★), Insight (+3 ★), Perception (+3 ★). Full sheet: <a href="SYLVAR_PLAYER_SHEET.html" style="color:#c084fc; text-decoration:underline;">SYLVAR_PLAYER_SHEET.html</a></em>
                             </p>
                         </div>
                     </div>
@@ -1316,7 +1316,7 @@
             <div class="card pc-card mb-4" id="card-father_flubs">
                 <div class="card-header">
                     <h3 class="clickable-title" onclick="openNpcModal('father_flubs')">🍷 Father Flubs — Life Domain Cleric</h3>
-                    <span class="tag tag-uncommon">Level 3 Cleric</span>
+                    <span class="tag tag-uncommon">Level 4 Cleric</span>
                 </div>
                 <div class="card-body">
                     <!-- INTERACTIVE VITALS TRACKER -->
@@ -1326,8 +1326,8 @@
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn danger-step" onclick="adjustCharStat('father_flubs', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-good" id="val-father_flubs-hp">24</span>
-                                <span class="tracker-max-label">/ 24</span>
+                                <span class="tracker-num hp-good" id="val-father_flubs-hp">31</span>
+                                <span class="tracker-max-label">/ 31</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('father_flubs', 'hp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
@@ -1408,7 +1408,7 @@
                     <div class="pc-resources-bar">
                         <div class="resource-chip">
                             <strong>🕊️ Channel Divinity (1/SR):</strong>
-                            <button id="btn-father_flubs-channelDivinity" class="resource-toggle-btn ready" onclick="toggleResource('father_flubs', 'channelDivinity')">Ready (Preserve Life 15 HP)</button>
+                            <button id="btn-father_flubs-channelDivinity" class="resource-toggle-btn ready" onclick="toggleResource('father_flubs', 'channelDivinity')">Ready (Preserve Life 20 HP)</button>
                         </div>
                         <div class="resource-chip">
                             <strong>🌿 Disciple of Life:</strong>
@@ -1424,9 +1424,9 @@
                         <div>
                             <p><strong>Alignment:</strong> <span style="color: var(--accent-gold);">Neutral Good</span> | <strong>Background:</strong> Acolyte | <strong>Titles:</strong> <strong>« The Serpent Rider »</strong> & <strong>« Warden of the Living Grove »</strong></p>
                             <p><strong>Archetype:</strong> Priest, War Veteran, Drunkard, Fire-Serpent Rider (Keeper of Sharruth's secret; drinks & jokes to outrun fear of oblivion).</p>
-                            <p><strong>Channel Divinity (1/SR):</strong> 🕊️ <strong>Preserve Life</strong> (Heals up to 15 HP distributed to bloodied allies within 30 ft).</p>
+                            <p><strong>Channel Divinity (1/SR):</strong> 🕊️ <strong>Preserve Life</strong> (Heals up to 20 HP distributed to bloodied allies within 30 ft).</p>
                             <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">
-                                <strong>Spell Save DC:</strong> <span style="color:var(--accent-gold); font-weight:bold;">13</span> (8+2PB+3WIS) | <strong>Spell Attack:</strong> <span style="color:var(--accent-gold); font-weight:bold;">+5</span>
+                                <strong>Spell Save DC:</strong> <span style="color:var(--accent-gold); font-weight:bold;">14</span> (8+2PB+4WIS) | <strong>Spell Attack:</strong> <span style="color:var(--accent-gold); font-weight:bold;">+6</span>
                             </p>
                         </div>
                     </div>
@@ -1436,7 +1436,7 @@
                         <div><label>DEX</label><span>10 (+0)</span></div>
                         <div><label>CON</label><span>14 (+2)</span></div>
                         <div><label>INT</label><span>12 (+1)</span></div>
-                        <div><label>WIS ★</label><span>16 (+3)</span></div>
+                        <div><label>WIS ★</label><span>18 (+4)</span></div>
                         <div><label>CHA ★</label><span>13 (+1)</span></div>
                     </div>
 
@@ -1444,40 +1444,40 @@
                     <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin: 8px 0 4px 0;">🎯 Father Flubs' Full 18 Skills & Modifiers:</h4>
                     <div class="skills-matrix">
                         <div class="skill-item"><span>Acrobatics (DEX)</span><span class="mod">+0</span></div>
-                        <div class="skill-item"><span>Animal Handling (WIS)</span><span class="mod">+3</span></div>
+                        <div class="skill-item"><span>Animal Handling (WIS)</span><span class="mod">+4</span></div>
                         <div class="skill-item"><span>Arcana (INT)</span><span class="mod">+1</span></div>
                         <div class="skill-item"><span>Athletics (STR)</span><span class="mod">+1</span></div>
                         <div class="skill-item"><span>Deception (CHA)</span><span class="mod">+1</span></div>
                         <div class="skill-item"><span>History (INT)</span><span class="mod">+1</span></div>
-                        <div class="skill-item proficient"><span>Insight (WIS) ★</span><span class="mod">+5</span></div>
+                        <div class="skill-item proficient"><span>Insight (WIS) ★</span><span class="mod">+6</span></div>
                         <div class="skill-item"><span>Intimidation (CHA)</span><span class="mod">+1</span></div>
                         <div class="skill-item"><span>Investigation (INT)</span><span class="mod">+1</span></div>
-                        <div class="skill-item proficient"><span>Medicine (WIS) ★</span><span class="mod">+5</span></div>
+                        <div class="skill-item proficient"><span>Medicine (WIS) ★</span><span class="mod">+6</span></div>
                         <div class="skill-item"><span>Nature (INT)</span><span class="mod">+1</span></div>
-                        <div class="skill-item"><span>Perception (WIS)</span><span class="mod">+3</span></div>
+                        <div class="skill-item proficient"><span>Perception (WIS) ★</span><span class="mod">+6</span></div>
                         <div class="skill-item"><span>Performance (CHA)</span><span class="mod">+1</span></div>
                         <div class="skill-item proficient"><span>Persuasion (CHA) ★</span><span class="mod">+3</span></div>
                         <div class="skill-item proficient"><span>Religion (INT) ★</span><span class="mod">+3</span></div>
                         <div class="skill-item"><span>Sleight of Hand (DEX)</span><span class="mod">+0</span></div>
                         <div class="skill-item"><span>Stealth (DEX)</span><span class="mod">+0</span></div>
-                        <div class="skill-item"><span>Survival (WIS)</span><span class="mod">+3</span></div>
+                        <div class="skill-item"><span>Survival (WIS)</span><span class="mod">+4</span></div>
                     </div>
 
                     <div class="grid-2" style="margin-top:6px;">
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">🍷 Holy Spells & Miracles</h4>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🌿 <strong>Disciple of Life:</strong> Healing spells heal extra <code>+2 + Level</code> HP!</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🍷 <strong>Healing Word:</strong> Bonus Action • 60ft • <strong>1d4 + 6 HP</strong> (Life Boost).</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🐾 <strong>Speak with Animals:</strong> Innate Ritual (Free / 1st Lvl) • Beast Communion.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🍷 <strong>Healing Word:</strong> Bonus Action • 60ft • <strong>1d4 + 7 HP</strong> (Life Boost).</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• ⚔️ <strong>Spiritual Weapon:</strong> 1d8+4 Force BA attack every round (Level 2 Domain Spell).</p>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• 💧 <strong>Bless (Holy Water Splash):</strong> +1d4 to Attacks & Saves (3 allies).</p>
-                            <p style="font-size: 0.78rem;">• ☀️ <strong>Guiding Bolt:</strong> +5 to hit, 4d6 Radiant + next attack against target has Advantage.</p>
+                            <p style="font-size: 0.78rem;">• ☀️ <strong>Guiding Bolt:</strong> +6 to hit, 4d6 Radiant + next attack against target has Advantage.</p>
                         </div>
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">🎒 Status & Belongings</h4>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Gear:</strong> Heavy Mace (+3 hit), Scale Mail, Holy Wooden Shield, Kobold Shield.</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🐍 <strong>Pet Companion:</strong> <a href="THURIBLE_COMPANION_SHEET.html" target="_blank" style="color:#fdba74; font-weight:700; text-decoration:underline;">Thurible the Fire Snake</a> (HP 32, AC 14, <strong>10ft Cold Immunity Aura</strong>, 🐍 Bite +4 [1d6+2 + 1d6], 💥 Whip +4 [1d4+2 + 1d6, 10ft Push DC 13], 🌊 Constrict [DC 13 Restrain] • <em>Official Sacred Mascot of Dragon's Rest</em>).</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🍾 <strong>Sacred Relic:</strong> Father Flubs' Reclaimed Vintage Wine Jug (<em>The Vintage of the Dawn Watch</em>).</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🧪 <strong>Crafted Potions & Wealth:</strong> 13x Potions of Healing (Bonus: 2d6 / Action: Full Heal), 3x Legendary Elixirs of Health, 2x Drake Blood Potions, 52 gp, 5 sp.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🐍 <strong>Pet Companion:</strong> <a href="THURIBLE_COMPANION_SHEET.html" target="_blank" style="color:#fdba74; font-weight:700; text-decoration:underline;">Thurible the Fire Snake</a> (HP 40, AC 14, <strong>10ft Cold Immunity Aura</strong>, 🐍 Bite +4 [1d6+2 + 1d6], 💥 Whip +4 [1d4+2 + 1d6, 10ft Push DC 13], 🌊 Constrict [DC 13 Restrain] • <em>Official Sacred Mascot of Dragon's Rest</em>).</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🍾 <strong>Sacred Relic:</strong> Father Flubs' Reclaimed Vintage Wine Jug (<em>The Vintage of the Dawn Watch</em>), 📿 The Enlightened Bone Charm.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🧪 <strong>Crafted Potions & Wealth:</strong> 10x Potions of Healing, 1x Legendary Elixir of Health, 2x Drake Blood Potions, Pure Drake Blood Jar, Animal Remains Jar, Pirate Hat, 3-Circle Amulet, 52 gp, 5 sp.</p>
                         </div>
                     </div>
                 </div>
@@ -1487,7 +1487,7 @@
             <div class="card pc-card mb-4" id="card-varnoth">
                 <div class="card-header">
                     <h3 class="clickable-title" onclick="openNpcModal('varnoth')">🛡️ General Varnoth — Martial Defender (Lead DM Controlled)</h3>
-                    <span class="tag tag-crimson" style="background:#3b1419; color:#fca5a5; border:1px solid #5c1f26;">Martial Defender 3</span>
+                    <span class="tag tag-crimson" style="background:#3b1419; color:#fca5a5; border:1px solid #5c1f26;">Martial Defender 4</span>
                 </div>
                 <div class="card-body">
                     <!-- INTERACTIVE VITALS TRACKER -->
@@ -1497,8 +1497,8 @@
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn danger-step" onclick="adjustCharStat('varnoth', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-good" id="val-varnoth-hp">29</span>
-                                <span class="tracker-max-label">/ 29</span>
+                                <span class="tracker-num hp-good" id="val-varnoth-hp">36</span>
+                                <span class="tracker-max-label">/ 36</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('varnoth', 'hp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
@@ -1549,7 +1549,7 @@
                             <label>🤝 HELP TOKENS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('varnoth', 'helpTokens', -1)">-</button>
-                                <span class="tracker-num" id="val-varnoth-helpTokens" style="color:#67e8f9;">1</span>
+                                <span class="tracker-num" id="val-varnoth-helpTokens" style="color:#67e8f9;">2</span>
                                 <span class="tracker-max-label">/ 2</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('varnoth', 'helpTokens', 1)">+</button>
                             </div>
@@ -1563,7 +1563,7 @@
                         <div class="tracker-card">
                             <label>⚡ INITIATIVE</label>
                             <div style="font-family:'JetBrains Mono',monospace; font-size:1.18rem; font-weight:800; color:#86efac; margin:4px 0;">+0</div>
-                            <div class="tracker-subtext">+0 DEX Modifier</div>
+                            <div class="tracker-subtext">+0 DEX (Advantage)</div>
                         </div>
                     </div>
 
@@ -1571,7 +1571,7 @@
                     <div class="pc-resources-bar">
                         <div class="resource-chip">
                             <strong>💨 Second Wind (1/SR):</strong>
-                            <button id="btn-varnoth-secondWind" class="resource-toggle-btn ready" onclick="triggerVarnothSecondWind()">Ready (Heals 1d10+3)</button>
+                            <button id="btn-varnoth-secondWind" class="resource-toggle-btn ready" onclick="triggerVarnothSecondWind()">Ready (Heals 1d10+4)</button>
                         </div>
                         <div class="resource-chip">
                             <strong>⚡ Action Surge (1/SR):</strong>
@@ -1591,7 +1591,7 @@
                         <div>
                             <p><strong>Alignment:</strong> <span style="color: #fca5a5;">Lawful Neutral / Good</span> | <strong>Background:</strong> Veteran Commander (Azure Wolves) | <strong>Titles:</strong> <strong>« Warden of the Living Grove »</strong> & <strong>« The Indomitable Iron-Oak »</strong></p>
                             <p><strong>Archetype:</strong> Battle-scarred mercenary commander with cheek scar and wooden peg leg. Gruff, protective frontline anchor.</p>
-                            <p><strong>Key Traits:</strong> 💥 <strong>Improved Critical (19-20)</strong> | ⚡ <strong>Battle Readiness (Adv on Init)</strong> | 🛡️ <strong>Protection Reaction</strong> | 💨 <strong>Second Wind</strong> (1d10+3 HP)</p>
+                            <p><strong>Key Traits:</strong> 💥 <strong>Improved Critical (19-20)</strong> | ⚡ <strong>Battle Readiness (Adv on Init)</strong> | 🛡️ <strong>Protection Reaction</strong> | 💨 <strong>Second Wind</strong> (1d10+4 HP)</p>
                         </div>
                     </div>
 
@@ -1630,7 +1630,7 @@
                     <div class="grid-2" style="margin-top:6px;">
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">⚔️ Martial Attacks & Actions</h4>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🗡️ <strong>Azure Wolf Longsword:</strong> <strong>+4 to hit</strong>, <strong>1d8 + 2</strong> (1H) / <strong>1d10 + 2</strong> (2H) slashing.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🗡️ <strong>Azure Wolf Longsword:</strong> <strong>+6 to hit</strong>, <strong>1d8 + 4</strong> (1H) / <strong>1d10 + 4</strong> (2H) slashing (Crits on 19-20!).</p>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🏹 <strong>Heavy Crossbow:</strong> <strong>+2 to hit</strong>, range 100/400 ft, <strong>1d10</strong> piercing.</p>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🪓 <strong>Shield Bash:</strong> Athletics (+4) vs target check ➔ Knock Prone or push 5 ft.</p>
                             <p style="font-size: 0.78rem;">• 🪵 <strong>Peg Leg Kick:</strong> <strong>+4 to hit</strong>, reach 5ft, <strong>1d4 + 2</strong> bludgeoning.</p>
@@ -1638,8 +1638,8 @@
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">📜 Proficiencies & Tactics</h4>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Saves:</strong> <strong>STR (+4 ★)</strong>, <strong>CON (+4 ★)</strong>, WIS (+2), INT (+1), CHA (+1), DEX (+0).</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px; color:#86efac;">• <strong>Equipment & Wealth:</strong> Splint Mail, Shield, Longsword, Heavy Crossbow, 🪓 Twin Notched Bone-Cleavers (Trophy), 8 gp, 6 sp.</p>
-                            <p style="font-size: 0.78rem; color:#fca5a5;">• 🛡️ <strong>Combat Role:</strong> Stands adjacent to Eflein/Vaelith, taunting foes and triggering Protection Reaction to block attacks.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px; color:#86efac;">• <strong>Equipment & Wealth:</strong> Splint Mail, Shield, Honed Longsword, Heavy Crossbow, 🪓 Twin Notched Bone-Cleavers, 🍷 <strong>1x Elixir of Health (Legendary)</strong>, 🧪 1x Potion of Healing, 8 gp, 6 sp.</p>
+                            <p style="font-size: 0.78rem; color:#fca5a5;">• 🛡️ <strong>Combat Role:</strong> Stands adjacent to Eflein/Sylvar, taunting foes and triggering Protection Reaction to block attacks.</p>
                         </div>
                     </div>
                 </div>
@@ -5377,18 +5377,20 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
     // ==========================================
     // 🧙‍♂️ PARTY CHARACTER LIVE STATS & TRACKER ENGINE
     // ==========================================
-    const PARTY_STORAGE_KEY = "stormwreck_party_vitals_v3";
+    const PARTY_STORAGE_KEY = "stormwreck_party_vitals_v4";
 
     const DEFAULT_PARTY_DATA = {
         eflein: {
-            hp: 20,
-            maxHp: 20,
+            hp: 26,
+            maxHp: 26,
             tempHp: 0,
             baseAc: 12,
             mageArmor: false,
             tempAc: 0,
             slots1: 4,
             maxSlots1: 4,
+            slots2: 3,
+            maxSlots2: 3,
             helpTokens: 2,
             maxHelpTokens: 2,
             arcaneRecovery: true,
@@ -5396,34 +5398,38 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             robeReserve: true
         },
         sylvar: {
-            hp: 27,
-            maxHp: 27,
+            hp: 31,
+            maxHp: 31,
             tempHp: 0,
-            baseAc: 15,
+            baseAc: 16,
             tempAc: 0,
-            insp: 3,
-            maxInsp: 3,
+            insp: 4,
+            maxInsp: 4,
             slots1: 4,
             maxSlots1: 4,
+            slots2: 3,
+            maxSlots2: 3,
             helpTokens: 2,
             maxHelpTokens: 2
         },
         father_flubs: {
-            hp: 24,
-            maxHp: 24,
+            hp: 31,
+            maxHp: 31,
             tempHp: 0,
             baseAc: 16,
             tempAc: 0,
             slots1: 4,
             maxSlots1: 4,
+            slots2: 3,
+            maxSlots2: 3,
             helpTokens: 2,
             maxHelpTokens: 2,
             channelDivinity: true,
             wineFlask: true
         },
         varnoth: {
-            hp: 29,
-            maxHp: 29,
+            hp: 36,
+            maxHp: 36,
             tempHp: 0,
             baseAc: 17,
             tempAc: 0,
@@ -5438,7 +5444,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
 
     function loadPartyState() {
         try {
-            const saved = localStorage.getItem(PARTY_STORAGE_KEY) || localStorage.getItem("stormwreck_party_vitals_v2");
+            const saved = localStorage.getItem(PARTY_STORAGE_KEY) || localStorage.getItem("stormwreck_party_vitals_v3");
             if (saved) {
                 const parsed = JSON.parse(saved);
                 partyState = Object.assign({}, DEFAULT_PARTY_DATA, parsed);
@@ -5495,7 +5501,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         if (eHelpEl) eHelpEl.innerText = e.helpTokens;
 
         updateToggleBtn('btn-eflein-mageArmor', e.mageArmor, "Active (AC 15)", "Inactive (AC 12)");
-        updateToggleBtn('btn-eflein-arcaneRecovery', e.arcaneRecovery, "Ready (+1 Slot/SR)", "Used (Long Rest)");
+        updateToggleBtn('btn-eflein-arcaneRecovery', e.arcaneRecovery, "Ready (+2 Slots/SR)", "Used (Long Rest)");
         updateToggleBtn('btn-eflein-lightningSurge', e.lightningSurge, "Ready (+1d6)", "Expended");
         updateToggleBtn('btn-eflein-robeReserve', e.robeReserve, "Ready (+1 Slot)", "Empty");
 
@@ -5504,20 +5510,20 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         const sHpEl = document.getElementById('val-sylvar-hp');
         if (sHpEl) {
             sHpEl.innerText = s.hp;
-            setHpColorClass(sHpEl, s.hp, s.maxHp || 21);
+            setHpColorClass(sHpEl, s.hp, s.maxHp || 31);
         }
         const sTempHpEl = document.getElementById('val-sylvar-tempHp');
         if (sTempHpEl) sTempHpEl.innerText = s.tempHp || 0;
 
-        const totalSylvarAc = 12 + (s.tempAc || 0);
+        const totalSylvarAc = (s.baseAc || 16) + (s.tempAc || 0);
         const sAcEl = document.getElementById('val-sylvar-ac');
         if (sAcEl) sAcEl.innerText = totalSylvarAc;
         const sAcSub = document.getElementById('sub-sylvar-ac');
         if (sAcSub) {
-            sAcSub.innerText = `Base: 12 (Leather+Cloak) | Temp: ${s.tempAc >= 0 ? '+' + s.tempAc : s.tempAc}`;
+            sAcSub.innerText = `Base: 16 (Leather+DEX+Cloak) | Temp: ${s.tempAc >= 0 ? '+' + s.tempAc : s.tempAc}`;
         }
         const sInspEl = document.getElementById('val-sylvar-insp');
-        if (sInspEl) sInspEl.innerText = s.insp !== undefined ? s.insp : 3;
+        if (sInspEl) sInspEl.innerText = s.insp !== undefined ? s.insp : 4;
         const sHelpEl = document.getElementById('val-sylvar-helpTokens');
         if (sHelpEl) sHelpEl.innerText = s.helpTokens !== undefined ? s.helpTokens : 2;
 
@@ -5543,7 +5549,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         const hHelpEl = document.getElementById('val-father_flubs-helpTokens');
         if (hHelpEl) hHelpEl.innerText = h.helpTokens;
 
-        updateToggleBtn('btn-father_flubs-channelDivinity', h.channelDivinity, "Ready (Preserve Life 10 HP)", "Used (Short Rest)");
+        updateToggleBtn('btn-father_flubs-channelDivinity', h.channelDivinity, "Ready (Preserve Life 20 HP)", "Used (Short Rest)");
         updateToggleBtn('btn-father_flubs-wineFlask', h.wineFlask, "Ready", "Empty");
 
         // --- VARNOTH ---
@@ -5566,7 +5572,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         const gHelpEl = document.getElementById('val-varnoth-helpTokens');
         if (gHelpEl) gHelpEl.innerText = g.helpTokens;
 
-        updateToggleBtn('btn-varnoth-secondWind', g.secondWind, "Ready (Heals 1d10+3)", "Used (Short Rest)");
+        updateToggleBtn('btn-varnoth-secondWind', g.secondWind, "Ready (Heals 1d10+4)", "Used (Short Rest)");
         updateToggleBtn('btn-varnoth-actionSurge', g.actionSurge, "Ready (+1 Action)", "Used (Short Rest)");
 
         // --- STICKY FOOTER SYNC ---
@@ -5576,7 +5582,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
     function rollSylvarPsychicBlades() {
         if (!partyState.sylvar) partyState.sylvar = JSON.parse(JSON.stringify(DEFAULT_PARTY_DATA.sylvar));
         if (partyState.sylvar.insp <= 0) {
-            alert("No Bardic Inspiration dice remaining! (3/Long Rest)");
+            alert("No Bardic Inspiration dice remaining! (4/Long Rest)");
             return;
         }
         partyState.sylvar.insp -= 1;
@@ -5587,7 +5593,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         const box = document.getElementById('dm-init-console');
         if (box) {
             box.style.display = 'block';
-            box.innerHTML = `🧠 <strong>Sylvar Psychic Blades Infusion:</strong> Dealt <span style="color:#c084fc; font-weight:800;">${tot} Psychic Damage</span> [2d6: ${p1}+${p2}]! (${partyState.sylvar.insp}/3 inspiration remaining)`;
+            box.innerHTML = `🧠 <strong>Sylvar Psychic Blades Infusion:</strong> Dealt <span style="color:#c084fc; font-weight:800;">${tot} Psychic Damage</span> [2d6: ${p1}+${p2}]! (${partyState.sylvar.insp}/4 inspiration remaining)`;
         }
     }
 
@@ -5601,15 +5607,15 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         if (!bar) return;
         
         const eAc = (e.mageArmor ? 15 : 12) + e.tempAc;
-        const sAc = 12 + (s.tempAc || 0);
+        const sAc = (s.baseAc || 16) + (s.tempAc || 0);
         const hAc = 16 + h.tempAc;
         const gAc = 17 + g.tempAc;
 
         bar.innerHTML = `
             <div class="quick-item">🎲 <strong>DCs:</strong> Easy 10 | Mod 15 | Hard 20</div>
-            <div class="quick-item">⚡ <strong>Eflein:</strong> HP ${e.hp}/${e.maxHp}${e.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+e.tempHp+')</span>' : ''} | AC ${eAc} | Slots: ${e.slots1}/3 | 🤝 ${e.helpTokens}/2</div>
-            <div class="quick-item">🐾 <strong>Sylvar:</strong> HP ${s.hp}/${s.maxHp || 27}${s.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+s.tempHp+')</span>' : ''} | AC ${sAc} | Insp: ${s.insp}/3 | 🤝 ${s.helpTokens}/2</div>
-            <div class="quick-item">🍷 <strong>Father Flubs:</strong> HP ${h.hp}/${h.maxHp}${h.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+h.tempHp+')</span>' : ''} | AC ${hAc} | Slots: ${h.slots1}/3 | 🤝 ${h.helpTokens}/2</div>
+            <div class="quick-item">⚡ <strong>Eflein:</strong> HP ${e.hp}/${e.maxHp}${e.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+e.tempHp+')</span>' : ''} | AC ${eAc} | Slots: ${e.slots1}/4 | 🤝 ${e.helpTokens}/2</div>
+            <div class="quick-item">🐾 <strong>Sylvar:</strong> HP ${s.hp}/${s.maxHp || 31}${s.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+s.tempHp+')</span>' : ''} | AC ${sAc} | Insp: ${s.insp}/4 | 🤝 ${s.helpTokens}/2</div>
+            <div class="quick-item">🍷 <strong>Father Flubs:</strong> HP ${h.hp}/${h.maxHp}${h.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+h.tempHp+')</span>' : ''} | AC ${hAc} | Slots: ${h.slots1}/4 | 🤝 ${h.helpTokens}/2</div>
             <div class="quick-item">🛡️ <strong>Varnoth:</strong> HP ${g.hp}/${g.maxHp}${g.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+g.tempHp+')</span>' : ''} | AC ${gAc} | 🤝 ${g.helpTokens}/2</div>
         `;
     }
@@ -5638,29 +5644,6 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             btn.className = "resource-toggle-btn used";
             btn.innerText = usedText;
         }
-    }
-
-    function updateFooterQuickBar() {
-        const e = partyState.eflein;
-        const v = partyState.vaelith;
-        const h = partyState.father_flubs;
-        const g = partyState.varnoth;
-        
-        const bar = document.querySelector('.quick-bar');
-        if (!bar) return;
-        
-        const eAc = (e.mageArmor ? 15 : 12) + e.tempAc;
-        const vAc = 16 + v.tempAc;
-        const hAc = 16 + h.tempAc;
-        const gAc = 17 + g.tempAc;
-
-        bar.innerHTML = `
-            <div class="quick-item">🎲 <strong>DCs:</strong> Easy 10 | Mod 15 | Hard 20</div>
-            <div class="quick-item">⚡ <strong>Eflein:</strong> HP ${e.hp}/${e.maxHp}${e.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+e.tempHp+')</span>' : ''} | AC ${eAc} | Slots: ${e.slots1}/3 | 🤝 ${e.helpTokens}/2</div>
-            <div class="quick-item">🛡️ <strong>New Hero:</strong> HP ${v.hp}/${v.maxHp}${v.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+v.tempHp+')</span>' : ''} | AC ${vAc} | Slots: ${v.pactSlots}/2 | 🤝 ${v.helpTokens}/2</div>
-            <div class="quick-item">🍷 <strong>Father Flubs:</strong> HP ${h.hp}/${h.maxHp}${h.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+h.tempHp+')</span>' : ''} | AC ${hAc} | Slots: ${h.slots1}/3 | 🤝 ${h.helpTokens}/2</div>
-            <div class="quick-item">🛡️ <strong>Varnoth:</strong> HP ${g.hp}/${g.maxHp}${g.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+g.tempHp+')</span>' : ''} | AC ${gAc} | 🤝 ${g.helpTokens}/2</div>
-        `;
     }
 
     function adjustCharStat(charId, stat, delta) {

@@ -1210,6 +1210,7 @@
         "🥋 Splint Mail Armor",
         "🏹 Heavy Crossbow",
         "🪓 Twin Notched Bone-Cleavers",
+        "🍷 1x Elixir of Health (Legendary)",
         "🧪 1x Potion of Healing"
     ];
 
@@ -2253,18 +2254,18 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     }
 
     function getStoredItems() {
-        let stored = localStorage.getItem('dnd_inv_varnoth_v21');
+        let stored = localStorage.getItem('dnd_inv_varnoth_v22');
         if (!stored) {
-            for (let i = 1; i <= 20; i++) localStorage.removeItem(`dnd_inv_varnoth_v${i}`);
+            for (let i = 1; i <= 21; i++) localStorage.removeItem(`dnd_inv_varnoth_v${i}`);
             localStorage.removeItem('dnd_inv_varnoth');
-            localStorage.setItem('dnd_inv_varnoth_v21', JSON.stringify(defaultItems));
+            localStorage.setItem('dnd_inv_varnoth_v22', JSON.stringify(defaultItems));
             return [...defaultItems];
         }
         return JSON.parse(stored);
     }
 
     function saveItems(items) {
-        localStorage.setItem('dnd_inv_varnoth_v21', JSON.stringify(items));
+        localStorage.setItem('dnd_inv_varnoth_v22', JSON.stringify(items));
     }
 
     // Universal Item Quantity Parsing & Formatting Engine

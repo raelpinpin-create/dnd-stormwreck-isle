@@ -5,14 +5,14 @@
 
 ---
 
-## 🧙‍♂️ SECTION 0: PARTY CHARACTER SHEETS (LIVE SPECS — LEVEL 3 ACTIVE)
+## 🧙‍♂️ SECTION 0: PARTY CHARACTER SHEETS (LIVE SPECS — LEVEL 4 ACTIVE)
 
-### ⚡ 1. Eflein (High Elf Wizard 3 — Evocation Arcana)
+### ⚡ 1. Eflein (High Elf Wizard 4 — Evocation Arcana)
 * **Concept & Archetype:** Sage Background | **Chaotic Neutral** | **Title:** **« Warden of the Living Grove »** | **Yankee / Delinquent Archetype** (Brash posture, sharp mouth, hands in pockets, fiercely pragmatic and protective).
-* **Hit Points (HP):** **20 / 20** (Hit Dice: `3d6 + 6 CON` — Level 3 Upgraded) | **Armor Class (AC):** **12** *(15 with Mage Armor)* | **Speed:** 30 ft | **Passive Perception:** 13
-* **Spellcasting Specs:** Base Spell Save DC **13** *(DC 14 for Lightning)* | Base Spell Attack Bonus **+5** *(+6 for Lightning via Awakened Scale)* | **1st-Level Slots:** **4 / 4** *(Arcane Recovery used)* | **2nd-Level Slots:** **2 / 2** | 👘 **Robe of Arcane Reserve:** `1/1` | 🤝 **Help Tokens:** `2 / 2`
+* **Hit Points (HP):** **26 / 26** (Hit Dice: `4d6 + 8 CON` — Level 4 Upgraded) | **Armor Class (AC):** **12** *(15 with Mage Armor)* | **Speed:** 30 ft | **Passive Perception:** 13
+* **Spellcasting Specs:** Base Spell Save DC **14** *(DC 15 for Lightning)* | Base Spell Attack Bonus **+6** *(+7 for Lightning via Awakened Scale)* | **1st-Level Slots:** **4 / 4** | **2nd-Level Slots:** **3 / 3** | 👘 **Robe of Arcane Reserve:** `1/1` | 🤝 **Help Tokens:** `2 / 2`
 * **Evocation Features:** 🔮 **Evocation Savant** | 💥 **Sculpt Spells** (Protects allies from AoE damage!)
-* **Key Items:** 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Murky Underwater Clarity), 🪄 **Wand of Magic Missiles (7 Charges)**, Astalagan's Awakened Amber Scale (+1 Focus/DC), Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand), Robe of Arcane Reserve (+1 Slot), Shortsword & Cutlass, Sling of the Ridge-Runner (+1), Scroll of Absorb Elements, Spore-Filter Rebreather Mask, 9 Potions of Healing, 5 Specialty Breads & Bagel (+2 AC), 28 gp 9 sp.
+* **Key Items:** 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Murky Underwater Clarity), 🪄 **Wand of Magic Missiles (7 Charges)**, Astalagan's Awakened Amber Scale (+1 Focus/DC), Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand), Robe of Arcane Reserve (+1 Slot), Shortsword & Cutlass, Sling of the Ridge-Runner (+1), Scroll of Absorb Elements, Spore-Filter Rebreather Mask, 🧪 **1x Potion of Water Breathing**, 🍷 **1x Elixir of Health (Legendary)**, 🧀 Cheese Bread, 🌟 Eflein's Special Bread, 28 gp 9 sp.
 
 ### 🐾 2. Sylvar Link (Half-Tabaxi Bard 4 — College of Whispers)
 * **Concept & Archetype:** Entertainer Background | **Chaotic Good** | **Archetype:** **Blind Seismic Perceiver & Whispering Blade** (Charming femboy catboy, navigates the world through acoustic whiskers, floor vibrations, and tambourine rhythms like Toph; searching for his missing twin sister).
@@ -20,27 +20,27 @@
 * **Bardic Spellcasting Specs:** Spell Save DC **14** | Spell Attack Bonus **+6** | **1st-Level Spell Slots:** **4 / 4** | **2nd-Level Spell Slots:** **3 / 3** | **Bardic Inspiration:** `4 / 4` (d6) | 🤝 **Help Tokens:** `2 / 2`
 * **College of Whispers Features:** 🧠 **Psychic Blades** (+2d6 Psychic damage on weapon hit, costs 1 Insp die), 👁️ **Words of Terror** (Seed paranoia in 1 min conversation, DC 14 Wis save or Frightened 1 hr).
 * **Senses & Special Traits:** 🐾 **Blind Seismic Sense / Acoustic Blindsight (30–60 ft)** (Immune to visual dark/blind penalties; senses heartbeats, tremors, and footsteps), 🎶 **Song of Rest** (+1d6 HP on Short Rest), 🐾 **Feline Agility** (Burst to 60 ft speed).
-* **Key Gear & Weapons:** 🛡️ **Cloak of Protection** (+1 AC / +1 Saves), 🗡️ **Rapier (+6 hit, 1d8+4 + 2d6 Psychic Blades)**, 🗡️ Steel Dagger 2x (+6 hit, 1d4+4), 🪘 Tambourine (Focus), 🎸 Lute & Guitar, 👗 Neko Maid Costume, 💣 2x Spitfire Flasks (2d4 Fire), 🧪 1x Potion of Healing, 🍞 Kobold Sweetbread Roll, 415 gp 0 sp.
-* **Destiny Relic:** ❄️ **Clyssavar's Silver Harmonic Scale** (Trapped in Chapter 3 Compass Rose hold).
+* **Key Gear & Weapons:** 🛡️ **Cloak of Protection** (+1 AC / +1 Saves), 🗡️ **Rapier (+6 hit, 1d8+4 + 2d6 Psychic Blades)**, 🗡️ **Sentry Zik's Dagger (+1)** (+7 hit, 1d4+5), 🗡️ Steel Dagger 2x (+6 hit, 1d4+4), 🪶 **Sentry Zik's Remains & Silk Ribbon**, 🍷 **1x Elixir of Health (Legendary)**, 🪘 Tambourine (Focus), 🎸 Lute & Guitar, 👗 Neko Maid Costume, 💣 1x Spitfire Flask (2d4 Fire), 🍞 Kobold Sweetbread Roll, Thieves' Tools, Burglar's & Entertainer's Packs, 415 gp 0 sp.
+* **Destiny Relic:** ❄️ **Clyssavar's Silver Harmonic Scale** (Claimed in Chapter 3 in hold C9).
 
-#### 🍷 3. Father Flubs — Level 3 Life Domain Cleric
+#### 🍷 3. Father Flubs — Level 4 Life Domain Cleric
 * **Concept & Archetype:** Acolyte Background | **Neutral Good** | **Titles:** **« The Serpent Rider »** & **« Warden of the Living Grove »** | **Priest, War Veteran, Drunkard, Fire-Serpent Rider** (Keeper of Sharruth's volcanic secret; drinks and toasts to outrun the silence).
-* **Hit Points (HP):** **24 / 24** (Hit Dice: `3d8 + 6 CON` — Level 3 Upgraded) | **Armor Class (AC):** **16** (Scale Mail + Shield) | **Speed:** 30 ft | **Passive Perception:** 13
-* **Divine Magic Specs:** Spell Save DC **13** | Spell Attack Bonus **+5** | **1st-Level Spell Slots:** **3 / 4** | **2nd-Level Spell Slots:** **2 / 2** | 🤝 **Help Tokens:** `2 / 2`
-* **Channel Divinity (1/Short Rest):** 🕊️ **Preserve Life** (Heals up to **15 HP** distributed to bloodied allies within 30 ft — Ready).
-* **Passive Blessing:** 🌿 **Disciple of Life** (Healing spells heal extra `+2 + Spell Level` HP — *Healing Word* heals `1d4+6 HP`, *Cure Wounds* heals `1d8+6 HP` at 1st-lvl, `2d8+7 HP` at 2nd-lvl).
-* **Domain & Prepared Spells:** *Bless*, *Cure Wounds*, **`Lesser Restoration`**, **`Spiritual Weapon`** (1d8+3 Force Bonus Action attack every turn!), **🐾 `Speak with Animals`** *(Innate Ritual/1st-Lvl Beast Communion)*, *Shield of Faith* (+2 AC), *Guiding Bolt* (4d6 Radiant), *Sanctuary* (DC 13 Wis).
-* **🐍🏇 Giant Fire Snake Mount & Companion:** **"Thurible" (Large Elemental Mount • Level 3 Attuned • Official Mascot of Dragon's Rest)** (AC 14, HP 32 [scales +8 HP/lvl], Speed 30ft climb/swim, Living Hearth: **10ft Full Cold Damage Immunity Aura**, **🐍 Molten Bite +4 [1d6+2 + 1d6 fire]**, **💥 Molten Tail Whip +4 [1d4+2 + 1d6 fire, 10ft Push DC 13 Str]**, 🌊 Tail Constrict +4 [1d4+2 + 1d4 fire, Grapple/Restrain DC 13], Embers of Comfort 1d6+2 Temp HP). Flubs mounts Thurible for elevated vantage and terrain mobility.
-* **Key Gear & Potions:** 🍾 **The Vintage of the Dawn Watch** (Sacred Jug & Holy Symbol), **13x Potions of Healing (Bonus: 2d6 / Action: Full Heal)**, **3x Elixirs of Health (Legendary: +20 Temp HP / 0 HP Full Revive)**, **2x Diluted Drake Blood Potions (+1 ATK, +2 DMG all day)**, Heavy Mace, Wooden Shield, Kobold Shield, Scale Mail, 52 gp 5 sp.
+* **Hit Points (HP):** **31 / 31** (Hit Dice: `4d8 + 8 CON` — Level 4 Upgraded) | **Armor Class (AC):** **16** (Scale Mail + Shield) | **Speed:** 30 ft | **Passive Perception:** 16
+* **Divine Magic Specs:** Spell Save DC **14** | Spell Attack Bonus **+6** | **1st-Level Spell Slots:** **4 / 4** | **2nd-Level Spell Slots:** **3 / 3** | 🤝 **Help Tokens:** `2 / 2`
+* **Channel Divinity (1/Short Rest):** 🕊️ **Preserve Life** (Heals up to **20 HP** distributed to bloodied allies within 30 ft — Ready).
+* **Passive Blessing:** 🌿 **Disciple of Life** (Healing spells heal extra `+2 + Spell Level` HP — *Healing Word* heals `1d4+7 HP`, *Cure Wounds* heals `1d8+7 HP` at 1st-lvl, `2d8+8 HP` at 2nd-lvl).
+* **Domain & Prepared Spells:** *Bless*, *Cure Wounds*, **`Lesser Restoration`**, **`Spiritual Weapon`** (1d8+4 Force Bonus Action attack every turn!), *Prayer of Healing*, *Aid*, *Hold Person*, *Shield of Faith* (+2 AC), *Guiding Bolt* (4d6 Radiant).
+* **🐍🏇 Giant Fire Snake Mount & Companion:** **"Thurible" (Large Elemental Mount • Level 4 Attuned • Official Mascot of Dragon's Rest)** (AC 14, **HP 40 / 40** [scales +8 HP/lvl], Speed 30ft climb/swim, Living Hearth: **10ft Full Cold Damage Immunity Aura**, **🐍 Molten Bite +4 [1d6+2 + 1d6 fire]**, **💥 Molten Tail Whip +4 [1d4+2 + 1d6 fire, 10ft Push DC 13 Str]**, 🌊 Tail Constrict +4 [1d4+2 + 1d4 fire, Grapple/Restrain DC 13], Embers of Comfort 1d6+2 Temp HP). Flubs mounts Thurible for elevated vantage and terrain mobility.
+* **Key Gear, Relics & Potions:** 🍾 **The Vintage of the Dawn Watch** (Sacred Jug & Holy Symbol), 📿 **The Enlightened Bone Charm** *(Advantage vs Charmed/Frightened & Turn Undead)*, 🐉 **Jar of Pure Drake Blood**, 🏺 **1x Jar of Animal Remains**, 🏴‍☠️ **1x Pirate Hat**, 🔘 **1x "3-Circle" Amulet**, 🧪 **10x Potions of Healing (Bonus: 2d6 / Action: Full Heal)**, 🍷 **1x Elixir of Health (Legendary)**, 🧪 **2x Diluted Drake Blood Potions (+1 ATK, +2 DMG all day)**, Heavy Mace, Wooden Shield, Kobold Shield, Scale Mail, 52 gp 5 sp.
 
 ---
 
-### 🛡️ 4. General Varnoth (Martial Defender 3 / Sidekick Tank) — Lead DM Controlled
+### 🛡️ 4. General Varnoth (Martial Defender 4 / Sidekick Tank) — Lead DM Controlled
 * **Concept & Archetype:** Veteran Mercenary Commander (Azure Wolves) | **Lawful Good / Neutral** | **Titles:** **« Warden of the Living Grove »** & **« The Indomitable Iron-Oak »** | Battle-scarred frontline tank with peg leg.
-* **Hit Points (HP):** **29 / 29** (Hit Dice: `3d8 + 6 CON` — Level 3 Upgraded) | **Armor Class (AC):** **17** (Splint Mail 15 + Shield +2) | **Speed:** 30 ft | **Passive Perception:** 14 | 🤝 **Help Tokens:** `1 / 2`
+* **Hit Points (HP):** **36 / 36** (Hit Dice: `4d8 + 8 CON` — Level 4 Upgraded) | **Armor Class (AC):** **17** (Splint Mail 15 + Shield +2) | **Speed:** 30 ft | **Passive Perception:** 14 | 🤝 **Help Tokens:** `2 / 2`
 * **Martial Role Features:** 💥 **Improved Critical (Crits on 19 or 20!)**, ⚡ **Battle Readiness (Advantage on Initiative rolls)**.
-* **Defensive Features & Actions:** 🛡️ *Protection Reaction* (Disadvantage on attacks vs adjacent ally), 💨 *Second Wind* (1d10+3 HP — Ready), ⚡ *Action Surge* (1 Extra Action per Short Rest — Ready), 🪓 *Shield Bash* (Athletics +4 vs Prone).
-* **Equipment:** Splint Mail, Azure Wolf Steel Shield, Honed Longsword (+4 hit, 1d8+2/1d10+2, Crits on 19-20), Heavy Crossbow (+2 hit, 1d10), 🪓 Twin Notched Bone-Cleavers (Kobold Champion Trophy), 8 gp 6 sp.
+* **Defensive Features & Actions:** 🛡️ *Protection Reaction* (Disadvantage on attacks vs adjacent ally), 💨 *Second Wind* (1d10+4 HP — Ready), ⚡ *Action Surge* (1 Extra Action per Short Rest — Ready), 🪓 *Shield Bash* (Athletics +6 vs Prone).
+* **Equipment:** Splint Mail, Azure Wolf Steel Shield, Honed Longsword (+6 hit, 1d8+4/1d10+4, Crits on 19-20), Heavy Crossbow (+2 hit, 1d10), 🪓 Twin Notched Bone-Cleavers (Kobold Champion Trophy), 🍷 **1x Elixir of Health (Legendary)**, 🧪 1x Potion of Healing, 8 gp 6 sp.
 
 ```mermaid
 graph TD
