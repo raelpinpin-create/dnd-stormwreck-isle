@@ -14,13 +14,13 @@
 * **Evocation Features:** 🔮 **Evocation Savant** | 💥 **Sculpt Spells** (Protects allies from AoE damage!)
 * **Key Items:** 📜 **Lianna's Farewell Letter (The Archmage's Vow)**, 🥽 **Myla's Draconic Abyssal Goggles** (Darkvision 60ft & Murky Underwater Clarity), 🪄 **Wand of Magic Missiles (7 Charges)**, Astalagan's Awakened Amber Scale (+1 Focus/DC), Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand), Robe of Arcane Reserve (+1 Slot), Shortsword & Cutlass, Sling of the Ridge-Runner (+1), Scroll of Absorb Elements, Spore-Filter Rebreather Mask, 9 Potions of Healing, 5 Specialty Breads & Bagel (+2 AC), 28 gp 9 sp.
 
-### 🐾 2. Sylvar Link (Half-Tabaxi Bard 3 — College of Whispers)
+### 🐾 2. Sylvar Link (Half-Tabaxi Bard 4 — College of Whispers)
 * **Concept & Archetype:** Entertainer Background | **Chaotic Good** | **Archetype:** **Blind Seismic Perceiver & Whispering Blade** (Charming femboy catboy, navigates the world through acoustic whiskers, floor vibrations, and tambourine rhythms like Toph; searching for his missing twin sister).
-* **Hit Points (HP):** **27 / 27** (Hit Dice: `3d8 + 6 CON`) | **Armor Class (AC):** **15** (Leather + DEX +3 + 🛡️ Cloak of Protection) | **Speed:** 30 ft *(Feline Agility: 60 ft)* | **Initiative:** **+3** | **Passive Perception:** 13
-* **Bardic Spellcasting Specs:** Spell Save DC **13** | Spell Attack Bonus **+5** | **1st-Level Spell Slots:** **4 / 4** | **2nd-Level Spell Slots:** **2 / 2** | **Bardic Inspiration:** `3 / 3` (d6) | 🤝 **Help Tokens:** `2 / 2`
-* **College of Whispers Features:** 🧠 **Psychic Blades** (+2d6 Psychic damage on weapon hit, costs 1 Insp die), 👁️ **Words of Terror** (Seed paranoia in 1 min conversation, DC 13 Wis save or Frightened 1 hr).
+* **Hit Points (HP):** **31 / 31** (Hit Dice: `4d8 + 8 CON`) | **Armor Class (AC):** **16** (Leather + DEX +4 + 🛡️ Cloak of Protection) | **Speed:** 30 ft *(Feline Agility: 60 ft)* | **Initiative:** **+4** | **Passive Perception:** 13
+* **Bardic Spellcasting Specs:** Spell Save DC **14** | Spell Attack Bonus **+6** | **1st-Level Spell Slots:** **4 / 4** | **2nd-Level Spell Slots:** **3 / 3** | **Bardic Inspiration:** `4 / 4` (d6) | 🤝 **Help Tokens:** `2 / 2`
+* **College of Whispers Features:** 🧠 **Psychic Blades** (+2d6 Psychic damage on weapon hit, costs 1 Insp die), 👁️ **Words of Terror** (Seed paranoia in 1 min conversation, DC 14 Wis save or Frightened 1 hr).
 * **Senses & Special Traits:** 🐾 **Blind Seismic Sense / Acoustic Blindsight (30–60 ft)** (Immune to visual dark/blind penalties; senses heartbeats, tremors, and footsteps), 🎶 **Song of Rest** (+1d6 HP on Short Rest), 🐾 **Feline Agility** (Burst to 60 ft speed).
-* **Key Gear & Weapons:** 🛡️ **Cloak of Protection** (+1 AC / +1 Saves), 🗡️ **Rapier (+5 hit, 1d8+3 + 2d6 Psychic Blades)**, 🗡️ Steel Dagger 2x (+5 hit, 1d4+3), 🪘 Tambourine (Focus), 🎸 Lute & Guitar, 💣 2x Spitfire Flasks (2d4 Fire), 🧪 1x Potion of Healing, 🍞 Kobold Sweetbread Roll, 15 gp 0 sp.
+* **Key Gear & Weapons:** 🛡️ **Cloak of Protection** (+1 AC / +1 Saves), 🗡️ **Rapier (+6 hit, 1d8+4 + 2d6 Psychic Blades)**, 🗡️ Steel Dagger 2x (+6 hit, 1d4+4), 🪘 Tambourine (Focus), 🎸 Lute & Guitar, 👗 Neko Maid Costume, 💣 2x Spitfire Flasks (2d4 Fire), 🧪 1x Potion of Healing, 🍞 Kobold Sweetbread Roll, 415 gp 0 sp.
 * **Destiny Relic:** ❄️ **Clyssavar's Silver Harmonic Scale** (Trapped in Chapter 3 Compass Rose hold).
 
 #### 🍷 3. Father Flubs — Level 3 Life Domain Cleric

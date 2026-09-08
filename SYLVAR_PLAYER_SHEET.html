@@ -737,7 +737,7 @@
 
             <!-- RESULT BANNER -->
             <div class="roll-result-display" id="roll-res">
-                🐾 Acoustic matrix initialized (Level 4 Whispers Bard • DEX 16 / CHA 18). Roll any attack, save, or skill check below!
+                🐾 Acoustic matrix initialized (Level 4 Whispers Bard • DEX 18 / CHA 18). Roll any attack, save, or skill check below!
             </div>
         </section>
 
@@ -755,11 +755,11 @@
                     </div>
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">ARMOR CLASS</span>
-                        <span class="vital-mini-val" id="ac-disp" style="color:var(--accent-gold);">15</span>
+                        <span class="vital-mini-val" id="ac-disp" style="color:var(--accent-gold);">16</span>
                     </div>
-                    <div class="vital-mini-box" onclick="rollD20('Initiative Roll (DEX +3)', 3)" style="cursor:pointer;" title="Click to roll Initiative (+3)">
+                    <div class="vital-mini-box" onclick="rollD20('Initiative Roll (DEX +4)', 4)" style="cursor:pointer;" title="Click to roll Initiative (+4)">
                         <span class="vital-mini-lbl">INIT 🎲</span>
-                        <span class="vital-mini-val" style="color:var(--accent-blue);">+3</span>
+                        <span class="vital-mini-val" style="color:var(--accent-blue);">+4</span>
                     </div>
                     <div class="vital-mini-box" title="Base Bard DC 14, Hit +6 (Charisma +4, Prof +2)">
                         <span class="vital-mini-lbl">SPELL DC / HIT</span>
@@ -822,7 +822,7 @@
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         <span style="font-size:0.76rem; font-weight:700; color:var(--accent-purple);">🪘 Bardic Inspiration (d6):</span>
                         <div style="display:flex; align-items:center; gap:4px;">
-                            <span id="insp-tokens-disp" style="font-weight:700; color:var(--accent-purple); font-size:0.88rem;">3 / 3</span>
+                            <span id="insp-tokens-disp" style="font-weight:700; color:var(--accent-purple); font-size:0.88rem;">4 / 4</span>
                             <button class="btn-act btn-roll-purple" onclick="rollBardicInspDie()" style="padding:2px 7px; font-size:0.7rem;">🎲 Roll d6</button>
                             <button class="btn-act btn-act-pre" onclick="modBardicInsp(1)" style="padding:2px 5px; font-size:0.68rem;">+1</button>
                             <button class="btn-act btn-act-pre" onclick="resetBardicInsp()" style="padding:2px 5px; font-size:0.68rem;">Reset</button>
@@ -846,10 +846,10 @@
                         <div class="ability-score">8</div>
                         <div class="ability-mod">-1</div>
                     </div>
-                    <div class="ability-box" onclick="rollD20('DEX Check', 3)" title="Click to roll DEX Check (+3)">
+                    <div class="ability-box" onclick="rollD20('DEX Check', 4)" title="Click to roll DEX Check (+4)">
                         <div class="ability-name">DEX</div>
-                        <div class="ability-score">16</div>
-                        <div class="ability-mod" style="color:var(--accent-blue); font-weight:700;">+3</div>
+                        <div class="ability-score">18</div>
+                        <div class="ability-mod" style="color:var(--accent-blue); font-weight:700;">+4</div>
                     </div>
                     <div class="ability-box" onclick="rollD20('CON Check', 2)" title="Click to roll CON Check (+2)">
                         <div class="ability-name">CON</div>
@@ -881,7 +881,7 @@
                     </div>
                     <ul class="stat-row-list">
                         <li class="stat-row-item prof-item" onclick="rollD20('Charisma Saving Throw ★', 7)"><span>Charisma Save ★</span><span>+7 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Dexterity Saving Throw ★', 6)"><span>Dexterity Save ★</span><span>+6 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Dexterity Saving Throw ★', 7)"><span>Dexterity Save ★</span><span>+7 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Constitution Save', 3)"><span>Constitution Save</span><span>+3 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Wisdom Save', 2)"><span>Wisdom Save</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Strength Save', 0)"><span>Strength Save</span><span>+0 🎲</span></li>
@@ -896,7 +896,7 @@
                         <span style="font-size:0.7rem; color:var(--text-dim);">Jack of All Trades (+1)</span>
                     </div>
                     <ul class="stat-row-list">
-                        <li class="stat-row-item prof-item" onclick="rollD20('Acrobatics (DEX) ★', 5)"><span>Acrobatics (DEX) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Acrobatics (DEX) ★', 6)"><span>Acrobatics (DEX) ★</span><span>+6 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Animal Handling (WIS)', 2)"><span>Animal Handling (WIS)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Arcana (INT)', -2)"><span>Arcana (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Athletics (STR)', 0)"><span>Athletics (STR)</span><span>+0 🎲</span></li>
@@ -911,8 +911,8 @@
                         <li class="stat-row-item prof-item" onclick="rollD20('Performance (CHA) ★ [Expertise]', 8)"><span>Performance (CHA) ★ [Expertise]</span><span>+8 🎲</span></li>
                         <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★ [Expertise]', 8)"><span>Persuasion (CHA) ★ [Expertise]</span><span>+8 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Religion (INT)', -2)"><span>Religion (INT)</span><span>-2 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 4)"><span>Sleight of Hand (DEX)</span><span>+4 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 4)"><span>Stealth (DEX)</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 5)"><span>Sleight of Hand (DEX)</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 5)"><span>Stealth (DEX)</span><span>+5 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Survival (WIS)', 2)"><span>Survival (WIS)</span><span>+2 🎲</span></li>
                     </ul>
                 </div>
@@ -989,10 +989,10 @@
                                 </div>
                                 <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">FINESSE</span>
                             </div>
-                            <div class="action-desc">Reach 5ft. <strong>+5 to Hit</strong>, <strong>1d8+3 Piercing</strong>. Combines with Psychic Blades (+2d6)!</div>
+                            <div class="action-desc">Reach 5ft. <strong>+6 to Hit</strong>, <strong>1d8+4 Piercing</strong>. Combines with Psychic Blades (+2d6)!</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Rapier Attack', 5)">🗡️ Attack (+5)</button>
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Rapier Damage', 8, 3, 'Piercing')">💥 1d8+3 Dmg</button>
+                                <button class="btn-roll-action" onclick="rollD20('Rapier Attack', 6)">🗡️ Attack (+6)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Rapier Damage', 8, 4, 'Piercing')">💥 1d8+4 Dmg</button>
                                 <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">⚡ +2d6 Psychic</button>
                             </div>
                         </div>
@@ -1008,10 +1008,10 @@
                                 </div>
                                 <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">LIGHT</span>
                             </div>
-                            <div class="action-desc">Reach 5ft / Range 20/60. <strong>+5 to Hit</strong>, <strong>1d4+3 Piercing</strong>.</div>
+                            <div class="action-desc">Reach 5ft / Range 20/60. <strong>+6 to Hit</strong>, <strong>1d4+4 Piercing</strong>.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Dagger Attack', 5)">🗡️ Attack (+5)</button>
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Dagger Damage', 4, 3, 'Piercing')">💥 1d4+3 Dmg</button>
+                                <button class="btn-roll-action" onclick="rollD20('Dagger Attack', 6)">🗡️ Attack (+6)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Dagger Damage', 4, 4, 'Piercing')">💥 1d4+4 Dmg</button>
                             </div>
                         </div>
 
@@ -1026,9 +1026,9 @@
                                 </div>
                                 <span style="font-size:0.65rem; color:var(--accent-purple); font-weight:700;">ENCHANTMENT</span>
                             </div>
-                            <div class="action-desc">DC 13 Wis Save. On fail: 1d4 Psychic & Disadvantage on next attack!</div>
+                            <div class="action-desc">DC 14 Wis Save. On fail: 1d4 Psychic & Disadvantage on next attack!</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action btn-roll-purple" onclick="castViciousMockery()">🎭 Cast (DC 13 Wis)</button>
+                                <button class="btn-roll-action btn-roll-purple" onclick="castViciousMockery()">🎭 Cast (DC 14 Wis)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Vicious Mockery Dmg', 4, 0, 'Psychic')">💥 1d4 Dmg</button>
                             </div>
                         </div>
@@ -1085,7 +1085,7 @@
                             <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
                                 <div>
                                     <span style="font-size:0.68rem; font-weight:700; color:var(--accent-purple);">2nd:</span>
-                                    <span id="slot-pips-2" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(2)">🟦 🟦 (2/2)</span>
+                                    <span id="slot-pips-2" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(2)">🟦 🟦 🟦 (3/3)</span>
                                 </div>
                                 <div style="display:flex; gap:2px;">
                                     <button class="btn-act btn-act-pre" onclick="modSlotTier(2, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
@@ -1136,7 +1136,7 @@
                             <div style="display:flex; justify-content:space-between; align-items:center;">
                                 <div>
                                     <strong style="color:var(--accent-gold); cursor:pointer;" onclick="openSpellDetailsModal('wordsofterror')" onmouseover="this.style.color='#f8fafc'" onmouseout="this.style.color='var(--accent-gold)'">👁️ Words of Terror: <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span></strong>
-                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">1 min private talk ➔ DC 13 Wis save or Frightened 1 hr.</span>
+                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">1 min private talk ➔ DC 14 Wis save or Frightened 1 hr.</span>
                                 </div>
                                 <button class="btn-roll-action" style="background:#78350f; color:#fef3c7;" onclick="rollWordsOfTerrorAction()">🗣️ Seed Paranoia</button>
                             </div>
@@ -1280,10 +1280,10 @@
                 range: '60 feet',
                 components: 'V (Verbal)',
                 duration: 'Instantaneous',
-                attackMod: 'DC 13 Wisdom Save',
+                attackMod: 'DC 14 Wisdom Save',
                 damage: '3d6 Psychic Damage + Flee Reaction',
-                desc: 'Whisper a discordant psychic melody (DC 13 Wis save). Fail: 3d6 Psychic damage & immediately flees using its reaction.',
-                fullRules: 'You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a <strong>Wisdom saving throw (DC 13)</strong>. On a failed save, it takes <strong>3d6 psychic damage</strong> and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn\'t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn\'t have to move.',
+                desc: 'Whisper a discordant psychic melody (DC 14 Wis save). Fail: 3d6 Psychic damage & immediately flees using its reaction.',
+                fullRules: 'You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a <strong>Wisdom saving throw (DC 14)</strong>. On a failed save, it takes <strong>3d6 psychic damage</strong> and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn\'t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn\'t have to move.',
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st (4d6 at 2nd level, 5d6 at 3rd level).',
                 flavor: 'Sylvar taps a rapid, haunting tempo on his tambourine, whispering an aberrant chord that rings directly inside the enemy\'s skull.',
                 hasLevelSelect: true,
@@ -1307,10 +1307,10 @@
                 components: 'V (Verbal)',
                 duration: 'Instantaneous',
                 attackMod: 'Automatic (Friendly Target)',
-                damage: '1d4 + 3 Hit Points Restored',
-                desc: 'Quick acoustic blessing heals a creature you can sense within 60 ft for 1d4 + 3 HP (Bonus Action).',
-                fullRules: 'A creature of your choice that you can see or sense within range regains hit points equal to <strong>1d4 + your spellcasting ability modifier (+3)</strong>. This spell has no effect on undead or constructs.',
-                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st (2d4+3 at 2nd level, 3d4+3 at 3rd level).',
+                damage: '1d4 + 4 Hit Points Restored',
+                desc: 'Quick acoustic blessing heals a creature you can sense within 60 ft for 1d4 + 4 HP (Bonus Action).',
+                fullRules: 'A creature of your choice that you can see or sense within range regains hit points equal to <strong>1d4 + your spellcasting ability modifier (+4)</strong>. This spell has no effect on undead or constructs.',
+                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st (2d4+4 at 2nd level, 3d4+4 at 3rd level).',
                 flavor: 'Sylvar sings a sweet, melodic chord that matches an ally\'s heartbeat, knitting wounds with silver vibrational warmth.',
                 hasLevelSelect: true,
                 buttons: [
@@ -1358,10 +1358,10 @@
                 range: '30 feet',
                 components: 'V, S (Verbal, Somatic)',
                 duration: '1 hour',
-                attackMod: 'DC 13 Wisdom Save',
+                attackMod: 'DC 14 Wisdom Save',
                 damage: 'Charmed (Friendly Acquaintance)',
-                desc: 'Charm a humanoid within 30 ft (DC 13 Wis save). Target regards you as a friendly acquaintance.',
-                fullRules: 'You attempt to charm a humanoid you can see or sense within range. It must make a <strong>Wisdom saving throw (DC 13)</strong>, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. When the spell ends, the creature knows it was charmed by you.',
+                desc: 'Charm a humanoid within 30 ft (DC 14 Wis save). Target regards you as a friendly acquaintance.',
+                fullRules: 'You attempt to charm a humanoid you can see or sense within range. It must make a <strong>Wisdom saving throw (DC 14)</strong>, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. When the spell ends, the creature knows it was charmed by you.',
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.',
                 flavor: 'With a feline purr and a playful flick of his ears, Sylvar laces charm directly into his spoken words.',
                 hasLevelSelect: true,
@@ -1384,10 +1384,10 @@
                 range: '60 feet (20-ft sphere)',
                 components: 'V, S (Verbal, Somatic)',
                 duration: 'Concentration, up to 1 minute',
-                attackMod: 'DC 13 Charisma Save',
+                attackMod: 'DC 14 Charisma Save',
                 damage: 'Suppresses Charmed/Frightened / Hostility',
-                desc: 'Suppress charmed/frightened conditions or make hostile humanoids indifferent in a 20-ft sphere (DC 13 Cha).',
-                fullRules: 'You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a <strong>Charisma saving throw (DC 13)</strong>; a creature can choose to fail this save voluntarily. If a creature fails its saving throw, you can choose one of the following two effects: suppress any effect causing a target to be charmed or frightened, or make a target indifferent about creatures of your choice that it is hostile toward.',
+                desc: 'Suppress charmed/frightened conditions or make hostile humanoids indifferent in a 20-ft sphere (DC 14 Cha).',
+                fullRules: 'You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a <strong>Charisma saving throw (DC 14)</strong>; a creature can choose to fail this save voluntarily. If a creature fails its saving throw, you can choose one of the following two effects: suppress any effect causing a target to be charmed or frightened, or make a target indifferent about creatures of your choice that it is hostile toward.',
                 upcastNotes: 'When cast at higher levels, the spell maintains its concentration duration.',
                 flavor: 'Sylvar plays a soft, rhythmic lullaby on his tambourine bells, draining tension and wrath from the air.',
                 hasLevelSelect: true,
@@ -1410,10 +1410,10 @@
                 range: '60 feet',
                 components: 'V, S (Verbal, Somatic)',
                 duration: '1 minute',
-                attackMod: 'DC 13 Wisdom Save',
+                attackMod: 'DC 14 Wisdom Save',
                 damage: 'Disadvantage on Perception vs Others',
-                desc: 'Captivating words give chosen targets Disadvantage on Perception to notice anyone other than you (DC 13 Wis).',
-                fullRules: 'You weave a string of distracting words, causing creatures of your choice that you can see or sense within range to make a <strong>Wisdom saving throw (DC 13)</strong>. Any creature that can\'t be charmed succeeds on this saving throw automatically. On a failed save, the target has <strong>disadvantage on Wisdom (Perception) checks</strong> made to perceive any creature other than you until the spell ends or until the target can no longer hear you.',
+                desc: 'Captivating words give chosen targets Disadvantage on Perception to notice anyone other than you (DC 14 Wis).',
+                fullRules: 'You weave a string of distracting words, causing creatures of your choice that you can see or sense within range to make a <strong>Wisdom saving throw (DC 14)</strong>. Any creature that can\'t be charmed succeeds on this saving throw automatically. On a failed save, the target has <strong>disadvantage on Wisdom (Perception) checks</strong> made to perceive any creature other than you until the spell ends or until the target can no longer hear you.',
                 upcastNotes: 'Casting at higher levels maintains the full duration.',
                 flavor: 'Sylvar leaps into a mesmerizing acoustic dance, commanding the undivided attention of everyone nearby.',
                 hasLevelSelect: true,
@@ -1451,14 +1451,14 @@
                 category: "WONDROUS ITEM • Attuned",
                 origin: "Dragon's Rest Sanctuary",
                 desc: "A finely tailored twilight-grey cloak trimmed with shimmering silver embroidery.",
-                effect: "• <strong>+1 to Armor Class</strong> (Base AC 15 with Leather + 16 DEX).<br>• <strong>+1 to all Saving Throws</strong> (Str +0, Dex +6, Con +3, Int -2, Wis +2, Cha +6)."
+                effect: "• <strong>+1 to Armor Class</strong> (Base AC 16 with Leather + 18 DEX).<br>• <strong>+1 to all Saving Throws</strong> (Str +0, Dex +7, Con +3, Int -2, Wis +2, Cha +7)."
             },
             "leather armor": {
                 name: "🥋 Leather Armor",
                 category: "LIGHT ARMOR",
                 origin: "Starting Gear",
                 desc: "Supple, fitted boiled leather allowing silent fluid movements.",
-                effect: "• Sets base AC to 11 + DEX mod (+3) = AC 14 (15 with Cloak)."
+                effect: "• Sets base AC to 11 + DEX mod (+4) = AC 15 (16 with Cloak)."
             },
             "neko maid": {
                 name: "👗 Neko Maid Costume",
@@ -1472,14 +1472,14 @@
                 category: "MARTIAL WEAPON • Finesse",
                 origin: "Bardic Loadout",
                 desc: "A flexible, razor-pointed steel blade with an ornate silver basket hilt.",
-                effect: "• <strong>+5 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 3 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+2d6 Psychic Damage</strong>!"
+                effect: "• <strong>+6 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 4 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+2d6 Psychic Damage</strong>!"
             },
             "dagger": {
                 name: "🗡️ Steel Daggers",
                 category: "SIMPLE WEAPON • Finesse, Light, Thrown",
                 origin: "Bardic Loadout",
                 desc: "Balanced throwing daggers with keen steel edges.",
-                effect: "• <strong>+5 to Hit</strong>, range 20/60 ft.<br>• <strong>1d4 + 3 Piercing Damage</strong>."
+                effect: "• <strong>+6 to Hit</strong>, range 20/60 ft.<br>• <strong>1d4 + 4 Piercing Damage</strong>."
             },
             "tambourine": {
                 name: "🪘 Tambourine",
@@ -1507,7 +1507,7 @@
                 category: "MAGIC POTION • Consumable",
                 origin: "Tarak's Herbal Dispensary",
                 desc: "A swirling crimson potion smelling of crushed winterberries.",
-                effect: "• <strong>Bonus Action:</strong> Restores <strong>2d6 Hit Points</strong>.<br>• <strong>Full Action (House Rule):</strong> Restores <strong>100% Full Max HP (27 HP)</strong>!"
+                effect: "• <strong>Bonus Action:</strong> Restores <strong>2d6 Hit Points</strong>.<br>• <strong>Full Action (House Rule):</strong> Restores <strong>100% Full Max HP (31 HP)</strong>!"
             },
             "sweetbread": {
                 name: "🍞 Kobold Sweetbread Roll",
@@ -1705,7 +1705,7 @@
             }
 
             const acDisp = document.getElementById('ac-disp');
-            acDisp.innerText = isCloakAttuned ? '15' : '14';
+            acDisp.innerText = isCloakAttuned ? '16' : '15';
         }
 
         function applyDamage() {
@@ -1816,43 +1816,43 @@
                 card.classList.add('active-buff');
                 badge.innerText = "ATTUNED";
                 badge.className = "toggle-badge on";
-                logRoll(`🛡️ <strong>Cloak of Protection Attuned:</strong> +1 AC (AC 15) and +1 to all Saving Throws.`);
+                logRoll(`🛡️ <strong>Cloak of Protection Attuned:</strong> +1 AC (AC 16) and +1 to all Saving Throws.`);
             } else {
                 card.classList.remove('active-buff');
                 badge.innerText = "OFF";
                 badge.className = "toggle-badge off";
-                logRoll(`🛡️ <strong>Cloak of Protection Removed:</strong> AC reduced to 14.`);
+                logRoll(`🛡️ <strong>Cloak of Protection Removed:</strong> AC reduced to 15.`);
             }
             renderVitals();
         }
 
         function updateCountersUI() {
-            document.getElementById('insp-tokens-disp').innerText = `${bardicInsp} / 3`;
+            document.getElementById('insp-tokens-disp').innerText = `${bardicInsp} / 4`;
             document.getElementById('help-tokens-disp').innerText = `${helpTokens} / 2`;
         }
 
         function modBardicInsp(delta) {
-            bardicInsp = Math.max(0, Math.min(3, bardicInsp + delta));
+            bardicInsp = Math.max(0, Math.min(4, bardicInsp + delta));
             updateCountersUI();
             saveSheetState();
         }
 
         function resetBardicInsp() {
-            bardicInsp = 3;
+            bardicInsp = 4;
             updateCountersUI();
             saveSheetState();
         }
 
         function rollBardicInspDie() {
             if (bardicInsp <= 0) {
-                alert("No Bardic Inspiration dice remaining! (3/Long Rest)");
+                alert("No Bardic Inspiration dice remaining! (4/Long Rest)");
                 return;
             }
             bardicInsp -= 1;
             updateCountersUI();
             saveSheetState();
             const d6 = Math.floor(Math.random() * 6) + 1;
-            logRoll(`🪘 <strong>Bardic Inspiration Granted (d6):</strong> Rolled <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${d6}</span> to ally within 60 ft! (${bardicInsp}/3 dice left)`);
+            logRoll(`🪘 <strong>Bardic Inspiration Granted (d6):</strong> Rolled <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${d6}</span> to ally within 60 ft! (${bardicInsp}/4 dice left)`);
         }
 
         function modHelpToken(delta) {
@@ -1908,7 +1908,7 @@
                 return;
             }
             if (slot.max === 0) {
-                slot.max = (lvl === 2 ? 2 : 2);
+                slot.max = (lvl === 2 ? 3 : 2);
                 slot.current = slot.max;
             } else {
                 slot.current = slot.current > 0 ? slot.current - 1 : slot.max;
@@ -1925,7 +1925,7 @@
                 return;
             }
             if (delta > 0 && slot.max === 0) {
-                slot.max = (lvl === 2 ? 2 : 2);
+                slot.max = (lvl === 2 ? 3 : 2);
                 slot.current = slot.max;
             } else if (delta < 0 && slot.max > 0 && slot.current === 0) {
                 slot.max = Math.max(0, slot.max - 1);
@@ -2027,19 +2027,19 @@
                 rolls.push(r);
                 total += r;
             }
-            logRoll(`🧠 <strong>Dissonant Whispers (Level ${slotLevel} Slot • ${dice}d6):</strong> [${rolls.join('+')}] = <span style="color:var(--accent-purple); font-size:1.1rem; font-weight:800;">${total} Psychic Damage</span> + must flee using reaction (DC 13 Wis save for half)!`);
+            logRoll(`🧠 <strong>Dissonant Whispers (Level ${slotLevel} Slot • ${dice}d6):</strong> [${rolls.join('+')}] = <span style="color:var(--accent-purple); font-size:1.1rem; font-weight:800;">${total} Psychic Damage</span> + must flee using reaction (DC 14 Wis save for half)!`);
         }
 
         function rollHealingWord(slotLevel) {
-            const dice = slotLevel; // Lvl 1: 1d4+3, Lvl 2: 2d4+3
+            const dice = slotLevel; // Lvl 1: 1d4+4, Lvl 2: 2d4+4
             const rolls = [];
-            let total = 3; // +3 CHA
+            let total = 4; // +4 CHA
             for (let i = 0; i < dice; i++) {
                 const r = Math.floor(Math.random() * 4) + 1;
                 rolls.push(r);
                 total += r;
             }
-            logRoll(`💚 <strong>Healing Word (Level ${slotLevel} Slot):</strong> [${rolls.join('+')}] + 3 CHA = <span style="color:#86efac; font-size:1.1rem; font-weight:800;">+${total} HP Restored</span> to target within 60 ft!`);
+            logRoll(`💚 <strong>Healing Word (Level ${slotLevel} Slot):</strong> [${rolls.join('+')}] + 4 CHA = <span style="color:#86efac; font-size:1.1rem; font-weight:800;">+${total} HP Restored</span> to target within 60 ft!`);
         }
 
         function rollColorSpray(slotLevel) {
@@ -2055,19 +2055,19 @@
         }
 
         function castCharmPerson(slotLevel) {
-            logRoll(`💖 <strong>Charm Person (Level ${slotLevel} Slot • 30ft):</strong> Target humanoid makes <span style="color:var(--accent-gold); font-weight:800;">DC 13 Wisdom Save</span>. On fail: regarded as friendly acquaintance for 1 hour!`);
+            logRoll(`💖 <strong>Charm Person (Level ${slotLevel} Slot • 30ft):</strong> Target humanoid makes <span style="color:var(--accent-gold); font-weight:800;">DC 14 Wisdom Save</span>. On fail: regarded as friendly acquaintance for 1 hour!`);
         }
 
         function castCalmEmotions(slotLevel) {
-            logRoll(`🕊️ <strong>Calm Emotions (Level ${slotLevel} Slot • 20ft Sphere):</strong> Humanoids make <span style="color:var(--accent-gold); font-weight:800;">DC 13 Charisma Save</span>. On fail: suppress Charmed/Frightened conditions or make hostile targets indifferent!`);
+            logRoll(`🕊️ <strong>Calm Emotions (Level ${slotLevel} Slot • 20ft Sphere):</strong> Humanoids make <span style="color:var(--accent-gold); font-weight:800;">DC 14 Charisma Save</span>. On fail: suppress Charmed/Frightened conditions or make hostile targets indifferent!`);
         }
 
         function castEnthrall(slotLevel) {
-            logRoll(`✨ <strong>Enthrall (Level ${slotLevel} Slot • 60ft):</strong> Targets make <span style="color:var(--accent-gold); font-weight:800;">DC 13 Wisdom Save</span>. On fail: Disadvantage on Perception to notice anyone other than you!`);
+            logRoll(`✨ <strong>Enthrall (Level ${slotLevel} Slot • 60ft):</strong> Targets make <span style="color:var(--accent-gold); font-weight:800;">DC 14 Wisdom Save</span>. On fail: Disadvantage on Perception to notice anyone other than you!`);
         }
 
         function castViciousMockery() {
-            logRoll(`🎭 <strong>Vicious Mockery:</strong> Target makes <span style="color:var(--accent-gold); font-weight:800;">DC 13 Wisdom Save</span>. On fail: takes 1d4 Psychic Damage and suffers <strong>Disadvantage</strong> on its next attack!`);
+            logRoll(`🎭 <strong>Vicious Mockery:</strong> Target makes <span style="color:var(--accent-gold); font-weight:800;">DC 14 Wisdom Save</span>. On fail: takes 1d4 Psychic Damage and suffers <strong>Disadvantage</strong> on its next attack!`);
         }
 
         function castUtility(text) {
@@ -2076,7 +2076,7 @@
 
         function rollPsychicBladesStrike() {
             if (bardicInsp <= 0) {
-                alert("No Bardic Inspiration dice remaining to fuel Psychic Blades! (3/Long Rest)");
+                alert("No Bardic Inspiration dice remaining to fuel Psychic Blades! (4/Long Rest)");
                 return;
             }
             bardicInsp -= 1;
@@ -2085,11 +2085,11 @@
             const p1 = Math.floor(Math.random() * 6) + 1;
             const p2 = Math.floor(Math.random() * 6) + 1;
             const tot = p1 + p2;
-            logRoll(`🧠 <strong>Psychic Blades Infused (-1 Insp):</strong> Dealt <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${tot} Psychic Damage</span> (2d6: ${p1}+${p2}) on weapon hit! (${bardicInsp}/3 dice left)`);
+            logRoll(`🧠 <strong>Psychic Blades Infused (-1 Insp):</strong> Dealt <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${tot} Psychic Damage</span> (2d6: ${p1}+${p2}) on weapon hit! (${bardicInsp}/4 dice left)`);
         }
 
         function rollWordsOfTerrorAction() {
-            logRoll(`👁️ <strong>Words of Terror Seeded (1 Min Conversation):</strong> Target humanoid must make a <span style="color:var(--accent-gold); font-weight:800;">DC 13 Wisdom Save</span> or be <strong>Frightened</strong> for 1 hour!`);
+            logRoll(`👁️ <strong>Words of Terror Seeded (1 Min Conversation):</strong> Target humanoid must make a <span style="color:var(--accent-gold); font-weight:800;">DC 14 Wisdom Save</span> or be <strong>Frightened</strong> for 1 hour!`);
         }
 
         function rollSongOfRestAction() {
@@ -2098,7 +2098,7 @@
         }
 
         // ==========================================
-        // 🎒 TRACKED INVENTORY MANAGER (EXACT EFLEIN / FLUBS PATTERN)
+        // 🎒 TRACKED INVENTORY & SESSION DELTA ENGINE (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
         function getStoredItems() {
             let stored = localStorage.getItem('dnd_inv_sylvar_v5');
@@ -2204,54 +2204,147 @@
             });
         }
 
+        // Session Delta Tracking
+        function getSessionDelta() {
+            return {
+                added: JSON.parse(localStorage.getItem('dnd_delta_add_sylvar') || '[]'),
+                removed: JSON.parse(localStorage.getItem('dnd_delta_rem_sylvar') || '[]')
+            };
+        }
+
+        function saveSessionDelta(delta) {
+            localStorage.setItem('dnd_delta_add_sylvar', JSON.stringify(delta.added));
+            localStorage.setItem('dnd_delta_rem_sylvar', JSON.stringify(delta.removed));
+        }
+
+        function clearSessionDelta() {
+            localStorage.removeItem('dnd_delta_add_sylvar');
+            localStorage.removeItem('dnd_delta_rem_sylvar');
+        }
+
+        function recordDeltaItem(type, baseName, count = 1) {
+            if (!baseName || count <= 0) return;
+            const delta = getSessionDelta();
+            const normalizedName = baseName.replace(/^(\d+)\s*[xX]\s*/, '').trim();
+            
+            const oppositeType = type === 'added' ? 'removed' : 'added';
+            const currentList = delta[type];
+            const oppList = delta[oppositeType];
+
+            function findEntryIndex(list, name) {
+                return list.findIndex(entry => {
+                    const entryName = entry.replace(/^(\d+)\s*[xX]\s*/, '').trim();
+                    return entryName === name;
+                });
+            }
+
+            function getEntryCount(entry) {
+                const m = entry.match(/^(\d+)\s*[xX]\s*/);
+                return m ? parseInt(m[1]) : 1;
+            }
+
+            let oppIdx = findEntryIndex(oppList, normalizedName);
+            if (oppIdx !== -1) {
+                let oppCount = getEntryCount(oppList[oppIdx]);
+                if (oppCount > count) {
+                    oppList[oppIdx] = `${oppCount - count}x ${normalizedName}`;
+                } else if (oppCount === count) {
+                    oppList.splice(oppIdx, 1);
+                } else {
+                    oppList.splice(oppIdx, 1);
+                    let remaining = count - oppCount;
+                    let currIdx = findEntryIndex(currentList, normalizedName);
+                    if (currIdx !== -1) {
+                        let currCount = getEntryCount(currentList[currIdx]);
+                        currentList[currIdx] = `${currCount + remaining}x ${normalizedName}`;
+                    } else {
+                        currentList.push(remaining > 1 ? `${remaining}x ${normalizedName}` : `1x ${normalizedName}`);
+                    }
+                }
+            } else {
+                let currIdx = findEntryIndex(currentList, normalizedName);
+                if (currIdx !== -1) {
+                    let currCount = getEntryCount(currentList[currIdx]);
+                    currentList[currIdx] = `${currCount + count}x ${normalizedName}`;
+                } else {
+                    currentList.push(count > 1 ? `${count}x ${normalizedName}` : `1x ${normalizedName}`);
+                }
+            }
+
+            saveSessionDelta(delta);
+        }
+
         function stepItemQty(index, delta) {
             const items = getStoredItems();
             if (!items[index]) return;
             const parsed = parseItemInfo(items[index]);
+            const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
 
-            if (parsed.hasQty) {
+            if (delta < 0) {
                 const newQty = parsed.qty + delta;
+                recordDeltaItem('removed', cleanName, 1);
+                
                 if (newQty <= 0) {
-                    items.splice(index, 1);
+                    const removed = items.splice(index, 1);
+                    saveStoredItems(items);
+                    renderInventory();
+                    logRoll(`🗑️ <strong>Consumed last:</strong> "${parsed.emoji}${parsed.name}" is now depleted and removed.`);
                 } else {
-                    items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`;
+                    items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
+                    saveStoredItems(items);
+                    renderInventory();
+                    logRoll(`🧪 <strong>Consumed 1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} remaining</span>).`);
                 }
-            } else {
-                if (delta > 0) {
-                    items[index] = `${parsed.emoji}2x ${parsed.name}`;
-                } else {
-                    items.splice(index, 1);
-                }
+            } else if (delta > 0) {
+                const newQty = parsed.qty + delta;
+                items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
+                saveStoredItems(items);
+                recordDeltaItem('added', cleanName, 1);
+                renderInventory();
+                logRoll(`🎒 <strong>Restocked +1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} total</span>).`);
             }
+        }
 
+        function addItem() {
+            const input = document.getElementById('new-item-input');
+            const text = input.value.trim();
+            if (!text) return;
+            const items = getStoredItems();
+            items.push(text);
             saveStoredItems(items);
+
+            const parsed = parseItemInfo(text);
+            const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+            recordDeltaItem('added', cleanName, parsed.qty);
+
+            input.value = '';
             renderInventory();
+            logRoll(`🎒 Added "${text}" to inventory.`);
         }
 
         function deleteItem(index) {
             const items = getStoredItems();
             if (!items[index]) return;
+            const itemStr = items[index];
+            const parsed = parseItemInfo(itemStr);
+            const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+
             items.splice(index, 1);
             saveStoredItems(items);
-            renderInventory();
-        }
 
-        function addItem() {
-            const input = document.getElementById('new-item-input');
-            const val = input.value.trim();
-            if (!val) return;
-            const items = getStoredItems();
-            items.push(val);
-            saveStoredItems(items);
-            input.value = '';
+            recordDeltaItem('removed', cleanName, parsed.qty);
+
             renderInventory();
+            logRoll(`🗑️ Removed/Discarded: "${itemStr}"`);
         }
 
         function resetInventory() {
-            localStorage.removeItem('dnd_inv_sylvar_v5');
-            saveStoredItems([...defaultItems]);
-            renderInventory();
-            logRoll(`🔄 <strong>Inventory Reset:</strong> Restored to official starting loadout.`);
+            if (confirm("Reset inventory to official campaign loadout?")) {
+                saveStoredItems(defaultItems);
+                clearSessionDelta();
+                renderInventory();
+                logRoll("🎒 Inventory and session delta reset to official campaign loadout.");
+            }
         }
 
         // ==========================================
@@ -2484,22 +2577,22 @@
                 range: "5 feet reach",
                 components: "Finesse",
                 duration: "Instantaneous",
-                attackMod: "+5 to Hit (DEX + Proficiency)",
-                damage: "1d8 + 3 Piercing Damage",
-                desc: "Finesse Martial Weapon: +5 to Hit, 1d8 + 3 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!",
+                attackMod: "+6 to Hit (DEX + Proficiency)",
+                damage: "1d8 + 4 Piercing Damage",
+                desc: "Finesse Martial Weapon: +6 to Hit, 1d8 + 4 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!",
                 fullRules: "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.",
                 upcastNotes: "Can be infused with Psychic Blades for +2d6 Psychic Damage (costs 1 Bardic Inspiration).",
                 flavor: "Sylvar's rapier glides through the air like a conducting baton, striking with pinpoint acoustic precision.",
                 modalButtons: [
                     {
-                        label: "🗡️ Attack (+5)",
+                        label: "🗡️ Attack (+6)",
                         class: "btn-roll-action",
-                        onClick: () => rollD20('Rapier Attack', 5)
+                        onClick: () => rollD20('Rapier Attack', 6)
                     },
                     {
-                        label: "💥 1d8+3 Dmg",
+                        label: "💥 1d8+4 Dmg",
                         class: "btn-roll-action btn-roll-dmg",
-                        onClick: () => rollFormulaDamage('Rapier Damage', 8, 3, 'Piercing')
+                        onClick: () => rollFormulaDamage('Rapier Damage', 8, 4, 'Piercing')
                     }
                 ]
             },
@@ -2511,22 +2604,22 @@
                 range: "20/60 feet (Thrown)",
                 components: "Finesse, Light, Thrown",
                 duration: "Instantaneous",
-                attackMod: "+5 to Hit (DEX + Proficiency)",
-                damage: "1d4 + 3 Piercing Damage",
-                desc: "Finesse, Light, Thrown: +5 to Hit, 1d4 + 3 Piercing Damage.",
+                attackMod: "+6 to Hit (DEX + Proficiency)",
+                damage: "1d4 + 4 Piercing Damage",
+                desc: "Finesse, Light, Thrown: +6 to Hit, 1d4 + 4 Piercing Damage.",
                 fullRules: "If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon.",
                 upcastNotes: "Can be thrown as a bonus action off-hand attack if two-weapon fighting.",
                 flavor: "Balanced throwing daggers with keen steel edges, kept tucked inside Sylvar's sash.",
                 modalButtons: [
                     {
-                        label: "🗡️ Attack (+5)",
+                        label: "🗡️ Attack (+6)",
                         class: "btn-roll-action",
-                        onClick: () => rollD20('Dagger Attack', 5)
+                        onClick: () => rollD20('Dagger Attack', 6)
                     },
                     {
-                        label: "💥 1d4+3 Dmg",
+                        label: "💥 1d4+4 Dmg",
                         class: "btn-roll-action btn-roll-dmg",
-                        onClick: () => rollFormulaDamage('Dagger Damage', 4, 3, 'Piercing')
+                        onClick: () => rollFormulaDamage('Dagger Damage', 4, 4, 'Piercing')
                     }
                 ]
             },
@@ -2538,15 +2631,15 @@
                 range: "60 feet",
                 components: "V (Verbal)",
                 duration: "Instantaneous",
-                attackMod: "DC 13 Wisdom Save",
+                attackMod: "DC 14 Wisdom Save",
                 damage: "1d4 Psychic Damage + Disadvantage on Next Attack",
-                desc: "Unleash a string of insults laced with subtle enchantments (DC 13 Wis save). Fail: takes 1d4 Psychic damage and has Disadvantage on next attack roll.",
-                fullRules: "You unleash a string of insults laced with subtle enchantments at one creature you can see or sense within range. If the target can hear you (though it need not understand you), it must succeed on a <strong>Wisdom saving throw (DC 13)</strong> or take <strong>1d4 psychic damage</strong> and have <strong>disadvantage on the next attack roll</strong> it makes before the end of its next turn.",
+                desc: "Unleash a string of insults laced with subtle enchantments (DC 14 Wis save). Fail: takes 1d4 Psychic damage and has Disadvantage on next attack roll.",
+                fullRules: "You unleash a string of insults laced with subtle enchantments at one creature you can see or sense within range. If the target can hear you (though it need not understand you), it must succeed on a <strong>Wisdom saving throw (DC 14)</strong> or take <strong>1d4 psychic damage</strong> and have <strong>disadvantage on the next attack roll</strong> it makes before the end of its next turn.",
                 upcastNotes: "This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
                 flavor: "Sylvar strikes a mocking chord on his tambourine and purrs a scathing acoustic insult that rings with psychic agony.",
                 modalButtons: [
                     {
-                        label: "🎭 Cast (DC 13 Wis)",
+                        label: "🎭 Cast (DC 14 Wis)",
                         class: "btn-roll-action btn-roll-purple",
                         onClick: () => castViciousMockery()
                     },
@@ -2609,10 +2702,10 @@
                 range: "Touch / Hearing Range",
                 components: "Spoken Words alone",
                 duration: "1 hour",
-                attackMod: "DC 13 Wisdom Save",
+                attackMod: "DC 14 Wisdom Save",
                 damage: "Frightened Condition (Paranoid Phobia)",
-                desc: "Speak to a humanoid alone for 1 minute (DC 13 Wis save). Fail: target is Frightened of you or a chosen creature for 1 hour.",
-                fullRules: "If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear in its mind. At the end of the conversation, the target must succeed on a <strong>Wisdom saving throw (DC 13)</strong> or be <strong>frightened</strong> of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. On a success, the target does not know that you attempted to frighten it.",
+                desc: "Speak to a humanoid alone for 1 minute (DC 14 Wis save). Fail: target is Frightened of you or a chosen creature for 1 hour.",
+                fullRules: "If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear in its mind. At the end of the conversation, the target must succeed on a <strong>Wisdom saving throw (DC 14)</strong> or be <strong>frightened</strong> of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. On a success, the target does not know that you attempted to frighten it.",
                 upcastNotes: "Recharges after a Short or Long Rest.",
                 flavor: "Sylvar leans in close, his blindfold hiding his gaze as he purrs insidious whispered truths that plant terror in the listener's heart.",
                 modalButtons: [
@@ -2763,19 +2856,43 @@
         }
 
         // ==========================================
-        // 📋 1-CLICK EXPORT STATE STRING
+        // 📋 1-CLICK SESSION DELTA EXPORT PROTOCOL
         // ==========================================
         function exportSheetState() {
-            const items = getStoredItems();
-            const exportStr = `🐾 Sylvar Link (Lv 3 Whispers Bard) | HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: ${isCloakAttuned ? '15' : '14'} | Insp: ${bardicInsp}/3 | Help: ${helpTokens}/2 | Slots: [Lv1: ${spellSlots[1].current}/4, Lv2: ${spellSlots[2].current}/2] | Wealth: ${currentGP} GP, ${currentSP} SP | 📦 Inventory: (${items.length} items)`;
-
-            navigator.clipboard.writeText(exportStr).then(() => {
-                alert(`Copied Character State to Clipboard!\n\n${exportStr}`);
-                logRoll(`📋 <strong>Exported State String to Clipboard:</strong><br><small style="color:var(--text-muted); font-family:'JetBrains Mono';">${exportStr}</small>`);
-            }).catch(() => {
-                prompt("Copy character state string:", exportStr);
-            });
+            const delta = getSessionDelta();
+            let deltaParts = [];
+            if (delta.added.length > 0) {
+                deltaParts.push(`➕ Added: ${delta.added.join(', ')}`);
+            }
+            if (delta.removed.length > 0) {
+                deltaParts.push(`➖ Consumed/Removed: ${delta.removed.join(', ')}`);
+            }
+            const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
+            
+            const slotsStr = `L1(${spellSlots[1].current}/${spellSlots[1].max})${spellSlots[2].max > 0 ? ' L2('+spellSlots[2].current+'/'+spellSlots[2].max+')' : ''}${spellSlots[3].max > 0 ? ' L3('+spellSlots[3].current+'/'+spellSlots[3].max+')' : ''}`;
+            const stateStr = `🐾 SYLVAR [HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Insp: ${bardicInsp}/4 | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${currentGP} GP, ${currentSP} SP] • ${invSummary}`;
+            
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(stateStr).then(() => {
+                    logRoll(`📋 <strong>Session Delta Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
+                }).catch(() => {
+                    prompt("Copy Sylvar's session export string:", stateStr);
+                });
+            } else {
+                prompt("Copy Sylvar's session export string:", stateStr);
+            }
         }
+
+        // Event Listeners
+        document.getElementById('hp-input').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') applyDamage();
+        });
+        document.getElementById('new-item-input').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') addItem();
+        });
+        document.getElementById('gold-input').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') applyGoldAdd();
+        });
 
         // Initialize on load
         window.addEventListener('DOMContentLoaded', initSheet);

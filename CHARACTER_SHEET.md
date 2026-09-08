@@ -92,7 +92,7 @@
 ## 📜 Character Profile
 * **Name:** Sylvar Link
 * **Race:** Half-Tabaxi (Femboy Catboy)
-* **Class & Level:** **Bard 4 (College of Whispers)** *(Level 4 ASI: +1 CHA & Feat / +2 CHA ➔ CHA 18)*
+* **Class & Level:** **Bard 4 (College of Whispers)** *(Level 4 ASI: DEX 18 / CHA 18)*
 * **Background:** Entertainer
 * **Alignment:** **Chaotic Good**
 * **Archetype / Role:** **Acoustic Infiltrator, Whispering Blade & Blind Seismic Perceiver** — Blind half-tabaxi bard who navigates the world through acoustic whiskers, floor tremors, and echoing tambourine vibrations (like Toph). Joyful, hyper, and carrying the memory of his missing twin sister **Lyra**, he channels subtle psychic whispers through his rapier and songs.
@@ -103,8 +103,8 @@
 | :--- | :--- | :--- |
 | **Level** | **Level 4** | Bard (College of Whispers) |
 | **Hit Points (HP)** | **31 / 31** | Hit Dice: `4d8 + 8` (CON +2) |
-| **Armor Class (AC)** | **15** | Leather Armor (`11`) + DEX (`+3`) + 🛡️ Cloak of Protection (`+1`) |
-| **Initiative** | **+3** | DEX modifier |
+| **Armor Class (AC)** | **16** | Leather Armor (`11`) + DEX (`+4`) + 🛡️ Cloak of Protection (`+1`) |
+| **Initiative** | **+4** | DEX modifier |
 | **Speed** | **30 ft** | **Feline Agility:** Burst to **60 ft** for 1 turn (recharges on 0 ft move) |
 | **Proficiency Bonus** | **+2** | Tier 1 Standard |
 | **Spell Save DC** | **14** | `8 + 2 (PB) + 4 (CHA)` |
@@ -117,7 +117,7 @@
 | Ability | Score | Mod | Save (Cloak) | Skills & Proficiencies |
 | :--- | :---: | :---: | :---: | :--- |
 | **STR** | 8 | -1 | **+0** | Athletics (+0) *(Jack of All Trades)* |
-| **DEX** | 16 | +3 | **+6 ★ (Prof)** | **Acrobatics (+5 ★)**, Sleight of Hand (+4), Stealth (+4) |
+| **DEX** | **18** | **+4** | **+7 ★ (Prof)** | **Acrobatics (+6 ★)**, Sleight of Hand (+5), Stealth (+5) |
 | **CON** | 14 | +2 | **+3** | Concentration checks (+2 base, +3 save) |
 | **INT** | 5 | -3 | **-2** | Arcana (-2), History (-2), Investigation (-2), Nature (-2), Religion (-2) |
 | **WIS** | 12 | +1 | **+2** | **Insight (+3 ★)**, **Perception (+3 ★ [Cat's Talent])**, Animal Handling (+2), Medicine (+2), Survival (+2) |
@@ -138,11 +138,11 @@
 ## 🎒 Inventory & Wealth
 * **Attuned Magic Items & Apparel:**
   * 🛡️ **Cloak of Protection** (`+1` to Armor Class and `+1` to all Saving Throws — Attuned).
-  * 🥋 **Leather Armor** (AC 11 base + DEX +3 = AC 14 base).
+  * 🥋 **Leather Armor** (AC 11 base + DEX +4 = AC 15 base, 16 with Cloak).
   * 👗 **Neko Maid Costume** (Legendary Nat 20 Performance outfit; black and white frilled maid dress with cat ears and ribbon tail-wrap).
 * **Weapons & Musical Instruments:**
-  * 🗡️ **Steel Rapier:** `+5 to hit`, reach 5 ft. *Hit:* `1d8 + 3` piercing (Finesse). *With Psychic Blades:* `1d8+3 + 2d6 Psychic`!
-  * 🗡️ **Steel Dagger (2x):** `+5 to hit`, range 20/60 ft. *Hit:* `1d4 + 3` piercing (Finesse, Light, Thrown).
+  * 🗡️ **Steel Rapier:** `+6 to hit`, reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse). *With Psychic Blades:* `1d8+4 + 2d6 Psychic`!
+  * 🗡️ **Steel Dagger (2x):** `+6 to hit`, range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).
   * 🪘 **Tambourine** (Arcane & Bardic Focus, acoustic resonator).
   * 🎸 **Lute & Guitar** (Fine wooden instruments).
 * **Consumables & Combat Alchemy:**
