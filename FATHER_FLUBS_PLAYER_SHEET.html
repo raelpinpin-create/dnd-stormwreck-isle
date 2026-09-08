@@ -1528,10 +1528,15 @@
         const heal = parseInt(input.value) || 1;
         input.value = '';
 
-        const prev = curHP;
-        curHP = Math.min(maxHP, curHP + heal);
+        const space = maxHP - curHP;
+        if (heal <= space) {
+            curHP += heal;
+        } else {
+            curHP = maxHP;
+            tempHP += (heal - space);
+        }
         updateHPUI();
-        logRoll(`💚 <strong>Healed:</strong> +${heal} HP (HP: ${prev} ➔ ${curHP}/${maxHP}).`);
+        logRoll(`💚 <strong>Healed / Overhealed +${heal}:</strong> HP is now <span style="color:#86efac; font-weight:700;">${curHP}/${maxHP}</span> ${tempHP > 0 ? '<span style="color:#38bdf8;">(+' + tempHP + ' Temp)</span>' : ''}.`);
     }
 
     function takeShortRest() {

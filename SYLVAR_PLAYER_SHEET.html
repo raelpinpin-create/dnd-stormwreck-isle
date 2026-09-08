@@ -1772,16 +1772,37 @@
             const amt = parseInt(input.value) || 0;
             if (amt <= 0) return;
 
-            currentHP = Math.min(maxHP, currentHP + amt);
+            const space = maxHP - currentHP;
+            if (amt <= space) {
+                currentHP += amt;
+            } else {
+                currentHP = maxHP;
+                tempHP += (amt - space);
+            }
             input.value = '';
             renderVitals();
             saveSheetState();
-            logRoll(`💚 <strong>Healed +${amt} HP:</strong> HP is now <span style="color:#86efac; font-weight:700;">${currentHP}/${maxHP}</span>.`);
+            logRoll(`💚 <strong>Healed / Overhealed +${amt}:</strong> HP is now <span style="color:#86efac; font-weight:700;">${currentHP}/${maxHP}</span> ${tempHP > 0 ? '<span style="color:#38bdf8;">(+' + tempHP + ' Temp)</span>' : ''}.`);
         }
 
         function stepHP(delta) {
-            if (delta > 0) currentHP = Math.min(maxHP, currentHP + delta);
-            else currentHP = Math.max(0, currentHP + delta);
+            if (delta > 0) {
+                if (currentHP < maxHP) {
+                    currentHP += 1;
+                    logRoll(`💚 <strong>+1 HP:</strong> ${currentHP}/${maxHP}`);
+                } else {
+                    tempHP += 1;
+                    logRoll(`🛡️ <strong>+1 Temporary HP:</strong> ${currentHP} (+${tempHP} Temp) / ${maxHP}`);
+                }
+            } else {
+                if (tempHP > 0) {
+                    tempHP -= 1;
+                    logRoll(`💥 <strong>-1 HP (Absorbed by Temp):</strong> ${currentHP} (+${tempHP} Temp) / ${maxHP}`);
+                } else if (currentHP > 0) {
+                    currentHP -= 1;
+                    logRoll(`💥 <strong>-1 HP:</strong> ${currentHP}/${maxHP}`);
+                }
+            }
             renderVitals();
             saveSheetState();
         }

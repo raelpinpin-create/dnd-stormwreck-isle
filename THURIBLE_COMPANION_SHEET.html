@@ -676,11 +676,21 @@
     function stepHP(delta) {
         if (isNaN(curHP)) curHP = 40;
         if (delta > 0) {
-            curHP = Math.min(maxHP, curHP + delta);
-            logRoll(`💚 Thurible HP +${delta} ➔ ${curHP}/${maxHP}`);
+            if (curHP < maxHP) {
+                curHP += delta;
+                logRoll(`💚 Thurible HP +${delta} ➔ ${curHP}/${maxHP}`);
+            } else {
+                tempHP += delta;
+                logRoll(`🛡️ Thurible Temp HP +${delta} ➔ ${curHP} (+${tempHP} Temp) / ${maxHP}`);
+            }
         } else {
-            curHP = Math.max(0, curHP + delta);
-            logRoll(`💥 Thurible HP ${delta} ➔ ${curHP}/${maxHP}`);
+            if (tempHP > 0) {
+                tempHP = Math.max(0, tempHP + delta);
+                logRoll(`💥 Thurible Temp HP absorbed ${delta} ➔ ${curHP} (+${tempHP} Temp) / ${maxHP}`);
+            } else {
+                curHP = Math.max(0, curHP + delta);
+                logRoll(`💥 Thurible HP ${delta} ➔ ${curHP}/${maxHP}`);
+            }
         }
         updateHPUI();
     }
@@ -711,10 +721,16 @@
         const amt = parseInt(input.value) || 0;
         if (amt <= 0) return;
         if (isNaN(curHP)) curHP = 40;
-        curHP = Math.min(maxHP, curHP + amt);
+        const space = maxHP - curHP;
+        if (amt <= space) {
+            curHP += amt;
+        } else {
+            curHP = maxHP;
+            tempHP += (amt - space);
+        }
         input.value = '';
         updateHPUI();
-        logRoll(`💚 Thurible healed +${amt} HP! HP: ${curHP}/${maxHP}`);
+        logRoll(`💚 Thurible healed / overhealed +${amt} HP! HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''}`);
     }
 
     function clearTempHP() {

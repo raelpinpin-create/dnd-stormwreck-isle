@@ -1269,10 +1269,16 @@
         const amt = parseInt(input.value) || 0;
         if (amt <= 0) return;
 
-        curHP = Math.min(maxHP, curHP + amt);
+        const space = maxHP - curHP;
+        if (amt <= space) {
+            curHP += amt;
+        } else {
+            curHP = maxHP;
+            tempHP += (amt - space);
+        }
         input.value = '';
         updateHPUI();
-        logRoll(`💚 <strong>Healing:</strong> Varnoth healed ${amt} HP. Current HP: ${curHP}/${maxHP}`);
+        logRoll(`💚 <strong>Healed / Overhealed +${amt}:</strong> Varnoth HP is now <span style="color:#86efac; font-weight:700;">${curHP}/${maxHP}</span> ${tempHP > 0 ? '<span style="color:#38bdf8;">(+' + tempHP + ' Temp)</span>' : ''}.`);
     }
 
     function quickModHP(delta) {
@@ -1288,8 +1294,15 @@
                 }
             }
             curHP = Math.max(0, curHP - remaining);
+            logRoll(`💥 <strong>-1 HP:</strong> ${curHP}/${maxHP}`);
         } else {
-            curHP = Math.min(maxHP, curHP + delta);
+            if (curHP < maxHP) {
+                curHP += 1;
+                logRoll(`💚 <strong>+1 HP:</strong> ${curHP}/${maxHP}`);
+            } else {
+                tempHP += 1;
+                logRoll(`🛡️ <strong>+1 Temporary HP:</strong> ${curHP} (+${tempHP} Temp) / ${maxHP}`);
+            }
         }
         updateHPUI();
     }
