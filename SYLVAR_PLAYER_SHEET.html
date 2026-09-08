@@ -1430,12 +1430,12 @@
 
         // Official Master Inventory
         const defaultItems = [
-            "🛡️ Cloak of Protection (+1 AC & Saves)",
-            "🥋 Leather Armor (AC 11)",
-            "👗 Neko Maid Costume (Nat 20 Performance Outfit)",
+            "🛡️ Cloak of Protection",
+            "🥋 Leather Armor",
+            "👗 Neko Maid Costume",
             "🗡️ Steel Rapier",
             "🗡️ 2x Steel Daggers",
-            "🪘 Tambourine (Arcane Focus & Resonator)",
+            "🪘 Tambourine",
             "🎸 Lute & Wooden Guitar",
             "💣 2x Spitfire Flasks",
             "🧪 1x Potion of Healing",
@@ -2101,20 +2101,21 @@
         // 🎒 TRACKED INVENTORY MANAGER (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
         function getStoredItems() {
-            let stored = localStorage.getItem('dnd_inv_sylvar_v5');
+            let stored = localStorage.getItem('dnd_inv_sylvar_v6');
             if (!stored) {
                 localStorage.removeItem('dnd_inv_sylvar');
                 localStorage.removeItem('dnd_inv_sylvar_v2');
                 localStorage.removeItem('dnd_inv_sylvar_v3');
                 localStorage.removeItem('dnd_inv_sylvar_v4');
-                localStorage.setItem('dnd_inv_sylvar_v5', JSON.stringify(defaultItems));
+                localStorage.removeItem('dnd_inv_sylvar_v5');
+                localStorage.setItem('dnd_inv_sylvar_v6', JSON.stringify(defaultItems));
                 return [...defaultItems];
             }
             return JSON.parse(stored);
         }
 
         function saveStoredItems(items) {
-            localStorage.setItem('dnd_inv_sylvar_v5', JSON.stringify(items));
+            localStorage.setItem('dnd_inv_sylvar_v6', JSON.stringify(items));
         }
 
         function parseItemInfo(itemStr) {
@@ -2204,54 +2205,150 @@
             });
         }
 
+        // Session Delta Tracking
+        function getSessionDelta() {
+            return {
+                added: JSON.parse(localStorage.getItem('dnd_delta_add_sylvar') || '[]'),
+                removed: JSON.parse(localStorage.getItem('dnd_delta_rem_sylvar') || '[]')
+            };
+        }
+
+        function saveSessionDelta(delta) {
+            localStorage.setItem('dnd_delta_add_sylvar', JSON.stringify(delta.added));
+            localStorage.setItem('dnd_delta_rem_sylvar', JSON.stringify(delta.removed));
+        }
+
+        function clearSessionDelta() {
+            localStorage.removeItem('dnd_delta_add_sylvar');
+            localStorage.removeItem('dnd_delta_rem_sylvar');
+        }
+
+        function recordDeltaItem(type, baseName, count = 1) {
+            if (!baseName || count <= 0) return;
+            const delta = getSessionDelta();
+            const normalizedName = baseName.replace(/^(\d+)\s*[xX]\s*/, '').trim();
+            
+            const oppositeType = type === 'added' ? 'removed' : 'added';
+            const currentList = delta[type];
+            const oppList = delta[oppositeType];
+
+            function findEntryIndex(list, name) {
+                return list.findIndex(entry => {
+                    const entryName = entry.replace(/^(\d+)\s*[xX]\s*/, '').trim();
+                    return entryName === name;
+                });
+            }
+
+            function getEntryCount(entry) {
+                const m = entry.match(/^(\d+)\s*[xX]\s*/);
+                return m ? parseInt(m[1]) : 1;
+            }
+
+            let oppIdx = findEntryIndex(oppList, normalizedName);
+            if (oppIdx !== -1) {
+                let oppCount = getEntryCount(oppList[oppIdx]);
+                if (oppCount > count) {
+                    oppList[oppIdx] = `${oppCount - count}x ${normalizedName}`;
+                } else if (oppCount === count) {
+                    oppList.splice(oppIdx, 1);
+                } else {
+                    oppList.splice(oppIdx, 1);
+                    let remaining = count - oppCount;
+                    let currIdx = findEntryIndex(currentList, normalizedName);
+                    if (currIdx !== -1) {
+                        let currCount = getEntryCount(currentList[currIdx]);
+                        currentList[currIdx] = `${currCount + remaining}x ${normalizedName}`;
+                    } else {
+                        currentList.push(remaining > 1 ? `${remaining}x ${normalizedName}` : `1x ${normalizedName}`);
+                    }
+                }
+            } else {
+                let currIdx = findEntryIndex(currentList, normalizedName);
+                if (currIdx !== -1) {
+                    let currCount = getEntryCount(currentList[currIdx]);
+                    currentList[currIdx] = `${currCount + count}x ${normalizedName}`;
+                } else {
+                    currentList.push(count > 1 ? `${count}x ${normalizedName}` : `1x ${normalizedName}`);
+                }
+            }
+
+            saveSessionDelta(delta);
+        }
+
         function stepItemQty(index, delta) {
             const items = getStoredItems();
             if (!items[index]) return;
             const parsed = parseItemInfo(items[index]);
+            const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
 
-            if (parsed.hasQty) {
+            if (delta < 0) {
                 const newQty = parsed.qty + delta;
+                recordDeltaItem('removed', cleanName, 1);
+                
                 if (newQty <= 0) {
                     items.splice(index, 1);
+                    saveStoredItems(items);
+                    renderInventory();
+                    logRoll(`🗑️ <strong>Consumed last:</strong> "${parsed.emoji}${parsed.name}" is now depleted and removed.`);
                 } else {
-                    items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`;
+                    items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
+                    saveStoredItems(items);
+                    renderInventory();
+                    logRoll(`🧪 <strong>Consumed 1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} remaining</span>).`);
                 }
-            } else {
-                if (delta > 0) {
-                    items[index] = `${parsed.emoji}2x ${parsed.name}`;
-                } else {
-                    items.splice(index, 1);
-                }
+            } else if (delta > 0) {
+                const newQty = parsed.qty + delta;
+                items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
+                saveStoredItems(items);
+                recordDeltaItem('added', cleanName, 1);
+                renderInventory();
+                logRoll(`🎒 <strong>Restocked +1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} total</span>).`);
             }
-
-            saveStoredItems(items);
-            renderInventory();
         }
 
         function deleteItem(index) {
             const items = getStoredItems();
             if (!items[index]) return;
+            const itemStr = items[index];
+            const parsed = parseItemInfo(itemStr);
+            const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+
             items.splice(index, 1);
             saveStoredItems(items);
+
+            recordDeltaItem('removed', cleanName, parsed.qty);
+
             renderInventory();
+            logRoll(`🗑️ Removed/Discarded: "${itemStr}"`);
         }
 
         function addItem() {
             const input = document.getElementById('new-item-input');
-            const val = input.value.trim();
-            if (!val) return;
+            const text = input.value.trim();
+            if (!text) return;
             const items = getStoredItems();
-            items.push(val);
+            items.push(text);
             saveStoredItems(items);
+
+            const parsed = parseItemInfo(text);
+            const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+            recordDeltaItem('added', cleanName, parsed.qty);
+
             input.value = '';
             renderInventory();
+            logRoll(`🎒 Added "${text}" to inventory.`);
         }
 
         function resetInventory() {
-            localStorage.removeItem('dnd_inv_sylvar_v5');
-            saveStoredItems([...defaultItems]);
-            renderInventory();
-            logRoll(`🔄 <strong>Inventory Reset:</strong> Restored to official starting loadout.`);
+            if (confirm("Reset inventory and coin purse to official campaign loadout?")) {
+                currentGP = 415;
+                currentSP = 0;
+                updateGoldDisplay();
+                saveStoredItems([...defaultItems]);
+                clearSessionDelta();
+                renderInventory();
+                logRoll("🎒 Inventory, Gold Purse, and session delta reset to official campaign loadout.");
+            }
         }
 
         // ==========================================
@@ -2312,7 +2409,7 @@
             const actions = document.getElementById('item-modal-actions');
             if (details.hasQty) {
                 actions.innerHTML = `
-                    <button class="btn-act btn-act-pre" onclick="stepItemQty(${index}, -1); openItemDetailsModal(${index});" style="color:var(--accent-gold); border-color:rgba(245,158,11,0.4); font-size:0.72rem; padding:4px 8px;">🧪 Consume 1 (${details.qty} left)</button>
+                    <button class="btn-act btn-act-pre" onclick="stepItemQty(${index}, -1); const itms = getStoredItems(); if (itms[${index}]) { openItemDetailsModal(${index}); } else { closeItemModal(); }" style="color:var(--accent-gold); border-color:rgba(245,158,11,0.4); font-size:0.72rem; padding:4px 8px;">🧪 Consume 1 (${details.qty} left)</button>
                 `;
             } else {
                 actions.innerHTML = ``;
@@ -2763,19 +2860,44 @@
         }
 
         // ==========================================
-        // 📋 1-CLICK EXPORT STATE STRING
+        // 📋 1-CLICK SESSION DELTA EXPORT PROTOCOL
         // ==========================================
         function exportSheetState() {
-            const items = getStoredItems();
-            const exportStr = `🐾 Sylvar Link (Lv 3 Whispers Bard) | HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: ${isCloakAttuned ? '15' : '14'} | Insp: ${bardicInsp}/3 | Help: ${helpTokens}/2 | Slots: [Lv1: ${spellSlots[1].current}/4, Lv2: ${spellSlots[2].current}/2] | Wealth: ${currentGP} GP, ${currentSP} SP | 📦 Inventory: (${items.length} items)`;
+            const delta = getSessionDelta();
+            let deltaParts = [];
+            if (delta.added.length > 0) {
+                deltaParts.push(`➕ Added: ${delta.added.join(', ')}`);
+            }
+            if (delta.removed.length > 0) {
+                deltaParts.push(`➖ Consumed/Removed: ${delta.removed.join(', ')}`);
+            }
+            const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
 
-            navigator.clipboard.writeText(exportStr).then(() => {
-                alert(`Copied Character State to Clipboard!\n\n${exportStr}`);
-                logRoll(`📋 <strong>Exported State String to Clipboard:</strong><br><small style="color:var(--text-muted); font-family:'JetBrains Mono';">${exportStr}</small>`);
-            }).catch(() => {
-                prompt("Copy character state string:", exportStr);
-            });
+            const slotsStr = `L1(${spellSlots[1].current}/${spellSlots[1].max})${spellSlots[2].max > 0 ? ' L2('+spellSlots[2].current+'/'+spellSlots[2].max+')' : ''}${spellSlots[3].max > 0 ? ' L3('+spellSlots[3].current+'/'+spellSlots[3].max+')' : ''}`;
+            const acVal = document.getElementById('ac-disp') ? document.getElementById('ac-disp').innerText : (isCloakAttuned ? '15' : '14');
+            const stateStr = `🐾 SYLVAR LINK [HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Insp: ${bardicInsp}/4 | Help: ${helpTokens}/2 | AC: ${acVal} | Wealth: ${currentGP} GP, ${currentSP} SP] • ${invSummary}`;
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(stateStr).then(() => {
+                    logRoll(`📋 <strong>Session Delta Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
+                }).catch(() => {
+                    prompt("Copy Sylvar's session export string:", stateStr);
+                });
+            } else {
+                prompt("Copy Sylvar's session export string:", stateStr);
+            }
         }
+
+        // Event Listeners
+        document.getElementById('hp-input')?.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') applyDamage();
+        });
+        document.getElementById('new-item-input')?.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') addItem();
+        });
+        document.getElementById('gold-input')?.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') applyGoldAdd();
+        });
 
         // Initialize on load
         window.addEventListener('DOMContentLoaded', initSheet);
