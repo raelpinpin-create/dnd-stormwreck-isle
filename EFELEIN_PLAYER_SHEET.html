@@ -701,7 +701,7 @@
                     « Warden of the Living Grove »
                 </div>
                 <div style="font-size:0.75rem; color:var(--text-dim); margin-top:1px;">
-                    Level 3 High Elf Evocation Wizard • Delinquent Prodigy
+                    Level 4 High Elf Evocation Wizard • Delinquent Prodigy
                 </div>
             </div>
             <div class="pill-badge-group">
@@ -738,7 +738,7 @@
 
             <!-- RESULT BANNER -->
             <div class="roll-result-display" id="roll-res">
-                ⚡ Arcane matrix initialized. Roll any attack, save, or skill check below!
+                ⚡ Arcane matrix initialized (Level 4 Evocation). Roll any attack, save, or skill check below!
             </div>
         </section>
 
@@ -752,7 +752,7 @@
                 <div class="vitals-4box">
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">HIT POINTS</span>
-                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">20/20</span>
+                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">26/26</span>
                     </div>
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">ARMOR CLASS</span>
@@ -762,9 +762,9 @@
                         <span class="vital-mini-lbl">INIT 🎲</span>
                         <span class="vital-mini-val" style="color:var(--accent-blue);">+3</span>
                     </div>
-                    <div class="vital-mini-box" title="Base Wizard DC 13, Hit +5 (+1 on Lightning spells via Astalagan's Scale)">
+                    <div class="vital-mini-box" title="Base Wizard DC 14, Hit +6 (+1 on Lightning spells via Astalagan's Scale)">
                         <span class="vital-mini-lbl">SPELL DC / HIT</span>
-                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 13 | +5</span>
+                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 14 | +6</span>
                     </div>
                 </div>
 
@@ -848,10 +848,10 @@
                         <div class="ability-score">14</div>
                         <div class="ability-mod">+2</div>
                     </div>
-                    <div class="ability-box active-key" onclick="rollD20('INT Check', 3)" title="Click to roll INT Check (+3)">
+                    <div class="ability-box active-key" onclick="rollD20('INT Check', 4)" title="Click to roll INT Check (+4)">
                         <div class="ability-name">INT</div>
-                        <div class="ability-score">16</div>
-                        <div class="ability-mod">+3</div>
+                        <div class="ability-score">18</div>
+                        <div class="ability-mod">+4</div>
                     </div>
                     <div class="ability-box" onclick="rollD20('WIS Check', 1)" title="Click to roll WIS Check (+1)">
                         <div class="ability-name">WIS</div>
@@ -871,7 +871,7 @@
                         <span>🛡️ Saving Throws</span>
                     </div>
                     <ul class="stat-row-list">
-                        <li class="stat-row-item prof-item" onclick="rollD20('Intelligence Saving Throw ★', 5)"><span>Intelligence Save ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Intelligence Saving Throw ★', 6)"><span>Intelligence Save ★</span><span>+6 🎲</span></li>
                         <li class="stat-row-item prof-item" onclick="rollD20('Wisdom Saving Throw ★', 3)"><span>Wisdom Save ★</span><span>+3 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Dexterity Save', 2)"><span>Dexterity Save</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Constitution Save', 2)"><span>Constitution Save</span><span>+2 🎲</span></li>
@@ -889,19 +889,19 @@
                     <ul class="stat-row-list">
                         <li class="stat-row-item" onclick="rollD20('Acrobatics (DEX)', 2)"><span>Acrobatics (DEX)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Animal Handling (WIS)', 1)"><span>Animal Handling (WIS)</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Arcana (INT) ★', 5)"><span>Arcana (INT) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Arcana (INT) ★', 6)"><span>Arcana (INT) ★</span><span>+6 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Athletics (STR)', 0)"><span>Athletics (STR)</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Deception (CHA)', -1)"><span>Deception (CHA)</span><span>-1 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('History (INT) ★', 5)"><span>History (INT) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('History (INT) ★', 6)"><span>History (INT) ★</span><span>+6 🎲</span></li>
                         <li class="stat-row-item prof-item" onclick="rollD20('Insight (WIS) ★', 3)"><span>Insight (WIS) ★</span><span>+3 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Intimidation (CHA)', -1)"><span>Intimidation (CHA)</span><span>-1 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Investigation (INT) ★', 5)"><span>Investigation (INT) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Investigation (INT) ★', 6)"><span>Investigation (INT) ★</span><span>+6 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Medicine (WIS)', 1)"><span>Medicine (WIS)</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Nature (INT)', 3)"><span>Nature (INT)</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Nature (INT)', 4)"><span>Nature (INT)</span><span>+4 🎲</span></li>
                         <li class="stat-row-item prof-item" onclick="rollD20('Perception (WIS) ★', 3)"><span>Perception (WIS) ★</span><span>+3 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Performance (CHA)', -1)"><span>Performance (CHA)</span><span>-1 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Persuasion (CHA)', -1)"><span>Persuasion (CHA)</span><span>-1 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Religion (INT) ★', 5)"><span>Religion (INT) ★</span><span>+5 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Religion (INT) ★', 6)"><span>Religion (INT) ★</span><span>+6 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 2)"><span>Sleight of Hand (DEX)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 2)"><span>Stealth (DEX)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Survival (WIS)', 1)"><span>Survival (WIS)</span><span>+1 🎲</span></li>
@@ -1016,9 +1016,9 @@
                                 </div>
                                 <span style="font-size:0.65rem; color:#38bdf8; font-weight:700;">EVOCATION</span>
                             </div>
-                            <div class="action-desc">Ranged 60ft. +5 to Hit, 1d8 Cold & slows target -10ft.</div>
+                            <div class="action-desc">Ranged 60ft. +6 to Hit, 1d8 Cold & slows target -10ft.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Ray of Frost Attack', 5)">❄️ Attack</button>
+                                <button class="btn-roll-action" onclick="rollD20('Ray of Frost Attack', 6)">❄️ Attack</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Ray of Frost Dmg', 8, 0, 'Cold')">💥 Damage</button>
                             </div>
                         </div>
@@ -1034,9 +1034,9 @@
                                 </div>
                                 <span style="font-size:0.65rem; color:#f87171; font-weight:700;">EVOCATION</span>
                             </div>
-                            <div class="action-desc">Ranged 120ft. +5 to Hit, 1d10 Fire & ignites flammable objects.</div>
+                            <div class="action-desc">Ranged 120ft. +6 to Hit, 1d10 Fire & ignites flammable objects.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Fire Bolt Attack', 5)">🔥 Attack</button>
+                                <button class="btn-roll-action" onclick="rollD20('Fire Bolt Attack', 6)">🔥 Attack</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Fire Bolt Dmg', 10, 0, 'Fire')">💥 Damage</button>
                             </div>
                         </div>
@@ -1273,8 +1273,8 @@
 
 <script>
     // State Variables
-    let curHP = 20;
-    let maxHP = 20;
+    let curHP = 26;
+    let maxHP = 26;
     let tempHP = 0;
     let baseAC = 12;
     let isMageArmorActive = false;
@@ -2048,10 +2048,10 @@
     // ==========================================
     // 🔮 MULTI-TIER SPELL SLOTS & SPELLBOOK
     // ==========================================
-    let characterLevel = 3; // Current Character Level (Level 3 Upgraded)
+    let characterLevel = 4; // Current Character Level (Level 4 Upgraded)
     let spellSlots = {
         1: { current: 4, max: 4, reqLevel: 1 },
-        2: { current: 2, max: 2, reqLevel: 3 },
+        2: { current: 3, max: 3, reqLevel: 3 },
         3: { current: 0, max: 0, reqLevel: 5 }
     };
 
@@ -2081,7 +2081,7 @@
             return;
         }
         if (slot.max === 0) {
-            slot.max = (lvl === 2 ? 2 : 2);
+            slot.max = (lvl === 2 ? 3 : 2);
             slot.current = slot.max;
         } else {
             slot.current = slot.current > 0 ? slot.current - 1 : slot.max;
@@ -2097,7 +2097,7 @@
             return;
         }
         if (delta > 0 && slot.max === 0) {
-            slot.max = (lvl === 2 ? 2 : 2);
+            slot.max = (lvl === 2 ? 3 : 2);
             slot.current = slot.max;
         } else if (delta < 0 && slot.max > 0 && slot.current === 0) {
             slot.max = Math.max(0, slot.max - 1);
@@ -2116,7 +2116,7 @@
         logRoll(`🟦 All Spell Slots restored to full capacity on Rest!`);
     }
 
-    const maxPreparedSpells = 6; // Level 3 Wizard + INT Mod (+3) = 6 spells max
+    const maxPreparedSpells = 8; // Level 4 Wizard + INT Mod (+4) = 8 spells max
 
     function renderSpellbook() {
         const container = document.getElementById('spellbook-grid');

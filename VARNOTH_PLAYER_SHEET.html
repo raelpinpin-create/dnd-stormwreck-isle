@@ -614,13 +614,13 @@
                     « Warden of the Living Grove » & « The Indomitable Iron-Oak »
                 </div>
                 <div style="font-size:0.75rem; color:var(--text-dim); margin-top:1px;">
-                    Level 3 Human Martial Defender (Azure Wolves Commander • Sidekick Tank)
+                    Level 4 Human Martial Defender (Azure Wolves Commander • Sidekick Tank)
                 </div>
             </div>
             <div class="pill-badge-group">
                 <button class="btn-act btn-act-pre" onclick="exportSheetState()" style="font-size:0.75rem; font-weight:700; color:var(--accent-gold); border:1px solid rgba(245, 158, 11, 0.4); display:flex; align-items:center; gap:4px; padding:4px 10px; cursor:pointer;" title="1-Click copy current HP, features, and inventory to clipboard">📋 Export Data</button>
                 <span class="pill-badge pill-gold">LAWFUL GOOD</span>
-                <span class="pill-badge pill-crimson">MARTIAL DEFENDER 3</span>
+                <span class="pill-badge pill-crimson">MARTIAL DEFENDER 4</span>
                 <span class="pill-badge pill-blue">TANK</span>
             </div>
         </header>
@@ -646,14 +646,14 @@
                     </div>
                 </div>
 
-                <div class="roll-mode-group">
+                <div class="dice-mode-group">
                     <button class="btn-mode active-mode" id="mode-norm" onclick="setRollMode('norm')">Norm</button>
                     <button class="btn-mode" id="mode-adv" onclick="setRollMode('adv')">Adv</button>
                     <button class="btn-mode" id="mode-dis" onclick="setRollMode('dis')">Dis</button>
                 </div>
             </div>
             <div class="roll-console-box" id="roll-res">
-                🛡️ General Varnoth ready for frontline defense. Crits on 19-20! Click any stat, attack, or die to roll.
+                🛡️ General Varnoth ready for frontline defense (Level 4 Defender). Crits on 19-20! Click any stat, attack, or die to roll.
             </div>
         </div>
 
@@ -666,7 +666,7 @@
                 <div class="vitals-4box">
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">HP</span>
-                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">29/29</span>
+                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">36/36</span>
                     </div>
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">AC</span>
@@ -678,7 +678,7 @@
                     </div>
                     <div class="vital-mini-box" title="Improved Critical: Scores Critical Hit on 19 or 20!">
                         <span class="vital-mini-lbl">CRIT / HIT</span>
-                        <span class="vital-mini-val" style="font-size:0.85rem; color:var(--accent-gold);">19-20 ★ | +4</span>
+                        <span class="vital-mini-val" style="font-size:0.85rem; color:var(--accent-gold);">19-20 ★ | +6</span>
                     </div>
                 </div>
 
@@ -777,10 +777,10 @@
 
                 <!-- 6-ABILITY STRIP -->
                 <div class="ability-strip">
-                    <div class="ability-box active-key" onclick="rollD20('STR Check ★', 2)" title="Click to roll STR Check (+2)">
+                    <div class="ability-box active-key" onclick="rollD20('STR Check ★', 4)" title="Click to roll STR Check (+4)">
                         <div class="ability-name">STR</div>
-                        <div class="ability-score">15</div>
-                        <div class="ability-mod">+2</div>
+                        <div class="ability-score">18</div>
+                        <div class="ability-mod">+4</div>
                     </div>
                     <div class="ability-box" onclick="rollD20('DEX Check', 0)" title="Click to roll DEX Check (+0)">
                         <div class="ability-name">DEX</div>
@@ -816,9 +816,9 @@
                         <span style="font-size:0.68rem; color:var(--text-dim);">Prof Bonus: +2</span>
                     </div>
                     <ul class="stat-row-list">
-                        <li class="stat-row-item prof-item" onclick="rollD20('Strength Save ★', 4)">
+                        <li class="stat-row-item prof-item" onclick="rollD20('Strength Save ★', 6)">
                             <span>Strength Save ★</span>
-                            <span>+4 🎲</span>
+                            <span>+6 🎲</span>
                         </li>
                         <li class="stat-row-item" onclick="rollD20('Dexterity Save', 0)">
                             <span>Dexterity Save</span>
@@ -850,7 +850,7 @@
                         <span style="font-size:0.68rem; color:var(--accent-gold);">★ = Proficient</span>
                     </div>
                     <ul class="stat-row-list">
-                        <li class="stat-row-item prof-item" onclick="rollD20('Athletics (STR) ★', 4)"><span>Athletics (STR) ★</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Athletics (STR) ★', 6)"><span>Athletics (STR) ★</span><span>+6 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Acrobatics (DEX)', 0)"><span>Acrobatics (DEX)</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 0)"><span>Sleight of Hand (DEX)</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Stealth (DEX - Armor Disadv)', 0)" title="Splint mail imposes disadvantage on Stealth"><span>Stealth (DEX) <small style="color:var(--text-muted);">(Disadv)</small></span><span>+0 🎲</span></li>
@@ -957,9 +957,9 @@
                                 </div>
                                 <span id="wind-badge" style="font-size:0.68rem; color:var(--accent-green); font-weight:700;">1/1 Ready</span>
                             </div>
-                            <div class="spell-desc-compact">Bonus Action. Regain <strong>1d10 + 3</strong> HP during battle once per short rest.</div>
+                            <div class="spell-desc-compact">Bonus Action. Regain <strong>1d10 + 4</strong> HP during battle once per short rest.</div>
                             <div class="spell-action-btns">
-                                <button class="btn-card-roll btn-card-heal" id="btn-roll-wind" onclick="useSecondWind()">💨 Heal 1d10+3</button>
+                                <button class="btn-card-roll btn-card-heal" id="btn-roll-wind" onclick="useSecondWind()">💨 Heal 1d10+4</button>
                                 <button class="btn-card-roll btn-card-slot" onclick="toggleWind()">[Reset/Use]</button>
                             </div>
                         </div>
@@ -991,12 +991,12 @@
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#cbd5e1; margin-top:1px;">Special Attack • 1 Action</div>
                                 </div>
-                                <span style="font-size:0.68rem; color:var(--accent-gold); font-weight:700;">ATHLETICS +4</span>
+                                <span style="font-size:0.68rem; color:var(--accent-gold); font-weight:700;">ATHLETICS +6</span>
                             </div>
-                            <div class="spell-desc-compact">Contest vs target: <strong>DC 12 STR Save</strong> or target shoved 5ft / knocked <strong>Prone</strong>!</div>
+                            <div class="spell-desc-compact">Contest vs target: <strong>DC 14 STR Save</strong> or target shoved 5ft / knocked <strong>Prone</strong>!</div>
                             <div class="spell-action-btns">
-                                <button class="btn-card-roll" onclick="rollD20('Peg Leg Strike', 4)">🪵 Kick (+4)</button>
-                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Peg Kick Damage', 4, 2, 'Bludgeoning')">💥 1d4+2 Bludgeon</button>
+                                <button class="btn-card-roll" onclick="rollD20('Peg Leg Strike', 6)">🪵 Kick (+6)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Peg Kick Damage', 4, 4, 'Bludgeoning')">💥 1d4+4 Bludgeon</button>
                             </div>
                         </div>
                     </div>
@@ -1018,12 +1018,12 @@
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">Martial Melee • 1 Action</div>
                                 </div>
-                                <span style="font-size:0.7rem; color:var(--accent-gold); font-weight:700;">+4 Hit • 19-20 Crit</span>
+                                <span style="font-size:0.7rem; color:var(--accent-gold); font-weight:700;">+6 Hit • 19-20 Crit</span>
                             </div>
-                            <div class="spell-desc-compact">1-Handed with Shield. <em>Hit:</em> 1d8 + 2 Slashing damage.</div>
+                            <div class="spell-desc-compact">1-Handed with Shield. <em>Hit:</em> 1d8 + 4 Slashing damage.</div>
                             <div class="spell-action-btns">
-                                <button class="btn-card-roll" onclick="rollVarnothAttack('Azure Longsword (1H)', 4)">⚔️ Attack (+4)</button>
-                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Longsword Damage (1H)', 8, 2, 'Slashing')">💥 1d8+2 Dmg</button>
+                                <button class="btn-card-roll" onclick="rollVarnothAttack('Azure Longsword (1H)', 6)">⚔️ Attack (+6)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Longsword Damage (1H)', 8, 4, 'Slashing')">💥 1d8+4 Dmg</button>
                             </div>
                         </div>
 
@@ -1036,12 +1036,12 @@
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#f87171; margin-top:1px;">Versatile 2H • 1 Action</div>
                                 </div>
-                                <span style="font-size:0.7rem; color:var(--accent-crimson); font-weight:700;">+4 Hit • 19-20 Crit</span>
+                                <span style="font-size:0.7rem; color:var(--accent-crimson); font-weight:700;">+6 Hit • 19-20 Crit</span>
                             </div>
-                            <div class="spell-desc-compact">2-Handed grip (No Shield). <em>Hit:</em> 1d10 + 2 Slashing damage.</div>
+                            <div class="spell-desc-compact">2-Handed grip (No Shield). <em>Hit:</em> 1d10 + 4 Slashing damage.</div>
                             <div class="spell-action-btns">
-                                <button class="btn-card-roll" onclick="rollVarnothAttack('Longsword (2H Versatile)', 4)">⚔️ Attack (+4)</button>
-                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Longsword Damage (2H)', 10, 2, 'Slashing')">💥 1d10+2 Dmg</button>
+                                <button class="btn-card-roll" onclick="rollVarnothAttack('Longsword (2H Versatile)', 6)">⚔️ Attack (+6)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Longsword Damage (2H)', 10, 4, 'Slashing')">💥 1d10+4 Dmg</button>
                             </div>
                         </div>
 
@@ -1054,12 +1054,12 @@
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">Dual-Wield • Action + Bonus</div>
                                 </div>
-                                <span style="font-size:0.7rem; color:#f87171; font-weight:700;">+4 Hit • Trophy</span>
+                                <span style="font-size:0.7rem; color:#f87171; font-weight:700;">+6 Hit • Trophy</span>
                             </div>
-                            <div class="spell-desc-compact">Main: 1d6+2 Slashing. Off-Hand Bonus: 1d6 Slashing.</div>
+                            <div class="spell-desc-compact">Main: 1d6+4 Slashing. Off-Hand Bonus: 1d6 Slashing.</div>
                             <div class="spell-action-btns">
-                                <button class="btn-card-roll" onclick="rollVarnothAttack('Main Bone-Cleaver', 4)">🪓 Main (+4)</button>
-                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Main Cleaver Damage', 6, 2, 'Slashing')">💥 1d6+2</button>
+                                <button class="btn-card-roll" onclick="rollVarnothAttack('Main Bone-Cleaver', 6)">🪓 Main (+6)</button>
+                                <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Main Cleaver Damage', 6, 4, 'Slashing')">💥 1d6+4</button>
                                 <button class="btn-card-roll btn-card-dmg" onclick="rollFormulaDamage('Off-Hand Cleaver Damage', 6, 0, 'Slashing')" style="background:#7f1d1d;">💥 Off-Hand 1d6</button>
                             </div>
                         </div>
@@ -1088,9 +1088,9 @@
                                 <span>🧪 Potion of Healing (Full Action)</span>
                                 <span style="font-size:0.7rem; color:var(--accent-green); font-weight:700;">100% Full Max HP</span>
                             </div>
-                            <div class="spell-desc-compact">Consuming as a Full Action instantly restores <strong>100% Full Max HP (29 HP)</strong>!</div>
+                            <div class="spell-desc-compact">Consuming as a Full Action instantly restores <strong>100% Full Max HP (36 HP)</strong>!</div>
                             <div class="spell-action-btns">
-                                <button class="btn-card-roll btn-card-heal" onclick="useFullPotionOfHealing()">🧪 Drink Potion (Full 29 HP Heal)</button>
+                                <button class="btn-card-roll btn-card-heal" onclick="useFullPotionOfHealing()">🧪 Drink Potion (Full 36 HP Heal)</button>
                             </div>
                         </div>
                     </div>
@@ -1189,8 +1189,8 @@
 
 <script>
     // State Variables
-    let curHP = 29;
-    let maxHP = 29;
+    let curHP = 36;
+    let maxHP = 36;
     let tempHP = 0;
     let baseAC = 15; // Splint Mail
     let isShieldEquipped = true; // Azure Wolf Steel Shield (+2 AC)
@@ -1300,7 +1300,7 @@
     }
 
     function resetHP() {
-        if (confirm("Take a Long Rest? Restores Full HP (29), Second Wind, Action Surge, and all 2 Help Tokens!")) {
+        if (confirm("Take a Long Rest? Restores Full HP (36), Second Wind, Action Surge, and all 2 Help Tokens!")) {
             curHP = maxHP;
             tempHP = 0;
             isSecondWindReady = true;
@@ -1321,7 +1321,7 @@
             return;
         }
         shortRestsRemaining--;
-        const healAmt = 8; // 25% of 29 = 8 HP
+        const healAmt = 9; // 25% of 36 = 9 HP
         const prevHP = curHP;
         curHP = Math.min(maxHP, curHP + healAmt);
         isSecondWindReady = true;
@@ -1337,7 +1337,7 @@
     function useFullPotionOfHealing() {
         curHP = maxHP;
         updateHPUI();
-        logRoll(`🧪 <strong>Potion of Healing:</strong> Varnoth drank a potion as a Full Action, restoring <strong>100% Full HP (29/29)</strong>!`);
+        logRoll(`🧪 <strong>Potion of Healing:</strong> Varnoth drank a potion as a Full Action, restoring <strong>100% Full HP (36/36)</strong>!`);
     }
 
     // ==========================================
@@ -1398,12 +1398,12 @@
             return;
         }
         const d10 = Math.floor(Math.random() * 10) + 1;
-        const heal = d10 + 3; // 1d10 + Level 3
+        const heal = d10 + 4; // 1d10 + Level 4
         isSecondWindReady = false;
         curHP = Math.min(maxHP, curHP + heal);
         updateHPUI();
         updateWindUI();
-        logRoll(`💨 <strong>Second Wind Activated:</strong> Varnoth digs deep and catches her breath! [d10:${d10} + 3] = <span style="color:var(--accent-green); font-weight:700;">+${heal} HP</span> (Current: ${curHP}/${maxHP}).`);
+        logRoll(`💨 <strong>Second Wind Activated:</strong> Varnoth digs deep and catches her breath! [d10:${d10} + 4] = <span style="color:var(--accent-green); font-weight:700;">+${heal} HP</span> (Current: ${curHP}/${maxHP}).`);
     }
 
     function toggleWind() {
@@ -1476,7 +1476,7 @@
         "improvedcrit": {
             id: "improvedcrit",
             name: "💥 Improved Critical & Battle Readiness",
-            school: "Sidekick Martial Feature (Level 3 Champion Archetype)",
+            school: "Sidekick Martial Feature (Level 4 Defender)",
             castingTime: "Passive Trait",
             range: "Self",
             components: "None",
@@ -1514,12 +1514,12 @@
             components: "None",
             duration: "Instantaneous",
             attackMod: "Self-Heal (1/Short or Long Rest)",
-            damage: "Regain 1d10 + 3 Hit Points",
-            desc: "Bonus Action. Regain 1d10 + 3 HP during battle once per short rest.",
-            fullRules: "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a <strong>Bonus Action</strong> to regain hit points equal to <strong>1d10 + your Level (3)</strong>.<br><br>Once you use this feature, you must finish a short or long rest before you can use it again.",
+            damage: "Regain 1d10 + 4 Hit Points",
+            desc: "Bonus Action. Regain 1d10 + 4 HP during battle once per short rest.",
+            fullRules: "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a <strong>Bonus Action</strong> to regain hit points equal to <strong>1d10 + your Level (4)</strong>.<br><br>Once you use this feature, you must finish a short or long rest before you can use it again.",
             flavor: "Gritting her teeth through wounds and fatigue, Varnoth digs deep into her legion training and catches her second wind.",
             modalButtons: [
-                { label: "💨 Heal 1d10+3", class: "btn-roll-action btn-roll-heal", onClick: () => useSecondWind() }
+                { label: "💨 Heal 1d10+4", class: "btn-roll-action btn-roll-heal", onClick: () => useSecondWind() }
             ]
         },
         "actionsurge": {
@@ -1547,14 +1547,14 @@
             range: "Melee 5 feet",
             components: "None",
             duration: "Instantaneous",
-            attackMod: "+4 Athletics Check vs Target STR/DEX (DC 12 Save)",
-            damage: "1d4 + 2 Bludgeoning Damage + Shove 5ft or Knock Prone",
-            desc: "Contest vs target: DC 12 STR Save or target shoved 5ft / knocked Prone!",
-            fullRules: "Varnoth uses her reinforced iron-capped peg leg or heavy shield boss to batter opponents off-balance.<br><br>• <strong>Attack Roll:</strong> d20 + 4 (Athletics) vs target AC / save.<br>• <strong>Damage:</strong> 1d4 + 2 bludgeoning damage.<br>• <strong>Shove Effect:</strong> The target must succeed on a <strong>DC 12 Strength saving throw</strong> or be pushed 5 feet away or knocked <strong>Prone</strong> (granting Advantage to all melee attacks against it!).",
+            attackMod: "+6 Athletics Check vs Target STR/DEX (DC 14 Save)",
+            damage: "1d4 + 4 Bludgeoning Damage + Shove 5ft or Knock Prone",
+            desc: "Contest vs target: DC 14 STR Save or target shoved 5ft / knocked Prone!",
+            fullRules: "Varnoth uses her reinforced iron-capped peg leg or heavy shield boss to batter opponents off-balance.<br><br>• <strong>Attack Roll:</strong> d20 + 6 (Athletics) vs target AC / save.<br>• <strong>Damage:</strong> 1d4 + 4 bludgeoning damage.<br>• <strong>Shove Effect:</strong> The target must succeed on a <strong>DC 14 Strength saving throw</strong> or be pushed 5 feet away or knocked <strong>Prone</strong> (granting Advantage to all melee attacks against it!).",
             flavor: "Varnoth plants her good boot and delivers a thunderous iron-shod kick from her peg leg straight into the enemy's knee.",
             modalButtons: [
-                { label: "🪵 Kick (+4)", class: "btn-roll-action", onClick: () => rollD20('Peg Leg Strike', 4) },
-                { label: "💥 1d4+2 Bludgeon", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Peg Kick Damage', 4, 2, 'Bludgeoning') }
+                { label: "🪵 Kick (+6)", class: "btn-roll-action", onClick: () => rollD20('Peg Leg Strike', 6) },
+                { label: "💥 1d4+4 Bludgeon", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Peg Kick Damage', 4, 4, 'Bludgeoning') }
             ]
         },
         "azurelongsword1h": {
@@ -1565,14 +1565,14 @@
             range: "Melee 5 feet",
             components: "One-handed with Azure Shield",
             duration: "Instantaneous",
-            attackMod: "+4 to Hit (STR +2, Prof +2) • Crits on 19-20",
-            damage: "1d8 + 2 Slashing Damage",
-            desc: "1-Handed with Shield. Hit: 1d8 + 2 Slashing damage.",
-            fullRules: "The ceremonial steel blade of the Azure Legion, balanced perfectly for sword-and-board combat.<br><br>• <strong>Attack Roll:</strong> d20 + 4 vs AC (Crits on 19 or 20).<br>• <strong>Damage:</strong> 1d8 + 2 slashing damage.<br>• <strong>Brutal Crit Damage:</strong> 8 (Max Base) + 1d8 + 2 Slashing = <strong>10 + 1d8 Damage</strong>.",
+            attackMod: "+6 to Hit (STR +4, Prof +2) • Crits on 19-20",
+            damage: "1d8 + 4 Slashing Damage",
+            desc: "1-Handed with Shield. Hit: 1d8 + 4 Slashing damage.",
+            fullRules: "The ceremonial steel blade of the Azure Legion, balanced perfectly for sword-and-board combat.<br><br>• <strong>Attack Roll:</strong> d20 + 6 vs AC (Crits on 19 or 20).<br>• <strong>Damage:</strong> 1d8 + 4 slashing damage.<br>• <strong>Brutal Crit Damage:</strong> 8 (Max Base) + 1d8 + 4 Slashing = <strong>12 + 1d8 Damage</strong>.",
             flavor: "A disciplined, sweeping slash from behind the defensive rampart of her Azure Wolf shield.",
             modalButtons: [
-                { label: "⚔️ Longsword Attack (+4)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Azure Longsword (1H)', 4) },
-                { label: "💥 1d8+2 Slashing", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Longsword Damage (1H)', 8, 2, 'Slashing') }
+                { label: "⚔️ Longsword Attack (+6)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Azure Longsword (1H)', 6) },
+                { label: "💥 1d8+4 Slashing", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Longsword Damage (1H)', 8, 4, 'Slashing') }
             ]
         },
         "azurelongsword2h": {
@@ -1583,14 +1583,14 @@
             range: "Melee 5 feet",
             components: "Two-handed grip (No Shield)",
             duration: "Instantaneous",
-            attackMod: "+4 to Hit (STR +2, Prof +2) • Crits on 19-20",
-            damage: "1d10 + 2 Slashing Damage",
-            desc: "2-Handed grip (No Shield). Hit: 1d10 + 2 Slashing damage.",
-            fullRules: "Varnoth slings her shield over her back and grips the Azure Longsword with both hands for maximum cutting power.<br><br>• <strong>Attack Roll:</strong> d20 + 4 vs AC (Crits on 19 or 20).<br>• <strong>Damage:</strong> 1d10 + 2 slashing damage.<br>• <strong>Brutal Crit Damage:</strong> 10 (Max Base) + 1d10 + 2 Slashing = <strong>12 + 1d10 Damage</strong>.",
+            attackMod: "+6 to Hit (STR +4, Prof +2) • Crits on 19-20",
+            damage: "1d10 + 4 Slashing Damage",
+            desc: "2-Handed grip (No Shield). Hit: 1d10 + 4 Slashing damage.",
+            fullRules: "Varnoth slings her shield over her back and grips the Azure Longsword with both hands for maximum cutting power.<br><br>• <strong>Attack Roll:</strong> d20 + 6 vs AC (Crits on 19 or 20).<br>• <strong>Damage:</strong> 1d10 + 4 slashing damage.<br>• <strong>Brutal Crit Damage:</strong> 10 (Max Base) + 1d10 + 4 Slashing = <strong>14 + 1d10 Damage</strong>.",
             flavor: "A two-handed overhead execution stroke designed to cleave through heavy armor and monster hide.",
             modalButtons: [
-                { label: "⚔️ Longsword Attack (+4)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Longsword (2H Versatile)', 4) },
-                { label: "💥 1d10+2 Slashing", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Longsword Damage (2H)', 10, 2, 'Slashing') }
+                { label: "⚔️ Longsword Attack (+6)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Longsword (2H Versatile)', 6) },
+                { label: "💥 1d10+4 Slashing", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Longsword Damage (2H)', 10, 4, 'Slashing') }
             ]
         },
         "bonecleavers": {
@@ -1601,14 +1601,14 @@
             range: "Melee 5 feet",
             components: "Dual-wielding light weapons",
             duration: "Instantaneous",
-            attackMod: "+4 to Hit (STR +2, Prof +2) • Crits on 19-20",
-            damage: "Main: 1d6 + 2 Slashing | Off-Hand Bonus: 1d6 Slashing",
-            desc: "Main: 1d6+2 Slashing. Off-Hand Bonus: 1d6 Slashing.",
-            fullRules: "Serrated heavy bone-axes taken from the Seagrow Caves troglodytes.<br><br>• <strong>Main-Hand Attack:</strong> d20 + 4 to hit, dealing <strong>1d6 + 2 slashing damage</strong>.<br>• <strong>Off-Hand Bonus Action Attack:</strong> d20 + 4 to hit, dealing <strong>1d6 slashing damage</strong> (no ability mod added to damage without Two-Weapon Fighting style).<br>• <strong>Crits on 19-20!</strong>",
+            attackMod: "+6 to Hit (STR +4, Prof +2) • Crits on 19-20",
+            damage: "Main: 1d6 + 4 Slashing | Off-Hand Bonus: 1d6 Slashing",
+            desc: "Main: 1d6+4 Slashing. Off-Hand Bonus: 1d6 Slashing.",
+            fullRules: "Serrated heavy bone-axes taken from the Seagrow Caves troglodytes.<br><br>• <strong>Main-Hand Attack:</strong> d20 + 6 to hit, dealing <strong>1d6 + 4 slashing damage</strong>.<br>• <strong>Off-Hand Bonus Action Attack:</strong> d20 + 6 to hit, dealing <strong>1d6 slashing damage</strong> (no ability mod added to damage without Two-Weapon Fighting style).<br>• <strong>Crits on 19-20!</strong>",
             flavor: "A savage flurry of alternating chops that overwhelms enemy guards.",
             modalButtons: [
-                { label: "🪓 Main Attack (+4)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Main Bone-Cleaver', 4) },
-                { label: "💥 1d6+2 Main Dmg", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Main Cleaver Damage', 6, 2, 'Slashing') },
+                { label: "🪓 Main Attack (+6)", class: "btn-roll-action", onClick: () => rollVarnothAttack('Main Bone-Cleaver', 6) },
+                { label: "💥 1d6+4 Main Dmg", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Main Cleaver Damage', 6, 4, 'Slashing') },
                 { label: "💥 1d6 Off-Hand Dmg", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Off-Hand Cleaver Damage', 6, 0, 'Slashing') }
             ]
         },
