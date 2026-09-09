@@ -1902,15 +1902,21 @@
         logRoll(`🛡️ Temporary HP cleared.`);
     }
 
+    function takeLongRest() {
+        resetHP();
+    }
+
     function resetHP() {
         curHP = maxHP;
         tempHP = 0;
         shortRestsRemaining = maxShortRests;
         helpTokens = maxHelpTokens;
+        wandCharges = maxWandCharges;
         updateHelpDisplay();
-        refillSlots();
+        updateWandUI();
+        refillAllSlots();
         updateHPUI();
-        logRoll(`⛺ <strong>Full Long Rest:</strong> Restored HP to ${maxHP}/${maxHP}, cleared Temp HP, reset Short Rests to 2/2, full Spell Slots & Help Tokens restored to 2/2!`);
+        logRoll(`⛺ <strong>Full Long Rest:</strong> Restored HP to ${maxHP}/${maxHP}, cleared Temp HP, reset Short Rests to 2/2, recharged Wand of Magic Missiles (7/7), and all Spell Slots & Help Tokens restored to full!`);
     }
 
     // ==========================================
@@ -1965,14 +1971,20 @@
     }
 
     function castShieldSpell() {
-        if (curSlots > 0) modSlot(-1);
+        if (spellSlots[1].current > 0) {
+            spellSlots[1].current--;
+            renderSpellSlots();
+        }
         isShieldActive = true;
         updateACDisplay();
-        logRoll(`🛡️ <strong>Cast Shield:</strong> +5 AC reaction active (AC: ${document.getElementById('ac-disp').innerText}) until start of next turn! Blocks Magic Missile.`);
+        logRoll(`🛡️ <strong>Cast Shield:</strong> 1st-level slot expended. +5 AC reaction active (AC: ${document.getElementById('ac-disp').innerText}) until start of next turn! Blocks Magic Missile.`);
     }
 
     function activateMageArmorSpell() {
-        if (curSlots > 0) modSlot(-1);
+        if (spellSlots[1].current > 0) {
+            spellSlots[1].current--;
+            renderSpellSlots();
+        }
         isMageArmorActive = true;
         updateACDisplay();
         logRoll(`🧙‍♂️ <strong>Cast Mage Armor:</strong> 1st-level slot expended. Base AC becomes 15 for 8 hours!`);
@@ -2006,21 +2018,6 @@
         helpTokens = maxHelpTokens;
         updateHelpDisplay();
         logRoll(`🤝 Help Tokens restored to 2/2.`);
-    }
-
-    function useRobeOfReserve() {
-        if (curSlots < maxSlots) {
-            curSlots++;
-            renderSlots();
-            logRoll(`👘 <strong>Robe of Arcane Reserve:</strong> Instantly restored 1 spell slot! (${curSlots}/${maxSlots} slots available)`);
-        } else {
-            logRoll(`👘 Robe of Arcane Reserve: Spell slots are already full (${maxSlots}/${maxSlots}).`);
-        }
-    }
-
-    function rollAstalaganSurge() {
-        const d6 = Math.floor(Math.random() * 6) + 1;
-        logRoll(`⚡ <strong>Astalagan's Surge (1/Day):</strong> Rolled <span style="color:#fbbf24; font-weight:700;">+${d6} Lightning Damage</span> added to spell!`);
     }
 
     function useRobeOfReserve() {
@@ -2117,6 +2114,10 @@
         }
         renderSpellSlots();
         logRoll(`🟦 All Spell Slots restored to full capacity on Rest!`);
+    }
+
+    function refillSlots() {
+        refillAllSlots();
     }
 
     const maxPreparedSpells = 8; // Level 4 Wizard + INT Mod (+4) = 8 spells max
