@@ -1431,8 +1431,7 @@
         "🏺 1x Jar of Animal Remains",
         "🏴‍☠️ 1x Pirate Hat",
         "🔘 1x \"3-Circle\" Amulet",
-        "🧪 10x Potion of Healing",
-        "🍷 1x Elixir of Health (Legendary)",
+        "🧪 9x Potion of Healing",
         "🐉 2x Diluted Drake Blood Potion",
         "🛡️ Kobold Shield",
         "📜 Aleitha's Farewell Letter"
@@ -2589,6 +2588,14 @@
         }
     }
 
+    function administerElixirRevive() {
+        logRoll(`🕊️ <strong>Elixir of Life Revive Miracle:</strong> Administered to a fallen ally. The creature returns to life with <span style="color:#4ade80; font-weight:700;">50% Max HP</span>, severed limbs knit back together, and suffers a <span style="color:#f87171; font-weight:700;">-2 penalty to d20 rolls</span> until finishing a Long Rest!`);
+    }
+
+    function drinkDrakeBloodPotion() {
+        logRoll(`🐉 <strong>Diluted Drake Blood Potion Drank:</strong> Draconic fiery adrenaline courses through the veins! Grants <span style="color:#f97316; font-weight:700;">+1 to all Attack Rolls</span> and <span style="color:#f87171; font-weight:700;">+2 to all Damage Rolls</span> for the entire day (until next Long Rest)!`);
+    }
+
     // ==========================================
     // 🎒 INVENTORY MANAGEMENT & WORLD LOOT VAULT
     // ==========================================
@@ -2601,11 +2608,18 @@
             effect: "• <strong>Bonus Action (Quick Sip):</strong> Restores <strong>2d6 Hit Points</strong>.<br>• <strong>Full Action (Full Chug):</strong> Restores <strong>100% FULL MAX HP</strong>!"
         },
         "elixir of health": {
-            name: "🍷 Elixir of Health (Legendary)",
-            category: "HEAL • Legendary Relic Potion",
+            name: "🍷 Elixir of Life (Consumable, Legendary)",
+            category: "SACRED REVIVAL POTION • Consumable",
             origin: "Distilled from The Ruby Morel (Seagrow Caves)",
-            desc: "A thick, glowing crimson elixir that radiates radiant warmth and divine vitality.",
-            effect: "• <strong>Action to Drink:</strong> Cures any disease, poison, blindness, deafness, and paralysis + grants <strong>+20 Temporary HP</strong>.<br>• 🕊️ <strong>0 HP Miracle Revive:</strong> If administered to a dying/0 HP ally, instantly revives them to <strong>100% FULL MAX HP</strong>!"
+            desc: "A glowing golden-crimson draught radiating uncorrupted vitality and divine restoration.",
+            effect: "• <strong>Action:</strong> Administer to a creature that has died within the last minute.<br>• 🕊️ The creature returns to life with <strong>Hit Points equal to half of its maximum HP (50%)</strong>, and any severed limbs are knit back together.<br>• ⚠️ Suffers a <strong>-2 penalty</strong> to all attack rolls, saving throws, and ability checks until finishing a Long Rest."
+        },
+        "elixir of life": {
+            name: "🍷 Elixir of Life (Consumable, Legendary)",
+            category: "SACRED REVIVAL POTION • Consumable",
+            origin: "Distilled from The Ruby Morel (Seagrow Caves)",
+            desc: "A glowing golden-crimson draught radiating uncorrupted vitality and divine restoration.",
+            effect: "• <strong>Action:</strong> Administer to a creature that has died within the last minute.<br>• 🕊️ The creature returns to life with <strong>Hit Points equal to half of its maximum HP (50%)</strong>, and any severed limbs are knit back together.<br>• ⚠️ Suffers a <strong>-2 penalty</strong> to all attack rolls, saving throws, and ability checks until finishing a Long Rest."
         },
         "diluted drake blood potion": {
             name: "🐉 Diluted Drake Blood Potion",

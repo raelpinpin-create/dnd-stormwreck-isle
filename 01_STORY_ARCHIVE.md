@@ -202,9 +202,29 @@
 
 ---
 
+### 🩸 Session 6: The Charnel Wastes, Zik's Sacrifice, & The Chapel Lore
+* **Location:** Mal'Goroth (The Charnel Wastes ➔ Chapel of the Suture)
+* **Key Events:**
+  1. Arrived in the freezing blood-dust under twin weeping red moons inside Thurible's 10-ft Living Hearth aura.
+  2. Ambushed by Blighted Sloughers and a towering Blighted Gore-Hulk. Sentry Zik made the ultimate heroic sacrifice, leaping into the beast's sensory pores to buy the party the round needed to destroy the monsters as he dissolved in acid.
+  3. Reached the Chapel of the Suture; deciphered the Basalt Stele of the Triad (Moros, Verea, Ikor), discovering that ancient seals can only be unlocked by a consecrated Priest of Life.
+
+---
+
+### 🪡 Session 7: The Town of Suture, The Gift of Lyra, & The Sparing of Melkor
+* **Location:** Mal'Goroth (Town of Suture ➔ Weaver's Spire ➔ Base of the Shattered Obsidian Monolith)
+* **Key Events:**
+  1. Navigated the Piazza of the Piercing Needle without inciting a massacre, bypassing the *Maypole of the Melting* and communicating with the courtier Lord Cassian Vance.
+  2. Ascended the Weaver's Spire to meet the lucid Porcelain Maiden; received the legendary cello bowstring rapier **Lyra** for Sylvar Link.
+  3. Faced **Melkor, Firstborn of Ikor** at the Monolith gate and defeated him with **non-lethal damage**, sparing the grieving chimera.
+  4. Father Flubs administered the legendary *Elixir of Life* on Sylvar. The party negotiated with Moros, demanding he free his people without committing genocide.
+  5. The party reached the base of the **Shattered Obsidian Monolith**, deeply vigilant and suspicious of Moros as they prepare for the Act 3 climax in Session 8!
+
+---
+
 ## 🎯 Active Campaign Quests
 * [ ] **1. Primary Quest (The Archmage's Trail):** Trace the path of Eflein's wife **Lianna**—an ancient elven archmage recalled by Elminster to prevent the Great Multiverse Cataclysm.
-* [ ] **2. 🩸 The Mal'Goroth Planar Odyssey (Active Mini-Campaign):** Survive the Charnel Wastes, navigate Moros's paranoia, uncover the Silent Harvester's Siphon spires, and find a way back to Toril!
+* [ ] **2. 🩸 The Mal'Goroth Planar Odyssey (Active Mini-Campaign — Act 3 Climax):** Decipher the Obsidian Monolith, confront Moros at the Grand Cathedral, shatter his Forehead Void Eye, and escape back to Toril!
 * [x] **3. Seagrow Caves Fungal Blight (Chapter 2 — COMPLETED):** Fume Drakes cleared, Fire Snake tamed, Sinensa cured, Ruby Morels and Heartcaps gathered, and volcanic crystal shattered!
 * [ ] **4. Wreck of the Compass Rose & Silver Scale (Chapter 3 — PAUSED / INTERDIMENSIONAL):** Return from Mal'Goroth to claim **Clyssavar's Silver Scale** and cleanse Aleitha's Talisman at Dragon's Rest cemetery!
 * [ ] **5. The Three Metallic Dragon Special Quest:**

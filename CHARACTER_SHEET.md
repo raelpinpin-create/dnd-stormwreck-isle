@@ -73,7 +73,7 @@
   * 🧪 **1x Potion of Water Breathing** *(Trophy from the Sea Hag)*
   * 🍷 **1x Elixir of Health (Legendary)** *(Distilled from The Ruby Morel)*
   * 🧀 **Cheese Bread** (Restores `1d8 HP` + grants `+2 to Initiative` for 1 encounter)
-  * 🌟 **Eflein's Special Bread** (Restores `1d8 HP` + grants `+2 to all Skill Checks` until next Long Rest)
+  * *(Eflein's Special Bread consumed in Session 7)*
 * **Valuables & Story:** 
   * 📜 **Lianna's Farewell Letter (The Archmage's Vow):** Folded parchment smelling of jasmine perfume, kept inside his inner breast pocket.
   * 📜 **Lianna's Reef Letter (Compass Rose Anomaly Notes):** Recovered from the *Compass Rose* zombies.
@@ -139,16 +139,20 @@
   * 🥋 **Leather Armor** (AC 11 base + DEX +4 = AC 15 base, 16 with Cloak).
   * 👗 **Neko Maid Costume** (Legendary Nat 20 Performance outfit; black and white frilled maid dress with cat ears and ribbon tail-wrap).
 * **Weapons & Musical Instruments:**
-  * 🗡️ **Steel Rapier:** `+6 to hit`, reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse). *With Psychic Blades:* `1d8+4 + 2d6 Psychic`!
+  * 🎻 **Lyra (Cello Bowstring Rapier / Instrument):** `+7 to hit` (`+4 DEX + 2 PB + 1 magic`), reach 5 ft. *Hit:* `1d8 + 5` piercing/slashing + **`1d6` Thunder damage**. *(With Psychic Blades: `1d8+5 + 1d6 Thunder + 2d6 Psychic`!).*
+    * **Dual Nature:** Can be used as a `+1` Finesse melee weapon OR drawn across an instrument as a musical focus.
+    * **Suture Chord (Bonus Action / 2 Uses per Long Rest):** Whips the bowstring at a target within 30 ft. The target takes **`2d8` Thunder damage** and has its **movement speed reduced to 0** until it uses an action to tear the thread free.
+  * 🗡️ **Steel Rapier:** `+6 to hit`, reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse).
   * 🗡️ **Sentry Zik's Dagger (+1):** `+7 to hit`, range 20/60 ft. *Hit:* `1d4 + 5` piercing (Finesse, Light, Thrown).
   * 🗡️ **Steel Daggers (2x):** `+6 to hit`, range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).
   * 🪘 **Tambourine** (Arcane & Bardic Focus, acoustic resonator).
   * 🎸 **Lute & Guitar** (Fine wooden instruments).
 * **Consumables, Keepsakes & Combat Alchemy:**
   * 🪶 **Sentry Zik's Remains & Silk Ribbon** (Solemn memorial urn of the brave kobold hero of Dragon's Rest).
-  * 🍷 **1x Elixir of Health (Legendary)** (Distilled from The Ruby Morel; cures all diseases/poisons, +20 Temp HP or 100% Full Max HP revive).
+  * 🍷 **1x Elixir of Health (Legendary)** (Distilled from The Ruby Morel; cures all diseases/poisons, +20 Temp HP).
   * 💣 **1x Spitfire Flask** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex save for half).
   * 🍞 **1x Kobold Sweetbread Roll** (Blepp's honey ration: `1d4 HP` + `+1d4 Temp HP`).
+  * ⚠️ *Revived via Elixir of Life in Session 7: Suffers -2 penalty to attack rolls, saving throws, and ability checks until finishing a Long Rest.*
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack**, Thieves' tools.
 * **Personal Wealth:** `415 gp, 0 sp`.
@@ -227,8 +231,8 @@
 * **Consumables, Potions & Alchemy:**
   * 🐉 **Jar of Pure Drake Blood** *(Potent pyromantic distillation for refining or weapon coatings)*
   * 🏺 **1x Jar of Animal Remains** *(Alchemical specimen for sacred sanctification rites)*
-  * 🧪 **10x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
-  * 🍷 **1x Elixir of Health (Legendary)** (Cures any disease, grants **+20 Temporary HP**; if used to revive an ally at 0 HP, restores them to **100% FULL MAX HP**!)
+  * 🧪 **9x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
+  * 🍷 **0x Elixir of Life (Legendary)** *(Administered to Sylvar in Session 7: returns dead creature to life with 50% max HP, knits severed limbs, -2 penalty to d20 rolls until Long Rest)*
   * 🧪 **2x Diluted Drake Blood Potions** (Grants **+1 to Attack Rolls and +2 to Damage Rolls** for 24 hours!)
   * Priest's Pack, Altar Vestments, Incense, Censer.
 * **Wealth:** `52 gp, 5 sp`.
@@ -289,8 +293,8 @@
   * 🏹 Heavy Crossbow + 20 Crossbow Bolts
   * 🪓 **Twin Notched Bone-Cleavers** *(Trophy from the Kobold Champion)*
 * **Potions & Consumables:**
-  * 🍷 **1x Elixir of Health (Legendary)** (Distilled from The Ruby Morel; cures all diseases/poisons, +20 Temp HP or 100% Full Max HP revive).
-  * 🧪 **1x Potion of Healing** (100% Full 36 HP Heal)
+  * 🍷 **1x Elixir of Health (Legendary)** (Distilled from The Ruby Morel; cures all diseases/poisons, +20 Temp HP).
+  * 🧪 *(1x Potion of Healing consumed in Session 7)*
 * **Kit & Tools:** Mason's Tools, Mercenary Commander Badge (Azure Wolves Guild), Whetstone, Traveler's Pack.
 * **Wealth:** `8 gp, 6 sp`.
 
