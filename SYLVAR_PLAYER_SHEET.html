@@ -817,7 +817,7 @@
                     </div>
                 </div>
 
-                <!-- BARDIC INSPIRATION & HELP TOKENS TRACKERS -->
+                <!-- BARDIC INSPIRATION, HELP TOKENS & SUTURE CHORD TRACKERS -->
                 <div class="panel" style="padding: 7px 10px; gap:6px;">
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         <span style="font-size:0.76rem; font-weight:700; color:var(--accent-purple);">🪘 Bardic Inspiration (d6):</span>
@@ -835,6 +835,15 @@
                             <button class="btn-act btn-act-temp" onclick="rollHelpToken()" style="padding:2px 7px; font-size:0.7rem;">🎲 Spend (+1d6)</button>
                             <button class="btn-act btn-act-pre" onclick="modHelpToken(1)" style="padding:2px 5px; font-size:0.68rem; color:#67e8f9;">+1</button>
                             <button class="btn-act btn-act-pre" onclick="resetHelpTokens()" style="padding:2px 5px; font-size:0.68rem;">Reset</button>
+                        </div>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(255,255,255,0.06); padding-top:5px;">
+                        <span style="font-size:0.76rem; font-weight:700; color:var(--accent-gold);">🪡 Suture Chord (Lyra):</span>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <span id="suture-tokens-disp" style="font-weight:700; color:var(--accent-gold); font-size:0.88rem;">2 / 2</span>
+                            <button class="btn-act btn-roll-purple" onclick="rollSutureChord()" style="padding:2px 7px; font-size:0.7rem;">⚡ Cast (BA)</button>
+                            <button class="btn-act btn-act-pre" onclick="modSutureSlots(1)" style="padding:2px 5px; font-size:0.68rem; color:var(--accent-gold);">+1</button>
+                            <button class="btn-act btn-act-pre" onclick="resetSutureSlots()" style="padding:2px 5px; font-size:0.68rem;">Reset</button>
                         </div>
                     </div>
                 </div>
@@ -982,18 +991,18 @@
                         <div class="action-card" style="border: 1.5px solid var(--accent-gold); background: linear-gradient(135deg, #182238 0%, #151d30 100%);">
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <div class="action-card-title" onclick="openItemModal('lyra')" style="cursor:pointer; font-weight:700; color:var(--accent-gold); transition:color 0.15s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent-gold)'">
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('lyra')" style="cursor:pointer; font-weight:700; color:var(--accent-gold); transition:color 0.15s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent-gold)'">
                                         🎻 Lyra (+1 Bowstring Rapier) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
                                     </div>
-                                    <div style="font-size:0.67rem; font-weight:700; color:#38bdf8; margin-top:1px;">+1 Finesse / Instrument • 1 Action</div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#38bdf8; margin-top:1px;">+1 Finesse / Instrument • 1 Action / 1 Bonus Action</div>
                                 </div>
                                 <span style="font-size:0.62rem; color:var(--accent-gold); font-weight:700; background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); padding:1px 5px; border-radius:3px;">RELIC</span>
                             </div>
-                            <div class="action-desc">Reach 5ft / Ranged 30ft. <strong>+7 to Hit</strong>, <strong>1d8+5 Pierc/Slash + 1d6 Thunder</strong>. Suture Chord (2/LR): <strong>2d8 Thunder + Speed 0</strong>!</div>
+                            <div class="action-desc">Reach 5ft / Ranged 30ft. <strong>+7 to Hit</strong>, <strong>1d8+5 Pierc/Slash + 1d6 Thunder</strong>. Suture Chord (Bonus Action • 2 Slots/LR): <strong>2d8 Thunder + Speed 0</strong>!</div>
                             <div class="action-btn-row">
                                 <button class="btn-roll-action" style="background:var(--accent-gold); color:#000; font-weight:700;" onclick="rollD20('Lyra (+1) Attack', 7)">🎻 Attack (+7)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollLyraStrike()">💥 1d8+5+1d6 Thndr</button>
-                                <button class="btn-roll-action btn-roll-purple" onclick="rollSutureChord()" title="Bonus Action: 30ft whip, 2d8 Thunder & Speed 0 (2 Uses/LR)">🪡 Suture (2d8)</button>
+                                <button class="btn-roll-action btn-roll-purple" onclick="rollSutureChord()" title="Bonus Action: 30ft whip, 2d8 Thunder & Speed 0 (2 Slots/LR)">🪡 Suture (BA)</button>
                                 <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">⚡ +2d6 Psychic</button>
                             </div>
                         </div>
@@ -1275,6 +1284,7 @@
         let tempHP = 0;
         let bardicInsp = 4;
         let helpTokens = 2;
+        let sutureSlots = 2; // 2 slots per Long Rest (Lyra - Suture Chord)
         let isFelineReady = true;
         let isCloakAttuned = true;
         let currentGP = 415;
@@ -1643,6 +1653,9 @@
                 else bardicInsp = 4;
                 const savedHelp = localStorage.getItem('sylvar_help');
                 if (savedHelp !== null) helpTokens = parseInt(savedHelp);
+                const savedSuture = localStorage.getItem('sylvar_suture');
+                if (savedSuture !== null) sutureSlots = parseInt(savedSuture);
+                else sutureSlots = 2;
                 const savedGP = localStorage.getItem('sylvar_gp_v4');
                 if (savedGP !== null) currentGP = parseInt(savedGP);
                 else currentGP = 415;
@@ -1665,6 +1678,7 @@
             localStorage.setItem('sylvar_temp_hp', tempHP);
             localStorage.setItem('sylvar_insp', bardicInsp);
             localStorage.setItem('sylvar_help', helpTokens);
+            localStorage.setItem('sylvar_suture', sutureSlots);
             localStorage.setItem('sylvar_gp_v4', currentGP);
             localStorage.setItem('sylvar_sp_v4', currentSP);
             localStorage.setItem('sylvar_slots', JSON.stringify(spellSlots));
@@ -1868,6 +1882,7 @@
             tempHP = 0;
             bardicInsp = 4;
             helpTokens = 2;
+            sutureSlots = 2;
             spellSlots[1].current = 4;
             spellSlots[2].current = 3;
             isFelineReady = true;
@@ -1875,7 +1890,7 @@
             renderSpellSlots();
             updateCountersUI();
             saveSheetState();
-            logRoll(`⛺ <strong>Full Long Rest Completed:</strong> All HP (31/31), Spell Slots (4/4, 3/3), Bardic Inspiration (4/4), and Help Tokens (2/2) fully restored!`);
+            logRoll(`⛺ <strong>Full Long Rest Completed:</strong> All HP (31/31), Spell Slots (4/4, 3/3), Bardic Inspiration (4/4), Suture Chord (2/2), and Help Tokens (2/2) fully restored!`);
         }
 
         // ==========================================
@@ -1920,8 +1935,12 @@
         }
 
         function updateCountersUI() {
-            document.getElementById('insp-tokens-disp').innerText = `${bardicInsp} / 4`;
-            document.getElementById('help-tokens-disp').innerText = `${helpTokens} / 2`;
+            const inspDisp = document.getElementById('insp-tokens-disp');
+            if (inspDisp) inspDisp.innerText = `${bardicInsp} / 4`;
+            const helpDisp = document.getElementById('help-tokens-disp');
+            if (helpDisp) helpDisp.innerText = `${helpTokens} / 2`;
+            const sutureDisp = document.getElementById('suture-tokens-disp');
+            if (sutureDisp) sutureDisp.innerText = `${sutureSlots} / 2`;
         }
 
         function modBardicInsp(delta) {
@@ -1932,6 +1951,18 @@
 
         function resetBardicInsp() {
             bardicInsp = 4;
+            updateCountersUI();
+            saveSheetState();
+        }
+
+        function modSutureSlots(delta) {
+            sutureSlots = Math.max(0, Math.min(2, sutureSlots + delta));
+            updateCountersUI();
+            saveSheetState();
+        }
+
+        function resetSutureSlots() {
+            sutureSlots = 2;
             updateCountersUI();
             saveSheetState();
         }
@@ -2176,10 +2207,17 @@
         }
 
         function rollSutureChord() {
+            if (sutureSlots <= 0) {
+                alert("No Suture Chord slots remaining! (2/Long Rest)");
+                return;
+            }
+            sutureSlots -= 1;
+            updateCountersUI();
+            saveSheetState();
             const d8_1 = Math.floor(Math.random() * 8) + 1;
             const d8_2 = Math.floor(Math.random() * 8) + 1;
             const total = d8_1 + d8_2;
-            logRoll(`🪡 <strong>Lyra — Suture Chord (Bonus Action • 30ft Whip):</strong> [2d8 (${d8_1}+${d8_2})] = <span style="color:#c084fc; font-size:1.15rem; font-weight:800;">${total} Thunder Damage</span> and target is <span style="color:#ef4444; font-weight:700;">Pinned (Speed 0)</span> until an action is spent tearing free!`);
+            logRoll(`🪡 <strong>Lyra — Suture Chord (Bonus Action • 30ft Whip • -1 Slot):</strong> [2d8 (${d8_1}+${d8_2})] = <span style="color:#c084fc; font-size:1.15rem; font-weight:800;">${total} Thunder Damage</span> and target is <span style="color:#ef4444; font-weight:700;">Pinned (Speed 0)</span> until an action is spent tearing free! <span style="color:var(--accent-gold); font-size:0.8rem;">(${sutureSlots}/2 slots left)</span>`);
         }
 
         function rollPsychicBladesStrike() {
@@ -2675,6 +2713,43 @@
         // ℹ️ COMPENDIUM & SPELL MODAL ENGINE (D&D 5E STANDARD)
         // ==========================================
         const COMPENDIUM_DATA = {
+            lyra: {
+                id: "lyra",
+                name: "🎻 Lyra (+1 Bowstring Rapier / Instrument)",
+                school: "Relic • +1 Finesse Weapon / Musical Focus",
+                castingTime: "1 Action (Melee) / 1 Bonus Action (Suture Chord)",
+                range: "5 feet reach (Melee) / 30 feet (Suture Chord)",
+                components: "Finesse, +1 Magical, Sonic Resonator",
+                duration: "Instantaneous / Speed 0 until Action torn free",
+                attackMod: "+7 to Hit (DEX + PB + 1 Magic)",
+                damage: "1d8 + 5 Pierc/Slash + 1d6 Thunder | Suture: 2d8 Thunder",
+                desc: "An ornate cello bowstring forged from planar ivory and tensioned with razor-sharp vibrating silver suture wire. Functions seamlessly as a +1 finesse rapier or drawn across an instrument as a spellcasting focus.",
+                fullRules: "<strong>Dual Nature:</strong> Can be wielded as a +1 Finesse Weapon (+7 to Hit, 1d8+5 piercing/slashing) or drawn across an instrument.<br>• <strong>Acoustic Cleave:</strong> Melee strikes deal an additional <strong>+1d6 Thunder Damage</strong> on hit.<br>• <strong>Suture Chord (Bonus Action / 2 Slots per Long Rest):</strong> Whips the silver bowstring at a target within 30 ft. The target is wrapped in vibrating silver thread: takes <strong>2d8 Thunder Damage</strong> and has its <strong>movement speed reduced to 0 (Pinned)</strong> until it uses an action to tear the thread free.",
+                upcastNotes: "Suture Chord recharges on a Long Rest (2 slots). Deals Thunder damage which triggers sonic vulnerabilities (e.g. Moros's Void Eye).",
+                flavor: "Gifted by The Porcelain Maiden in the Weaver's Spire. Drawn across strings or wielded in hand, it cuts with razor pitch.",
+                modalButtons: [
+                    {
+                        label: "🎻 Attack (+7)",
+                        class: "btn-roll-action",
+                        onClick: () => rollD20('Lyra (+1) Attack', 7)
+                    },
+                    {
+                        label: "💥 1d8+5+1d6 Thndr",
+                        class: "btn-roll-action btn-roll-dmg",
+                        onClick: () => rollLyraStrike()
+                    },
+                    {
+                        label: "🪡 Suture (Bonus Action)",
+                        class: "btn-roll-action btn-roll-purple",
+                        onClick: () => rollSutureChord()
+                    },
+                    {
+                        label: "⚡ +2d6 Psychic Blades",
+                        class: "btn-roll-action btn-roll-purple",
+                        onClick: () => rollPsychicBladesStrike()
+                    }
+                ]
+            },
             rapier: {
                 id: "rapier",
                 name: "🗡️ Steel Rapier",
