@@ -3052,7 +3052,7 @@
             const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
             
             const slotsStr = `L1(${spellSlots[1].current}/${spellSlots[1].max})${spellSlots[2].max > 0 ? ' L2('+spellSlots[2].current+'/'+spellSlots[2].max+')' : ''}${spellSlots[3].max > 0 ? ' L3('+spellSlots[3].current+'/'+spellSlots[3].max+')' : ''}`;
-            const stateStr = `🐾 SYLVAR [HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Insp: ${bardicInsp}/4 | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${currentGP} GP, ${currentSP} SP] • ${invSummary}`;
+            const stateStr = `🐾 SYLVAR [HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Insp: ${bardicInsp}/4 | Suture: ${sutureSlots}/2 | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${currentGP} GP, ${currentSP} SP] • ${invSummary}`;
             
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(stateStr).then(() => {
