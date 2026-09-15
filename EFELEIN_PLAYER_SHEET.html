@@ -1145,7 +1145,7 @@
                         <div style="background:rgba(124, 58, 237, 0.08); border:1px solid #a855f7; border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <div>
                                 <span style="font-weight:700; color:#c084fc;">🪄 Wand of Magic Missiles:</span>
-                                <span id="wand-charges-disp" style="color:#fde68a; font-weight:bold; margin-left:4px;">7 / 7 Charges</span>
+                                <span id="wand-charges-disp" style="color:#fde68a; font-weight:bold; margin-left:4px;">6 / 7 Charges</span>
                             </div>
                             <div style="display:flex; gap:4px;">
                                 <button class="btn-roll-action btn-roll-dmg" style="background:#7c3aed; padding:3px 8px; font-size:0.7rem;" onclick="useWandOfMagicMissiles(1)">🪄 Cast (1 Chg: 3 Darts)</button>
@@ -1911,6 +1911,7 @@
         shortRestsRemaining = maxShortRests;
         helpTokens = maxHelpTokens;
         wandCharges = maxWandCharges;
+        localStorage.setItem('eflein_wand_charges_v1', wandCharges);
         updateHelpDisplay();
         updateWandUI();
         refillAllSlots();
@@ -2462,11 +2463,15 @@
     // ==========================================
     // 🪄 WAND OF MAGIC MISSILES (7 CHARGES)
     // ==========================================
-    let wandCharges = 7;
     const maxWandCharges = 7;
+    let wandCharges = (function() {
+        const saved = localStorage.getItem('eflein_wand_charges_v1');
+        return saved !== null ? parseInt(saved) : 6; // 6/7 default (1 consumed)
+    })();
 
     function modWandCharges(delta) {
         wandCharges = Math.max(0, Math.min(maxWandCharges, wandCharges + delta));
+        localStorage.setItem('eflein_wand_charges_v1', wandCharges);
         updateWandUI();
     }
 
@@ -2481,6 +2486,7 @@
             return;
         }
         wandCharges -= charges;
+        localStorage.setItem('eflein_wand_charges_v1', wandCharges);
         updateWandUI();
         const darts = 2 + charges; // 1 charge = 3 darts, 2 charges = 4 darts...
         const rolls = [];
@@ -3443,7 +3449,7 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
         const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
         
         const slotsStr = `L1(${spellSlots[1].current}/${spellSlots[1].max})${spellSlots[2].max > 0 ? ' L2('+spellSlots[2].current+'/'+spellSlots[2].max+')' : ''}${spellSlots[3].max > 0 ? ' L3('+spellSlots[3].current+'/'+spellSlots[3].max+')' : ''}`;
-        const stateStr = `🧙‍♂️ EFLEIN [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${curGP} GP, ${curSP} SP] • ${invSummary}`;
+        const stateStr = `🧙‍♂️ EFLEIN [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Wand: ${wandCharges}/${maxWandCharges} | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${curGP} GP, ${curSP} SP] • ${invSummary}`;
         
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(stateStr).then(() => {
@@ -3471,6 +3477,7 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     updateHPUI();
     updateACDisplay();
     updateHelpDisplay();
+    updateWandUI();
     updateGoldUI();
     renderSpellSlots();
     renderSpellbook();

@@ -48,7 +48,7 @@
 * **2nd-Level Spell Slots:** `3 / 3` (Level 4 Slot Unlocked!)
 * **Arcane Recovery:** `0 / 1` used today (Regain up to 2 slot levels on Short Rest)
 * **👘 Robe of Arcane Reserve:** `1 / 1` per day (Action: Instantly regain 1 expended 1st-level spell slot!)
-* **🪄 Wand of Magic Missiles:** `7 / 7` Charges (Expends 1 charge for 3 auto-hit force darts, +1 dart/extra charge, 1d4+1 damage each).
+* **🪄 Wand of Magic Missiles:** `6 / 7` Charges (Expends 1 charge for 3 auto-hit force darts, +1 dart/extra charge, 1d4+1 damage each).
 * **Features:** *Evocation Savant* (half copy cost/time), *Sculpt Spells* (protects allies from AoE damage).
 * **Cantrips Known:** *Ray of Frost*, *Fire Bolt*, *Mage Hand* (15ft magnetic pull via Lodestone), *Prestidigitation*, *Shocking Grasp*.
 * **Prepared Spells (8 Spells Prepared — INT 4 + Level 4):** *Magic Missile*, *Shield*, *Thunderwave*, *Detect Magic*, *Ice Knife*, *Misty Step*, *Rime's Binding Ice*, *Shatter*.
