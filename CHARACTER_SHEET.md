@@ -141,7 +141,7 @@
 * **Weapons & Musical Instruments:**
   * 🎻 **Lyra (Cello Bowstring Rapier / Instrument):** `+7 to hit` (`+4 DEX + 2 PB + 1 magic`), reach 5 ft. *Hit:* `1d8 + 5` piercing/slashing + **`1d6` Thunder damage**. *(With Psychic Blades: `1d8+5 + 1d6 Thunder + 2d6 Psychic`!).*
     * **Dual Nature:** Can be used as a `+1` Finesse melee weapon OR drawn across an instrument as a musical focus.
-    * **Suture Chord (Bonus Action / 2 Uses per Long Rest):** Whips the bowstring at a target within 30 ft. The target takes **`2d8` Thunder damage** and has its **movement speed reduced to 0** until it uses an action to tear the thread free.
+    * **Suture Chord (Bonus Action • 2 Slots per Long Rest):** Whips the bowstring at a target within 30 ft (DC 14 Dexterity Save). On fail: takes **`2d8` Thunder damage** and has its **movement speed reduced to 0 (Pinned)** until an action tears it free (half damage and not pinned on success).
   * 🗡️ **Steel Rapier:** `+6 to hit`, reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse).
   * 🗡️ **Sentry Zik's Dagger (+1):** `+7 to hit`, range 20/60 ft. *Hit:* `1d4 + 5` piercing (Finesse, Light, Thrown).
   * 🗡️ **Steel Daggers (2x):** `+6 to hit`, range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).

@@ -998,7 +998,7 @@
                                 </div>
                                 <span style="font-size:0.62rem; color:var(--accent-gold); font-weight:700; background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); padding:1px 5px; border-radius:3px;">RELIC</span>
                             </div>
-                            <div class="action-desc">Reach 5ft / Ranged 30ft. <strong>+7 to Hit</strong>, <strong>1d8+5 Pierc/Slash + 1d6 Thunder</strong>. Suture Chord (Bonus Action • 2 Slots/LR): <strong>2d8 Thunder + Speed 0</strong>!</div>
+                            <div class="action-desc"><strong>+7 to Hit</strong> (1d8+5 + 1d6 Thndr). <strong>Suture</strong> (BA • DC 14 Dex): <strong>2d8 Thndr + Speed 0</strong>.</div>
                             <div class="action-btn-row">
                                 <button class="btn-roll-action" style="background:var(--accent-gold); color:#000; font-weight:700;" onclick="rollD20('Lyra (+1) Attack', 7)">🎻 Attack (+7)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollLyraStrike()">💥 1d8+5+1d6 Thndr</button>
@@ -1484,7 +1484,7 @@
                 category: "LEGENDARY RELIC WEAPON & MUSICAL CATALYST",
                 origin: "Gifted by the Porcelain Maiden in the Weaver's Spire (Mal'Goroth)",
                 desc: "An ornate cello bowstring forged from planar ivory and tensioned with razor-sharp vibrating silver suture wire. Functions seamlessly as a rapier or when drawn across an instrument.",
-                effect: "• <strong>+1 Finesse Melee Weapon:</strong> +7 to Hit, 1d8 + 5 piercing/slashing + <strong>1d6 Thunder Damage</strong>.<br>• <strong>Suture Chord (Bonus Action / 2 Uses per Long Rest):</strong> Whips the silver bowstring at a target within 30 ft: deals <strong>2d8 Thunder Damage</strong> and reduces target's <strong>Speed to 0 (Pinned)</strong> until an action is spent tearing it free.<br>• <strong>Thunder Resonance:</strong> Triggers vulnerability on creatures susceptible to sonic or thunder frequencies."
+                effect: "• <strong>+1 Finesse Melee Weapon:</strong> +7 to Hit, 1d8 + 5 piercing/slashing + <strong>1d6 Thunder Damage</strong>.<br>• <strong>Suture Chord (Bonus Action • 2 Slots/LR):</strong> 30 ft range. Target makes a <strong>DC 14 Dexterity Save</strong>: takes <strong>2d8 Thunder Damage</strong> and is <strong>Pinned (Speed 0)</strong> on fail (half damage & not pinned on success) until an action is spent tearing it free.<br>• <strong>Thunder Resonance:</strong> Triggers vulnerability on creatures susceptible to sonic or thunder frequencies."
             },
             "cloak of protection": {
                 name: "🛡️ Cloak of Protection",
@@ -2217,7 +2217,8 @@
             const d8_1 = Math.floor(Math.random() * 8) + 1;
             const d8_2 = Math.floor(Math.random() * 8) + 1;
             const total = d8_1 + d8_2;
-            logRoll(`🪡 <strong>Lyra — Suture Chord (Bonus Action • 30ft Whip • -1 Slot):</strong> [2d8 (${d8_1}+${d8_2})] = <span style="color:#c084fc; font-size:1.15rem; font-weight:800;">${total} Thunder Damage</span> and target is <span style="color:#ef4444; font-weight:700;">Pinned (Speed 0)</span> until an action is spent tearing free! <span style="color:var(--accent-gold); font-size:0.8rem;">(${sutureSlots}/2 slots left)</span>`);
+            const half = Math.floor(total / 2);
+            logRoll(`🪡 <strong>Lyra — Suture Chord (Bonus Action • 30ft Whip • -1 Slot):</strong> Target makes <span style="color:var(--accent-gold); font-weight:800;">DC 14 Dexterity Save</span>.<br>• <strong>Fail:</strong> <span style="color:#c084fc; font-size:1.12rem; font-weight:800;">${total} Thunder Damage</span> [2d8: ${d8_1}+${d8_2}] + <span style="color:#ef4444; font-weight:700;">Pinned (Speed 0)</span> until an action tears it free.<br>• <strong>Success:</strong> <span style="color:#38bdf8; font-weight:700;">${half} Thunder Damage</span> (half), not pinned. <span style="color:var(--accent-gold); font-size:0.75rem;">(${sutureSlots}/2 slots left)</span>`);
         }
 
         function rollPsychicBladesStrike() {
@@ -2721,10 +2722,10 @@
                 range: "5 feet reach (Melee) / 30 feet (Suture Chord)",
                 components: "Finesse, +1 Magical, Sonic Resonator",
                 duration: "Instantaneous / Speed 0 until Action torn free",
-                attackMod: "+7 to Hit (DEX + PB + 1 Magic)",
-                damage: "1d8 + 5 Pierc/Slash + 1d6 Thunder | Suture: 2d8 Thunder",
+                attackMod: "+7 to Hit (Melee) / DC 14 Dex Save (Suture)",
+                damage: "1d8 + 5 Pierc/Slash + 1d6 Thunder | Suture: 2d8 Thunder + Pin",
                 desc: "An ornate cello bowstring forged from planar ivory and tensioned with razor-sharp vibrating silver suture wire. Functions seamlessly as a +1 finesse rapier or drawn across an instrument as a spellcasting focus.",
-                fullRules: "<strong>Dual Nature:</strong> Can be wielded as a +1 Finesse Weapon (+7 to Hit, 1d8+5 piercing/slashing) or drawn across an instrument.<br>• <strong>Acoustic Cleave:</strong> Melee strikes deal an additional <strong>+1d6 Thunder Damage</strong> on hit.<br>• <strong>Suture Chord (Bonus Action / 2 Slots per Long Rest):</strong> Whips the silver bowstring at a target within 30 ft. The target is wrapped in vibrating silver thread: takes <strong>2d8 Thunder Damage</strong> and has its <strong>movement speed reduced to 0 (Pinned)</strong> until it uses an action to tear the thread free.",
+                fullRules: "<strong>Dual Nature:</strong> Can be wielded as a +1 Finesse Weapon (+7 to Hit, 1d8+5 piercing/slashing) or drawn across an instrument.<br>• <strong>Acoustic Cleave:</strong> Melee strikes deal an additional <strong>+1d6 Thunder Damage</strong> on hit.<br>• <strong>Suture Chord (Bonus Action • 2 Slots per Long Rest):</strong> Whips the silver bowstring at a target within 30 ft. Target must make a <strong>DC 14 Dexterity Saving Throw</strong>. On fail: takes <strong>2d8 Thunder Damage</strong> and is <strong>Pinned (Speed 0)</strong> until an action is spent tearing it free. On success: takes half damage (1d8 Thunder) and is not pinned.",
                 upcastNotes: "Suture Chord recharges on a Long Rest (2 slots). Deals Thunder damage which triggers sonic vulnerabilities (e.g. Moros's Void Eye).",
                 flavor: "Gifted by The Porcelain Maiden in the Weaver's Spire. Drawn across strings or wielded in hand, it cuts with razor pitch.",
                 modalButtons: [
