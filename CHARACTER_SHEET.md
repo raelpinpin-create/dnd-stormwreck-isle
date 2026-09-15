@@ -44,11 +44,11 @@
 ## ✨ Arcane & Spellcasting (Level 4 Evocation)
 * **Base Spell Save DC:** **14** (`8 + 2 prof + 4 Int`) • **DC 15 for Lightning spells** *(Astalagan's Scale)*
 * **Base Spell Attack Bonus:** **+6** (`+2 prof + 4 Int`) • **+7 for Lightning spells** *(Astalagan's Scale)*
-* **1st-Level Spell Slots:** `4 / 4`
-* **2nd-Level Spell Slots:** `3 / 3` (Level 4 Slot Unlocked!)
+* **1st-Level Spell Slots:** `2 / 4`
+* **2nd-Level Spell Slots:** `1 / 3` (Level 4 Slot Unlocked!)
 * **Arcane Recovery:** `0 / 1` used today (Regain up to 2 slot levels on Short Rest)
 * **👘 Robe of Arcane Reserve:** `1 / 1` per day (Action: Instantly regain 1 expended 1st-level spell slot!)
-* **🪄 Wand of Magic Missiles:** `6 / 7` Charges (Expends 1 charge for 3 auto-hit force darts, +1 dart/extra charge, 1d4+1 damage each).
+* **🪄 Wand of Magic Missiles:** `4 / 7` Charges (Expends 1 charge for 3 auto-hit force darts, +1 dart/extra charge, 1d4+1 damage each).
 * **Features:** *Evocation Savant* (half copy cost/time), *Sculpt Spells* (protects allies from AoE damage).
 * **Cantrips Known:** *Ray of Frost*, *Fire Bolt*, *Mage Hand* (15ft magnetic pull via Lodestone), *Prestidigitation*, *Shocking Grasp*.
 * **Prepared Spells (8 Spells Prepared — INT 4 + Level 4):** *Magic Missile*, *Shield*, *Thunderwave*, *Detect Magic*, *Ice Knife*, *Misty Step*, *Rime's Binding Ice*, *Shatter*.
@@ -100,15 +100,16 @@
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
 | **Level** | **Level 4** | Bard (College of Whispers) |
-| **Hit Points (HP)** | **31 / 31** | Hit Dice: `4d8 + 8` (CON +2) |
+| **Hit Points (HP)** | **16 / 31** | Hit Dice: `4d8 + 8` (CON +2) *(Revived via Elixir, -2 to d20s)* |
 | **Armor Class (AC)** | **16** | Leather Armor (`11`) + DEX (`+4`) + 🛡️ Cloak of Protection (`+1`) |
 | **Initiative** | **+4** | DEX modifier |
 | **Speed** | **30 ft** | **Feline Agility:** Burst to **60 ft** for 1 turn (recharges on 0 ft move) |
 | **Proficiency Bonus** | **+2** | Tier 1 Standard |
 | **Spell Save DC** | **14** | `8 + 2 (PB) + 4 (CHA)` |
 | **Spell Attack Mod** | **+6** | `+2 (PB) + 4 (CHA)` |
-| **Bardic Inspiration** | **4 / 4 (d6)** | Recharges on Long Rest (CHA mod = 4 uses) |
+| **Bardic Inspiration** | **2 / 4 (d6)** | Recharges on Long Rest (2 used) |
 | **Help Tokens** | **2 / 2** | +1d6 to ally check within 30 ft (regains 1 on Short Rest, 2 on Long Rest) |
+| **Suture Chord (Lyra)** | **0 / 2** | 2 slots/LR (Both expended in combat) |
 | **Senses** | **Blind Seismic Sense (30–60 ft)** | Detects vibrations, acoustics & air disturbance; immune to visual blindness penalties |
 
 ## 📊 Ability Scores & Saving Throws (with Cloak of Protection +1)
@@ -124,11 +125,11 @@
 ## 🔮 Bardic Features & Spells (Level 4)
 * 🧠 **Psychic Blades (College of Whispers):** When hitting with a weapon attack (Rapier/Dagger), expend 1 Bardic Inspiration die to deal an extra **2d6 Psychic damage** (1/round on your turn).
 * 👁️ **Words of Terror (College of Whispers):** Speak with humanoid alone for 1 min; DC 14 Wis save or **Frightened** for 1 hour (1/Short or Long Rest).
-* 🪘 **Bardic Inspiration (d6):** Bonus Action to grant d6 inspiration to ally within 60 ft for 1 hour (4 uses/LR).
+* 🪘 **Bardic Inspiration (d6):** Bonus Action to grant d6 inspiration to ally within 60 ft for 1 hour (2/4 remaining).
 * 🎶 **Song of Rest (d6):** Allies spending Hit Dice during Short Rest regain an extra **1d6 HP**.
 * 🃏 **Jack of All Trades:** Add +1 (half PB) to all unproficient ability checks.
 * 🐾 **Feline Agility:** Double speed (60 ft) for 1 turn. Recharges on turn with 0 ft movement.
-* **Spell Slots:** `4x` 1st-Level, `3x` 2nd-Level.
+* **Spell Slots:** `3 / 4` 1st-Level, `3 / 3` 2nd-Level.
   * **Cantrips (0):** *Dancing Lights*, *Vicious Mockery* (DC 14 Wis, `1d4` Psychic + Disadvantage on next attack), *Minor Illusion*.
   * **1st-Level:** *Dissonant Whispers* (DC 14 Wis, `3d6` Psychic + flee), *Healing Word* (Bonus Action, `1d4+4` HP), *Charm Person* (DC 14 Wis), *Color Spray* (6d10 HP blinded).
   * **2nd-Level:** *Calm Emotions* (20-ft sphere, DC 14 Cha), *Enthrall* (DC 14 Wis), *Hold Person* (DC 14 Wis), *Invisibility* (Touch, Conc 1 hr).
@@ -141,7 +142,7 @@
 * **Weapons & Musical Instruments:**
   * 🎻 **Lyra (Cello Bowstring Rapier / Instrument):** `+7 to hit` (`+4 DEX + 2 PB + 1 magic`), reach 5 ft. *Hit:* `1d8 + 5` piercing/slashing + **`1d6` Thunder damage**. *(With Psychic Blades: `1d8+5 + 1d6 Thunder + 2d6 Psychic`!).*
     * **Dual Nature:** Can be used as a `+1` Finesse melee weapon OR drawn across an instrument as a musical focus.
-    * **Suture Chord (Bonus Action • 2 Slots per Long Rest):** Whips the bowstring at a target within 30 ft (DC 14 Dexterity Save). On fail: takes **`2d8` Thunder damage** and has its **movement speed reduced to 0 (Pinned)** until an action tears it free (half damage and not pinned on success).
+    * **Suture Chord (Bonus Action • 0 / 2 Slots):** Whips the bowstring at a target within 30 ft (DC 14 Dexterity Save). On fail: takes **`2d8` Thunder damage** and has its **movement speed reduced to 0 (Pinned)** until an action tears it free (half damage and not pinned on success).
   * 🗡️ **Steel Rapier:** `+6 to hit`, reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse).
   * 🗡️ **Sentry Zik's Dagger (+1):** `+7 to hit`, range 20/60 ft. *Hit:* `1d4 + 5` piercing (Finesse, Light, Thrown).
   * 🗡️ **Steel Daggers (2x):** `+6 to hit`, range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).
@@ -151,11 +152,11 @@
   * 🪶 **Sentry Zik's Remains & Silk Ribbon** (Solemn memorial urn of the brave kobold hero of Dragon's Rest).
   * 🍷 **1x Elixir of Health (Legendary)** (Distilled from The Ruby Morel; cures all diseases/poisons, +20 Temp HP).
   * 💣 **1x Spitfire Flask** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex save for half).
-  * 🍞 **1x Kobold Sweetbread Roll** (Blepp's honey ration: `1d4 HP` + `+1d4 Temp HP`).
+  * *(Kobold Sweetbread Roll consumed)*
   * ⚠️ *Revived via Elixir of Life in Session 7: Suffers -2 penalty to attack rolls, saving throws, and ability checks until finishing a Long Rest.*
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack**, Thieves' tools.
-* **Personal Wealth:** `415 gp, 0 sp`.
+* **Personal Wealth:** `15 gp, 0 sp`.
 * **Destiny Relic:** 🌪️ **Scale of the Zephyr (Clyssavar's Silver Scale of Wind & Vibrations)** *(Claimed in Chapter 3 in hold C9!)*.
 
 ---
@@ -197,9 +198,9 @@
 ## ✨ Divine Domain Features & Spellcasting (Level 4 Life Cleric)
 * **Spell Save DC:** **14** (`8 + 2 PB + 4 WIS`)
 * **Spell Attack Bonus:** **+6** (`+2 PB + 4 WIS`)
-* **1st-Level Spell Slots:** `4 / 4`
-* **2nd-Level Spell Slots:** `3 / 3` (Level 4 Slot Unlocked!)
-* **Channel Divinity (1/Short or Long Rest):** `1 / 1` Ready!
+* **1st-Level Spell Slots:** `2 / 4`
+* **2nd-Level Spell Slots:** `0 / 3` (All 3 expended in combat)
+* **Channel Divinity (1/Short or Long Rest):** `0 / 1` (Used)
   * 🕊️ **Preserve Life:** As an Action, restore up to **20 Hit Points** (5 × Cleric Level 4) distributed among any bloodied creatures within 30 ft (cannot heal above 50% max HP).
   * 📿 **Enlightened Turn Undead:** Granted via *Enlightened Bone Talisman* (1/Long Rest Action: Turn Undead within 30 ft, DC 14 Wisdom save).
 * **Life Domain Features:**
@@ -227,12 +228,13 @@
   * 🍾 **Father Flubs' Reclaimed Vintage Wine Jug** (The Vintage of the Dawn Watch • Holy Symbol)
   * 📿 **The Enlightened Bone Charm** *(Grants Advantage on Wisdom Saves vs Charmed/Frightened & Turn Undead)*
   * 🏴‍☠️ **1x Pirate Hat** *(Swagger of the high seas; Advantage on Intimidation vs sailors/bandits)*
-  * 🔘 **1x "3-Circle" Amulet** *(Planar Alignment Key from Clifftop Observatory)*
+  * *(1x "3-Circle" Amulet consumed/used)*
 * **Consumables, Potions & Alchemy:**
   * 🐉 **Jar of Pure Drake Blood** *(Potent pyromantic distillation for refining or weapon coatings)*
   * 🏺 **1x Jar of Animal Remains** *(Alchemical specimen for sacred sanctification rites)*
-  * 🧪 **9x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
-  * 🍷 **0x Elixir of Life (Legendary)** *(Administered to Sylvar in Session 7: returns dead creature to life with 50% max HP, knits severed limbs, -2 penalty to d20 rolls until Long Rest)*
+  * 🧪 **6x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP) *(3 consumed)*
+  * *(1x Elixir of Health consumed)*
+  * 🍷 **0x Elixir of Life (Legendary)** *(Administered to Sylvar in Session 7)*
   * 🧪 **2x Diluted Drake Blood Potions** (Grants **+1 to Attack Rolls and +2 to Damage Rolls** for 24 hours!)
   * Priest's Pack, Altar Vestments, Incense, Censer.
 * **Wealth:** `52 gp, 5 sp`.
@@ -255,11 +257,11 @@
 ## ⚔️ Combat Statistics
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
-| **Hit Points (HP)** | **36 / 36** | Hit Dice: `4d8 + 8 CON` (Level 4 Upgraded) |
+| **Hit Points (HP)** | **23 / 36** | Hit Dice: `4d8 + 8 CON` (Level 4 Upgraded) |
 | **Armor Class (AC)** | **17** | Splint Mail (15) + Azure Wolf Shield (+2) |
 | **Initiative** | **+0** *(Advantage via Battle Readiness)* | |
 | **Speed** | **30 ft** | Subtle limp from peg leg |
-| **Help Tokens** | **2 / 2** | Help (+1d6 to ally within 30ft, 2/LR, +1 on SR) |
+| **Help Tokens** | **1 / 2** | Help (+1d6 to ally within 30ft, 1 used) |
 | **Passive Perception** | **14** | Base Wisdom (+2) + PB (+2) |
 | **Proficiency Bonus** | **+2** | |
 
@@ -278,7 +280,7 @@
 * ⚡ **Battle Readiness (Level 4 Feature):** General Varnoth has **Advantage on Initiative rolls**.
 * 🛡️ **Protection (Reaction):** When an enemy within 5 ft attacks an adjacent ally (Eflein, Father Flubs, Sylvar), Varnoth uses her reaction to impose **Disadvantage** on the attack roll (must have shield equipped).
 * 💨 **Second Wind (1/Short or Long Rest):** Bonus Action to regain **1d10 + 4 Hit Points** immediately (Ready).
-* ⚡ **Action Surge (1/Short or Long Rest):** Free Action. Push beyond limits to take **1 additional Action** on your turn! (Ready).
+* ⚡ **Action Surge (1/Short or Long Rest):** Free Action. Push beyond limits to take **1 additional Action** on your turn! (0/1 Used).
 * ⚔️ **Azure Wolf Longsword (1-Handed):** `+6 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d8 + 4` slashing damage.
 * ⚔️ **Azure Wolf Longsword (2-Handed Versatile):** `+6 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d10 + 4` slashing damage.
 * 🪓 **Twin Notched Bone-Cleavers:** `+6 to hit` (Crits on 19-20). Main: `1d6 + 4` slashing | Off-hand Bonus: `1d6` slashing.

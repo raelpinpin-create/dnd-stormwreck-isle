@@ -1145,7 +1145,7 @@
                         <div style="background:rgba(124, 58, 237, 0.08); border:1px solid #a855f7; border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <div>
                                 <span style="font-weight:700; color:#c084fc;">🪄 Wand of Magic Missiles:</span>
-                                <span id="wand-charges-disp" style="color:#fde68a; font-weight:bold; margin-left:4px;">6 / 7 Charges</span>
+                                <span id="wand-charges-disp" style="color:#fde68a; font-weight:bold; margin-left:4px;">4 / 7 Charges</span>
                             </div>
                             <div style="display:flex; gap:4px;">
                                 <button class="btn-roll-action btn-roll-dmg" style="background:#7c3aed; padding:3px 8px; font-size:0.7rem;" onclick="useWandOfMagicMissiles(1)">🪄 Cast (1 Chg: 3 Darts)</button>
@@ -2050,8 +2050,8 @@
     // ==========================================
     let characterLevel = 4; // Current Character Level (Level 4 Upgraded)
     let spellSlots = {
-        1: { current: 4, max: 4, reqLevel: 1 },
-        2: { current: 3, max: 3, reqLevel: 3 },
+        1: { current: 2, max: 4, reqLevel: 1 },
+        2: { current: 1, max: 3, reqLevel: 3 },
         3: { current: 0, max: 0, reqLevel: 5 }
     };
 
@@ -2466,7 +2466,7 @@
     const maxWandCharges = 7;
     let wandCharges = (function() {
         const saved = localStorage.getItem('eflein_wand_charges_v1');
-        return saved !== null ? parseInt(saved) : 6; // 6/7 default (1 consumed)
+        return saved !== null ? parseInt(saved) : 4; // 4/7 default (3 consumed in Session 6/7)
     })();
 
     function modWandCharges(delta) {

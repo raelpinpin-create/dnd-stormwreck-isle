@@ -973,7 +973,7 @@
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#f59e0b; margin-top:1px;">Free Action • 1/Short Rest</div>
                                 </div>
-                                <span id="surge-badge" style="font-size:0.68rem; color:#f59e0b; font-weight:700;">1/1 Ready</span>
+                                <span id="surge-badge" style="font-size:0.68rem; color:var(--text-muted); font-weight:700;">0/1 Used</span>
                             </div>
                             <div class="spell-desc-compact">Free Action. Take <strong>1 additional Action</strong> on your turn (1/Short Rest).</div>
                             <div class="spell-action-btns">
@@ -1189,7 +1189,7 @@
 
 <script>
     // State Variables
-    let curHP = 36;
+    let curHP = 23;
     let maxHP = 36;
     let tempHP = 0;
     let baseAC = 15; // Splint Mail
@@ -1197,7 +1197,7 @@
     let isCoverActive = false; // +2 Cover AC
     let tempAcBonus = 0;
     let isSecondWindReady = true;
-    let isActionSurgeReady = true;
+    let isActionSurgeReady = false;
     let helpTokens = 1;
     let maxHelpTokens = 2;
     let shortRestsRemaining = 2;
@@ -2560,11 +2560,13 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     function init() {
         const savedHP = localStorage.getItem('dnd_hp_varnoth_v2');
         if (savedHP !== null) curHP = parseInt(savedHP);
+        else curHP = 23;
         const savedTemp = localStorage.getItem('dnd_temphp_varnoth_v2');
         if (savedTemp !== null) tempHP = parseInt(savedTemp);
 
         const savedHelp = localStorage.getItem('dnd_help_varnoth_v2');
         if (savedHelp !== null) helpTokens = parseInt(savedHelp);
+        else helpTokens = 1;
 
         updateHPUI();
         updateACUI();

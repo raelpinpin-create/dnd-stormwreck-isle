@@ -810,7 +810,7 @@
                             <div style="font-size:0.74rem; font-weight:700;">🕊️ Preserve Life</div>
                             <div style="font-size:0.66rem; color:var(--text-dim);" id="sub-cd">1/Short Rest (20 HP)</div>
                         </div>
-                        <span class="toggle-badge on" id="badge-cd">READY</span>
+                        <span class="toggle-badge off" id="badge-cd">USED</span>
                     </div>
                 </div>
 
@@ -1414,7 +1414,7 @@
     let tempHP = 0;
     let baseAC = 16; // Scale Mail 14 + Shield 2
     let isShieldOfFaithActive = false;
-    let isChannelDivinityReady = true;
+    let isChannelDivinityReady = false;
     let helpTokens = 2;
     let maxHelpTokens = 2;
     let shortRestsRemaining = 1;
@@ -1430,8 +1430,7 @@
         "🐉 Jar of Pure Drake Blood",
         "🏺 1x Jar of Animal Remains",
         "🏴‍☠️ 1x Pirate Hat",
-        "🔘 1x \"3-Circle\" Amulet",
-        "🧪 9x Potion of Healing",
+        "🧪 6x Potion of Healing",
         "🐉 2x Diluted Drake Blood Potion",
         "🛡️ Kobold Shield",
         "📜 Aleitha's Farewell Letter"
@@ -1664,8 +1663,8 @@
     // ==========================================
     let characterLevel = 4; // Current Character Level (Level 4 Upgraded)
     let spellSlots = {
-        1: { current: 4, max: 4, reqLevel: 1 },
-        2: { current: 3, max: 3, reqLevel: 3 },
+        1: { current: 2, max: 4, reqLevel: 1 },
+        2: { current: 0, max: 3, reqLevel: 3 },
         3: { current: 0, max: 0, reqLevel: 5 }
     };
 
@@ -2869,18 +2868,18 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     }
 
     function getStoredItems() {
-        let stored = localStorage.getItem('dnd_inv_flubs_v22');
+        let stored = localStorage.getItem('dnd_inv_flubs_v23');
         if (!stored) {
-            for (let i = 1; i <= 21; i++) localStorage.removeItem(`dnd_inv_flubs_v${i}`);
+            for (let i = 1; i <= 22; i++) localStorage.removeItem(`dnd_inv_flubs_v${i}`);
             localStorage.removeItem('dnd_inv_flubs');
-            localStorage.setItem('dnd_inv_flubs_v22', JSON.stringify(defaultItems));
+            localStorage.setItem('dnd_inv_flubs_v23', JSON.stringify(defaultItems));
             return [...defaultItems];
         }
         return JSON.parse(stored);
     }
 
     function saveStoredItems(items) {
-        localStorage.setItem('dnd_inv_flubs_v22', JSON.stringify(items));
+        localStorage.setItem('dnd_inv_flubs_v23', JSON.stringify(items));
     }
 
     // Universal Item Quantity Parsing & Formatting Engine

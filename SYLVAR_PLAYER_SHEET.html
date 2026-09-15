@@ -1280,20 +1280,20 @@
         // 📊 CORE STATE & LOCALSTORAGE PERSISTENCE (UPGRADED STATS)
         // ==========================================
         const maxHP = 31;
-        let currentHP = 31;
+        let currentHP = 16;
         let tempHP = 0;
-        let bardicInsp = 4;
+        let bardicInsp = 2;
         let helpTokens = 2;
-        let sutureSlots = 2; // 2 slots per Long Rest (Lyra - Suture Chord)
+        let sutureSlots = 0; // 0/2 slots remaining (Both expended)
         let isFelineReady = true;
         let isCloakAttuned = true;
-        let currentGP = 415;
+        let currentGP = 15;
         let currentSP = 0;
         let advState = 'normal'; // 'normal', 'adv', 'dis'
 
         let characterLevel = 4;
         let spellSlots = {
-            1: { current: 4, max: 4, reqLevel: 1 },
+            1: { current: 3, max: 4, reqLevel: 1 },
             2: { current: 3, max: 3, reqLevel: 3 },
             3: { current: 0, max: 0, reqLevel: 5 }
         };
@@ -1472,7 +1472,6 @@
             "🪘 Tambourine (Arcane Focus & Resonator)",
             "🎸 Lute & Wooden Guitar",
             "💣 1x Spitfire Flask",
-            "🍞 1x Kobold Sweetbread Roll",
             "🎒 Entertainer's Pack",
             "🗝️ Thieves' Tools & Burglar's Pack"
         ];
@@ -1644,21 +1643,21 @@
             try {
                 const savedHP = localStorage.getItem('sylvar_hp_v2');
                 if (savedHP !== null) currentHP = parseInt(savedHP);
-                else currentHP = 31;
+                else currentHP = 16;
 
                 const savedTemp = localStorage.getItem('sylvar_temp_hp');
                 if (savedTemp !== null) tempHP = parseInt(savedTemp);
                 const savedInsp = localStorage.getItem('sylvar_insp');
                 if (savedInsp !== null) bardicInsp = parseInt(savedInsp);
-                else bardicInsp = 4;
+                else bardicInsp = 2;
                 const savedHelp = localStorage.getItem('sylvar_help');
                 if (savedHelp !== null) helpTokens = parseInt(savedHelp);
                 const savedSuture = localStorage.getItem('sylvar_suture');
                 if (savedSuture !== null) sutureSlots = parseInt(savedSuture);
-                else sutureSlots = 2;
+                else sutureSlots = 0;
                 const savedGP = localStorage.getItem('sylvar_gp_v4');
                 if (savedGP !== null) currentGP = parseInt(savedGP);
-                else currentGP = 415;
+                else currentGP = 15;
                 const savedSP = localStorage.getItem('sylvar_sp_v4');
                 if (savedSP !== null) currentSP = parseInt(savedSP);
                 else currentSP = 0;
@@ -2248,18 +2247,18 @@
         // 🎒 TRACKED INVENTORY & SESSION DELTA ENGINE (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
         function getStoredItems() {
-            let stored = localStorage.getItem('dnd_inv_sylvar_v6');
+            let stored = localStorage.getItem('dnd_inv_sylvar_v7');
             if (!stored) {
-                for (let i = 1; i <= 5; i++) localStorage.removeItem(`dnd_inv_sylvar_v${i}`);
+                for (let i = 1; i <= 6; i++) localStorage.removeItem(`dnd_inv_sylvar_v${i}`);
                 localStorage.removeItem('dnd_inv_sylvar');
-                localStorage.setItem('dnd_inv_sylvar_v6', JSON.stringify(defaultItems));
+                localStorage.setItem('dnd_inv_sylvar_v7', JSON.stringify(defaultItems));
                 return [...defaultItems];
             }
             return JSON.parse(stored);
         }
 
         function saveStoredItems(items) {
-            localStorage.setItem('dnd_inv_sylvar_v6', JSON.stringify(items));
+            localStorage.setItem('dnd_inv_sylvar_v7', JSON.stringify(items));
         }
 
         function parseItemInfo(itemStr) {
