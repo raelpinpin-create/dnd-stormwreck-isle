@@ -40,11 +40,13 @@
 * 📖 **Story Journal & Lore Archive:** [`01_STORY_ARCHIVE.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/01_STORY_ARCHIVE.md)
 * 🌐 **Google Drive Campaign Folder:** [Dragons of Stormwreck Isle - DM Campaign Notes](https://drive.google.com/drive/folders/1-5BzBXemQAsZhc3PGlKD3YLR1qOrJ4Ir)
 * 📄 **Active Google Docs (Tier 1 Sandbox):**
+  * 🩸 [Session 8 - The Mark of Vecna, The Deicide of Moros & The Return to Stormwreck Isle](https://docs.google.com/document/d/11VlqxJC-i1hjVK2U-C9gjV-4rTH4l4vy8ppp7pj6Xok/edit)
   * 🗺️ [Character Lore & Progression Guide](https://docs.google.com/document/d/1KaU5NCggRptTH2JBfh6lTyPIryEjVAOmPVeXGwxOvwY/edit)
   * ⛵ [Session 4 - Journey Back to Dragons Rest, Prep & Compass Rose](https://docs.google.com/document/d/1eQOe-E7nSyvaKGlOaI5Y9FphUSFh27YEBjKK0ggP-WE/edit)
   * 🍄 [Session 3 - Seagrow Caves](https://docs.google.com/document/d/1b_77tDWjEQ5o-PT4pGFuamvQjZhrhFfvDah1fe2IP4c/edit)
   * 🦎 [Session 2 & 2.5 - New PC & Journey to Seagrow Cave](https://docs.google.com/document/d/1lIEalgM8KuI0yNlv3OkWw985oXmnxAKVpwEG1GSpLgI/edit)
   * 🏖️ [Session 1 - Arrival & Beach Battle](https://docs.google.com/document/d/1hPBKSCiPtu9bLGkiDhPpItsQW1aVutYmixl9YlMg3Lk/edit)
+* 📜 **Session 8 Master Local Notes:** [`Session 8 - The Mark of Vecna and Deicide of Moros.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/Session%208%20-%20The%20Mark%20of%20Vecna%20and%20Deicide%20of%20Moros.md)
 * 📋 **Session Notes Template (For GDocs):** [`DM_SESSION_NOTES_TEMPLATE.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/DM_SESSION_NOTES_TEMPLATE.md)
 * 🎓 **Lead DM & AI Co-Pilot Playbook (`/dmguide`):** [`.agents/skills/dmguide/SKILL.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/.agents/skills/dmguide/SKILL.md)
 
