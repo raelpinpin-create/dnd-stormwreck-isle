@@ -507,16 +507,21 @@ graph TD
 | Rule / Mechanic | Value / Guidance | DM Execution Note |
 | :--- | :--- | :--- |
 | **Typical DCs** | Easy: **10** \| Moderate: **15** \| Hard: **20** | Assign DC based on task complexity |
-| **Death Saves (House Rule)** | **1 Success Required** | Player needs only 1 successful save to stabilize |
-| **Critical Hits (House Rule)** | **Brutal Crits (Max + Roll)** | On a Nat 20, attack deals **Max Base Damage + 1 Normal Damage Roll + Modifiers** (e.g., 1d6 weapon = 6 + 1d6 + Mod) |
-| **Daggerheart Help System** | **2 Help Tokens / Rest (Free Call-out)** | Free call-out within 30 ft/sight. Spend 1 token to roll **+1d6 Advantage Die** for ally's d20 roll. Multiple allies can help; acting player picks the **highest single 1d6 result**! |
-| **Currency Economy (Standard 5e)** | **10 SP = 1 GP** | 10 Silver pieces equals 1 Gold piece (100 Copper). Automatic rollover & borrow conversion on all interactive player sheets. |
-| **Full Action Potion Rule** | **100% Full Max HP** | Consuming a Potion of Healing as a Full Action restores full HP immediately |
-| **Food Overheal Rule** | **1d4 HP + Excess Temp HP** | Eating food heals 1d4 HP; excess overheal converts directly into Temporary HP |
-| **Electrified Puddle / Shattered Ice** | **+1d4 Shock / Shrapnel Dmg** | **Lightning + Puddle:** Arcs to all creatures in puddle for **+1d4 Shock damage** & reaction loss (Sculpt Spells protects allies). **Ice + Thunder/Impact:** Shatters into **+1d4 Cold/Piercing Shrapnel damage**. |
-| **Player Rolls & Modifiers** | Player calculates roll + mod | Players add their own character sheet modifiers and provide the total result |
-| **Lead DM & Co-Pilot Role** | User = Lead DM \| AI = Co-Pilot | The User dictates story flow, scene settings, and revisions. The AI adapts instantly, assists with dialogue, combat narration, encounter creation, and keeps track of the campaign outline. |
-| **Damage Rolling Rule** | Player rolls player damage | The Player/DM rolls damage for their attacks unless explicitly asking the AI to roll it. The AI rolls enemy/monster damage. |
+| **Combat Ability Checks** | **Full Action Required** | Making Perception, Insight, Investigation, or Arcana checks in combat takes a Full Action. |
+| **Intent to Attack & Surprise** | **Initiative First** | Attack declarations trigger immediate Initiative rolls. Hidden attackers gain Advantage & give targets the Surprised condition. |
+| **Death Saves (2-Strike Rule)** | **DC 10 Save (2 Fails = Dead)** | Roll DC 10 d20: Success = stabilized at 1 HP (prone). **2 Failures = Character Dies**. |
+| **Damage While Dying** | **2 Damage Strikes = Dead** | Taking damage 2 times while at 0 HP (from enemy/environment/friendly fire) kills character permanently. |
+| **Instant Healing at 0 HP** | **Immediate Wake-Up** | Receiving any heal or *Spare the Dying* cures dying state immediately (character is in prone position). |
+| **Throwing Potions** | **Full Action Ranged Attack** | Improvised ranged attack vs. DC 10–20. Hit = heals 2d6+1 HP. Miss = 1d4 damage strike to the dying ally! |
+| **Potion of Healing** | **Bonus Action (2d6 + 1 HP)** | Drinking yourself = **Bonus Action (2d6 + 1 HP)**. Administering to an ally = 1 Action. |
+| **Elixir of Life (Nerfed)** | **50% Max HP + -2 Penalty** | Revives dead creature within 1 min to 50% HP; suffers -2 to all d20 rolls until next Long Rest. |
+| **Help Tokens (Narrative Check)** | **2 Tokens / Rest (Valid RP Needed)** | Spend 1 token for +1d6 Advantage Die on ally's roll ONLY if a valid narrative help action is given (DM can deny). |
+| **Simplified Cover Rule** | **In Cover: +2 AC \| Total: Untargetable** | Partial cover behind anything = +2 AC. Total cover behind solid walls = cannot be targeted. |
+| **Short Rest Healing (Max 2/day)** | **25% Max HP + +1 Help Token** | Max 2 Short Rests per day. Restores 25% Total Max HP and +1 Help Token (capped at 2/2). |
+| **Critical Hits (Brutal Crits)** | **Max + Roll + Mod** | On a Nat 20, attack deals **Max Base Damage + 1 Normal Damage Roll + Modifiers** (e.g., 1d6 weapon = 6 + 1d6 + Mod). |
+| **Electrified Water / Shattered Ice** | **+1d4 Shock / Shrapnel Dmg** | **Lightning + Water:** Arcs to all in water for **+1d4 Shock** & reaction loss. **Ice + Thunder:** Shatters for **+1d4 Shrapnel**. |
+| **Currency Economy** | **10 SP = 1 GP** | 10 Silver pieces = 1 Gold piece. Common goods/food in SP; weapons/gear/magic items in GP. |
+| **Tactical Actions** | **Dodge, Disengage, Shove, Grapple** | Dodge = Disadv on incoming attacks & Adv on Dex saves. Disengage = No OA. Shove = Prone or 5ft push. Grapple = Speed 0. |
 
 ### 🎲 Master DM Guide on Skills & Saving Throws
 

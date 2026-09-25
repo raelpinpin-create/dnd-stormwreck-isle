@@ -104,18 +104,22 @@
    * **Enemies & Monsters:** User (Lead DM) controls and rolls attacks & damage for enemies/monsters.
    * **Party Defender (General Varnoth):** The **User (Lead DM)** controls, maneuvers, and rolls for General Varnoth.
 6. **House Rules:** 
-   * **Death Saves:** Only 1 successful Death Saving Throw is required to succeed.
-   * **Critical Hits (Brutal Crits):** On a Nat 20, critical hits deal **Max Base Damage + 1 Normal Damage Roll + Modifiers** (e.g. 1d6 weapon = 6 + 1d6 + Mod).
-   * **Full Action Potion Rule (Homebrew):** Consuming a Potion of Healing as a **Full Action** restores the drinker to **100% FULL MAX HP**!
-   * **Short Rest Healing (Homebrew):** Taking a Short Rest restores **25% of your Total Max HP** (up to a maximum of 2 times per day) and regains **+1 Help Token** (up to max 2/2), in addition to class Short Rest recharges (Pact Slots, Channel Divinity, Arcane Recovery).
-   * **Help Tokens & Advantage System (Homebrew):** Each player character gets **2 Help Tokens** max. **Short Rest:** Regains +1 token (capped at 2). **Long Rest:** Fully resets to 2/2. As a **Free Call-out** (within 30 ft or line of sight), a player expends 1 token to roll a **+1d6 Advantage Die** to boost an ally's Attack Roll, Spell Attack, or Ability Check. Multiple allies can stack Help on the same roll; the acting player chooses the **highest single 1d6 result**!
+   * **Master Rules File:** [`MASTER_TABLE_RULES_AND_HOMEBREWS.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/MASTER_TABLE_RULES_AND_HOMEBREWS.md)
+   * **Combat Ability Checks:** Making Perception, Insight, Investigation, or Arcana checks in combat takes a **Full Action**.
+   * **Intent to Attack & Surprise:** Intent to attack triggers immediate Initiative rolls for all. Attacking hidden grants **Advantage** and gives targets the **Surprised condition** (skipping their turn in round 1).
+   * **Death Saves (2-Strike Rule):** DC 10 d20 save. Success = stabilized at 1 HP (prone). **2 Failures = Permanent Death**. 
+   * **Damage While Dying:** Taking damage 2 times while at 0 HP (enemy, hazard, or friendly fire) causes **Permanent Death**.
+   * **Instant Healing at 0 HP:** Receiving any magical healing or potion immediately cures dying state and wakes up the character (starts in prone position).
+   * **Throwing Potions:** Full Action improvised ranged attack (DC 10–20). Success = heals 2d6 HP. Miss = deals 1d4 damage strike to the downed ally!
+   * **Potion of Healing:** Consuming a Potion of Healing yourself takes a **Bonus Action** and restores **`2d6 + 1 HP`**! (Administering to an adjacent ally takes 1 Action).
+   * **Elixir of Life (Nerfed):** Revives dead creature within 1 min to **50% Max HP**; suffers **-2 penalty to all d20 rolls** until next Long Rest.
+   * **Short Rest Healing (Max 2/day):** Taking a Short Rest restores **25% of your Total Max HP** (up to a maximum of 2 times per day) and regains **+1 Help Token** (up to max 2/2), in addition to class Short Rest recharges.
+   * **Help Tokens System (Narrative Justification Required):** Each PC gets 2 Help Tokens max. As a Free Call-out (30 ft / sight), expend 1 token for a **+1d6 Advantage Die** on an ally's d20 roll **ONLY IF a valid narrative explanation of how you are helping is provided** (DM can deny invalid tokens). Varnoth's tokens also require narrative justification.
+   * **Simplified Cover Rule:** **In Cover = +2 AC** (behind barrels, pillars, walls, or allies). **Total Cover = Cannot be targeted**.
    * **⚡ Electrified Puddle & Shattered Ice Rule (Environmental Combat):**
-     - **Water / Puddle + Lightning:** When Lightning strikes a creature standing in a puddle or flooded floor, electricity conducts through the water—all other creatures in the puddle take **`1d4` extra Shock damage** and lose reactions for 1 turn (Eflein's *Sculpt Spells* protects allies!).
+     - **Water / Puddle + Lightning:** Lightning arcs through water—all other creatures in the puddle take **`1d4` extra Shock damage** and lose reactions for 1 turn (Eflein's *Sculpt Spells* protects allies!).
      - **Ice Patch + Thunder / Impact:** When Thunderwave or a heavy impact hits an icy surface, the ice violently shatters—all creatures on the ice take **`1d4` Cold/Piercing Shrapnel damage**.
-    * **💰 2-Coin Economy Rule (Zero Copper / SP & GP Only):**
-      - Standard: **10 Silver Pieces (SP) = 1 Gold Piece (GP)**. No copper pieces exist in the campaign economy.
-      - Common everyday goods, tavern food, rations, and specialty cafeteria breads are priced in **SP** (e.g. Cheese Bread 5 SP, Bagel 8 SP, Eflein's Special 10 SP / 1 GP).
-      - Adventuring gear, alchemical items, weapons, armor, and magic items are priced in **GP** (with SP conversions where applicable).
+   * **💰 2-Coin Economy Rule (Zero Copper / SP & GP Only):** 10 Silver Pieces (SP) = 1 Gold Piece (GP). Food/breads in SP; weapons/armor/magic items in GP.
 7. **Consumable Cleanup & World Loot Vault Lifecycle Protocol:**
    * **Player Character Sheets:** Whenever any consumable is drunk, eaten, thrown, cast, or discarded, it is immediately removed from the player's inventory across `CHARACTER_SHEET.md`, `<PLAYER>_PLAYER_SHEET.html`, and `00_ALWAYS_READ.md`.
    * **World Loot Vault Catalog:** Reusable and recurring gear, weapons, and consumables (*Spitfire Flasks*, *Potions*, *Smoke Flasks*, *Slings*, *Bucklers*, *Wands*, *Relics*) remain permanently in Section 4 of `DM_SCREEN.md` and `DM_SCREEN.html` for easy DM placement across encounters.

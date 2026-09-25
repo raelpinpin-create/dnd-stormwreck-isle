@@ -5309,6 +5309,17 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         document.getElementById('dm-modal').close();
     }
 
+    // Close modal when clicking outside window on backdrop
+    const stormwreckModalEl = document.getElementById('dm-modal');
+    if (stormwreckModalEl) {
+        stormwreckModalEl.addEventListener('click', (e) => {
+            const wrapper = stormwreckModalEl.querySelector('.modal-wrapper');
+            if (e.target === stormwreckModalEl || (wrapper && !wrapper.contains(e.target))) {
+                closeDmModal();
+            }
+        });
+    }
+
     function rollLootTable(key) {
         const m = MONSTER_DATA[key];
         if (!m || !m.lootTable || m.lootTable.length === 0) return;
