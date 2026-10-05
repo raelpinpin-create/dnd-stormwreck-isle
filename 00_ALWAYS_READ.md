@@ -50,6 +50,7 @@
   * 🍄 [Session 3 - Seagrow Caves](https://docs.google.com/document/d/1b_77tDWjEQ5o-PT4pGFuamvQjZhrhFfvDah1fe2IP4c/edit)
   * 🦎 [Session 2 & 2.5 - New PC & Journey to Seagrow Cave](https://docs.google.com/document/d/1lIEalgM8KuI0yNlv3OkWw985oXmnxAKVpwEG1GSpLgI/edit)
   * 🏖️ [Session 1 - Arrival & Beach Battle](https://docs.google.com/document/d/1hPBKSCiPtu9bLGkiDhPpItsQW1aVutYmixl9YlMg3Lk/edit)
+* 📜 **Session 9 Master Local Notes:** [`Session 9 - The Sacked Cloister, Hospital of Spores, and The Basalt March.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/Session%209%20-%20The%20Sacked%20Cloister,%20Hospital%20of%20Spores,%20and%20The%20Basalt%20March.md)
 * 📜 **Session 8 Master Local Notes:** [`Session 8 - The Mark of Vecna and Deicide of Moros.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/Session%208%20-%20The%20Mark%20of%20Vecna%20and%20Deicide%20of%20Moros.md)
 * 📋 **Session Notes Template (For GDocs):** [`DM_SESSION_NOTES_TEMPLATE.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/DM_SESSION_NOTES_TEMPLATE.md)
 * 🎓 **Lead DM & AI Co-Pilot Playbook (`/dmguide`):** [`.agents/skills/dmguide/SKILL.md`](file:///D:/Dungeons%20and%20Dragons%20Campaigns/.agents/skills/dmguide/SKILL.md)
