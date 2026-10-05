@@ -932,6 +932,215 @@
             color: white;
         }
 
+        /* BLIGHTBORNE / MAL'GOROTH MODAL & DICE BANNER SYSTEM */
+        .modal-dice-banner {
+            background: linear-gradient(90deg, #090f1a 0%, #151d2c 100%);
+            border-bottom: 2px solid var(--accent-gold-dark);
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            min-height: 42px;
+            box-shadow: inset 0 2px 6px rgba(0,0,0,0.5);
+        }
+        .modal-dice-output {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.86rem;
+            color: #f8fafc;
+            flex: 1;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .modal-dice-quick-btns { display: flex; gap: 6px; align-items: center; }
+        .btn-die {
+            background: #141b2b;
+            border: 1px solid #233048;
+            color: #f8fafc;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.74rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-die:hover { border-color: var(--accent-gold); color: var(--accent-gold); background: #1c263c; }
+
+        .stat-bar-strip {
+            background: #090e18;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.82rem;
+            color: #fbbf24;
+            text-align: center;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            box-shadow: inset 0 1px 4px rgba(0,0,0,0.5);
+        }
+
+        .vitals-grid-card {
+            background: #0d131f;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+        .vitals-stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            text-align: center;
+        }
+        .vital-num-box {
+            background: #060a12;
+            border: 1px solid #1e293b;
+            border-radius: 6px;
+            padding: 6px 4px;
+        }
+        .vital-num-box .label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .vital-num-box .val {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: var(--text-bright);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .hp-bar-bg {
+            background: #1c0a0c;
+            border-radius: 4px;
+            height: 10px;
+            overflow: hidden;
+            border: 1px solid #4a131a;
+            margin: 4px 0;
+        }
+        .hp-bar-fill {
+            background: linear-gradient(90deg, #10b981, #34d399);
+            height: 100%;
+            width: 100%;
+            transition: width 0.3s ease, background 0.3s ease;
+        }
+
+        .hp-steppers-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+        }
+        .btn-step {
+            background: #1e293b;
+            border: 1px solid #334155;
+            color: #e2e8f0;
+            padding: 3px 9px;
+            border-radius: 4px;
+            font-size: 0.74rem;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .btn-step:hover { background: #991b1b; color: #fff; border-color: #ef4444; }
+        .btn-step-heal:hover { background: #065f46; color: #fff; border-color: #10b981; }
+
+        .action-container-card {
+            background: #090e18;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .action-row-item {
+            background: #0f1624;
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-gold);
+            border-radius: 0 6px 6px 0;
+            padding: 10px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .action-row-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .btn-roll {
+            background: #172439;
+            border: 1px solid #284469;
+            color: #93c5fd;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.74rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-roll:hover { background: #25426b; color: white; }
+        .btn-roll-dmg { border-color: #7f1d1d; color: #fca5a5; }
+        .btn-roll-dmg:hover { background: #991b1b; color: white; border-color: #ef4444; }
+
+        /* EXACT 4-COLOR NARRATIVE BOXES FROM MAL'GOROTH & BLIGHTBORNE */
+        .blue-box {
+            background: #0c1524;
+            border-left: 3px solid #38bdf8;
+            padding: 10px 14px;
+            border-radius: 0 5px 5px 0;
+            margin-bottom: 10px;
+            font-size: 0.84rem;
+            color: #e0f2fe;
+            line-height: 1.5;
+        }
+        .pink-box {
+            background: #1c1417;
+            border-left: 3px solid #f87171;
+            padding: 10px 14px;
+            border-radius: 0 5px 5px 0;
+            margin-bottom: 10px;
+            font-size: 0.84rem;
+            color: #fecaca;
+            line-height: 1.5;
+        }
+        .green-box {
+            background: #131d20;
+            border-left: 3px solid #34d399;
+            padding: 10px 14px;
+            border-radius: 0 5px 5px 0;
+            margin-bottom: 10px;
+            font-size: 0.84rem;
+            color: #d1fae5;
+            line-height: 1.5;
+        }
+        .yellow-box {
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 3px solid #fbbf24;
+            padding: 10px 14px;
+            border-radius: 0 5px 5px 0;
+            margin-bottom: 10px;
+            font-size: 0.84rem;
+            color: #fef08a;
+            line-height: 1.5;
+        }
+
         /* Sticky Footer Bar */
         .quick-bar {
             position: fixed;
@@ -1816,7 +2025,7 @@
                                 <div>
                                     <div class="quest-steps">
                                         <ol style="margin:0; padding-left:18px;">
-                                            <li><strong>Moonstone Bridge (D1):</strong> Insert Runara's key into dragon statues to manifest 30-ft hard-light bridge over abyss.</li>
+                                            <li><strong>Moonstone Bridge & Krag'zor Gatekeeper (D1):</strong> Insert Runara's key into dragon statues to manifest the 30-ft hard-light bridge. Guarding the crossing stands <strong>Krag'zor the Dragon-Forged (CR 7)</strong> and his lurking <strong>Titan Crag Drake Gorefang (CR 4)</strong>—a fiery warmup mini-boss!</li>
                                             <li><strong>Rotunda & Kobold Camp (D2-D3):</strong> Rescue Mek & Minn from Stirges; persuade kobold camp to stand down (DC 13).</li>
                                             <li><strong>Study & Statue Puzzle (D4-D5):</strong> Disarm explosive rune journal; rotate 4 Scholar Statues southeast toward Dragon of Dawn constellation using Lianna's notes to lower spiral stairs to D6!</li>
                                             <li><strong>Vault & Aidron's Prison (D5-D6):</strong> Claim ☀️ <strong>Turadaer's Gold Scale</strong>; unclamp Aidron the Bronze Wyrmling (42–48 HP) from 3 iron chains mid-combat!</li>
@@ -2542,6 +2751,16 @@
                         <tr class="biome-row-header">
                             <td colspan="14">⚡ Biome: Clifftop Observatory & Basalt Spires (Level 4–5 Climax)</td>
                         </tr>
+                        <tr class="row-final-boss" style="background:rgba(234, 179, 8, 0.06);">
+                            <td><strong class="clickable-title" onclick="openMonsterModal('kragzor')" style="color:#fde047;">🔥 Krag'zor the Dragon-Forged</strong> <span class="tag tag-boss" style="background:#422006; color:#fde047; border:1px solid #a16207;">⚔️ BRIDGE MINI-BOSS (CR 7)</span></td>
+                            <td>7</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+4</td><td>17</td><td>95</td><td>30 ft</td><td><strong>+3</strong></td><td style="color:#93c5fd;"><strong>+4★</strong></td><td style="color:#93c5fd;"><strong>+3★</strong></td><td style="color:#93c5fd;"><strong>+4★</strong></td><td><strong>+1</strong></td><td><strong>+2</strong></td>
+                            <td>Wyrm-Breaker Staff <strong>+7</strong> (1d8+4 bludgeon + 1d8 fire/light)</td><td>Draconic War Magic • Spells (DC 15) • Pointy Hat Actions (>50% / ≤50% HP)</td>
+                        </tr>
+                        <tr class="row-region-boss">
+                            <td><strong class="clickable-title" onclick="openMonsterModal('giant_drake')" style="color:#fdba74;">🦎 Gorefang (Titan Crag Drake)</strong> <span class="tag tag-region-boss" style="background:#3b1d11; color:#fdba74; border:1px solid #7c2d12;">DRAKE COMPANION (CR 4)</span></td>
+                            <td>4</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+1</td><td>15</td><td>68</td><td>40 ft</td><td><strong>+4</strong></td><td><strong>+1</strong></td><td><strong>+3</strong></td><td><strong>-3</strong></td><td><strong>+1</strong></td><td><strong>-2</strong></td>
+                            <td>Bite <strong>+6</strong> (2d8+4 pierc + 1d6 fire) + Tail <strong>+6</strong> (1d10+4)</td><td>Fire Breath (6d6, DC 14 Dex) • Knockdown (DC 14 Str)</td>
+                        </tr>
                         <tr class="row-final-boss">
                             <td><strong class="clickable-title" onclick="openMonsterModal('sparkrender')">🐉 Sparkrender</strong> <span class="tag tag-final-boss">👑 CAMPAIGN APEX FINAL BOSS</span></td>
                             <td>4</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+2</td><td>15</td><td>110-125</td><td>Fly 60</td><td><strong>+4</strong></td><td style="color:#93c5fd;"><strong>+2★</strong></td><td style="color:#93c5fd;"><strong>+4★</strong></td><td><strong>+1</strong></td><td style="color:#93c5fd;"><strong>+2★</strong></td><td style="color:#93c5fd;"><strong>+3★</strong></td>
@@ -3114,6 +3333,15 @@
                 <h3 id="modal-title">🏷️ Entity Name</h3>
                 <button class="modal-close-btn" onclick="closeDmModal()">✕</button>
             </div>
+            <div class="modal-dice-banner">
+                <div class="modal-dice-output" id="modal-dice-log">🎲 ROLL RESULT: Ready for rolls... (Click any button below)</div>
+                <div class="modal-dice-quick-btns">
+                    <button class="btn-die" onclick="rollDie(20)">d20</button>
+                    <button class="btn-die" onclick="rollDie(6)">d6</button>
+                    <button class="btn-die" onclick="rollDie(8)">d8</button>
+                    <button class="btn-die" onclick="clearModalLog()">Clear</button>
+                </div>
+            </div>
             <div class="modal-body" id="modal-content">
                 <!-- Dynamically Injected Content -->
             </div>
@@ -3124,14 +3352,15 @@
         </div>
     </dialog>
 
-    <!-- Quick Footer Bar -->
+    <!-- Quick Footer Bar (LEVEL 5 LIVE VITALS) -->
     <div class="quick-bar">
         <div class="quick-item">🎲 <strong>DCs:</strong> Easy 10 | Mod 15 | Hard 20</div>
         <div class="quick-item">💥 <strong>Brutal Crits:</strong> Max Base + 1 Roll + Mod</div>
-        <div class="quick-item">⚡ <strong>Eflein:</strong> HP 14/14 | AC 12(15) | DC 14 | Init +3</div>
-        <div class="quick-item">🛡️ <strong>New Hero:</strong> HP 24/24 | AC 16 | Init +2</div>
-        <div class="quick-item">🍷 <strong>Father Flubs:</strong> HP 17/17 | AC 16 | DC 13 | Init +0</div>
-        <div class="quick-item">🛡️ <strong>Varnoth:</strong> HP 22/22 | AC 17 | Init +0</div>
+        <div class="quick-item">⚡ <strong>Eflein:</strong> HP 32/32 | AC 12(15) | DC 15 | Init +3</div>
+        <div class="quick-item">🍷 <strong>Father Flubs:</strong> HP 38/38 | AC 18 | DC 14 | Init +0</div>
+        <div class="quick-item">🐾 <strong>Sylvar Link:</strong> HP 38/38 | AC 16 | DC 15 | Init +4</div>
+        <div class="quick-item">🗡️ <strong>Varnoth:</strong> HP 44/44 | AC 17 | Init +1 (Adv)</div>
+        <div class="quick-item">🐍 <strong>Thurible:</strong> HP 48/48 | AC 14 | Mount</div>
     </div>
 
     <!-- SCRIPT LOGIC & COMPREHENSIVE DATASET -->
@@ -3225,7 +3454,7 @@
             readAloud: "Lightning forks across the jagged basalt spires, illuminating the ancient High Elf observatory that crowns the highest peak of Stormwreck Isle. Above the open-air rotunda, the King-Killer Star comet blazes like a bleeding crimson eye in the heavens. High atop the astronomical planetarium sculpture, an azure-scaled dragon coils around crackling lightning rods, his draconic chant vibrating the very stones of the mountain!",
             dialogue: `"Now you see me as I truly am. As you have discovered, this island has many old wounds, and the cycle of violence is starting again. Take this Moonstone Key. Free Aidron, and stop Sparkrender before the comet passes." — Elder Runara`,
             steps: [
-                "1. 🌉 <strong>The Moonstone Bridge (D1):</strong> Over a 100-foot bottomless chasm, insert Runara's Moonstone Key into twin bronze dragon statues. A solid 30-ft shimmering bridge of hard starlight materializes to cross to D2.",
+                "1. 🌉 <strong>The Moonstone Bridge & Krag'zor Encounter (D1):</strong> Over a 100-foot bottomless chasm, insert Runara's Moonstone Key into twin bronze dragon statues to manifest the 30-ft shimmering bridge of starlight. Guarding the crossing stands <strong>Krag'zor the Dragon-Forged (CR 7 Legendary Kobold Warrior Mage)</strong> and his terrifying predator <strong>Gorefang (CR 4 Titan Crag Drake)</strong>—a high-stakes warmup mini-boss fight before entering the observatory!",
                 "2. 🪐 <strong>Rotunda Ruins & Dragon Effigies (D2):</strong> 5 majestic stone effigies honor the island's legendary dragons. Central mechanical orrery. 2 Winged Kobolds (Mek & Minn) are trapped fighting 8 Stirges. Saving them convinces them to reveal Sparkrender's plan.",
                 "3. ⛺ <strong>Renegade Kobold Camp (D3):</strong> 5 Kobolds chanting around a storm brazier. A DC 13 Persuasion or Intimidation check convinces them Sparkrender is leading them to doom, making them flee.",
                 "4. 📖 <strong>Study & The Explosive Tome (D4):</strong> Arcane research desk with a black leather journal. Explosive rune trap (DC 15 Perception / DC 11 Arcana / DC 10 Dex; triggers 2d10 force explosion). Key clue: <em>'To ye four scholars: point your eyes toward the Dragon's light.'</em>",
@@ -3865,36 +4094,340 @@
 
     // MONSTER MASTER DATASET WITH COMPREHENSIVE PHILOSOPHY, INITIATIVE & COMBAT STATS
     const MONSTER_DATA = {
+        kragzor: {
+            name: "Krag'zor the Dragon-Forged",
+            rank: "CR 7 Legendary Kobold Warrior Mage (Bridge Mini-Boss)",
+            icon: "🔥",
+            cr: "CR 7 (2,900 XP)",
+            init: "+4",
+            type: "Small Humanoid (Kobold Warrior Mage), Chaotic Neutral",
+            lineage: "The Scale-Shatterer • Starlight Bridge Gatekeeper",
+            stats: { str: 16, dex: 18, con: 16, int: 18, wis: 12, cha: 14 },
+            statsStr: "STR 16 (+3) | DEX 18 (+4★) | CON 16 (+3★) | INT 18 (+4★) | WIS 12 (+1) | CHA 14 (+2)",
+            details: "Darkvision 60 ft., Passive Perception 14 • Arcana +7, Athletics +6 • Saves: Dex +7, Con +6, Int +7 • Resist: Fire, Lightning",
+            ac: 17,
+            hp: 95,
+            maxHp: 95,
+            currentHp: 95,
+            speed: "30 ft. (Fly 30 ft when Bloodied)",
+            battlefieldActions: {
+                highHp: [
+                    {
+                        name: "1. Drake Pincer Ambush (Flank & Knockdown) — [> 50% HP]",
+                        tell: "Krag'zor sounds a shrill brass whistle; Gorefang's jaws blaze molten crimson as he prowls around the bridge edge flanking the party.",
+                        counterplay: "Step away from the central bridge line, position Krag'zor between party and drake, or pass DC 14 Animal Handling/Intimidation check to divert the beast.",
+                        resolve: "Gorefang charges 30 ft down the bridge: DC 14 Dex save or take 18 (3d8+4) Fire/Bludgeoning damage and knocked Prone directly at Krag'zor's feet (half damage, no prone on success).",
+                        buttons: [
+                            { label: "🎲 DC 14 Dex", func: "logRoll('🎲 Party makes DC 14 Dex Save vs Gorefang Pincer Ambush!')" },
+                            { label: "💥 3d8+4 Dmg", isDmg: true, func: "rollDamage('Drake Pincer Ambush', '3d8+4', '0', 28, 'fire+bludgeoning')" }
+                        ]
+                    },
+                    {
+                        name: "2. Runic Earth-Spike Barrier (Area Denial) — [> 50% HP]",
+                        tell: "Krag'zor slams The Wyrm-Breaker into the bridge stones; three azure draconic glyphs ignite beneath the highest-damage party members.",
+                        counterplay: "Move at least 10 ft away from the glowing glyphs, or deal 20+ damage to Krag'zor to disrupt the casting before resolution.",
+                        resolve: "Jagged basalt spikes erupt: DC 15 Dex save or take 16 (3d10) Piercing/Lightning damage and be Restrained (DC 14 Athletics check to tear free).",
+                        buttons: [
+                            { label: "🎲 DC 15 Dex", func: "logRoll('🎲 DC 15 Dex Save vs Runic Earth-Spikes!')" },
+                            { label: "💥 3d10 Dmg", isDmg: true, func: "rollDamage('Runic Earth-Spikes', '3d10', '0', 30, 'piercing+lightning')" }
+                        ]
+                    }
+                ],
+                lowHp: [
+                    {
+                        name: "1. Cataclysmic Sky-Slam (Radial Quake) — [≤ 50% HP Bloodied]",
+                        tell: "Spectral crimson dragon wings ignite from Krag'zor's back as he launches 25 ft into the air, his great-staff gathering a roaring orb of plasma.",
+                        counterplay: "Run to the bridge arches or take full cover behind Thurible/shields; or deal 18+ damage with ranged attacks/spells to force a DC 14 Con save to drop him out of the air.",
+                        resolve: "Krag'zor crash-lands down onto the bridge center: 20-ft radius shockwave. DC 15 Con save or take 22 (4d8+4) Thunder/Force damage and knocked Prone (half on save). Bridge shudder forces DC 12 Dex save or drop held weapons!",
+                        buttons: [
+                            { label: "🎲 DC 15 Con", func: "logRoll('🎲 DC 15 Con Save vs Cataclysmic Sky-Slam!')" },
+                            { label: "💥 4d8+4 Dmg", isDmg: true, func: "rollDamage('Cataclysmic Sky-Slam', '4d8+4', '0', 36, 'thunder+force')" },
+                            { label: "🎲 DC 12 Disarm", func: "logRoll('🎲 DC 12 Dex Save vs Bridge Shudder or drop held weapons!')" }
+                        ]
+                    },
+                    {
+                        name: "2. Kamikaze Dragon-Breath Surge (Recharge 5-6) — [≤ 50% HP Bloodied]",
+                        tell: "Krag'zor opens his jaws wide, swallowing ambient lightning from the storm clouds as his chest scales glow white-hot.",
+                        counterplay: "Scatter out of the 20-ft cone or activate elemental resistances/shields.",
+                        resolve: "20-ft cone: DC 15 Dex save or take 24 (6d6) Dual-Element Fire & Lightning damage (half on save).",
+                        buttons: [
+                            { label: "⚡ Recharge (5-6)", func: "rollRecharge('Dragon-Breath Surge')" },
+                            { label: "🎲 DC 15 Dex", func: "logRoll('🎲 DC 15 Dex Save vs Dragon-Breath Surge!')" },
+                            { label: "💥 6d6 Dmg", isDmg: true, func: "rollDamage('Dragon-Breath Surge', '6d6', '0', 36, 'fire+lightning')" }
+                        ]
+                    }
+                ]
+            },
+            actions: [
+                {
+                    name: "Wyrm-Breaker Great-Staff (+7 to hit)",
+                    desc: "Reach 5ft. Melee Weapon Attack: +7 to hit, 8 (1d8+4) bludgeoning + 4 (1d8) fire or lightning damage. (When bloodied ≤50% HP, deals +1d8 extra damage!).",
+                    buttons: [
+                        { label: "🎲 Staff Atk (+7)", func: "rollAttack('Wyrm-Breaker Staff', 7, '1d8+4', '1d8', 'bludgeoning+elemental')" },
+                        { label: "💥 Dmg (1d8+4)", isDmg: true, func: "rollDamage('Wyrm-Breaker', '1d8+4', '0', 12, 'bludgeoning')" },
+                        { label: "🔥 Smite (+1d8)", isDmg: true, func: "rollDamage('Staff Smite', '1d8', '0', 8, 'fire')" }
+                    ]
+                },
+                {
+                    name: "Draconic War Magic (Bonus Action)",
+                    desc: "When Krag'zor uses his action to cast a cantrip or spell, he can immediately make one Wyrm-Breaker melee attack as a bonus action!",
+                    buttons: [
+                        { label: "⚔️ Bonus Atk (+7)", func: "rollAttack('War Magic Staff Strike', 7, '1d8+4', '1d8', 'bludgeoning+elemental')" }
+                    ]
+                },
+                {
+                    name: "Shocking Grasp (Cantrip)",
+                    desc: "Melee Spell Attack: +7 to hit, 9 (2d8) lightning damage, and the target cannot take reactions until the start of its next turn.",
+                    buttons: [
+                        { label: "⚡ Cast (+7)", func: "rollAttack('Shocking Grasp', 7, '2d8', '0', 'lightning')" },
+                        { label: "💥 2d8 Lightning", isDmg: true, func: "rollDamage('Shocking Grasp', '2d8', '0', 16, 'lightning')" }
+                    ]
+                },
+                {
+                    name: "Scorching Ray (2nd-Level Spell)",
+                    desc: "Ranged Spell Attack: 3 rays. +7 to hit each, 7 (2d6) fire damage per ray.",
+                    buttons: [
+                        { label: "🔥 Ray 1 (+7)", func: "rollAttack('Scorching Ray 1', 7, '2d6', '0', 'fire')" },
+                        { label: "🔥 Ray 2 (+7)", func: "rollAttack('Scorching Ray 2', 7, '2d6', '0', 'fire')" },
+                        { label: "🔥 Ray 3 (+7)", func: "rollAttack('Scorching Ray 3', 7, '2d6', '0', 'fire')" },
+                        { label: "💥 2d6 Dmg", isDmg: true, func: "rollDamage('Scorching Ray', '2d6', '0', 12, 'fire')" }
+                    ]
+                },
+                {
+                    name: "Lightning Bolt (3rd-Level Spell — Active at all HP)",
+                    desc: "100-ft line, 5 ft wide. DC 15 Dex save or take 28 (8d6) lightning damage (half on save).",
+                    buttons: [
+                        { label: "⚡ Cast (DC 15)", func: "logRoll('⚡ Krag\'zor casts Lightning Bolt! DC 15 Dex save required.')" },
+                        { label: "💥 8d6 Lightning", isDmg: true, func: "rollDamage('Lightning Bolt', '8d6', '0', 48, 'lightning')" }
+                    ]
+                },
+                {
+                    name: "Cataclysmic Fireball (3rd-Level Spell — ⚠️ [Unlocked at ≤ 50% HP])",
+                    desc: "20-ft radius sphere. DC 15 Dex save or take 28 (8d6) fire damage. Krag'zor casts this recklessly centered even close to himself due to his Fire Resistance!",
+                    buttons: [
+                        { label: "💥 Cast (DC 15)", func: "logRoll('💥 Krag\'zor recklessly casts Fireball! DC 15 Dex save required.')" },
+                        { label: "🔥 8d6 Fire Dmg", isDmg: true, func: "rollDamage('Cataclysmic Fireball', '8d6', '0', 48, 'fire')" }
+                    ]
+                },
+                {
+                    name: "Shield (Reaction)",
+                    desc: "+5 bonus to AC against one attack that would hit him, and takes no damage from Magic Missile.",
+                    buttons: [
+                        { label: "🛡️ Shield (+5 AC)", func: "logRoll('🛡️ Krag\'zor casts Shield! AC temporarily increases to 22!')" }
+                    ]
+                },
+                {
+                    name: "Counterspell (Reaction — ⚠️ [Unlocked at ≤ 50% HP])",
+                    desc: "Interrupts a creature casting a spell of 3rd level or lower, causing the spell to fail automatically.",
+                    buttons: [
+                        { label: "🛑 Counterspell", func: "logRoll('🛑 Krag\'zor casts Counterspell! Cancels spell of 3rd level or lower!')" }
+                    ]
+                }
+            ],
+            desc: "A battle-hardened kobold warrior standing an imposing 3.5 feet tall, clad in spiked drake-hide armor reinforced with charred dragonbone plates. Crackling arcane runes are carved directly into his crimson scales, and he wields The Wyrm-Breaker—a massive two-handed great-staff capped with a fossilized dragon tooth. Behind him, a pair of spectral, smoldering dragon wings flicker in and out of reality as static sparks leap between his horns.",
+            philosophy: "<strong>Kobold Supremacy Through Draconic Apotheosis.</strong> Rejects the pathetic groveling and cowardly trap-laying typical of his kin. He believes kobolds are not vermin—they are the true scions of dragons who have simply been robbed of their majesty. He seeks Sparkrender not to serve him, but to test the young dragon's worth and rip the ancient draconic siphon magic from his throat!",
+            problem: "Stationed at the Starlight Bridge under Sparkrender's deceitful promise of shared godhood, he is eager for a true test of strength. He senses Astalagan's scale on Eflein and intends to slaughter the party to prove himself the apex warrior of Toril!",
+            morals: "<strong>Red Lines & Flaws:</strong> Blinding martial pride. Cannot ignore insults to his warrior status; enters a reckless frenzy if mocked as a cowardly kobold. If reduced to ≤ 20 HP, he yields with genuine draconic respect, surrendering his staff and revealing Sparkrender's explosive rune traps in Area D4.",
+            tactics: "Opens with Lightning Bolt down the narrow bridge line, commanding Gorefang to flank the rear. Uses Draconic War Magic to weave spells with staff smites. When reduced to ≤ 50% HP, unleashes Cataclysmic Sky-Slam and reckless Fireball!",
+            lootTable: [
+                "🗡️ The Wyrm-Breaker (+1 Legendary Kobold War-Staff & Arcane Focus)",
+                "📯 Drake-Master's Bone Whistle (Summons Draconic Gale 1/day)",
+                "🧥 Mantle of the Scale-Shatterer (Resistance to Fire or Lightning)",
+                "💎 4x Ancient Draconic Runestones (50 gp each)",
+                "📜 Krag'zor's Personal War Journal (Details Sparkrender's D4 Rune Traps & Flaws)"
+            ]
+        },
+        giant_drake: {
+            name: "Gorefang (Titan Crag Drake)",
+            rank: "CR 4 Large Dragon Companion (Bridge Predator)",
+            icon: "🦎",
+            cr: "CR 4 (1,100 XP)",
+            init: "+1",
+            type: "Large Dragon (Beast Companion), Unaligned",
+            lineage: "Krag'zor's Loyal Mount & Heavy Juggernaut",
+            stats: { str: 19, dex: 13, con: 17, int: 4, wis: 12, cha: 7 },
+            statsStr: "STR 19 (+4) | DEX 13 (+1) | CON 17 (+3) | INT 4 (-3) | WIS 12 (+1) | CHA 7 (-2)",
+            details: "Darkvision 60 ft., Passive Perception 13 • Athletics +6, Stealth +3 • Immune: Fire",
+            ac: 15,
+            hp: 68,
+            maxHp: 68,
+            currentHp: 68,
+            speed: "40 ft., climb 30 ft.",
+            actions: [
+                {
+                    name: "Multiattack (Bite + Tail Sweep)",
+                    desc: "Makes one Bite attack and one Tail Sweep attack.",
+                    buttons: [
+                        { label: "🎲 Multiattack", func: "logRoll('🦎 Gorefang unleashes Multiattack: 1 Bite + 1 Tail Sweep!')" }
+                    ]
+                },
+                {
+                    name: "Molten Bite (+6 to hit)",
+                    desc: "Reach 5ft. Melee Weapon Attack: +6 to hit, 13 (2d8+4) piercing + 3 (1d6) fire damage.",
+                    buttons: [
+                        { label: "🎲 Bite (+6)", func: "rollAttack('Gorefang Bite', 6, '2d8+4', '1d6', 'piercing+fire')" },
+                        { label: "💥 2d8+4 Dmg", isDmg: true, func: "rollDamage('Gorefang Bite', '2d8+4', '1d6', 20, 'piercing+fire')" }
+                    ]
+                },
+                {
+                    name: "Tail Sweep (+6 to hit)",
+                    desc: "Reach 10ft. Melee Weapon Attack: +6 to hit, 9 (1d10+4) bludgeoning. Target must succeed on DC 14 Str save or be knocked Prone.",
+                    buttons: [
+                        { label: "🎲 Tail (+6)", func: "rollAttack('Gorefang Tail', 6, '1d10+4', '0', 'bludgeoning')" },
+                        { label: "💥 1d10+4 Dmg", isDmg: true, func: "rollDamage('Gorefang Tail', '1d10+4', '0', 14, 'bludgeoning')" },
+                        { label: "🛑 DC 14 Prone", func: "logRoll('🛑 Target must make DC 14 Str Save or be knocked Prone!')" }
+                    ]
+                },
+                {
+                    name: "Fire Breath (Recharge 5-6)",
+                    desc: "15-ft cone. DC 14 Dex save for 21 (6d6) fire damage (half on save).",
+                    buttons: [
+                        { label: "⚡ Recharge (5-6)", func: "rollRecharge('Gorefang Fire Breath')" },
+                        { label: "💥 6d6 Fire Dmg", isDmg: true, func: "rollDamage('Gorefang Breath', '6d6', '0', 36, 'fire')" }
+                    ]
+                }
+            ],
+            desc: "A massive, 14-foot reptilian predator with thick basalt-grey hide, jagged spine crests, and a maw that drips sulfurous liquid flame. Bound by blood loyalty to Krag'zor, it stalks the foggy edges of the Starlight Bridge, waiting to drag intruders into the abyss.",
+            philosophy: "<strong>Predatory Apex Loyalty.</strong> Bound by draconic blood-bond to Krag'zor. Treats all other creatures as meat to be torn and scorched.",
+            problem: "Scenting Thurible's lava-snake heat across the chasm, it is intensely agitated and eager to establish territory by tearing into the party.",
+            morals: "Can be distracted with prime meats or calmed with a high DC 15 Animal Handling check if Krag'zor is incapacitated.",
+            tactics: "Pounces from the fog, using Tail Sweep to knock frontline fighters prone before pinning squishy targets with Bite.",
+            lootTable: [
+                "🛡️ Heavy Spiked Drake Hide (Craftable into +1 Shield by Myla)",
+                "🧪 2x Flasks of Volcanic Drake Blood (Alchemy reagent)",
+                "🗡️ Drake Fang Dagger (+1 hit, 1d4+1 pierce + 1d4 fire)"
+            ]
+        },
         sparkrender: {
             name: "Sparkrender (Blue Dragon Wyrmling)",
-            type: "Medium Dragon (Chromatic), Lawful Evil",
-            cr: "4 (Campaign Apex Climax Final Boss - 1,100 XP)",
+            rank: "CR 4 Campaign Apex Climax Final Boss",
+            icon: "🐉",
+            cr: "CR 4 Apex (1,100 XP)",
             init: "+2",
-            ac: "15 (Natural Armor)",
-            hp: "110 – 125 HP (14d8 + 28)",
+            type: "Medium Dragon (Chromatic), Lawful Evil",
+            lineage: "The Thunder Sovereign • Siphoner of Sharruth",
+            stats: { str: 18, dex: 10, con: 16, int: 12, wis: 11, cha: 15 },
+            statsStr: "STR 18 (+4) | DEX 10 (+2★) | CON 16 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)",
+            details: "Blindsight 10 ft., Darkvision 60 ft., Passive Perception 14 • Stealth +2 • Saves: Dex +2, Con +4, Wis +2, Cha +3 • Immune: Lightning",
+            ac: 15,
+            hp: 110,
+            maxHp: 110,
+            currentHp: 110,
             speed: "30 ft., burrow 15 ft., fly 60 ft.",
-            stats: "STR 18 (+4) | DEX 10 (+2★) | CON 16 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)",
-            senses: "Blindsight 10 ft., Darkvision 60 ft., Passive Perception 14 | Immune: Lightning",
+            battlefieldActions: {
+                highHp: [
+                    {
+                        name: "1. Static Storm Corona (Chain Arc) — [> 50% HP (110–56 HP)]",
+                        tell: "Lightning arcs violently across Sparkrender's horns, illuminating the rotunda in eerie blue starlight as he focuses his gaze on metal-armored foes.",
+                        counterplay: "Spread out at least 15 ft apart, or duck behind the marble telescope pillars for total cover.",
+                        resolve: "A lightning bolt strikes the primary target: DC 14 Dex save or take 16 (3d10) Lightning damage (half on save). The arc leaps to 1 adjacent ally within 10 ft for 11 (2d10) lightning damage.",
+                        buttons: [
+                            { label: "🎲 DC 14 Dex", func: "logRoll('🎲 DC 14 Dex Save vs Sparkrender Static Corona!')" },
+                            { label: "💥 3d10 Dmg", isDmg: true, func: "rollDamage('Static Corona Main', '3d10', '0', 30, 'lightning')" },
+                            { label: "⚡ 2d10 Arc", isDmg: true, func: "rollDamage('Static Corona Chain', '2d10', '0', 20, 'lightning')" }
+                        ]
+                    },
+                    {
+                        name: "2. Talon Siphon Snatch (Dive & Drop) — [> 50% HP (110–56 HP)]",
+                        tell: "Sparkrender banks low around the celestial dome, locking his razor talons onto the squishiest spellcaster in the backline.",
+                        counterplay: "Ready an action to blast him as he swoops, or an ally steps in front to trigger an intercept reaction.",
+                        resolve: "Target makes DC 14 Str/Dex save or is snatched into the air (15 ft up) and hurled onto the stones: 7 (2d6) falling bludgeoning + 7 (2d6) claw slashing damage and knocked Prone.",
+                        buttons: [
+                            { label: "🎲 DC 14 Save", func: "logRoll('🎲 DC 14 Str/Dex Save vs Talon Snatch!')" },
+                            { label: "💥 4d6 Dmg", isDmg: true, func: "rollDamage('Talon Snatch Drop', '4d6', '0', 24, 'bludgeoning+slashing')" }
+                        ]
+                    }
+                ],
+                lowHp: [
+                    {
+                        name: "1. Star-Atlas Leyline Detonation (Floor Eruption) — [≤ 50% HP (55–0 HP)]",
+                        tell: "Sparkrender plunges his talons into the carved Star-Atlas floor glyphs; the leylines thrum with blinding magma-orange and electric-azure light.",
+                        counterplay: "Climb atop the 4 Scholar Statues, telescope pedestals, or jump onto Thurible's back (DC 12 Athletics/Acrobatics) to get off the floor.",
+                        resolve: "The entire carved stone floor detonates: Creatures on the floor make DC 14 Dex save or take 22 (3d10+4) Fire & Lightning damage and are Blinded for 1 round (half damage and no blind on save).",
+                        buttons: [
+                            { label: "🎲 DC 14 Dex", func: "logRoll('🎲 DC 14 Dex Save vs Star-Atlas Leyline Detonation!')" },
+                            { label: "💥 3d10+4 Dmg", isDmg: true, func: "rollDamage('Leyline Detonation', '3d10+4', '0', 34, 'fire+lightning')" },
+                            { label: "👁️ Blind Check", func: "logRoll('👁️ Targets failing save are Blinded until end of their next turn!')" }
+                        ]
+                    },
+                    {
+                        name: "2. Desperation Comet Nova (Radial Blast) — [≤ 50% HP (55–0 HP)]",
+                        tell: "Sparkrender wraps his azure wings tightly around his chest, drawing raw King-Killer Comet energy through the shattered rotunda skylight.",
+                        counterplay: "Pour all attacks into him (dealing 25+ damage before resolution breaks the channel) or dive behind stone sarcophagi.",
+                        resolve: "A 30-ft radial plasma nova erupts: DC 15 Con save or take 26 (4d8+8) Radiant/Lightning damage and pushed 15 ft back (half on save).",
+                        buttons: [
+                            { label: "🎲 DC 15 Con", func: "logRoll('🎲 DC 15 Con Save vs Desperation Comet Nova!')" },
+                            { label: "💥 4d8+8 Dmg", isDmg: true, func: "rollDamage('Comet Nova', '4d8+8', '0', 40, 'radiant+lightning')" }
+                        ]
+                    }
+                ]
+            },
+            actions: [
+                {
+                    name: "Multiattack (Bite + Claw + Tail)",
+                    desc: "Makes 1 Bite and 1 Claw attack. When reduced to ≤ 50% HP, adds 1 Tail Lash attack!",
+                    buttons: [
+                        { label: "🎲 Multiattack", func: "logRoll('🐉 Sparkrender attacks with full Multiattack!')" }
+                    ]
+                },
+                {
+                    name: "Bite (+6 to hit)",
+                    desc: "Reach 5ft. Melee Weapon Attack: +6 to hit, 15 (2d10 + 4) piercing + 7 (2d6) lightning damage.",
+                    buttons: [
+                        { label: "🎲 Bite (+6)", func: "rollAttack('Sparkrender Bite', 6, '2d10+4', '2d6', 'piercing+lightning')" },
+                        { label: "💥 Dmg (2d10+4+2d6)", isDmg: true, func: "rollDamage('Sparkrender Bite', '2d10+4', '2d6', 24, 'piercing+lightning')" }
+                    ]
+                },
+                {
+                    name: "Claw (+6 to hit)",
+                    desc: "Reach 5ft. Melee Weapon Attack: +6 to hit, 11 (2d6 + 4) slashing damage.",
+                    buttons: [
+                        { label: "🎲 Claw (+6)", func: "rollAttack('Sparkrender Claw', 6, '2d6+4', '0', 'slashing')" },
+                        { label: "💥 2d6+4 Dmg", isDmg: true, func: "rollDamage('Sparkrender Claw', '2d6+4', '0', 16, 'slashing')" }
+                    ]
+                },
+                {
+                    name: "Tail Lash (⚠️ [Unlocked at ≤ 50% HP])",
+                    desc: "Reach 10ft. Melee Weapon Attack: +6 to hit, 8 (1d8 + 4) bludgeoning. Target must succeed on DC 14 Str save or be pushed 10 ft back.",
+                    buttons: [
+                        { label: "🎲 Tail (+6)", func: "rollAttack('Sparkrender Tail', 6, '1d8+4', '0', 'bludgeoning')" },
+                        { label: "💥 1d8+4 Dmg", isDmg: true, func: "rollDamage('Sparkrender Tail', '1d8+4', '0', 12, 'bludgeoning')" }
+                    ]
+                },
+                {
+                    name: "Lightning Breath (Recharge 5-6 — Active at all HP)",
+                    desc: "30-ft line (5 ft wide). DC 14 Dex save for 33 (6d10) lightning damage (half on save).",
+                    buttons: [
+                        { label: "⚡ Recharge (5-6)", func: "rollRecharge('Lightning Breath')" },
+                        { label: "💥 6d10 Lightning", isDmg: true, func: "rollDamage('Lightning Breath', '6d10', '0', 60, 'lightning')" }
+                    ]
+                },
+                {
+                    name: "Volcanic Overcharge Breath (⚠️ [Unlocked at ≤ 50% HP])",
+                    desc: "30-ft line. Siphons Sharruth's magma! DC 14 Dex save for 33 (4d10 lightning + 2d10 fire) damage (half on save).",
+                    buttons: [
+                        { label: "⚡ Recharge (5-6)", func: "rollRecharge('Volcanic Breath')" },
+                        { label: "💥 4d10L + 2d10F", isDmg: true, func: "rollDamage('Volcanic Overcharge Breath', '4d10', '2d10', 60, 'lightning+fire')" }
+                    ]
+                },
+                {
+                    name: "Volcanic Plasma Discharge (Reaction — ⚠️ [Unlocked at ≤ 50% HP])",
+                    desc: "When hit by a melee attack within 5 ft, lashes out with superheated plasma. Attacker takes 7 (2d6) fire/lightning damage unless passing DC 14 Dex save.",
+                    buttons: [
+                        { label: "🌋 Discharge (2d6)", isDmg: true, func: "rollDamage('Plasma Discharge', '2d6', '0', 12, 'fire+lightning')" }
+                    ]
+                }
+            ],
+            desc: "A sleek, predatory young blue dragon with iridescent azure scales as hard as tempered steel. A single sharp, ridged horn sweeps back from his snout, and crackling blue arcs of lightning sizzle across his spine and claws. Empowered by the stolen King-Killer Comet ritual, he boasts in Draconic that the ancient power of all five dead dragons of Stormwreck Isle belongs to him.",
             philosophy: "<strong>Draconic Social Darwinism.</strong> Chromatic dragons are the rightful apex tyrants of Toril; the weak exist only to fuel the ascension of the strong. Compassion is the cowardice of metallic dragons like Runara.",
             problem: "The astrological window of the King-Killer Star comet closes in mere hours; must align all 5 elemental effigies and execute Aidron's blood sacrifice to siphon Sharruth's magma flame before dawn.",
             morals: "<strong>Red Lines & Flaws:</strong> Haughty arrogance prevents him from retreating early. Refuses to treat mortals as equals, but panics and bargains wildly if bloodied below 20 HP.",
-            desc: "A sleek, predatory young blue dragon with iridescent azure scales as hard as tempered steel. A single sharp, ridged horn sweeps back from his snout, and crackling blue arcs of lightning sizzle across his spine and claws. Empowered by the stolen King-Killer Comet ritual, he boasts in Draconic that the ancient power of all five dead dragons of Stormwreck Isle belongs to him.",
-            traits: [
-                "👑 Arrogant Tyrant: Boasts in Draconic and channels comet energy. Refuses to retreat until reduced to 20 HP or less.",
-                "⚡ Electro-Static Corona: Lightning arcs around his horns, illuminating the room in dim blue light and granting Advantage on Intimidation."
-            ],
-            actions: [
-                "⚔️ Multiattack: Makes 1 Bite attack (+6 hit, 2d10+4 pierc + 2d6 light) and 1 Claw attack (+6 hit, 2d6+4 slash).",
-                "🦷 Bite: +6 to hit, reach 5ft, 15 (2d10 + 4) piercing + 7 (2d6) lightning damage.",
-                "🦅 Claw: +6 to hit, reach 5ft, 11 (2d6 + 4) slashing damage.",
-                "⚡ Lightning Breath (Recharge 5-6): 30-ft line (5 ft wide). DC 14 Dex save for 33 (6d10) lightning damage (half on save)."
-            ],
-            tactics: "Opens combat with Lightning Breath from the air. Uses fly speed to stay out of melee reach, swooping down with Multiattack against isolated targets. If Aidron is freed, Aidron knocks him to the ground!",
+            tactics: "Opens combat with Lightning Breath from the air. Uses fly speed to stay out of melee reach, swooping down with Multiattack against isolated targets. When bloodied ≤ 50% HP, detonates the Star-Atlas leylines and unleashes Volcanic Breath!",
             lootTable: [
-                "4,500 cp, 2,200 sp, 130 gp in mixed coins",
-                "5 Pale Blue Quartz Crystals (10 gp each)",
-                "5 Blue Jasper Gemstones (50 gp each)",
-                "Painted Blue Silk Fan with powdered sapphire (25 gp)",
+                "💰 4,500 cp, 2,200 sp, 130 gp in mixed coins",
+                "💎 5 Pale Blue Quartz Crystals (10 gp each)",
+                "💎 5 Blue Jasper Gemstones (50 gp each)",
+                "🪭 Painted Blue Silk Fan with powdered sapphire (25 gp)",
                 "⚡ Direct Harvest: Sparkrender's Azure Scale (Lightning Resistance, +1 Spell DC)"
             ]
         },

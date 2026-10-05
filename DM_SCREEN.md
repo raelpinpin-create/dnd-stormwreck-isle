@@ -114,9 +114,9 @@ graph TD
 
 #### ⚡ CHAPTER 4: THE CLIFFTOP OBSERVATORY RECKONING (LEVEL 5 GRAND CAMPAIGN CLIMAX)
 * **🏰 The Mountain Stronghold Siege (Session 9 Completed):** Party stealth-infiltrated the mountain fortress below the summit Assassin's Creed style. Father Flubs and Sylvar silently locked down the towers (*Hold Person* & *Hypnotic Pattern*); Eflein unleashed a catastrophic 3rd-level *Fireball* nuking the barracks; scout Mik rescued and held as a grieving, terrified guide!
-* **D1: Overlook & The Starlight Bridge (Session 10 Kickoff):** 2 Dragon Statues flanking a 200-ft abyss. Inserting the Moonstone Key creates a humming, solid starlight bridge across to D2! Trail marked by Elder Runara's blood and charred scales.
-* **D2: Rotunda Ruins:** **Encounter:** 2 Winged Kobolds (Myla's brothers, Mek & Minn) and surviving cultists. Can be bluffed or turned against Sparkrender by revealing his lies (*"He called you filthy ditch-rats!"*).
-* **D3: Kobold Camp & D4: Study:** Traitor cultist records and Lianna's discarded stellar calculation satchel, providing the mathematical alignment for the ancient apparatus.
+* **D1: The Precipice of the Bridge — The Titan Gatekeeper (Session 10 Kickoff):** Standing guard before the already open, humming bridge across the 200-ft abyss is the legendary **War-Lord Krag'zor, The Titan Kobold** (8-ft mutated warlord wielding a colossal dragon-bone greatsword, with a giant iron greatbow strapped to his back) and his colossal unarmored primal siege drake, **Gorga'muth**! The ultimate Elden Ring style gatekeeper showdown before the sanctuary.
+* **The Open Bridge & D2 Rotunda:** The bridge across the chasm is already active and wide open, humming with ancient starlight. Crossing the bridge leads directly into the ancient observatory rotunda.
+* **D3 & D4: Ancient Observatory Halls & Study:** Abandoned cultist barricades and Lianna's discarded stellar calculation satchel, providing the mathematical alignment for the ancient apparatus.
 * **D5 & D6: The Draconic Star-Atlas & The Grand Apex Showdown:** 
   * 🗺️ **The Centerpiece — The Draconic Star-Atlas:** Colossal, glowing astronomical world map carved into the obsidian floor, pulsing with primordial leylines.
   * ⛓️ **The Captive:** Elder Runara (Adult Bronze Dragon in guise) shackled over the central nexus, her blood being siphoned to power the ancient mechanism.

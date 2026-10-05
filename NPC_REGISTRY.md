@@ -452,12 +452,6 @@
   * *Voice & Demeanor:* Boisterous, booming, proud youthful roar with a slight brassy rumble.
   * *Dialogue Hook:* *"Undo these clasps! Give me ten seconds with that blue worm and I'll blast him off this mountain!"*
 
----
-
-### 🦇 Mek & Minn (Winged Kobold Brothers in D2)
-* **Identity:** Two battered winged kobolds covered in stirge bites (AC 13, HP 14).
-* **Philosophy & Current Problem:** **Survivalist Opportunism & Cowardice**. Sided with Sparkrender out of terror after abandoning their sister Myla. Now trapped in the rotunda surrounded by 8 blood-sucking stirges while trying to paint Sparkrender's dragon effigies.
-* **Current Action:** Huddling behind the celestial planetarium model, screeching for help, and eager to switch sides and reveal Sparkrender's explosive rune journal (in D4) to anyone who rescues them.
 
 ---
 
@@ -554,7 +548,20 @@
 * **🛠️ Approach & Current Action:** Sniffling loudly, rubbing his scaly snout, offering warnings about the ridge traps, and crying whenever someone mentions crispy food.
 * **⚖️ Moral Stand & DM RP Cues:**
   * *Voice & Demeanor:* High-pitched, stuttering sobs, shaking whenever Eflein moves his hands or preps a spell.
-  * *Dialogue Hook:* *"Y-You just... you just turned Snik and Gork into charcoal dust! Snik owed me three copper buttons! Why was your fire so BIG?! P-Please don't roast my tail, I'll tell you how to cross the starlight bridge!"*
+  * *Dialogue Hook:* *"Y-You just... you just turned Snik and Gork into charcoal dust! Snik owed me three copper buttons! Why was your fire so BIG?! P-Please don't roast my tail, I'll show you where Krag'zor guards the bridge!"*
+
+---
+
+### ⚔️🐲 War-Lord Krag'zor, The Titan of the Crag & Gorga'muth the Siege Drake
+* **Role / Title:** Legendary Titan Kobold Warlord & Primal Siege Drake / Gatekeepers of the Open Bridge
+* **Location & World State:** Stationed directly at the precipice of the chasm before the open, humming starlight bridge to the Clifftop Observatory (Area D1).
+* **Stat Block Snapshot:**
+  * **Krag'zor (CR 5 Boss):** Large Humanoid (Monstrosity) | **AC 16** | **HP 92** | Speed 35 ft | STR +4, DEX +3, CON +3, WIS +2 | Multiattack (2x Greatsword or 2x Greatbow) | **Colossal Drake-Bone Greatsword** (`+7 to hit`, reach 10ft, `2d6+4` slashing + `1d6` lightning, double damage vs objects/cover) | **The Sky-Piercer Greatbow** (`+6 to hit`, range 150/600, `2d8+3` piercing + `1d6` lightning, DC 14 STR save or pushed 10 ft & prone) | Resists Lightning & Fire.
+  * **Gorga'muth (CR 4 Partner Beast):** Huge Dragon/Beast | **AC 15** (Thick scarred scales, no armor) | **HP 72** | Speed 40 ft | STR +4, CON +3 | Bite (`+6 to hit`, `2d8+4` + `1d6` fire) | Seismic Tail Sweep (`1d10+4`, DC 14 DEX save or prone) | Pack Tactics.
+* **🧭 Core Philosophy:** **Ascension through Violence & Pack Devotion**. An 8-foot mutated kobold colossus blessed by draconic marrow transfusions, fighting with Elden Ring scale to prove that size, steel, and drake-teeth rule the world.
+* **🎯 Core Desire & Method:** Slay any intruder attempting to cross the open bridge and earn true wings from Sparkrender.
+* **⚖️ Moral Stand & DM RP Cues:** Roaring over the thunder with grinding-millstone voice; deeply bonded to Gorga'muth; telegraphs colossal gravity harpoon volleys and magma shockwaves!
+
 
 
 
