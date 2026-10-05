@@ -1227,7 +1227,7 @@
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn danger-step" onclick="adjustCharStat('eflein', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-good" id="val-eflein-hp">32</span>
+                                <span class="tracker-num hp-good" id="val-eflein-hp">30</span>
                                 <span class="tracker-max-label">/ 32</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('eflein', 'hp', 1)">+</button>
                             </div>
@@ -1281,7 +1281,7 @@
                                 <button class="tracker-mini-pill pill-gold" onclick="resetCharSlots('eflein', 'slots1')">Full 4</button>
                                 <button class="tracker-mini-pill" onclick="setCharStat('eflein', 'slots1', 0)">0</button>
                             </div>
-                            <div class="tracker-subtext" style="color:#a78bfa; margin-top:2px;">1st: 4/4 | 2nd: 3/3 | 3rd: 2/2</div>
+                            <div class="tracker-subtext" id="sub-eflein-slots" style="color:#a78bfa; margin-top:2px;">1st: 4/4 | 2nd: 1/3 | 3rd: 0/2</div>
                         </div>
 
                         <!-- HELP TOKENS TRACKER -->
@@ -1392,7 +1392,7 @@
                     <div style="background-color: #090e18; border: 1px solid var(--border-color); padding: 8px 12px; border-radius: 5px; margin-top: 10px;">
                         <strong style="color: var(--accent-gold); font-size: 0.82rem;">🎒 Complete Tracked Inventory:</strong>
                         <p style="font-size: 0.78rem; color: #cbd5e1; margin-top: 3px;">
-                            📜 Lianna's Letters (The Archmage's Vow & Reef Letter) | 🥽 Myla's Draconic Abyssal Goggles (Darkvision 60ft & Underwater Clarity) | ⚡ Astalagan's Awakened Amber Scale | 🪄 Wand of Magic Missiles (3/3 Charges • Long Rest) | 👘 Robe of Arcane Reserve | 🧲 Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand) | 🏹 Sling (+1) & Zombie Captain's Cutlass | 📜 Scroll of Absorb Elements | 🤿 Spore-Filter Mask | 🧪 1x Potion of Water Breathing | 🧀 Cheese Bread | 📖 Spellbook (18 spells) | 💰 28 gp, 9 sp.
+                            📜 Lianna's Letters (The Archmage's Vow & Reef Letter) | 🥽 Myla's Draconic Abyssal Goggles (Darkvision 60ft & Underwater Clarity) | ⚡ Astalagan's Awakened Amber Scale | 🪄 Wand of Magic Missiles (3/3 Charges • Long Rest) | 👘 Robe of Arcane Reserve | 🧲 Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand) | 🏹 Sling (+1) & Zombie Captain's Cutlass | ⚡ The Galvanic Ley-Grounder ("Spark-Tamer" Pylon) | 📜 Scroll of Absorb Elements | 🤿 Spore-Filter Mask | 🧪 2x Potion of Healing | 🧪 1x Potion of Water Breathing | 🧀 Cheese Bread | 📖 Spellbook (18 spells) | 💰 28 gp, 9 sp.
                         </p>
                     </div>
                 </div>
@@ -1502,7 +1502,7 @@
                         </div>
                         <div class="resource-chip">
                             <strong>🔮 Spell Slots:</strong>
-                            <span style="color:#a78bfa; font-weight:600;">Lv1: 4/4 | Lv2: 3/3 | Lv3: 2/2</span>
+                            <span style="color:#a78bfa; font-weight:600;">Lv1: 4/4 | Lv2: 3/3 | Lv3: 1/2</span>
                         </div>
                         <div class="resource-chip">
                             <strong>🌌 Gravity Step:</strong>
@@ -1514,14 +1514,14 @@
                         </div>
                         <div class="resource-chip">
                             <strong>🪙 Coin Purse:</strong>
-                            <span style="color:#fbbf24; font-weight:600;">415 GP, 0 SP</span>
+                            <span style="color:#fbbf24; font-weight:600;">15 GP, 0 SP</span>
                         </div>
                     </div>
 
                     <div class="pc-header-grid" style="margin-top:6px;">
                         <div>
                             <p><strong>Archetype:</strong> <span style="color: #c084fc; font-weight:bold;">Acoustic Infiltrator & Whispering Blade</span> | <strong>Destined Relic:</strong> 🌪️ Scale of the Zephyr (Clyssavar's Silver Scale)</p>
-                            <p><strong>Combat Loadout:</strong> 🎭 <strong>Melkor's Porcelain Mask (Ikor's Bastion)</strong>, 🎻 <strong>Lyra (+1 Rapier/Instrument)</strong> (+8 hit, 1d8+5 + 1d6 Thunder, Suture DC 15), 🗡️ <strong>Sentry Zik's Dagger (+1)</strong> (+8 hit, 1d4+5), 🗡️ Rapier (+7 hit, 1d8+4 + 3d6 Psychic Blades), 2x Daggers (+7, 1d4+4), 💣 1x Spitfire Flask, 🛡️ Cloak of Protection, 🪘 Tambourine, 🎸 Lute & Guitar, 👗 Neko Maid Costume, 415 GP.</p>
+                            <p><strong>Combat Loadout:</strong> 🎭 <strong>Melkor's Porcelain Mask (Ikor's Bastion)</strong>, 🎻 <strong>Lyra (+1 Rapier/Instrument)</strong> (+8 hit, 1d8+5 + 1d6 Thunder, Suture DC 15), 🗡️ <strong>Sentry Zik's Dagger (+1)</strong> (+8 hit, 1d4+5), 🗡️ Rapier (+7 hit, 1d8+4 + 3d6 Psychic Blades), 2x Daggers (+7, 1d4+4), 💣 1x Spitfire Flask, 🧪 2x Potion of Healing, 🛡️ Cloak of Protection, 🪘 Tambourine, 🎸 Lute & Guitar, 👗 Neko Maid Costume, 15 GP.</p>
                             <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">
                                 <em>Spells: Hypnotic Pattern (3rd, DC 15), Calm Emotions (2nd), Enthrall (2nd), Dissonant Whispers (1st), Healing Word (1st), Color Spray (1st), Charm Person (1st). Cantrips: Vicious Mockery (2d4, DC 15), Dancing Lights. Skills: Performance (+10 ★★), Persuasion (+10 ★★), Acrobatics (+7 ★), Insight (+4 ★), Perception (+4 ★). Full sheet: <a href="SYLVAR_PLAYER_SHEET.html" style="color:#c084fc; text-decoration:underline;">SYLVAR_PLAYER_SHEET.html</a></em>
                             </p>
@@ -1589,7 +1589,7 @@
                             <label>🍷 1ST-LVL SLOTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('father_flubs', 'slots1', -1)">-</button>
-                                <span class="tracker-num slots-num" id="val-father_flubs-slots1">4</span>
+                                <span class="tracker-num slots-num" id="val-father_flubs-slots1">3</span>
                                 <span class="tracker-max-label">/ 4</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('father_flubs', 'slots1', 1)">+</button>
                             </div>
@@ -1597,7 +1597,7 @@
                                 <button class="tracker-mini-pill pill-gold" onclick="resetCharSlots('father_flubs', 'slots1')">Full 4</button>
                                 <button class="tracker-mini-pill" onclick="setCharStat('father_flubs', 'slots1', 0)">0</button>
                             </div>
-                            <div class="tracker-subtext" style="color:#a78bfa; margin-top:2px;">1st: 4/4 | 2nd: 3/3 | 3rd: 2/2</div>
+                            <div class="tracker-subtext" id="sub-father_flubs-slots" style="color:#a78bfa; margin-top:2px;">1st: 3/4 | 2nd: 2/3 | 3rd: 1/2</div>
                         </div>
 
                         <!-- HELP TOKENS TRACKER -->
@@ -1706,7 +1706,7 @@
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Gear:</strong> Heavy Mace (+5 hit, 1d6+2), Scale Mail, Holy Wooden Shield (+2 AC), Kobold Shield.</p>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🐍 <strong>Pet Companion:</strong> <a href="THURIBLE_COMPANION_SHEET.html" target="_blank" style="color:#fdba74; font-weight:700; text-decoration:underline;">Thurible the Fire Snake</a> (HP 48, AC 14, <strong>10ft Cold Immunity Aura</strong>, 🐍 Bite +5 [1d6+2 + 1d6], 💥 Whip +5 [1d4+2 + 1d6, 10ft Push DC 14], 🌊 Constrict +5 [DC 14 Restrain], ♨️ Embers [1d6+3 Temp HP] • <em>Official Sacred Mascot of Dragon's Rest</em>).</p>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🍾 <strong>Sacred Relic:</strong> Father Flubs' Reclaimed Vintage Wine Jug (<em>The Vintage of the Dawn Watch</em>), 📿 The Enlightened Bone Charm.</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🧪 <strong>Crafted Potions & Wealth:</strong> 6x Potions of Healing, 1x Legendary Elixir of Health, 2x Drake Blood Potions, Pure Drake Blood Jar, Animal Remains Jar, 🎩 Pirate Hat, 📿 3-Circle Amulet, 52 gp, 5 sp.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🧪 <strong>Crafted Potions & Wealth:</strong> 8x Potions of Healing, 1x Legendary Elixir of Health, 2x Drake Blood Potions, Pure Drake Blood Jar, Animal Remains Jar, 🎩 Pirate Hat, 📿 3-Circle Amulet, 52 gp, 5 sp.</p>
                         </div>
                     </div>
                 </div>
@@ -1779,7 +1779,7 @@
                             <label>🤝 HELP TOKENS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('varnoth', 'helpTokens', -1)">-</button>
-                                <span class="tracker-num" id="val-varnoth-helpTokens" style="color:#67e8f9;">2</span>
+                                <span class="tracker-num" id="val-varnoth-helpTokens" style="color:#67e8f9;">1</span>
                                 <span class="tracker-max-label">/ 2</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('varnoth', 'helpTokens', 1)">+</button>
                             </div>
@@ -1805,7 +1805,7 @@
                         </div>
                         <div class="resource-chip">
                             <strong>⚡ Action Surge (1/SR):</strong>
-                            <button id="btn-varnoth-actionSurge" class="resource-toggle-btn ready" onclick="triggerVarnothActionSurge()">Ready (+1 Action)</button>
+                            <button id="btn-varnoth-actionSurge" class="resource-toggle-btn used" onclick="triggerVarnothActionSurge()">Used (+1 Action)</button>
                         </div>
                         <div class="resource-chip">
                             <strong>⚔️ Extra Attack:</strong>
@@ -1879,7 +1879,7 @@
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">📜 Proficiencies & Tactics</h4>
                             <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Saves:</strong> <strong>STR (+7 ★)</strong>, <strong>CON (+5 ★)</strong>, <strong>WIS (+5 ★)</strong>, DEX (+0), INT (+0), CHA (+1).</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px; color:#86efac;">• <strong>Equipment & Wealth:</strong> Splint Mail, Shield, Honed Longsword, Heavy Crossbow, 🪓 Twin Notched Bone-Cleavers, 🧪 <strong>1x Potion of Healing</strong> (100% Full Max HP: 44 HP), 8 gp, 6 sp.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px; color:#86efac;">• <strong>Equipment & Wealth:</strong> Splint Mail, Shield, Honed Longsword, Heavy Crossbow, 🪓 Twin Notched Bone-Cleavers, 🧪 <strong>3x Potion of Healing</strong> (100% Full Max HP: 44 HP), 8 gp, 6 sp.</p>
                             <p style="font-size: 0.78rem; color:#fca5a5;">• 🛡️ <strong>Combat Role:</strong> Stands adjacent to Eflein/Sylvar, taunting foes and triggering Protection Reaction to block attacks.</p>
                         </div>
                     </div>
@@ -6242,11 +6242,11 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
     // ==========================================
     // 🧙‍♂️ PARTY CHARACTER LIVE STATS & TRACKER ENGINE
     // ==========================================
-    const PARTY_STORAGE_KEY = "stormwreck_party_vitals_v6";
+    const PARTY_STORAGE_KEY = "stormwreck_party_vitals_v7";
 
     const DEFAULT_PARTY_DATA = {
         eflein: {
-            hp: 32,
+            hp: 30,
             maxHp: 32,
             tempHp: 0,
             baseAc: 12,
@@ -6254,9 +6254,9 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             tempAc: 0,
             slots1: 4,
             maxSlots1: 4,
-            slots2: 3,
+            slots2: 1,
             maxSlots2: 3,
-            slots3: 2,
+            slots3: 0,
             maxSlots3: 2,
             helpTokens: 2,
             maxHelpTokens: 2,
@@ -6264,7 +6264,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             lightningSurge: true,
             robeReserve: true,
             gravityStep: true,
-            vecnaArm: 2
+            vecnaArm: 1
         },
         sylvar: {
             hp: 38,
@@ -6278,7 +6278,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             maxSlots1: 4,
             slots2: 3,
             maxSlots2: 3,
-            slots3: 2,
+            slots3: 1,
             maxSlots3: 2,
             helpTokens: 2,
             maxHelpTokens: 2,
@@ -6290,11 +6290,11 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             tempHp: 0,
             baseAc: 16,
             tempAc: 0,
-            slots1: 4,
+            slots1: 3,
             maxSlots1: 4,
-            slots2: 3,
+            slots2: 2,
             maxSlots2: 3,
-            slots3: 2,
+            slots3: 1,
             maxSlots3: 2,
             helpTokens: 2,
             maxHelpTokens: 2,
@@ -6307,10 +6307,10 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             tempHp: 0,
             baseAc: 17,
             tempAc: 0,
-            helpTokens: 2,
+            helpTokens: 1,
             maxHelpTokens: 2,
             secondWind: true,
-            actionSurge: true,
+            actionSurge: false,
             gravityStep: true
         }
     };
@@ -6319,7 +6319,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
 
     function loadPartyState() {
         try {
-            const saved = localStorage.getItem(PARTY_STORAGE_KEY) || localStorage.getItem("stormwreck_party_vitals_v5");
+            const saved = localStorage.getItem(PARTY_STORAGE_KEY);
             if (saved) {
                 const parsed = JSON.parse(saved);
                 partyState = Object.assign({}, DEFAULT_PARTY_DATA, parsed);
@@ -6332,12 +6332,12 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
                 // Ensure help tokens exist if loading an older save
                 ['eflein', 'sylvar', 'father_flubs', 'varnoth'].forEach(k => {
                     if (partyState[k] && typeof partyState[k].helpTokens === 'undefined') {
-                        partyState[k].helpTokens = 2;
+                        partyState[k].helpTokens = DEFAULT_PARTY_DATA[k].helpTokens;
                         partyState[k].maxHelpTokens = 2;
                     }
                 });
                 if (typeof partyState.varnoth.actionSurge === 'undefined') {
-                    partyState.varnoth.actionSurge = true;
+                    partyState.varnoth.actionSurge = DEFAULT_PARTY_DATA.varnoth.actionSurge;
                 }
             }
         } catch (e) {
