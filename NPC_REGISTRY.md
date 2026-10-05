@@ -552,15 +552,37 @@
 
 ---
 
-### ⚔️🐲 War-Lord Krag'zor, The Titan of the Crag & Gorga'muth the Siege Drake
-* **Role / Title:** Legendary Titan Kobold Warlord & Primal Siege Drake / Gatekeepers of the Open Bridge
-* **Location & World State:** Stationed directly at the precipice of the chasm before the open, humming starlight bridge to the Clifftop Observatory (Area D1).
+### ⚔️🐲 Krag'zor the Dragon-Forged & Gorefang (Titan Crag Drake)
+* **Role / Title:** Legendary Kobold Warrior Mage & Titan Crag Drake / Warmup Mini-Boss Gatekeeper of the Moonstone Bridge
+* **Location & World State:** Stationed directly at the precipice of the Moonstone / Starlight Bridge crossing the 200-ft abyss to the Clifftop Observatory (Area D1).
 * **Stat Block Snapshot:**
-  * **Krag'zor (CR 5 Boss):** Large Humanoid (Monstrosity) | **AC 16** | **HP 92** | Speed 35 ft | STR +4, DEX +3, CON +3, WIS +2 | Multiattack (2x Greatsword or 2x Greatbow) | **Colossal Drake-Bone Greatsword** (`+7 to hit`, reach 10ft, `2d6+4` slashing + `1d6` lightning, double damage vs objects/cover) | **The Sky-Piercer Greatbow** (`+6 to hit`, range 150/600, `2d8+3` piercing + `1d6` lightning, DC 14 STR save or pushed 10 ft & prone) | Resists Lightning & Fire.
-  * **Gorga'muth (CR 4 Partner Beast):** Huge Dragon/Beast | **AC 15** (Thick scarred scales, no armor) | **HP 72** | Speed 40 ft | STR +4, CON +3 | Bite (`+6 to hit`, `2d8+4` + `1d6` fire) | Seismic Tail Sweep (`1d10+4`, DC 14 DEX save or prone) | Pack Tactics.
-* **🧭 Core Philosophy:** **Ascension through Violence & Pack Devotion**. An 8-foot mutated kobold colossus blessed by draconic marrow transfusions, fighting with Elden Ring scale to prove that size, steel, and drake-teeth rule the world.
-* **🎯 Core Desire & Method:** Slay any intruder attempting to cross the open bridge and earn true wings from Sparkrender.
-* **⚖️ Moral Stand & DM RP Cues:** Roaring over the thunder with grinding-millstone voice; deeply bonded to Gorga'muth; telegraphs colossal gravity harpoon volleys and magma shockwaves!
+  * **Krag'zor the Dragon-Forged (CR 7 Mini-Boss):** Small Humanoid (Kobold) | **AC 17** (19 with *Shield*) | **HP 95 / 95** | Speed 30 ft | STR +0, DEX +3, CON +2, INT +4, WIS +1, CHA -1 | Saves: INT +7, WIS +4, CON +5 | Skills: Arcana +7, Athletics +3, Perception +4, Intimidation +2 | Resistances: Lightning, Fire | Senses: Darkvision 60 ft, Passive Perception 14 | Languages: Common, Draconic | Features: Sunlight Sensitivity, Pack Tactics, War Magic (Cast Cantrip + Bonus Action Melee Strike), Legendary Resistance (1/Day).
+  * **Signature Arsenal:** *The Wyrm-Breaker (+1 Arcane Quarterstaff / Spellblade)* (`+7 to hit`, `1d8+4` bludgeoning + `1d6` lightning, versatile `1d10+4`), *Mantle of the Scale-Shatterer* (+1 AC, Fire/Lightning resist), *Drake-Master's Bone Whistle*, *Krag'zor's War Journal*.
+  * **Spells (DC 15, Spell Attack +7):** Cantrips (*Shocking Grasp*, *Fire Bolt*, *Green-Flame Blade*) | 1st Level (*Shield* 3/day, *Absorb Elements*, *Thunderwave*) | 2nd Level (*Scorching Ray*, *Misty Step*) | 3rd Level (*Lightning Bolt*, *Counterspell* [≤50% HP], *Reckless Fireball* [≤50% HP]).
+  * **Health-Triggered Battlefield Actions (Pointy Hat Standard):**
+    * **At >50% HP (High Ground & Tactical War Magic):**
+      * **Crackling Glaive Sweep:** *Tell:* Krag'zor brandishes the Wyrm-Breaker, charging blinding azure sparks. *➔ Counterplay:* Back up 10 ft or succeed DC 15 DEX save. *➔ Resolve:* Deals `3d8` lightning damage, pushes 10 ft, and target loses reaction.
+      * **Drake-Command: Flanking Pin:** *Tell:* Blows bone whistle signaling Gorefang. *➔ Counterplay:* Disengage or Dodge. *➔ Resolve:* Gorefang pounces, dealing `2d8+4` piercing + DC 14 STR save or knocked prone and grappled.
+    * **At ≤50% HP (Bloodied Desperation & Leyline Overdrive):**
+      * **Desperate Overcharge Burst:** *Tell:* Krag'zor's scales crack with blazing plasma. *➔ Counterplay:* Spread >15 ft apart or dive behind stone battlement cover. *➔ Resolve:* 15-ft sphere blast dealing `4d8` combined fire/lightning (DC 15 DEX save for half).
+      * **Reckless Dragon-Roar:** *Tell:* Krag'zor roars in draconic, eyes blazing crimson. *➔ Counterplay:* DC 14 WIS save or Frightened for 1 round. *➔ Resolve:* Krag'zor gains Advantage on all attacks, but attacks against him have Advantage.
+    * **At ≤20 HP (Desperation Surrender / Bargain Trigger):** Falls to one knee, lowers the Wyrm-Breaker, and offers Sparkrender's tactical secrets, leyline weaknesses, and his war journal in exchange for his life!
+  * **Gorefang (Titan Crag Drake) (CR 4 Partner Drake):** Large Dragon | **AC 15** (Natural Armor) | **HP 68 / 68** | Speed 40 ft | STR +4, DEX +2, CON +3, WIS +1 | Multiattack (Bite + Claws or Tail) | Bite (`+6 to hit`, `2d8+4` piercing + `1d6` fire) | Claws (`+6 to hit`, `2d6+4` slashing) | Tail Sweep (`+6 to hit`, `1d10+4` bludgeoning, DC 14 STR save or prone) | Fire Breath (Recharge 5–6, 15-ft cone, `4d6` fire, DC 13 DEX save for half) | Pack Tactics.
+
+#### 🧭 Psychological & Moral Dossier:
+* 🧭 **Core Philosophy & Worldview:** **Transcending Kobold Destiny Through Blood, Steel, and Arcane Mastery**. Krag'zor vehemently refuses the pathetic cosmic stereotype that kobolds are born to be cowardly bait, cannon fodder, or whimpering servants to true dragons. He believes greatness is stolen, forged, and carved through sheer willpower. He spent decades studying draconic evocations and taming the fiercest crag drakes, earning the title *The Dragon-Forged*.
+* 🎯 **Core Desire & Modus Operandi:** He heard rumors across the Sword Coast that Sparkrender is preparing an ancient ritual to siphon Sharruth's volcanic dragon essence. Krag'zor traveled to Stormwreck Isle not to serve Sparkrender, but to ambush and assassinate him the instant the ritual peaks, siphoning the primordial dragon power into himself to become the first true **Kobold Dragon-Ascendant** in history!
+* ⚡ **Immediate Current Problem (Independent of Players):** He is guarding the Moonstone Bridge to keep unwanted pests out while Sparkrender finishes unlocking the observatory's leyline core. But he is privately growing impatient—if Sparkrender completes the ritual too quickly, Sparkrender will become an untouchable god before Krag'zor can strike.
+* 👥 **Who / What It Involves:** Gorefang (his fiercely loyal giant drake partner), Sparkrender (his ultimate assassination mark), Elder Runara (whom he considers a cowardly ancient relic), and the approaching party.
+* 🛠️ **How He Approaches It / Current Action:** Perched on the ruined bridge archway with Gorefang prowling below. Welcomes the party as a "test of his legendary might." Fights with fiery arrogant flair, taunting spellcasters, and commanding Gorefang with bone-whistle chirps.
+* ⚖️ **Moral Stand & DM Roleplay Cues:**
+  * *Red Lines:* He will never beg or whine like a common kobold; even when bloodied, his pride remains ironclad. If reduced to ≤20 HP, he doesn't whimper—he makes a cold, transactional warrior's bargain, offering tactical intelligence on Sparkrender's weaknesses and his journal.
+  * *Gray Areas:* He respects genuine magical power and martial bravery. If Eflein or Flubs pull off high-level magic, he laughs with fierce delight.
+  * *Voice & Demeanor:* Proud, raspy, theatrical baritone with a draconic hiss. Stands tall despite his small stature, chest puffed, draconic staff sparking with static electricity.
+  * *Dialogue Hooks:*
+    * *"Stand back, two-legged weaklings! You gaze upon Krag'zor—the first and greatest of the Dragon-Forged! My name shall echo through the halls of history long after your bones have turned to dust!"*
+    * *(To Eflein)* *"An elf with fire in his fingers? Good! Show me what you've got! Sparkrender will be twice as hot, so consider me your trial by lightning!"*
+    * *(At ≤20 HP)* *"Hold your blades, warriors... You fight well. Better than expected. Sparkrender waits within, and he has chained a bronze wyrm to his altar. Kill me, and you gain nothing. Spare me, and I give you his secrets, his weaknesses... and my blade to finish him!"*
 
 
 

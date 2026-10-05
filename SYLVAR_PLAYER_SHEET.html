@@ -1312,15 +1312,15 @@
         // 📊 CORE STATE & LOCALSTORAGE PERSISTENCE (UPGRADED STATS)
         // ==========================================
         const maxHP = 38;
-        let currentHP = 16;
+        let currentHP = 38;
         let tempHP = 0;
         let bardicInsp = 4;
         let helpTokens = 2;
-        let sutureSlots = 0; // 0/2 slots remaining (Both expended)
+        let sutureSlots = 2;
         let isFelineReady = true;
         let isCloakAttuned = true;
         let isGravityStepReady = true;
-        let currentGP = 415;
+        let currentGP = 15;
         let currentSP = 0;
         let advState = 'normal'; // 'normal', 'adv', 'dis'
 
@@ -1328,7 +1328,7 @@
         let spellSlots = {
             1: { current: 4, max: 4, reqLevel: 1 },
             2: { current: 3, max: 3, reqLevel: 3 },
-            3: { current: 2, max: 2, reqLevel: 5 }
+            3: { current: 1, max: 2, reqLevel: 5 }
         };
 
         // Full Spells Known Dataset with Complete D&D 5e Compendium Data
@@ -1560,6 +1560,7 @@
             "🗡️ Sentry Zik's Dagger (+1)",
             "🪘 Tambourine (Arcane Focus & Resonator)",
             "🎸 Lute & Wooden Guitar",
+            "🧪 2x Potion of Healing",
             "💣 1x Spitfire Flask",
             "🎒 Entertainer's Pack",
             "🗝️ Thieves' Tools & Burglar's Pack"
@@ -1766,15 +1767,15 @@
                 const savedSuture = localStorage.getItem('sylvar_suture');
                 if (savedSuture !== null) sutureSlots = parseInt(savedSuture);
                 else sutureSlots = 2;
-                const savedGP = localStorage.getItem('sylvar_gp_v4');
+                const savedGP = localStorage.getItem('sylvar_gp_v5');
                 if (savedGP !== null) currentGP = parseInt(savedGP);
-                else currentGP = 415;
-                const savedSP = localStorage.getItem('sylvar_sp_v4');
+                else currentGP = 15;
+                const savedSP = localStorage.getItem('sylvar_sp_v5');
                 if (savedSP !== null) currentSP = parseInt(savedSP);
                 else currentSP = 0;
                 const savedGrav = localStorage.getItem('sylvar_gravity_step');
                 if (savedGrav !== null) isGravityStepReady = (savedGrav === 'true');
-                const savedSlots = localStorage.getItem('sylvar_slots');
+                const savedSlots = localStorage.getItem('sylvar_slots_v2');
                 if (savedSlots) {
                     const parsed = JSON.parse(savedSlots);
                     if (parsed[1]) spellSlots[1].current = parsed[1].current;
@@ -1792,10 +1793,10 @@
             localStorage.setItem('sylvar_insp', bardicInsp);
             localStorage.setItem('sylvar_help', helpTokens);
             localStorage.setItem('sylvar_suture', sutureSlots);
-            localStorage.setItem('sylvar_gp_v4', currentGP);
-            localStorage.setItem('sylvar_sp_v4', currentSP);
+            localStorage.setItem('sylvar_gp_v5', currentGP);
+            localStorage.setItem('sylvar_sp_v5', currentSP);
             localStorage.setItem('sylvar_gravity_step', isGravityStepReady);
-            localStorage.setItem('sylvar_slots', JSON.stringify(spellSlots));
+            localStorage.setItem('sylvar_slots_v2', JSON.stringify(spellSlots));
         }
 
         // ==========================================
@@ -2437,20 +2438,20 @@
         // 🎒 TRACKED INVENTORY & SESSION DELTA ENGINE (EXACT EFLEIN / FLUBS PATTERN)
         // ==========================================
         function getStoredItems() {
-            let stored = localStorage.getItem('dnd_inv_sylvar_v8');
+            let stored = localStorage.getItem('dnd_inv_sylvar_v9');
             if (!stored) {
-                for (let i = 1; i <= 7; i++) localStorage.removeItem(`dnd_inv_sylvar_v${i}`);
+                for (let i = 1; i <= 8; i++) localStorage.removeItem(`dnd_inv_sylvar_v${i}`);
                 localStorage.removeItem('dnd_inv_sylvar');
                 localStorage.removeItem('dnd_delta_add_sylvar');
                 localStorage.removeItem('dnd_delta_rem_sylvar');
-                localStorage.setItem('dnd_inv_sylvar_v8', JSON.stringify(defaultItems));
+                localStorage.setItem('dnd_inv_sylvar_v9', JSON.stringify(defaultItems));
                 return [...defaultItems];
             }
             return JSON.parse(stored);
         }
 
         function saveStoredItems(items) {
-            localStorage.setItem('dnd_inv_sylvar_v8', JSON.stringify(items));
+            localStorage.setItem('dnd_inv_sylvar_v9', JSON.stringify(items));
         }
 
         function parseItemInfo(itemStr) {

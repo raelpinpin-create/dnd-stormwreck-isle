@@ -1317,7 +1317,7 @@
 
 <script>
     // State Variables
-    let curHP = 32;
+    let curHP = 30;
     let maxHP = 32;
     let tempHP = 0;
     let baseAC = 12;
@@ -1330,7 +1330,7 @@
     let shortRestsRemaining = 2;
     const maxShortRests = 2;
     let isGravityStepReady = true;
-    let vecnaArmUses = 2;
+    let vecnaArmUses = 1;
     const maxVecnaArmUses = 2;
     let rollMode = 'norm';
 
@@ -1437,7 +1437,7 @@
             fullRules: "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack (<strong>+6 to hit</strong>). On a hit, the target takes <strong>1d10 piercing damage</strong>. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a <strong>DC 14 Dexterity saving throw</strong> or take <strong>2d6 cold damage</strong>.",
             upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the cold explosion damage increases by 1d6 for each slot level above 1st (3d6 cold at 2nd lvl, 4d6 cold at 3rd lvl).",
             flavor: "Eflein condenses the humid sea mist into a jagged frost dagger, hurtling it forward before detonating in a shower of razor-sharp icy shrapnel.",
-            prepared: true,
+            prepared: false,
             hasLevelSelect: true,
             levelOptions: {
                 1: "Lvl 1 (2d6 Cold)",
@@ -1548,7 +1548,7 @@
             fullRules: "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is <strong>immune to thunder damage</strong>, and creatures are <strong>deafened</strong> while entirely inside it.<br><br>Casting a spell that includes a verbal component is impossible there.<br><br>📜 <strong>Ritual Casting:</strong> Eflein can cast this without expending a spell slot by ritual casting for 10 minutes!",
             upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
             flavor: "Eflein creates a zone of absolute, eerie acoustic void—smothering incantations, shouts, and clashing steel in total silence.",
-            prepared: false,
+            prepared: true,
             hasLevelSelect: true,
             levelOptions: {
                 2: "Lvl 2 (20ft Sphere)",
@@ -1974,9 +1974,11 @@
         "🗡️ Zombie Captain's Cutlass",
         "🥽 Myla's Draconic Abyssal Goggles",
         "🐉 Astalagan's Awakened Amber Scale",
+        "⚡ The Galvanic Ley-Grounder (\"Spark-Tamer\" Pylon)",
         "🧲 Cracked Lodestone Bracelet",
         "📜 Spell Scroll of Absorb Elements",
         "🤿 Spore-Filter Rebreather Mask",
+        "🧪 2x Potion of Healing",
         "🧪 1x Potion of Water Breathing",
         "🍷 1x Elixir of Health (Legendary)",
         "🧀 Cheese Bread",
@@ -2258,8 +2260,8 @@
     let characterLevel = 5; // Current Character Level (Level 5 Upgraded)
     let spellSlots = {
         1: { current: 4, max: 4, reqLevel: 1 },
-        2: { current: 3, max: 3, reqLevel: 3 },
-        3: { current: 2, max: 2, reqLevel: 5 }
+        2: { current: 1, max: 3, reqLevel: 3 },
+        3: { current: 0, max: 2, reqLevel: 5 }
     };
 
     function renderSpellSlots() {
@@ -2522,7 +2524,7 @@
     }
 
     function loadSavedPreparedSpells() {
-        const saved = localStorage.getItem('eflein_prepared_spells_v5');
+        const saved = localStorage.getItem('eflein_prepared_spells_v6');
         if (saved) {
             try {
                 const prepIds = JSON.parse(saved);
@@ -2537,7 +2539,7 @@
 
     function savePreparedSpells() {
         const prepIds = fullSpellbook.filter(s => s.prepared).map(s => s.id);
-        localStorage.setItem('eflein_prepared_spells_v5', JSON.stringify(prepIds));
+        localStorage.setItem('eflein_prepared_spells_v6', JSON.stringify(prepIds));
     }
 
     function toggleSpellPrep(spellId) {
@@ -3541,20 +3543,20 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     }
 
     function getStoredItems() {
-        let stored = localStorage.getItem('dnd_inv_eflein_v25');
+        let stored = localStorage.getItem('dnd_inv_eflein_v26');
         if (!stored) {
-            for (let i = 1; i <= 24; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
+            for (let i = 1; i <= 25; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
             localStorage.removeItem('dnd_inv_eflein');
             localStorage.removeItem('dnd_delta_add_eflein');
             localStorage.removeItem('dnd_delta_rem_eflein');
-            localStorage.setItem('dnd_inv_eflein_v25', JSON.stringify(defaultItems));
+            localStorage.setItem('dnd_inv_eflein_v26', JSON.stringify(defaultItems));
             return [...defaultItems];
         }
         return JSON.parse(stored);
     }
 
     function saveStoredItems(items) {
-        localStorage.setItem('dnd_inv_eflein_v25', JSON.stringify(items));
+        localStorage.setItem('dnd_inv_eflein_v26', JSON.stringify(items));
     }
 
     // Universal Item Quantity Parsing & Formatting Engine

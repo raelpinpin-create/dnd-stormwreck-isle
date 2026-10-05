@@ -23,7 +23,7 @@
 ## ⚔️ Combat Statistics
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
-| **Hit Points (HP)** | **32 / 32** | Hit Dice: `5d6 + 10 CON` (Level 5 Milestone) |
+| **Hit Points (HP)** | **30 / 32** | Hit Dice: `5d6 + 10 CON` (Level 5 Milestone) |
 | **Armor Class (AC)** | **12** | **15** with *Mage Armor* (Interactive toggle) |
 | **Initiative** | **+3** | Dex modifier (+2) + Lodestone Charm (+1) |
 | **Speed** | **30 ft** | High Elf speed |
@@ -45,18 +45,18 @@
 * **Base Spell Save DC:** **15** (`8 + 3 PB + 4 Int`) • **DC 16 for Lightning spells** *(Astalagan's Scale)*
 * **Base Spell Attack Bonus:** **+7** (`+3 PB + 4 Int`) • **+8 for Lightning spells** *(Astalagan's Scale)*
 * **1st-Level Spell Slots:** `4 / 4`
-* **2nd-Level Spell Slots:** `3 / 3`
-* **3rd-Level Spell Slots:** `2 / 2` *(Unlocked at Level 5!)*
+* **2nd-Level Spell Slots:** `1 / 3` *(2 spent in combat!)*
+* **3rd-Level Spell Slots:** `0 / 2` *(Both spent on Stronghold Fireball & combat!)*
 * **Arcane Recovery:** `0 / 1` used today (Regain up to 3 spell slot levels on Short Rest)
 * **👘 Robe of Arcane Reserve:** `1 / 1` per day (Action: Instantly regain 1 expended 1st-level spell slot!)
 * **🪄 Wand of Magic Missiles:** `3 / 3` Charges (3 charges per Long Rest. Expends 1 charge for 3 auto-hit force darts dealing 1d4+1 each).
-* **🟣 Cursed Boon — Deformed Left Arm of Vecna's Weave:**  
+* **🟣 Cursed Boon — Deformed Left Arm of Vecna's Weave:** `1 / 2 Uses Remaining`  
   * *Twice per Long Rest:* When casting a damaging spell, Eflein can channel the volatile planar residue within his deformed purple arm to add **+1d10 Necrotic or Force damage** to the spell's total damage.  
   * *Backlash:* Immediately upon doing so, Eflein must roll **1d10 backlash damage** dealt directly to himself as necrotic recoil!
 * **🌌 Shared Party Boon — The Sovereign’s Planar Scar:** Permanent Advantage on saving throws vs. Frightened, Charmed, and Stunned; *Planar Gravity Step (1/Short Rest):* Bonus Action 20-ft jump/glide ignoring difficult terrain without provoking opportunity attacks.
 * **Features:** *Evocation Savant* (half copy cost/time for Evocation), *Sculpt Spells* (protects up to 1 + spell level allies from AoE Evocation spell damage).
 * **Cantrips Known:** *Fire Bolt* (2d10 fire, +7 hit), *Shocking Grasp* (2d8 lightning, +7/+8 hit), *Mage Hand* (15ft magnetic pull via Lodestone), *Prestidigitation* (replaces Ray of Frost).
-* **Prepared Spells (9 Spells Prepared — INT 4 + Level 5):** *Fireball* (3rd), *Lightning Bolt* (3rd), *Counterspell* (3rd, replaces Scorcher), *Mage Armor* (1st), *Magic Missile* (1st), *Shield* (1st), *Scorching Ray* (2nd), *Misty Step* (2nd), *Shatter* (2nd).
+* **Prepared Spells (9 Spells Prepared — INT 4 + Level 5):** *Magic Missile* (1st), *Shield* (1st), *Thunderwave* (1st), *Misty Step* (2nd), *Rime's Binding Ice* (2nd), *Silence* (2nd), *Counterspell* (3rd), *Fireball* (3rd), *Lightning Bolt* (3rd).
 * **Full Spellbook (18 Spells):** 
   - *Cantrips:* *Fire Bolt*, *Shocking Grasp*, *Mage Hand*, *Prestidigitation*.
   - *1st-Level:* *Magic Missile*, *Shield*, *Mage Armor*, *Thunderwave* (DC 15 Con), *Detect Magic*, *Ice Knife* (+7 hit, DC 15 Dex), *Sleep*, *Comprehend Languages*, *Protection from Evil/Good*, *Absorb Elements*.
@@ -68,6 +68,7 @@
   * 🗡️ **Zombie Captain's Cutlass:** `+5 to hit` (`DEX +2 + PB +3`), `1d6+2` slashing. Grants **30 ft swimming speed**!
   * 🏹 **Sling / Bow of the Ridge-Runner (+1):** `+6 to hit` (`DEX +2 + PB +3 + 1 magic`), `1d4+3` bludgeoning, range 30/120 ft — ignores long range disadvantage!
 * **Magic Items, Robes & Relics:**
+  * ⚡ **The Galvanic Ley-Grounder ("Spark-Tamer" Pylon):** Heavy copper pylon from Myla. 30-ft aura: Advantage on DEX saves vs lightning & Lightning Resistance; absorbs/redirects Sparkrender's breath!
   * 🥽 **Myla's Draconic Abyssal Goggles:** (Darkvision 60 ft & Murky Underwater Clarity).
   * 🪄 **Wand of Magic Missiles:** 3/3 Charges (3 charges per Long Rest).
   * 👘 **Robe of Arcane Reserve (The Ley-Weaver's Mantle):** 1/Day Action: Regain 1 expended 1st-level slot.
@@ -76,6 +77,7 @@
   * 📜 **Spell Scroll of *Absorb Elements*** (1st-Level Abjuration Reaction).
   * 🤿 **Spore-Filter Rebreather Mask:** Advantage on CON saves vs spores/fumes/gas.
 * **Consumables & Rations:** 
+  * 🧪 **2x Potions of Healing**
   * 🧪 **1x Potion of Water Breathing**
   * 🧀 **Cheese Bread** (Restores `1d8 HP` + grants `+2 to Initiative` for 1 encounter)
 * **Valuables & Story:** 
@@ -112,7 +114,7 @@
 | **Spell Attack Mod** | **+7** | `+3 (PB) + 4 (CHA)` |
 | **Bardic Inspiration** | **4 / 4 (d8)** | **Font of Inspiration:** Die upgraded to d8; recharges on **Short or Long Rest**! |
 | **Help Tokens** | **2 / 2** | +1d6 to ally check within 30 ft (regains 1 on Short Rest, 2 on Long Rest) |
-| **Suture Chord (Lyra)** | **0 / 2** | 2 slots/LR (DC 15 Dex save, 2d8 Thunder + Pin) |
+| **Suture Chord (Lyra)** | **2 / 2** | 2 slots/LR (DC 15 Dex save, 2d8 Thunder + Pin) |
 | **Senses** | **Blind Seismic Sense (30–60 ft)** | Detects vibrations, acoustics & air disturbance; immune to visual blindness penalties |
 
 ## 📊 Ability Scores & Saving Throws (with Cloak of Protection +1)
@@ -133,7 +135,7 @@
 * 🃏 **Jack of All Trades:** Add +1 (half PB) to all unproficient ability checks.
 * 🐾 **Feline Agility:** Double speed (60 ft) for 1 turn. Recharges on turn with 0 ft movement.
 * **🌌 Shared Party Boon — The Sovereign’s Planar Scar:** Permanent Advantage on saving throws vs. Frightened, Charmed, and Stunned; *Planar Gravity Step (1/Short Rest):* Bonus Action 20-ft jump/glide ignoring difficult terrain without provoking opportunity attacks.
-* **Spell Slots:** `4 / 4` 1st-Level, `3 / 3` 2nd-Level, `2 / 2` 3rd-Level *(Unlocked at Level 5!)*.
+* **Spell Slots:** `4 / 4` 1st-Level, `3 / 3` 2nd-Level, `1 / 2` 3rd-Level *(1 spent on Tower Hypnotic Pattern!)*.
   * **Cantrips (0):** *Dancing Lights*, *Vicious Mockery* (DC 15 Wis, `2d4` Psychic + Disadvantage on next attack).
   * **1st-Level:** *Dissonant Whispers* (DC 15 Wis, `3d6` Psychic + flee), *Healing Word* (Bonus Action, `1d4+4` HP), *Charm Person* (DC 15 Wis), *Color Spray* (6d10 HP blinded).
   * **2nd-Level:** *Calm Emotions* (20-ft sphere, DC 15 Cha), *Enthrall* (DC 15 Wis).
@@ -152,18 +154,18 @@
 * **Weapons & Musical Instruments:**
   * 🎻 **Lyra (+1 Cello Bowstring Rapier / Instrument):** `+8 to hit` (`+4 DEX + 3 PB + 1 magic`), reach 5 ft. *Hit:* `1d8 + 5` piercing/slashing + **`1d6` Thunder damage**. *(With Psychic Blades: `1d8+5 + 1d6 Thunder + 3d6 Psychic`!).*
     - **Dual Nature:** Can be used as a `+1` Finesse melee weapon OR drawn across an instrument as a musical focus.
-    - **Suture Chord (Bonus Action • 0 / 2 Slots):** Whips the bowstring at a target within 30 ft (DC 15 Dexterity Save). On fail: takes **`2d8` Thunder damage** and has its **movement speed reduced to 0 (Pinned)** until an action tears it free (half damage and not pinned on success).
+    - **Suture Chord (Bonus Action • 2 / 2 Slots):** Whips the bowstring at a target within 30 ft (DC 15 Dexterity Save). On fail: takes **`2d8` Thunder damage** and has its **movement speed reduced to 0 (Pinned)** until an action tears it free (half damage and not pinned on success).
   * 🗡️ **Steel Rapier:** `+7 to hit` (`+4 DEX + 3 PB`), reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse). *(With Psychic Blades: `1d8+4 + 3d6 Psychic`)*.
   * 🗡️ **Sentry Zik's Dagger (+1):** `+8 to hit` (`+4 DEX + 3 PB + 1 magic`), range 20/60 ft. *Hit:* `1d4 + 5` piercing (Finesse, Light, Thrown). *(With Psychic Blades: `1d4+5 + 3d6 Psychic`)*.
   * 🗡️ **Steel Daggers (2x):** `+7 to hit` (`+4 DEX + 3 PB`), range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).
   * 🪘 **Tambourine** (Arcane & Bardic Focus, acoustic resonator).
   * 🎸 **Lute & Guitar** (Fine wooden instruments).
 * **Consumables, Keepsakes & Combat Alchemy:**
-  * 💀 *(Sentry Zik's Remains & Silk Ribbon SACRIFICED to Mal'Goroth in the cosmic stealth bargain)*
+  * 🧪 **2x Potions of Healing**
   * 💣 **1x Spitfire Flask** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex save for half).
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack**, Thieves' tools.
-* **Personal Wealth:** `415 gp, 0 sp`.
+* **Personal Wealth:** `15 gp, 0 sp`.
 * **Destiny Relic:** 🌪️ **Scale of the Zephyr (Clyssavar's Silver Scale of Wind & Vibrations)** *(Claimed in Chapter 3 in hold C9!)*.
 
 ---
@@ -205,9 +207,9 @@
 ## ✨ Divine Domain Features & Spellcasting (Level 5 Life Cleric)
 * **Spell Save DC:** **15** (`8 + 3 PB + 4 WIS`)
 * **Spell Attack Bonus:** **+7** (`+3 PB + 4 WIS`)
-* **1st-Level Spell Slots:** `4 / 4`
-* **2nd-Level Spell Slots:** `3 / 3`
-* **3rd-Level Spell Slots:** `2 / 2`
+* **1st-Level Spell Slots:** `3 / 4`
+* **2nd-Level Spell Slots:** `2 / 3` *(1 spent on Tower Hold Person!)*
+* **3rd-Level Spell Slots:** `1 / 2`
 * **Channel Divinity (1/Short or Long Rest):** `1 / 1` (Ready)
   * 🕊️ **Preserve Life:** As an Action, restore up to **25 Hit Points** (5 × Cleric Level 5) distributed among any bloodied creatures within 30 ft (cannot heal above 50% max HP).
   * 📿 **Destroy Undead (CR 1/2):** When using Turn Undead, undead of CR 1/2 or lower that fail their save are **instantly destroyed/vaporized**!
@@ -260,7 +262,7 @@
   * 🐉 **Jar of Pure Drake Blood**
   * 🏺 **1x Jar of Animal Remains**
   * 🍷 **1x Elixir of Health (Legendary)** *(Distilled from The Ruby Morel)*
-  * 🧪 **6x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
+  * 🧪 **8x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP)
   * 🧪 **2x Diluted Drake Blood Potions** (+1 Attack, +2 Damage for 24 hours!)
   * Priest's Pack, Altar Vestments, Incense, Censer.
 * **Wealth:** `52 gp, 5 sp`.
@@ -287,7 +289,7 @@
 | **Armor Class (AC)** | **17** | Splint Mail (15) + Azure Wolf Shield (+2) |
 | **Initiative** | **+0** *(Advantage via Battle Readiness)* | |
 | **Speed** | **30 ft** | Subtle limp from peg leg |
-| **Help Tokens** | **2 / 2** | Help (+1d6 to ally within 30ft, 2/LR, +1 on SR) |
+| **Help Tokens** | **1 / 2** | Help (+1d6 to ally within 30ft, 2/LR, +1 on SR) |
 | **Passive Perception** | **15** | Base Wisdom (+2) + PB (+3) |
 | **Proficiency Bonus** | **+3** | Tier 2 Transition (Level 5) |
 
@@ -307,7 +309,7 @@
 * ⚔️ **Extra Attack (Level 5 Martial Role):** General Varnoth can attack **twice**, instead of once, whenever taking the Attack action!
 * 🛡️ **Protection (Reaction):** When an enemy within 5 ft attacks an adjacent ally (Eflein, Father Flubs, Sylvar), Varnoth uses her reaction to impose **Disadvantage** on the attack roll (must have shield equipped).
 * 💨 **Second Wind (1/Short or Long Rest):** Bonus Action to regain **1d10 + 5 Hit Points** immediately (Ready).
-* ⚡ **Action Surge (1/Short or Long Rest):** Free Action. Push beyond limits to take **1 additional Action** on your turn! (Ready).
+* ⚡ **Action Surge (1/Short or Long Rest):** Free Action. Push beyond limits to take **1 additional Action** on your turn! (0/1 Used — Expended in combat).
 * **🌌 Shared Party Boon — The Sovereign’s Planar Scar:** Permanent Advantage on saving throws vs. Frightened, Charmed, and Stunned; *Planar Gravity Step (1/Short Rest):* Bonus Action 20-ft jump/glide ignoring difficult terrain without provoking opportunity attacks.
 * ⚔️ **Azure Wolf Longsword (1-Handed):** `+7 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d8 + 4` slashing damage.
 * ⚔️ **Azure Wolf Longsword (2-Handed Versatile):** `+7 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d10 + 4` slashing damage.
@@ -323,7 +325,7 @@
   * 🏹 Heavy Crossbow + 20 Crossbow Bolts
   * 🪓 **Twin Notched Bone-Cleavers** *(Trophy from the Kobold Champion)*
 * **Potions & Consumables:**
-  * 🧪 **1x Potion of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP - 44 HP)
+  * 🧪 **3x Potions of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP - 44 HP)
   * 🍷 *(Elixir of Health consumed on Sylvar)*
 * **Kit & Tools:** Mason's Tools, Mercenary Commander Badge (Azure Wolves Guild), Whetstone, Traveler's Pack.
 * **Wealth:** `8 gp, 6 sp`.

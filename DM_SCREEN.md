@@ -114,7 +114,7 @@ graph TD
 
 #### ⚡ CHAPTER 4: THE CLIFFTOP OBSERVATORY RECKONING (LEVEL 5 GRAND CAMPAIGN CLIMAX)
 * **🏰 The Mountain Stronghold Siege (Session 9 Completed):** Party stealth-infiltrated the mountain fortress below the summit Assassin's Creed style. Father Flubs and Sylvar silently locked down the towers (*Hold Person* & *Hypnotic Pattern*); Eflein unleashed a catastrophic 3rd-level *Fireball* nuking the barracks; scout Mik rescued and held as a grieving, terrified guide!
-* **D1: The Precipice of the Bridge — The Titan Gatekeeper (Session 10 Kickoff):** Standing guard before the already open, humming bridge across the 200-ft abyss is the legendary **War-Lord Krag'zor, The Titan Kobold** (8-ft mutated warlord wielding a colossal dragon-bone greatsword, with a giant iron greatbow strapped to his back) and his colossal unarmored primal siege drake, **Gorga'muth**! The ultimate Elden Ring style gatekeeper showdown before the sanctuary.
+* **D1: The Precipice of the Bridge — The Dragon-Forged Gatekeeper (Session 10 Kickoff):** Standing guard before the active, humming Moonstone/Starlight Bridge across the 200-ft abyss is the legendary **Krag'zor the Dragon-Forged** (CR 7 Legendary Kobold Warrior Mage wielding *The Wyrm-Breaker* staff-blade, AC 17/19 with *Shield*, 95 HP) and his colossal crag drake **Gorefang** (CR 4, 68 HP, AC 15)! Krag'zor traveled to Stormwreck Isle seeking Sparkrender's draconic siphon magic to become the ultimate kobold legend. An epic warmup mini-boss challenge before the summit showdown!
 * **The Open Bridge & D2 Rotunda:** The bridge across the chasm is already active and wide open, humming with ancient starlight. Crossing the bridge leads directly into the ancient observatory rotunda.
 * **D3 & D4: Ancient Observatory Halls & Study:** Abandoned cultist barricades and Lianna's discarded stellar calculation satchel, providing the mathematical alignment for the ancient apparatus.
 * **D5 & D6: The Draconic Star-Atlas & The Grand Apex Showdown:** 
@@ -200,7 +200,12 @@ graph TD
 * 🦉🐻 **Taming the Screeching Owlbear (Wilderness Ridge Grove):**
   * **Objective:** Slay or tame territorial apex owlbear using brass whistle (DC 12 STR to grab / DC 10 Animal Handling).
   * **Reward:** **Azure Wolf Heavy Cloak**, 45 gp, and Owlbear Feather Focus (+1 Nature/Survival).
-* 🥐 **Sanctuary Specialty Bread Bart## 🎭 SECTION 2: MASTER NPC & ALLY DIRECTORY (WITH PHILOSOPHY & LIVE DILEMMAS)
+* 🥐 **Sanctuary Specialty Breads & Tavern Rations:**
+  * Blepp, Agga, and Frub provide fresh artisan bread granting minor temporary buffs (Temp HP, Advantage on saves).
+
+---
+
+## 📜 SECTION 2: MASTER NPC & ALLY DIRECTORY (WITH PHILOSOPHY & LIVE DILEMMAS)
 
 ### 📊 Master Campaign NPC Fast Reference Table (Divided by Faction & Met Status)
 
@@ -237,7 +242,9 @@ graph TD
 | | 💀 **Skeleton Sailor** *(C2 Forecastle Patrol)* | 1/4 | **+2** | 22-26 | 13 | 30 ft | **+0** | **+2** | **+2** | **-2** | **-1** | **-3** | Scimitar **+4** (1d6+2 slash + 1d4 cold) / Bow **+4** (1d8+2) | Vulnerable Bludgeoning |
 | | 🧟‍♂️ **Drowned Ghoul** *(C8 Lower Deck Scavenger)* | 1 | **+2** | 34-40 | 12 | 30 ft | **+1** | **+2** | **+0** | **-2** | **+0** | **-1** | Bite **+4** (2d8+2 pierc) + Claws **+4** (2d6+2 slash + DC 11 Paralyze) | Coup de Grace vs Paralyzed (+1d6 necro) |
 | | 🦅 **Harpy of the Crow's Nest** *(C1 Aerial Ambush)* | 1 | **+1** | 42-48 | 11 | Fly 40 | **+1** | **+1** | **+1** | **-2** | **+0** | **+1** | Claws **+4** (2d6+2 slash) + Bone Club **+4** (1d8+3 bludgeon + 1d4 bleed) | Luring Song: DC 12 Wis (300ft charm) |
-| **⚡ Clifftop Observatory (Lvl 4–5)** | 🐉 **Sparkrender** *(👑 CAMPAIGN APEX FINAL BOSS)* | 4 | **+2** | 110-125 | 15 | Fly 60 | **+4** | **+2★** | **+4★** | **+1** | **+2★** | **+3★** | Bite **+6** (2d10+4 pierc + 2d6 light) + Claw **+6** (2d6+4 slash) | Breath: 30ft line, DC 14 Dex (6d10 light, half on save) |
+| **⚡ Clifftop Observatory (Lvl 4–5)** | 🔥 **Krag'zor the Dragon-Forged** *(⚔️ BRIDGE MINI-BOSS CR 7)* | 7 | **+4** | 95 | 17 | 30 ft (Fly 30) | **+3** | **+4★** | **+3★** | **+4★** | **+1** | **+2** | Wyrm-Breaker Staff **+7** (1d8+4 bludgeon + 1d8 fire/light) | War Magic • Spells (DC 15) • Pointy Hat Actions (>50% / ≤50% HP) |
+| | 🦎 **Gorefang (Titan Crag Drake)** *(DRAKE COMPANION CR 4)* | 4 | **+1** | 68 | 15 | 40 ft | **+4** | **+1** | **+3** | **-3** | **+1** | **-2** | Bite **+6** (2d8+4 + 1d6 fire) + Tail **+6** (1d10+4) | Fire Breath (6d6, DC 14 Dex) • Knockdown (DC 14 Str) |
+| | 🐉 **Sparkrender** *(👑 CAMPAIGN APEX FINAL BOSS)* | 4 | **+2** | 110-125 | 15 | Fly 60 | **+4** | **+2★** | **+4★** | **+1** | **+2★** | **+3★** | Bite **+6** (2d10+4 pierc + 2d6 light) + Claw **+6** (2d6+4 slash) | Breath: 30ft line, DC 14 Dex (6d10 light) • Pointy Hat Actions (>50% / ≤50% HP) |
 | | 🛡️ **Kobold Champion** *(🏆 D3 CAMP COMMANDER)* | 1/2 | **+2** | 36-42 | 15 | 25 ft | **+1** | **+2** | **+2** | **-1** | **+0** | **+0** | Dual Cleavers **+4** (1d8+2 slash + 1d4 rend, 2 attacks) | Shield Bash: DC 12 Str Save or Prone |
 | | 🦇 **Winged Kobold (Urd)** *(D2 & D3 Aerial Guard)* | 1/4 | **+3** | 18-22 | 13 | Fly 30 | **-2** | **+3** | **+0** | **-1** | **-1** | **-1** | Dropped Fire Bomb **+5** (2d6+2 fire/bludgeon AoE) | Pack Tactics (Aerial Bomber) |
 | | 🦎 **Kobold Ambusher** *(D3 Tower Guard)* | 1/8 | **+2** | 14-18 | 13 | 30 ft | **-2** | **+2** | **+1** | **-1** | **-1** | **-1** | Dagger **+4** (1d4+2) / Fire Sling **+4** (1d4+2 + 1d4 fire) | Pack Tactics (Advantage near ally) |
@@ -251,18 +258,100 @@ graph TD
 
 ---
 
+## 💀 SECTION 3: MASTER ENEMY DIRECTORY & THINKING MONSTER STAT BLOCKS
+
 ### 💀 DETAILED MONSTER & THINKING CREATURE STAT BLOCKS
+
+#### 0. 🔥 Krag'zor the Dragon-Forged — Small Humanoid (CR 7 LEGENDARY KOBOLD WARRIOR MAGE • BRIDGE MINI-BOSS)
+* **Identity:** Legendary Kobold Warrior Mage guarding the Starlight Bridge to the Clifftop Observatory. Traveled to Stormwreck Isle to test Sparkrender's worth and seize draconic power for his personal quest to become the greatest kobold legend in Toril.
+* **AC:** 17 (Spiked Drake Hide & Charred Dragonbone) | **HP:** **95 HP** (Bloodied: 47 HP) | **Speed:** 30 ft (Gains Fly 30 ft [hover] when Bloodied ≤ 50% HP) | **Initiative:** +4
+* **Damage Resistances:** Fire, Lightning
+* **Saving Throws:** DEX +7, CON +6, INT +7 | **Skills:** Arcana +7, Athletics +6, Perception +4
+* **Senses:** Darkvision 60 ft., Passive Perception 14
+* **Traits & Passives:**
+  * ⚔️ **Draconic War Magic:** When Krag'zor casts a cantrip or spell as an Action, he can make one Wyrm-Breaker melee attack as a **Bonus Action**!
+  * 🩸 **Dragon-Awakened Overdrive (Trigger at ≤ 50% HP / 47 HP):** When reduced to 47 HP or less, twin spectral crimson-and-azure dragon wings erupt from his shoulder blades! Gains **Fly 30 ft (hover)**, +2 AC (now **AC 19**), and all melee attacks deal an extra **+1d8 Fire or Lightning damage**!
+  * 👑 **Legendary Pride / Desperation Surrender (Trigger at ≤ 20 HP):** When reduced to 20 HP or lower, Krag'zor drops to one knee. Recognizes the party's true draconic might: surrenders *The Wyrm-Breaker* staff, reveals the DC 15 Explosive Rune Trap location in Area D4, and warns that Sparkrender hoards the Gold & Silver scales in the vault!
+* **Pointy Hat Battlefield Actions (Health-Triggered Framework):**
+  * **🎭 Stance 1: > 50% HP (95 – 48 HP) [TACTICAL DUELIST & DRAKE COMMANDER]:**
+    * **Action 1: Drake Pincer Ambush (Flank & Knockdown)**
+      * *Tell (End of Turn):* Krag'zor blows a shrill brass whistle; Gorefang's jaws blaze molten crimson as he prowls around the bridge edge flanking the party.
+      * *Counterplay:* Step away from the central line, position Krag'zor between party and drake, or DC 14 Animal Handling/Intimidation check to divert the beast.
+      * *Resolve (Start of Next Turn):* Gorefang charges 30 ft down the bridge: **DC 14 Dex Save** or take **18 (3d8+4) Fire/Bludgeoning damage** and fall **Prone** directly at Krag'zor's feet (half damage, no prone on success).
+    * **Action 2: Runic Earth-Spike Barrier (Area Denial)**
+      * *Tell (End of Turn):* Krag'zor slams *The Wyrm-Breaker* into the bridge stones; three azure draconic glyphs ignite beneath the highest-damage party members.
+      * *Counterplay:* Move at least 10 ft away from the glowing glyphs, or deal 20+ damage to Krag'zor to disrupt the casting.
+      * *Resolve (Start of Next Turn):* Jagged basalt spikes erupt: **DC 15 Dex Save** or take **16 (3d10) Piercing/Lightning damage** and be **Restrained** (DC 14 Athletics check to tear free).
+  * **🩸 Stance 2: ≤ 50% HP (47 – 0 HP) [BLOODIED: DRAGON-AWAKENED OVERDRIVE]:**
+    * **Action 3: Cataclysmic Sky-Slam (Radial Quake)**
+      * *Tell (End of Turn):* Spectral crimson dragon wings ignite as Krag'zor launches 25 ft into the air, gathering a blinding plasma orb atop his staff.
+      * *Counterplay:* Run toward the bridge arches or take full cover behind Thurible/shields; or deal 18+ damage with ranged attacks/spells to force a DC 14 Con save to drop him out of the air.
+      * *Resolve (Start of Next Turn):* Krag'zor crash-lands down onto the bridge center: 20-ft radius shockwave. **DC 15 Con Save** or take **22 (4d8+4) Thunder/Force damage** and fall **Prone** (half on save). Bridge shudder forces **DC 12 Dex Save** or drop held weapons!
+    * **Action 4: Kamikaze Dragon-Breath Surge (Recharge 5-6)**
+      * *Tell (End of Turn):* Krag'zor swallows ambient lightning from the storm clouds as his chest scales glow white-hot.
+      * *Counterplay:* Scatter out of the 20-ft cone or activate elemental resistances/shields.
+      * *Resolve (Start of Next Turn):* 20-ft cone: **DC 15 Dex Save** or take **24 (6d6) Dual-Element Fire & Lightning damage** (half on save).
+* **Actions & Spells (DC 15 Spell Save, +7 Spell Attack, 6 Spell Slots):**
+  * 🗡️ **The Wyrm-Breaker Great-Staff:** Melee Weapon Attack: `+7 to hit`, reach 5 ft., one target. Hit: **8 (1d8 + 4)** bludgeoning + **4 (1d8)** Fire or Lightning damage. *(When bloodied ≤50% HP, deals +1d8 extra damage!)*
+  * ⚡ **Shocking Grasp (Cantrip):** `+7 to hit`, reach 5 ft., **9 (2d8)** lightning damage, and the target cannot take reactions until its next turn.
+  * 🔥 **Scorching Ray (2nd Level):** Ranged Spell Attack: 3 rays, `+7 to hit` each, **7 (2d6)** fire damage per ray.
+  * ⚡ **Lightning Bolt (3rd Level — Active at all HP):** 100-ft line, 5 ft wide. **DC 15 Dex Save** or take **28 (8d6)** lightning damage (half on save).
+  * 💥 **Cataclysmic Fireball (3rd Level — ⚠️ [Unlocked at ≤ 50% HP]):** 20-ft radius sphere. **DC 15 Dex Save** or take **28 (8d6)** fire damage. Cast recklessly centered near himself!
+  * 🛡️ **Shield (Reaction):** +5 bonus to AC against triggering attack, and immune to Magic Missile.
+  * 🛑 **Counterspell (Reaction — ⚠️ [Unlocked at ≤ 50% HP]):** Shuts down incoming spell of 3rd level or lower.
+* 🧭 **Core Philosophy (Blue Box):** **Kobold Supremacy Through Draconic Apotheosis.** Rejects the pathetic groveling and cowardly trap-laying typical of his kin. He believes kobolds are not vermin—they are the true scions of dragons who have simply been robbed of their majesty. He seeks Sparkrender not to serve him, but to test the young dragon's worth and rip the ancient draconic siphon magic from his throat!
+* ⚡ **Immediate Active Dilemma (Pink Box):** Stationed at the Starlight Bridge under Sparkrender's deceitful promise of shared godhood, he is eager for a true test of strength. He senses Astalagan's scale on Eflein and intends to slaughter the party to prove himself the apex warrior of Toril!
+* ⚖️ **Moral Stand & Weaknesses (Green Box):** Blinding martial pride. Cannot ignore insults to his warrior status; enters a reckless frenzy if mocked as a cowardly kobold. If reduced to ≤ 20 HP, he yields with genuine draconic respect, surrendering his staff and revealing Sparkrender's explosive rune traps in Area D4.
+* 🎯 **DM Tactics & Combat Strategy (Yellow Box):** Opens with Lightning Bolt down the narrow bridge line, commanding Gorefang to flank the rear. Uses Draconic War Magic to weave spells with staff smites. When reduced to ≤ 50% HP, unleashes Cataclysmic Sky-Slam and reckless Fireball!
+* 💎 **Direct Boss Drops:** 🗡️ **The Wyrm-Breaker (+1 Staff & Arcane Focus)**, 📯 **Drake-Master's Bone Whistle**, 🧥 **Mantle of the Scale-Shatterer**, 💎 4x Draconic Runestones (50 gp each), 📜 **Krag'zor's Personal War Journal**.
+
+#### 0.5. 🦎 Gorefang (Titan Crag Drake) — Large Dragon (CR 4 BEAST COMPANION • BRIDGE PREDATOR)
+* **Identity:** Krag'zor's bound mount and battle companion. Stalks the fog of the Starlight Bridge.
+* **AC:** 15 (Natural Basalt Hide) | **HP:** **68 HP** | **Speed:** 40 ft, Climb 30 ft | **Initiative:** +1
+* **Damage Immunities:** Fire
+* **Stats:** STR 19 (+4) | DEX 13 (+1) | CON 17 (+3) | INT 4 (-3) | WIS 12 (+1) | CHA 7 (-2)
+* **Multiattack:** Makes 1 Bite and 1 Tail Sweep attack.
+* **Molten Bite:** `+6 to hit`, reach 5 ft., **13 (2d8 + 4)** piercing + **3 (1d6)** fire damage.
+* **Tail Sweep:** `+6 to hit`, reach 10 ft., **9 (1d10 + 4)** bludgeoning. **DC 14 STR Save** or knocked **Prone**.
+* **Fire Breath (Recharge 5-6):** 15-ft cone. **DC 14 DEX Save** for **21 (6d6)** fire damage (half on save).
+* 🧭 **Core Philosophy:** **Predatory Apex Loyalty.** Bound to Krag'zor; views all intruders as meat.
+* ⚡ **Immediate Dilemma:** Agitated by Thurible's lava scent; eager to establish alpha dominance.
+* 💎 **Direct Drops:** 🛡️ Spiked Drake Hide (craftable +1 Shield), 🧪 2x Flasks of Drake Blood, 🗡️ Drake Fang Dagger (+1, 1d4+1 pierce + 1d4 fire).
 
 #### 1. ⚡ Sparkrender (Blue Dragon Wyrmling) — Medium Dragon (CR 4 APEX FINAL BOSS)
 * **Description:** *A sleek, predatory young blue dragon with iridescent azure scales as hard as tempered steel. A single sharp, ridged horn sweeps back from his snout, and crackling blue arcs of lightning sizzle across his spine and claws. Empowered by the stolen King-Killer Comet ritual, he boasts in Draconic that the ancient power of all five dead dragons of Stormwreck Isle belongs to him.*
-* **AC:** 15 (Natural Scales) | **HP:** **110 – 125 HP** | **Speed:** 30 ft, Burrow 15 ft, Fly 60 ft | Immune: Lightning
+* **AC:** 15 (Natural Scales) | **HP:** **110 – 125 HP** (Bloodied: 55 HP) | **Speed:** 30 ft, Burrow 15 ft, Fly 60 ft | Immune: Lightning
 * **Stats:** STR 18 (+4) | DEX 10 (+2★) | CON 16 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)
 * **Perception:** +4 | **Stealth:** +2
-* **Multiattack:** Makes 1 Bite attack (`+6 to hit`, **15 [2d10 + 4]** piercing + **7 [2d6]** lightning) and 1 Claw attack (`+6 to hit`, **11 [2d6 + 4]** slashing).
-* **Lightning Breath (Recharge 5-6):** 30ft line (5ft wide). **DC 14 DEX Save**. Takes **33 (6d10)** lightning damage on fail (half on save).
-* 🧭 **Core Philosophy:** **Draconic Social Darwinism**. Chromatic dragons are the rightful apex tyrants of Toril; the weak exist only to fuel the ascension of the strong.
-* ⚡ **Immediate Active Dilemma:** The King-Killer Star comet window closes in hours; must align 5 effigies and execute Aidron's blood sacrifice to siphon Sharruth's magma flame.
-* ⚖️ **Moral Stand & RP Hooks:** Snarl-laced, haughty arrogance. Refuses retreat until bloodied under 20 HP. *"Bow before the blood of Eldenemir, or be turned to glass!"*
+* **Pointy Hat Battlefield Actions (Health-Triggered Framework):**
+  * **🎭 Stance 1: > 50% HP (110 – 56 HP) [ARROGANT SKY TYRANT]:**
+    * **Action 1: Static Storm Corona (Chain Arc)**
+      * *Tell (End of Turn):* Lightning arcs across Sparkrender's horns, illuminating the rotunda in eerie blue starlight as he focuses his gaze on metal-armored foes.
+      * *Counterplay:* Spread out at least 15 ft apart, or duck behind the marble telescope pillars for total cover.
+      * *Resolve (Start of Next Turn):* Lightning strikes the primary target: **DC 14 Dex Save** or take **16 (3d10) Lightning damage** (half on save). The arc leaps to 1 adjacent ally within 10 ft for **11 (2d10) lightning damage**.
+    * **Action 2: Talon Siphon Snatch (Dive & Drop)**
+      * *Tell (End of Turn):* Sparkrender banks low around the celestial dome, locking his razor talons onto the squishiest spellcaster in the backline.
+      * *Counterplay:* Ready an action to blast him as he swoops, or an ally steps in front to trigger an intercept reaction.
+      * *Resolve (Start of Next Turn):* Target makes **DC 14 Str/Dex Save** or is snatched into the air (15 ft up) and hurled onto the stones: **7 (2d6)** falling bludgeoning + **7 (2d6)** claw slashing damage and knocked **Prone**.
+  * **🩸 Stance 2: ≤ 50% HP (55 – 0 HP) [VOLCANIC COMET OVERCHARGE]:**
+    * **Action 3: Star-Atlas Leyline Detonation (Floor Eruption)**
+      * *Tell (End of Turn):* Sparkrender plunges his talons into the carved Star-Atlas floor glyphs; the leylines thrum with blinding magma-orange and electric-azure light.
+      * *Counterplay:* Climb atop the 4 Scholar Statues, telescope pedestals, or jump onto Thurible's back (DC 12 Athletics/Acrobatics) to get off the floor.
+      * *Resolve (Start of Next Turn):* The entire carved stone floor detonates: Creatures on the floor make **DC 14 Dex Save** or take **22 (3d10+4) Fire & Lightning damage** and are **Blinded for 1 round** (half damage and no blind on save).
+    * **Action 4: Desperation Comet Nova (Radial Blast)**
+      * *Tell (End of Turn):* Sparkrender wraps his azure wings tightly around his chest, drawing raw King-Killer Comet energy through the shattered rotunda skylight.
+      * *Counterplay:* Pour all attacks into him (dealing 25+ damage before resolution breaks the channel) or dive behind stone sarcophagi.
+      * *Resolve (Start of Next Turn):* A 30-ft radial plasma nova erupts: **DC 15 Con Save** or take **26 (4d8+8) Radiant/Lightning damage** and pushed 15 ft back (half on save).
+* **Actions & Attacks:**
+  * ⚔️ **Multiattack:** Makes 1 Bite attack (`+6 to hit`, **15 [2d10 + 4]** piercing + **7 [2d6]** lightning) and 1 Claw attack (`+6 to hit`, **11 [2d6 + 4]** slashing). When bloodied ≤ 50% HP, adds 1 Tail Lash attack!
+  * 🐉 **Tail Lash (⚠️ [Unlocked at ≤ 50% HP]):** `+6 to hit`, reach 10ft, **8 (1d8 + 4)** bludgeoning + pushed 10 ft away.
+  * ⚡ **Lightning Breath (Recharge 5-6):** 30ft line (5ft wide). **DC 14 DEX Save**. Takes **33 (6d10)** lightning damage on fail (half on save).
+  * 🌋 **Volcanic Overcharge Breath (Recharge 5-6 • ⚠️ [Unlocked at ≤ 50% HP]):** 30-ft line. Siphons Sharruth's magma! **DC 14 Dex Save** for **33 (4d10 lightning + 2d10 fire)** damage (half on save).
+  * ⚡ **Volcanic Plasma Discharge (Reaction • ⚠️ [Unlocked at ≤ 50% HP]):** When hit by a melee attack within 5 ft, lashes out with superheated plasma: attacker takes **7 (2d6)** fire/lightning damage unless passing **DC 14 Dex Save**.
+* 🧭 **Core Philosophy (Blue Box):** **Draconic Social Darwinism**. Chromatic dragons are the rightful apex tyrants of Toril; the weak exist only to fuel the ascension of the strong.
+* ⚡ **Immediate Active Dilemma (Pink Box):** The King-Killer Star comet window closes in hours; must align 5 effigies and execute Aidron's blood sacrifice to siphon Sharruth's magma flame.
+* ⚖️ **Moral Stand & RP Hooks (Green Box):** Snarl-laced, haughty arrogance. Refuses retreat until bloodied under 20 HP. *"Bow before the blood of Eldenemir, or be turned to glass!"*
+* 🎯 **DM Tactics & Combat Strategy (Yellow Box):** Opens combat with Lightning Breath from the air. Uses fly speed to stay out of melee reach, swooping down with Multiattack against isolated targets. When bloodied ≤ 50% HP, detonates the Star-Atlas leylines and unleashes Volcanic Breath!
 * 💎 **Direct Monster Drop:** ⚡ **Sparkrender's Azure Scale** (*Wyrmling Relic — Lightning Resist, +1 Lightning Attack/DC, +1d6 Surge 1/day*).
 
 #### 2. 👑 Aleitha, The Drowned Queen (Zombie Queen) — Medium Undead (CR 3 Boss)
@@ -413,6 +502,7 @@ graph TD
 | 💨 **Fume Smoke Flask** | **TACTICAL • Common Consumable** | Crafted from Fume Drakes | `20 GP (200 SP)` *(Craft: 10 GP + Gland)* | Thrown 20 ft. Creates 15-ft steam cloud for 1 min. DC 11 Con save or 1d6 fire + blinded inside. |
 | 🧲⚡ **The Galvanic Ley-Grounder (The "Spark-Tamer")** | **TACTICAL PYLON • Rare Wondrous Artifact** | Myla's Workshop (Runara Secret Commission) | `1,200 GP` *(Priceless Sanctuary Artifact)* | **Action to deploy into stone floor:** Creates a **20-ft Grounding Zone**. All allies inside gain **Lightning Resistance** and **Advantage on DEX Saves** vs breath weapons and electric traps. **Static Capacitor (Reaction):** When struck by lightning, stores charge; Bonus Action to discharge **`3d8 Thunder/Shock`** in a 15-ft cone (DC 13 Dex save) or empower next spell/attack! |
 | 🍾 **The Vintage of the Dawn Watch** | **BUFF • Sacred Relic (Attuned: Flubs)** | Sacramental Parish Heirloom | `Priceless Sacred Relic` | Refills daily with 4 blessed wine draughts. Toast grants **`1d4+2 Temp HP & Adv vs Fear/Poison`**. +1 to Divine Healing. Ancestral relic of Father Flubs. |
+| 🪈 **Drake-Master's Bone Whistle** | **WONDROUS ITEM • Uncommon** | Krag'zor the Dragon-Forged | `450 GP` | Action: Blow whistle to issue a commanding psychic chirp audible to reptiles and drakes within 120 ft. Grants **Advantage on Animal Handling checks** to tame or pacify drakes. 1/Day: Command a friendly drake or reptilian ally to make one reaction attack or take the Dash action immediately. |
 
 #### ⚔️ 3. WEAPONS & OFFENSIVE ARSENAL
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
@@ -426,6 +516,7 @@ graph TD
 | 💣 **Spitfire Flask (2 Flasks)** | **EXPLOSIVE • Common** | Transferred to New Hero | `25 GP (250 SP) / flask` | Thrown 20 ft. Explodes in 5-ft radius dealing **`2d4 Fire Damage`** (DC 11 Dex save for half). |
 | 🏹 **Heavy Crossbow** | **WEAPON • Martial Ranged** | Neverwinter Armory (Varnoth) | `50 GP` | **+2 to hit, 1d10 Piercing** (Range 100/400 ft, Heavy, Two-Handed, Loading, 20 Bolts). |
 | 💍 **Gilded Gallows Ring** | **OFFENSIVE • Uncommon (Attune)** | Tarak's former lockbox | `250 GP` | **+1 to Sleight of Hand** & Adv to hide items. 1/Day: Weapon deals **`+1d6 poison`** + speed 0 (DC 12 Con). |
+| 🪄⚔️ **The Wyrm-Breaker (+1 Arcane Quarterstaff / Spellblade)** | **WEAPON • Rare (Attune: Spellcaster)** | Krag'zor the Dragon-Forged | `1,400 GP` | Versatile (+1 to hit & damage: `1d8+1` / `1d10+1` bludgeoning + `1d6` lightning). Serves as an arcane focus. Grants **+1 to Spell Attack rolls and Spell Save DC**. **Draconic Discharge (3 charges/day):** When you hit with a melee attack or cast a leveled evocation spell, expend 1 charge to deal an extra **`2d6 lightning or fire damage`** and push the target 10 ft away (DC 15 Str negates push). |
 
 #### 🛡️ 4. ARMOR, SHIELDS & PROTECTIVE GEAR
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
@@ -443,6 +534,7 @@ graph TD
 | 💍 **Ring of Resistance** | **DEFENSE • Rare (Attune)** | Owlbear Lair / Sea Hag Cove | `500 GP` | Grants damage resistance to one chosen damage type (Cold, Fire, or Lightning). |
 | 🏮 **Myconid Spore-Lantern** | **UTILITY • Uncommon** | Gifted by Sinensa (Seagrow Caves) | `100 GP` | 30ft violet light; **+2 Perception** in dark. 1/Day: Ally gains Advantage vs Charmed/Frightened. |
 | 🔔 **Astalagan's Resonant Chime** | **DEFENSE • Uncommon** | Bahamut Altar / Cemetery | `200 GP` | 1/Day: Undead within 30 ft make **DC 13 WIS Save** or speed halved + lose reactions (1 min). |
+| 🥋 **Mantle of the Scale-Shatterer** | **WONDROUS ITEM • Rare (Attune)** | Krag'zor the Dragon-Forged | `1,200 GP` | Woven from scorched drake hide and draconic runes. Grants **+1 to AC**, **Resistance to Fire and Lightning damage**. **Elemental Surge (1/Short Rest Reaction):** When taking fire or lightning damage, absorb part of the blow to gain **Advantage** on your next attack roll or spell attack before the end of your next turn. |
 
 #### 👑 5. LEGENDARY DRAGON SCALES, QUEST KEYS & LOGBOOKS
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
@@ -455,6 +547,7 @@ graph TD
 | 🗺️ **Crude Charcoal Cave Map** | **QUEST MAP • Common** | Kobold Spitfire Camp Firepit | `5 GP (50 SP barter)` | Dried fish skin showing high tides, mushroom rapport clues, and drake nest routes. |
 | 📖 **Lianna's Draconic Geothermal Folio** | **SCHOLARLY FOLIO • Rare** | Seagrow Caves B6 Ledge | `50 GP (500 SP)` | Scholar notes on Sharruth's volcanic core, observatory constellation bridge, and 3 metallic scales. |
 | ⚡ **Sparkrender's Obsidian Comet Ritual Slates** | **DRACONIC JOURNAL • Rare** | Observatory Area D2/D4 | `100 GP (1,000 SP)` | Obsidian slates detailing the King-Killer Comet alignment, Aidron's sacrifice, and ascension tactics. |
+| 📜 **Krag'zor's War Journal & Ambition Slates** | **QUEST MANUSCRIPT • Rare** | Krag'zor's Satchel (Moonstone Bridge) | `Priceless Story Intel` | Tattered draconic parchment detailing Sparkrender's alignment ritual at the Observatory, Runara's capture, and Krag'zor's plan to assassinate Sparkrender after the comet leylines unlock. Reveals Sparkrender's weakness when grounded and his breath overcharge at ≤50% HP! |
 | 🔑 **Moonstone Key** | **QUEST KEY • Rare** | Elder Runara | `Priceless Sanctuary Key` | Hexagonal prism. Activates hard-light bridge to Clifftop Observatory & Aidron's cage. |
 
 ---
@@ -495,6 +588,13 @@ graph TD
 > *[Engraved in gilded holy lettering along the rim of the sacramental ceramic vessel]*
 > 
 > *« May the living water of Eldath soothe every bitter grief, and the radiant dawn of Lathander ignite hope in the darkest night. Pour fellowship with an open heart; in unity, no shadow shall prevail. »*
+
+#### 6. 📜 Krag'zor's War Journal & Ambition Slates
+> *[Charred drake-hide parchment scribed in fierce, jagged Draconic script with diagrams of staff conduits and leyline arcs]*
+> 
+> *"Let the whelps cower before the dragons. I, Krag'zor, carved my own destiny with the Wyrm-Breaker. Sparkrender thinks he will claim the comet's crown alone? A fool blinded by his blue-scaled pride.*
+> 
+> *I hold the Moonstone Bridge. No one passes into the observatory until the astral alignment begins. Once Sparkrender drains the leyline conduits and exhausts his thunderous wrath, I shall shatter his scales and seize the primordial power for myself! A kobold shall stand above dragons. The world will whisper my name with terror and reverence!"*
 
 ---
 

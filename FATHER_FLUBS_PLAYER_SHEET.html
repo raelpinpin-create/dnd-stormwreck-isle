@@ -1715,7 +1715,7 @@
         "🏴‍☠️ 1x Pirate Hat",
         "🔮 1x \"3-Circle\" Amulet",
         "🍷 1x Elixir of Health (Legendary)",
-        "🧪 6x Potion of Healing",
+        "🧪 8x Potion of Healing",
         "🐉 2x Diluted Drake Blood Potion",
         "🛡️ Kobold Shield",
         "📜 Aleitha's Farewell Letter"
@@ -2051,9 +2051,9 @@
     // ==========================================
     let characterLevel = 5; // Current Character Level (Level 5 Upgraded)
     let spellSlots = {
-        1: { current: 4, max: 4, reqLevel: 1 },
-        2: { current: 3, max: 3, reqLevel: 3 },
-        3: { current: 2, max: 2, reqLevel: 5 }
+        1: { current: 3, max: 4, reqLevel: 1 },
+        2: { current: 2, max: 3, reqLevel: 3 },
+        3: { current: 1, max: 2, reqLevel: 5 }
     };
 
     function renderSpellSlots() {
@@ -3614,20 +3614,20 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     }
 
     function getStoredItems() {
-        let stored = localStorage.getItem('dnd_inv_flubs_v24');
+        let stored = localStorage.getItem('dnd_inv_flubs_v25');
         if (!stored) {
-            for (let i = 1; i <= 23; i++) localStorage.removeItem(`dnd_inv_flubs_v${i}`);
+            for (let i = 1; i <= 24; i++) localStorage.removeItem(`dnd_inv_flubs_v${i}`);
             localStorage.removeItem('dnd_inv_flubs');
             localStorage.removeItem('dnd_delta_add_flubs');
             localStorage.removeItem('dnd_delta_rem_flubs');
-            localStorage.setItem('dnd_inv_flubs_v24', JSON.stringify(defaultItems));
+            localStorage.setItem('dnd_inv_flubs_v25', JSON.stringify(defaultItems));
             return [...defaultItems];
         }
         return JSON.parse(stored);
     }
 
     function saveStoredItems(items) {
-        localStorage.setItem('dnd_inv_flubs_v24', JSON.stringify(items));
+        localStorage.setItem('dnd_inv_flubs_v25', JSON.stringify(items));
     }
 
     // Universal Item Quantity Parsing & Formatting Engine

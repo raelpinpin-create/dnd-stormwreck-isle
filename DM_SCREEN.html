@@ -3002,6 +3002,34 @@
                                 <td><strong>+1 to hit & dmg</strong> (1d6+3 slash) and grants a <strong>30 ft swimming speed</strong>.</td>
                             </tr>
                             <tr>
+                                <td><span style="color:#fde047; font-weight:700; cursor:pointer; text-decoration:underline dotted rgba(253,224,71,0.6);" onclick="openItemModal('wyrm_breaker')">🗡️ The Wyrm-Breaker (+1 Staff) 👆</span></td>
+                                <td><span class="tag tag-legendary">WEAPON / FOCUS • Rare</span></td>
+                                <td>Krag'zor Mini-Boss Drop</td>
+                                <td style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#facc15;">1,200 GP</td>
+                                <td><strong>+1 to hit & dmg</strong> (1d8+1/1d10+1), <strong>+1 Spell DC & Atk</strong>, 3 charges for <strong>+2d6 Lightning/Fire Smite</strong> + 10-ft push.</td>
+                            </tr>
+                            <tr>
+                                <td><span style="color:#93c5fd; font-weight:700; cursor:pointer; text-decoration:underline dotted rgba(147,197,253,0.6);" onclick="openItemModal('drake_whistle')">📯 Drake-Master's Bone Whistle 👆</span></td>
+                                <td><span class="tag tag-rare">WONDROUS • Uncommon</span></td>
+                                <td>Krag'zor Mini-Boss Drop</td>
+                                <td style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#facc15;">350 GP</td>
+                                <td><strong>1/day Gust of Wind (DC 13)</strong>. Advantage on Animal Handling vs reptiles/drakes/dragons.</td>
+                            </tr>
+                            <tr>
+                                <td><span style="color:#fdba74; font-weight:700; cursor:pointer; text-decoration:underline dotted rgba(253,186,116,0.6);" onclick="openItemModal('mantle_scale_shatterer')">🧥 Mantle of the Scale-Shatterer 👆</span></td>
+                                <td><span class="tag tag-rare">ARMOR • Rare Mantle</span></td>
+                                <td>Krag'zor Mini-Boss Drop</td>
+                                <td style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#facc15;">850 GP</td>
+                                <td>Choose <strong>Fire or Lightning Resistance</strong> at each dawn. Advantage on Intimidation vs reptilians.</td>
+                            </tr>
+                            <tr>
+                                <td><span style="color:#cbd5e1; font-weight:700; cursor:pointer; text-decoration:underline dotted rgba(203,213,225,0.6);" onclick="openItemModal('kragzor_journal')">📜 Krag'zor's Personal War Journal 👆</span></td>
+                                <td><span class="tag tag-common">CLUE • Unique Lore</span></td>
+                                <td>Krag'zor's Pouch</td>
+                                <td style="font-family:'JetBrains Mono'; font-size:0.78rem; color:#facc15;">Priceless</td>
+                                <td>Reveals DC 15 Explosive Rune Trap location in Area D4 study; confirms Sparkrender hoards Gold/Silver scales.</td>
+                            </tr>
+                            <tr>
                                 <td><span style="color:#fca5a5; font-weight:700; cursor:pointer; text-decoration:underline dotted rgba(252,165,165,0.6);" onclick="openItemModal('azure_wolf_longsword')">⚔️ Azure Wolf Masterwork Longsword 👆</span></td>
                                 <td><span class="tag tag-weapon">WEAPON • Masterwork</span></td>
                                 <td>General Varnoth's Military Issue</td>
@@ -5391,6 +5419,46 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             effect: "• <strong>+4 to hit, 1d8+2 Slashing (Versatile 1d10+2)</strong>.<br>• <strong>Slasher Slow:</strong> Reduces target speed by 10 ft on hit.<br>• Attacks count as magical for overcoming resistances.",
             placement: "Bound to Vaelith Frostborne."
         },
+        wyrm_breaker: {
+            name: "🗡️ The Wyrm-Breaker (+1 War-Staff)",
+            category: "WEAPON / FOCUS • Rare Legendary Focus",
+            tagClass: "tag-legendary",
+            location: "Krag'zor the Dragon-Forged Boss Drop (Starlight Bridge)",
+            cost: "1,200 GP",
+            desc: "A massive, charred ironwood two-handed great-staff capped with a fossilized apex dragon tooth and wrapped in drake sinew. Pulses with crackling crimson runes.",
+            effect: "• <strong>+1 bonus to Attack and Damage rolls</strong> (1d8+1 bludgeoning, versatile 1d10+1).<br>• <strong>+1 to Spell Attack rolls & Spell Save DC</strong>.<br>• <strong>Wyrm-Smite (3 Charges/Long Rest):</strong> On a hit, expend 1 charge to deal an extra <strong>2d6 Lightning or Fire damage</strong> and push the target 10 ft back!",
+            placement: "Claimable by defeating or bargaining with Krag'zor at the Starlight Bridge."
+        },
+        drake_whistle: {
+            name: "📯 Drake-Master's Bone Whistle",
+            category: "WONDROUS ITEM • Uncommon Relic",
+            tagClass: "tag-rare",
+            location: "Krag'zor the Dragon-Forged Boss Drop",
+            cost: "350 GP",
+            desc: "A brass and drake-bone whistle carved with reptilian warning sigils.",
+            effect: "• <strong>Gale Call (1/Long Rest):</strong> Exhales a blast of draconic wind (casts <em>Gust of Wind</em>, DC 13).<br>• <strong>Beast Mastery:</strong> Grants Advantage on Wisdom (Animal Handling) checks when interacting with reptiles, drakes, and dragons.",
+            placement: "Carried by Krag'zor to command his Titan Crag Drake Gorefang."
+        },
+        mantle_scale_shatterer: {
+            name: "🧥 Mantle of the Scale-Shatterer",
+            category: "ARMOR / CLOAK • Rare Draconic Mantle",
+            tagClass: "tag-rare",
+            location: "Krag'zor the Dragon-Forged Boss Drop",
+            cost: "850 GP",
+            desc: "A flowing mantle sewn from overlapping crag-drake hide, fastened with a charred dragonbone brooch.",
+            effect: "• <strong>Elemental Attunement:</strong> At each dawn, choose <strong>Fire Resistance</strong> or <strong>Lightning Resistance</strong> until your next dawn.<br>• <strong>Draconic Stature:</strong> Grants Advantage on Charisma (Intimidation) checks vs. reptilian humanoids.",
+            placement: "Worn by Krag'zor the Dragon-Forged."
+        },
+        kragzor_journal: {
+            name: "📜 Krag'zor's Personal War Journal",
+            category: "STORY LORE / CLUE • Unique Parchment",
+            tagClass: "tag-rare",
+            location: "Krag'zor's Belt Pouch (Starlight Bridge)",
+            cost: "Priceless Tactical Intelligence",
+            desc: "A scorched hide journal written in sharp Draconic runes detailing Krag'zor's journey, his disdain for weak kobolds, and his tactical reconnaissance of the Clifftop Observatory.",
+            effect: "• <strong>Trap Clearance:</strong> Automatically reveals the DC 15 Explosive Rune Trap location on the desk in Area D4.<br>• <strong>Sparkrender's Secret:</strong> Confirms Sparkrender is hoarding both the Gold and Silver scales in the upper vaults and does not care about waking Sharruth.",
+            placement: "Discovered on Krag'zor or handed over if spared at ≤ 20 HP."
+        },
         sling_ridge_runner: {
             name: "🏹 Sling of the Ridge-Runner (+1)",
             category: "WEAPON • Uncommon Magical Sling",
@@ -5764,77 +5832,293 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         modal.showModal();
     }
 
+    // MODAL DICE LOGGING & ROLLING ENGINE (BLIGHTBORNE / MAL'GOROTH STANDARD)
+    function logRoll(text) {
+        const modalEl = document.getElementById('modal-dice-log');
+        if (modalEl) modalEl.innerHTML = text;
+
+        const diceLogEl = document.getElementById('dice-log');
+        if (diceLogEl) diceLogEl.innerHTML = text;
+    }
+
+    function clearModalLog() {
+        const modalEl = document.getElementById('modal-dice-log');
+        if (modalEl) modalEl.innerHTML = '🎲 ROLL RESULT: Ready for rolls... (Click any button below)';
+    }
+
+    function rollDie(sides) {
+        const r = Math.floor(Math.random() * sides) + 1;
+        logRoll(`🎲 Rolled d${sides}: <strong style="color:var(--accent-gold); font-size:1.05rem;">${r}</strong>`);
+    }
+
+    function rollRecharge(name) {
+        const r = Math.floor(Math.random() * 6) + 1;
+        const res = r >= 5 ? '⚡ <strong style="color:#4ade80;">RECHARGED! (5-6)</strong>' : '❌ <span style="color:#8b9bb4;">Not Recharged (Roll: ' + r + ')</span>';
+        logRoll(`🎲 Recharge for ${name}: d6 = <strong>${r}</strong> ➔ ${res}`);
+    }
+
+    function parseDice(notation) {
+        const match = notation.match(/(\d+)d(\d+)([+-]\d+)?/);
+        if (!match) return { count: 1, sides: 6, mod: 0 };
+        return {
+            count: parseInt(match[1]),
+            sides: parseInt(match[2]),
+            mod: match[3] ? parseInt(match[3]) : 0
+        };
+    }
+
+    function rollAttack(name, atkBonus, baseDmg, extraDmg, type) {
+        const d20 = Math.floor(Math.random() * 20) + 1;
+        const total = d20 + atkBonus;
+        if (d20 === 20) {
+            logRoll(`💥 <span class="crit-badge" style="background:#dc2626; color:white; padding:2px 6px; border-radius:4px; font-weight:bold;">NAT 20 CRIT!</span> ${name} Attack: <strong>${total}</strong> to hit! ➔ <em>Brutal Crit: Max Base + 1 Roll + Mod!</em>`);
+        } else if (d20 === 1) {
+            logRoll(`💀 <span class="crit-badge" style="background:#475569; color:white; padding:2px 6px; border-radius:4px; font-weight:bold;">NAT 1 FUMBLE!</span> ${name} Attack misses completely!`);
+        } else {
+            logRoll(`🎲 ${name} Attack: d20(${d20}) + ${atkBonus} = <strong style="color:var(--accent-gold); font-size:1.05rem;">${total}</strong> to hit.`);
+        }
+    }
+
+    function rollDamage(name, baseNotation, extraNotation, maxBase, type) {
+        const b = parseDice(baseNotation);
+        let sum = b.mod;
+        let rolls = [];
+        for (let i = 0; i < b.count; i++) {
+            const r = Math.floor(Math.random() * b.sides) + 1;
+            rolls.push(r);
+            sum += r;
+        }
+        let extraSum = 0;
+        if (extraNotation && extraNotation !== '0') {
+            const e = parseDice(extraNotation);
+            extraSum += e.mod;
+            for (let i = 0; i < e.count; i++) {
+                extraSum += Math.floor(Math.random() * e.sides) + 1;
+            }
+        }
+        const total = sum + extraSum;
+        logRoll(`💥 ${name} Damage: [${rolls.join('+')}]${b.mod ? (b.mod >= 0 ? '+' : '') + b.mod : ''}${extraSum > 0 ? ' + extra(' + extraSum + ')' : ''} = <strong style="color:#f87171; font-size:1.1rem;">${total} ${type}</strong> dmg.`);
+    }
+
+    function adjustMonsterHp(key, delta) {
+        const m = MONSTER_DATA[key];
+        if (!m) return;
+        const maxHp = m.maxHp || m.hpNum || parseInt(m.hp) || 50;
+        if (m.currentHp === undefined) m.currentHp = maxHp;
+        
+        m.currentHp = Math.max(0, Math.min(maxHp, m.currentHp + delta));
+        
+        const valEl = document.getElementById('monster-hp-val');
+        const barEl = document.getElementById('monster-hp-bar');
+        if (valEl) valEl.innerText = `${m.currentHp} / ${maxHp}`;
+        if (barEl) {
+            const pct = (m.currentHp / maxHp) * 100;
+            barEl.style.width = `${pct}%`;
+            if (pct <= 25) {
+                barEl.style.background = '#dc2626';
+            } else if (pct <= 50) {
+                barEl.style.background = '#f59e0b';
+            } else {
+                barEl.style.background = 'linear-gradient(90deg, #10b981, #34d399)';
+            }
+        }
+        logRoll(`❤️ ${m.name} HP updated: <strong style="color:var(--accent-gold);">${m.currentHp} / ${maxHp}</strong> (${delta >= 0 ? '+' + delta : delta})`);
+    }
+
+    // MONSTER MODAL OPENING FUNCTION (EXACT BLIGHTBORNE & MAL'GOROTH FORMAT)
     function openMonsterModal(key) {
         const m = MONSTER_DATA[key];
         if (!m) return;
         const modal = document.getElementById('dm-modal');
-        document.getElementById('modal-title').innerHTML = `⚔️ Monster Stat Card: ${m.name}`;
-        
+        document.getElementById('modal-title').innerHTML = `⚔️ ${m.name} — Stat Block & Dossier`;
+        clearModalLog();
+
+        const maxHp = m.maxHp || m.hpNum || parseInt(m.hp) || 50;
+        const curHp = m.currentHp !== undefined ? m.currentHp : maxHp;
+
+        // Stat string calculation
+        let statStr = '';
+        if (m.stats && typeof m.stats === 'object') {
+            statStr = `STR ${m.stats.str} (${m.stats.str >= 10 ? '+' : ''}${Math.floor((m.stats.str - 10)/2)}) | DEX ${m.stats.dex} (${m.stats.dex >= 10 ? '+' : ''}${Math.floor((m.stats.dex - 10)/2)}) | CON ${m.stats.con} (${m.stats.con >= 10 ? '+' : ''}${Math.floor((m.stats.con - 10)/2)}) | INT ${m.stats.int} (${m.stats.int >= 10 ? '+' : ''}${Math.floor((m.stats.int - 10)/2)}) | WIS ${m.stats.wis} (${m.stats.wis >= 10 ? '+' : ''}${Math.floor((m.stats.wis - 10)/2)}) | CHA ${m.stats.cha} (${m.stats.cha >= 10 ? '+' : ''}${Math.floor((m.stats.cha - 10)/2)})`;
+        } else {
+            statStr = m.stats || 'STR 10 (+0) | DEX 10 (+0) | CON 10 (+0) | INT 10 (+0) | WIS 10 (+0) | CHA 10 (+0)';
+        }
+
         let html = `
-            <div style="background:#1b1419; border-left:3px solid var(--accent-crimson); padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:12px;">
-                <strong style="color:#fca5a5; font-size:0.95rem;">${m.name}</strong>
-                <p style="font-size:0.78rem; color:var(--text-muted); margin-top:2px;">${m.type} • CR: <span style="color:var(--accent-gold); font-weight:bold;">${m.cr}</span> • Initiative: <span style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">${m.init || '+0'}</span></p>
+            <!-- TOP IDENTITY CARD -->
+            <div style="background:#141b2b; border-left:3px solid var(--accent-gold); padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+                <div>
+                    <strong style="color:var(--accent-gold-soft); font-size:1.02rem;">${m.icon || '⚔️'} ${m.name}</strong>
+                    <p style="font-size:0.78rem; color:var(--text-muted); margin-top:2px;">${m.type} • Lineage: <span style="color:var(--accent-gold);">${m.lineage || m.rank || 'Stormwreck Isle'}</span></p>
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.82rem; color:#86efac; font-weight:700; font-family:'JetBrains Mono';">${m.cr}</span>
+                    <p style="font-size:0.76rem; color:#fca5a5; font-family:'JetBrains Mono'; margin-top:2px;">Initiative: ${m.init || '+0'}</p>
+                </div>
             </div>
 
-            ${m.philosophy ? `
-                <h4>🧭 Philosophy & Creature Mindset</h4>
-                <div style="background:#0c1524; border-left:3px solid #38bdf8; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; color:#e0f2fe; line-height:1.4;">
-                    ${m.philosophy}
-                </div>
-            ` : ''}
+            <!-- BOXED MONOSPACE STAT BAR STRIP -->
+            <div class="stat-bar-strip">
+                ${statStr}
+            </div>
+            <div style="font-size:0.75rem; color:var(--text-muted); text-align:center; margin-bottom:12px;">
+                ${m.details || m.senses || 'Darkvision 60 ft., Passive Perception 12'}
+            </div>
 
-            ${m.problem ? `
-                <h4>⚡ Immediate Active Dilemma / Conflict</h4>
-                <div style="background:#1c1417; border-left:3px solid #f87171; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; color:#fecaca; line-height:1.4;">
-                    ${m.problem}
+            <!-- VITALS & HP CONTROLLER -->
+            <div class="vitals-grid-card">
+                <div class="vitals-stats-row">
+                    <div class="vital-num-box"><div class="label">AC</div><div class="val">${m.ac}</div></div>
+                    <div class="vital-num-box"><div class="label">HP</div><div class="val" id="monster-hp-val">${curHp} / ${maxHp}</div></div>
+                    <div class="vital-num-box"><div class="label">SPEED</div><div class="val" style="font-size:0.92rem;">${m.speed}</div></div>
+                    <div class="vital-num-box"><div class="label">INITIATIVE</div><div class="val" style="color:#86efac;">${m.init || '+0'}</div></div>
                 </div>
-            ` : ''}
 
-            ${m.morals ? `
-                <h4>⚖️ Moral Stand, Weakness & Roleplay Hooks</h4>
-                <div style="background:#131d20; border-left:3px solid #34d399; padding:8px 12px; border-radius:0 5px 5px 0; margin-bottom:10px; font-size:0.82rem; color:#d1fae5; line-height:1.4;">
-                    ${m.morals}
+                <div class="hp-bar-bg">
+                    <div class="hp-bar-fill" id="monster-hp-bar" style="width: ${(curHp / maxHp) * 100}%;"></div>
                 </div>
-            ` : ''}
 
-            <h4>👁️ Creature Visual & Lore Description</h4>
+                <div class="hp-steppers-row">
+                    <div style="display:flex; gap:4px;">
+                        <button class="btn-step" onclick="adjustMonsterHp('${key}', -10)">-10</button>
+                        <button class="btn-step" onclick="adjustMonsterHp('${key}', -5)">-5</button>
+                        <button class="btn-step" onclick="adjustMonsterHp('${key}', -1)">-1</button>
+                    </div>
+                    <span style="font-size:0.74rem; color:var(--text-muted); font-family:'JetBrains Mono';">Live Damage / Heal</span>
+                    <div style="display:flex; gap:4px;">
+                        <button class="btn-step btn-step-heal" onclick="adjustMonsterHp('${key}', 1)">+1</button>
+                        <button class="btn-step btn-step-heal" onclick="adjustMonsterHp('${key}', 5)">+5</button>
+                        <button class="btn-step btn-step-heal" onclick="adjustMonsterHp('${key}', 10)">+10</button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // POINTY HAT: BATTLEFIELD ACTIONS (FOR KRAG'ZOR, SPARKRENDER, ETC.)
+        if (m.battlefieldActions) {
+            html += `
+                <div style="background:#090d14; border:1px solid #1e293b; border-radius:6px; padding:12px; margin-bottom:14px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
+                        <div style="font-family:'Cinzel',serif; font-weight:700; color:var(--accent-gold); font-size:0.95rem;">
+                            ⚔️ BATTLEFIELD ACTIONS (Pointy Hat Framework)
+                        </div>
+                        <span style="font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:#94a3b8;">
+                            Tell (End of Turn) ➔ Counterplay ➔ Resolve (Start of Next Turn)
+                        </span>
+                    </div>
+
+                    ${m.battlefieldActions.highHp ? `
+                        <div style="font-family:'Cinzel',serif; font-size:0.82rem; font-weight:700; color:#38bdf8; margin:10px 0 6px 0; border-bottom:1px solid #1e293b; padding-bottom:3px;">
+                            🎭 HEALTH TRIGGER: > 50% HP (Full Power / Stance 1)
+                        </div>
+                        ${m.battlefieldActions.highHp.map(act => `
+                            <div style="background:#0e131d; border:1px solid #1e293b; border-left:3px solid #38bdf8; border-radius:0 4px 4px 0; padding:8px 10px; margin-bottom:8px;">
+                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; flex-wrap:wrap; gap:6px;">
+                                    <strong style="color:#e2e8f0; font-size:0.82rem;">${act.name}</strong>
+                                    <div style="display:flex; gap:4px;">
+                                        ${act.buttons ? act.buttons.map(b => `
+                                            <button class="btn-roll ${b.isDmg ? 'btn-roll-dmg' : ''}" onclick="${b.func}">${b.label}</button>
+                                        `).join('') : ''}
+                                    </div>
+                                </div>
+                                <p style="font-size:0.75rem; color:#94a3b8; margin:0; line-height:1.4;">
+                                    • <strong>Tell:</strong> ${act.tell}<br>
+                                    • <strong>Counterplay:</strong> ${act.counterplay}<br>
+                                    • <strong>Resolve:</strong> ${act.resolve}
+                                </p>
+                            </div>
+                        `).join('')}
+                    ` : ''}
+
+                    ${m.battlefieldActions.lowHp ? `
+                        <div style="font-family:'Cinzel',serif; font-size:0.82rem; font-weight:700; color:#ef4444; margin:12px 0 6px 0; border-bottom:1px solid #2d1519; padding-bottom:3px;">
+                            🩸 HEALTH TRIGGER: ≤ 50% HP (Bloodied / Desperation Stance)
+                        </div>
+                        ${m.battlefieldActions.lowHp.map(act => `
+                            <div style="background:#140e11; border:1px solid #2d1519; border-left:3px solid #ef4444; border-radius:0 4px 4px 0; padding:8px 10px; margin-bottom:8px;">
+                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; flex-wrap:wrap; gap:6px;">
+                                    <strong style="color:#fca5a5; font-size:0.82rem;">${act.name}</strong>
+                                    <div style="display:flex; gap:4px;">
+                                        ${act.buttons ? act.buttons.map(b => `
+                                            <button class="btn-roll ${b.isDmg ? 'btn-roll-dmg' : ''}" onclick="${b.func}">${b.label}</button>
+                                        `).join('') : ''}
+                                    </div>
+                                </div>
+                                <p style="font-size:0.75rem; color:#fca5a5; margin:0; line-height:1.4;">
+                                    • <strong>Tell:</strong> ${act.tell}<br>
+                                    • <strong>Counterplay:</strong> ${act.counterplay}<br>
+                                    • <strong>Resolve:</strong> ${act.resolve}
+                                </p>
+                            </div>
+                        `).join('')}
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        // ACTIONS & ATTACKS CARD
+        html += `
+            <div class="action-container-card">
+                <div style="font-family:'Cinzel',serif; font-weight:700; color:var(--accent-gold); font-size:0.92rem; display:flex; align-items:center; gap:6px;">
+                    ⚔️ Actions, Spells & Combat Features
+                </div>
+
+                ${m.actions.map(act => {
+                    if (typeof act === 'object') {
+                        return `
+                            <div class="action-row-item">
+                                <div class="action-row-top">
+                                    <strong style="color:var(--text-bright); font-size:0.86rem;">${act.name}</strong>
+                                    <div style="display:flex; gap:4px; flex-wrap:wrap;">
+                                        ${act.buttons ? act.buttons.map(b => `
+                                            <button class="btn-roll ${b.isDmg ? 'btn-roll-dmg' : ''}" onclick="${b.func}">${b.label}</button>
+                                        `).join('') : ''}
+                                    </div>
+                                </div>
+                                <p style="font-size:0.78rem; color:var(--text-muted); margin:0; line-height:1.4;">${act.desc}</p>
+                            </div>
+                        `;
+                    } else {
+                        return `
+                            <div class="action-row-item">
+                                <p style="font-size:0.80rem; color:var(--text-bright); margin:0; line-height:1.4;">${act}</p>
+                            </div>
+                        `;
+                    }
+                }).join('')}
+            </div>
+
+            <!-- VISUAL DESCRIPTION -->
+            <h4>👁️ CREATURE VISUAL & LORE DESCRIPTION</h4>
             <p style="font-style:italic; color:#e2e8f0; margin-bottom:12px;">${m.desc}</p>
 
-            <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:8px; margin-bottom:12px; text-align:center;">
-                <div class="pc-stat-badge"><label>INITIATIVE</label><span style="color:#86efac;">${m.init || '+0'}</span></div>
-                <div class="pc-stat-badge"><label>ARMOR CLASS</label><span style="color:#fca5a5;">${m.ac}</span></div>
-                <div class="pc-stat-badge"><label>HIT POINTS</label><span style="color:#fca5a5;">${m.hp}</span></div>
-                <div class="pc-stat-badge"><label>SPEED</label><span style="color:#fca5a5; font-size:0.92rem;">${m.speed}</span></div>
+            <!-- PHILOSOPHY (BLUE BOX) -->
+            <h4>🧭 MORAL & CREATURE PHILOSOPHY</h4>
+            <div class="blue-box">${m.philosophy}</div>
+
+            <!-- PURPOSE / DILEMMA (PINK BOX) -->
+            <h4>⚡ PURPOSE & IMMEDIATE DILEMMA / CONFLICT</h4>
+            <div class="pink-box">${m.problem}</div>
+
+            <!-- THINGS TO KNOW / WEAKNESSES (GREEN BOX) -->
+            <h4>⚖️ THINGS NEED TO KNOW / MORAL STAND & WEAKNESSES</h4>
+            <div class="green-box">${m.morals}</div>
+
+            <!-- DM TACTICS (YELLOW BOX) -->
+            <h4>🎯 DM TACTICS & COMBAT STRATEGY</h4>
+            <div class="yellow-box">${m.tactics}</div>
+
+            <!-- LOOT DROP TABLE -->
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; border-bottom:1px solid var(--border-color); padding-bottom:4px;">
+                <h4 style="margin:0; border:none;">🎲 POSSIBLE LOOT DROP TABLE</h4>
+                <button class="btn-roll btn-roll-dmg" onclick="rollLootTable('${key}')">🎲 Roll Loot Drop</button>
             </div>
-
-            <div style="background:#090e18; border:1px solid var(--border-color); padding:8px; border-radius:5px; font-family:'JetBrains Mono',monospace; font-size:0.78rem; margin-bottom:10px;">
-                <p style="color:var(--accent-gold); text-align:center;">${m.stats}</p>
-                <p style="color:var(--text-muted); font-size:0.74rem; text-align:center; margin-top:4px;">${m.senses}</p>
-            </div>
-
-            <h4>🧠 Passives & Traits</h4>
-            <ul style="padding-left:18px; margin-bottom:10px;">
-                ${m.traits.map(t => `<li style="margin-bottom:4px;">${t}</li>`).join('')}
-            </ul>
-
-            <h4>⚔️ Actions & Attacks</h4>
-            <ul style="padding-left:18px; margin-bottom:10px;">
-                ${m.actions.map(a => `<li style="margin-bottom:4px;">${a}</li>`).join('')}
-            </ul>
-
-            <h4>🎯 DM Tactics & Combat Strategy</h4>
-            <div class="modal-dm-note">${m.tactics}</div>
-
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px; border-bottom:1px solid var(--border-color); padding-bottom:4px;">
-                <h4 style="margin:0; border:none;">🎲 Possible Loot Drop Table</h4>
-                <button class="roll-btn crimson" onclick="rollLootTable('${key}')">🎲 Roll Loot Drop</button>
-            </div>
-            <ul id="monster-loot-list" style="padding-left:18px; margin-top:6px;">
+            <ul style="padding-left:18px; margin-top:8px; font-size:0.82rem; color:#cbd5e1;">
                 ${m.lootTable.map(l => `<li style="margin-bottom:3px;">${l}</li>`).join('')}
             </ul>
-            <div id="loot-roll-result" style="display:none; background:#090e18; border:1px solid var(--border-color); padding:8px 12px; border-radius:5px; margin-top:8px; font-family:'JetBrains Mono',monospace; font-size:0.82rem; color:#86efac;"></div>
+            <div id="loot-roll-result" style="display:none; background:#090e18; border:1px solid var(--accent-gold-dark); padding:8px 12px; border-radius:5px; margin-top:8px; font-family:'JetBrains Mono',monospace; font-size:0.82rem; color:#86efac;"></div>
         `;
-        
+
         document.getElementById('modal-content').innerHTML = html;
         modal.showModal();
     }
