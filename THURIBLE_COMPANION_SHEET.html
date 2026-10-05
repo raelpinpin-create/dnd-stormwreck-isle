@@ -389,14 +389,14 @@
             <div class="header-title">
                 <h1>🐍🔥 THURIBLE</h1>
                 <div style="font-size:0.75rem; color:#fed7aa; margin-top:2px;">
-                    Sacred Giant Fire Snake Mount & Battle Companion (Level 4 • Ridden by Father Flubs)
+                    Sacred Giant Fire Snake Mount & Battle Companion (Level 5 • Ridden by Father Flubs)
                 </div>
             </div>
             <div class="pill-badge-group">
                 <button class="btn-act btn-act-pre" onclick="exportSheetState()" style="font-size:0.75rem; font-weight:700; color:var(--accent-orange); border:1px solid rgba(249, 115, 22, 0.4); display:flex; align-items:center; gap:4px; padding:4px 10px; cursor:pointer;" title="1-Click copy current HP and condition to clipboard">📋 Export Data</button>
                 <span class="pill-badge pill-flame">🔥 FIRE IMMUNE</span>
                 <span class="pill-badge pill-blue">❄️ AURA: COLD IMMUNITY</span>
-                <span class="pill-badge pill-gold">LARGE ELEMENTAL MOUNT (LVL 4)</span>
+                <span class="pill-badge pill-gold">LARGE ELEMENTAL MOUNT (LVL 5)</span>
             </div>
         </header>
 
@@ -428,7 +428,7 @@
         <div class="vitals-4box">
             <div class="vital-mini-box">
                 <span class="vital-mini-lbl">HIT POINTS</span>
-                <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">40/40</span>
+                <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">48/48</span>
             </div>
             <div class="vital-mini-box">
                 <span class="vital-mini-lbl">ARMOR CLASS</span>
@@ -537,11 +537,11 @@
                             </div>
                             <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">Melee Attack • 1 Action</div>
                         </div>
-                        <span style="font-size:0.68rem; color:#f97316;">+4 to Hit • 5ft Reach</span>
+                        <span style="font-size:0.68rem; color:#f97316;">+5 to Hit • 5ft Reach</span>
                     </div>
                     <div class="action-desc">Sinks blazing fangs into the foe. Deals <strong>1d6+2 Piercing + 1d6 Fire</strong> damage!</div>
                     <div style="display:flex; gap:4px; margin-top:4px;">
-                        <button class="btn-roll-action" onclick="rollThuribleBiteAttack()">🎯 Attack (+4)</button>
+                        <button class="btn-roll-action" onclick="rollThuribleBiteAttack()">🎯 Attack (+5)</button>
                         <button class="btn-roll-action btn-roll-dmg" onclick="rollThuribleBiteDmg()">💥 1d6+2 + 1d6 Fire</button>
                     </div>
                 </div>
@@ -555,12 +555,12 @@
                             </div>
                             <div style="font-size:0.67rem; font-weight:700; color:#f59e0b; margin-top:1px;">Melee Attack • 1 Action</div>
                         </div>
-                        <span style="font-size:0.68rem; color:#f59e0b;">+4 to Hit • Reach 10ft</span>
+                        <span style="font-size:0.68rem; color:#f59e0b;">+5 to Hit • Reach 10ft</span>
                     </div>
-                    <div class="action-desc">1d4+2 Bludgeon + 1d6 Fire. DC 13 STR save or <strong>Pushed 10 ft back</strong>!</div>
+                    <div class="action-desc">1d4+2 Bludgeon + 1d6 Fire. DC 14 STR save or <strong>Pushed 10 ft back</strong>!</div>
                     <div style="display:flex; gap:4px; margin-top:4px;">
-                        <button class="btn-roll-action" onclick="rollThuribleTailWhipAttack()">🎯 Whip (+4)</button>
-                        <button class="btn-roll-action btn-roll-dmg" onclick="rollThuribleTailWhipDmg()">💥 1d4+2 + 1d6 (10ft Push)</button>
+                        <button class="btn-roll-action" onclick="rollThuribleTailWhipAttack()">🎯 Whip (+5)</button>
+                        <button class="btn-roll-action btn-roll-dmg" onclick="rollThuribleTailWhipDmg()">💥 1d4+2 + 1d6 (10ft Push DC 14)</button>
                     </div>
                 </div>
 
@@ -573,11 +573,11 @@
                             </div>
                             <div style="font-size:0.67rem; font-weight:700; color:#ef4444; margin-top:1px;">Grapple / Restrain • 1 Action</div>
                         </div>
-                        <span style="font-size:0.68rem; color:#ef4444;">DC 13 Escape</span>
+                        <span style="font-size:0.68rem; color:#ef4444;">DC 14 Escape</span>
                     </div>
-                    <div class="action-desc">1d4+2 Bludgeon + 1d4 Fire. Target is Grappled & Restrained (DC 13 escape)!</div>
+                    <div class="action-desc">1d4+2 Bludgeon + 1d4 Fire. Target is Grappled & Restrained (DC 14 escape)!</div>
                     <div style="display:flex; gap:4px; margin-top:4px;">
-                        <button class="btn-roll-action" onclick="rollThuribleConstrictAttack()">🎯 Grab (+4)</button>
+                        <button class="btn-roll-action" onclick="rollThuribleConstrictAttack()">🎯 Grab (+5)</button>
                         <button class="btn-roll-action btn-roll-dmg" onclick="rollThuribleConstrictDmg()">💥 1d4+2 + 1d4 (Restrain)</button>
                     </div>
                 </div>
@@ -593,9 +593,9 @@
                         </div>
                         <span style="font-size:0.68rem; color:#38bdf8;">1 / Day</span>
                     </div>
-                    <div class="action-desc">Breathes soothing sacred warmth on an ally, granting 1d6+2 Temp HP.</div>
+                    <div class="action-desc">Breathes soothing sacred warmth on an ally, granting 1d6+3 Temp HP.</div>
                     <div style="display:flex; gap:4px; margin-top:4px;">
-                        <button class="btn-roll-action btn-roll-buff" onclick="rollEmbersOfComfort()">♨️ Grant 1d6+2 Temp HP</button>
+                        <button class="btn-roll-action btn-roll-buff" onclick="rollEmbersOfComfort()">♨️ Grant 1d6+3 Temp HP</button>
                     </div>
                 </div>
             </div>
@@ -621,39 +621,40 @@
     </div>
 
 <script>
-    let curHP = 40;
-    let maxHP = 40;
+    let curHP = 48;
+    let maxHP = 48;
     let tempHP = 0;
     let rollMode = 'norm';
 
     // Stored HP Engine
     function initHP() {
-        const stored = localStorage.getItem('dnd_hp_thurible_v4');
+        const stored = localStorage.getItem('dnd_hp_thurible_v5');
         if (stored) {
             try {
                 const data = JSON.parse(stored);
-                curHP = (data.cur !== undefined && !isNaN(parseInt(data.cur))) ? parseInt(data.cur) : 40;
+                curHP = (data.cur !== undefined && !isNaN(parseInt(data.cur))) ? parseInt(data.cur) : 48;
                 tempHP = (data.temp !== undefined && !isNaN(parseInt(data.temp))) ? parseInt(data.temp) : 0;
             } catch(e) {
-                curHP = 40;
+                curHP = 48;
                 tempHP = 0;
             }
         } else {
             localStorage.removeItem('dnd_hp_thurible');
             localStorage.removeItem('dnd_hp_thurible_v2');
             localStorage.removeItem('dnd_hp_thurible_v3');
-            curHP = 40;
+            localStorage.removeItem('dnd_hp_thurible_v4');
+            curHP = 48;
             tempHP = 0;
         }
         updateHPUI();
     }
 
     function saveHP() {
-        localStorage.setItem('dnd_hp_thurible_v4', JSON.stringify({ cur: curHP, temp: tempHP }));
+        localStorage.setItem('dnd_hp_thurible_v5', JSON.stringify({ cur: curHP, temp: tempHP }));
     }
 
     function updateHPUI() {
-        if (isNaN(curHP)) curHP = 40;
+        if (isNaN(curHP)) curHP = 48;
         if (isNaN(tempHP)) tempHP = 0;
         const hpDisp = document.getElementById('hp-disp');
         const hpBar = document.getElementById('hp-bar');
@@ -674,7 +675,7 @@
     }
 
     function stepHP(delta) {
-        if (isNaN(curHP)) curHP = 40;
+        if (isNaN(curHP)) curHP = 48;
         if (delta > 0) {
             if (curHP < maxHP) {
                 curHP += delta;
@@ -699,7 +700,7 @@
         const input = document.getElementById('hp-input');
         const amt = parseInt(input.value) || 0;
         if (amt <= 0) return;
-        if (isNaN(curHP)) curHP = 40;
+        if (isNaN(curHP)) curHP = 48;
         if (tempHP > 0) {
             if (amt <= tempHP) {
                 tempHP -= amt;
@@ -720,7 +721,7 @@
         const input = document.getElementById('hp-input');
         const amt = parseInt(input.value) || 0;
         if (amt <= 0) return;
-        if (isNaN(curHP)) curHP = 40;
+        if (isNaN(curHP)) curHP = 48;
         const space = maxHP - curHP;
         if (amt <= space) {
             curHP += amt;
@@ -809,13 +810,13 @@
             castingTime: "1 Action",
             range: "Melee 5 feet",
             duration: "Instantaneous",
-            attackMod: "+4 to Hit (DEX +2, Prof +2)",
+            attackMod: "+5 to Hit (DEX +2, Prof +3)",
             damage: "1d6 + 2 Piercing + 1d6 Fire Damage",
             desc: "Sinks blazing fangs into the foe. Deals 1d6+2 Piercing + 1d6 Fire damage!",
-            fullRules: "Thurible strikes with blinding speed, sinking superheated elemental fangs into the target.<br><br>• <strong>Attack Roll:</strong> d20 + 4 to hit.<br>• <strong>Piercing Damage:</strong> 1d6 + 2 piercing.<br>• <strong>Fire Damage:</strong> 1d6 extra elemental fire damage.",
+            fullRules: "Thurible strikes with blinding speed, sinking superheated elemental fangs into the target.<br><br>• <strong>Attack Roll:</strong> d20 + 5 to hit.<br>• <strong>Piercing Damage:</strong> 1d6 + 2 piercing.<br>• <strong>Fire Damage:</strong> 1d6 extra elemental fire damage.",
             flavor: "Blazing embers and sulfur smoke hiss as Thurible's jaws snap shut with molten intensity.",
             modalButtons: [
-                { label: "🎯 Attack (+4)", class: "btn-roll-action", onClick: () => rollThuribleBiteAttack() },
+                { label: "🎯 Attack (+5)", class: "btn-roll-action", onClick: () => rollThuribleBiteAttack() },
                 { label: "💥 Damage (1d6+2 + 1d6)", class: "btn-roll-action btn-roll-dmg", onClick: () => rollThuribleBiteDmg() }
             ]
         },
@@ -826,14 +827,14 @@
             castingTime: "1 Action",
             range: "Melee 10 feet (Reach)",
             duration: "Instantaneous",
-            attackMod: "+4 to Hit (Reach 10ft)",
-            damage: "1d4 + 2 Bludgeoning + 1d6 Fire + DC 13 STR Save (10ft Push)",
-            desc: "1d4+2 Bludgeon + 1d6 Fire. DC 13 STR save or Pushed 10 ft back!",
-            fullRules: "Thurible lashes its glowing tail in a wide sweeping arc.<br><br>• <strong>Attack Roll:</strong> d20 + 4 to hit (Reach 10 feet).<br>• <strong>Damage:</strong> 1d4 + 2 bludgeoning + 1d6 fire damage.<br>• <strong>Pushback Effect:</strong> The target must succeed on a <strong>DC 13 Strength saving throw</strong> or be shoved <strong>10 feet backward</strong> away from Thurible and Father Flubs.",
+            attackMod: "+5 to Hit (Reach 10ft)",
+            damage: "1d4 + 2 Bludgeoning + 1d6 Fire + DC 14 STR Save (10ft Push)",
+            desc: "1d4+2 Bludgeon + 1d6 Fire. DC 14 STR save or Pushed 10 ft back!",
+            fullRules: "Thurible lashes its glowing tail in a wide sweeping arc.<br><br>• <strong>Attack Roll:</strong> d20 + 5 to hit (Reach 10 feet).<br>• <strong>Damage:</strong> 1d4 + 2 bludgeoning + 1d6 fire damage.<br>• <strong>Pushback Effect:</strong> The target must succeed on a <strong>DC 14 Strength saving throw</strong> or be shoved <strong>10 feet backward</strong> away from Thurible and Father Flubs.",
             flavor: "A heavy whip of igneous muscle and fire knocks encroaching enemies backward.",
             modalButtons: [
-                { label: "🎯 Whip (+4)", class: "btn-roll-action", onClick: () => rollThuribleTailWhipAttack() },
-                { label: "💥 Damage (10ft Push)", class: "btn-roll-action btn-roll-dmg", onClick: () => rollThuribleTailWhipDmg() }
+                { label: "🎯 Whip (+5)", class: "btn-roll-action", onClick: () => rollThuribleTailWhipAttack() },
+                { label: "💥 Damage (10ft Push DC 14)", class: "btn-roll-action btn-roll-dmg", onClick: () => rollThuribleTailWhipDmg() }
             ]
         },
         "constrict": {
@@ -843,13 +844,13 @@
             castingTime: "1 Action",
             range: "Melee 5 feet",
             duration: "Until escape or Thurible releases",
-            attackMod: "+4 to Hit",
+            attackMod: "+5 to Hit",
             damage: "1d4 + 2 Bludgeoning + 1d4 Fire + Restrained Condition",
-            desc: "1d4+2 Bludgeon + 1d4 Fire. Target is Grappled & Restrained (DC 13 escape)!",
-            fullRules: "Thurible coils its large molten body around the target.<br><br>• <strong>Attack Roll:</strong> d20 + 4 to hit.<br>• <strong>Damage:</strong> 1d4 + 2 bludgeoning + 1d4 fire damage.<br>• <strong>Grappled & Restrained:</strong> The target is <strong>Grappled & Restrained</strong> (speed 0, attacks against it have Advantage). Escape DC is <strong>13 (Athletics or Acrobatics)</strong>. Until the grapple ends, Thurible cannot constrict another target.",
+            desc: "1d4+2 Bludgeon + 1d4 Fire. Target is Grappled & Restrained (DC 14 escape)!",
+            fullRules: "Thurible coils its large molten body around the target.<br><br>• <strong>Attack Roll:</strong> d20 + 5 to hit.<br>• <strong>Damage:</strong> 1d4 + 2 bludgeoning + 1d4 fire damage.<br>• <strong>Grappled & Restrained:</strong> The target is <strong>Grappled & Restrained</strong> (speed 0, attacks against it have Advantage). Escape DC is <strong>14 (Athletics or Acrobatics)</strong>. Until the grapple ends, Thurible cannot constrict another target.",
             flavor: "Crushing volcanic coils wrap around the target, pinning their limbs while scorching their armor.",
             modalButtons: [
-                { label: "🎯 Grab (+4)", class: "btn-roll-action", onClick: () => rollThuribleConstrictAttack() },
+                { label: "🎯 Grab (+5)", class: "btn-roll-action", onClick: () => rollThuribleConstrictAttack() },
                 { label: "💥 Damage (Restrain)", class: "btn-roll-action btn-roll-dmg", onClick: () => rollThuribleConstrictDmg() }
             ]
         },
@@ -861,12 +862,12 @@
             range: "Touch (5 feet)",
             duration: "Until expended or long rest",
             attackMod: "1 / Day Bond Power",
-            damage: "Grants 1d6 + 2 Temporary Hit Points",
-            desc: "Breathes soothing sacred warmth on an ally, granting 1d6+2 Temp HP.",
-            fullRules: "Thurible exhales a gentle puff of fragrant lavender and frankincense embers onto a companion.<br><br>The target gains <strong>1d6 + 2 temporary hit points</strong> and a sensation of profound restorative comfort.",
+            damage: "Grants 1d6 + 3 Temporary Hit Points",
+            desc: "Breathes soothing sacred warmth on an ally, granting 1d6+3 Temp HP.",
+            fullRules: "Thurible exhales a gentle puff of fragrant lavender and frankincense embers onto a companion.<br><br>The target gains <strong>1d6 + 3 temporary hit points</strong> and a sensation of profound restorative comfort.",
             flavor: "Soft, golden sparks settle on the chosen ally, soothing aching bruises and steeling their resolve.",
             modalButtons: [
-                { label: "♨️ Grant 1d6+2 Temp HP", class: "btn-roll-action btn-roll-buff", onClick: () => rollEmbersOfComfort() }
+                { label: "♨️ Grant 1d6+3 Temp HP", class: "btn-roll-action btn-roll-buff", onClick: () => rollEmbersOfComfort() }
             ]
         }
     };
@@ -949,8 +950,8 @@
     // Attacks
     function rollThuribleBiteAttack() {
         const d20 = Math.floor(Math.random() * 20) + 1;
-        const total = d20 + 4;
-        let msg = `🐍🔥 <strong>Thurible Molten Bite Attack:</strong> d20(${d20}) + 4 = <span style="color:#fed7aa; font-weight:700;">${total} to Hit</span>!`;
+        const total = d20 + 5;
+        let msg = `🐍🔥 <strong>Thurible Molten Bite Attack:</strong> d20(${d20}) + 5 = <span style="color:#fed7aa; font-weight:700;">${total} to Hit</span>!`;
         if (d20 === 20) msg += " 🔥 CRIT!";
         logRoll(msg);
     }
@@ -964,8 +965,8 @@
 
     function rollThuribleTailWhipAttack() {
         const d20 = Math.floor(Math.random() * 20) + 1;
-        const total = d20 + 4;
-        let msg = `💥🔥 <strong>Thurible Molten Tail Whip Attack:</strong> d20(${d20}) + 4 = <span style="color:#fed7aa; font-weight:700;">${total} to Hit</span> (Reach 10ft)!`;
+        const total = d20 + 5;
+        let msg = `💥🔥 <strong>Thurible Molten Tail Whip Attack:</strong> d20(${d20}) + 5 = <span style="color:#fed7aa; font-weight:700;">${total} to Hit</span> (Reach 10ft)!`;
         if (d20 === 20) msg += " 🔥 CRIT!";
         logRoll(msg);
     }
@@ -974,13 +975,13 @@
         const d4 = Math.floor(Math.random() * 4) + 1;
         const d6 = Math.floor(Math.random() * 6) + 1;
         const total = (d4 + 2) + d6;
-        logRoll(`💥 <strong>Molten Tail Whip Damage:</strong> [1d4:${d4}+2 Bludgeoning] + [1d6:${d6} Fire] = <span style="color:#f87171; font-weight:700;">${total} Total Damage</span> and target must make a <span style="color:#f59e0b; font-weight:700;">DC 13 Strength Save</span> or be <strong>pushed 10 ft straight back</strong>!`);
+        logRoll(`💥 <strong>Molten Tail Whip Damage:</strong> [1d4:${d4}+2 Bludgeoning] + [1d6:${d6} Fire] = <span style="color:#f87171; font-weight:700;">${total} Total Damage</span> and target must make a <span style="color:#f59e0b; font-weight:700;">DC 14 Strength Save</span> or be <strong>pushed 10 ft straight back</strong>!`);
     }
 
     function rollThuribleConstrictAttack() {
         const d20 = Math.floor(Math.random() * 20) + 1;
-        const total = d20 + 4;
-        let msg = `🌊🔥 <strong>Thurible Tail Constrict Grab:</strong> d20(${d20}) + 4 = <span style="color:#fed7aa; font-weight:700;">${total} to Hit</span>!`;
+        const total = d20 + 5;
+        let msg = `🌊🔥 <strong>Thurible Tail Constrict Grab:</strong> d20(${d20}) + 5 = <span style="color:#fed7aa; font-weight:700;">${total} to Hit</span>!`;
         if (d20 === 20) msg += " 🔥 CRIT!";
         logRoll(msg);
     }
@@ -989,18 +990,18 @@
         const d4_1 = Math.floor(Math.random() * 4) + 1;
         const d4_2 = Math.floor(Math.random() * 4) + 1;
         const total = (d4_1 + 2) + d4_2;
-        logRoll(`💥 <strong>Tail Constrict Damage:</strong> [1d4:${d4_1}+2 Bludgeon] + [1d4:${d4_2} Fire] = <span style="color:#f87171; font-weight:700;">${total} Total Damage</span> and target is <strong>Grappled & Restrained (DC 13 Escape)</strong>!`);
+        logRoll(`💥 <strong>Tail Constrict Damage:</strong> [1d4:${d4_1}+2 Bludgeon] + [1d4:${d4_2} Fire] = <span style="color:#f87171; font-weight:700;">${total} Total Damage</span> and target is <strong>Grappled & Restrained (DC 14 Escape)</strong>!`);
     }
 
     function rollEmbersOfComfort() {
         const roll = Math.floor(Math.random() * 6) + 1;
-        const total = roll + 2;
+        const total = roll + 3;
         logRoll(`♨️ <strong>Embers of Comfort:</strong> Thurible breathes warm glowing embers! Ally gains <span style="color:#38bdf8; font-weight:700;">+${total} Temporary HP</span>!`);
     }
 
     // 1-Click State Export Protocol
     function exportSheetState() {
-        const stateStr = `🐍 THURIBLE [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: 14 | Speed: 30ft/30ft climb/swim | Aura: 10ft Cold Immunity Active | Attacks: Bite 1d6+2+1d6 Fire, Whip 1d4+2+1d6 Fire (10ft Push DC 13), Constrict (Restrain DC 13)]`;
+        const stateStr = `🐍 THURIBLE [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+' + tempHP + ' Temp)' : ''} | AC: 14 | Speed: 30ft/30ft climb/swim | Aura: 10ft Cold Immunity Active | Attacks: Bite (+5) 1d6+2+1d6 Fire, Whip (+5) 1d4+2+1d6 Fire (10ft Push DC 14), Constrict (+5) (Restrain DC 14), Embers (1d6+3 Temp HP)]`;
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(stateStr).then(() => {
                 logRoll(`📋 <strong>Thurible State Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);

@@ -13,14 +13,14 @@
 * **Interactive Card:** [**General Varnoth Player Sheet**](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/VARNOTH_PLAYER_SHEET.html)
 * **Appearance:** A strikingly handsome female veteran in her late 40s with sharp, observant features, a deep battle scar crossing her blind, milky-white left eye, and iron-grey streaked dark hair pulled into a severe combat ponytail. She walks with a practiced, rhythmic stride despite the carved ironwood and brass peg leg below her right knee.
 * **Stat Block Snapshot (Level 5 Martial Defender):**
-  * **HP:** 16 / 36 | **AC:** 17 (Splint Mail + Azure Wolf Steel Shield) | **Speed:** 30 ft | **Initiative:** +0 (Advantage via Battle Readiness!)
+  * **HP:** 44 / 44 (Hit Dice: `5d8 + 10 CON`) | **AC:** 17 (Splint Mail + Azure Wolf Steel Shield) | **Speed:** 30 ft | **Initiative:** +0 (Advantage via Battle Readiness!)
   * **Weapons:** 
-    * Honed Azure Wolf Longsword (`+6 to hit`, `1d8+4` 1H / `1d10+4` 2H slashing, Crits on 19-20)
-    * 🪓 **Twin Notched Bone-Cleavers** (`+6 to hit`, `1d6+4` slashing + `1d6` off-hand, Crits on 19-20)
-    * Heavy Crossbow (`+2 to hit`, range 100/400, `1d10` piercing, Crits on 19-20)
-    * Ironwood Peg Leg Strike (`+6 to hit`, `1d4+4` bludgeoning + DC 14 STR Save or knocked Prone)
-  * **Key Features:** Extra Attack (2 attacks/action), Improved Critical (19-20), Battle Readiness (Init Adv), Protection Reaction (Disadvantage vs adjacent ally), Second Wind (`1d10+5` HP 1/SR, Ready), Action Surge (1 extra action 1/SR, Ready).
-  * **Proficiencies & Skills:** Athletics (+6), Perception (+4), Insight (+4), Military History (+3), Mason's Tools (+4), Intimidation (+3), Persuasion (+3). Wealth: `8 GP` • `6 SP`. Consumed all potions healing allies.
+    * Honed Azure Wolf Longsword (`+7 to hit`, `1d8+4` 1H / `1d10+4` 2H slashing, Crits on 19-20)
+    * 🪓 **Twin Notched Bone-Cleavers** (`+7 to hit`, `1d6+4` slashing + `1d6` off-hand, Crits on 19-20)
+    * Heavy Crossbow (`+3 to hit`, range 100/400, `1d10` piercing, Crits on 19-20)
+    * Ironwood Peg Leg Strike (`+7 to hit`, `1d4+4` bludgeoning + DC 15 STR Save or knocked Prone / pushed 5ft)
+  * **Key Features:** Extra Attack (2 attacks/action), Improved Critical (19-20), Battle Readiness (Init Adv), Protection Reaction (Disadvantage vs adjacent ally), Second Wind (`1d10+5` HP 1/SR, Ready), Action Surge (1 extra action 1/SR, Ready), Planar Gravity Step (20ft glide, 1/SR).
+  * **Proficiencies & Skills (PB +3):** Athletics (+7 ★), Perception (+5 ★), Survival (+5 ★), History (+3 ★), Intimidation (+4 ★), Mason's Tools (+6 ★). Wealth: `8 GP` • `6 SP`. Consumables: 🧪 1x Potion of Healing (100% Full Max HP: 44 HP).
 
 #### 🧭 Psychological & Moral Dossier:
 * 🧭 **Core Philosophy & Worldview:** **Pragmatic Redemptive Duty & Honor in Atonement**. Believes war is an ugly butcher's trade that leaves no clean hands, but peace is not passive—it must be actively shielded with discipline, vigilance, and self-sacrifice. She believes every soul (including former killers like Tarak and herself) deserves a second chance to build rather than destroy.
@@ -38,20 +38,20 @@
 ---
 
 ### 🐍🔥 Thurible (Giant Fire Snake Companion & Familiar • Official Mascot of Dragon's Rest)
-* **Status:** `⭐ ACTIVE COMPANION / FAMILIAR • ATTUNED (LEVEL 3) • SACRED VILLAGE IDOL`
+* **Status:** `⭐ ACTIVE COMPANION / FAMILIAR • ATTUNED (LEVEL 5) • SACRED VILLAGE IDOL`
 * **Owner / Bond:** Father Flubs (Tamed in Seagrow Caves; crowned **Sacred Mascot of Dragon's Rest** after a legendary **Nat 20 Persuasion & Nat 20 Performance** dance routine!).
 * **Interactive Card:** [**Thurible Companion Sheet**](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/THURIBLE_COMPANION_SHEET.html)
 * **Appearance:** A massive, 12-foot serpentine marvel of interlocking volcanic obsidian scales pulsing with internal magma veins and glowing amber slit eyes. Adorned with handmade flower garlands and polished brass ribbons gifted by the cloister kobolds.
-* **Stat Block Snapshot (Level 3 Attuned Scaling):**
-  * **HP:** 32 / 32 | **AC:** 14 (Natural Armor) | **Speed:** 30 ft, Climb 30 ft, Swim 30 ft | **Initiative:** +2
+* **Stat Block Snapshot (Level 5 Attuned Scaling):**
+  * **HP:** 48 / 48 (Hit Dice: `6d10 + 12 CON`) | **AC:** 14 (Natural Armor) | **Speed:** 30 ft, Climb 30 ft, Swim 30 ft | **Initiative:** +2
   * **Damage Immunities:** 🔥 Fire, ☠️ Poison | **Vulnerabilities:** ❄️ Cold
   * **Senses:** Blindsight 10 ft, Darkvision 60 ft, Passive Perception 11
   * **Special Traits:**
     * 🐍✨ **Beloved Cloister Idol:** Universally adored. Kobolds shower it with sweetbreads, fish heads, and quartz chin-scratches. Has total run of the monastery grounds.
     * 🐍🏇 **Mount of the Serpent Rider:** Ridden into battle by Father Flubs for elevated vantage, 30-ft cliff slithering, and 30-ft coastal swimming.
     * 🔥 **Living Hearth (Aura of Volcanic Radiance):** Sheds bright light for 10 ft. Father Flubs and all allies within 10 ft gain **COMPLETE IMMUNITY TO COLD DAMAGE** and freezing weather!
-    * ♨️ **Embers of Comfort (1/Day):** Breathes soothing sacred warmth granting `1d6 + 2` Temporary HP to an ally.
-  * **Actions:** Molten Bite (`+4 to hit`, `1d6+2` pierc + `1d6` fire), Molten Tail Whip (`+4 to hit`, `1d4+2` bludgeon + `1d6` fire, DC 13 STR Save or pushed 10 ft), Tail Constrict (`+4 to hit`, `1d4+2` bludgeon + `1d4` fire, DC 13 Grappled & Restrained).
+    * ♨️ **Embers of Comfort (1/Day):** Breathes soothing sacred warmth granting `1d6 + 3` Temporary HP to an ally.
+  * **Actions:** Molten Bite (`+5 to hit`, `1d6+2` pierc + `1d6` fire), Molten Tail Whip (`+5 to hit`, `1d4+2` bludgeon + `1d6` fire, DC 14 STR Save or pushed 10 ft), Tail Constrict (`+5 to hit`, `1d4+2` bludgeon + `1d4` fire, DC 14 Grappled & Restrained).
 
 #### 🧭 Psychological & Moral Dossier:
 * 🧭 **Core Philosophy & Worldview:** **Primal Thermic Comfort, Communal Belonging & Pack Fidelity**. Views the world through elemental heat: cold is agony and death, fire and warmth are life and love. Father Flubs and the cloister are its pack and hearth.

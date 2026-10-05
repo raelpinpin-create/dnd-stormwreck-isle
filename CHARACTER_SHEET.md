@@ -239,14 +239,14 @@
   - **Ritual Utility:** *Speak with Animals* (Self, 10 min, comprehend and verbally converse with beasts).
 
 ## 🐍🏇 Giant Fire Snake Mount & Battle Companion: "Thurible"
-* **Size, Type & Vitals:** **Large Elemental (Mount)** | **AC 14** | **HP 40 / 40** (Level 5 Scaled) | **Speed:** 30 ft, Climb 30 ft, Swim 30 ft | **Initiative:** +2
+* **Size, Type & Vitals:** **Large Elemental (Mount)** | **AC 14** | **HP 48 / 48** (Level 5 Scaled • `6d10 + 12 CON`) | **Speed:** 30 ft, Climb 30 ft, Swim 30 ft | **Initiative:** +2
 * **Interactive Mount Card:** [**Thurible Companion Sheet**](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/THURIBLE_COMPANION_SHEET.html)
 * **Special Traits & Actions:**
   * 🕯️ **Living Hearth (Aura of Volcanic Radiance):** Sheds bright light in a 10-ft radius and dim light for an additional 10 ft. Father Flubs and all allies within 10 ft gain complete **IMMUNITY TO COLD DAMAGE** and complete immunity to extreme cold weather/freezing effects!
-  * 🐍 **Molten Bite (Melee Action):** `+4 to hit`, reach 5 ft. *Hit:* `1d6 + 2` piercing + `1d6` fire damage.
-  * 💥 **Molten Tail Whip (Pushback Action):** `+4 to hit`, reach 10 ft. *Hit:* `1d4 + 2` bludgeoning + `1d6` fire damage, DC 13 Str save or pushed 10 ft back!
-  * 🌊 **Tail Constrict (Grapple Action):** `+4 to hit`, reach 5 ft. *Hit:* `1d4 + 2` bludgeoning + `1d4` fire damage, target Grappled & Restrained (Escape DC 13).
-  * ♨️ **Embers of Comfort (1/Day):** Thurible breathes gentle warm embers on a willing creature, granting `1d6 + 2` Temporary Hit Points.
+  * 🐍 **Molten Bite (Melee Action):** `+5 to hit`, reach 5 ft. *Hit:* `1d6 + 2` piercing + `1d6` fire damage.
+  * 💥 **Molten Tail Whip (Pushback Action):** `+5 to hit`, reach 10 ft. *Hit:* `1d4 + 2` bludgeoning + `1d6` fire damage, DC 14 Str save or pushed 10 ft back!
+  * 🌊 **Tail Constrict (Grapple Action):** `+5 to hit`, reach 5 ft. *Hit:* `1d4 + 2` bludgeoning + `1d4` fire damage, target Grappled & Restrained (Escape DC 14).
+  * ♨️ **Embers of Comfort (1/Day):** Thurible breathes gentle warm embers on a willing creature, granting `1d6 + 3` Temporary Hit Points.
 
 ## 🎒 Inventory & Wealth
 * **Armor & Shields:** Scale Mail Armor (Base AC 14), Holy Wooden Shield (+2 AC), Kobold Shield.
@@ -274,7 +274,7 @@
 ## 📜 Character Profile
 * **Name:** General Varnoth
 * **Race:** Human
-* **Class & Level:** **Martial Defender 5 (Sidekick Tank)** *(Level 5 Milestone Unlocked!)*
+* **Class & Level:** **Martial Defender 5 (Sidekick Tank)** *(Level 5 Milestone Finalized!)*
 * **Background:** Veteran Commander (Azure Wolves Guild of Neverwinter)
 * **Alignment:** **Lawful Neutral / Good**
 * **Archetype / Personality:** **Battle-Scarred Commander** — Fierce facial scar, wooden peg leg below right knee, raspy authoritative voice, unshakeable frontline defender. Deeply traumatized by the massacre of her mercenary company by disguised devils in northern Neverwinter, where her beloved sister **Merimar** gave her life so Varnoth could escape. Overcoming near-death fear against the Sea Hag, she is fiercely protective of the party.
@@ -283,23 +283,23 @@
 ## ⚔️ Combat Statistics
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
-| **Hit Points (HP)** | **16 / 36** | Hit Dice: `4d8 + 8 CON` (Level 5 HP upgrade pending) |
+| **Hit Points (HP)** | **44 / 44** | Hit Dice: `5d8 + 10 CON` (Level 5 Milestone Upgraded) |
 | **Armor Class (AC)** | **17** | Splint Mail (15) + Azure Wolf Shield (+2) |
 | **Initiative** | **+0** *(Advantage via Battle Readiness)* | |
 | **Speed** | **30 ft** | Subtle limp from peg leg |
 | **Help Tokens** | **2 / 2** | Help (+1d6 to ally within 30ft, 2/LR, +1 on SR) |
-| **Passive Perception** | **14** | Base Wisdom (+2) + PB (+2) |
-| **Proficiency Bonus** | **+2** (Upgrades to +3 at Level 5 finalized) | Tier 2 Transition |
+| **Passive Perception** | **15** | Base Wisdom (+2) + PB (+3) |
+| **Proficiency Bonus** | **+3** | Tier 2 Transition (Level 5) |
 
-## 📊 Ability Scores & Modifiers (Level 4 ASI Applied)
+## 📊 Ability Scores & Modifiers (Level 4 ASI Applied • PB +3)
 | Ability | Score | Modifier | Saving Throw | Skill Proficiencies |
 | :--- | :---: | :---: | :---: | :--- |
-| **STR** | **18** | **+4** | **+6 ★ (Proficient)** | **Athletics (+6 ★)** |
+| **STR** | **18** | **+4** | **+7 ★ (Proficient)** | **Athletics (+7 ★)** |
 | **DEX** | 10 | +0 | +0 | Acrobatics (+0), Sleight of Hand (+0), Stealth (+0) |
-| **CON** | 14 | +2 | **+4 ★ (Proficient)** | Concentration / Stamina |
-| **INT** | 10 | +0 | +0 | History (+0), Investigation (+0) |
-| **WIS** | 14 | +2 | **+4 ★ (Proficient)** | Insight (+2), **Perception (+4 ★)**, Survival (+2) |
-| **CHA** | 12 | +1 | +1 | Intimidation (+1), Persuasion (+1) |
+| **CON** | 14 | +2 | **+5 ★ (Proficient)** | Concentration / Stamina |
+| **INT** | 10 | +0 | +0 | **History (+3 ★)**, Investigation (+0) |
+| **WIS** | 14 | +2 | **+5 ★ (Proficient)** | Insight (+2), **Perception (+5 ★)**, **Survival (+5 ★)** |
+| **CHA** | 12 | +1 | +1 | **Intimidation (+4 ★)**, Persuasion (+1) |
 
 ## 🛡️ Defender Features & Martial Actions (Level 5)
 * 💥 **Improved Critical (Martial Role):** Weapon attacks score a critical hit on a roll of **19 or 20**!
@@ -309,11 +309,11 @@
 * 💨 **Second Wind (1/Short or Long Rest):** Bonus Action to regain **1d10 + 5 Hit Points** immediately (Ready).
 * ⚡ **Action Surge (1/Short or Long Rest):** Free Action. Push beyond limits to take **1 additional Action** on your turn! (Ready).
 * **🌌 Shared Party Boon — The Sovereign’s Planar Scar:** Permanent Advantage on saving throws vs. Frightened, Charmed, and Stunned; *Planar Gravity Step (1/Short Rest):* Bonus Action 20-ft jump/glide ignoring difficult terrain without provoking opportunity attacks.
-* ⚔️ **Azure Wolf Longsword (1-Handed):** `+6 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d8 + 4` slashing damage.
-* ⚔️ **Azure Wolf Longsword (2-Handed Versatile):** `+6 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d10 + 4` slashing damage.
-* 🪓 **Twin Notched Bone-Cleavers:** `+6 to hit` (Crits on 19-20). Main: `1d6 + 4` slashing | Off-hand Bonus: `1d6` slashing.
-* 🏹 **Heavy Crossbow:** `+2 to hit` (Crits on 19-20), range 100/400 ft. *Hit:* `1d10` piercing damage.
-* 🪵 **Peg Leg Kick / Unarmed Strike:** `+6 to hit`, reach 5 ft. *Hit:* `1d4 + 4` bludgeoning damage + target DC 14 STR save or knocked Prone / pushed 5ft.
+* ⚔️ **Azure Wolf Longsword (1-Handed):** `+7 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d8 + 4` slashing damage.
+* ⚔️ **Azure Wolf Longsword (2-Handed Versatile):** `+7 to hit` (Crits on 19-20), reach 5 ft. *Hit:* `1d10 + 4` slashing damage.
+* 🪓 **Twin Notched Bone-Cleavers:** `+7 to hit` (Crits on 19-20). Main: `1d6 + 4` slashing | Off-hand Bonus: `1d6` slashing.
+* 🏹 **Heavy Crossbow:** `+3 to hit` (Crits on 19-20), range 100/400 ft. *Hit:* `1d10` piercing damage.
+* 🪵 **Peg Leg Kick / Unarmed Strike:** `+7 to hit`, reach 5 ft. *Hit:* `1d4 + 4` bludgeoning damage + target DC 15 STR save or knocked Prone / pushed 5ft.
 
 ## 🎒 Inventory & Wealth
 * **Armor & Weapons:** 
@@ -323,7 +323,7 @@
   * 🏹 Heavy Crossbow + 20 Crossbow Bolts
   * 🪓 **Twin Notched Bone-Cleavers** *(Trophy from the Kobold Champion)*
 * **Potions & Consumables:**
-  * 🧪 *(All Potions of Healing consumed — final potion given to heal Eflein)*
+  * 🧪 **1x Potion of Healing** (Bonus Action: 2d6 HP | Full Action: 100% Full Max HP - 44 HP)
   * 🍷 *(Elixir of Health consumed on Sylvar)*
 * **Kit & Tools:** Mason's Tools, Mercenary Commander Badge (Azure Wolves Guild), Whetstone, Traveler's Pack.
 * **Wealth:** `8 gp, 6 sp`.
