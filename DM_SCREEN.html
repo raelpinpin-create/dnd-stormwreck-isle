@@ -2762,9 +2762,9 @@
                             <td>Bite <strong>+6</strong> (2d8+4 pierc + 1d6 fire) + Tail <strong>+6</strong> (1d10+4)</td><td>Fire Breath (6d6, DC 14 Dex) • Knockdown (DC 14 Str)</td>
                         </tr>
                         <tr class="row-final-boss">
-                            <td><strong class="clickable-title" onclick="openMonsterModal('sparkrender')">🐉 Sparkrender</strong> <span class="tag tag-final-boss">👑 CAMPAIGN APEX FINAL BOSS</span></td>
-                            <td>4</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+2</td><td>15</td><td>110-125</td><td>Fly 60</td><td><strong>+4</strong></td><td style="color:#93c5fd;"><strong>+2★</strong></td><td style="color:#93c5fd;"><strong>+4★</strong></td><td><strong>+1</strong></td><td style="color:#93c5fd;"><strong>+2★</strong></td><td style="color:#93c5fd;"><strong>+3★</strong></td>
-                            <td>Bite <strong>+6</strong> (2d10+4 pierc + 2d6 light) + Claw <strong>+6</strong> (2d6+4 slash)</td><td>Breath: DC 14 Dex (6d10 light = 33 avg)</td>
+                            <td><strong class="clickable-title" onclick="openMonsterModal('sparkrender')">🐉 Sparkrender</strong> <span class="tag tag-final-boss">👑 CAMPAIGN APEX FINAL BOSS (CR 8)</span></td>
+                            <td>8</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+2</td><td>15</td><td>140</td><td>Fly 60</td><td><strong>+4</strong></td><td style="color:#93c5fd;"><strong>+2★</strong></td><td style="color:#93c5fd;"><strong>+4★</strong></td><td><strong>+1</strong></td><td style="color:#93c5fd;"><strong>+2★</strong></td><td style="color:#93c5fd;"><strong>+3★</strong></td>
+                            <td>Bite <strong>+6</strong> (2d10+4 pierc + 2d6 light) + Claw <strong>+6</strong> (2d6+4) + Tail <strong>+6</strong> (1d8+4)</td><td>Breath: DC 15 Dex (6d10 light) • Apocalyptic 12d10 One-Shot (Pylon Required!) • Pointy Hat Actions (>50% / ≤50% HP)</td>
                         </tr>
                         <tr class="row-region-boss">
                             <td><strong class="clickable-title" onclick="openMonsterModal('kobold_champion')">🛡️ Kobold Champion</strong> <span class="tag tag-region-boss">🏆 D3 CAMP COMMANDER</span></td>
@@ -4338,9 +4338,9 @@
         },
         sparkrender: {
             name: "Sparkrender (Blue Dragon Wyrmling)",
-            rank: "CR 4 Campaign Apex Climax Final Boss",
+            rank: "CR 8 Campaign Apex Climax Boss (140 HP)",
             icon: "🐉",
-            cr: "CR 4 Apex (1,100 XP)",
+            cr: "CR 8 Apex Boss (3,900 XP)",
             init: "+2",
             type: "Medium Dragon (Chromatic), Lawful Evil",
             lineage: "The Thunder Sovereign • Siphoner of Sharruth",
@@ -4348,14 +4348,14 @@
             statsStr: "STR 18 (+4) | DEX 10 (+2★) | CON 16 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)",
             details: "Blindsight 10 ft., Darkvision 60 ft., Passive Perception 14 • Stealth +2 • Saves: Dex +2, Con +4, Wis +2, Cha +3 • Immune: Lightning",
             ac: 15,
-            hp: 110,
-            maxHp: 110,
-            currentHp: 110,
+            hp: 140,
+            maxHp: 140,
+            currentHp: 140,
             speed: "30 ft., burrow 15 ft., fly 60 ft.",
             battlefieldActions: {
                 highHp: [
                     {
-                        name: "1. Static Storm Corona (Chain Arc) — [> 50% HP (110–56 HP)]",
+                        name: "1. Static Storm Corona (Chain Arc) — [> 50% HP (140–71 HP)]",
                         tell: "Lightning arcs violently across Sparkrender's horns, illuminating the rotunda in eerie blue starlight as he focuses his gaze on metal-armored foes.",
                         counterplay: "Spread out at least 15 ft apart, or duck behind the marble telescope pillars for total cover.",
                         resolve: "A lightning bolt strikes the primary target: DC 14 Dex save or take 16 (3d10) Lightning damage (half on save). The arc leaps to 1 adjacent ally within 10 ft for 11 (2d10) lightning damage.",
@@ -4366,7 +4366,7 @@
                         ]
                     },
                     {
-                        name: "2. Talon Siphon Snatch (Dive & Drop) — [> 50% HP (110–56 HP)]",
+                        name: "2. Talon Siphon Snatch (Dive & Drop) — [> 50% HP (140–71 HP)]",
                         tell: "Sparkrender banks low around the celestial dome, locking his razor talons onto the squishiest spellcaster in the backline.",
                         counterplay: "Ready an action to blast him as he swoops, or an ally steps in front to trigger an intercept reaction.",
                         resolve: "Target makes DC 14 Str/Dex save or is snatched into the air (15 ft up) and hurled onto the stones: 7 (2d6) falling bludgeoning + 7 (2d6) claw slashing damage and knocked Prone.",
@@ -4378,7 +4378,7 @@
                 ],
                 lowHp: [
                     {
-                        name: "1. Star-Atlas Leyline Detonation (Floor Eruption) — [≤ 50% HP (55–0 HP)]",
+                        name: "1. Star-Atlas Leyline Detonation (Floor Eruption) — [≤ 50% HP (70–0 HP)]",
                         tell: "Sparkrender plunges his talons into the carved Star-Atlas floor glyphs; the leylines thrum with blinding magma-orange and electric-azure light.",
                         counterplay: "Climb atop the 4 Scholar Statues, telescope pedestals, or jump onto Thurible's back (DC 12 Athletics/Acrobatics) to get off the floor.",
                         resolve: "The entire carved stone floor detonates: Creatures on the floor make DC 14 Dex save or take 22 (3d10+4) Fire & Lightning damage and are Blinded for 1 round (half damage and no blind on save).",
@@ -4389,13 +4389,14 @@
                         ]
                     },
                     {
-                        name: "2. Desperation Comet Nova (Radial Blast) — [≤ 50% HP (55–0 HP)]",
-                        tell: "Sparkrender wraps his azure wings tightly around his chest, drawing raw King-Killer Comet energy through the shattered rotunda skylight.",
-                        counterplay: "Pour all attacks into him (dealing 25+ damage before resolution breaks the channel) or dive behind stone sarcophagi.",
-                        resolve: "A 30-ft radial plasma nova erupts: DC 15 Con save or take 26 (4d8+8) Radiant/Lightning damage and pushed 15 ft back (half on save).",
+                        name: "2. ⚡ APOCALYPTIC LEYLINE CATACLYSM (ONE-SHOT ANNIHILATION) — [≤ 50% HP (70–0 HP)]",
+                        tell: "Sparkrender ascends 30 ft into the center of the shattered observatory dome, siphoning Sharruth's volcanic leylines directly through the Star-Atlas into his chest. The entire mountain shakes violently as blinding blue-violet plasma arcs across the entire room. The air ionizes with deafening thunder—he is channeling an apocalyptic, room-wide lightning storm that will annihilate the entire battlefield on his next turn!",
+                        counterplay: "⚠️ DEPLOY & HUDDLE INSIDE THE SPARK-TAMER PYLON! All creatures within the 20-ft grounding radius of Myla's Galvanic Ley-Grounder gain TOTAL LIGHTNING IMMUNITY against the cataclysm as the pylon safely absorbs the voltage into the bedrock! Anyone caught outside the 20-ft zone has nowhere to hide.",
+                        resolve: "The sky and observatory shatter in a blinding apocalyptic flash of lightning! All creatures outside the Pylon's 20-ft radius must make a DC 15 Dex save or take 66 (12d10) Lightning damage (half on save)—an instant one-shot knockout / lethal wipe! All allies inside the Pylon take 0 damage, and the Pylon's Static Capacitor charges to maximum!",
                         buttons: [
-                            { label: "🎲 DC 15 Con", func: "logRoll('🎲 DC 15 Con Save vs Desperation Comet Nova!')" },
-                            { label: "💥 4d8+8 Dmg", isDmg: true, func: "rollDamage('Comet Nova', '4d8+8', '0', 40, 'radiant+lightning')" }
+                            { label: "🛡️ Pylon Sheltered (0 Dmg)", func: "logRoll('🛡️ Party is inside the Spark-Tamer Pylon 20ft radius! Total lightning immunity—0 damage! Capacitor charged to max!')" },
+                            { label: "💥 12d10 Cataclysm Wipe", isDmg: true, func: "rollDamage('Apocalyptic Cataclysm', '12d10', '0', 120, 'lightning')" },
+                            { label: "🎲 DC 15 Dex Save", func: "logRoll('🎲 Unsheltered creatures make DC 15 Dex Save vs 12d10 Cataclysm!')" }
                         ]
                     }
                 ]
@@ -4460,7 +4461,7 @@
             philosophy: "<strong>Draconic Social Darwinism.</strong> Chromatic dragons are the rightful apex tyrants of Toril; the weak exist only to fuel the ascension of the strong. Compassion is the cowardice of metallic dragons like Runara.",
             problem: "The astrological window of the King-Killer Star comet closes in mere hours; must align all 5 elemental effigies and execute Aidron's blood sacrifice to siphon Sharruth's magma flame before dawn.",
             morals: "<strong>Red Lines & Flaws:</strong> Haughty arrogance prevents him from retreating early. Refuses to treat mortals as equals, but panics and bargains wildly if bloodied below 20 HP.",
-            tactics: "Opens combat with Lightning Breath from the air. Uses fly speed to stay out of melee reach, swooping down with Multiattack against isolated targets. When bloodied ≤ 50% HP, detonates the Star-Atlas leylines and unleashes Volcanic Breath!",
+            tactics: "Opens combat with Lightning Breath from the air. Swoops down with Multiattack. When bloodied ≤ 50% HP (70 HP), triggers the Star-Atlas Leyline Detonation and channels the Apocalyptic Leyline Cataclysm—a lethal 12d10 one-shot attack that wipes the entire battlefield unless the party shelters inside Myla's Galvanic Ley-Grounder Pylon!",
             lootTable: [
                 "💰 4,500 cp, 2,200 sp, 130 gp in mixed coins",
                 "💎 5 Pale Blue Quartz Crystals (10 gp each)",

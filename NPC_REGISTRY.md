@@ -420,7 +420,7 @@
 ## ⚡ SECTION 5: CLIFFTOP OBSERVATORY CULT & PRISONERS
 
 ### 🐉 Sparkrender (Campaign Climax Boss — Blue Dragon Wyrmling)
-* **Identity:** Sleek, azure-scaled chromatic dragon crackling with lightning (AC 15, HP 110–125, CR 4).
+* **Identity:** Sleek, azure-scaled chromatic dragon crackling with lightning (AC 15, HP 140 [Bloodied: 70 HP], CR 8 Apex Final Boss). Channels a lethal 12d10 Apocalyptic One-Shot at ≤ 50% HP unless countered by Myla's Galvanic Ley-Grounder Pylon!
 * **Location:** Observatory Tower & Rotunda (Area D5 / D6).
 
 #### 🧭 Psychological & Moral Dossier:

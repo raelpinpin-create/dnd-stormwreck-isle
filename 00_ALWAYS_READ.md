@@ -65,7 +65,7 @@
    * **The Shipwreck Hook:** The party learns that Clyssavar's Silver Scale is trapped inside the submerged captain's hold of the *Compass Rose* and dark undead forces are attempting to claim it!
    * **The Raid:** Full reunited Level 3 party raids the *Compass Rose*, defeats **Aleitha, The Drowned Queen (Zombie Queen)** & the Zombie Captain, discovers and claims **Clyssavar's Silver Scale** (for the New Hero), cleanses Aleitha's Talisman on Brastos's grave, and reaches **Level 4 Milestone**!
 4. **Chapter 4: Clifftop Observatory & Sparkrender — Level 4–5 Apex Climax:**
-   * Ascend the basalt spires with the Moonstone Key, solve the constellation puzzle to unseal Turadaer's Gold Scale, free Aidron (42–48 HP), and defeat Sparkrender (95–110 HP, 4d10 breath).
+   * Ascend the basalt spires with the Moonstone Key, solve the constellation puzzle to unseal Turadaer's Gold Scale, free Aidron (42–48 HP), and defeat **Sparkrender** (CR 8 Apex Climax Boss, 140 HP, multiattack bite/claw/tail, 4d10+2d10 overcharge breath, and 12d10 Apocalyptic Leyline Cataclysm one-shot countered by Myla's Spark-Tamer Pylon).
    * **Sparkrender's Grand Motive:** Siphoning Sharruth's volcanic soul using the King-Killer comet to become a Volcanic Thunder-Dragon!
    * **Grand Climax:** Party activates the Tri-Draconic Convergence, sealing the volcano. Eflein reads **Lianna's final letter** on the Draconic Star-Atlas and claims the coordinates to the lost ancient dragon lands! Party reaches **Level 5 Milestone**!
 

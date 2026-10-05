@@ -244,7 +244,7 @@ graph TD
 | | 🦅 **Harpy of the Crow's Nest** *(C1 Aerial Ambush)* | 1 | **+1** | 42-48 | 11 | Fly 40 | **+1** | **+1** | **+1** | **-2** | **+0** | **+1** | Claws **+4** (2d6+2 slash) + Bone Club **+4** (1d8+3 bludgeon + 1d4 bleed) | Luring Song: DC 12 Wis (300ft charm) |
 | **⚡ Clifftop Observatory (Lvl 4–5)** | ❄️⚡ **Krag'zor the Dragon-Forged** *(⚔️ 6-FT NORTHERN MINI-BOSS CR 7)* | 7 | **+3** | 95 | 17 | 30 ft (Fly 30) | **+4★** | **+3★** | **+3★** | **+4★** | **+1** | **+2** | Great Katana **+8** (2d6+4 slash + 1d6 cold + light) | Cryomancy & Lightning • Spells (DC 15) • Pointy Hat Actions (>50% / ≤50% HP) |
 | | 🦎 **Gorefang (Titan Crag Drake)** *(DRAKE COMPANION CR 4)* | 4 | **+1** | 68 | 15 | 40 ft | **+4** | **+1** | **+3** | **-3** | **+1** | **-2** | Bite **+6** (2d8+4 + 1d6 fire) + Tail **+6** (1d10+4) | Fire Breath (6d6, DC 14 Dex) • Knockdown (DC 14 Str) |
-| | 🐉 **Sparkrender** *(👑 CAMPAIGN APEX FINAL BOSS)* | 4 | **+2** | 110-125 | 15 | Fly 60 | **+4** | **+2★** | **+4★** | **+1** | **+2★** | **+3★** | Bite **+6** (2d10+4 pierc + 2d6 light) + Claw **+6** (2d6+4 slash) | Breath: 30ft line, DC 14 Dex (6d10 light) • Pointy Hat Actions (>50% / ≤50% HP) |
+| | 🐉 **Sparkrender** *(👑 CAMPAIGN APEX FINAL BOSS CR 8)* | 8 | **+2** | 140 | 15 | Fly 60 | **+4** | **+2★** | **+4★** | **+1** | **+2★** | **+3★** | Bite **+6** (2d10+4 pierc + 2d6 light) + Claw **+6** (2d6+4) + Tail **+6** (1d8+4) | Breath: DC 15 Dex (6d10 light) • Apocalyptic 12d10 One-Shot (Pylon Required!) • Pointy Hat Actions (>50% / ≤50% HP) |
 | | 🛡️ **Kobold Champion** *(🏆 D3 CAMP COMMANDER)* | 1/2 | **+2** | 36-42 | 15 | 25 ft | **+1** | **+2** | **+2** | **-1** | **+0** | **+0** | Dual Cleavers **+4** (1d8+2 slash + 1d4 rend, 2 attacks) | Shield Bash: DC 12 Str Save or Prone |
 | | 🦇 **Winged Kobold (Urd)** *(D2 & D3 Aerial Guard)* | 1/4 | **+3** | 18-22 | 13 | Fly 30 | **-2** | **+3** | **+0** | **-1** | **-1** | **-1** | Dropped Fire Bomb **+5** (2d6+2 fire/bludgeon AoE) | Pack Tactics (Aerial Bomber) |
 | | 🦎 **Kobold Ambusher** *(D3 Tower Guard)* | 1/8 | **+2** | 14-18 | 13 | 30 ft | **-2** | **+2** | **+1** | **-1** | **-1** | **-1** | Dagger **+4** (1d4+2) / Fire Sling **+4** (1d4+2 + 1d4 fire) | Pack Tactics (Advantage near ally) |
@@ -319,13 +319,13 @@ graph TD
 * ⚡ **Immediate Dilemma:** Agitated by Thurible's lava scent; eager to establish alpha dominance.
 * 💎 **Direct Drops:** 🛡️ Spiked Drake Hide (craftable +1 Shield), 🧪 2x Flasks of Drake Blood, 🗡️ Drake Fang Dagger (+1, 1d4+1 pierce + 1d4 fire).
 
-#### 1. ⚡ Sparkrender (Blue Dragon Wyrmling) — Medium Dragon (CR 4 APEX FINAL BOSS)
+#### 1. ⚡ Sparkrender (Blue Dragon Wyrmling) — Medium Dragon (CR 8 APEX FINAL BOSS)
 * **Description:** *A sleek, predatory young blue dragon with iridescent azure scales as hard as tempered steel. A single sharp, ridged horn sweeps back from his snout, and crackling blue arcs of lightning sizzle across his spine and claws. Empowered by the stolen King-Killer Comet ritual, he boasts in Draconic that the ancient power of all five dead dragons of Stormwreck Isle belongs to him.*
-* **AC:** 15 (Natural Scales) | **HP:** **110 – 125 HP** (Bloodied: 55 HP) | **Speed:** 30 ft, Burrow 15 ft, Fly 60 ft | Immune: Lightning
+* **AC:** 15 (Natural Scales) | **HP:** **140 HP** (Bloodied: 70 HP) | **Speed:** 30 ft, Burrow 15 ft, Fly 60 ft | Immune: Lightning
 * **Stats:** STR 18 (+4) | DEX 10 (+2★) | CON 16 (+4★) | INT 12 (+1) | WIS 11 (+2★) | CHA 15 (+3★)
 * **Perception:** +4 | **Stealth:** +2
 * **Pointy Hat Battlefield Actions (Health-Triggered Framework):**
-  * **🎭 Stance 1: > 50% HP (110 – 56 HP) [ARROGANT SKY TYRANT]:**
+  * **🎭 Stance 1: > 50% HP (140 – 71 HP) [ARROGANT SKY TYRANT]:**
     * **Action 1: Static Storm Corona (Chain Arc)**
       * *Tell (End of Turn):* Lightning arcs across Sparkrender's horns, illuminating the rotunda in eerie blue starlight as he focuses his gaze on metal-armored foes.
       * *Counterplay:* Spread out at least 15 ft apart, or duck behind the marble telescope pillars for total cover.
@@ -334,15 +334,15 @@ graph TD
       * *Tell (End of Turn):* Sparkrender banks low around the celestial dome, locking his razor talons onto the squishiest spellcaster in the backline.
       * *Counterplay:* Ready an action to blast him as he swoops, or an ally steps in front to trigger an intercept reaction.
       * *Resolve (Start of Next Turn):* Target makes **DC 14 Str/Dex Save** or is snatched into the air (15 ft up) and hurled onto the stones: **7 (2d6)** falling bludgeoning + **7 (2d6)** claw slashing damage and knocked **Prone**.
-  * **🩸 Stance 2: ≤ 50% HP (55 – 0 HP) [VOLCANIC COMET OVERCHARGE]:**
+  * **🩸 Stance 2: ≤ 50% HP (70 – 0 HP) [VOLCANIC COMET OVERCHARGE & APOCALYPTIC SIGHT]:**
     * **Action 3: Star-Atlas Leyline Detonation (Floor Eruption)**
       * *Tell (End of Turn):* Sparkrender plunges his talons into the carved Star-Atlas floor glyphs; the leylines thrum with blinding magma-orange and electric-azure light.
       * *Counterplay:* Climb atop the 4 Scholar Statues, telescope pedestals, or jump onto Thurible's back (DC 12 Athletics/Acrobatics) to get off the floor.
       * *Resolve (Start of Next Turn):* The entire carved stone floor detonates: Creatures on the floor make **DC 14 Dex Save** or take **22 (3d10+4) Fire & Lightning damage** and are **Blinded for 1 round** (half damage and no blind on save).
-    * **Action 4: Desperation Comet Nova (Radial Blast)**
-      * *Tell (End of Turn):* Sparkrender wraps his azure wings tightly around his chest, drawing raw King-Killer Comet energy through the shattered rotunda skylight.
-      * *Counterplay:* Pour all attacks into him (dealing 25+ damage before resolution breaks the channel) or dive behind stone sarcophagi.
-      * *Resolve (Start of Next Turn):* A 30-ft radial plasma nova erupts: **DC 15 Con Save** or take **26 (4d8+8) Radiant/Lightning damage** and pushed 15 ft back (half on save).
+    * **Action 4: ⚡ Apocalyptic Leyline Cataclysm (Battlefield-Wiping One-Shot)**
+      * *Tell (End of Turn):* Sparkrender ascends 30 ft into the center of the shattered observatory dome, siphoning Sharruth's geothermal leylines directly through the Star-Atlas into his chest. The entire mountain shakes violently as blinding blue-violet plasma arcs across the entire room. The air ionizes with deafening thunder—he is channeling an apocalyptic, room-wide lightning storm that will annihilate the entire battlefield on his next turn!
+      * *Counterplay:* **⚠️ DEPLOY & HUDDLE INSIDE THE SPARK-TAMER PYLON!** All creatures within the 20-ft grounding radius of Myla's Galvanic Ley-Grounder gain **TOTAL LIGHTNING IMMUNITY** against the cataclysm as the pylon safely absorbs the voltage into the bedrock! Anyone caught outside the 20-ft zone has nowhere to hide.
+      * *Resolve (Start of Next Turn):* The sky and observatory shatter in a blinding apocalyptic flash of lightning! All creatures outside the Pylon's 20-ft radius must make a **DC 15 Dex Save** or take **66 (12d10) Lightning damage** (half on save)—an instant one-shot knockout / lethal wipe! All allies inside the Pylon take **0 damage**, and the Pylon's Static Capacitor charges to maximum!
 * **Actions & Attacks:**
   * ⚔️ **Multiattack:** Makes 1 Bite attack (`+6 to hit`, **15 [2d10 + 4]** piercing + **7 [2d6]** lightning) and 1 Claw attack (`+6 to hit`, **11 [2d6 + 4]** slashing). When bloodied ≤ 50% HP, adds 1 Tail Lash attack!
   * 🐉 **Tail Lash (⚠️ [Unlocked at ≤ 50% HP]):** `+6 to hit`, reach 10ft, **8 (1d8 + 4)** bludgeoning + pushed 10 ft away.
@@ -352,7 +352,7 @@ graph TD
 * 🧭 **Core Philosophy (Blue Box):** **Draconic Social Darwinism**. Chromatic dragons are the rightful apex tyrants of Toril; the weak exist only to fuel the ascension of the strong.
 * ⚡ **Immediate Active Dilemma (Pink Box):** The King-Killer Star comet window closes in hours; must align 5 effigies and execute Aidron's blood sacrifice to siphon Sharruth's magma flame.
 * ⚖️ **Moral Stand & RP Hooks (Green Box):** Snarl-laced, haughty arrogance. Refuses retreat until bloodied under 20 HP. *"Bow before the blood of Eldenemir, or be turned to glass!"*
-* 🎯 **DM Tactics & Combat Strategy (Yellow Box):** Opens combat with Lightning Breath from the air. Uses fly speed to stay out of melee reach, swooping down with Multiattack against isolated targets. When bloodied ≤ 50% HP, detonates the Star-Atlas leylines and unleashes Volcanic Breath!
+* 🎯 **DM Tactics & Combat Strategy (Yellow Box):** Opens combat with Lightning Breath from the air. Uses fly speed to stay out of melee reach, swooping down with Multiattack against isolated targets. When bloodied ≤ 50% HP (70 HP), detonates the Star-Atlas leylines and channels the Apocalyptic Leyline Cataclysm—a lethal 12d10 one-shot attack that wipes the entire battlefield unless the party shelters inside Myla's Galvanic Ley-Grounder Pylon!
 * 💎 **Direct Monster Drop:** ⚡ **Sparkrender's Azure Scale** (*Wyrmling Relic — Lightning Resist, +1 Lightning Attack/DC, +1d6 Surge 1/day*).
 
 #### 2. 👑 Aleitha, The Drowned Queen (Zombie Queen) — Medium Undead (CR 3 Boss)
