@@ -1341,6 +1341,7 @@
             name: "⚡ Magic Missile",
             tag: "1st Lvl • 1 Action",
             tagColor: "#f97316",
+            level: 1,
             school: "Evocation",
             castingTime: "1 Action",
             range: "120 feet",
@@ -1354,6 +1355,11 @@
             flavor: "Eflein extends three fingers crackling with teal arcane sparks, firing luminous darts that weave around cover and never miss.",
             prepared: true,
             hasLevelSelect: true,
+            levelOptions: {
+                1: "Lvl 1 (3 Darts)",
+                2: "Lvl 2 (4 Darts)",
+                3: "Lvl 3 (5 Darts)"
+            },
             buttons: [
                 { label: "💥 Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollMagicMissileScaled(lvl) }
             ]
@@ -1363,6 +1369,7 @@
             name: "🛡️ Shield",
             tag: "1st Lvl • 1 Reaction",
             tagColor: "#c084fc",
+            level: 1,
             school: "Abjuration",
             castingTime: "1 Reaction (when hit by an attack or Magic Missile)",
             range: "Self",
@@ -1375,9 +1382,14 @@
             upcastNotes: "Casting with higher-level slots grants no additional benefits.",
             flavor: "Eflein throws up a crystalline barrier of hardened force that deflects incoming blades and spells in a shower of blue sparks.",
             prepared: true,
-            hasLevelSelect: false,
+            hasLevelSelect: true,
+            levelOptions: {
+                1: "Lvl 1 (+5 AC)",
+                2: "Lvl 2 (+5 AC)",
+                3: "Lvl 3 (+5 AC)"
+            },
             buttons: [
-                { label: "🛡️ Cast", class: "btn-roll-action", costSlot: false, onClick: () => castShieldSpell() }
+                { label: "🛡️ Cast (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castShieldSpell(lvl) }
             ]
         },
         {
@@ -1385,6 +1397,7 @@
             name: "🌊 Thunderwave",
             tag: "1st Lvl • 1 Action",
             tagColor: "#f97316",
+            level: 1,
             school: "Evocation",
             castingTime: "1 Action",
             range: "Self (15-foot cube)",
@@ -1398,6 +1411,11 @@
             flavor: "Eflein slams her palms together, releasing a deafening shockwave that sends foes and debris flying backwards.",
             prepared: true,
             hasLevelSelect: true,
+            levelOptions: {
+                1: "Lvl 1 (2d8)",
+                2: "Lvl 2 (3d8)",
+                3: "Lvl 3 (4d8)"
+            },
             buttons: [
                 { label: "🌊 Cast / Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollThunderwaveScaled(lvl) }
             ]
@@ -1407,6 +1425,7 @@
             name: "🧊 Ice Knife",
             tag: "1st Lvl • 1 Action",
             tagColor: "#f97316",
+            level: 1,
             school: "Conjuration",
             castingTime: "1 Action",
             range: "60 feet",
@@ -1420,6 +1439,11 @@
             flavor: "Eflein condenses the humid sea mist into a jagged frost dagger, hurtling it forward before detonating in a shower of razor-sharp icy shrapnel.",
             prepared: true,
             hasLevelSelect: true,
+            levelOptions: {
+                1: "Lvl 1 (2d6 Cold)",
+                2: "Lvl 2 (3d6 Cold)",
+                3: "Lvl 3 (4d6 Cold)"
+            },
             buttons: [
                 { label: "🎯 Attack (+6)", class: "btn-roll-action", costSlot: false, onClick: () => rollD20('Ice Knife Shard Attack', 6) },
                 { label: "💥 Shard Damage", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: () => rollFormulaDamage('Ice Knife Shard Damage', 10, 0, 'Piercing') },
@@ -1431,6 +1455,7 @@
             name: "💨 Misty Step",
             tag: "2nd Lvl • Bonus Action",
             tagColor: "#f97316",
+            level: 2,
             school: "Conjuration",
             castingTime: "1 Bonus Action",
             range: "Self",
@@ -1443,9 +1468,13 @@
             upcastNotes: "Casting with higher-level slots grants no additional benefits.",
             flavor: "Eflein dissolves into a swirl of silvery mist and reappears instantaneously across the battlefield behind cover or atop high ground.",
             prepared: true,
-            hasLevelSelect: false,
+            hasLevelSelect: true,
+            levelOptions: {
+                2: "Lvl 2 (30ft)",
+                3: "Lvl 3 (30ft)"
+            },
             buttons: [
-                { label: "💨 Teleport (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castMistyStep() }
+                { label: "💨 Teleport (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castMistyStep(lvl) }
             ]
         },
         {
@@ -1453,6 +1482,7 @@
             name: "❄️ Rime's Binding Ice",
             tag: "2nd Lvl • 1 Action",
             tagColor: "#f97316",
+            level: 2,
             school: "Evocation",
             castingTime: "1 Action",
             range: "Self (30-foot cone)",
@@ -1466,6 +1496,10 @@
             flavor: "Eflein unleashes a biting blizzard of permafrost from her fingertips, encasing enemies in jagged crystal rime that locks them in place.",
             prepared: true,
             hasLevelSelect: true,
+            levelOptions: {
+                2: "Lvl 2 (3d8)",
+                3: "Lvl 3 (4d8)"
+            },
             buttons: [
                 { label: "❄️ Cast & Burst (-1 Slot)", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollRimesBindingIce(lvl) }
             ]
@@ -1475,6 +1509,7 @@
             name: "💥 Shatter",
             tag: "2nd Lvl • 1 Action",
             tagColor: "#f97316",
+            level: 2,
             school: "Evocation",
             castingTime: "1 Action",
             range: "60 feet (10-ft radius sphere)",
@@ -1488,6 +1523,10 @@
             flavor: "Eflein focuses resonant vibrations into a single focal point, shattering armor, bones, and stone in an explosive sonic boom.",
             prepared: false,
             hasLevelSelect: true,
+            levelOptions: {
+                2: "Lvl 2 (3d8)",
+                3: "Lvl 3 (4d8)"
+            },
             buttons: [
                 { label: "💥 Cast & Burst (-1 Slot)", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollShatterScaled(lvl) }
             ]
@@ -1497,6 +1536,7 @@
             name: "🤫 Silence",
             tag: "2nd Lvl • Ritual • Conc",
             tagColor: "#86efac",
+            level: 2,
             school: "Illusion (Ritual)",
             castingTime: "1 Action (or 10 min Ritual)",
             range: "120 feet (20-ft radius sphere)",
@@ -1509,9 +1549,13 @@
             upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
             flavor: "Eflein creates a zone of absolute, eerie acoustic void—smothering incantations, shouts, and clashing steel in total silence.",
             prepared: false,
-            hasLevelSelect: false,
+            hasLevelSelect: true,
+            levelOptions: {
+                2: "Lvl 2 (20ft Sphere)",
+                3: "Lvl 3 (20ft Sphere)"
+            },
             buttons: [
-                { label: "🤫 Cast Silence (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castSilenceSpell(false) },
+                { label: "🤫 Cast Silence (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castSilenceSpell(false, lvl) },
                 { label: "📜 Cast Ritual", class: "btn-roll-action", costSlot: false, onClick: () => castSilenceSpell(true) }
             ]
         },
@@ -1534,6 +1578,9 @@
             flavor: "Eflein flashes a counter-harmonic sigil, snapping the enemy caster's arcane thread and causing their spell to fizzle into nothingness.",
             prepared: true,
             hasLevelSelect: true,
+            levelOptions: {
+                3: "Lvl 3 (Auto ≤3rd)"
+            },
             buttons: [
                 { label: "🛑 Counterspell (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castCounterspell(lvl) }
             ]
@@ -1557,6 +1604,9 @@
             flavor: "Eflein points a wand or finger forward, launching an incandescent red bead that detonates in a roaring inferno.",
             prepared: true,
             hasLevelSelect: true,
+            levelOptions: {
+                3: "Lvl 3 (8d6 Fire)"
+            },
             buttons: [
                 { label: "🔥 Cast Fireball (-1 Slot)", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollFireballScaled(lvl) }
             ]
@@ -1580,6 +1630,9 @@
             flavor: "Eflein channels Astalagan's draconic fury through her fingertips, unleashing a blinding 100-foot arc of crackling azure lightning that tears through the battlefield.",
             prepared: true,
             hasLevelSelect: true,
+            levelOptions: {
+                3: "Lvl 3 (8d6 Lightn)"
+            },
             buttons: [
                 { label: "⚡ Cast Lightning (-1 Slot)", class: "btn-roll-action btn-roll-dmg", costSlot: true, onClick: (lvl) => rollLightningBoltScaled(lvl) }
             ]
@@ -1589,6 +1642,7 @@
             name: "🧬 Alter Self",
             tag: "2nd Lvl • Concentration",
             tagColor: "#fbbf24",
+            level: 2,
             school: "Transmutation",
             castingTime: "1 Action",
             range: "Self",
@@ -1601,11 +1655,15 @@
             upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
             flavor: "Eflein recites transmutation cantrips to reforge her own biology—growing sleek gills for deep ocean diving or reshaping her face.",
             prepared: false,
-            hasLevelSelect: false,
+            hasLevelSelect: true,
+            levelOptions: {
+                2: "Lvl 2 (1 Hour)",
+                3: "Lvl 3 (1 Hour)"
+            },
             buttons: [
-                { label: "🌊 Aquatic Adaptation (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castAlterSelf('Aquatic Adaptation (Breathe underwater & 30ft Swim Speed)') },
-                { label: "🎭 Change Appearance (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castAlterSelf('Change Appearance (Transform face & physical shape)') },
-                { label: "🦷 Natural Weapons (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: () => castAlterSelf('Natural Weapons (+1 magical attack, 1d6+mod damage)') }
+                { label: "🌊 Aquatic Adaptation (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castAlterSelf('Aquatic Adaptation (Breathe underwater & 30ft Swim Speed)', lvl) },
+                { label: "🎭 Change Appearance (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castAlterSelf('Change Appearance (Transform face & physical shape)', lvl) },
+                { label: "🦷 Natural Weapons (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castAlterSelf('Natural Weapons (+1 magical attack, 1d6+mod damage)', lvl) }
             ]
         },
         {
@@ -1613,6 +1671,7 @@
             name: "🔍 Detect Magic",
             tag: "1st Lvl • Ritual",
             tagColor: "#86efac",
+            level: 1,
             school: "Divination (Ritual)",
             castingTime: "1 Action (or 10 min Ritual)",
             range: "Self (30-foot aura)",
@@ -1635,6 +1694,7 @@
             name: "👁️‍🗨️ Invisibility",
             tag: "2nd Lvl • Concentration",
             tagColor: "#fbbf24",
+            level: 2,
             school: "Illusion",
             castingTime: "1 Action",
             range: "Touch",
@@ -1648,6 +1708,10 @@
             flavor: "Eflein weaves shimmering cloaking glamours around herself or an ally, bending ambient light and sound to vanish completely from sight.",
             prepared: false,
             hasLevelSelect: true,
+            levelOptions: {
+                2: "Lvl 2 (1 Target)",
+                3: "Lvl 3 (2 Targets)"
+            },
             buttons: [
                 { label: "👁️‍🗨️ Cast Invisibility (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castInvisibilitySpell(lvl) }
             ]
@@ -1657,6 +1721,7 @@
             name: "💤 Sleep",
             tag: "1st Lvl • 1 Action",
             tagColor: "#f97316",
+            level: 1,
             school: "Enchantment",
             castingTime: "1 Action",
             range: "90 feet (20-ft radius sphere)",
@@ -1670,6 +1735,11 @@
             flavor: "Eflein blows a handful of shimmering silver slumber-dust into the breeze, putting lesser foes into a deep, peaceful sleep.",
             prepared: false,
             hasLevelSelect: true,
+            levelOptions: {
+                1: "Lvl 1 (5d8 HP)",
+                2: "Lvl 2 (7d8 HP)",
+                3: "Lvl 3 (9d8 HP)"
+            },
             buttons: [
                 { label: "💤 Roll Sleep HP", class: "btn-roll-action", costSlot: true, onClick: (lvl) => rollSleepScaled(lvl) }
             ]
@@ -1679,6 +1749,7 @@
             name: "🧙‍♂️ Mage Armor",
             tag: "1st Lvl • 1 Action",
             tagColor: "#f97316",
+            level: 1,
             school: "Abjuration",
             castingTime: "1 Action",
             range: "Touch",
@@ -1691,9 +1762,14 @@
             upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
             flavor: "Eflein traces abjuration runes along her tunic, weaving an invisible mesh of hardened force around herself.",
             prepared: false,
-            hasLevelSelect: false,
+            hasLevelSelect: true,
+            levelOptions: {
+                1: "Lvl 1 (15 AC)",
+                2: "Lvl 2 (15 AC)",
+                3: "Lvl 3 (15 AC)"
+            },
             buttons: [
-                { label: "🧙‍♂️ Cast", class: "btn-roll-action", costSlot: false, onClick: () => activateMageArmorSpell() }
+                { label: "🧙‍♂️ Cast (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => activateMageArmorSpell(lvl) }
             ]
         },
         {
@@ -1701,6 +1777,7 @@
             name: "📜 Comprehend Languages",
             tag: "1st Lvl • Ritual",
             tagColor: "#86efac",
+            level: 1,
             school: "Divination (Ritual)",
             castingTime: "1 Action (or 10 min Ritual)",
             range: "Self",
@@ -1723,6 +1800,7 @@
             name: "🛡️ Protection from Evil/Good",
             tag: "1st Lvl • Concentration",
             tagColor: "#fbbf24",
+            level: 1,
             school: "Abjuration",
             castingTime: "1 Action",
             range: "Touch",
@@ -1735,9 +1813,14 @@
             upcastNotes: "Casting at higher levels provides no additional mechanical benefit.",
             flavor: "Eflein sprinkles powdered silver, forging a sacred boundary that repels foul monstrosities and necrotic undead.",
             prepared: false,
-            hasLevelSelect: false,
+            hasLevelSelect: true,
+            levelOptions: {
+                1: "Lvl 1 (Ward)",
+                2: "Lvl 2 (Ward)",
+                3: "Lvl 3 (Ward)"
+            },
             buttons: [
-                { label: "🛡️ Cast", class: "btn-roll-action", costSlot: true, onClick: () => castUtility('🛡️ Protection from Evil/Good active (Concentration / 10 min)') }
+                { label: "🛡️ Cast (-1 Slot)", class: "btn-roll-action", costSlot: true, onClick: (lvl) => castUtility(`🛡️ Protection from Evil/Good active (Level ${lvl} Slot • Conc 10m)`) }
             ]
         }
     ];
@@ -2100,24 +2183,18 @@
         logRoll(`🛡️ <strong>Shield Reaction:</strong> Toggled ${isShieldActive ? 'ON (+5 AC buff active)' : 'OFF'}. Total AC: ${document.getElementById('ac-disp').innerText}`);
     }
 
-    function castShieldSpell() {
-        if (spellSlots[1].current > 0) {
-            spellSlots[1].current--;
-            renderSpellSlots();
-        }
+    function castShieldSpell(slotLevel) {
+        const lvl = slotLevel || 1;
         isShieldActive = true;
         updateACDisplay();
-        logRoll(`🛡️ <strong>Cast Shield:</strong> 1st-level slot expended. +5 AC reaction active (AC: ${document.getElementById('ac-disp').innerText}) until start of next turn! Blocks Magic Missile.`);
+        logRoll(`🛡️ <strong>Cast Shield (Level ${lvl} Slot):</strong> +5 AC reaction active (AC: ${document.getElementById('ac-disp').innerText}) until start of next turn! Blocks Magic Missile.`);
     }
 
-    function activateMageArmorSpell() {
-        if (spellSlots[1].current > 0) {
-            spellSlots[1].current--;
-            renderSpellSlots();
-        }
+    function activateMageArmorSpell(slotLevel) {
+        const lvl = slotLevel || 1;
         isMageArmorActive = true;
         updateACDisplay();
-        logRoll(`🧙‍♂️ <strong>Cast Mage Armor:</strong> 1st-level slot expended. Base AC becomes 15 for 8 hours!`);
+        logRoll(`🧙‍♂️ <strong>Cast Mage Armor (Level ${lvl} Slot):</strong> Base AC becomes 15 for 8 hours!`);
     }
 
     // ==========================================
@@ -2271,7 +2348,11 @@
                     const minLvl = sp.level || 1;
                     let optionsHtml = '';
                     for (let lvlOpt = minLvl; lvlOpt <= 3; lvlOpt++) {
-                        optionsHtml += `<option value="${lvlOpt}">Lvl ${lvlOpt}</option>`;
+                        let optText = `Lvl ${lvlOpt}`;
+                        if (sp.levelOptions && sp.levelOptions[lvlOpt]) {
+                            optText = sp.levelOptions[lvlOpt];
+                        }
+                        optionsHtml += `<option value="${lvlOpt}">${optText}</option>`;
                     }
                     controlsHtml += `
                         <select id="lvl-select-${sp.id}" class="lvl-dropdown" title="Select Spell Level">
@@ -2395,11 +2476,18 @@
                 const sel = document.createElement('select');
                 sel.className = 'lvl-dropdown';
                 sel.id = `modal-lvl-select-${sp.id}`;
-                sel.innerHTML = `
-                    <option value="1">Lvl 1</option>
-                    <option value="2">Lvl 2</option>
-                    <option value="3">Lvl 3</option>
-                `;
+                const minLvl = sp.level || 1;
+                let modalOptionsHtml = '';
+                for (let lvlOpt = minLvl; lvlOpt <= 3; lvlOpt++) {
+                    let optText = `Lvl ${lvlOpt}`;
+                    if (sp.levelOptions && sp.levelOptions[lvlOpt]) {
+                        optText = sp.levelOptions[lvlOpt];
+                    }
+                    modalOptionsHtml += `<option value="${lvlOpt}">${optText}</option>`;
+                }
+                sel.innerHTML = modalOptionsHtml;
+                const mainSel = document.getElementById(`lvl-select-${sp.id}`);
+                if (mainSel && mainSel.value) sel.value = mainSel.value;
                 actionsContainer.appendChild(sel);
             }
             sp.buttons.forEach((btn, bIdx) => {
@@ -2544,8 +2632,9 @@
         logRoll(`💤 <strong>Sleep Spell (Level ${slotLevel} Slot • ${diceCount}d8):</strong> <span style="color:#c084fc; font-weight:700; font-size:1.05rem;">${total} HP</span> of creatures put to sleep!`);
     }
 
-    function castMistyStep() {
-        logRoll(`💨 <strong>Misty Step Cast (2nd-Level • Bonus Action):</strong> Eflein dissolves into a swirl of silvery mist and instantly teleports up to 30 feet to an unoccupied space!`);
+    function castMistyStep(slotLevel) {
+        const lvl = slotLevel || 2;
+        logRoll(`💨 <strong>Misty Step Cast (Level ${lvl} Slot • Bonus Action):</strong> Eflein dissolves into a swirl of silvery mist and instantly teleports up to 30 feet to an unoccupied space!`);
     }
 
     function rollRimesBindingIce(slotLevel) {
@@ -2567,8 +2656,9 @@
         logRoll(`💥 <strong>Shatter (Level ${slotLevel} Slot • 60ft • ${finalDice}d8):</strong> <span style="color:#fbbf24; font-weight:700; font-size:1.05rem;">${total}</span> Thunder Damage (DC 13 Con save for half). Creatures of inorganic material (stone, crystal, metal) have Disadvantage!`);
     }
 
-    function castSilenceSpell(isRitual) {
-        const typeStr = isRitual ? "Ritual (10 min • No Slot)" : "2nd-Level Slot";
+    function castSilenceSpell(isRitual, slotLevel) {
+        const lvl = slotLevel || 2;
+        const typeStr = isRitual ? "Ritual (10 min • No Slot)" : `Level ${lvl} Slot`;
         logRoll(`🤫 <strong>Silence Cast (${typeStr} • 120ft • 20ft Sphere • Conc 10m):</strong> Total silence envelopes the 20-ft radius sphere! No sound can enter or leave. Creatures inside are deafened, immune to thunder damage, and cannot cast spells requiring Verbal components.`);
     }
 

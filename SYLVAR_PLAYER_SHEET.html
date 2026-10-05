@@ -1350,6 +1350,11 @@
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st (4d6 at 2nd level, 5d6 at 3rd level).',
                 flavor: 'Sylvar taps a rapid, haunting tempo on his tambourine, whispering an aberrant chord that rings directly inside the enemy\'s skull.',
                 hasLevelSelect: true,
+                levelOptions: {
+                    1: "Lvl 1 (3d6)",
+                    2: "Lvl 2 (4d6)",
+                    3: "Lvl 3 (5d6)"
+                },
                 buttons: [
                     {
                         label: '🧠 Cast & Damage (-1 Slot)',
@@ -1376,6 +1381,11 @@
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st (2d4+4 at 2nd level, 3d4+4 at 3rd level).',
                 flavor: 'Sylvar sings a sweet, melodic chord that matches an ally\'s heartbeat, knitting wounds with silver vibrational warmth.',
                 hasLevelSelect: true,
+                levelOptions: {
+                    1: "Lvl 1 (1d4+4)",
+                    2: "Lvl 2 (2d4+4)",
+                    3: "Lvl 3 (3d4+4)"
+                },
                 buttons: [
                     {
                         label: '💚 Heal Target (-1 Slot)',
@@ -1402,6 +1412,11 @@
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st (8d10 at 2nd level, 10d10 at 3rd level).',
                 flavor: 'Sylvar spins with his tambourine, throwing an explosion of sparkling, disorienting prismatic light.',
                 hasLevelSelect: true,
+                levelOptions: {
+                    1: "Lvl 1 (6d10 HP)",
+                    2: "Lvl 2 (8d10 HP)",
+                    3: "Lvl 3 (10d10 HP)"
+                },
                 buttons: [
                     {
                         label: '🌈 Cast Color Spray (-1 Slot)',
@@ -1428,6 +1443,11 @@
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.',
                 flavor: 'With a feline purr and a playful flick of his ears, Sylvar laces charm directly into his spoken words.',
                 hasLevelSelect: true,
+                levelOptions: {
+                    1: "Lvl 1 (1 Target)",
+                    2: "Lvl 2 (2 Targets)",
+                    3: "Lvl 3 (3 Targets)"
+                },
                 buttons: [
                     {
                         label: '💖 Cast Charm Person (-1 Slot)',
@@ -1454,6 +1474,10 @@
                 upcastNotes: 'When cast at higher levels, the spell maintains its concentration duration.',
                 flavor: 'Sylvar plays a soft, rhythmic lullaby on his tambourine bells, draining tension and wrath from the air.',
                 hasLevelSelect: true,
+                levelOptions: {
+                    2: "Lvl 2 (20ft Sphere)",
+                    3: "Lvl 3 (20ft Sphere)"
+                },
                 buttons: [
                     {
                         label: '🕊️ Cast Calm Emotions (-1 Slot)',
@@ -1480,6 +1504,10 @@
                 upcastNotes: 'Casting at higher levels maintains the full duration.',
                 flavor: 'Sylvar leaps into a mesmerizing acoustic dance, commanding the undivided attention of everyone nearby.',
                 hasLevelSelect: true,
+                levelOptions: {
+                    2: "Lvl 2 (60ft Range)",
+                    3: "Lvl 3 (60ft Range)"
+                },
                 buttons: [
                     {
                         label: '✨ Cast Enthrall (-1 Slot)',
@@ -1505,10 +1533,13 @@
                 fullRules: 'You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a <strong>Wisdom saving throw (DC 15)</strong>. On a failed save, the creature becomes <strong>charmed</strong> for the duration. While charmed by this spell, the creature is <strong>incapacitated</strong> and has a <strong>speed of 0</strong>.<br>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.',
                 upcastNotes: 'Casting with higher level slots maintains concentration duration.',
                 flavor: 'Sylvar spins gracefully with his tambourine, casting an ethereal, kaleidoscopic cloud of shimmering planar ribbons that transfixes his foes in awe.',
-                hasLevelSelect: false,
+                hasLevelSelect: true,
+                levelOptions: {
+                    3: "Lvl 3 (30ft Cube)"
+                },
                 buttons: [
                     {
-                        label: '🌀 Cast Hypnotic Pattern (-1 L3 Slot)',
+                        label: '🌀 Cast Hypnotic Pattern (-1 Slot)',
                         class: 'btn-roll-action btn-roll-purple',
                         costSlot: true,
                         onClick: (lvl) => castHypnoticPattern(lvl)
@@ -2172,7 +2203,11 @@
                     const startLvl = sp.level || 1;
                     let opts = '';
                     for (let l = startLvl; l <= 3; l++) {
-                        opts += `<option value="${l}">Lvl ${l}</option>`;
+                        let optText = `Lvl ${l}`;
+                        if (sp.levelOptions && sp.levelOptions[l]) {
+                            optText = sp.levelOptions[l];
+                        }
+                        opts += `<option value="${l}">${optText}</option>`;
                     }
                     lvlDropdownHtml = `
                         <select class="lvl-dropdown" id="lvl-select-${sp.id}">
@@ -2272,7 +2307,9 @@
         }
 
         function castCharmPerson(slotLevel) {
-            logRoll(`💖 <strong>Charm Person (Level ${slotLevel} Slot • 30ft):</strong> Target humanoid makes <span style="color:var(--accent-gold); font-weight:800;">DC 15 Wisdom Save</span>. On fail: regarded as friendly acquaintance for 1 hour!`);
+            const lvl = slotLevel || 1;
+            const targets = lvl;
+            logRoll(`💖 <strong>Charm Person (Level ${lvl} Slot • 30ft • ${targets} Target${targets > 1 ? 's' : ''}):</strong> Target humanoid makes <span style="color:var(--accent-gold); font-weight:800;">DC 15 Wisdom Save</span>. On fail: regarded as friendly acquaintance for 1 hour!`);
         }
 
         function castCalmEmotions(slotLevel) {
@@ -3246,11 +3283,18 @@
                     const sel = document.createElement('select');
                     sel.className = 'lvl-dropdown';
                     sel.id = `modal-lvl-select-${sp.id}`;
-                    sel.innerHTML = `
-                        <option value="1">Lvl 1</option>
-                        <option value="2">Lvl 2</option>
-                        <option value="3">Lvl 3</option>
-                    `;
+                    const startLvl = sp.level || 1;
+                    let modalOpts = '';
+                    for (let l = startLvl; l <= 3; l++) {
+                        let optText = `Lvl ${l}`;
+                        if (sp.levelOptions && sp.levelOptions[l]) {
+                            optText = sp.levelOptions[l];
+                        }
+                        modalOpts += `<option value="${l}">${optText}</option>`;
+                    }
+                    sel.innerHTML = modalOpts;
+                    const mainSel = document.getElementById(`lvl-select-${sp.id}`);
+                    if (mainSel && mainSel.value) sel.value = mainSel.value;
                     actionsContainer.appendChild(sel);
                 }
                 sp.buttons.forEach((btn, bIdx) => {
