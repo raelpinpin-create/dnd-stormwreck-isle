@@ -3541,18 +3541,20 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     }
 
     function getStoredItems() {
-        let stored = localStorage.getItem('dnd_inv_eflein_v24');
+        let stored = localStorage.getItem('dnd_inv_eflein_v25');
         if (!stored) {
-            for (let i = 1; i <= 23; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
+            for (let i = 1; i <= 24; i++) localStorage.removeItem(`dnd_inv_eflein_v${i}`);
             localStorage.removeItem('dnd_inv_eflein');
-            localStorage.setItem('dnd_inv_eflein_v24', JSON.stringify(defaultItems));
+            localStorage.removeItem('dnd_delta_add_eflein');
+            localStorage.removeItem('dnd_delta_rem_eflein');
+            localStorage.setItem('dnd_inv_eflein_v25', JSON.stringify(defaultItems));
             return [...defaultItems];
         }
         return JSON.parse(stored);
     }
 
     function saveStoredItems(items) {
-        localStorage.setItem('dnd_inv_eflein_v24', JSON.stringify(items));
+        localStorage.setItem('dnd_inv_eflein_v25', JSON.stringify(items));
     }
 
     // Universal Item Quantity Parsing & Formatting Engine
@@ -3560,9 +3562,9 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
         if (!itemStr) return { hasQty: false, qty: 1, emoji: '', name: '', raw: '' };
         
         // Match leading emojis/symbols
-        const emojiMatch = itemStr.match(/^([\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\s]+)/u);
+        const emojiMatch = itemStr.match(/^([\p{Extended_Pictographic}\u{FE00}-\u{FE0F}\u{200D}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F300}-\u{1FAFF}\s]+)/u);
         const emoji = emojiMatch ? emojiMatch[1].trim() + ' ' : '';
-        let rest = (emojiMatch ? itemStr.slice(emojiMatch[0].length) : itemStr).trim();
+        let rest = (emojiMatch ? itemStr.slice(emojiMatch[0].length) : itemStr).replace(/^[\u{FE00}-\u{FE0F}\u{200D}\s]+/u, '').trim();
 
         let qty = 1;
         let hasQty = false;
@@ -3653,17 +3655,65 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
         });
     }
 
-    // Session Delta Tracking
-    function getSessionDelta() {
-        return {
-            added: JSON.parse(localStorage.getItem('dnd_delta_add_eflein') || '[]'),
-            removed: JSON.parse(localStorage.getItem('dnd_delta_rem_eflein') || '[]')
-        };
+    // ==========================================
+    // 🔄 DYNAMIC INVENTORY DIFF ENGINE (ZERO GHOST ITEMS)
+    // ==========================================
+    function getAggregatedInventory(itemStrings) {
+        const map = new Map();
+        itemStrings.forEach(str => {
+            if (!str || !str.trim()) return;
+            const parsed = parseItemInfo(str);
+            const cleanKey = parsed.name.toLowerCase()
+                .replace(/[\p{Extended_Pictographic}\u{FE00}-\u{FE0F}\u{200D}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F300}-\u{1FAFF}]/gu, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+            if (!cleanKey) return;
+            if (map.has(cleanKey)) {
+                map.get(cleanKey).qty += parsed.qty;
+            } else {
+                map.set(cleanKey, {
+                    cleanKey: cleanKey,
+                    displayName: parsed.name,
+                    emoji: parsed.emoji,
+                    qty: parsed.qty
+                });
+            }
+        });
+        return map;
     }
 
-    function saveSessionDelta(delta) {
-        localStorage.setItem('dnd_delta_add_eflein', JSON.stringify(delta.added));
-        localStorage.setItem('dnd_delta_rem_eflein', JSON.stringify(delta.removed));
+    function getSessionDelta() {
+        // Clean legacy delta keys from localStorage
+        localStorage.removeItem('dnd_delta_add_eflein');
+        localStorage.removeItem('dnd_delta_rem_eflein');
+
+        const baseMap = getAggregatedInventory(defaultItems);
+        const currMap = getAggregatedInventory(getStoredItems());
+
+        const added = [];
+        const removed = [];
+
+        // Detect newly added or increased items
+        currMap.forEach((cur, key) => {
+            const base = baseMap.get(key);
+            const baseQty = base ? base.qty : 0;
+            if (cur.qty > baseQty) {
+                const diff = cur.qty - baseQty;
+                added.push(diff > 1 ? `${diff}x ${cur.displayName}` : cur.displayName);
+            }
+        });
+
+        // Detect consumed, reduced, or discarded items
+        baseMap.forEach((base, key) => {
+            const cur = currMap.get(key);
+            const curQty = cur ? cur.qty : 0;
+            if (curQty < base.qty) {
+                const diff = base.qty - curQty;
+                removed.push(diff > 1 ? `${diff}x ${base.displayName}` : base.displayName);
+            }
+        });
+
+        return { added, removed };
     }
 
     function clearSessionDelta() {
@@ -3671,70 +3721,15 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
         localStorage.removeItem('dnd_delta_rem_eflein');
     }
 
-    function recordDeltaItem(type, baseName, count = 1) {
-        if (!baseName || count <= 0) return;
-        const delta = getSessionDelta();
-        const normalizedName = baseName.replace(/^(\d+)\s*[xX]\s*/, '').trim();
-        
-        const oppositeType = type === 'added' ? 'removed' : 'added';
-        const currentList = delta[type];
-        const oppList = delta[oppositeType];
-
-        function findEntryIndex(list, name) {
-            return list.findIndex(entry => {
-                const entryName = entry.replace(/^(\d+)\s*[xX]\s*/, '').trim();
-                return entryName === name;
-            });
-        }
-
-        function getEntryCount(entry) {
-            const m = entry.match(/^(\d+)\s*[xX]\s*/);
-            return m ? parseInt(m[1]) : 1;
-        }
-
-        let oppIdx = findEntryIndex(oppList, normalizedName);
-        if (oppIdx !== -1) {
-            let oppCount = getEntryCount(oppList[oppIdx]);
-            if (oppCount > count) {
-                oppList[oppIdx] = `${oppCount - count}x ${normalizedName}`;
-            } else if (oppCount === count) {
-                oppList.splice(oppIdx, 1);
-            } else {
-                oppList.splice(oppIdx, 1);
-                let remaining = count - oppCount;
-                let currIdx = findEntryIndex(currentList, normalizedName);
-                if (currIdx !== -1) {
-                    let currCount = getEntryCount(currentList[currIdx]);
-                    currentList[currIdx] = `${currCount + remaining}x ${normalizedName}`;
-                } else {
-                    currentList.push(remaining > 1 ? `${remaining}x ${normalizedName}` : `1x ${normalizedName}`);
-                }
-            }
-        } else {
-            let currIdx = findEntryIndex(currentList, normalizedName);
-            if (currIdx !== -1) {
-                let currCount = getEntryCount(currentList[currIdx]);
-                currentList[currIdx] = `${currCount + count}x ${normalizedName}`;
-            } else {
-                currentList.push(count > 1 ? `${count}x ${normalizedName}` : `1x ${normalizedName}`);
-            }
-        }
-
-        saveSessionDelta(delta);
-    }
-
     function stepItemQty(index, delta) {
         const items = getStoredItems();
         if (!items[index]) return;
         const parsed = parseItemInfo(items[index]);
-        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
 
         if (delta < 0) {
             const newQty = parsed.qty + delta;
-            recordDeltaItem('removed', cleanName, 1);
-            
             if (newQty <= 0) {
-                const removed = items.splice(index, 1);
+                items.splice(index, 1);
                 saveStoredItems(items);
                 renderInventory();
                 logRoll(`🗑️ <strong>Consumed last:</strong> "${parsed.emoji}${parsed.name}" is now depleted and removed.`);
@@ -3748,7 +3743,6 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
             const newQty = parsed.qty + delta;
             items[index] = `${parsed.emoji}${newQty}x ${parsed.name}`.trim();
             saveStoredItems(items);
-            recordDeltaItem('added', cleanName, 1);
             renderInventory();
             logRoll(`🎒 <strong>Restocked +1x:</strong> ${parsed.name} (<span style="color:#fbbf24; font-weight:700;">${newQty} total</span>).`);
         }
@@ -3761,11 +3755,6 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
         const items = getStoredItems();
         items.push(text);
         saveStoredItems(items);
-
-        const parsed = parseItemInfo(text);
-        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
-        recordDeltaItem('added', cleanName, parsed.qty);
-
         input.value = '';
         renderInventory();
         logRoll(`🎒 Added "${text}" to inventory.`);
@@ -3775,14 +3764,8 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
         const items = getStoredItems();
         if (!items[index]) return;
         const itemStr = items[index];
-        const parsed = parseItemInfo(itemStr);
-        const cleanName = parsed.name.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
-
         items.splice(index, 1);
         saveStoredItems(items);
-
-        recordDeltaItem('removed', cleanName, parsed.qty);
-
         renderInventory();
         logRoll(`🗑️ Removed/Discarded: "${itemStr}"`);
     }
