@@ -541,4 +541,20 @@
 * **👥 Who / What It Involves:** Father Flubs (whom he tried to dupe), Eflein (who opened the rift home), and Vecna (whose eye he stole).
 * **⚖️ Moral Stand & DM RP Cues:** Serene, smiling, mouthless porcelain exterior hiding a shriek of cosmic entitlement and rage. Now reduced to a maimed, howling wretch in the dark.
 
+---
+
+### 🦎😭 Mik the Surviving Kobold Scout (Rescued Fortress Prisoner & Traumatized Guide)
+* **Role / Title:** Surviving Fortress Scout / Grieving Hostage-Guide
+* **Location & World State:** Rescued from the Mountain Fortress cells; currently held by the party outside the smoking stronghold at the foot of the Clifftop Observatory approach.
+* **Stat Snapshot:** Small Humanoid (Kobold) | AC 12 | HP 6 / 7 | Speed 30 ft | Darkvision 60 ft | Pack Tactics | Grovel, Cower and Beg.
+* **🧭 Core Philosophy:** **Terrified Bewilderment & Tragicomic Grief**. Joined the mountain garrison because the older cultists promised he'd get to see a real dragon god; never anticipated an elven wizard dropping a miniature sun onto his barracks.
+* **🎯 Core Desire & Method:** Stay alive, avoid anything that looks like fire, and mourn his incinerated buddies.
+* **⚡ Immediate Current Problem:** Ears ringing from Eflein's Level 5 *Fireball*, traumatized by the instant vaporization of his squad, and now tasked with pointing the way to Sparkrender's sanctum.
+* **👥 Who / What It Involves:** Eflein (the terrifying nuke wizard), Sylvar Link (the mesmerizing bard), Father Flubs, and Sparkrender.
+* **🛠️ Approach & Current Action:** Sniffling loudly, rubbing his scaly snout, offering warnings about the ridge traps, and crying whenever someone mentions crispy food.
+* **⚖️ Moral Stand & DM RP Cues:**
+  * *Voice & Demeanor:* High-pitched, stuttering sobs, shaking whenever Eflein moves his hands or preps a spell.
+  * *Dialogue Hook:* *"Y-You just... you just turned Snik and Gork into charcoal dust! Snik owed me three copper buttons! Why was your fire so BIG?! P-Please don't roast my tail, I'll tell you how to cross the starlight bridge!"*
+
+
 
