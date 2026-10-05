@@ -1508,24 +1508,18 @@
                 <div class="panel" id="panel-channel-divinity">
                     <div class="panel-title">
                         <span>📿 Channel Divinity</span>
-                        <button class="btn-act btn-act-pre" onclick="rechargeChannelDivinity(true)" style="font-size:0.68rem; color:var(--accent-gold);">⛺ Short Rest Recharge</button>
                     </div>
 
-                    <!-- CHANNEL DIVINITY RESOURCE INDICATOR (LIKE SPELL SLOTS) -->
-                    <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:6px 10px; margin-bottom:10px;">
-                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
-                            <span style="font-size:0.68rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">📿 Channel Divinity Reserve (Short Rest)</span>
-                            <span style="font-size:0.68rem; color:#94a3b8;">Cleric Lvl 5: <strong id="cd-status-text" style="color:var(--accent-gold);">1 / 1 Ready</strong></span>
+                    <!-- CHANNEL DIVINITY RESOURCE INDICATOR (MATCHING SPELL SLOTS DESIGN) -->
+                    <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:6px 8px; display:flex; flex-direction:column; gap:4px; margin-bottom:8px;">
+                        <div style="font-size:0.68rem; font-weight:700; color:var(--text-dim); text-transform:uppercase; display:flex; justify-content:space-between;">
+                            <span>📿 Channel Divinity</span>
+                            <span style="font-size:0.64rem; color:var(--text-muted); font-weight:normal;">1 / Short Rest</span>
                         </div>
-                        <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:4px 8px; display:flex; justify-content:space-between; align-items:center;">
-                            <div style="display:flex; align-items:center; gap:8px;">
-                                <span style="font-size:0.68rem; font-weight:700; color:var(--accent-gold);">Slot:</span>
-                                <span id="cd-pips-main" style="font-size:0.78rem; cursor:pointer;" onclick="toggleChannelDivinity()" title="Click to toggle Ready/Used">🟨 (1/1 Ready)</span>
-                            </div>
-                            <div style="display:flex; align-items:center; gap:4px;">
-                                <span id="badge-cd-main" style="font-size:0.65rem; font-weight:700; padding:2px 7px; border-radius:3px; background:rgba(234, 179, 8, 0.2); color:#facc15; border:1px solid rgba(234, 179, 8, 0.5); cursor:pointer;" onclick="toggleChannelDivinity()" title="Click to toggle Ready/Used">READY</span>
-                                <button class="btn-act btn-act-pre" onclick="modChannelDivinity(-1)" style="padding:0px 5px; font-size:0.65rem;" title="Spend Channel Divinity">-</button>
-                                <button class="btn-act btn-act-pre" onclick="modChannelDivinity(1)" style="padding:0px 5px; font-size:0.65rem;" title="Recharge Channel Divinity">+</button>
+                        <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
+                            <div>
+                                <span style="font-size:0.68rem; font-weight:700; color:var(--accent-gold);">Channel Divinity:</span>
+                                <span id="cd-pips-main" style="font-size:0.74rem; cursor:pointer; margin-left:4px;" onclick="toggleChannelDivinity()">🟨 (1/1)</span>
                             </div>
                         </div>
                     </div>
@@ -1909,9 +1903,7 @@
 
     function updateChannelDivinityUI() {
         const badgeLeft = document.getElementById('badge-cd');
-        const badgeMain = document.getElementById('badge-cd-main');
         const pipsMain = document.getElementById('cd-pips-main');
-        const statusText = document.getElementById('cd-status-text');
         const cardPreserve = document.getElementById('card-cd-preserve');
         const cardTurn = document.getElementById('card-cd-turn');
         const btnPreserve = document.getElementById('btn-cd-preserve');
@@ -1922,19 +1914,9 @@
                 badgeLeft.className = 'toggle-badge on';
                 badgeLeft.innerText = 'READY';
             }
-            if (badgeMain) {
-                badgeMain.innerText = 'READY';
-                badgeMain.style.background = 'rgba(234, 179, 8, 0.2)';
-                badgeMain.style.color = '#facc15';
-                badgeMain.style.borderColor = 'rgba(234, 179, 8, 0.5)';
-            }
             if (pipsMain) {
-                pipsMain.innerHTML = '🟨 (1/1 Ready)';
+                pipsMain.innerHTML = '🟨 (1/1)';
                 pipsMain.style.color = 'var(--accent-gold)';
-            }
-            if (statusText) {
-                statusText.innerText = '1 / 1 Ready';
-                statusText.style.color = 'var(--accent-gold)';
             }
             if (cardPreserve) {
                 cardPreserve.style.opacity = '1';
@@ -1955,19 +1937,9 @@
                 badgeLeft.className = 'toggle-badge off';
                 badgeLeft.innerText = 'USED';
             }
-            if (badgeMain) {
-                badgeMain.innerText = 'USED';
-                badgeMain.style.background = 'rgba(100, 116, 139, 0.2)';
-                badgeMain.style.color = '#94a3b8';
-                badgeMain.style.borderColor = '#475569';
-            }
             if (pipsMain) {
-                pipsMain.innerHTML = '⬛ (0/1 Expended)';
+                pipsMain.innerHTML = '⬛ (0/1)';
                 pipsMain.style.color = '#64748b';
-            }
-            if (statusText) {
-                statusText.innerText = '0 / 1 Expended';
-                statusText.style.color = '#64748b';
             }
             if (cardPreserve) {
                 cardPreserve.style.opacity = '0.55';
