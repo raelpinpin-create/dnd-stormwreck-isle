@@ -114,7 +114,7 @@ graph TD
 
 #### ⚡ CHAPTER 4: THE CLIFFTOP OBSERVATORY RECKONING (LEVEL 5 GRAND CAMPAIGN CLIMAX)
 * **🏰 The Mountain Stronghold Siege (Session 9 Completed):** Party stealth-infiltrated the mountain fortress below the summit Assassin's Creed style. Father Flubs and Sylvar silently locked down the towers (*Hold Person* & *Hypnotic Pattern*); Eflein unleashed a catastrophic 3rd-level *Fireball* nuking the barracks; scout Mik rescued and held as a grieving, terrified guide!
-* **D1: The Precipice of the Bridge — The Dragon-Forged Gatekeeper (Session 10 Kickoff):** Standing guard before the active, humming Moonstone/Starlight Bridge across the 200-ft abyss is the legendary **Krag'zor the Dragon-Forged** (CR 7 Legendary Kobold Warrior Mage wielding *The Wyrm-Breaker* staff-blade, AC 17/19 with *Shield*, 95 HP) and his colossal crag drake **Gorefang** (CR 4, 68 HP, AC 15)! Krag'zor traveled to Stormwreck Isle seeking Sparkrender's draconic siphon magic to become the ultimate kobold legend. An epic warmup mini-boss challenge before the summit showdown!
+* **D1: The Precipice of the Bridge — The Dragon-Forged Gatekeeper (Session 10 Kickoff):** Standing guard before the active, humming Moonstone/Starlight Bridge across the 200-ft abyss is the legendary **Krag'zor the Dragon-Forged** (CR 7 Legendary 6-ft White Dragon Kobold Mage Warrior from the Far North, AC 17/19 with *Shield*, 95 HP) wielding a massive 5-foot **Great Katana** (similar to Vaelith's odachi), channeling dangerous northern ice magic and crackling lightning! By his side prowls his colossal titan crag drake **Gorefang** (CR 4, 68 HP, AC 15). Krag'zor traveled from the northern glaciers to Stormwreck Isle seeking Sparkrender's draconic siphon magic to become the ultimate kobold legend. An epic warmup mini-boss challenge before the summit showdown!
 * **The Open Bridge & D2 Rotunda:** The bridge across the chasm is already active and wide open, humming with ancient starlight. Crossing the bridge leads directly into the ancient observatory rotunda.
 * **D3 & D4: Ancient Observatory Halls & Study:** Abandoned cultist barricades and Lianna's discarded stellar calculation satchel, providing the mathematical alignment for the ancient apparatus.
 * **D5 & D6: The Draconic Star-Atlas & The Grand Apex Showdown:** 
@@ -242,7 +242,7 @@ graph TD
 | | 💀 **Skeleton Sailor** *(C2 Forecastle Patrol)* | 1/4 | **+2** | 22-26 | 13 | 30 ft | **+0** | **+2** | **+2** | **-2** | **-1** | **-3** | Scimitar **+4** (1d6+2 slash + 1d4 cold) / Bow **+4** (1d8+2) | Vulnerable Bludgeoning |
 | | 🧟‍♂️ **Drowned Ghoul** *(C8 Lower Deck Scavenger)* | 1 | **+2** | 34-40 | 12 | 30 ft | **+1** | **+2** | **+0** | **-2** | **+0** | **-1** | Bite **+4** (2d8+2 pierc) + Claws **+4** (2d6+2 slash + DC 11 Paralyze) | Coup de Grace vs Paralyzed (+1d6 necro) |
 | | 🦅 **Harpy of the Crow's Nest** *(C1 Aerial Ambush)* | 1 | **+1** | 42-48 | 11 | Fly 40 | **+1** | **+1** | **+1** | **-2** | **+0** | **+1** | Claws **+4** (2d6+2 slash) + Bone Club **+4** (1d8+3 bludgeon + 1d4 bleed) | Luring Song: DC 12 Wis (300ft charm) |
-| **⚡ Clifftop Observatory (Lvl 4–5)** | 🔥 **Krag'zor the Dragon-Forged** *(⚔️ BRIDGE MINI-BOSS CR 7)* | 7 | **+4** | 95 | 17 | 30 ft (Fly 30) | **+3** | **+4★** | **+3★** | **+4★** | **+1** | **+2** | Wyrm-Breaker Staff **+7** (1d8+4 bludgeon + 1d8 fire/light) | War Magic • Spells (DC 15) • Pointy Hat Actions (>50% / ≤50% HP) |
+| **⚡ Clifftop Observatory (Lvl 4–5)** | ❄️⚡ **Krag'zor the Dragon-Forged** *(⚔️ 6-FT NORTHERN MINI-BOSS CR 7)* | 7 | **+3** | 95 | 17 | 30 ft (Fly 30) | **+4★** | **+3★** | **+3★** | **+4★** | **+1** | **+2** | Great Katana **+8** (2d6+4 slash + 1d6 cold + light) | Cryomancy & Lightning • Spells (DC 15) • Pointy Hat Actions (>50% / ≤50% HP) |
 | | 🦎 **Gorefang (Titan Crag Drake)** *(DRAKE COMPANION CR 4)* | 4 | **+1** | 68 | 15 | 40 ft | **+4** | **+1** | **+3** | **-3** | **+1** | **-2** | Bite **+6** (2d8+4 + 1d6 fire) + Tail **+6** (1d10+4) | Fire Breath (6d6, DC 14 Dex) • Knockdown (DC 14 Str) |
 | | 🐉 **Sparkrender** *(👑 CAMPAIGN APEX FINAL BOSS)* | 4 | **+2** | 110-125 | 15 | Fly 60 | **+4** | **+2★** | **+4★** | **+1** | **+2★** | **+3★** | Bite **+6** (2d10+4 pierc + 2d6 light) + Claw **+6** (2d6+4 slash) | Breath: 30ft line, DC 14 Dex (6d10 light) • Pointy Hat Actions (>50% / ≤50% HP) |
 | | 🛡️ **Kobold Champion** *(🏆 D3 CAMP COMMANDER)* | 1/2 | **+2** | 36-42 | 15 | 25 ft | **+1** | **+2** | **+2** | **-1** | **+0** | **+0** | Dual Cleavers **+4** (1d8+2 slash + 1d4 rend, 2 attacks) | Shield Bash: DC 12 Str Save or Prone |
@@ -262,48 +262,49 @@ graph TD
 
 ### 💀 DETAILED MONSTER & THINKING CREATURE STAT BLOCKS
 
-#### 0. 🔥 Krag'zor the Dragon-Forged — Small Humanoid (CR 7 LEGENDARY KOBOLD WARRIOR MAGE • BRIDGE MINI-BOSS)
-* **Identity:** Legendary Kobold Warrior Mage guarding the Starlight Bridge to the Clifftop Observatory. Traveled to Stormwreck Isle to test Sparkrender's worth and seize draconic power for his personal quest to become the greatest kobold legend in Toril.
-* **AC:** 17 (Spiked Drake Hide & Charred Dragonbone) | **HP:** **95 HP** (Bloodied: 47 HP) | **Speed:** 30 ft (Gains Fly 30 ft [hover] when Bloodied ≤ 50% HP) | **Initiative:** +4
-* **Damage Resistances:** Fire, Lightning
-* **Saving Throws:** DEX +7, CON +6, INT +7 | **Skills:** Arcana +7, Athletics +6, Perception +4
+##### 0. ❄️⚡ Krag'zor the Dragon-Forged — Medium Humanoid (CR 7 LEGENDARY WHITE DRAGON KOBOLD MAGE WARRIOR • BRIDGE MINI-BOSS)
+* **Identity:** Legendary 6-foot-tall White Dragon Kobold Mage Warrior from the frozen tundras of the Far North. Refusing the cowardly destiny of his race, he mastered the heavy Great Katana (Odachi) and dangerous cryomancy interwoven with lightning. Traveled from the Reghed glaciers to Stormwreck Isle to test Sparkrender's worth and seize draconic power for his personal quest to become the greatest kobold legend in Toril.
+* **AC:** 17 (Winter Wolf Pelt & Runic Frost Plate, AC 19 with *Shield*) | **HP:** **95 HP** (Bloodied: 47 HP) | **Speed:** 30 ft (Gains Fly 30 ft [hover] with Glacial Wings when Bloodied ≤ 50% HP) | **Initiative:** +3
+* **Damage Immunities:** Cold | **Damage Resistances:** Lightning
+* **Saving Throws:** STR +7, CON +6, INT +7 | **Skills:** Athletics +7, Arcana +7, Perception +4, Intimidation +5
 * **Senses:** Darkvision 60 ft., Passive Perception 14
 * **Traits & Passives:**
-  * ⚔️ **Draconic War Magic:** When Krag'zor casts a cantrip or spell as an Action, he can make one Wyrm-Breaker melee attack as a **Bonus Action**!
-  * 🩸 **Dragon-Awakened Overdrive (Trigger at ≤ 50% HP / 47 HP):** When reduced to 47 HP or less, twin spectral crimson-and-azure dragon wings erupt from his shoulder blades! Gains **Fly 30 ft (hover)**, +2 AC (now **AC 19**), and all melee attacks deal an extra **+1d8 Fire or Lightning damage**!
-  * 👑 **Legendary Pride / Desperation Surrender (Trigger at ≤ 20 HP):** When reduced to 20 HP or lower, Krag'zor drops to one knee. Recognizes the party's true draconic might: surrenders *The Wyrm-Breaker* staff, reveals the DC 15 Explosive Rune Trap location in Area D4, and warns that Sparkrender hoards the Gold & Silver scales in the vault!
+  * ⚔️ **Northern War Magic:** When Krag'zor casts a cantrip or spell as an Action, he can make one Great Katana melee attack as a **Bonus Action**!
+  * 🩸 **Glacial Overdrive (Trigger at ≤ 50% HP / 47 HP):** When reduced to 47 HP or less, twin wings of solid permafrost erupt from his back! Gains **Fly 30 ft (hover)**, +2 AC (now **AC 19**), and all melee attacks deal an extra **+1d8 Lightning damage** from northern storm arcs!
+  * 👑 **Northern Warrior's Code / Desperation Surrender (Trigger at ≤ 20 HP):** When reduced to 20 HP or lower, Krag'zor plunges his Great Katana into the bridge and drops to one knee with frost-cracked breath. Recognizes the party's true warrior might: surrenders *The Glacial Odachi*, reveals the DC 15 Explosive Rune Trap location in Area D4, and warns that Sparkrender hoards the Gold & Silver scales in the vault!
 * **Pointy Hat Battlefield Actions (Health-Triggered Framework):**
-  * **🎭 Stance 1: > 50% HP (95 – 48 HP) [TACTICAL DUELIST & DRAKE COMMANDER]:**
-    * **Action 1: Drake Pincer Ambush (Flank & Knockdown)**
-      * *Tell (End of Turn):* Krag'zor blows a shrill brass whistle; Gorefang's jaws blaze molten crimson as he prowls around the bridge edge flanking the party.
-      * *Counterplay:* Step away from the central line, position Krag'zor between party and drake, or DC 14 Animal Handling/Intimidation check to divert the beast.
-      * *Resolve (Start of Next Turn):* Gorefang charges 30 ft down the bridge: **DC 14 Dex Save** or take **18 (3d8+4) Fire/Bludgeoning damage** and fall **Prone** directly at Krag'zor's feet (half damage, no prone on success).
-    * **Action 2: Runic Earth-Spike Barrier (Area Denial)**
-      * *Tell (End of Turn):* Krag'zor slams *The Wyrm-Breaker* into the bridge stones; three azure draconic glyphs ignite beneath the highest-damage party members.
-      * *Counterplay:* Move at least 10 ft away from the glowing glyphs, or deal 20+ damage to Krag'zor to disrupt the casting.
-      * *Resolve (Start of Next Turn):* Jagged basalt spikes erupt: **DC 15 Dex Save** or take **16 (3d10) Piercing/Lightning damage** and be **Restrained** (DC 14 Athletics check to tear free).
-  * **🩸 Stance 2: ≤ 50% HP (47 – 0 HP) [BLOODIED: DRAGON-AWAKENED OVERDRIVE]:**
-    * **Action 3: Cataclysmic Sky-Slam (Radial Quake)**
-      * *Tell (End of Turn):* Spectral crimson dragon wings ignite as Krag'zor launches 25 ft into the air, gathering a blinding plasma orb atop his staff.
-      * *Counterplay:* Run toward the bridge arches or take full cover behind Thurible/shields; or deal 18+ damage with ranged attacks/spells to force a DC 14 Con save to drop him out of the air.
-      * *Resolve (Start of Next Turn):* Krag'zor crash-lands down onto the bridge center: 20-ft radius shockwave. **DC 15 Con Save** or take **22 (4d8+4) Thunder/Force damage** and fall **Prone** (half on save). Bridge shudder forces **DC 12 Dex Save** or drop held weapons!
-    * **Action 4: Kamikaze Dragon-Breath Surge (Recharge 5-6)**
-      * *Tell (End of Turn):* Krag'zor swallows ambient lightning from the storm clouds as his chest scales glow white-hot.
-      * *Counterplay:* Scatter out of the 20-ft cone or activate elemental resistances/shields.
-      * *Resolve (Start of Next Turn):* 20-ft cone: **DC 15 Dex Save** or take **24 (6d6) Dual-Element Fire & Lightning damage** (half on save).
+  * **🎭 Stance 1: > 50% HP (95 – 48 HP) [TACTICAL CRYOMANCER & BLADE-MASTER]:**
+    * **Action 1: Blizzard Great-Katana Sweep (Whirlwind of Rime)**
+      * *Tell (End of Turn):* Krag'zor grips his 5-foot curved Great Katana in two hands; the blade glazes with thick permafrost as howling sub-zero blizzard winds and crackling azure sparks swirl around his feet.
+      * *Counterplay:* Step back at least 10 ft, dive behind cover, or pass a DC 15 Dex save to duck under the sweeping arc.
+      * *Resolve (Start of Next Turn):* Krag'zor executes a 360-degree whirlwind cleave (10-ft radius): **DC 15 Dex Save** or take **18 (3d8+4) Cold damage + 4 (1d8) Lightning damage**, pushed 10 ft back, and speed reduced by 10 ft until end of their next turn (half damage, no push/slow on save).
+    * **Action 2: Drake Pincer: Glacial Flank**
+      * *Tell (End of Turn):* Krag'zor emits a piercing frost-chirp from his bone whistle; Gorefang's claws tear up frozen stone as he charges from the flank to trap the party.
+      * *Counterplay:* Position Krag'zor between party and the drake, Disengage, or DC 14 Animal Handling/Intimidation check to divert the beast.
+      * *Resolve (Start of Next Turn):* Gorefang charges 30 ft down the bridge: **DC 14 Dex Save** or take **18 (3d8+4) Piercing/Cold damage** and fall **Prone** onto the frozen stone right before Krag'zor!
+  * **🩸 Stance 2: ≤ 50% HP (47 – 0 HP) [BLOODIED: FROZEN TEMPEST OVERDRIVE]:**
+    * **Action 3: Permafrost Flash-Cleave (Icy Odachi Dash)**
+      * *Tell (End of Turn):* Spectral ivory dragon wings of hard rime-ice unfold from Krag'zor's back as he drops into a low iaido drawing stance, his great katana vibrating with sub-zero hum and blue lightning.
+      * *Counterplay:* Spread out horizontally away from the charge line, cast *Shield*, or deal 18+ damage to disrupt his stance.
+      * *Resolve (Start of Next Turn):* Krag'zor dashes 40 ft in a straight line across the bridge, cleaving through all creatures in his path: **DC 15 Dex Save** or take **22 (4d8+4) Slashing/Cold damage + 9 (2d8) Lightning damage** (half on save). Bridge floor is coated in slick permafrost (**DC 12 Dex Save** or fall Prone when moving).
+    * **Action 4: Glacial Nova: White Dragon Breath (Recharge 5-6)**
+      * *Tell (End of Turn):* Krag'zor opens his jagged jaws wide; blinding sub-zero frost and crackling static lightning gather in his throat as the air around him drops below freezing.
+      * *Counterplay:* Scatter out of the 20-ft cone or activate cold resistance/cover.
+      * *Resolve (Start of Next Turn):* 20-ft cone of sub-zero blizzard: **DC 15 Con Save** or take **27 (6d8) Cold damage** and be **Restrained** in solid ice (DC 14 Str check to shatter free). Half damage and not restrained on save.
 * **Actions & Spells (DC 15 Spell Save, +7 Spell Attack, 6 Spell Slots):**
-  * 🗡️ **The Wyrm-Breaker Great-Staff:** Melee Weapon Attack: `+7 to hit`, reach 5 ft., one target. Hit: **8 (1d8 + 4)** bludgeoning + **4 (1d8)** Fire or Lightning damage. *(When bloodied ≤50% HP, deals +1d8 extra damage!)*
-  * ⚡ **Shocking Grasp (Cantrip):** `+7 to hit`, reach 5 ft., **9 (2d8)** lightning damage, and the target cannot take reactions until its next turn.
-  * 🔥 **Scorching Ray (2nd Level):** Ranged Spell Attack: 3 rays, `+7 to hit` each, **7 (2d6)** fire damage per ray.
-  * ⚡ **Lightning Bolt (3rd Level — Active at all HP):** 100-ft line, 5 ft wide. **DC 15 Dex Save** or take **28 (8d6)** lightning damage (half on save).
-  * 💥 **Cataclysmic Fireball (3rd Level — ⚠️ [Unlocked at ≤ 50% HP]):** 20-ft radius sphere. **DC 15 Dex Save** or take **28 (8d6)** fire damage. Cast recklessly centered near himself!
-  * 🛡️ **Shield (Reaction):** +5 bonus to AC against triggering attack, and immune to Magic Missile.
+  * ⚔️ **The Glacial Odachi (+1 Great Katana):** Melee Weapon Attack: `+8 to hit`, reach 5 ft., one target. Hit: **11 (2d6 + 4)** slashing + **4 (1d6)** Cold damage (Heavy, Two-Handed). *(When bloodied ≤50% HP, deals +1d8 extra Lightning damage!)*
+  * ❄️ **Ray of Frost (Cantrip):** `+7 to hit`, range 60 ft., **9 (2d8)** Cold damage, and target's speed is reduced by 10 ft until start of Krag'zor's next turn.
+  * ⚡ **Shocking Grasp (Cantrip):** `+7 to hit`, reach 5 ft., **9 (2d8)** Lightning damage, and target cannot take reactions until start of its next turn.
+  * 🗡️ **Ice Knife / Rime Shard (2nd Level):** `+7 to hit`, range 60 ft., **5 (1d10)** piercing. Explodes in 5-ft radius: **DC 15 Dex Save** or take **9 (2d6)** Cold damage.
+  * ⚡ **Lightning Bolt (3rd Level — Active at all HP):** 100-ft line, 5 ft wide. **DC 15 Dex Save** or take **28 (8d6)** Lightning damage (half on save).
+  * ❄️ **Cone of Cold (5th Level — ⚠️ [Unlocked at ≤ 50% HP Bloodied, 1/Day]):** 60-ft cone of howling blizzard. **DC 15 Con Save** or take **36 (8d8)** Cold damage (half on save).
+  * 🛡️ **Shield (Reaction):** +5 bonus to AC against triggering attack, and immune to *Magic Missile*.
   * 🛑 **Counterspell (Reaction — ⚠️ [Unlocked at ≤ 50% HP]):** Shuts down incoming spell of 3rd level or lower.
-* 🧭 **Core Philosophy (Blue Box):** **Kobold Supremacy Through Draconic Apotheosis.** Rejects the pathetic groveling and cowardly trap-laying typical of his kin. He believes kobolds are not vermin—they are the true scions of dragons who have simply been robbed of their majesty. He seeks Sparkrender not to serve him, but to test the young dragon's worth and rip the ancient draconic siphon magic from his throat!
-* ⚡ **Immediate Active Dilemma (Pink Box):** Stationed at the Starlight Bridge under Sparkrender's deceitful promise of shared godhood, he is eager for a true test of strength. He senses Astalagan's scale on Eflein and intends to slaughter the party to prove himself the apex warrior of Toril!
-* ⚖️ **Moral Stand & Weaknesses (Green Box):** Blinding martial pride. Cannot ignore insults to his warrior status; enters a reckless frenzy if mocked as a cowardly kobold. If reduced to ≤ 20 HP, he yields with genuine draconic respect, surrendering his staff and revealing Sparkrender's explosive rune traps in Area D4.
-* 🎯 **DM Tactics & Combat Strategy (Yellow Box):** Opens with Lightning Bolt down the narrow bridge line, commanding Gorefang to flank the rear. Uses Draconic War Magic to weave spells with staff smites. When reduced to ≤ 50% HP, unleashes Cataclysmic Sky-Slam and reckless Fireball!
-* 💎 **Direct Boss Drops:** 🗡️ **The Wyrm-Breaker (+1 Staff & Arcane Focus)**, 📯 **Drake-Master's Bone Whistle**, 🧥 **Mantle of the Scale-Shatterer**, 💎 4x Draconic Runestones (50 gp each), 📜 **Krag'zor's Personal War Journal**.
+* 🧭 **Core Philosophy (Blue Box):** **Glacial Superiority & The Northern Warrior's Ascendance.** Born in the brutal blizzards of the Far North where weakness means death, Krag'zor broke the cosmic mold of his species through discipline, steel, and ruthless ambition. He is not vermin; he is a 6-foot draconic warlord. He traveled south to Stormwreck Isle not to grovel to Sparkrender, but to harvest the volcanic leylines—seeking to bind fire, lightning, and permafrost into the ultimate elemental convergence!
+* ⚡ **Immediate Active Dilemma (Pink Box):** Guarding the Moonstone Bridge while Sparkrender prepares the observatory ritual. Krag'zor is growing impatient with the arrogant blue wyrmling, but senses formidable foes approaching across the chasm. He welcomes the party as the ultimate northern trial by combat!
+* ⚖️ **Moral Stand & Weaknesses (Green Box):** Northern Honor & Warrior's Pride. Fights like an apex samurai-warlord; respects martial skill and destructive spells. If mocked as a 'common kobold,' enters a furious cold rage. If reduced to ≤ 20 HP, he yields with honorable northern respect, offering tactical intel on Sparkrender's weaknesses, the D4 explosive traps, and his personal journal in exchange for an honorable pact!
+* 🎯 **DM Tactics & Combat Strategy (Yellow Box):** Opens by sweeping the narrow bridge with Blizzard Great-Katana Sweep or Lightning Bolt, whistling Gorefang to flank and pin prone targets. Weaves cantrips with Great Katana slashes via Northern War Magic. At ≤ 50% HP, triggers Permafrost Flash-Cleave, Cone of Cold, and Counterspell!
+* 💎 **Direct Boss Drops:** ⚔️ **The Glacial Odachi (+1 Great Katana / Frost-Bite)**, 📯 **Drake-Master's Bone Whistle**, 🥋 **Mantle of the Northern Rime-Shatterer**, 💎 4x Glacial Draconic Runestones (50 gp each), 📜 **Krag'zor's Northern War Journal**.
 
 #### 0.5. 🦎 Gorefang (Titan Crag Drake) — Large Dragon (CR 4 BEAST COMPANION • BRIDGE PREDATOR)
 * **Identity:** Krag'zor's bound mount and battle companion. Stalks the fog of the Starlight Bridge.
@@ -516,7 +517,7 @@ graph TD
 | 💣 **Spitfire Flask (2 Flasks)** | **EXPLOSIVE • Common** | Transferred to New Hero | `25 GP (250 SP) / flask` | Thrown 20 ft. Explodes in 5-ft radius dealing **`2d4 Fire Damage`** (DC 11 Dex save for half). |
 | 🏹 **Heavy Crossbow** | **WEAPON • Martial Ranged** | Neverwinter Armory (Varnoth) | `50 GP` | **+2 to hit, 1d10 Piercing** (Range 100/400 ft, Heavy, Two-Handed, Loading, 20 Bolts). |
 | 💍 **Gilded Gallows Ring** | **OFFENSIVE • Uncommon (Attune)** | Tarak's former lockbox | `250 GP` | **+1 to Sleight of Hand** & Adv to hide items. 1/Day: Weapon deals **`+1d6 poison`** + speed 0 (DC 12 Con). |
-| 🪄⚔️ **The Wyrm-Breaker (+1 Arcane Quarterstaff / Spellblade)** | **WEAPON • Rare (Attune: Spellcaster)** | Krag'zor the Dragon-Forged | `1,400 GP` | Versatile (+1 to hit & damage: `1d8+1` / `1d10+1` bludgeoning + `1d6` lightning). Serves as an arcane focus. Grants **+1 to Spell Attack rolls and Spell Save DC**. **Draconic Discharge (3 charges/day):** When you hit with a melee attack or cast a leveled evocation spell, expend 1 charge to deal an extra **`2d6 lightning or fire damage`** and push the target 10 ft away (DC 15 Str negates push). |
+| ⚔️ **The Glacial Odachi (+1 Great Katana / Frost-Bite)** | **WEAPON • Rare (Attune: Spellcaster)** | Krag'zor the Dragon-Forged | `1,400 GP` | Heavy, Two-Handed (+1 to hit & damage: `2d6+1` slashing + `1d6` cold). Serves as an arcane focus. Grants **+1 to Spell Attack rolls and Spell Save DC**. **Glacial Cleave (3 charges/day):** When you hit with a melee attack or cast a leveled cryomancy spell, expend 1 charge to deal an extra **`2d6 cold or lightning damage`** and reduce target's speed by 10 ft until end of their next turn. |
 
 #### 🛡️ 4. ARMOR, SHIELDS & PROTECTIVE GEAR
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
@@ -534,7 +535,7 @@ graph TD
 | 💍 **Ring of Resistance** | **DEFENSE • Rare (Attune)** | Owlbear Lair / Sea Hag Cove | `500 GP` | Grants damage resistance to one chosen damage type (Cold, Fire, or Lightning). |
 | 🏮 **Myconid Spore-Lantern** | **UTILITY • Uncommon** | Gifted by Sinensa (Seagrow Caves) | `100 GP` | 30ft violet light; **+2 Perception** in dark. 1/Day: Ally gains Advantage vs Charmed/Frightened. |
 | 🔔 **Astalagan's Resonant Chime** | **DEFENSE • Uncommon** | Bahamut Altar / Cemetery | `200 GP` | 1/Day: Undead within 30 ft make **DC 13 WIS Save** or speed halved + lose reactions (1 min). |
-| 🥋 **Mantle of the Scale-Shatterer** | **WONDROUS ITEM • Rare (Attune)** | Krag'zor the Dragon-Forged | `1,200 GP` | Woven from scorched drake hide and draconic runes. Grants **+1 to AC**, **Resistance to Fire and Lightning damage**. **Elemental Surge (1/Short Rest Reaction):** When taking fire or lightning damage, absorb part of the blow to gain **Advantage** on your next attack roll or spell attack before the end of your next turn. |
+| 🥋 **Mantle of the Northern Rime-Shatterer** | **WONDROUS ITEM • Rare (Attune)** | Krag'zor the Dragon-Forged | `1,200 GP` | Woven from white dragon scales and thick winter wolf pelt. Grants **+1 to AC**, **Cold & Lightning Resistance**. **Glacial Absorption (1/Short Rest Reaction):** When taking cold or lightning damage, absorb part of the blow to gain **Advantage** on your next attack roll or spell attack before the end of your next turn. |
 
 #### 👑 5. LEGENDARY DRAGON SCALES, QUEST KEYS & LOGBOOKS
 | Item Name | Category & Rarity | Location / Origin | 💰 Worth / Cost | Mechanics & In-Game Effect |
@@ -547,7 +548,7 @@ graph TD
 | 🗺️ **Crude Charcoal Cave Map** | **QUEST MAP • Common** | Kobold Spitfire Camp Firepit | `5 GP (50 SP barter)` | Dried fish skin showing high tides, mushroom rapport clues, and drake nest routes. |
 | 📖 **Lianna's Draconic Geothermal Folio** | **SCHOLARLY FOLIO • Rare** | Seagrow Caves B6 Ledge | `50 GP (500 SP)` | Scholar notes on Sharruth's volcanic core, observatory constellation bridge, and 3 metallic scales. |
 | ⚡ **Sparkrender's Obsidian Comet Ritual Slates** | **DRACONIC JOURNAL • Rare** | Observatory Area D2/D4 | `100 GP (1,000 SP)` | Obsidian slates detailing the King-Killer Comet alignment, Aidron's sacrifice, and ascension tactics. |
-| 📜 **Krag'zor's War Journal & Ambition Slates** | **QUEST MANUSCRIPT • Rare** | Krag'zor's Satchel (Moonstone Bridge) | `Priceless Story Intel` | Tattered draconic parchment detailing Sparkrender's alignment ritual at the Observatory, Runara's capture, and Krag'zor's plan to assassinate Sparkrender after the comet leylines unlock. Reveals Sparkrender's weakness when grounded and his breath overcharge at ≤50% HP! |
+| 📜 **Krag'zor's Northern War Journal & Ambition Slates** | **QUEST MANUSCRIPT • Rare** | Krag'zor's Satchel (Moonstone Bridge) | `Priceless Story Intel` | Tattered hide parchment detailing Krag'zor's trek from the frozen Reghed glaciers of the Far North, his mastery of the great katana, and his plan to assassinate Sparkrender once the leylines are unsealed. Reveals Sparkrender's weakness when grounded and his breath overcharge at ≤50% HP! |
 | 🔑 **Moonstone Key** | **QUEST KEY • Rare** | Elder Runara | `Priceless Sanctuary Key` | Hexagonal prism. Activates hard-light bridge to Clifftop Observatory & Aidron's cage. |
 
 ---
@@ -589,12 +590,12 @@ graph TD
 > 
 > *« May the living water of Eldath soothe every bitter grief, and the radiant dawn of Lathander ignite hope in the darkest night. Pour fellowship with an open heart; in unity, no shadow shall prevail. »*
 
-#### 6. 📜 Krag'zor's War Journal & Ambition Slates
-> *[Charred drake-hide parchment scribed in fierce, jagged Draconic script with diagrams of staff conduits and leyline arcs]*
+#### 6. 📜 Krag'zor's Northern War Journal & Ambition Slates
+> *[Frost-rimed winter wolf hide parchment scribed in fierce, jagged Draconic script with diagrams of katana forms, northern cryomancy runes, and leyline arcs]*
 > 
-> *"Let the whelps cower before the dragons. I, Krag'zor, carved my own destiny with the Wyrm-Breaker. Sparkrender thinks he will claim the comet's crown alone? A fool blinded by his blue-scaled pride.*
+> *"Let the southern whelps cower before the dragons. I, Krag'zor, carved my destiny from the frozen tundras of the Far North with the Glacial Odachi. Sparkrender thinks he will claim the comet's crown alone? A blue-scaled fool who knows nothing of true survival in the blizzards.*
 > 
-> *I hold the Moonstone Bridge. No one passes into the observatory until the astral alignment begins. Once Sparkrender drains the leyline conduits and exhausts his thunderous wrath, I shall shatter his scales and seize the primordial power for myself! A kobold shall stand above dragons. The world will whisper my name with terror and reverence!"*
+> *I hold the Moonstone Bridge. No one passes into the observatory until the astral alignment begins. Once Sparkrender drains the leyline conduits and exhausts his thunderous wrath, my blade will shatter his spine and seize the primordial power for myself! A six-foot white dragon kobold shall stand above all dragons. The realm of Toril will whisper my name with terror and reverence!"*
 
 ---
 
