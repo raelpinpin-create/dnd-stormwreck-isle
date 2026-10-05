@@ -3883,12 +3883,13 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
         const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
         
         const slotsStr = `L1(${spellSlots[1].current}/${spellSlots[1].max})${spellSlots[2].max > 0 ? ' L2('+spellSlots[2].current+'/'+spellSlots[2].max+')' : ''}${spellSlots[3].max > 0 ? ' L3('+spellSlots[3].current+'/'+spellSlots[3].max+')' : ''}`;
-        const cdStr = isChannelDivinityReady ? 'Ready' : 'Used';
-        const stateStr = `🍷 FATHER FLUBS [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | CD: ${cdStr} | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${curGP} GP, ${curSP} SP] • ${invSummary}`;
+        const cdStr = isChannelDivinityReady ? '1/1 Ready' : '0/1 Used';
+        const prepStr = 'Prepared (15): Spirit Guardians, Revivify, Beacon of Hope, Aid, Hold Person, Prayer of Healing, Silence, Spiritual Weapon, Lesser Restoration, Cure Wounds, Healing Word, Guiding Bolt, Bless, Shield of Faith, Command';
+        const stateStr = `🍷 FATHER FLUBS [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Channel Divinity: ${cdStr} | Gravity Step: ${isGravityStepReady ? 'READY' : 'USED'} | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${curGP} GP, ${curSP} SP | ${prepStr}] • ${invSummary}`;
         
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(stateStr).then(() => {
-                logRoll(`📋 <strong>Session Delta Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
+                logRoll(`📋 <strong>Session Delta & Cleric State Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
             }).catch(() => {
                 prompt("Copy Flubs' session export string:", stateStr);
             });

@@ -699,7 +699,7 @@
                     « The Whispering Shadow »
                 </div>
                 <div style="font-size:0.75rem; color:var(--text-dim); margin-top:1px;">
-                    Level 4 Half-Tabaxi Bard • College of Whispers • Entertainer
+                    Level 5 Half-Tabaxi Bard • College of Whispers • Entertainer
                 </div>
             </div>
             <div class="pill-badge-group">
@@ -737,7 +737,7 @@
 
             <!-- RESULT BANNER -->
             <div class="roll-result-display" id="roll-res">
-                🐾 Acoustic matrix initialized (Level 4 Whispers Bard • DEX 18 / CHA 18). Roll any attack, save, or skill check below!
+                🐾 Acoustic matrix initialized (Level 5 Whispers Bard • DEX 18 / CHA 18 / DC 15 / Hit +7). Roll any attack, save, or skill check below!
             </div>
         </section>
 
@@ -751,7 +751,7 @@
                 <div class="vitals-4box">
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">HIT POINTS</span>
-                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">31/31</span>
+                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">38/38</span>
                     </div>
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">ARMOR CLASS</span>
@@ -761,9 +761,9 @@
                         <span class="vital-mini-lbl">INIT 🎲</span>
                         <span class="vital-mini-val" style="color:var(--accent-blue);">+4</span>
                     </div>
-                    <div class="vital-mini-box" title="Base Bard DC 14, Hit +6 (Charisma +4, Prof +2)">
+                    <div class="vital-mini-box" title="Base Bard DC 15, Hit +7 (Charisma +4, Prof +3)">
                         <span class="vital-mini-lbl">SPELL DC / HIT</span>
-                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 14 | +6</span>
+                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 15 | +7</span>
                     </div>
                 </div>
 
@@ -820,10 +820,10 @@
                 <!-- BARDIC INSPIRATION, HELP TOKENS & SUTURE CHORD TRACKERS -->
                 <div class="panel" style="padding: 7px 10px; gap:6px;">
                     <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <span style="font-size:0.76rem; font-weight:700; color:var(--accent-purple);">🪘 Bardic Inspiration (d6):</span>
+                        <span style="font-size:0.76rem; font-weight:700; color:var(--accent-purple);">🪘 Bardic Inspiration (d8):</span>
                         <div style="display:flex; align-items:center; gap:4px;">
                             <span id="insp-tokens-disp" style="font-weight:700; color:var(--accent-purple); font-size:0.88rem;">4 / 4</span>
-                            <button class="btn-act btn-roll-purple" onclick="rollBardicInspDie()" style="padding:2px 7px; font-size:0.7rem;">🎲 Roll d6</button>
+                            <button class="btn-act btn-roll-purple" onclick="rollBardicInspDie()" style="padding:2px 7px; font-size:0.7rem;">🎲 Roll d8</button>
                             <button class="btn-act btn-act-pre" onclick="modBardicInsp(1)" style="padding:2px 5px; font-size:0.68rem;">+1</button>
                             <button class="btn-act btn-act-pre" onclick="resetBardicInsp()" style="padding:2px 5px; font-size:0.68rem;">Reset</button>
                         </div>
@@ -886,11 +886,11 @@
                 <div class="panel">
                     <div class="panel-title">
                         <span>🛡️ Saving Throws</span>
-                        <span style="font-size:0.7rem; color:var(--text-dim);">+1 Cloak Active</span>
+                        <span style="font-size:0.7rem; color:var(--text-dim);">+1 Cloak Active (PB +3)</span>
                     </div>
                     <ul class="stat-row-list">
-                        <li class="stat-row-item prof-item" onclick="rollD20('Charisma Saving Throw ★', 7)"><span>Charisma Save ★</span><span>+7 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Dexterity Saving Throw ★', 7)"><span>Dexterity Save ★</span><span>+7 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Charisma Saving Throw ★', 8)"><span>Charisma Save ★</span><span>+8 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Dexterity Saving Throw ★', 8)"><span>Dexterity Save ★</span><span>+8 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Constitution Save', 3)"><span>Constitution Save</span><span>+3 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Wisdom Save', 2)"><span>Wisdom Save</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Strength Save', 0)"><span>Strength Save</span><span>+0 🎲</span></li>
@@ -902,23 +902,23 @@
                 <div class="panel">
                     <div class="panel-title">
                         <span>🎯 All 18 Skills (Individual Rolls)</span>
-                        <span style="font-size:0.7rem; color:var(--text-dim);">Jack of All Trades (+1)</span>
+                        <span style="font-size:0.7rem; color:var(--text-dim);">PB +3 • Jack of All Trades (+1)</span>
                     </div>
                     <ul class="stat-row-list">
-                        <li class="stat-row-item prof-item" onclick="rollD20('Acrobatics (DEX) ★', 6)"><span>Acrobatics (DEX) ★</span><span>+6 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Acrobatics (DEX) ★', 7)"><span>Acrobatics (DEX) ★</span><span>+7 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Animal Handling (WIS)', 2)"><span>Animal Handling (WIS)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Arcana (INT)', -2)"><span>Arcana (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Athletics (STR)', 0)"><span>Athletics (STR)</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Deception (CHA)', 5)"><span>Deception (CHA)</span><span>+5 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('History (INT)', -2)"><span>History (INT)</span><span>-2 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Insight (WIS) ★', 3)"><span>Insight (WIS) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Insight (WIS) ★', 4)"><span>Insight (WIS) ★</span><span>+4 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Intimidation (CHA)', 5)"><span>Intimidation (CHA)</span><span>+5 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Investigation (INT)', -2)"><span>Investigation (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Medicine (WIS)', 2)"><span>Medicine (WIS)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Nature (INT)', -2)"><span>Nature (INT)</span><span>-2 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Perception (WIS) ★ [Cat\'s Talent]', 3)"><span>Perception (WIS) ★ [Cat's Talent]</span><span>+3 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Performance (CHA) ★ [Expertise]', 8)"><span>Performance (CHA) ★ [Expertise]</span><span>+8 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★ [Expertise]', 8)"><span>Persuasion (CHA) ★ [Expertise]</span><span>+8 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Perception (WIS) ★ [Cat\'s Talent]', 4)"><span>Perception (WIS) ★ [Cat's Talent]</span><span>+4 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Performance (CHA) ★ [Expertise]', 10)"><span>Performance (CHA) ★ [Expertise]</span><span>+10 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★ [Expertise]', 10)"><span>Persuasion (CHA) ★ [Expertise]</span><span>+10 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Religion (INT)', -2)"><span>Religion (INT)</span><span>-2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 5)"><span>Sleight of Hand (DEX)</span><span>+5 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 5)"><span>Stealth (DEX)</span><span>+5 🎲</span></li>
@@ -998,12 +998,12 @@
                                 </div>
                                 <span style="font-size:0.62rem; color:var(--accent-gold); font-weight:700; background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); padding:1px 5px; border-radius:3px;">RELIC</span>
                             </div>
-                            <div class="action-desc"><strong>+7 to Hit</strong> (1d8+5 + 1d6 Thndr). <strong>Suture</strong> (BA • DC 14 Dex): <strong>2d8 Thndr + Speed 0</strong>.</div>
+                            <div class="action-desc"><strong>+8 to Hit</strong> (1d8+5 + 1d6 Thndr). <strong>Suture</strong> (BA • DC 15 Dex): <strong>2d8 Thndr + Speed 0</strong>.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" style="background:var(--accent-gold); color:#000; font-weight:700;" onclick="rollD20('Lyra (+1) Attack', 7)">🎻 Attack (+7)</button>
+                                <button class="btn-roll-action" style="background:var(--accent-gold); color:#000; font-weight:700;" onclick="rollD20('Lyra (+1) Attack', 8)">🎻 Attack (+8)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollLyraStrike()">💥 1d8+5+1d6 Thndr</button>
                                 <button class="btn-roll-action btn-roll-purple" onclick="rollSutureChord()" title="Bonus Action: 30ft whip, 2d8 Thunder & Speed 0 (2 Slots/LR)">🪡 Suture (BA)</button>
-                                <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">⚡ +2d6 Psychic</button>
+                                <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">⚡ +3d6 Psychic</button>
                             </div>
                         </div>
 
@@ -1018,11 +1018,29 @@
                                 </div>
                                 <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">FINESSE</span>
                             </div>
-                            <div class="action-desc">Reach 5ft. <strong>+6 to Hit</strong>, <strong>1d8+4 Piercing</strong>. Combines with Psychic Blades (+2d6)!</div>
+                            <div class="action-desc">Reach 5ft. <strong>+7 to Hit</strong>, <strong>1d8+4 Piercing</strong>. Combines with Psychic Blades (+3d6)!</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Rapier Attack', 6)">🗡️ Attack (+6)</button>
+                                <button class="btn-roll-action" onclick="rollD20('Rapier Attack', 7)">🗡️ Attack (+7)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Rapier Damage', 8, 4, 'Piercing')">💥 1d8+4 Dmg</button>
-                                <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">⚡ +2d6 Psychic</button>
+                                <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">⚡ +3d6 Psychic</button>
+                            </div>
+                        </div>
+
+                        <!-- Sentry Zik's Dagger (+1) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('zik_dagger')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🗡️ Sentry Zik's Dagger (+1) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">+1 Finesse / Thrown 20/60ft</div>
+                                </div>
+                                <span style="font-size:0.62rem; color:var(--accent-gold); font-weight:700; background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); padding:1px 5px; border-radius:3px;">+1 MAGIC</span>
+                            </div>
+                            <div class="action-desc">Reach 5ft / Range 20/60. <strong>+8 to Hit</strong>, <strong>1d4+5 Piercing</strong> (+1 Magic).</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="rollD20('Sentry Zik (+1) Attack', 8)">🗡️ Attack (+8)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Zik Dagger Damage', 4, 5, 'Piercing')">💥 1d4+5 Dmg</button>
                             </div>
                         </div>
 
@@ -1037,9 +1055,9 @@
                                 </div>
                                 <span style="font-size:0.62rem; color:#86efac; font-weight:700; background:rgba(134,239,172,0.1); border:1px solid #86efac; padding:1px 5px; border-radius:3px;">LIGHT</span>
                             </div>
-                            <div class="action-desc">Reach 5ft / Range 20/60. <strong>+6 to Hit</strong>, <strong>1d4+4 Piercing</strong>.</div>
+                            <div class="action-desc">Reach 5ft / Range 20/60. <strong>+7 to Hit</strong>, <strong>1d4+4 Piercing</strong>.</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Dagger Attack', 6)">🗡️ Attack (+6)</button>
+                                <button class="btn-roll-action" onclick="rollD20('Dagger Attack', 7)">🗡️ Attack (+7)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Dagger Damage', 4, 4, 'Piercing')">💥 1d4+4 Dmg</button>
                             </div>
                         </div>
@@ -1055,10 +1073,10 @@
                                 </div>
                                 <span style="font-size:0.65rem; color:var(--accent-purple); font-weight:700;">ENCHANTMENT</span>
                             </div>
-                            <div class="action-desc">DC 14 Wis Save. On fail: 1d4 Psychic & Disadvantage on next attack!</div>
+                            <div class="action-desc">DC 15 Wis Save. On fail: <strong>2d4 Psychic</strong> & Disadvantage on next attack!</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action btn-roll-purple" onclick="castViciousMockery()">🎭 Cast (DC 14 Wis)</button>
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollFormulaDamage('Vicious Mockery Dmg', 4, 0, 'Psychic')">💥 1d4 Dmg</button>
+                                <button class="btn-roll-action btn-roll-purple" onclick="castViciousMockery()">🎭 Cast (DC 15 Wis)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollViciousMockeryDamage()">💥 2d4 Dmg</button>
                             </div>
                         </div>
 
@@ -1078,6 +1096,23 @@
                                 <button class="btn-roll-action" onclick="castUtility('✨ Cast Dancing Lights (Creates 4 floating lights within 120ft • Conc 1m)')">✨ Cast</button>
                             </div>
                         </div>
+
+                        <!-- Planar Gravity Step (1/Short Rest • Inherent Mobility) -->
+                        <div class="action-card" id="card-gravity-step">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('gravitystep')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='#f8fafc'">
+                                        🌌 Planar Gravity Step <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#38bdf8; margin-top:1px;">1/Short Rest • Bonus Action</div>
+                                </div>
+                                <span id="badge-gravity-step" style="font-size:0.65rem; color:#38bdf8; font-weight:700; cursor:pointer;" onclick="event.stopPropagation(); togglePlanarGravityStepManual();" title="Click to manually toggle Ready/Used">READY (1/SR)</span>
+                            </div>
+                            <div class="action-desc">Self • Bonus Action. Glide/leap up to <strong>20 ft</strong>. Ignores difficult terrain & provokes <em>no opportunity attacks</em>!</div>
+                            <div class="action-btn-row">
+                                <button id="btn-gravity-step" class="btn-roll-action" onclick="usePlanarGravityStep()">🌌 Glide 20ft</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1086,7 +1121,7 @@
                     <div class="panel-title">
                         <span>🔮 Bardic Spells Known (College of Whispers)</span>
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <span style="font-size:0.72rem; color:var(--text-dim);">6 Spells Known</span>
+                            <span style="font-size:0.72rem; color:var(--text-dim);">7 Spells Known</span>
                             <button class="btn-act btn-act-pre" onclick="refillAllSlots()" style="font-size:0.68rem; color:var(--accent-gold);">⛺ Refill Slots</button>
                         </div>
                     </div>
@@ -1122,11 +1157,11 @@
                                 </div>
                             </div>
 
-                            <!-- Level 3 Slots (Locked) -->
+                            <!-- Level 3 Slots (Unlocked at Level 5!) -->
                             <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
                                 <div>
-                                    <span style="font-size:0.68rem; font-weight:700; color:#64748b;">3rd:</span>
-                                    <span id="slot-pips-3" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(3)"><span style="color:#ef4444; font-size:0.68rem; font-weight:700;">🔒 Lvl 5 Req</span></span>
+                                    <span style="font-size:0.68rem; font-weight:700; color:var(--accent-gold);">3rd:</span>
+                                    <span id="slot-pips-3" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(3)">🟦 🟦 (2/2)</span>
                                 </div>
                                 <div style="display:flex; gap:2px;">
                                     <button class="btn-act btn-act-pre" onclick="modSlotTier(3, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
@@ -1142,30 +1177,19 @@
                     </div>
                 </div>
 
-                <!-- 🌟 COLLEGE OF WHISPERS FEATURES -->
+                <!-- 🌟 COLLEGE OF WHISPERS FEATURES, BOONS & RECOVERIES -->
                 <div class="panel">
                     <div class="panel-title">
-                        <span>🗡️ College of Whispers Features & Recoveries</span>
+                        <span>🗡️ College of Whispers Features, Boons & Recoveries</span>
                     </div>
 
                     <div style="display:flex; flex-direction:column; gap:5px;">
-                        <!-- Psychic Blades -->
-                        <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-purple);">
-                            <div style="display:flex; justify-content:space-between; align-items:center;">
-                                <div>
-                                    <strong style="color:var(--accent-purple); cursor:pointer;" onclick="openSpellDetailsModal('psychicblades')" onmouseover="this.style.color='#f8fafc'" onmouseout="this.style.color='var(--accent-purple)'">🧠 Psychic Blades: <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span></strong>
-                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">Deal +2d6 Psychic on weapon hit (Costs 1 Insp).</span>
-                                </div>
-                                <button class="btn-roll-action btn-roll-purple" onclick="rollPsychicBladesStrike()">🗡️ Infuse (+2d6)</button>
-                            </div>
-                        </div>
-
                         <!-- Words of Terror -->
                         <div class="action-card" style="background:#111827; border-left:3px solid var(--accent-gold);">
                             <div style="display:flex; justify-content:space-between; align-items:center;">
                                 <div>
                                     <strong style="color:var(--accent-gold); cursor:pointer;" onclick="openSpellDetailsModal('wordsofterror')" onmouseover="this.style.color='#f8fafc'" onmouseout="this.style.color='var(--accent-gold)'">👁️ Words of Terror: <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span></strong>
-                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">1 min private talk ➔ DC 14 Wis save or Frightened 1 hr.</span>
+                                    <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">1 min private talk ➔ DC 15 Wis save or Frightened 1 hr.</span>
                                 </div>
                                 <button class="btn-roll-action" style="background:#78350f; color:#fef3c7;" onclick="rollWordsOfTerrorAction()">🗣️ Seed Paranoia</button>
                             </div>
@@ -1187,6 +1211,14 @@
                             <div>
                                 <strong style="color:var(--accent-blue);">🐾 Acoustic Blindsight (30–60 ft):</strong>
                                 <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">Senses vibrations and sound echoes. Immune to blindness penalties within 30 ft.</span>
+                            </div>
+                        </div>
+
+                        <!-- 🌌 Shared Party Boon: The Sovereign's Planar Scar -->
+                        <div class="action-card" style="background:rgba(56, 189, 248, 0.08); border-left:3px solid var(--accent-blue);">
+                            <div>
+                                <strong style="color:var(--accent-blue);">🌌 The Sovereign's Planar Scar (Shared Party Boon):</strong>
+                                <span style="font-size:0.72rem; color:var(--text-dim); margin-left:4px;">Permanent <strong>Advantage on Saving Throws vs Frightened, Charmed, & Stunned</strong> (planar residue from the Myconid Sovereign).</span>
                             </div>
                         </div>
                     </div>
@@ -1279,23 +1311,24 @@
         // ==========================================
         // 📊 CORE STATE & LOCALSTORAGE PERSISTENCE (UPGRADED STATS)
         // ==========================================
-        const maxHP = 31;
+        const maxHP = 38;
         let currentHP = 16;
         let tempHP = 0;
-        let bardicInsp = 2;
+        let bardicInsp = 4;
         let helpTokens = 2;
         let sutureSlots = 0; // 0/2 slots remaining (Both expended)
         let isFelineReady = true;
         let isCloakAttuned = true;
-        let currentGP = 15;
+        let isGravityStepReady = true;
+        let currentGP = 415;
         let currentSP = 0;
         let advState = 'normal'; // 'normal', 'adv', 'dis'
 
-        let characterLevel = 4;
+        let characterLevel = 5;
         let spellSlots = {
-            1: { current: 3, max: 4, reqLevel: 1 },
+            1: { current: 4, max: 4, reqLevel: 1 },
             2: { current: 3, max: 3, reqLevel: 3 },
-            3: { current: 0, max: 0, reqLevel: 5 }
+            3: { current: 2, max: 2, reqLevel: 5 }
         };
 
         // Full Spells Known Dataset with Complete D&D 5e Compendium Data
@@ -1310,10 +1343,10 @@
                 range: '60 feet',
                 components: 'V (Verbal)',
                 duration: 'Instantaneous',
-                attackMod: 'DC 14 Wisdom Save',
+                attackMod: 'DC 15 Wisdom Save',
                 damage: '3d6 Psychic Damage + Flee Reaction',
-                desc: 'Whisper a discordant psychic melody (DC 14 Wis save). Fail: 3d6 Psychic damage & immediately flees using its reaction.',
-                fullRules: 'You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a <strong>Wisdom saving throw (DC 14)</strong>. On a failed save, it takes <strong>3d6 psychic damage</strong> and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn\'t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn\'t have to move.',
+                desc: 'Whisper a discordant psychic melody (DC 15 Wis save). Fail: 3d6 Psychic damage & immediately flees using its reaction.',
+                fullRules: 'You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a <strong>Wisdom saving throw (DC 15)</strong>. On a failed save, it takes <strong>3d6 psychic damage</strong> and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn\'t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn\'t have to move.',
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st (4d6 at 2nd level, 5d6 at 3rd level).',
                 flavor: 'Sylvar taps a rapid, haunting tempo on his tambourine, whispering an aberrant chord that rings directly inside the enemy\'s skull.',
                 hasLevelSelect: true,
@@ -1366,7 +1399,7 @@
                 damage: 'Blinds 6d10 Total HP of Creatures',
                 desc: '15-ft cone of dazzling light blinds creatures based on 6d10 total hit points in ascending order.',
                 fullRules: 'A dazzling array of flashing, colored light springs from your hand. Roll <strong>6d10</strong>; the total is how many hit points of creatures this spell can affect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn.',
-                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st (8d10 at 2nd level).',
+                upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st (8d10 at 2nd level, 10d10 at 3rd level).',
                 flavor: 'Sylvar spins with his tambourine, throwing an explosion of sparkling, disorienting prismatic light.',
                 hasLevelSelect: true,
                 buttons: [
@@ -1388,10 +1421,10 @@
                 range: '30 feet',
                 components: 'V, S (Verbal, Somatic)',
                 duration: '1 hour',
-                attackMod: 'DC 14 Wisdom Save',
+                attackMod: 'DC 15 Wisdom Save',
                 damage: 'Charmed (Friendly Acquaintance)',
-                desc: 'Charm a humanoid within 30 ft (DC 14 Wis save). Target regards you as a friendly acquaintance.',
-                fullRules: 'You attempt to charm a humanoid you can see or sense within range. It must make a <strong>Wisdom saving throw (DC 14)</strong>, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. When the spell ends, the creature knows it was charmed by you.',
+                desc: 'Charm a humanoid within 30 ft (DC 15 Wis save). Target regards you as a friendly acquaintance.',
+                fullRules: 'You attempt to charm a humanoid you can see or sense within range. It must make a <strong>Wisdom saving throw (DC 15)</strong>, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. When the spell ends, the creature knows it was charmed by you.',
                 upcastNotes: 'When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.',
                 flavor: 'With a feline purr and a playful flick of his ears, Sylvar laces charm directly into his spoken words.',
                 hasLevelSelect: true,
@@ -1414,10 +1447,10 @@
                 range: '60 feet (20-ft sphere)',
                 components: 'V, S (Verbal, Somatic)',
                 duration: 'Concentration, up to 1 minute',
-                attackMod: 'DC 14 Charisma Save',
+                attackMod: 'DC 15 Charisma Save',
                 damage: 'Suppresses Charmed/Frightened / Hostility',
-                desc: 'Suppress charmed/frightened conditions or make hostile humanoids indifferent in a 20-ft sphere (DC 14 Cha).',
-                fullRules: 'You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a <strong>Charisma saving throw (DC 14)</strong>; a creature can choose to fail this save voluntarily. If a creature fails its saving throw, you can choose one of the following two effects: suppress any effect causing a target to be charmed or frightened, or make a target indifferent about creatures of your choice that it is hostile toward.',
+                desc: 'Suppress charmed/frightened conditions or make hostile humanoids indifferent in a 20-ft sphere (DC 15 Cha).',
+                fullRules: 'You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a <strong>Charisma saving throw (DC 15)</strong>; a creature can choose to fail this save voluntarily. If a creature fails its saving throw, you can choose one of the following two effects: suppress any effect causing a target to be charmed or frightened, or make a target indifferent about creatures of your choice that it is hostile toward.',
                 upcastNotes: 'When cast at higher levels, the spell maintains its concentration duration.',
                 flavor: 'Sylvar plays a soft, rhythmic lullaby on his tambourine bells, draining tension and wrath from the air.',
                 hasLevelSelect: true,
@@ -1440,10 +1473,10 @@
                 range: '60 feet',
                 components: 'V, S (Verbal, Somatic)',
                 duration: '1 minute',
-                attackMod: 'DC 14 Wisdom Save',
+                attackMod: 'DC 15 Wisdom Save',
                 damage: 'Disadvantage on Perception vs Others',
-                desc: 'Captivating words give chosen targets Disadvantage on Perception to notice anyone other than you (DC 14 Wis).',
-                fullRules: 'You weave a string of distracting words, causing creatures of your choice that you can see or sense within range to make a <strong>Wisdom saving throw (DC 14)</strong>. Any creature that can\'t be charmed succeeds on this saving throw automatically. On a failed save, the target has <strong>disadvantage on Wisdom (Perception) checks</strong> made to perceive any creature other than you until the spell ends or until the target can no longer hear you.',
+                desc: 'Captivating words give chosen targets Disadvantage on Perception to notice anyone other than you (DC 15 Wis).',
+                fullRules: 'You weave a string of distracting words, causing creatures of your choice that you can see or sense within range to make a <strong>Wisdom saving throw (DC 15)</strong>. Any creature that can\'t be charmed succeeds on this saving throw automatically. On a failed save, the target has <strong>disadvantage on Wisdom (Perception) checks</strong> made to perceive any creature other than you until the spell ends or until the target can no longer hear you.',
                 upcastNotes: 'Casting at higher levels maintains the full duration.',
                 flavor: 'Sylvar leaps into a mesmerizing acoustic dance, commanding the undivided attention of everyone nearby.',
                 hasLevelSelect: true,
@@ -1455,20 +1488,45 @@
                         onClick: (lvl) => castEnthrall(lvl)
                     }
                 ]
+            },
+            {
+                id: 'hypnoticpattern',
+                name: '🌀 Hypnotic Pattern',
+                tag: '3rd Lvl • 1 Action • Conc 1m',
+                level: 3,
+                school: 'Illusion',
+                castingTime: '1 Action',
+                range: '120 feet (30-ft cube)',
+                components: 'S, M (a glowing stick of incense)',
+                duration: 'Concentration, up to 1 minute',
+                attackMod: 'DC 15 Wisdom Save',
+                damage: 'Charmed & Incapacitated (Speed 0)',
+                desc: '120ft range, 30-ft cube of kaleidoscopic light. Creatures make DC 15 Wis save or become Charmed, Incapacitated, & Speed 0.',
+                fullRules: 'You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a <strong>Wisdom saving throw (DC 15)</strong>. On a failed save, the creature becomes <strong>charmed</strong> for the duration. While charmed by this spell, the creature is <strong>incapacitated</strong> and has a <strong>speed of 0</strong>.<br>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.',
+                upcastNotes: 'Casting with higher level slots maintains concentration duration.',
+                flavor: 'Sylvar spins gracefully with his tambourine, casting an ethereal, kaleidoscopic cloud of shimmering planar ribbons that transfixes his foes in awe.',
+                hasLevelSelect: false,
+                buttons: [
+                    {
+                        label: '🌀 Cast Hypnotic Pattern (-1 L3 Slot)',
+                        class: 'btn-roll-action btn-roll-purple',
+                        costSlot: true,
+                        onClick: (lvl) => castHypnoticPattern(lvl)
+                    }
+                ]
             }
         ];
 
         // Official Master Inventory
         const defaultItems = [
             "🎻 1x Lyra (Cello Bowstring Rapier +1)",
+            "🎭 Melkor's Porcelain Mask (Ikor's Bastion)",
             "🛡️ Cloak of Protection (+1 AC & Saves)",
             "🥋 Leather Armor (AC 11)",
             "👗 Neko Maid Costume (Nat 20 Performance Outfit)",
             "🗡️ Steel Rapier",
             "🗡️ 2x Steel Daggers",
             "🗡️ Sentry Zik's Dagger (+1)",
-            "🪶 Sentry Zik's Remains & Silk Ribbon",
-            "🍷 1x Elixir of Health (Legendary)",
             "🪘 Tambourine (Arcane Focus & Resonator)",
             "🎸 Lute & Wooden Guitar",
             "💣 1x Spitfire Flask",
@@ -1478,19 +1536,40 @@
 
         // World Loot Vault Dictionary for Sylvar
         const worldLootVault = {
+            "melkor": {
+                name: "🎭 Melkor's Porcelain Mask (Ikor's Bastion)",
+                category: "CURSED RELIC • Extraplanar Ward",
+                origin: "Looted from Melkor in Mal'Goroth (The Weaver's Spire)",
+                desc: "A pure white porcelain half-mask veined in pale gold and etched with the weeping glyphs of the fallen god Ikor.",
+                effect: "• <strong>Language of Graft:</strong> Grants fluency to speak, read, and understand <strong>Malgorian</strong> (the liturgical dialect of Mal'Goroth).<br>• <strong>Bastion of the Dying God:</strong> Permanent <strong>Advantage on saving throws against spells, charms, and domination</strong> originating from alien or extraplanar gods (including Vecna, Moros, and foreign deities).<br>• ⚠️ <strong>Curse of Deific Rejection:</strong> The mask violently repels foreign divine magic. If healed by a cleric or paladin using divine magic (e.g. <em>Cure Wounds</em>, <em>Healing Word</em>, <em>Preserve Life</em>), the wearer is <strong>hurt instead</strong>, suffering necrotic/psychic damage equal to the amount rolled! (Potions, medicine, and rests heal normally)."
+            },
+            "porcelain mask": {
+                name: "🎭 Melkor's Porcelain Mask (Ikor's Bastion)",
+                category: "CURSED RELIC • Extraplanar Ward",
+                origin: "Looted from Melkor in Mal'Goroth (The Weaver's Spire)",
+                desc: "A pure white porcelain half-mask veined in pale gold and etched with the weeping glyphs of the fallen god Ikor.",
+                effect: "• <strong>Language of Graft:</strong> Grants fluency to speak, read, and understand <strong>Malgorian</strong> (the liturgical dialect of Mal'Goroth).<br>• <strong>Bastion of the Dying God:</strong> Permanent <strong>Advantage on saving throws against spells, charms, and domination</strong> originating from alien or extraplanar gods (including Vecna, Moros, and foreign deities).<br>• ⚠️ <strong>Curse of Deific Rejection:</strong> The mask violently repels foreign divine magic. If healed by a cleric or paladin using divine magic (e.g. <em>Cure Wounds</em>, <em>Healing Word</em>, <em>Preserve Life</em>), the wearer is <strong>hurt instead</strong>, suffering necrotic/psychic damage equal to the amount rolled! (Potions, medicine, and rests heal normally)."
+            },
+            "ikor's bastion": {
+                name: "🎭 Melkor's Porcelain Mask (Ikor's Bastion)",
+                category: "CURSED RELIC • Extraplanar Ward",
+                origin: "Looted from Melkor in Mal'Goroth (The Weaver's Spire)",
+                desc: "A pure white porcelain half-mask veined in pale gold and etched with the weeping glyphs of the fallen god Ikor.",
+                effect: "• <strong>Language of Graft:</strong> Grants fluency to speak, read, and understand <strong>Malgorian</strong> (the liturgical dialect of Mal'Goroth).<br>• <strong>Bastion of the Dying God:</strong> Permanent <strong>Advantage on saving throws against spells, charms, and domination</strong> originating from alien or extraplanar gods (including Vecna, Moros, and foreign deities).<br>• ⚠️ <strong>Curse of Deific Rejection:</strong> The mask violently repels foreign divine magic. If healed by a cleric or paladin using divine magic (e.g. <em>Cure Wounds</em>, <em>Healing Word</em>, <em>Preserve Life</em>), the wearer is <strong>hurt instead</strong>, suffering necrotic/psychic damage equal to the amount rolled! (Potions, medicine, and rests heal normally)."
+            },
             "lyra": {
                 name: "🎻 Lyra (Cello Bowstring Rapier / Instrument)",
                 category: "LEGENDARY RELIC WEAPON & MUSICAL CATALYST",
                 origin: "Gifted by the Porcelain Maiden in the Weaver's Spire (Mal'Goroth)",
                 desc: "An ornate cello bowstring forged from planar ivory and tensioned with razor-sharp vibrating silver suture wire. Functions seamlessly as a rapier or when drawn across an instrument.",
-                effect: "• <strong>+1 Finesse Melee Weapon:</strong> +7 to Hit, 1d8 + 5 piercing/slashing + <strong>1d6 Thunder Damage</strong>.<br>• <strong>Suture Chord (Bonus Action • 2 Slots/LR):</strong> 30 ft range. Target makes a <strong>DC 14 Dexterity Save</strong>: takes <strong>2d8 Thunder Damage</strong> and is <strong>Pinned (Speed 0)</strong> on fail (half damage & not pinned on success) until an action is spent tearing it free.<br>• <strong>Thunder Resonance:</strong> Triggers vulnerability on creatures susceptible to sonic or thunder frequencies."
+                effect: "• <strong>+1 Finesse Melee Weapon:</strong> +8 to Hit, 1d8 + 5 piercing/slashing + <strong>1d6 Thunder Damage</strong>.<br>• <strong>Suture Chord (Bonus Action • 2 Slots/LR):</strong> 30 ft range. Target makes a <strong>DC 15 Dexterity Save</strong>: takes <strong>2d8 Thunder Damage</strong> and is <strong>Pinned (Speed 0)</strong> on fail (half damage & not pinned on success) until an action is spent tearing it free.<br>• <strong>Thunder Resonance:</strong> Triggers vulnerability on creatures susceptible to sonic or thunder frequencies."
             },
             "cloak of protection": {
                 name: "🛡️ Cloak of Protection",
                 category: "WONDROUS ITEM • Attuned",
                 origin: "Dragon's Rest Sanctuary",
                 desc: "A finely tailored twilight-grey cloak trimmed with shimmering silver embroidery.",
-                effect: "• <strong>+1 to Armor Class</strong> (Base AC 16 with Leather + 18 DEX).<br>• <strong>+1 to all Saving Throws</strong> (Str +0, Dex +7, Con +3, Int -2, Wis +2, Cha +7)."
+                effect: "• <strong>+1 to Armor Class</strong> (Base AC 16 with Leather + 18 DEX).<br>• <strong>+1 to all Saving Throws</strong> (Str +0, Dex +8, Con +3, Int -2, Wis +2, Cha +8)."
             },
             "leather armor": {
                 name: "🥋 Leather Armor",
@@ -1511,42 +1590,42 @@
                 category: "MARTIAL WEAPON • Finesse",
                 origin: "Bardic Loadout",
                 desc: "A flexible, razor-pointed steel blade with an ornate silver basket hilt.",
-                effect: "• <strong>+6 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 4 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+2d6 Psychic Damage</strong>!"
+                effect: "• <strong>+7 to Hit</strong>, reach 5 ft.<br>• <strong>1d8 + 4 Piercing Damage</strong>.<br>• Can be infused with <em>Psychic Blades</em> for an extra <strong>+3d6 Psychic Damage</strong>!"
             },
             "dagger": {
                 name: "🗡️ Steel Daggers",
                 category: "SIMPLE WEAPON • Finesse, Light, Thrown",
                 origin: "Bardic Loadout",
                 desc: "Balanced throwing daggers with keen steel edges.",
-                effect: "• <strong>+6 to Hit</strong>, range 20/60 ft.<br>• <strong>1d4 + 4 Piercing Damage</strong>."
+                effect: "• <strong>+7 to Hit</strong>, range 20/60 ft.<br>• <strong>1d4 + 4 Piercing Damage</strong>."
             },
             "zik's dagger": {
                 name: "🗡️ Sentry Zik's Dagger (+1)",
                 category: "MARTIAL WEAPON • +1 Magic Dagger",
                 origin: "Carried by Sentry Zik (The Brave Kobold Defender)",
                 desc: "A razor-sharp ceremonial kobold dagger forged from tempered basalt steel and tipped with draconic obsidian.",
-                effect: "• <strong>+7 to Hit</strong> (DEX +4, Prof +2, +1 Magic), range 20/60 ft.<br>• <strong>1d4 + 5 Piercing Damage</strong>.<br>• Light, Finesse, Thrown. Can be thrown as an off-hand attack or infused with <em>Psychic Blades</em>!"
+                effect: "• <strong>+8 to Hit</strong> (DEX +4, Prof +3, +1 Magic), range 20/60 ft.<br>• <strong>1d4 + 5 Piercing Damage</strong>.<br>• Light, Finesse, Thrown. Can be thrown as an off-hand attack or infused with <em>Psychic Blades</em>!"
             },
             "sentry zik's dagger": {
                 name: "🗡️ Sentry Zik's Dagger (+1)",
                 category: "MARTIAL WEAPON • +1 Magic Dagger",
                 origin: "Carried by Sentry Zik (The Brave Kobold Defender)",
                 desc: "A razor-sharp ceremonial kobold dagger forged from tempered basalt steel and tipped with draconic obsidian.",
-                effect: "• <strong>+7 to Hit</strong> (DEX +4, Prof +2, +1 Magic), range 20/60 ft.<br>• <strong>1d4 + 5 Piercing Damage</strong>.<br>• Light, Finesse, Thrown. Can be thrown as an off-hand attack or infused with <em>Psychic Blades</em>!"
+                effect: "• <strong>+8 to Hit</strong> (DEX +4, Prof +3, +1 Magic), range 20/60 ft.<br>• <strong>1d4 + 5 Piercing Damage</strong>.<br>• Light, Finesse, Thrown. Can be thrown as an off-hand attack or infused with <em>Psychic Blades</em>!"
             },
             "zik's remains": {
                 name: "🪶 Sentry Zik's Remains & Silk Ribbon",
                 category: "SACRED KEEPSAKE & SOLEMN RELIC",
                 origin: "Recovered from the Clifftop Observatory / Dragon's Rest Memorial",
-                desc: "The gathered ashes and polished scales of Sentry Zik, tenderly wrapped in Sylvar's performance silk ribbon and kept in an engraved urn.",
-                effect: "• <strong>Priceless Emotional Anchor:</strong> Commemorates the fallen hero of Dragon's Rest who stood fearless against abyssal horrors.<br>• Grants advantage on saves against despair and existential dread while carried."
+                desc: "The gathered ashes and polished scales of Sentry Zik, tenderly wrapped in Sylvar's performance silk ribbon and kept in an engraved urn. *(Sacrificed to Mal'Goroth in the cosmic stealth bargain)*.",
+                effect: "• <strong>Priceless Emotional Anchor:</strong> Commemorates the fallen hero of Dragon's Rest who stood fearless against abyssal horrors.<br>• Sacrificed to the cosmic dark of Mal'Goroth to save the expedition."
             },
             "sentry zik's remains": {
                 name: "🪶 Sentry Zik's Remains & Silk Ribbon",
                 category: "SACRED KEEPSAKE & SOLEMN RELIC",
                 origin: "Recovered from the Clifftop Observatory / Dragon's Rest Memorial",
-                desc: "The gathered ashes and polished scales of Sentry Zik, tenderly wrapped in Sylvar's performance silk ribbon and kept in an engraved urn.",
-                effect: "• <strong>Priceless Emotional Anchor:</strong> Commemorates the fallen hero of Dragon's Rest who stood fearless against abyssal horrors.<br>• Grants advantage on saves against despair and existential dread while carried."
+                desc: "The gathered ashes and polished scales of Sentry Zik, tenderly wrapped in Sylvar's performance silk ribbon and kept in an engraved urn. *(Sacrificed to Mal'Goroth in the cosmic stealth bargain)*.",
+                effect: "• <strong>Priceless Emotional Anchor:</strong> Commemorates the fallen hero of Dragon's Rest who stood fearless against abyssal horrors.<br>• Sacrificed to the cosmic dark of Mal'Goroth to save the expedition."
             },
             "elixir of health": {
                 name: "🍷 Elixir of Life (Consumable, Legendary)",
@@ -1637,35 +1716,39 @@
             renderSpellbook();
             renderInventory();
             updateGoldDisplay();
+            updateGravityStepUI();
         }
 
         function loadSavedState() {
             try {
                 const savedHP = localStorage.getItem('sylvar_hp_v2');
                 if (savedHP !== null) currentHP = parseInt(savedHP);
-                else currentHP = 16;
+                else currentHP = 38;
 
                 const savedTemp = localStorage.getItem('sylvar_temp_hp');
                 if (savedTemp !== null) tempHP = parseInt(savedTemp);
                 const savedInsp = localStorage.getItem('sylvar_insp');
                 if (savedInsp !== null) bardicInsp = parseInt(savedInsp);
-                else bardicInsp = 2;
+                else bardicInsp = 4;
                 const savedHelp = localStorage.getItem('sylvar_help');
                 if (savedHelp !== null) helpTokens = parseInt(savedHelp);
                 const savedSuture = localStorage.getItem('sylvar_suture');
                 if (savedSuture !== null) sutureSlots = parseInt(savedSuture);
-                else sutureSlots = 0;
+                else sutureSlots = 2;
                 const savedGP = localStorage.getItem('sylvar_gp_v4');
                 if (savedGP !== null) currentGP = parseInt(savedGP);
-                else currentGP = 15;
+                else currentGP = 415;
                 const savedSP = localStorage.getItem('sylvar_sp_v4');
                 if (savedSP !== null) currentSP = parseInt(savedSP);
                 else currentSP = 0;
+                const savedGrav = localStorage.getItem('sylvar_gravity_step');
+                if (savedGrav !== null) isGravityStepReady = (savedGrav === 'true');
                 const savedSlots = localStorage.getItem('sylvar_slots');
                 if (savedSlots) {
                     const parsed = JSON.parse(savedSlots);
                     if (parsed[1]) spellSlots[1].current = parsed[1].current;
                     if (parsed[2]) spellSlots[2].current = parsed[2].current;
+                    if (parsed[3]) spellSlots[3].current = parsed[3].current;
                 }
             } catch (e) {
                 console.error("Failed to load local state:", e);
@@ -1680,6 +1763,7 @@
             localStorage.setItem('sylvar_suture', sutureSlots);
             localStorage.setItem('sylvar_gp_v4', currentGP);
             localStorage.setItem('sylvar_sp_v4', currentSP);
+            localStorage.setItem('sylvar_gravity_step', isGravityStepReady);
             localStorage.setItem('sylvar_slots', JSON.stringify(spellSlots));
         }
 
@@ -1866,14 +1950,17 @@
             const heal = Math.floor(maxHP * 0.25);
             currentHP = Math.min(maxHP, currentHP + heal);
             helpTokens = Math.min(2, helpTokens + 1);
+            bardicInsp = 4; // Font of Inspiration (Bard 5: dice recover on short or long rest)
+            isGravityStepReady = true;
             isFelineReady = true;
             document.getElementById('card-feline-toggle').classList.add('active-buff');
             document.getElementById('badge-feline').innerText = "READY (60ft)";
             document.getElementById('sub-feline').innerText = "Speed: 30 ft";
             renderVitals();
             updateCountersUI();
+            updateGravityStepUI();
             saveSheetState();
-            logRoll(`☕ <strong>Short Rest Completed:</strong> Restored +${heal} HP (${currentHP}/${maxHP}), +1 Help Token restored (${helpTokens}/2), Feline Agility ready, Song of Rest grants +1d6 to spent Hit Dice!`);
+            logRoll(`☕ <strong>Short Rest Completed:</strong> Restored +${heal} HP (${currentHP}/${maxHP}), +1 Help Token restored (${helpTokens}/2), <strong>Bardic Inspiration recharged (4/4, Font of Inspiration)</strong>, <strong>Planar Gravity Step ready (1/SR)</strong>, Feline Agility ready, Song of Rest grants +1d6 to spent Hit Dice!`);
         }
 
         function resetHP() {
@@ -1884,12 +1971,15 @@
             sutureSlots = 2;
             spellSlots[1].current = 4;
             spellSlots[2].current = 3;
+            spellSlots[3].current = 2;
+            isGravityStepReady = true;
             isFelineReady = true;
             renderVitals();
             renderSpellSlots();
             updateCountersUI();
+            updateGravityStepUI();
             saveSheetState();
-            logRoll(`⛺ <strong>Full Long Rest Completed:</strong> All HP (31/31), Spell Slots (4/4, 3/3), Bardic Inspiration (4/4), Suture Chord (2/2), and Help Tokens (2/2) fully restored!`);
+            logRoll(`⛺ <strong>Full Long Rest Completed:</strong> All HP (${maxHP}/${maxHP}), Spell Slots (4/4, 3/3, 2/2), Bardic Inspiration (4/4 d8), Planar Gravity Step, Suture Chord (2/2), and Help Tokens (2/2) fully restored!`);
         }
 
         // ==========================================
@@ -1968,14 +2058,14 @@
 
         function rollBardicInspDie() {
             if (bardicInsp <= 0) {
-                alert("No Bardic Inspiration dice remaining! (4/Long Rest)");
+                alert("No Bardic Inspiration dice remaining! (4/Short or Long Rest)");
                 return;
             }
             bardicInsp -= 1;
             updateCountersUI();
             saveSheetState();
-            const d6 = Math.floor(Math.random() * 6) + 1;
-            logRoll(`🪘 <strong>Bardic Inspiration Granted (d6):</strong> Rolled <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${d6}</span> to ally within 60 ft! (${bardicInsp}/4 dice left)`);
+            const d8 = Math.floor(Math.random() * 8) + 1;
+            logRoll(`🪘 <strong>Bardic Inspiration Granted (d8):</strong> Rolled <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${d8}</span> to ally within 60 ft! (${bardicInsp}/4 dice left)`);
         }
 
         function modHelpToken(delta) {
@@ -2079,10 +2169,14 @@
 
                 let lvlDropdownHtml = '';
                 if (sp.hasLevelSelect) {
+                    const startLvl = sp.level || 1;
+                    let opts = '';
+                    for (let l = startLvl; l <= 3; l++) {
+                        opts += `<option value="${l}">Lvl ${l}</option>`;
+                    }
                     lvlDropdownHtml = `
                         <select class="lvl-dropdown" id="lvl-select-${sp.id}">
-                            <option value="1">Lvl 1</option>
-                            <option value="2">Lvl 2</option>
+                            ${opts}
                         </select>
                     `;
                 }
@@ -2121,7 +2215,7 @@
             const sp = fullSpellbook.find(s => s.id === spellId);
             if (!sp || !sp.buttons[btnIdx]) return;
             const btn = sp.buttons[btnIdx];
-            const lvl = getSelectedSpellLevel(spellId);
+            const lvl = sp.hasLevelSelect ? getSelectedSpellLevel(spellId) : sp.level;
 
             if (btn.costSlot) {
                 if (spellSlots[lvl] && spellSlots[lvl].max > 0) {
@@ -2142,7 +2236,7 @@
         // 🔮 SPELL LOGIC & ROLL FUNCTIONS
         // ==========================================
         function rollDissonantWhispers(slotLevel) {
-            const dice = 2 + slotLevel; // Lvl 1: 3d6, Lvl 2: 4d6
+            const dice = 2 + slotLevel; // Lvl 1: 3d6, Lvl 2: 4d6, Lvl 3: 5d6
             const rolls = [];
             let total = 0;
             for (let i = 0; i < dice; i++) {
@@ -2150,11 +2244,11 @@
                 rolls.push(r);
                 total += r;
             }
-            logRoll(`🧠 <strong>Dissonant Whispers (Level ${slotLevel} Slot • ${dice}d6):</strong> [${rolls.join('+')}] = <span style="color:var(--accent-purple); font-size:1.1rem; font-weight:800;">${total} Psychic Damage</span> + must flee using reaction (DC 14 Wis save for half)!`);
+            logRoll(`🧠 <strong>Dissonant Whispers (Level ${slotLevel} Slot • ${dice}d6):</strong> [${rolls.join('+')}] = <span style="color:var(--accent-purple); font-size:1.1rem; font-weight:800;">${total} Psychic Damage</span> + must flee using reaction (DC 15 Wis save for half)!`);
         }
 
         function rollHealingWord(slotLevel) {
-            const dice = slotLevel; // Lvl 1: 1d4+4, Lvl 2: 2d4+4
+            const dice = slotLevel; // Lvl 1: 1d4+4, Lvl 2: 2d4+4, Lvl 3: 3d4+4
             const rolls = [];
             let total = 4; // +4 CHA
             for (let i = 0; i < dice; i++) {
@@ -2166,7 +2260,7 @@
         }
 
         function rollColorSpray(slotLevel) {
-            const dice = 4 + (2 * slotLevel); // Lvl 1: 6d10, Lvl 2: 8d10
+            const dice = 4 + (2 * slotLevel); // Lvl 1: 6d10, Lvl 2: 8d10, Lvl 3: 10d10
             const rolls = [];
             let total = 0;
             for (let i = 0; i < dice; i++) {
@@ -2178,19 +2272,30 @@
         }
 
         function castCharmPerson(slotLevel) {
-            logRoll(`💖 <strong>Charm Person (Level ${slotLevel} Slot • 30ft):</strong> Target humanoid makes <span style="color:var(--accent-gold); font-weight:800;">DC 14 Wisdom Save</span>. On fail: regarded as friendly acquaintance for 1 hour!`);
+            logRoll(`💖 <strong>Charm Person (Level ${slotLevel} Slot • 30ft):</strong> Target humanoid makes <span style="color:var(--accent-gold); font-weight:800;">DC 15 Wisdom Save</span>. On fail: regarded as friendly acquaintance for 1 hour!`);
         }
 
         function castCalmEmotions(slotLevel) {
-            logRoll(`🕊️ <strong>Calm Emotions (Level ${slotLevel} Slot • 20ft Sphere):</strong> Humanoids make <span style="color:var(--accent-gold); font-weight:800;">DC 14 Charisma Save</span>. On fail: suppress Charmed/Frightened conditions or make hostile targets indifferent!`);
+            logRoll(`🕊️ <strong>Calm Emotions (Level ${slotLevel} Slot • 20ft Sphere):</strong> Humanoids make <span style="color:var(--accent-gold); font-weight:800;">DC 15 Charisma Save</span>. On fail: suppress Charmed/Frightened conditions or make hostile targets indifferent!`);
         }
 
         function castEnthrall(slotLevel) {
-            logRoll(`✨ <strong>Enthrall (Level ${slotLevel} Slot • 60ft):</strong> Targets make <span style="color:var(--accent-gold); font-weight:800;">DC 14 Wisdom Save</span>. On fail: Disadvantage on Perception to notice anyone other than you!`);
+            logRoll(`✨ <strong>Enthrall (Level ${slotLevel} Slot • 60ft):</strong> Targets make <span style="color:var(--accent-gold); font-weight:800;">DC 15 Wisdom Save</span>. On fail: Disadvantage on Perception to notice anyone other than you!`);
+        }
+
+        function castHypnoticPattern(slotLevel) {
+            logRoll(`🌀 <strong>Hypnotic Pattern (Level ${slotLevel || 3} Slot • 120ft • 30-ft Cube • Conc 1m):</strong> Creatures make <span style="color:var(--accent-gold); font-weight:800;">DC 15 Wisdom Save</span>. On fail: become <span style="color:#c084fc; font-weight:800;">Charmed</span>, <span style="color:#ef4444; font-weight:800;">Incapacitated</span>, and have <span style="color:#ef4444; font-weight:800;">Speed 0</span>!`);
         }
 
         function castViciousMockery() {
-            logRoll(`🎭 <strong>Vicious Mockery:</strong> Target makes <span style="color:var(--accent-gold); font-weight:800;">DC 14 Wisdom Save</span>. On fail: takes 1d4 Psychic Damage and suffers <strong>Disadvantage</strong> on its next attack!`);
+            logRoll(`🎭 <strong>Vicious Mockery:</strong> Target makes <span style="color:var(--accent-gold); font-weight:800;">DC 15 Wisdom Save</span>. On fail: takes 2d4 Psychic Damage and suffers <strong>Disadvantage</strong> on its next attack!`);
+        }
+
+        function rollViciousMockeryDamage() {
+            const d1 = Math.floor(Math.random() * 4) + 1;
+            const d2 = Math.floor(Math.random() * 4) + 1;
+            const tot = d1 + d2;
+            logRoll(`🎭 <strong>Vicious Mockery Damage (2d4):</strong> [${d1} + ${d2}] = <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">${tot} Psychic Damage</span>!`);
         }
 
         function castUtility(text) {
@@ -2217,12 +2322,12 @@
             const d8_2 = Math.floor(Math.random() * 8) + 1;
             const total = d8_1 + d8_2;
             const half = Math.floor(total / 2);
-            logRoll(`🪡 <strong>Lyra — Suture Chord (Bonus Action • 30ft Whip • -1 Slot):</strong> Target makes <span style="color:var(--accent-gold); font-weight:800;">DC 14 Dexterity Save</span>.<br>• <strong>Fail:</strong> <span style="color:#c084fc; font-size:1.12rem; font-weight:800;">${total} Thunder Damage</span> [2d8: ${d8_1}+${d8_2}] + <span style="color:#ef4444; font-weight:700;">Pinned (Speed 0)</span> until an action tears it free.<br>• <strong>Success:</strong> <span style="color:#38bdf8; font-weight:700;">${half} Thunder Damage</span> (half), not pinned. <span style="color:var(--accent-gold); font-size:0.75rem;">(${sutureSlots}/2 slots left)</span>`);
+            logRoll(`🪡 <strong>Lyra — Suture Chord (Bonus Action • 30ft Whip • -1 Slot):</strong> Target makes <span style="color:var(--accent-gold); font-weight:800;">DC 15 Dexterity Save</span>.<br>• <strong>Fail:</strong> <span style="color:#c084fc; font-size:1.12rem; font-weight:800;">${total} Thunder Damage</span> [2d8: ${d8_1}+${d8_2}] + <span style="color:#ef4444; font-weight:700;">Pinned (Speed 0)</span> until an action tears it free.<br>• <strong>Success:</strong> <span style="color:#38bdf8; font-weight:700;">${half} Thunder Damage</span> (half), not pinned. <span style="color:var(--accent-gold); font-size:0.75rem;">(${sutureSlots}/2 slots left)</span>`);
         }
 
         function rollPsychicBladesStrike() {
             if (bardicInsp <= 0) {
-                alert("No Bardic Inspiration dice remaining to fuel Psychic Blades! (4/Long Rest)");
+                alert("No Bardic Inspiration dice remaining to fuel Psychic Blades! (4/Short or Long Rest)");
                 return;
             }
             bardicInsp -= 1;
@@ -2230,17 +2335,65 @@
             saveSheetState();
             const p1 = Math.floor(Math.random() * 6) + 1;
             const p2 = Math.floor(Math.random() * 6) + 1;
-            const tot = p1 + p2;
-            logRoll(`🧠 <strong>Psychic Blades Infused (-1 Insp):</strong> Dealt <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${tot} Psychic Damage</span> (2d6: ${p1}+${p2}) on weapon hit! (${bardicInsp}/4 dice left)`);
+            const p3 = Math.floor(Math.random() * 6) + 1;
+            const tot = p1 + p2 + p3;
+            logRoll(`🧠 <strong>Psychic Blades Infused (-1 Insp):</strong> Dealt <span style="color:var(--accent-purple); font-size:1.15rem; font-weight:800;">+${tot} Psychic Damage</span> (3d6: ${p1}+${p2}+${p3}) on weapon hit! (${bardicInsp}/4 dice left)`);
         }
 
         function rollWordsOfTerrorAction() {
-            logRoll(`👁️ <strong>Words of Terror Seeded (1 Min Conversation):</strong> Target humanoid must make a <span style="color:var(--accent-gold); font-weight:800;">DC 14 Wisdom Save</span> or be <strong>Frightened</strong> for 1 hour!`);
+            logRoll(`👁️ <strong>Words of Terror Seeded (1 Min Conversation):</strong> Target humanoid must make a <span style="color:var(--accent-gold); font-weight:800;">DC 15 Wisdom Save</span> or be <strong>Frightened</strong> for 1 hour!`);
         }
 
         function rollSongOfRestAction() {
             const d6 = Math.floor(Math.random() * 6) + 1;
             logRoll(`🎶 <strong>Song of Rest (+1d6 Short Rest Heal):</strong> Rolled <span style="color:#86efac; font-size:1.15rem; font-weight:800;">+${d6} Extra HP</span> for all allies spending Hit Dice during this short rest!`);
+        }
+
+        // ==========================================
+        // 🌌 PLANAR GRAVITY STEP (1/SHORT REST BOON)
+        // ==========================================
+        function updateGravityStepUI() {
+            const card = document.getElementById('card-gravity-step');
+            const badge = document.getElementById('badge-gravity-step');
+            const btn = document.getElementById('btn-gravity-step');
+            if (!card || !badge || !btn) return;
+            if (isGravityStepReady) {
+                card.style.opacity = '1';
+                card.style.filter = 'none';
+                badge.innerText = 'READY (1/SR)';
+                badge.style.color = '#38bdf8';
+                btn.disabled = false;
+                btn.style.background = '#0284c7';
+                btn.style.color = '#f0f9ff';
+                btn.style.cursor = 'pointer';
+            } else {
+                card.style.opacity = '0.65';
+                card.style.filter = 'grayscale(0.6)';
+                badge.innerText = 'USED (1/SR)';
+                badge.style.color = '#94a3b8';
+                btn.disabled = true;
+                btn.style.background = '#334155';
+                btn.style.color = '#94a3b8';
+                btn.style.cursor = 'not-allowed';
+            }
+        }
+
+        function usePlanarGravityStep() {
+            if (!isGravityStepReady) {
+                logRoll(`⚠️ <strong>Planar Gravity Step Expended!</strong> Recharges on a Short or Long Rest.`);
+                return;
+            }
+            isGravityStepReady = false;
+            updateGravityStepUI();
+            saveSheetState();
+            logRoll(`🌌 <strong>Planar Gravity Step Activated (Bonus Action):</strong> Sylvar glides up to <strong>20 feet</strong> through the air, ignoring difficult terrain and provoking <strong>no opportunity attacks</strong>! (1/Short Rest - Expended)`);
+        }
+
+        function togglePlanarGravityStepManual() {
+            isGravityStepReady = !isGravityStepReady;
+            updateGravityStepUI();
+            saveSheetState();
+            logRoll(`🌌 <strong>Planar Gravity Step manually toggled:</strong> Now <strong>${isGravityStepReady ? 'READY' : 'EXPENDED'}</strong>.`);
         }
 
         // ==========================================
@@ -2721,17 +2874,17 @@
                 range: "5 feet reach (Melee) / 30 feet (Suture Chord)",
                 components: "Finesse, +1 Magical, Sonic Resonator",
                 duration: "Instantaneous / Speed 0 until Action torn free",
-                attackMod: "+7 to Hit (Melee) / DC 14 Dex Save (Suture)",
+                attackMod: "+8 to Hit (Melee) / DC 15 Dex Save (Suture)",
                 damage: "1d8 + 5 Pierc/Slash + 1d6 Thunder | Suture: 2d8 Thunder + Pin",
                 desc: "An ornate cello bowstring forged from planar ivory and tensioned with razor-sharp vibrating silver suture wire. Functions seamlessly as a +1 finesse rapier or drawn across an instrument as a spellcasting focus.",
-                fullRules: "<strong>Dual Nature:</strong> Can be wielded as a +1 Finesse Weapon (+7 to Hit, 1d8+5 piercing/slashing) or drawn across an instrument.<br>• <strong>Acoustic Cleave:</strong> Melee strikes deal an additional <strong>+1d6 Thunder Damage</strong> on hit.<br>• <strong>Suture Chord (Bonus Action • 2 Slots per Long Rest):</strong> Whips the silver bowstring at a target within 30 ft. Target must make a <strong>DC 14 Dexterity Saving Throw</strong>. On fail: takes <strong>2d8 Thunder Damage</strong> and is <strong>Pinned (Speed 0)</strong> until an action is spent tearing it free. On success: takes half damage (1d8 Thunder) and is not pinned.",
+                fullRules: "<strong>Dual Nature:</strong> Can be wielded as a +1 Finesse Weapon (+8 to Hit, 1d8+5 piercing/slashing) or drawn across an instrument.<br>• <strong>Acoustic Cleave:</strong> Melee strikes deal an additional <strong>+1d6 Thunder Damage</strong> on hit.<br>• <strong>Suture Chord (Bonus Action • 2 Slots per Long Rest):</strong> Whips the silver bowstring at a target within 30 ft. Target must make a <strong>DC 15 Dexterity Saving Throw</strong>. On fail: takes <strong>2d8 Thunder Damage</strong> and is <strong>Pinned (Speed 0)</strong> until an action is spent tearing it free. On success: takes half damage (1d8 Thunder) and is not pinned.",
                 upcastNotes: "Suture Chord recharges on a Long Rest (2 slots). Deals Thunder damage which triggers sonic vulnerabilities (e.g. Moros's Void Eye).",
                 flavor: "Gifted by The Porcelain Maiden in the Weaver's Spire. Drawn across strings or wielded in hand, it cuts with razor pitch.",
                 modalButtons: [
                     {
-                        label: "🎻 Attack (+7)",
+                        label: "🎻 Attack (+8)",
                         class: "btn-roll-action",
-                        onClick: () => rollD20('Lyra (+1) Attack', 7)
+                        onClick: () => rollD20('Lyra (+1) Attack', 8)
                     },
                     {
                         label: "💥 1d8+5+1d6 Thndr",
@@ -2744,7 +2897,7 @@
                         onClick: () => rollSutureChord()
                     },
                     {
-                        label: "⚡ +2d6 Psychic Blades",
+                        label: "⚡ +3d6 Psychic Blades",
                         class: "btn-roll-action btn-roll-purple",
                         onClick: () => rollPsychicBladesStrike()
                     }
@@ -2758,22 +2911,27 @@
                 range: "5 feet reach",
                 components: "Finesse",
                 duration: "Instantaneous",
-                attackMod: "+6 to Hit (DEX + Proficiency)",
+                attackMod: "+7 to Hit (DEX + Proficiency)",
                 damage: "1d8 + 4 Piercing Damage",
-                desc: "Finesse Martial Weapon: +6 to Hit, 1d8 + 4 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+2d6 Psychic) on hit!",
+                desc: "Finesse Martial Weapon: +7 to Hit, 1d8 + 4 Piercing Damage. Can be empowered with College of Whispers Psychic Blades (+3d6 Psychic) on hit!",
                 fullRules: "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.",
-                upcastNotes: "Can be infused with Psychic Blades for +2d6 Psychic Damage (costs 1 Bardic Inspiration).",
+                upcastNotes: "Can be infused with Psychic Blades for +3d6 Psychic Damage (costs 1 Bardic Inspiration).",
                 flavor: "Sylvar's rapier glides through the air like a conducting baton, striking with pinpoint acoustic precision.",
                 modalButtons: [
                     {
-                        label: "🗡️ Attack (+6)",
+                        label: "🗡️ Attack (+7)",
                         class: "btn-roll-action",
-                        onClick: () => rollD20('Rapier Attack', 6)
+                        onClick: () => rollD20('Rapier Attack', 7)
                     },
                     {
                         label: "💥 1d8+4 Dmg",
                         class: "btn-roll-action btn-roll-dmg",
                         onClick: () => rollFormulaDamage('Rapier Damage', 8, 4, 'Piercing')
+                    },
+                    {
+                        label: "⚡ +3d6 Psychic Blades",
+                        class: "btn-roll-action btn-roll-purple",
+                        onClick: () => rollPsychicBladesStrike()
                     }
                 ]
             },
@@ -2785,22 +2943,54 @@
                 range: "20/60 feet (Thrown)",
                 components: "Finesse, Light, Thrown",
                 duration: "Instantaneous",
-                attackMod: "+6 to Hit (DEX + Proficiency)",
+                attackMod: "+7 to Hit (DEX + Proficiency)",
                 damage: "1d4 + 4 Piercing Damage",
-                desc: "Finesse, Light, Thrown: +6 to Hit, 1d4 + 4 Piercing Damage.",
+                desc: "Finesse, Light, Thrown: +7 to Hit, 1d4 + 4 Piercing Damage.",
                 fullRules: "If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon.",
                 upcastNotes: "Can be thrown as a bonus action off-hand attack if two-weapon fighting.",
                 flavor: "Balanced throwing daggers with keen steel edges, kept tucked inside Sylvar's sash.",
                 modalButtons: [
                     {
-                        label: "🗡️ Attack (+6)",
+                        label: "🗡️ Attack (+7)",
                         class: "btn-roll-action",
-                        onClick: () => rollD20('Dagger Attack', 6)
+                        onClick: () => rollD20('Dagger Attack', 7)
                     },
                     {
                         label: "💥 1d4+4 Dmg",
                         class: "btn-roll-action btn-roll-dmg",
                         onClick: () => rollFormulaDamage('Dagger Damage', 4, 4, 'Piercing')
+                    }
+                ]
+            },
+            zik_dagger: {
+                id: "zik_dagger",
+                name: "🗡️ Sentry Zik's Dagger (+1)",
+                school: "Martial Weapon • +1 Magic Dagger",
+                castingTime: "1 Action",
+                range: "20/60 feet (Thrown) / 5 ft reach",
+                components: "Finesse, Light, Thrown",
+                duration: "Instantaneous",
+                attackMod: "+8 to Hit (DEX + PB + 1 Magic)",
+                damage: "1d4 + 5 Piercing Damage",
+                desc: "Tempered basalt steel tipped with obsidian. +8 to Hit, 1d4 + 5 Piercing. Can be thrown or infused with Psychic Blades (+3d6 Psychic)!",
+                fullRules: "Carried by Sentry Zik, the brave kobold defender of Dragon's Rest. Finesse, Light, Thrown (20/60). Can be used for off-hand bonus action attacks or infused with Psychic Blades.",
+                upcastNotes: "Can be infused with Psychic Blades for +3d6 Psychic Damage.",
+                flavor: "Warm to the touch, carrying the enduring courage of Dragon's Rest's bravest defender.",
+                modalButtons: [
+                    {
+                        label: "🗡️ Attack (+8)",
+                        class: "btn-roll-action",
+                        onClick: () => rollD20("Sentry Zik's Dagger (+1) Attack", 8)
+                    },
+                    {
+                        label: "💥 1d4+5 Dmg",
+                        class: "btn-roll-action btn-roll-dmg",
+                        onClick: () => rollFormulaDamage("Sentry Zik's Dagger Damage", 4, 5, 'Piercing')
+                    },
+                    {
+                        label: "⚡ +3d6 Psychic Blades",
+                        class: "btn-roll-action btn-roll-purple",
+                        onClick: () => rollPsychicBladesStrike()
                     }
                 ]
             },
@@ -2812,22 +3002,22 @@
                 range: "60 feet",
                 components: "V (Verbal)",
                 duration: "Instantaneous",
-                attackMod: "DC 14 Wisdom Save",
-                damage: "1d4 Psychic Damage + Disadvantage on Next Attack",
-                desc: "Unleash a string of insults laced with subtle enchantments (DC 14 Wis save). Fail: takes 1d4 Psychic damage and has Disadvantage on next attack roll.",
-                fullRules: "You unleash a string of insults laced with subtle enchantments at one creature you can see or sense within range. If the target can hear you (though it need not understand you), it must succeed on a <strong>Wisdom saving throw (DC 14)</strong> or take <strong>1d4 psychic damage</strong> and have <strong>disadvantage on the next attack roll</strong> it makes before the end of its next turn.",
-                upcastNotes: "This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+                attackMod: "DC 15 Wisdom Save",
+                damage: "2d4 Psychic Damage + Disadvantage on Next Attack",
+                desc: "Unleash a string of insults laced with subtle enchantments (DC 15 Wis save). Fail: takes 2d4 Psychic damage and has Disadvantage on next attack roll.",
+                fullRules: "You unleash a string of insults laced with subtle enchantments at one creature you can see or sense within range. If the target can hear you (though it need not understand you), it must succeed on a <strong>Wisdom saving throw (DC 15)</strong> or take <strong>2d4 psychic damage</strong> and have <strong>disadvantage on the next attack roll</strong> it makes before the end of its next turn.",
+                upcastNotes: "This spell's damage increased to 2d4 at 5th level (scales to 3d4 at 11th level, 4d4 at 17th level).",
                 flavor: "Sylvar strikes a mocking chord on his tambourine and purrs a scathing acoustic insult that rings with psychic agony.",
                 modalButtons: [
                     {
-                        label: "🎭 Cast (DC 14 Wis)",
+                        label: "🎭 Cast (DC 15 Wis)",
                         class: "btn-roll-action btn-roll-purple",
                         onClick: () => castViciousMockery()
                     },
                     {
-                        label: "💥 1d4 Dmg",
+                        label: "💥 2d4 Dmg",
                         class: "btn-roll-action btn-roll-dmg",
-                        onClick: () => rollFormulaDamage('Vicious Mockery Dmg', 4, 0, 'Psychic')
+                        onClick: () => rollViciousMockeryDamage()
                     }
                 ]
             },
@@ -2862,14 +3052,14 @@
                 components: "1 Bardic Inspiration Die",
                 duration: "Instantaneous",
                 attackMod: "Automatic on Successful Weapon Hit",
-                damage: "+2d6 Psychic Damage",
-                desc: "When you hit a creature with a weapon attack, expend 1 use of Bardic Inspiration to deal an extra 2d6 psychic damage (1/round on your turn).",
-                fullRules: "When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra <strong>2d6 psychic damage</strong> to that target. You can do so only once per round on your turn. The psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, and 8d6 at 15th level.",
-                upcastNotes: "Increases to 3d6 at Bard Level 5, 5d6 at Level 10, and 8d6 at Level 15.",
+                damage: "+3d6 Psychic Damage",
+                desc: "When you hit a creature with a weapon attack, expend 1 use of Bardic Inspiration to deal an extra 3d6 psychic damage (1/round on your turn).",
+                fullRules: "When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra <strong>3d6 psychic damage</strong> to that target. You can do so only once per round on your turn. The psychic damage increases when you reach certain levels in this class, increasing to 5d6 at 10th level, and 8d6 at 15th level.",
+                upcastNotes: "Scaled to 3d6 at Bard Level 5 (increases to 5d6 at Level 10, and 8d6 at Level 15).",
                 flavor: "Sylvar's rapier blade hums with dark psychic resonance as he strikes through the mind of his target.",
                 modalButtons: [
                     {
-                        label: "🗡️ Infuse Psychic Blades (+2d6)",
+                        label: "🗡️ Infuse Psychic Blades (+3d6)",
                         class: "btn-roll-action btn-roll-purple",
                         onClick: () => rollPsychicBladesStrike()
                     }
@@ -2883,10 +3073,10 @@
                 range: "Touch / Hearing Range",
                 components: "Spoken Words alone",
                 duration: "1 hour",
-                attackMod: "DC 14 Wisdom Save",
+                attackMod: "DC 15 Wisdom Save",
                 damage: "Frightened Condition (Paranoid Phobia)",
-                desc: "Speak to a humanoid alone for 1 minute (DC 14 Wis save). Fail: target is Frightened of you or a chosen creature for 1 hour.",
-                fullRules: "If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear in its mind. At the end of the conversation, the target must succeed on a <strong>Wisdom saving throw (DC 14)</strong> or be <strong>frightened</strong> of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. On a success, the target does not know that you attempted to frighten it.",
+                desc: "Speak to a humanoid alone for 1 minute (DC 15 Wis save). Fail: target is Frightened of you or a chosen creature for 1 hour.",
+                fullRules: "If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear in its mind. At the end of the conversation, the target must succeed on a <strong>Wisdom saving throw (DC 15)</strong> or be <strong>frightened</strong> of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. On a success, the target does not know that you attempted to frighten it.",
                 upcastNotes: "Recharges after a Short or Long Rest.",
                 flavor: "Sylvar leans in close, his blindfold hiding his gaze as he purrs insidious whispered truths that plant terror in the listener's heart.",
                 modalButtons: [
@@ -2918,6 +3108,65 @@
                         onClick: () => rollSongOfRestAction()
                     }
                 ]
+            },
+            hypnoticpattern: {
+                id: "hypnoticpattern",
+                name: "🌀 Hypnotic Pattern",
+                school: "3rd Level Illusion",
+                castingTime: "1 Action",
+                range: "120 feet (30-ft cube)",
+                components: "S, M (a glowing stick of incense)",
+                duration: "Concentration, up to 1 minute",
+                attackMod: "DC 15 Wisdom Save",
+                damage: "Charmed & Incapacitated (Speed 0)",
+                desc: "120ft range, 30-ft cube of kaleidoscopic light. Creatures make DC 15 Wis save or become Charmed, Incapacitated, & Speed 0.",
+                fullRules: "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a <strong>Wisdom saving throw (DC 15)</strong>. On a failed save, the creature becomes <strong>charmed</strong> for the duration. While charmed by this spell, the creature is <strong>incapacitated</strong> and has a <strong>speed of 0</strong>.<br>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.",
+                upcastNotes: "Casting with higher level slots maintains concentration duration.",
+                flavor: "Sylvar spins gracefully with his tambourine, casting an ethereal cloud of shimmering planar ribbons that transfixes his foes in awe.",
+                modalButtons: [
+                    {
+                        label: "🌀 Cast Hypnotic Pattern (-1 L3 Slot)",
+                        class: "btn-roll-action btn-roll-purple",
+                        onClick: () => execSpellButton('hypnoticpattern', 0)
+                    }
+                ]
+            },
+            gravitystep: {
+                id: "gravitystep",
+                name: "🌌 Planar Gravity Step",
+                school: "Planar Boon • Mobility",
+                castingTime: "1 Bonus Action",
+                range: "Self (20 feet glide)",
+                components: "Planar Resonance (No components)",
+                duration: "Instantaneous",
+                attackMod: "Utility Mobility",
+                damage: "Ignores difficult terrain, no opportunity attacks",
+                desc: "Glide up to 20 feet through the air. Ignores difficult terrain and provokes no opportunity attacks. 1 use per Short or Long Rest.",
+                fullRules: "As a bonus action, you can activate this planar boon to glide or leap up to <strong>20 feet</strong> through the air. This movement <strong>ignores difficult terrain</strong> and <strong>does not provoke opportunity attacks</strong>.<br>• <strong>Recharge:</strong> 1 use per Short or Long Rest.",
+                upcastNotes: "Recharges automatically upon finishing a Short or Long Rest.",
+                flavor: "Bending planar gravity around his body, Sylvar glides silently above ground hazards and past enemy blades like a feather on the wind.",
+                modalButtons: [
+                    {
+                        label: "🌌 Glide 20ft",
+                        class: "btn-roll-action",
+                        onClick: () => usePlanarGravityStep()
+                    }
+                ]
+            },
+            melkormask: {
+                id: "melkormask",
+                name: "🎭 Melkor's Porcelain Mask (Ikor's Bastion)",
+                school: "Cursed Relic • Extraplanar Ward",
+                castingTime: "Passive Attunement",
+                range: "Self",
+                components: "Porcelain & Gold Weave",
+                duration: "Permanent while worn",
+                attackMod: "Advantage vs Alien Deities / Malgorian Fluency",
+                damage: "Curse: Divine Healing causes equal Necrotic Damage",
+                desc: "Pure white porcelain half-mask veined in pale gold. Grants fluency in Malgorian, Advantage vs alien god charms/domination. Curse: Divine healing spells hurt instead of heal.",
+                fullRules: "• <strong>Language of Graft:</strong> Grants fluency to speak, read, and understand <strong>Malgorian</strong> (the liturgical dialect of Mal'Goroth).<br>• <strong>Bastion of the Dying God:</strong> Permanent <strong>Advantage on saving throws against spells, charms, and domination</strong> originating from alien or extraplanar gods (including Vecna, Moros, and foreign deities).<br>• ⚠️ <strong>Curse of Deific Rejection:</strong> The mask violently repels foreign divine magic. If healed by a cleric or paladin using divine magic (e.g. <em>Cure Wounds</em>, <em>Healing Word</em>, <em>Preserve Life</em>), the wearer is <strong>hurt instead</strong>, suffering necrotic/psychic damage equal to the amount rolled! (Potions, medicine, and rests heal normally).",
+                upcastNotes: "Cannot be removed without a Remove Curse spell or ritual.",
+                flavor: "Etched with the weeping glyphs of the fallen god Ikor, rejecting foreign divinity with bitter spite."
             }
         };
 
@@ -3051,11 +3300,12 @@
             const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
             
             const slotsStr = `L1(${spellSlots[1].current}/${spellSlots[1].max})${spellSlots[2].max > 0 ? ' L2('+spellSlots[2].current+'/'+spellSlots[2].max+')' : ''}${spellSlots[3].max > 0 ? ' L3('+spellSlots[3].current+'/'+spellSlots[3].max+')' : ''}`;
-            const stateStr = `🐾 SYLVAR [HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Insp: ${bardicInsp}/4 | Suture: ${sutureSlots}/2 | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${currentGP} GP, ${currentSP} SP] • ${invSummary}`;
+            const spellsKnownStr = "Spells Known (7): Hypnotic Pattern, Calm Emotions, Enthrall, Dissonant Whispers, Healing Word, Color Spray, Charm Person";
+            const stateStr = `🐾 SYLVAR [HP: ${currentHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Bardic Inspiration: ${bardicInsp}/4 (d8) | Gravity: ${isGravityStepReady ? 'READY' : 'USED'} | Suture: ${sutureSlots}/2 | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${currentGP} GP, ${currentSP} SP | ${spellsKnownStr}] • ${invSummary}`;
             
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(stateStr).then(() => {
-                    logRoll(`📋 <strong>Session Delta Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
+                    logRoll(`📋 <strong>Session Delta & Bard State Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
                 }).catch(() => {
                     prompt("Copy Sylvar's session export string:", stateStr);
                 });

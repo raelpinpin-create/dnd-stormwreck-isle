@@ -23,64 +23,63 @@
 ## ⚔️ Combat Statistics
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
-| **Hit Points (HP)** | **26 / 26** | Hit Dice: `4d6 + 8 CON` (Level 5 Milestone pending final HP roll) |
+| **Hit Points (HP)** | **32 / 32** | Hit Dice: `5d6 + 10 CON` (Level 5 Milestone) |
 | **Armor Class (AC)** | **12** | **15** with *Mage Armor* (Interactive toggle) |
 | **Initiative** | **+3** | Dex modifier (+2) + Lodestone Charm (+1) |
 | **Speed** | **30 ft** | High Elf speed |
 | **Help Tokens** | **2 / 2** | Help (+1d6 to ally within 30ft, 2/LR, +1 on SR) |
-| **Passive Perception** | **13** | Base Wisdom (+1) + PB (+2) |
-| **Proficiency Bonus** | **+2** (Upgrades to +3 at Level 5 finalized) | Tier 2 Transition |
+| **Passive Perception** | **14** | Base Wisdom (+1) + PB (+3) |
+| **Proficiency Bonus** | **+3** | Tier 2 (Levels 5–8) |
 
 ## 📊 Ability Scores & Modifiers (Level 4 ASI Applied)
 | Ability | Score | Modifier | Saving Throw | Skill Proficiencies |
 | :--- | :---: | :---: | :---: | :--- |
 | **STR** | 10 | +0 | +0 | Athletics (+0) |
 | **DEX** | 15 | +2 | +2 | Acrobatics (+2), Sleight of Hand (+2), Stealth (+2) |
-| **CON** | 14 | +2 | +2 | — |
-| **INT** | **18** | **+4** | **+6 ★ (Proficient)** | **Arcana (+6 ★)**, **History (+6 ★)**, **Investigation (+6 ★)**, Nature (+4), Religion (+4) |
-| **WIS** | 12 | +1 | **+3 ★ (Proficient)** | Animal Handling (+1), **Insight (+3 ★)**, Medicine (+1), **Perception (+3 ★)**, Survival (+1) |
+| **CON** | 14 | +2 | +2 | Concentration checks (+2) |
+| **INT** | **18** | **+4** | **+7 ★ (Proficient)** | **Arcana (+7 ★)**, **History (+7 ★)**, **Investigation (+7 ★)**, Nature (+4), **Religion (+7 ★)** |
+| **WIS** | 12 | +1 | **+4 ★ (Proficient)** | Animal Handling (+1), **Insight (+4 ★)**, Medicine (+1), **Perception (+4 ★)**, Survival (+1) |
 | **CHA** | 8 | -1 | -1 | Deception (-1), Intimidation (-1), Performance (-1), Persuasion (-1) |
 
 ## ✨ Arcane & Spellcasting (Level 5 Evocation)
-* **Base Spell Save DC:** **14** (`8 + 2 prof + 4 Int`) • **DC 15 for Lightning spells** *(Astalagan's Scale)*
-* **Base Spell Attack Bonus:** **+6** (`+2 prof + 4 Int`) • **+7 for Lightning spells** *(Astalagan's Scale)*
-* **1st-Level Spell Slots:** `2 / 4`
-* **2nd-Level Spell Slots:** `1 / 3`
-* **3rd-Level Spell Slots:** *(Level 5 Milestone Unlocked — Awaiting spell selection!)*
-* **Arcane Recovery:** `0 / 1` used today (Regain slot levels on Short Rest)
+* **Base Spell Save DC:** **15** (`8 + 3 PB + 4 Int`) • **DC 16 for Lightning spells** *(Astalagan's Scale)*
+* **Base Spell Attack Bonus:** **+7** (`+3 PB + 4 Int`) • **+8 for Lightning spells** *(Astalagan's Scale)*
+* **1st-Level Spell Slots:** `4 / 4`
+* **2nd-Level Spell Slots:** `3 / 3`
+* **3rd-Level Spell Slots:** `2 / 2` *(Unlocked at Level 5!)*
+* **Arcane Recovery:** `0 / 1` used today (Regain up to 3 spell slot levels on Short Rest)
 * **👘 Robe of Arcane Reserve:** `1 / 1` per day (Action: Instantly regain 1 expended 1st-level spell slot!)
-* **🪄 Wand of Magic Missiles:** `4 / 7` Charges (Expends 1 charge for 3 auto-hit force darts, +1 dart/extra charge, 1d4+1 damage each).
+* **🪄 Wand of Magic Missiles:** `3 / 3` Charges (3 charges per Long Rest. Expends 1 charge for 3 auto-hit force darts dealing 1d4+1 each).
 * **🟣 Cursed Boon — Deformed Left Arm of Vecna's Weave:**  
   * *Twice per Long Rest:* When casting a damaging spell, Eflein can channel the volatile planar residue within his deformed purple arm to add **+1d10 Necrotic or Force damage** to the spell's total damage.  
   * *Backlash:* Immediately upon doing so, Eflein must roll **1d10 backlash damage** dealt directly to himself as necrotic recoil!
 * **🌌 Shared Party Boon — The Sovereign’s Planar Scar:** Permanent Advantage on saving throws vs. Frightened, Charmed, and Stunned; *Planar Gravity Step (1/Short Rest):* Bonus Action 20-ft jump/glide ignoring difficult terrain without provoking opportunity attacks.
-* **Features:** *Evocation Savant* (half copy cost/time), *Sculpt Spells* (protects allies from AoE damage).
-* **Cantrips Known:** *Ray of Frost*, *Fire Bolt*, *Mage Hand* (15ft magnetic pull via Lodestone), *Prestidigitation*, *Shocking Grasp*.
-* **Prepared Spells (8 Spells Prepared — INT 4 + Level 4):** *Magic Missile*, *Shield*, *Thunderwave*, *Detect Magic*, *Ice Knife*, *Misty Step*, *Rime's Binding Ice*, *Shatter*.
-* **Full Spellbook (17 Spells):** 
-  - *1st-Level:* *Magic Missile*, *Shield*, *Thunderwave* (DC 14 Con), *Detect Magic*, *Mage Armor*, *Ice Knife* (+6 hit, DC 14 Dex), *Sleep*, *Comprehend Languages*, *Protection from Evil/Good*, *Absorb Elements*.
-  - *2nd-Level:* *Misty Step* (Bonus Action 30ft teleport), *Rime's Binding Ice* (30ft cone, 3d8 cold + speed 0, DC 14 Con), *Shatter* (DC 14 Con, 3d8 thunder AoE), *Invisibility* (Touch, Conc 1 hr, +1 target/slot lvl > 2), *Silence* (120ft, 20ft sphere, Ritual/Conc 10 min, soundproof), *Aganazzar's Scorcher* (30ft line, 3d8 fire, DC 14 Dex), *Alter Self*, *Flaming Sphere*, *Scorching Ray*.
+* **Features:** *Evocation Savant* (half copy cost/time for Evocation), *Sculpt Spells* (protects up to 1 + spell level allies from AoE Evocation spell damage).
+* **Cantrips Known:** *Fire Bolt* (2d10 fire, +7 hit), *Shocking Grasp* (2d8 lightning, +7/+8 hit), *Mage Hand* (15ft magnetic pull via Lodestone), *Prestidigitation* (replaces Ray of Frost).
+* **Prepared Spells (9 Spells Prepared — INT 4 + Level 5):** *Fireball* (3rd), *Lightning Bolt* (3rd), *Counterspell* (3rd, replaces Scorcher), *Mage Armor* (1st), *Magic Missile* (1st), *Shield* (1st), *Scorching Ray* (2nd), *Misty Step* (2nd), *Shatter* (2nd).
+* **Full Spellbook (18 Spells):** 
+  - *Cantrips:* *Fire Bolt*, *Shocking Grasp*, *Mage Hand*, *Prestidigitation*.
+  - *1st-Level:* *Magic Missile*, *Shield*, *Mage Armor*, *Thunderwave* (DC 15 Con), *Detect Magic*, *Ice Knife* (+7 hit, DC 15 Dex), *Sleep*, *Comprehend Languages*, *Protection from Evil/Good*, *Absorb Elements*.
+  - *2nd-Level:* *Misty Step*, *Shatter* (DC 15 Con, 3d8 thunder AoE), *Scorching Ray* (+7 hit, 3 rays @ 2d6 fire), *Rime's Binding Ice* (30ft cone, 3d8 cold, DC 15 Con), *Invisibility*, *Silence*, *Alter Self*, *Flaming Sphere*.
+  - *3rd-Level:* *Fireball* (150ft, 20-ft sphere, 8d6 fire, DC 15 Dex save), *Lightning Bolt* (100ft line, 8d6 lightning, DC 16 Dex save via Scale), *Counterspell* (60ft, Reaction, auto-cancels 3rd lvl or lower).
 
 ## 🎒 Inventory & Wealth
 * **Weapons:** 
-  * 🗡️ Shortsword (`+4 hit`, `1d6+2` pierc)
-  * 🗡️ **Zombie Captain's Cutlass** (`+4 hit`, `1d6+2` slash, grants 30ft swimming speed)
-  * 🏹 **Sling / Bow of the Ridge-Runner (+1)** (`+5 hit`, `1d4+3` bludgeoning, range 30/120 ft — ignores long range disadvantage!)
+  * 🗡️ **Zombie Captain's Cutlass:** `+5 to hit` (`DEX +2 + PB +3`), `1d6+2` slashing. Grants **30 ft swimming speed**!
+  * 🏹 **Sling / Bow of the Ridge-Runner (+1):** `+6 to hit` (`DEX +2 + PB +3 + 1 magic`), `1d4+3` bludgeoning, range 30/120 ft — ignores long range disadvantage!
 * **Magic Items, Robes & Relics:**
-  * 🥽 **Myla's Draconic Abyssal Goggles** (Tinted brass dragon goggles; grants **Darkvision 60 ft** & **Murky Underwater Clarity**—ignores sight penalties in dark/submerged waters!)
-  * 🪄 **Wand of Magic Missiles** (7 Charges / Long Rest — Auto-hits 1d4+1 force per dart)
-  * 👘 **Robe of Arcane Reserve (The Ley-Weaver's Mantle)** (1/Day Action: Regain 1 expended Spell Slot)
-  * 🐉 **Astalagan's Awakened Amber Scale** (+1 Cold/Lightning Focus & DC, +1d6 Surge 1/day, Purifies Undead!)
-  * 🧲 **Cracked Lodestone Bracelet** (+1 Initiative, 15ft magnetic Mage Hand, worn on wrist)
-  * 📜 **Spell Scroll of *Absorb Elements*** (1st-Level Abjuration Reaction)
-  * 🤿 **Spore-Filter Rebreather Mask** (Advantage on CON saves vs spores/fumes/gas)
+  * 🥽 **Myla's Draconic Abyssal Goggles:** (Darkvision 60 ft & Murky Underwater Clarity).
+  * 🪄 **Wand of Magic Missiles:** 3/3 Charges (3 charges per Long Rest).
+  * 👘 **Robe of Arcane Reserve (The Ley-Weaver's Mantle):** 1/Day Action: Regain 1 expended 1st-level slot.
+  * 🐉 **Astalagan's Awakened Amber Scale:** +1 Cold/Lightning Focus & DC, +1d6 Surge 1/day, Purifies Undead.
+  * 🧲 **Cracked Lodestone Bracelet:** +1 Initiative, 15ft magnetic Mage Hand pull.
+  * 📜 **Spell Scroll of *Absorb Elements*** (1st-Level Abjuration Reaction).
+  * 🤿 **Spore-Filter Rebreather Mask:** Advantage on CON saves vs spores/fumes/gas.
 * **Consumables & Rations:** 
-  * 🧪 **1x Potion of Water Breathing** *(Trophy from the Sea Hag)*
+  * 🧪 **1x Potion of Water Breathing**
   * 🧀 **Cheese Bread** (Restores `1d8 HP` + grants `+2 to Initiative` for 1 encounter)
-  * *(Eflein's Special Bread consumed)*
 * **Valuables & Story:** 
-  * 📜 **Lianna's Farewell Letter (The Archmage's Vow):** Folded parchment smelling of jasmine perfume, kept inside his inner breast pocket.
-  * 📜 **Lianna's Reef Letter (Compass Rose Anomaly Notes):** Recovered from the *Compass Rose* zombies.
+  * 📜 **Lianna's Farewell Letter (The Archmage's Vow)** & 🌊 **Lianna's Reef Letter**
   * 📖 **Compass Rose Log Fragment & Spellbook**, Scholar's Pack.
 * **Personal Wealth:** `28 gp, 9 sp`.
 
@@ -97,47 +96,48 @@
 * **Class & Level:** **Bard 5 (College of Whispers)** *(Level 5 Milestone Unlocked!)*
 * **Background:** Entertainer
 * **Alignment:** **Chaotic Good**
-* **Archetype / Role:** **Acoustic Infiltrator, Whispering Blade & Blind Seismic Perceiver** — Blind half-tabaxi bard who navigates the world through acoustic whiskers, floor tremors, and echoing tambourine vibrations (like Toph). Joyful, hyper, and carrying the memory of his missing twin sister **Lyra**, he channels subtle psychic whispers through his rapier and songs.
-* **Role in Party:** Secondary Martial Infiltrator, Psychic Striker, Social Face (Expertise +8 Performance/Persuasion), Crowd Control & Destined Wielder of Clyssavar's Silver Harmonic Scale.
+* **Archetype / Role:** **Acoustic Infiltrator, Whispering Blade & Blind Seismic Perceiver** — Blind half-tabaxi bard who navigates the world through acoustic whiskers, floor tremors, and echoing tambourine vibrations. Joyful, hyper, carrying the memory of his missing twin sister **Lyra**, channeling subtle psychic whispers through his rapier and songs.
+* **Role in Party:** Secondary Martial Infiltrator, Psychic Striker, Social Face (Expertise +10 Performance/Persuasion), Crowd Control & Destined Wielder of Clyssavar's Silver Harmonic Scale.
 
 ## ⚔️ Combat Statistics
 | Attribute | Value | Notes |
 | :--- | :--- | :--- |
 | **Level** | **Level 5** | Bard (College of Whispers) — Milestone Reached! |
-| **Hit Points (HP)** | **16 / 31** | Hit Dice: `4d8 + 8` (Level 5 HP upgrade pending) |
+| **Hit Points (HP)** | **38 / 38** | Hit Dice: `5d8 + 10 CON` (Level 5 Milestone) |
 | **Armor Class (AC)** | **16** | Leather Armor (`11`) + DEX (`+4`) + 🛡️ Cloak of Protection (`+1`) |
 | **Initiative** | **+4** | DEX modifier |
 | **Speed** | **30 ft** | **Feline Agility:** Burst to **60 ft** for 1 turn (recharges on 0 ft move) |
-| **Proficiency Bonus** | **+2** (Upgrades to +3 at Level 5 finalized) | Tier 2 Transition |
-| **Spell Save DC** | **14** | `8 + 2 (PB) + 4 (CHA)` |
-| **Spell Attack Mod** | **+6** | `+2 (PB) + 4 (CHA)` |
-| **Bardic Inspiration** | **3 / 4 (d6)** | Recharges on Short/Long Rest at Level 5 (Font of Inspiration)! |
-| **Help Tokens** | **1 / 2** | +1d6 to ally check within 30 ft (regains 1 on Short Rest, 2 on Long Rest) |
-| **Suture Chord (Lyra)** | **0 / 2** | 2 slots/LR (Both expended in combat) |
+| **Proficiency Bonus** | **+3** | Tier 2 (Levels 5–8) |
+| **Spell Save DC** | **15** | `8 + 3 (PB) + 4 (CHA)` |
+| **Spell Attack Mod** | **+7** | `+3 (PB) + 4 (CHA)` |
+| **Bardic Inspiration** | **4 / 4 (d8)** | **Font of Inspiration:** Die upgraded to d8; recharges on **Short or Long Rest**! |
+| **Help Tokens** | **2 / 2** | +1d6 to ally check within 30 ft (regains 1 on Short Rest, 2 on Long Rest) |
+| **Suture Chord (Lyra)** | **0 / 2** | 2 slots/LR (DC 15 Dex save, 2d8 Thunder + Pin) |
 | **Senses** | **Blind Seismic Sense (30–60 ft)** | Detects vibrations, acoustics & air disturbance; immune to visual blindness penalties |
 
 ## 📊 Ability Scores & Saving Throws (with Cloak of Protection +1)
 | Ability | Score | Mod | Save (Cloak) | Skills & Proficiencies |
 | :--- | :---: | :---: | :---: | :--- |
 | **STR** | 8 | -1 | **+0** | Athletics (+0) *(Jack of All Trades)* |
-| **DEX** | **18** | **+4** | **+7 ★ (Prof)** | **Acrobatics (+6 ★)**, Sleight of Hand (+5), Stealth (+5) |
+| **DEX** | **18** | **+4** | **+8 ★ (Prof)** | **Acrobatics (+7 ★)**, Sleight of Hand (+5), Stealth (+5) |
 | **CON** | 14 | +2 | **+3** | Concentration checks (+2 base, +3 save) |
 | **INT** | 5 | -3 | **-2** | Arcana (-2), History (-2), Investigation (-2), Nature (-2), Religion (-2) |
-| **WIS** | 12 | +1 | **+2** | **Insight (+3 ★)**, **Perception (+3 ★ [Cat's Talent])**, Animal Handling (+2), Medicine (+2), Survival (+2) |
-| **CHA** | **18** | **+4** | **+7 ★ (Prof)** | **Performance (+8 ★★ [Expertise])**, **Persuasion (+8 ★★ [Expertise])**, Deception (+5), Intimidation (+5) |
+| **WIS** | 12 | +1 | **+2** | **Insight (+4 ★)**, **Perception (+4 ★ [Cat's Talent])**, Animal Handling (+2), Medicine (+2), Survival (+2) |
+| **CHA** | **18** | **+4** | **+8 ★ (Prof)** | **Performance (+10 ★★ [Expertise])**, **Persuasion (+10 ★★ [Expertise])**, Deception (+5), Intimidation (+5) |
 
 ## 🔮 Bardic Features & Spells (Level 5)
-* 🧠 **Psychic Blades (College of Whispers):** When hitting with a weapon attack (Rapier/Dagger), expend 1 Bardic Inspiration die to deal an extra **3d6 Psychic damage** (Level 5 Upgrade)!
-* 👁️ **Words of Terror (College of Whispers):** Speak with humanoid alone for 1 min; DC 14 Wis save or **Frightened** for 1 hour (1/Short or Long Rest).
-* 🪘 **Bardic Inspiration (d6/d8):** Bonus Action to grant inspiration to ally within 60 ft (3/4 remaining).
+* 🧠 **Psychic Blades (College of Whispers):** When hitting with a weapon attack (Rapier/Dagger/Lyra), expend 1 Bardic Inspiration die to deal an extra **3d6 Psychic damage** (Level 5 Upgrade)!
+* 👁️ **Words of Terror (College of Whispers):** Speak with humanoid alone for 1 min; DC 15 Wis save or **Frightened** for 1 hour (1/Short or Long Rest).
+* 🪘 **Bardic Inspiration (d8 • Font of Inspiration):** Bonus Action to grant inspiration to ally within 60 ft (4/4 max, recharges on Short or Long Rest).
 * 🎶 **Song of Rest (d6):** Allies spending Hit Dice during Short Rest regain an extra **1d6 HP**.
 * 🃏 **Jack of All Trades:** Add +1 (half PB) to all unproficient ability checks.
 * 🐾 **Feline Agility:** Double speed (60 ft) for 1 turn. Recharges on turn with 0 ft movement.
 * **🌌 Shared Party Boon — The Sovereign’s Planar Scar:** Permanent Advantage on saving throws vs. Frightened, Charmed, and Stunned; *Planar Gravity Step (1/Short Rest):* Bonus Action 20-ft jump/glide ignoring difficult terrain without provoking opportunity attacks.
-* **Spell Slots:** `4 / 4` 1st-Level, `3 / 3` 2nd-Level, *(Level 5 3rd-Level Slots Unlocked!)*.
-  * **Cantrips (0):** *Dancing Lights*, *Vicious Mockery* (DC 14 Wis, `1d4` Psychic + Disadvantage on next attack), *Minor Illusion*.
-  * **1st-Level:** *Dissonant Whispers* (DC 14 Wis, `3d6` Psychic + flee), *Healing Word* (Bonus Action, `1d4+4` HP), *Charm Person* (DC 14 Wis), *Color Spray* (6d10 HP blinded).
-  * **2nd-Level:** *Calm Emotions* (20-ft sphere, DC 14 Cha), *Enthrall* (DC 14 Wis), *Hold Person* (DC 14 Wis), *Invisibility* (Touch, Conc 1 hr).
+* **Spell Slots:** `4 / 4` 1st-Level, `3 / 3` 2nd-Level, `2 / 2` 3rd-Level *(Unlocked at Level 5!)*.
+  * **Cantrips (0):** *Dancing Lights*, *Vicious Mockery* (DC 15 Wis, `2d4` Psychic + Disadvantage on next attack).
+  * **1st-Level:** *Dissonant Whispers* (DC 15 Wis, `3d6` Psychic + flee), *Healing Word* (Bonus Action, `1d4+4` HP), *Charm Person* (DC 15 Wis), *Color Spray* (6d10 HP blinded).
+  * **2nd-Level:** *Calm Emotions* (20-ft sphere, DC 15 Cha), *Enthrall* (DC 15 Wis).
+  * **3rd-Level:** *Hypnotic Pattern* (120ft, 30-ft cube, DC 15 Wis save, Charmed & Incapacitated with Speed 0, Conc 1 min).
 
 ## 🎒 Inventory & Wealth
 * **Attuned Magic Items & Apparel:**
@@ -150,19 +150,17 @@
   * 🥋 **Leather Armor** (AC 11 base + DEX +4 = AC 15 base, 16 with Cloak).
   * 👗 **Neko Maid Costume** (Legendary Nat 20 Performance outfit; black and white frilled maid dress with cat ears and ribbon tail-wrap).
 * **Weapons & Musical Instruments:**
-  * 🎻 **Lyra (+1 Cello Bowstring Rapier / Instrument):** `+7 to hit` (`+4 DEX + 2 PB + 1 magic`), reach 5 ft. *Hit:* `1d8 + 5` piercing/slashing + **`1d6` Thunder damage**. *(With Psychic Blades: `1d8+5 + 1d6 Thunder + 3d6 Psychic`!).*
+  * 🎻 **Lyra (+1 Cello Bowstring Rapier / Instrument):** `+8 to hit` (`+4 DEX + 3 PB + 1 magic`), reach 5 ft. *Hit:* `1d8 + 5` piercing/slashing + **`1d6` Thunder damage**. *(With Psychic Blades: `1d8+5 + 1d6 Thunder + 3d6 Psychic`!).*
     - **Dual Nature:** Can be used as a `+1` Finesse melee weapon OR drawn across an instrument as a musical focus.
-    - **Suture Chord (Bonus Action • 0 / 2 Slots):** Whips the bowstring at a target within 30 ft (DC 14 Dexterity Save). On fail: takes **`2d8` Thunder damage** and has its **movement speed reduced to 0 (Pinned)** until an action tears it free (half damage and not pinned on success).
-  * 🗡️ **Steel Rapier:** `+6 to hit`, reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse).
-  * 🗡️ **Sentry Zik's Dagger (+1):** `+7 to hit`, range 20/60 ft. *Hit:* `1d4 + 5` piercing (Finesse, Light, Thrown).
-  * 🗡️ **Steel Daggers (2x):** `+6 to hit`, range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).
+    - **Suture Chord (Bonus Action • 0 / 2 Slots):** Whips the bowstring at a target within 30 ft (DC 15 Dexterity Save). On fail: takes **`2d8` Thunder damage** and has its **movement speed reduced to 0 (Pinned)** until an action tears it free (half damage and not pinned on success).
+  * 🗡️ **Steel Rapier:** `+7 to hit` (`+4 DEX + 3 PB`), reach 5 ft. *Hit:* `1d8 + 4` piercing (Finesse). *(With Psychic Blades: `1d8+4 + 3d6 Psychic`)*.
+  * 🗡️ **Sentry Zik's Dagger (+1):** `+8 to hit` (`+4 DEX + 3 PB + 1 magic`), range 20/60 ft. *Hit:* `1d4 + 5` piercing (Finesse, Light, Thrown). *(With Psychic Blades: `1d4+5 + 3d6 Psychic`)*.
+  * 🗡️ **Steel Daggers (2x):** `+7 to hit` (`+4 DEX + 3 PB`), range 20/60 ft. *Hit:* `1d4 + 4` piercing (Finesse, Light, Thrown).
   * 🪘 **Tambourine** (Arcane & Bardic Focus, acoustic resonator).
   * 🎸 **Lute & Guitar** (Fine wooden instruments).
 * **Consumables, Keepsakes & Combat Alchemy:**
   * 💀 *(Sentry Zik's Remains & Silk Ribbon SACRIFICED to Mal'Goroth in the cosmic stealth bargain)*
   * 💣 **1x Spitfire Flask** (Thrown 20 ft, 5-ft radius `2d4` fire damage, DC 11 Dex save for half).
-  * *(Kobold Sweetbread Roll consumed)*
-  * *(1x Elixir of Health consumed)*
 * **Gear & Packs:**
   * 🎒 **Entertainer's Pack & Burglar's Pack**, Thieves' tools.
 * **Personal Wealth:** `415 gp, 0 sp`.

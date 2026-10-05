@@ -1018,8 +1018,8 @@
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn danger-step" onclick="adjustCharStat('eflein', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-good" id="val-eflein-hp">26</span>
-                                <span class="tracker-max-label">/ 26</span>
+                                <span class="tracker-num hp-good" id="val-eflein-hp">32</span>
+                                <span class="tracker-max-label">/ 32</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('eflein', 'hp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
@@ -1064,7 +1064,7 @@
                             <label>🔮 1ST-LVL SLOTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('eflein', 'slots1', -1)">-</button>
-                                <span class="tracker-num slots-num" id="val-eflein-slots1">2</span>
+                                <span class="tracker-num slots-num" id="val-eflein-slots1">4</span>
                                 <span class="tracker-max-label">/ 4</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('eflein', 'slots1', 1)">+</button>
                             </div>
@@ -1072,6 +1072,7 @@
                                 <button class="tracker-mini-pill pill-gold" onclick="resetCharSlots('eflein', 'slots1')">Full 4</button>
                                 <button class="tracker-mini-pill" onclick="setCharStat('eflein', 'slots1', 0)">0</button>
                             </div>
+                            <div class="tracker-subtext" style="color:#a78bfa; margin-top:2px;">1st: 4/4 | 2nd: 3/3 | 3rd: 2/2</div>
                         </div>
 
                         <!-- HELP TOKENS TRACKER -->
@@ -1105,7 +1106,7 @@
                         </div>
                         <div class="resource-chip">
                             <strong>📖 Arcane Recovery:</strong>
-                            <button id="btn-eflein-arcaneRecovery" class="resource-toggle-btn ready" onclick="toggleResource('eflein', 'arcaneRecovery')">Ready (2 Slots)</button>
+                            <button id="btn-eflein-arcaneRecovery" class="resource-toggle-btn ready" onclick="toggleResource('eflein', 'arcaneRecovery')">Ready (3 Slots/SR)</button>
                         </div>
                         <div class="resource-chip">
                             <strong>⚡ Astalagan's Surge:</strong>
@@ -1115,15 +1116,19 @@
                             <strong>🟣 Cursed Arm (2/LR):</strong>
                             <span style="color:#d8b4fe; font-weight:700;">+1d10 Dmg / 1d10 Self-Dmg</span>
                         </div>
+                        <div class="resource-chip">
+                            <strong>🌌 Gravity Step:</strong>
+                            <span style="color:#38bdf8; font-weight:700;">Ready (20ft 1/SR)</span>
+                        </div>
                     </div>
 
                     <div class="pc-header-grid" style="margin-top:6px;">
                         <div>
                             <p><strong>Alignment:</strong> <span style="color: var(--accent-gold);">Chaotic Neutral</span> | <strong>Background:</strong> Sage | <strong>Title:</strong> <strong>« Warden of the Living Grove »</strong></p>
                             <p><strong>Archetype:</strong> Yankee / Delinquent — Brash posture, sharp mouth, hands in pockets, fiercely protective of his own. <em>Left arm permanently deformed purple from channeling Vecna's weave!</em></p>
-                            <p><strong>Class Powers:</strong> 🔮 <strong>Evocation Savant</strong> | 💥 <strong>Sculpt Spells</strong> (Protects allies from AoE spell damage!) | 🟣 <strong>Deformed Void Arm</strong> (2/LR: +1d10 spell damage at cost of 1d10 self-damage)</p>
+                            <p><strong>Class Powers:</strong> 🔮 <strong>Evocation Savant</strong> | 💥 <strong>Sculpt Spells</strong> (Protects allies from AoE spell damage!) | 🟣 <strong>Deformed Void Arm</strong> (2/LR: +1d10 spell damage at cost of 1d10 self-damage) | 🌌 <strong>Planar Gravity Step</strong> (1/SR: 20ft glide)</p>
                             <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">
-                                <strong>Spell Save DC:</strong> <span style="color:var(--accent-gold); font-weight:bold;">14</span> (DC 15 Lightning) | <strong>Spell Attack:</strong> <span style="color:var(--accent-gold); font-weight:bold;">+6</span> (+7 Lightning)
+                                <strong>Spell Save DC:</strong> <span style="color:var(--accent-gold); font-weight:bold;">15</span> (DC 16 Lightning) | <strong>Spell Attack:</strong> <span style="color:var(--accent-gold); font-weight:bold;">+7</span> (+8 Lightning) | <strong>Proficiency Bonus:</strong> +3
                             </p>
                         </div>
                     </div>
@@ -1142,19 +1147,19 @@
                     <div class="skills-matrix">
                         <div class="skill-item"><span>Acrobatics (DEX)</span><span class="mod">+2</span></div>
                         <div class="skill-item"><span>Animal Handling (WIS)</span><span class="mod">+1</span></div>
-                        <div class="skill-item proficient"><span>Arcana (INT) ★</span><span class="mod">+6</span></div>
+                        <div class="skill-item proficient"><span>Arcana (INT) ★</span><span class="mod">+7</span></div>
                         <div class="skill-item"><span>Athletics (STR)</span><span class="mod">+0</span></div>
                         <div class="skill-item"><span>Deception (CHA)</span><span class="mod">-1</span></div>
-                        <div class="skill-item proficient"><span>History (INT) ★</span><span class="mod">+6</span></div>
-                        <div class="skill-item proficient"><span>Insight (WIS) ★</span><span class="mod">+3</span></div>
+                        <div class="skill-item proficient"><span>History (INT) ★</span><span class="mod">+7</span></div>
+                        <div class="skill-item proficient"><span>Insight (WIS) ★</span><span class="mod">+4</span></div>
                         <div class="skill-item"><span>Intimidation (CHA)</span><span class="mod">-1</span></div>
-                        <div class="skill-item proficient"><span>Investigation (INT) ★</span><span class="mod">+6</span></div>
+                        <div class="skill-item proficient"><span>Investigation (INT) ★</span><span class="mod">+7</span></div>
                         <div class="skill-item"><span>Medicine (WIS)</span><span class="mod">+1</span></div>
                         <div class="skill-item"><span>Nature (INT)</span><span class="mod">+4</span></div>
-                        <div class="skill-item proficient"><span>Perception (WIS) ★</span><span class="mod">+3</span></div>
+                        <div class="skill-item proficient"><span>Perception (WIS) ★</span><span class="mod">+4</span></div>
                         <div class="skill-item"><span>Performance (CHA)</span><span class="mod">-1</span></div>
                         <div class="skill-item"><span>Persuasion (CHA)</span><span class="mod">-1</span></div>
-                        <div class="skill-item"><span>Religion (INT)</span><span class="mod">+4</span></div>
+                        <div class="skill-item proficient"><span>Religion (INT) ★</span><span class="mod">+7</span></div>
                         <div class="skill-item"><span>Sleight of Hand (DEX)</span><span class="mod">+2</span></div>
                         <div class="skill-item"><span>Stealth (DEX)</span><span class="mod">+2</span></div>
                         <div class="skill-item"><span>Survival (WIS)</span><span class="mod">+1</span></div>
@@ -1163,14 +1168,14 @@
                     <div class="grid-2" style="margin-top:6px;">
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">🛡️ Saves & Prepared Spells</h4>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Saves:</strong> <strong>INT (+6 ★)</strong>, <strong>WIS (+3 ★)</strong>, DEX (+2), CON (+2), STR (+0), CHA (-1).</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Prepared (8):</strong> Magic Missile, Shield (+5 AC), Thunderwave (2d8 thunder, DC 14 Con), Detect Magic, Ice Knife (+6 hit, DC 14 Dex), Misty Step (30ft BA), Rime's Binding Ice (3d8 cold, DC 14 Con), Shatter (3d8 thunder, DC 14 Con).</p>
-                            <p style="font-size: 0.78rem;">• <strong>Cantrips:</strong> Ray of Frost (+6 hit, 1d8 cold), Fire Bolt (+6 hit, 1d10 fire, 120ft), Mage Hand (15ft pull), Prestidigitation, Shocking Grasp.</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Saves:</strong> <strong>INT (+7 ★)</strong>, <strong>WIS (+4 ★)</strong>, DEX (+2), CON (+2), STR (+0), CHA (-1).</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• <strong>Prepared (9):</strong> Fireball (8d6 fire, DC 15 Dex), Lightning Bolt (8d6 lightning, DC 16 Dex), Counterspell (Reaction), Mage Armor, Magic Missile, Shield (+5 AC), Scorching Ray (+7 hit), Misty Step (30ft BA), Shatter (3d8 thunder, DC 15 Con).</p>
+                            <p style="font-size: 0.78rem;">• <strong>Cantrips:</strong> Fire Bolt (+7 hit, 2d10 fire, 120ft), Shocking Grasp (+7/+8 hit, 2d8 lightning), Mage Hand (15ft pull), Prestidigitation.</p>
                         </div>
                         <div>
                             <h4 style="color: var(--accent-gold); font-size: 0.84rem; margin-bottom: 4px;">⚔️ Attacks & Key Weapons</h4>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🏹 <strong>Sling / Bow of Ridge-Runner (+1):</strong> +5 hit, 1d4+3 bludgeon, 30/120ft (no disadv).</p>
-                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🗡️ <strong>Zombie Captain's Cutlass:</strong> +4 hit, 1d6+2 slash (swimming speed 30ft).</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🏹 <strong>Sling / Bow of Ridge-Runner (+1):</strong> +6 hit, 1d4+3 bludgeon, 30/120ft (no disadv).</p>
+                            <p style="font-size: 0.78rem; margin-bottom: 2px;">• 🗡️ <strong>Zombie Captain's Cutlass:</strong> +5 hit, 1d6+2 slash (swimming speed 30ft).</p>
                             <p style="font-size: 0.78rem;">• ⚡ <strong>Astalagan's Awakened Amber Scale:</strong> +1 DC/Hit to Lightning Spells, 1/Day +1d6 Lightning Surge, Purifies Undead.</p>
                         </div>
                     </div>
@@ -1178,7 +1183,7 @@
                     <div style="background-color: #090e18; border: 1px solid var(--border-color); padding: 8px 12px; border-radius: 5px; margin-top: 10px;">
                         <strong style="color: var(--accent-gold); font-size: 0.82rem;">🎒 Complete Tracked Inventory:</strong>
                         <p style="font-size: 0.78rem; color: #cbd5e1; margin-top: 3px;">
-                            📜 Lianna's Letters (The Archmage's Vow & Reef Letter) | 🥽 Myla's Draconic Abyssal Goggles (Darkvision 60ft & Underwater Clarity) | ⚡ Astalagan's Awakened Amber Scale | 🪄 Wand of Magic Missiles (4/7 Charges) | 👘 Robe of Arcane Reserve | 🧲 Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand) | 🏹 Sling (+1) & Shortsword & Zombie Captain's Cutlass | 📜 Scroll of Absorb Elements | 🤿 Spore-Filter Mask | 🧪 1x Potion of Water Breathing | 🧀 Cheese Bread | 📖 Spellbook (17 spells) | 💰 28 gp, 9 sp.
+                            📜 Lianna's Letters (The Archmage's Vow & Reef Letter) | 🥽 Myla's Draconic Abyssal Goggles (Darkvision 60ft & Underwater Clarity) | ⚡ Astalagan's Awakened Amber Scale | 🪄 Wand of Magic Missiles (3/3 Charges • Long Rest) | 👘 Robe of Arcane Reserve | 🧲 Cracked Lodestone Bracelet (+1 Init, magnetic Mage Hand) | 🏹 Sling (+1) & Zombie Captain's Cutlass | 📜 Scroll of Absorb Elements | 🤿 Spore-Filter Mask | 🧪 1x Potion of Water Breathing | 🧀 Cheese Bread | 📖 Spellbook (18 spells) | 💰 28 gp, 9 sp.
                         </p>
                     </div>
                 </div>
@@ -1198,8 +1203,8 @@
                             <label>❤️ HIT POINTS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn danger-step" onclick="adjustCharStat('sylvar', 'hp', -1)">-</button>
-                                <span class="tracker-num hp-warn" id="val-sylvar-hp">16</span>
-                                <span class="tracker-max-label">/ 31</span>
+                                <span class="tracker-num hp-good" id="val-sylvar-hp">38</span>
+                                <span class="tracker-max-label">/ 38</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'hp', 1)">+</button>
                             </div>
                             <div class="tracker-quick-row">
@@ -1240,10 +1245,10 @@
 
                         <!-- BARDIC INSPIRATION TRACKER -->
                         <div class="tracker-card">
-                            <label>🪘 INSPIRATION (d6)</label>
+                            <label>🪘 INSPIRATION (d8)</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'insp', -1)">-</button>
-                                <span class="tracker-num slots-num" id="val-sylvar-insp" style="color:#c084fc;">3</span>
+                                <span class="tracker-num slots-num" id="val-sylvar-insp" style="color:#c084fc;">4</span>
                                 <span class="tracker-max-label">/ 4</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'insp', 1)">+</button>
                             </div>
@@ -1258,7 +1263,7 @@
                             <label>🤝 HELP TOKENS</label>
                             <div class="tracker-stepper">
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'helpTokens', -1)">-</button>
-                                <span class="tracker-num" id="val-sylvar-helpTokens" style="color:#67e8f9;">1</span>
+                                <span class="tracker-num" id="val-sylvar-helpTokens" style="color:#67e8f9;">2</span>
                                 <span class="tracker-max-label">/ 2</span>
                                 <button class="tracker-btn" onclick="adjustCharStat('sylvar', 'helpTokens', 1)">+</button>
                             </div>
@@ -1284,11 +1289,15 @@
                         </div>
                         <div class="resource-chip">
                             <strong>🎻 Lyra Rapier:</strong>
-                            <span style="color:#c084fc; font-weight:600;">+7 Hit (1d8+5 + 1d6 Thunder)</span>
+                            <span style="color:#c084fc; font-weight:600;">+8 Hit (1d8+5 + 1d6 Thndr | Suture DC 15)</span>
                         </div>
                         <div class="resource-chip">
                             <strong>🔮 Spell Slots:</strong>
-                            <span style="color:#a78bfa; font-weight:600;">Lv1: 4/4 | Lv2: 3/3</span>
+                            <span style="color:#a78bfa; font-weight:600;">Lv1: 4/4 | Lv2: 3/3 | Lv3: 2/2</span>
+                        </div>
+                        <div class="resource-chip">
+                            <strong>🌌 Gravity Step:</strong>
+                            <span style="color:#38bdf8; font-weight:600;">Ready (20ft 1/SR)</span>
                         </div>
                         <div class="resource-chip">
                             <strong>🐾 Blind Tremorsense:</strong>
@@ -1303,9 +1312,9 @@
                     <div class="pc-header-grid" style="margin-top:6px;">
                         <div>
                             <p><strong>Archetype:</strong> <span style="color: #c084fc; font-weight:bold;">Acoustic Infiltrator & Whispering Blade</span> | <strong>Destined Relic:</strong> 🌪️ Scale of the Zephyr (Clyssavar's Silver Scale)</p>
-                            <p><strong>Combat Loadout:</strong> 🎭 <strong>Melkor's Porcelain Mask (Ikor's Bastion)</strong>, 🎻 <strong>Lyra (+1 Rapier/Instrument)</strong> (+7, 1d8+5 + 1d6 Thunder), 🗡️ <strong>Sentry Zik's Dagger (+1)</strong> (+7, 1d4+5), 2x Daggers (+6, 1d4+4), 💣 1x Spitfire Flask, 🛡️ Cloak of Protection, 🪘 Tambourine, 🎸 Lute & Guitar, 👗 Neko Maid Costume, 415 GP.</p>
+                            <p><strong>Combat Loadout:</strong> 🎭 <strong>Melkor's Porcelain Mask (Ikor's Bastion)</strong>, 🎻 <strong>Lyra (+1 Rapier/Instrument)</strong> (+8 hit, 1d8+5 + 1d6 Thunder, Suture DC 15), 🗡️ <strong>Sentry Zik's Dagger (+1)</strong> (+8 hit, 1d4+5), 🗡️ Rapier (+7 hit, 1d8+4 + 3d6 Psychic Blades), 2x Daggers (+7, 1d4+4), 💣 1x Spitfire Flask, 🛡️ Cloak of Protection, 🪘 Tambourine, 🎸 Lute & Guitar, 👗 Neko Maid Costume, 415 GP.</p>
                             <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">
-                                <em>Skills: Performance (+8 ★), Persuasion (+8 ★), Acrobatics (+6 ★), Insight (+3 ★), Perception (+3 ★). Full sheet: <a href="SYLVAR_PLAYER_SHEET.html" style="color:#c084fc; text-decoration:underline;">SYLVAR_PLAYER_SHEET.html</a></em>
+                                <em>Spells: Hypnotic Pattern (3rd, DC 15), Calm Emotions (2nd), Enthrall (2nd), Dissonant Whispers (1st), Healing Word (1st), Color Spray (1st), Charm Person (1st). Cantrips: Vicious Mockery (2d4, DC 15), Dancing Lights. Skills: Performance (+10 ★★), Persuasion (+10 ★★), Acrobatics (+7 ★), Insight (+4 ★), Perception (+4 ★). Full sheet: <a href="SYLVAR_PLAYER_SHEET.html" style="color:#c084fc; text-decoration:underline;">SYLVAR_PLAYER_SHEET.html</a></em>
                             </p>
                         </div>
                     </div>
@@ -4871,7 +4880,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             location: "Octopus Den (Seagrow Caves Area B1)",
             cost: "450 GP",
             desc: "A polished driftwood wand tipped with an iridescent force crystal.",
-            effect: "• Holds <strong>7 Charges</strong> (recharges 1d6+1 at dawn).<br>• Spend 1 charge to cast 1st-level *Magic Missile* (3 auto-hitting force darts, 1d4+1 each). Spend additional charges to upcast (+1 dart per charge).",
+            effect: "• Holds <strong>3 Charges</strong> (recharges all 3 on a Long Rest).<br>• Spend 1 charge to cast *Magic Missile* (3 auto-hitting force darts dealing 1d4+1 each) without expending a spell slot.",
             placement: "Wielded by 🧙‍♂️ Eflein."
         },
         wand_driftwood: {
@@ -5391,13 +5400,13 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         const gD20 = Math.floor(Math.random() * 20) + 1;
         
         const efleinInit = eD20 + 3; // Dex +2 + Lodestone +1
-        const sylvarInit = sD20 + 1; // Dex +1
+        const sylvarInit = sD20 + 4; // Dex +4
         const fatherFlubsInit = fD20 + 0; // Dex +0
         const varnothInit = gD20 + 1; // Dex +1
         
         const results = [
             { name: "⚡ Eflein", roll: `d20:${eD20}+3`, total: efleinInit },
-            { name: "🐾 Sylvar Link", roll: `d20:${sD20}+1`, total: sylvarInit },
+            { name: "🐾 Sylvar Link", roll: `d20:${sD20}+4`, total: sylvarInit },
             { name: "🛡️ Varnoth", roll: `d20:${gD20}+1`, total: varnothInit },
             { name: "🍷 Father Flubs", roll: `d20:${fD20}+0`, total: fatherFlubsInit }
         ].sort((a, b) => b.total - a.total);
@@ -5411,12 +5420,12 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
     // ==========================================
     // 🧙‍♂️ PARTY CHARACTER LIVE STATS & TRACKER ENGINE
     // ==========================================
-    const PARTY_STORAGE_KEY = "stormwreck_party_vitals_v4";
+    const PARTY_STORAGE_KEY = "stormwreck_party_vitals_v5";
 
     const DEFAULT_PARTY_DATA = {
         eflein: {
-            hp: 26,
-            maxHp: 26,
+            hp: 32,
+            maxHp: 32,
             tempHp: 0,
             baseAc: 12,
             mageArmor: false,
@@ -5425,15 +5434,19 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             maxSlots1: 4,
             slots2: 3,
             maxSlots2: 3,
+            slots3: 2,
+            maxSlots3: 2,
             helpTokens: 2,
             maxHelpTokens: 2,
             arcaneRecovery: true,
             lightningSurge: true,
-            robeReserve: true
+            robeReserve: true,
+            gravityStep: true,
+            vecnaArm: 2
         },
         sylvar: {
-            hp: 31,
-            maxHp: 31,
+            hp: 38,
+            maxHp: 38,
             tempHp: 0,
             baseAc: 16,
             tempAc: 0,
@@ -5443,8 +5456,11 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
             maxSlots1: 4,
             slots2: 3,
             maxSlots2: 3,
+            slots3: 2,
+            maxSlots3: 2,
             helpTokens: 2,
-            maxHelpTokens: 2
+            maxHelpTokens: 2,
+            gravityStep: true
         },
         father_flubs: {
             hp: 38,
@@ -5618,18 +5634,19 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
     function rollSylvarPsychicBlades() {
         if (!partyState.sylvar) partyState.sylvar = JSON.parse(JSON.stringify(DEFAULT_PARTY_DATA.sylvar));
         if (partyState.sylvar.insp <= 0) {
-            alert("No Bardic Inspiration dice remaining! (4/Long Rest)");
+            alert("No Bardic Inspiration dice remaining! (4/Short or Long Rest)");
             return;
         }
         partyState.sylvar.insp -= 1;
         savePartyState();
         const p1 = Math.floor(Math.random() * 6) + 1;
         const p2 = Math.floor(Math.random() * 6) + 1;
-        const tot = p1 + p2;
+        const p3 = Math.floor(Math.random() * 6) + 1;
+        const tot = p1 + p2 + p3;
         const box = document.getElementById('dm-init-console');
         if (box) {
             box.style.display = 'block';
-            box.innerHTML = `🧠 <strong>Sylvar Psychic Blades Infusion:</strong> Dealt <span style="color:#c084fc; font-weight:800;">${tot} Psychic Damage</span> [2d6: ${p1}+${p2}]! (${partyState.sylvar.insp}/4 inspiration remaining)`;
+            box.innerHTML = `🧠 <strong>Sylvar Psychic Blades Infusion:</strong> Dealt <span style="color:#c084fc; font-weight:800;">+${tot} Psychic Damage</span> [3d6: ${p1}+${p2}+${p3}]! (${partyState.sylvar.insp}/4 inspiration remaining)`;
         }
     }
 
@@ -5650,7 +5667,7 @@ When the green comet aligns with the planetarium lens, the soul of the chained b
         bar.innerHTML = `
             <div class="quick-item">🎲 <strong>DCs:</strong> Easy 10 | Mod 15 | Hard 20</div>
             <div class="quick-item">⚡ <strong>Eflein:</strong> HP ${e.hp}/${e.maxHp}${e.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+e.tempHp+')</span>' : ''} | AC ${eAc} | Slots: ${e.slots1}/4 | 🤝 ${e.helpTokens}/2</div>
-            <div class="quick-item">🐾 <strong>Sylvar:</strong> HP ${s.hp}/${s.maxHp || 31}${s.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+s.tempHp+')</span>' : ''} | AC ${sAc} | Insp: ${s.insp}/4 | 🤝 ${s.helpTokens}/2</div>
+            <div class="quick-item">🐾 <strong>Sylvar:</strong> HP ${s.hp}/${s.maxHp || 38}${s.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+s.tempHp+')</span>' : ''} | AC ${sAc} | Insp: ${s.insp}/4 (d8) | 🤝 ${s.helpTokens}/2</div>
             <div class="quick-item">🍷 <strong>Father Flubs:</strong> HP ${h.hp}/${h.maxHp}${h.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+h.tempHp+')</span>' : ''} | AC ${hAc} | Slots: ${h.slots1}/4 | 🤝 ${h.helpTokens}/2</div>
             <div class="quick-item">🛡️ <strong>Varnoth:</strong> HP ${g.hp}/${g.maxHp}${g.tempHp > 0 ? ' <span style="color:#38bdf8;">(+'+g.tempHp+')</span>' : ''} | AC ${gAc} | 🤝 ${g.helpTokens}/2</div>
         `;

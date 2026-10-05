@@ -1092,22 +1092,6 @@
                             </div>
                         </div>
 
-                        <!-- Deformed Left Arm of Vecna's Weave (2/Long Rest • Cursed Boon) -->
-                        <div class="action-card" id="card-vecna-arm" style="border-color: rgba(192, 132, 252, 0.45); background: rgba(147, 51, 234, 0.07); transition: all 0.2s;">
-                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
-                                <div>
-                                    <div class="action-card-title" onclick="openSpellDetailsModal('vecnaarm')" style="cursor:pointer; font-weight:700; color:#c084fc; transition:color 0.15s;" onmouseover="this.style.color='#e9d5ff'" onmouseout="this.style.color='#c084fc'">
-                                        🟣 Deformed Arm of Vecna <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
-                                    </div>
-                                    <div style="font-size:0.67rem; font-weight:700; color:#d8b4fe; margin-top:1px;">2/Long Rest • Damaging Spell Siphon</div>
-                                </div>
-                                <span id="badge-vecna-arm" style="font-size:0.62rem; color:#c084fc; font-weight:700; background:rgba(192,132,252,0.15); border:1px solid #c084fc; padding:1px 5px; border-radius:3px; cursor:pointer;" onclick="event.stopPropagation(); toggleVecnaArmManual();" title="Click to manually toggle charges">2/2 READY</span>
-                            </div>
-                            <div class="action-desc">Siphon purple planar weave into a damaging spell: <strong>+1d10 Necrotic/Force Dmg</strong>, but take <strong>1d10 Necrotic Recoil</strong>!</div>
-                            <div class="action-btn-row">
-                                <button id="btn-vecna-arm" class="btn-roll-action" style="background:linear-gradient(135deg, #7e22ce 0%, #6b21a8 100%); transition: all 0.2s;" onclick="useVecnaArmAbility()">🟣 Siphon Weave (+1d10)</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -1175,43 +1159,59 @@
                         <span>⚡ Relics, Recoveries & Active Class Features</span>
                     </div>
 
-                    <div style="display:flex; flex-direction:column; gap:5px;">
-                        <div style="background:rgba(124, 58, 237, 0.08); border:1px solid #a855f7; border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
-                            <div>
-                                <span style="font-weight:700; color:#c084fc;">🪄 Wand of Magic Missiles:</span>
-                                <span id="wand-charges-disp" style="color:#fde68a; font-weight:bold; margin-left:4px;">4 / 7 Charges</span>
-                            </div>
-                            <div style="display:flex; gap:4px;">
-                                <button class="btn-roll-action btn-roll-dmg" style="background:#7c3aed; padding:3px 8px; font-size:0.7rem;" onclick="useWandOfMagicMissiles(1)">🪄 Cast (1 Chg: 3 Darts)</button>
-                                <button class="btn-act btn-act-pre" onclick="modWandCharges(1)" style="font-size:0.65rem; padding:1px 4px;">+</button>
-                                <button class="btn-act btn-act-pre" onclick="modWandCharges(-1)" style="font-size:0.65rem; padding:1px 4px;">-</button>
-                            </div>
-                        </div>
-                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
-                            <span>👘 <strong>Robe of Arcane Reserve:</strong> 1/Day: Instantly regain 1 expended Spell Slot.</span>
-                            <button class="btn-roll-action" style="background:#7c3aed;" onclick="useRobeOfReserve()">🔮 Regain Slot</button>
-                        </div>
+                    <div style="display:flex; flex-direction:column; gap:6px;">
+                        <!-- Astalagan's Scale -->
                         <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <span>⚡ <strong>Astalagan's Scale:</strong> +1 Focus, 1/Day add +1d6 Lightning Surge to any spell.</span>
                             <button class="btn-roll-action" style="background:#d97706;" onclick="rollAstalaganSurge()">⚡ Surge (+1d6)</button>
                         </div>
+
+                        <!-- Cursed Boon: Deformed Left Arm of Vecna's Weave (2/Long Rest) -->
+                        <div id="relic-vecna-arm" style="background:rgba(147, 51, 234, 0.08); border:1px solid rgba(192, 132, 252, 0.35); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem; transition: all 0.2s;">
+                            <div>
+                                <span style="font-weight:700; color:#c084fc;">🟣 Deformed Arm of Vecna:</span>
+                                <span id="badge-vecna-arm" style="color:#d8b4fe; font-weight:bold; margin-left:4px; cursor:pointer;" onclick="toggleVecnaArmManual()" title="Click to manually toggle charges">2 / 2 Ready</span>
+                                <div style="font-size:0.67rem; color:var(--text-muted); margin-top:2px;">2/Long Rest • Siphon +1d10 Necrotic/Force Dmg to spell (1d10 recoil damage to self)</div>
+                            </div>
+                            <button id="btn-vecna-arm" class="btn-roll-action" style="background:linear-gradient(135deg, #7e22ce 0%, #6b21a8 100%); font-size:0.7rem; padding:4px 9px; transition: all 0.2s;" onclick="useVecnaArmAbility()">🟣 Siphon (+1d10)</button>
+                        </div>
+
+                        <!-- Wand of Magic Missiles (3 Charges / Long Rest) -->
+                        <div style="background:rgba(124, 58, 237, 0.08); border:1px solid #a855f7; border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <div>
+                                <span style="font-weight:700; color:#c084fc;">🪄 Wand of Magic Missiles:</span>
+                                <span id="wand-charges-disp" style="color:#fde68a; font-weight:bold; margin-left:4px;">3 / 3 Charges</span>
+                                <div style="font-size:0.67rem; color:var(--text-muted); margin-top:2px;">3 Charges/Long Rest • Casts Magic Missile (3 force darts, 1d4+1 each)</div>
+                            </div>
+                            <div style="display:flex; gap:4px; align-items:center;">
+                                <button class="btn-roll-action btn-roll-dmg" style="background:#7c3aed; padding:4px 9px; font-size:0.7rem;" onclick="useWandOfMagicMissiles(1)">🪄 Cast (1 Chg)</button>
+                                <button class="btn-act btn-act-pre" onclick="modWandCharges(1)" style="font-size:0.65rem; padding:2px 5px;" title="Add Charge">+</button>
+                                <button class="btn-act btn-act-pre" onclick="modWandCharges(-1)" style="font-size:0.65rem; padding:2px 5px;" title="Deduct Charge">-</button>
+                            </div>
+                        </div>
+
+                        <!-- Robe of Arcane Reserve -->
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <span>👘 <strong>Robe of Arcane Reserve:</strong> 1/Day: Instantly regain 1 expended Spell Slot.</span>
+                            <button class="btn-roll-action" style="background:#7c3aed;" onclick="useRobeOfReserve()">🔮 Regain Slot</button>
+                        </div>
+
+                        <!-- Arcane Recovery -->
                         <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <span>📖 <strong>Arcane Recovery (1/Day on Short Rest):</strong> Regain 1 expended 1st-level spell slot.</span>
                             <button class="btn-roll-action" style="background:#059669;" onclick="useArcaneRecovery()">☕ Arcane Recovery</button>
                         </div>
+
+                        <!-- Sculpt Spells -->
                         <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <span>💥 <strong>Sculpt Spells (Evocation Savant):</strong> 1+Spell Lvl allies automatically succeed on saves & take 0 damage from your AoEs!</span>
                             <span style="color:#86efac; font-weight:700; font-size:0.68rem;">PASSIVE SHIELD</span>
                         </div>
+
                         <!-- Shared Party Boon: The Sovereign's Planar Scar (Passive) -->
                         <div style="background:rgba(56, 189, 248, 0.08); border:1px solid rgba(56, 189, 248, 0.35); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <span>🌌 <strong>The Sovereign's Planar Scar (Shared Party Boon):</strong> Permanent <strong>Advantage on Saving Throws vs Frightened, Charmed, & Stunned</strong> (planar residue from the Myconid Sovereign).</span>
                             <span style="color:#38bdf8; font-weight:700; font-size:0.68rem;">PERMANENT ADVANTAGE</span>
-                        </div>
-                        <!-- Cursed Boon: Deformed Left Arm of Vecna's Weave -->
-                        <div style="background:rgba(147, 51, 234, 0.08); border:1px solid rgba(192, 132, 252, 0.35); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
-                            <span>🟣 <strong>Deformed Arm of Vecna's Weave (Cursed Boon):</strong> 2/Long Rest: Siphon weave to add <strong>+1d10 Necrotic/Force Dmg</strong> to damaging spells at the cost of <strong>1d10 recoil damage</strong> to yourself.</span>
-                            <button class="btn-roll-action" style="background:#7e22ce; font-size:0.7rem; padding:3px 8px;" onclick="useVecnaArmAbility()">🟣 Siphon Weave</button>
                         </div>
                     </div>
                 </div>
@@ -1945,18 +1945,18 @@
         if (delta > 0) {
             if (curHP < maxHP) {
                 curHP += 1;
-                logRoll(`💚 <strong>+1 HP:</strong> ${curHP}/${maxHP}`);
+                logRoll(`💚 <strong>+1 HP:</strong> (HP: ${curHP}/${maxHP})`);
             } else {
                 tempHP += 1;
-                logRoll(`🛡️ <strong>+1 Temporary HP:</strong> ${curHP} (+${tempHP} Temp) / ${maxHP}`);
+                logRoll(`🛡️ <strong>+1 Temp HP:</strong> (HP: ${curHP}/${maxHP} • +${tempHP} Temp)`);
             }
         } else {
             if (tempHP > 0) {
                 tempHP -= 1;
-                logRoll(`💥 <strong>-1 HP (Absorbed by Temp):</strong> ${curHP} (+${tempHP} Temp) / ${maxHP}`);
+                logRoll(`💥 <strong>-1 Temp HP:</strong> (HP: ${curHP}/${maxHP} • +${tempHP} Temp)`);
             } else if (curHP > 0) {
                 curHP -= 1;
-                logRoll(`💥 <strong>-1 HP:</strong> ${curHP}/${maxHP}`);
+                logRoll(`💥 <strong>-1 HP:</strong> (HP: ${curHP}/${maxHP})`);
             }
         }
         updateHPUI();
@@ -1968,15 +1968,11 @@
         input.value = '';
 
         let remainingDmg = dmg;
-        let tempAbsorbed = 0;
-
         if (tempHP > 0) {
             if (tempHP >= remainingDmg) {
                 tempHP -= remainingDmg;
-                tempAbsorbed = remainingDmg;
                 remainingDmg = 0;
             } else {
-                tempAbsorbed = tempHP;
                 remainingDmg -= tempHP;
                 tempHP = 0;
             }
@@ -1987,7 +1983,7 @@
         }
 
         updateHPUI();
-        logRoll(`💥 <strong>Damage Taken:</strong> ${dmg} Total (${tempAbsorbed > 0 ? tempAbsorbed + ' absorbed by Temp, ' : ''}${remainingDmg} to Base HP). HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''}`);
+        logRoll(`💥 <strong>Damage Taken:</strong> <span style="color:#f87171; font-weight:700;">-${dmg} HP</span> (HP: ${curHP}/${maxHP}${tempHP > 0 ? ' • +' + tempHP + ' Temp' : ''})`);
     }
 
     function applyHeal() {
@@ -2003,7 +1999,7 @@
             tempHP += (heal - space);
         }
         updateHPUI();
-        logRoll(`💚 <strong>Healed / Overhealed +${heal}:</strong> HP is now <span style="color:#86efac; font-weight:700;">${curHP}/${maxHP}</span> ${tempHP > 0 ? '<span style="color:#38bdf8;">(+' + tempHP + ' Temp)</span>' : ''}.`);
+        logRoll(`💚 <strong>Healed:</strong> <span style="color:#86efac; font-weight:700;">+${heal} HP</span> (HP: ${curHP}/${maxHP}${tempHP > 0 ? ' • +' + tempHP + ' Temp' : ''})`);
     }
 
     function takeShortRest() {
@@ -2022,7 +2018,7 @@
         updateHelpDisplay();
         updateHPUI();
 
-        logRoll(`☕ <strong>Short Rest Taken (${shortRestsRemaining}/2 remaining today):</strong> Restored <span style="color:var(--accent-green); font-weight:700;">+${healAmt} HP</span> (HP: ${prevHP} ➔ ${curHP}/${maxHP}), 🌌 Planar Gravity Step restored, & gained <span style="color:#67e8f9; font-weight:700;">+1 Help Token</span> (${helpTokens}/2)! (Remember Arcane Recovery if unspent)`);
+        logRoll(`☕ <strong>Short Rest:</strong> Restored <span style="color:var(--accent-green); font-weight:700;">+${healAmt} HP</span> (HP: ${curHP}/${maxHP}), 🌌 Planar Gravity Step restored, & gained +1 Help Token (${helpTokens}/2)!`);
     }
 
     function clearTempHP() {
@@ -2041,7 +2037,7 @@
         shortRestsRemaining = maxShortRests;
         helpTokens = maxHelpTokens;
         wandCharges = maxWandCharges;
-        localStorage.setItem('eflein_wand_charges_v1', wandCharges);
+        localStorage.setItem('eflein_wand_charges_v3', wandCharges);
         isGravityStepReady = true;
         updateGravityStepUI();
         vecnaArmUses = maxVecnaArmUses;
@@ -2050,7 +2046,7 @@
         updateWandUI();
         refillAllSlots();
         updateHPUI();
-        logRoll(`⛺ <strong>Full Long Rest:</strong> Restored HP to ${maxHP}/${maxHP}, cleared Temp HP, reset Short Rests to 2/2, recharged Wand of Magic Missiles (7/7), 🌌 Planar Gravity Step & 🟣 Deformed Vecna Arm (2/2) restored, and all Spell Slots & Help Tokens restored to full!`);
+        logRoll(`⛺ <strong>Full Long Rest:</strong> Restored HP to ${maxHP}/${maxHP}, cleared Temp HP, reset Short Rests to 2/2, recharged Wand of Magic Missiles (3/3), 🌌 Planar Gravity Step & 🟣 Deformed Vecna Arm (2/2) restored, and all Spell Slots & Help Tokens restored to full!`);
     }
 
     // ==========================================
@@ -2437,6 +2433,25 @@
         }
     }
 
+    function loadSavedPreparedSpells() {
+        const saved = localStorage.getItem('eflein_prepared_spells_v5');
+        if (saved) {
+            try {
+                const prepIds = JSON.parse(saved);
+                if (Array.isArray(prepIds) && prepIds.length > 0) {
+                    fullSpellbook.forEach(sp => {
+                        sp.prepared = prepIds.includes(sp.id);
+                    });
+                }
+            } catch(e) {}
+        }
+    }
+
+    function savePreparedSpells() {
+        const prepIds = fullSpellbook.filter(s => s.prepared).map(s => s.id);
+        localStorage.setItem('eflein_prepared_spells_v5', JSON.stringify(prepIds));
+    }
+
     function toggleSpellPrep(spellId) {
         const sp = fullSpellbook.find(s => s.id === spellId);
         if (!sp) return;
@@ -2444,11 +2459,12 @@
         const currentPrepCount = fullSpellbook.filter(s => s.prepared).length;
 
         if (!sp.prepared && currentPrepCount >= maxPreparedSpells) {
-            logRoll(`⚠️ <strong>Preparation Limit Reached (${currentPrepCount}/${maxPreparedSpells})!</strong> Eflein can only prepare up to <strong>${maxPreparedSpells} spells</strong> at Level 2 (INT Mod +3 + Level 2). Unprepare an active spell first by clicking its green 'PREPARED' badge!`);
+            logRoll(`⚠️ <strong>Preparation Limit Reached (${currentPrepCount}/${maxPreparedSpells})!</strong> Eflein can only prepare up to <strong>${maxPreparedSpells} spells</strong> at Level 5 (INT Mod +4 + Level 5). Unprepare an active spell first by clicking its green 'PREPARED' badge!`);
             return;
         }
 
         sp.prepared = !sp.prepared;
+        savePreparedSpells();
         renderSpellbook();
         const newCount = fullSpellbook.filter(s => s.prepared).length;
         logRoll(sp.prepared ? `✨ Prepared <strong>"${sp.name}"</strong> (${newCount}/${maxPreparedSpells} Prepared)!` : `📖 Moved <strong>"${sp.name}"</strong> to spellbook archive (${newCount}/${maxPreparedSpells} Prepared).`);
@@ -2488,38 +2504,29 @@
     // Scaled Spell Rollers
     function rollMagicMissileScaled(slotLevel) {
         const darts = 2 + slotLevel; // Lvl 1: 3, Lvl 2: 4, Lvl 3: 5...
-        const rolls = [];
         let total = 0;
         for (let i = 0; i < darts; i++) {
-            const r = Math.floor(Math.random() * 4) + 1;
-            rolls.push(r + 1);
-            total += (r + 1);
+            total += Math.floor(Math.random() * 4) + 1 + 1;
         }
-        logRoll(`⚡ <strong>Magic Missile (Level ${slotLevel} Slot • ${darts} Darts):</strong> [${rolls.join(' + ')}] = <span style="color:#fbbf24; font-weight:700;">${total} Force Damage</span> (Auto-Hit!)`);
+        logRoll(`⚡ <strong>Magic Missile (Level ${slotLevel} Slot • ${darts} Darts):</strong> <span style="color:#fbbf24; font-weight:700; font-size:1.05rem;">${total}</span> Force Damage (Auto-Hit!)`);
     }
 
     function rollThunderwaveScaled(slotLevel) {
         const diceCount = 1 + slotLevel; // Lvl 1: 2d8, Lvl 2: 3d8...
-        const rolls = [];
         let total = 0;
         for (let i = 0; i < diceCount; i++) {
-            const r = Math.floor(Math.random() * 8) + 1;
-            rolls.push(r);
-            total += r;
+            total += Math.floor(Math.random() * 8) + 1;
         }
-        logRoll(`🌊 <strong>Thunderwave (Level ${slotLevel} Slot • ${diceCount}d8):</strong> [${rolls.join(' + ')}] = <span style="color:#38bdf8; font-weight:700;">${total} Thunder Damage</span> + 10ft Push (DC 13 Con save for half)`);
+        logRoll(`🌊 <strong>Thunderwave (Level ${slotLevel} Slot • ${diceCount}d8):</strong> <span style="color:#38bdf8; font-weight:700; font-size:1.05rem;">${total}</span> Thunder Damage + 10ft Push (DC 13 Con save for half)`);
     }
 
     function rollIceKnifeBurst(slotLevel) {
         const burstDice = 1 + slotLevel; // Lvl 1: 2d6, Lvl 2: 3d6, Lvl 3: 4d6...
-        const burstRolls = [];
         let burstTotal = 0;
         for (let i = 0; i < burstDice; i++) {
-            const r = Math.floor(Math.random() * 6) + 1;
-            burstRolls.push(r);
-            burstTotal += r;
+            burstTotal += Math.floor(Math.random() * 6) + 1;
         }
-        logRoll(`❄️ <strong>Ice Knife Burst (Level ${slotLevel} Slot • ${burstDice}d6):</strong> [${burstRolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${burstTotal} Cold Damage</span> (DC 13 Dex save for creatures within 5ft)`);
+        logRoll(`❄️ <strong>Ice Knife Burst (Level ${slotLevel} Slot • ${burstDice}d6):</strong> <span style="color:#38bdf8; font-weight:700; font-size:1.05rem;">${burstTotal}</span> Cold Damage (DC 13 Dex save for creatures within 5ft)`);
     }
 
     function castInvisibilitySpell(slotLevel) {
@@ -2530,14 +2537,11 @@
 
     function rollSleepScaled(slotLevel) {
         const diceCount = 3 + (2 * slotLevel); // Lvl 1: 5d8, Lvl 2: 7d8...
-        const rolls = [];
         let total = 0;
         for (let i = 0; i < diceCount; i++) {
-            const r = Math.floor(Math.random() * 8) + 1;
-            rolls.push(r);
-            total += r;
+            total += Math.floor(Math.random() * 8) + 1;
         }
-        logRoll(`💤 <strong>Sleep Spell (Level ${slotLevel} Slot • ${diceCount}d8):</strong> [${rolls.join(' + ')}] = <span style="color:#c084fc; font-weight:700;">${total} HP</span> of creatures put to sleep!`);
+        logRoll(`💤 <strong>Sleep Spell (Level ${slotLevel} Slot • ${diceCount}d8):</strong> <span style="color:#c084fc; font-weight:700; font-size:1.05rem;">${total} HP</span> of creatures put to sleep!`);
     }
 
     function castMistyStep() {
@@ -2545,30 +2549,22 @@
     }
 
     function rollRimesBindingIce(slotLevel) {
-        const diceCount = 1 + (2 * slotLevel); // Lvl 2: 3d8 (since base is 2nd lvl 3d8), Lvl 3: 4d8
         const actualDice = slotLevel === 1 ? 3 : (1 + slotLevel); // minimum 3d8
         const finalDice = Math.max(3, actualDice);
-        const rolls = [];
         let total = 0;
         for (let i = 0; i < finalDice; i++) {
-            const r = Math.floor(Math.random() * 8) + 1;
-            rolls.push(r);
-            total += r;
+            total += Math.floor(Math.random() * 8) + 1;
         }
-        logRoll(`❄️ <strong>Rime's Binding Ice (Level ${slotLevel} Slot • 30ft Cone • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#38bdf8; font-weight:700;">${total} Cold Damage</span> (DC 13 Con save for half). Failed saves: <span style="color:#67e8f9; font-weight:700;">Speed reduced to 0</span> until ice is broken (Action / DC 13 Athletics)!`);
+        logRoll(`❄️ <strong>Rime's Binding Ice (Level ${slotLevel} Slot • 30ft Cone • ${finalDice}d8):</strong> <span style="color:#38bdf8; font-weight:700; font-size:1.05rem;">${total}</span> Cold Damage (DC 13 Con save for half). Failed saves: <span style="color:#67e8f9; font-weight:700;">Speed reduced to 0</span> until ice is broken (Action / DC 13 Athletics)!`);
     }
 
     function rollShatterScaled(slotLevel) {
-        const diceCount = 1 + (2 * slotLevel) >= 3 ? (1 + slotLevel) : 3;
         const finalDice = Math.max(3, 1 + slotLevel);
-        const rolls = [];
         let total = 0;
         for (let i = 0; i < finalDice; i++) {
-            const r = Math.floor(Math.random() * 8) + 1;
-            rolls.push(r);
-            total += r;
+            total += Math.floor(Math.random() * 8) + 1;
         }
-        logRoll(`💥 <strong>Shatter (Level ${slotLevel} Slot • 60ft • ${finalDice}d8):</strong> [${rolls.join('+')}] = <span style="color:#fbbf24; font-weight:700;">${total} Thunder Damage</span> (DC 13 Con save for half). Creatures of inorganic material (stone, crystal, metal) have Disadvantage!`);
+        logRoll(`💥 <strong>Shatter (Level ${slotLevel} Slot • 60ft • ${finalDice}d8):</strong> <span style="color:#fbbf24; font-weight:700; font-size:1.05rem;">${total}</span> Thunder Damage (DC 13 Con save for half). Creatures of inorganic material (stone, crystal, metal) have Disadvantage!`);
     }
 
     function castSilenceSpell(isRitual) {
@@ -2578,26 +2574,20 @@
 
     function rollFireballScaled(slotLevel) {
         const diceCount = 5 + slotLevel; // Lvl 3: 8d6, Lvl 4: 9d6, Lvl 5: 10d6
-        const rolls = [];
         let total = 0;
         for (let i = 0; i < diceCount; i++) {
-            const r = Math.floor(Math.random() * 6) + 1;
-            rolls.push(r);
-            total += r;
+            total += Math.floor(Math.random() * 6) + 1;
         }
-        logRoll(`🔥 <strong>Fireball (Level ${slotLevel} Slot • 150ft • 20ft Radius • ${diceCount}d6):</strong> [${rolls.join(' + ')}] = <span style="color:#f97316; font-weight:700;">${total} Fire Damage</span> (DC 15 Dex save for half). Sculpt Spells protects up to ${1 + slotLevel} chosen allies!`);
+        logRoll(`🔥 <strong>Fireball (Level ${slotLevel} Slot • 150ft • 20ft Radius • ${diceCount}d6):</strong> <span style="color:#f97316; font-weight:700; font-size:1.05rem;">${total}</span> Fire Damage (DC 15 Dex save for half). Sculpt Spells protects up to ${1 + slotLevel} chosen allies!`);
     }
 
     function rollLightningBoltScaled(slotLevel) {
         const diceCount = 5 + slotLevel; // Lvl 3: 8d6, Lvl 4: 9d6, Lvl 5: 10d6
-        const rolls = [];
         let total = 0;
         for (let i = 0; i < diceCount; i++) {
-            const r = Math.floor(Math.random() * 6) + 1;
-            rolls.push(r);
-            total += r;
+            total += Math.floor(Math.random() * 6) + 1;
         }
-        logRoll(`⚡ <strong>Lightning Bolt (Level ${slotLevel} Slot • 100ft Line • ${diceCount}d6):</strong> [${rolls.join(' + ')}] = <span style="color:#38bdf8; font-weight:700;">${total} Lightning Damage</span> (DC 16 Dex save for half — +1 DC via Astalagan's Scale). Sculpt Spells protects chosen allies!`);
+        logRoll(`⚡ <strong>Lightning Bolt (Level ${slotLevel} Slot • 100ft Line • ${diceCount}d6):</strong> <span style="color:#38bdf8; font-weight:700; font-size:1.05rem;">${total}</span> Lightning Damage (DC 16 Dex save for half — +1 DC via Astalagan's Scale). Sculpt Spells protects chosen allies!`);
     }
 
     function castCounterspell(slotLevel) {
@@ -2619,10 +2609,12 @@
         if (!btn || !badge) return;
 
         if (isGravityStepReady) {
+            btn.disabled = false;
             btn.style.background = 'linear-gradient(135deg, #0284c7 0%, #0369a1 100%)';
             btn.style.color = '#fff';
+            btn.style.cursor = 'pointer';
             btn.innerHTML = '🌌 Glide 20ft';
-            badge.innerText = 'READY';
+            badge.innerText = 'READY (1/SR)';
             badge.style.color = '#38bdf8';
             badge.style.borderColor = '#38bdf8';
             badge.style.background = 'rgba(56,189,248,0.15)';
@@ -2631,10 +2623,12 @@
                 card.style.filter = 'none';
             }
         } else {
+            btn.disabled = true;
             btn.style.background = '#334155';
             btn.style.color = '#94a3b8';
+            btn.style.cursor = 'not-allowed';
             btn.innerHTML = '🌌 Expended (Used)';
-            badge.innerText = 'USED';
+            badge.innerText = 'USED (1/SR)';
             badge.style.color = '#64748b';
             badge.style.borderColor = '#475569';
             badge.style.background = 'rgba(100,116,139,0.15)';
@@ -2668,187 +2662,39 @@
     function updateVecnaArmUI() {
         const btn = document.getElementById('btn-vecna-arm');
         const badge = document.getElementById('badge-vecna-arm');
-        const card = document.getElementById('card-vecna-arm');
+        const relic = document.getElementById('relic-vecna-arm');
         if (!btn || !badge) return;
 
         if (vecnaArmUses > 0) {
+            btn.disabled = false;
             btn.style.background = 'linear-gradient(135deg, #7e22ce 0%, #6b21a8 100%)';
             btn.style.color = '#fff';
-            btn.innerHTML = `🟣 Siphon Weave (+1d10) [${vecnaArmUses}/${maxVecnaArmUses}]`;
-            badge.innerText = `${vecnaArmUses}/${maxVecnaArmUses} READY`;
-            badge.style.color = '#c084fc';
-            badge.style.borderColor = '#c084fc';
-            badge.style.background = 'rgba(192,132,252,0.15)';
-            if (card) {
-                card.style.opacity = '1';
-                card.style.filter = 'none';
+            btn.style.cursor = 'pointer';
+            btn.innerHTML = `🟣 Siphon (+1d10)`;
+            badge.innerText = `${vecnaArmUses} / ${maxVecnaArmUses} Ready`;
+            badge.style.color = '#d8b4fe';
+            if (relic) {
+                relic.style.opacity = '1';
+                relic.style.filter = 'none';
             }
         } else {
+            btn.disabled = true;
             btn.style.background = '#334155';
             btn.style.color = '#94a3b8';
-            btn.innerHTML = '🟣 Expended (0/2)';
-            badge.innerText = '0/2 USED';
+            btn.style.cursor = 'not-allowed';
+            btn.innerHTML = '🟣 Expended';
+            badge.innerText = `0 / ${maxVecnaArmUses} Used`;
             badge.style.color = '#64748b';
-            badge.style.borderColor = '#475569';
-            badge.style.background = 'rgba(100,116,139,0.15)';
-            if (card) {
-                card.style.opacity = '0.65';
-                card.style.filter = 'grayscale(0.6)';
+            if (relic) {
+                relic.style.opacity = '0.65';
+                relic.style.filter = 'grayscale(0.6)';
             }
         }
     }
 
     function useVecnaArmAbility() {
         if (vecnaArmUses <= 0) {
-            logRoll(`⚠️ <strong>Deformed Arm of Vecna's Weave already expended!</strong> Regains 2 uses on a Long Rest. (Click the READY/USED badge to manually toggle if DM permits).`);
-            return;
-        }
-
-        vecnaArmUses--;
-        updateVecnaArmUI();
-        const dmg = Math.floor(Math.random() * 10) + 1;
-        const recoil = Math.floor(Math.random() * 10) + 1;
-        logRoll(`🟣 <strong>Deformed Left Arm of Vecna's Weave (${vecnaArmUses}/${maxVecnaArmUses} Left):</strong> Eflein channels the volatile planar residue of Vecna's weave into her spell! [d10:${dmg}] = <span style="color:#c084fc; font-weight:700;">+${dmg} Bonus Spell Damage</span> (Necrotic/Force)! ⚡ <em>Backlash Recoil:</em> [d10:${recoil}] = <span style="color:#ef4444; font-weight:700;">${recoil} Necrotic Recoil Damage</span> dealt directly to Eflein!`);
-    }
-
-    function toggleVecnaArmManual() {
-        vecnaArmUses = vecnaArmUses > 0 ? 0 : maxVecnaArmUses;
-        updateVecnaArmUI();
-        logRoll(`🟣 <strong>Deformed Arm of Vecna's Weave:</strong> Manually set to <strong>${vecnaArmUses}/${maxVecnaArmUses} charges</strong>.`);
-    }
-
-    function castAlterSelf(optionName) {
-        logRoll(`🧬 <strong>Alter Self Cast (2nd-Level Transmutation • Concentration):</strong> Eflein's body magically shifts into <span style="color:#a855f7; font-weight:700;">${optionName}</span>!`);
-    }
-
-    function castUtility(text) {
-        logRoll(text);
-    }
-
-    // ==========================================
-    // 🪄 WAND OF MAGIC MISSILES (7 CHARGES)
-    // ==========================================
-    const maxWandCharges = 7;
-    let wandCharges = (function() {
-        const saved = localStorage.getItem('eflein_wand_charges_v1');
-        return saved !== null ? parseInt(saved) : 4; // 4/7 default (3 consumed in Session 6/7)
-    })();
-
-    function modWandCharges(delta) {
-        wandCharges = Math.max(0, Math.min(maxWandCharges, wandCharges + delta));
-        localStorage.setItem('eflein_wand_charges_v1', wandCharges);
-        updateWandUI();
-    }
-
-    function updateWandUI() {
-        const el = document.getElementById('wand-charges-disp');
-        if (el) el.innerText = `${wandCharges} / ${maxWandCharges} Charges`;
-    }
-
-    function useWandOfMagicMissiles(charges = 1) {
-        if (wandCharges < charges) {
-            logRoll(`⚠️ <strong>Wand of Magic Missiles:</strong> Not enough charges (${wandCharges}/${maxWandCharges})! Requires a Long Rest to recharge.`);
-            return;
-        }
-        wandCharges -= charges;
-        localStorage.setItem('eflein_wand_charges_v1', wandCharges);
-        updateWandUI();
-        const darts = 2 + charges; // 1 charge = 3 darts, 2 charges = 4 darts...
-        const rolls = [];
-        let total = 0;
-        for (let i = 0; i < darts; i++) {
-            const d4 = Math.floor(Math.random() * 4) + 1;
-            const dartDmg = d4 + 1;
-            rolls.push(`[d4:${d4}+1 = ${dartDmg}]`);
-            total += dartDmg;
-        }
-        logRoll(`🪄 <strong>WAND OF MAGIC MISSILES (Expended ${charges} Charge • ${darts} Force Darts):</strong> ${rolls.join(', ')} = <span style="color:#c084fc; font-weight:700;">${total} Force Damage</span> (Auto-hits! ${wandCharges}/${maxWandCharges} charges left)`);
-    }
-
-    // ==========================================
-    // 🌌 SHARED PARTY BOON & PLANAR MOBILITY (1/SHORT REST)
-    // ==========================================
-    function updateGravityStepUI() {
-        const btn = document.getElementById('btn-gravity-step');
-        const badge = document.getElementById('badge-gravity-step');
-        const card = document.getElementById('card-gravity-step');
-        if (!btn || !badge) return;
-
-        if (isGravityStepReady) {
-            btn.style.background = '';
-            btn.style.color = '';
-            btn.innerHTML = '🌌 Glide 20ft';
-            badge.innerText = 'READY (1/SR)';
-            badge.style.color = '#38bdf8';
-            if (card) {
-                card.style.opacity = '1';
-                card.style.filter = 'none';
-            }
-        } else {
-            btn.style.background = '#334155';
-            btn.style.color = '#94a3b8';
-            btn.innerHTML = '🌌 Expended (Used)';
-            badge.innerText = 'USED (Short Rest)';
-            badge.style.color = '#64748b';
-            if (card) {
-                card.style.opacity = '0.5';
-                card.style.filter = 'grayscale(0.8)';
-            }
-        }
-    }
-
-    function usePlanarGravityStep() {
-        if (!isGravityStepReady) {
-            logRoll(`⚠️ <strong>Planar Gravity Step already expended!</strong> Regains 1 use on a Short or Long Rest. (Click the READY/USED badge to manually toggle if DM permits).`);
-            return;
-        }
-
-        isGravityStepReady = false;
-        updateGravityStepUI();
-        logRoll(`🌌 <strong>The Sovereign's Planar Scar — Planar Gravity Step (1/Short Rest):</strong> Eflein calls upon the lingering planar residue of the Myconid Sovereign! She glides up to <strong>20 feet</strong> through the air in a gravity-defying leap, completely ignoring difficult terrain and provoking <em>NO opportunity attacks</em>! <span style="color:#94a3b8;">(Expended until next Short Rest)</span>`);
-    }
-
-    function togglePlanarGravityStepManual() {
-        isGravityStepReady = !isGravityStepReady;
-        updateGravityStepUI();
-        logRoll(`🌌 <strong>Planar Gravity Step:</strong> Manually marked as <strong>${isGravityStepReady ? 'READY' : 'EXPENDED'}</strong>.`);
-    }
-
-    // ==========================================
-    // 🟣 CURSED BOON: DEFORMED ARM OF VECNA'S WEAVE
-    // ==========================================
-    function updateVecnaArmUI() {
-        const btn = document.getElementById('btn-vecna-arm');
-        const badge = document.getElementById('badge-vecna-arm');
-        const card = document.getElementById('card-vecna-arm');
-        if (!btn || !badge) return;
-
-        if (vecnaArmUses > 0) {
-            btn.style.background = 'linear-gradient(135deg, #7e22ce 0%, #6b21a8 100%)';
-            btn.style.color = '#fff';
-            btn.innerHTML = '🟣 Siphon Weave (+1d10)';
-            badge.innerText = `${vecnaArmUses}/${maxVecnaArmUses} READY`;
-            badge.style.color = '#c084fc';
-            if (card) {
-                card.style.opacity = '1';
-                card.style.filter = 'none';
-            }
-        } else {
-            btn.style.background = '#334155';
-            btn.style.color = '#94a3b8';
-            btn.innerHTML = '🟣 Expended (Used)';
-            badge.innerText = `0/${maxVecnaArmUses} USED`;
-            badge.style.color = '#64748b';
-            if (card) {
-                card.style.opacity = '0.55';
-                card.style.filter = 'grayscale(0.7)';
-            }
-        }
-    }
-
-    function useVecnaArmAbility() {
-        if (vecnaArmUses <= 0) {
-            logRoll(`⚠️ <strong>Deformed Arm of Vecna:</strong> All charges expended (${vecnaArmUses}/${maxVecnaArmUses})! Regains all uses on a Long Rest.`);
+            logRoll(`⚠️ <strong>Deformed Arm of Vecna's Weave already expended!</strong> Regains 2 uses on a Long Rest. (Click the Ready/Used badge to manually toggle if DM permits).`);
             return;
         }
 
@@ -2857,7 +2703,6 @@
         const bonusDmg = Math.floor(Math.random() * 10) + 1;
         const recoilDmg = Math.floor(Math.random() * 10) + 1;
 
-        let prevHP = curHP;
         let remainingRecoil = recoilDmg;
         if (tempHP > 0) {
             if (tempHP >= remainingRecoil) {
@@ -2873,13 +2718,56 @@
         }
         updateHPUI();
 
-        logRoll(`🟣 <strong>DEFORMED ARM OF VECNA'S WEAVE ACTIVATED!</strong> (${vecnaArmUses}/${maxVecnaArmUses} remaining).<br>• Arcane siphon infuses damaging spell with <span style="color:#c084fc; font-weight:700;">+${bonusDmg} Necrotic/Force Damage</span> (1d10 rolled: ${bonusDmg})!<br>• 💀 <strong>Cursed Recoil:</strong> Eldritch feedback deals <span style="color:#ef4444; font-weight:700;">${recoilDmg} Necrotic Damage</span> to Eflein! (HP: ${prevHP} ➔ ${curHP}/${maxHP})`);
+        logRoll(`🟣 <strong>Deformed Arm of Vecna:</strong> Adds <span style="color:#c084fc; font-weight:700; font-size:1.05rem;">+${bonusDmg}</span> Necrotic/Force Damage to spell! Deals <span style="color:#ef4444; font-weight:700;">-${recoilDmg} HP</span> recoil to Eflein (HP: ${curHP}/${maxHP}). [${vecnaArmUses}/${maxVecnaArmUses} left]`);
     }
 
     function toggleVecnaArmManual() {
         vecnaArmUses = (vecnaArmUses > 0) ? 0 : maxVecnaArmUses;
         updateVecnaArmUI();
         logRoll(`🟣 <strong>Deformed Arm of Vecna:</strong> Manually toggled to <strong>${vecnaArmUses}/${maxVecnaArmUses}</strong>.`);
+    }
+
+    function castAlterSelf(optionName) {
+        logRoll(`🧬 <strong>Alter Self Cast (2nd-Level Transmutation • Concentration):</strong> Eflein's body magically shifts into <span style="color:#a855f7; font-weight:700;">${optionName}</span>!`);
+    }
+
+    function castUtility(text) {
+        logRoll(text);
+    }
+
+    // ==========================================
+    // 🪄 WAND OF MAGIC MISSILES (3 CHARGES / LONG REST)
+    // ==========================================
+    const maxWandCharges = 3;
+    let wandCharges = (function() {
+        const saved = localStorage.getItem('eflein_wand_charges_v3');
+        return saved !== null ? Math.min(maxWandCharges, parseInt(saved)) : 3;
+    })();
+
+    function modWandCharges(delta) {
+        wandCharges = Math.max(0, Math.min(maxWandCharges, wandCharges + delta));
+        localStorage.setItem('eflein_wand_charges_v3', wandCharges);
+        updateWandUI();
+    }
+
+    function updateWandUI() {
+        const el = document.getElementById('wand-charges-disp');
+        if (el) el.innerText = `${wandCharges} / ${maxWandCharges} Charges`;
+    }
+
+    function useWandOfMagicMissiles(charges = 1) {
+        if (wandCharges < charges) {
+            logRoll(`⚠️ <strong>Wand of Magic Missiles:</strong> 0 charges remaining (${wandCharges}/${maxWandCharges})! Requires a Long Rest to recharge.`);
+            return;
+        }
+        wandCharges -= charges;
+        localStorage.setItem('eflein_wand_charges_v3', wandCharges);
+        updateWandUI();
+        let total = 0;
+        for (let i = 0; i < 3; i++) {
+            total += Math.floor(Math.random() * 4) + 1 + 1; // 1d4 + 1
+        }
+        logRoll(`🪄 <strong>Wand of Magic Missiles:</strong> <span style="color:#c084fc; font-weight:700; font-size:1.05rem;">${total}</span> Force Damage (3 Darts • Auto-Hit! ${wandCharges}/${maxWandCharges} charges left)`);
     }
 
     // ==========================================
@@ -2961,10 +2849,13 @@
         logRoll(msg);
     }
 
-    function rollFormulaDamage(label, sides, bonus, type) {
-        const roll = Math.floor(Math.random() * sides) + 1;
-        const total = roll + bonus;
-        logRoll(`💥 <strong>${label}:</strong> [d${sides}:${roll} + ${bonus}] = <span style="font-size:1.05rem; color:#f87171; font-weight:700;">${total}</span> ${type} Damage`);
+    function rollFormulaDamage(label, sides, bonus, type, diceCount = 1) {
+        let total = 0;
+        for (let i = 0; i < diceCount; i++) {
+            total += Math.floor(Math.random() * sides) + 1;
+        }
+        total += bonus;
+        logRoll(`💥 <strong>${label}:</strong> <span style="font-size:1.05rem; color:#f87171; font-weight:700;">${total}</span> ${type} Damage`);
     }
 
     // ==========================================
@@ -3289,7 +3180,7 @@
             category: "OFFENSIVE • Uncommon Arcane Focus",
             origin: "Octopus Den (Seagrow Caves B1)",
             desc: "A polished driftwood wand tipped with an iridescent force crystal.",
-            effect: "• Holds <strong>7 Charges</strong> (recharges 1d6+1 at dawn).<br>• Spend 1 charge to cast 1st-level *Magic Missile* (3 auto-hitting force darts, 1d4+1 each). Spend additional charges to upcast (+1 dart per charge)."
+            effect: "• Holds <strong>3 Charges</strong> (recharges all 3 on a Long Rest).<br>• Spend 1 charge to cast *Magic Missile* (3 auto-hitting force darts dealing 1d4+1 each) without expending a spell slot."
         },
         "robe of arcane reserve": {
             name: "👘 Robe of Arcane Reserve (The Ley-Weaver's Mantle)",
@@ -3831,11 +3722,14 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
         const invSummary = deltaParts.length > 0 ? deltaParts.join(' | ') : '📦 Inventory: (No session changes)';
         
         const slotsStr = `L1(${spellSlots[1].current}/${spellSlots[1].max})${spellSlots[2].max > 0 ? ' L2('+spellSlots[2].current+'/'+spellSlots[2].max+')' : ''}${spellSlots[3].max > 0 ? ' L3('+spellSlots[3].current+'/'+spellSlots[3].max+')' : ''}`;
-        const stateStr = `🧙‍♂️ EFLEIN [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | Wand: ${wandCharges}/${maxWandCharges} | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${curGP} GP, ${curSP} SP] • ${invSummary}`;
+        const prepSpells = fullSpellbook.filter(s => s.prepared).map(s => s.name);
+        const prepStr = prepSpells.length > 0 ? `Prepared (${prepSpells.length}/${maxPreparedSpells}): ${prepSpells.join(', ')}` : 'Prepared: (None)';
+        
+        const stateStr = `🧙‍♂️ EFLEIN [HP: ${curHP}/${maxHP}${tempHP > 0 ? ' (+'+tempHP+' Temp)' : ''} | Slots: ${slotsStr} | ${prepStr} | Wand: ${wandCharges}/${maxWandCharges} | Arm of Vecna: ${vecnaArmUses}/2 | Gravity Step: ${isGravityStepReady ? 'READY' : 'USED'} | Help: ${helpTokens}/2 | AC: ${document.getElementById('ac-disp').innerText} | Wealth: ${curGP} GP, ${curSP} SP] • ${invSummary}`;
         
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(stateStr).then(() => {
-                logRoll(`📋 <strong>Session Delta Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
+                logRoll(`📋 <strong>Session Delta & Prepared Spells Exported!</strong><br><small style="color:var(--text-dim);">${stateStr}</small>`);
             }).catch(() => {
                 prompt("Copy Eflein's session export string:", stateStr);
             });
@@ -3864,6 +3758,7 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     updateVecnaArmUI();
     updateGoldUI();
     renderSpellSlots();
+    loadSavedPreparedSpells();
     renderSpellbook();
     renderInventory();
 </script>
