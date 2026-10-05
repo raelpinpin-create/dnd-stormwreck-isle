@@ -222,12 +222,29 @@
 
 ---
 
+### 👁️⚡ Session 8: The Mark of Vecna, The Deicide of Moros, & The Return to Stormwreck Isle
+* **Location:** Mal'Goroth (Shattered Obsidian Monolith ➔ Grand Cathedral ➔ Planar Rift) ➔ Toril (Wreck of the *Compass Rose* ➔ Ruined Dragon's Rest)
+* **Key Events:**
+  1. **Melkor's Mask & Malgorian Dialect:** Eflein salvaged the cracked porcelain mask from Melkor. Sylvar put it on, gaining fluency in **Malgorian** and warding against extraplanar gods, but incurring the curse of *Deific Rejection* (divine healing burns for damage).
+  2. **The Nat 20 Mark of Vecna:** Sylvar rolled a **Natural 20 on History** at the Monolith base, identifying the withered skeletal hand clutching an eye as the holy sigil of **Vecna, The Whispered One**—the arch-harvester who sucked Mal'Goroth dry, grafted his eye to Moros, and is the coming Multiverse Cataclysm Lianna is fighting!
+  3. **The Legendary Performance Ruse:** The party feigned extreme infirmity with a joint 22 and 21 Performance/Persuasion check, convincing Moros to allow a Long Rest in Thurible's hearth so Flubs could reach peak divine charge. Flubs endured the visceral nightmare of the white chalice drinking his blood.
+  4. **The Birthday Reverse-Heist & Zik's Soul Bargain:** The party duped Moros into spinning for Flubs's birthday with a DC 25 check (rolled **27** with a Help Token!). Sylvar rolled a 19 on a DC 20 Stealth check to reach Melkor. In a tragic bargain with the DM, Sylvar **sacrificed Sentry Zik's remains & ribbon**, abandoning his Toril burial and leaving his ghost to wander Mal'Goroth forever, turning her roll into a **20**!
+  5. **Melkor Revived & Ambush:** Sylvar rolled a **Nat 20 Insight** to realize Melkor was faking unconsciousness, and administered an *Elixir of Life* with a DC 20 Sleight of Hand check (rolled **23** with *Guidance*!). Melkor joined the fight!
+  6. **The Nat 20 Eye Shatter & The Fall of Sylvar:** Sylvar vaulted off Melkor's shoulders and struck Moros's Forehead Void Eye with *Lyra* on a **NATURAL 20**! The eye detonated in a blinding violet blast that blinded everyone except the already-blind Sylvar. Sylvar seized the raw **Vecna Weave** and rolled **ANOTHER Nat 20 on Arcana**, mastering the planar rift magic. Moros mauled Sylvar 20 ft in the air, dropping her to 0 HP, but Sylvar succeeded on a DC 17 Athletics check to keep the weave away from Moros before falling to her death.
+  7. **Resuscitation & Philosophical Schism:** Varnoth revived Sylvar with an *Elixir of Life*. Eflein caught the Vecna weave, taking necrotic damage. The maimed Moros wept, pleading that he only wanted his people to strike back at Vecna to save the multiverse. Flubs, Sylvar, and Varnoth sided with Moros!
+  8. **Eflein's Desperate Rift & The Severed Arm:** Eflein refused to trust Moros, choosing his wife Lianna. In a tense party scramble, Eflein used *Misty Step* and slipped past Varnoth's and Flubs's grapple attempts. Channelling the forbidden Vecna weave, his left arm turned purple and deformed (Cursed Boon). He dropped to 1 HP and opened the Astral rift. Melkor pinned Moros down; Flubs betrayed Moros with *Guiding Bolt* and *Spiritual Weapon*; the party leapt through. As Moros reached through the rift, the portal snapped shut, **severing Moros's arm cleanly off** and sealing him in Mal'Goroth forever!
+  9. **Return to Toril — Sacked Dragon's Rest:** The party crashed onto the *Compass Rose*. Varnoth healed Eflein with her last potion. Reaching Dragon's Rest, they discovered **months had passed**—the cloister was burned, Kobolds slaughtered, a note pointing to *"The Caves..."*, and Sparkrender roaring from the Clifftop Observatory with Elder Runara captured!
+  10. **Level 5 Milestone Unlocked:** The party reached Level 5 with permanent boons and scars!
+
+---
+
 ## 🎯 Active Campaign Quests
-* [ ] **1. Primary Quest (The Archmage's Trail):** Trace the path of Eflein's wife **Lianna**—an ancient elven archmage recalled by Elminster to prevent the Great Multiverse Cataclysm.
-* [ ] **2. 🩸 The Mal'Goroth Planar Odyssey (Active Mini-Campaign — Act 3 Climax):** Decipher the Obsidian Monolith, confront Moros at the Grand Cathedral, shatter his Forehead Void Eye, and escape back to Toril!
+* [ ] **1. Primary Quest (The Archmage's Trail):** Trace the path of Eflein's wife **Lianna**—an ancient elven archmage fighting the coming Multiverse Cataclysm orchestrated by **Vecna, The Whispered One**!
+* [x] **2. 🩸 The Mal'Goroth Planar Odyssey (Act 3.5 Mini-Campaign — COMPLETED & SEALED):** Deciphered the Obsidian Monolith, uncovered Vecna's deicide, revived Melkor, shattered Moros's Void Eye, severed his arm, and escaped back to Toril!
 * [x] **3. Seagrow Caves Fungal Blight (Chapter 2 — COMPLETED):** Fume Drakes cleared, Fire Snake tamed, Sinensa cured, Ruby Morels and Heartcaps gathered, and volcanic crystal shattered!
-* [ ] **4. Wreck of the Compass Rose & Silver Scale (Chapter 3 — PAUSED / INTERDIMENSIONAL):** Return from Mal'Goroth to claim **Clyssavar's Silver Scale** and cleanse Aleitha's Talisman at Dragon's Rest cemetery!
-* [ ] **5. The Three Metallic Dragon Special Quest:**
-  * [x] **Bronze Scale (Astalagan):** Acquired & Awakened at Dragon's Rest.
-  * [ ] **Silver Scale (Clyssavar):** Located at Compass Rose (Urgent Chapter 3 Objective for the New Hero!).
-  * [ ] **Gold Scale (Turadaer):** Sealed in Clifftop Observatory Vault.
+* [ ] **4. Wreck of the Compass Rose & Silver Scale (Chapter 3 — RESUMED ON TORIL):** Claim **Clyssavar's Silver Scale** and investigate the survivors/clues on the island!
+* [ ] **5. Chapter 4 Climax (The Sacked Cloister & Clifftop Observatory):** Storm the Clifftop Observatory, rescue **Elder Runara**, defeat **Sparkrender**, and prevent the sacrifice under the King-Killer Comet!
+* [ ] **6. The Three Metallic Dragon Special Quest:**
+  * [x] **Bronze Scale (Astalagan):** Acquired & Awakened at Dragon's Rest (Wielder: Eflein).
+  * [ ] **Silver Scale (Clyssavar):** Located at Compass Rose (Urgent Objective for Sylvar Link!).
+  * [ ] **Gold Scale (Turadaer):** Sealed in Clifftop Observatory Vault (For Father Flubs).

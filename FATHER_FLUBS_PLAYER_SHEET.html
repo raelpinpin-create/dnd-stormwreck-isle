@@ -697,7 +697,7 @@
                     « The Serpent Rider » & « Warden of the Living Grove »
                 </div>
                 <div style="font-size:0.75rem; color:var(--text-dim); margin-top:1px;">
-                    Level 4 Human Life Domain Cleric • Acolyte
+                    Level 5 Human Life Domain Cleric • Acolyte
                 </div>
             </div>
             <div class="pill-badge-group">
@@ -734,7 +734,7 @@
 
             <!-- RESULT BANNER -->
             <div class="roll-result-display" id="roll-res">
-                🍷 Holy sanctuary blessings active (Level 4 Life Cleric • WIS 18). Roll any miracle, mace strike, or check below!
+                🍷 Holy sanctuary blessings active (Level 5 Life Cleric • WIS 18 • PB +3). Roll any miracle, mace strike, or check below!
             </div>
         </section>
 
@@ -748,7 +748,7 @@
                 <div class="vitals-4box">
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">HIT POINTS</span>
-                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">31/31</span>
+                        <span class="vital-mini-val" id="hp-disp" style="color:var(--accent-green);">38/38</span>
                     </div>
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">ARMOR CLASS</span>
@@ -760,7 +760,7 @@
                     </div>
                     <div class="vital-mini-box">
                         <span class="vital-mini-lbl">SPELL DC / HIT</span>
-                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 14 | +6</span>
+                        <span class="vital-mini-val" style="font-size:0.86rem; color:var(--accent-gold);">DC 15 | +7</span>
                     </div>
                 </div>
 
@@ -808,7 +808,7 @@
                     <div class="toggle-btn-card" id="card-cd-toggle" onclick="triggerPreserveLife()">
                         <div>
                             <div style="font-size:0.74rem; font-weight:700;">🕊️ Preserve Life</div>
-                            <div style="font-size:0.66rem; color:var(--text-dim);" id="sub-cd">1/Short Rest (20 HP)</div>
+                            <div style="font-size:0.66rem; color:var(--text-dim);" id="sub-cd">1/Short Rest (25 HP)</div>
                         </div>
                         <span class="toggle-badge off" id="badge-cd">USED</span>
                     </div>
@@ -829,10 +829,10 @@
 
                 <!-- 6 ABILITY SCORES STRIP -->
                 <div class="ability-strip">
-                    <div class="ability-box" onclick="rollD20('STR Check', 1)" title="Click to roll STR Check (+1)">
+                    <div class="ability-box" onclick="rollD20('STR Check', 2)" title="Click to roll STR Check (+2)">
                         <div class="ability-name">STR</div>
-                        <div class="ability-score">12</div>
-                        <div class="ability-mod">+1</div>
+                        <div class="ability-score">14</div>
+                        <div class="ability-mod">+2</div>
                     </div>
                     <div class="ability-box" onclick="rollD20('DEX Check', 0)" title="Click to roll DEX Check (+0)">
                         <div class="ability-name">DEX</div>
@@ -841,13 +841,13 @@
                     </div>
                     <div class="ability-box" onclick="rollD20('CON Check', 2)" title="Click to roll CON Check (+2)">
                         <div class="ability-name">CON</div>
-                        <div class="ability-score">14</div>
+                        <div class="ability-score">15</div>
                         <div class="ability-mod">+2</div>
                     </div>
-                    <div class="ability-box" onclick="rollD20('INT Check', 1)" title="Click to roll INT Check (+1)">
+                    <div class="ability-box" onclick="rollD20('INT Check', 0)" title="Click to roll INT Check (+0)">
                         <div class="ability-name">INT</div>
-                        <div class="ability-score">12</div>
-                        <div class="ability-mod">+1</div>
+                        <div class="ability-score">10</div>
+                        <div class="ability-mod">+0</div>
                     </div>
                     <div class="ability-box active-key" onclick="rollD20('WIS Check', 4)" title="Click to roll WIS Check (+4)">
                         <div class="ability-name">WIS</div>
@@ -856,7 +856,7 @@
                     </div>
                     <div class="ability-box" onclick="rollD20('CHA Check', 1)" title="Click to roll CHA Check (+1)">
                         <div class="ability-name">CHA</div>
-                        <div class="ability-score">13</div>
+                        <div class="ability-score">12</div>
                         <div class="ability-mod">+1</div>
                     </div>
                 </div>
@@ -867,11 +867,11 @@
                         <span>🛡️ Saving Throws</span>
                     </div>
                     <ul class="stat-row-list">
-                        <li class="stat-row-item prof-item" onclick="rollD20('Wisdom Saving Throw ★', 6)"><span>Wisdom Save ★</span><span>+6 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Charisma Saving Throw ★', 3)"><span>Charisma Save ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Wisdom Saving Throw ★', 7)"><span>Wisdom Save ★</span><span>+7 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Charisma Saving Throw ★', 4)"><span>Charisma Save ★</span><span>+4 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Constitution Save', 2)"><span>Constitution Save</span><span>+2 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Strength Save', 1)"><span>Strength Save</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Intelligence Save', 1)"><span>Intelligence Save</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Strength Save', 2)"><span>Strength Save</span><span>+2 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Intelligence Save', 0)"><span>Intelligence Save</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Dexterity Save', 0)"><span>Dexterity Save</span><span>+0 🎲</span></li>
                     </ul>
                 </div>
@@ -880,23 +880,23 @@
                 <div class="panel">
                     <div class="panel-title">
                         <span>🎯 All 18 Skills (Individual Rolls)</span>
-                        <span style="font-size:0.7rem; color:var(--text-dim);">Prof: +2</span>
+                        <span style="font-size:0.7rem; color:var(--text-dim);">Prof: +3</span>
                     </div>
                     <ul class="stat-row-list">
                         <li class="stat-row-item" onclick="rollD20('Acrobatics (DEX)', 0)"><span>Acrobatics (DEX)</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Animal Handling (WIS)', 4)"><span>Animal Handling (WIS)</span><span>+4 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Arcana (INT)', 1)"><span>Arcana (INT)</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Athletics (STR)', 1)"><span>Athletics (STR)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Arcana (INT)', 0)"><span>Arcana (INT)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Athletics (STR)', 2)"><span>Athletics (STR)</span><span>+2 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Deception (CHA)', 1)"><span>Deception (CHA)</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('History (INT)', 1)"><span>History (INT)</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Insight (WIS) ★', 6)"><span>Insight (WIS) ★</span><span>+6 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('History (INT) ★', 3)"><span>History (INT) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Insight (WIS) ★', 7)"><span>Insight (WIS) ★</span><span>+7 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Intimidation (CHA)', 1)"><span>Intimidation (CHA)</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Investigation (INT)', 1)"><span>Investigation (INT)</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Medicine (WIS) ★', 6)"><span>Medicine (WIS) ★</span><span>+6 🎲</span></li>
-                        <li class="stat-row-item" onclick="rollD20('Nature (INT)', 1)"><span>Nature (INT)</span><span>+1 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Investigation (INT)', 0)"><span>Investigation (INT)</span><span>+0 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Medicine (WIS) ★', 7)"><span>Medicine (WIS) ★</span><span>+7 🎲</span></li>
+                        <li class="stat-row-item" onclick="rollD20('Nature (INT)', 0)"><span>Nature (INT)</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Perception (WIS)', 4)"><span>Perception (WIS)</span><span>+4 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Performance (CHA)', 1)"><span>Performance (CHA)</span><span>+1 🎲</span></li>
-                        <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★', 3)"><span>Persuasion (CHA) ★</span><span>+3 🎲</span></li>
+                        <li class="stat-row-item prof-item" onclick="rollD20('Persuasion (CHA) ★', 4)"><span>Persuasion (CHA) ★</span><span>+4 🎲</span></li>
                         <li class="stat-row-item prof-item" onclick="rollD20('Religion (INT) ★', 3)"><span>Religion (INT) ★</span><span>+3 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Sleight of Hand (DEX)', 0)"><span>Sleight of Hand (DEX)</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Stealth (DEX)', 0)"><span>Stealth (DEX)</span><span>+0 🎲</span></li>
@@ -1056,7 +1056,7 @@
                 <!-- 🕊️ 2. PREPARED DIVINE SPELLS & SCALABLE MIRACLES -->
                 <div class="panel">
                     <div class="panel-title">
-                        <span>🕊️ Prepared Divine Spells & Miracles</span>
+                        <span>🕊️ Prepared Divine Spells & Miracles (15 Spells)</span>
                         <button class="btn-act btn-act-pre" onclick="refillAllSlots()" style="font-size:0.68rem; color:var(--accent-gold);">⛺ Refill Slots</button>
                     </div>
 
@@ -1082,7 +1082,7 @@
                             <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
                                 <div>
                                     <span style="font-size:0.68rem; font-weight:700; color:var(--accent-purple);">2nd:</span>
-                                    <span id="slot-pips-2" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(2)">🟦 🟦 (2/2)</span>
+                                    <span id="slot-pips-2" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(2)">🟦 🟦 🟦 (3/3)</span>
                                 </div>
                                 <div style="display:flex; gap:2px;">
                                     <button class="btn-act btn-act-pre" onclick="modSlotTier(2, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
@@ -1093,7 +1093,7 @@
                             <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:3px 6px; display:flex; justify-content:space-between; align-items:center;">
                                 <div>
                                     <span style="font-size:0.68rem; font-weight:700; color:var(--accent-gold);">3rd:</span>
-                                    <span id="slot-pips-3" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(3)">🔒 Lvl 5 Req</span>
+                                    <span id="slot-pips-3" style="font-size:0.74rem; cursor:pointer; margin-left:2px;" onclick="toggleSlotTier(3)">🟦 🟦 (2/2)</span>
                                 </div>
                                 <div style="display:flex; gap:2px;">
                                     <button class="btn-act btn-act-pre" onclick="modSlotTier(3, -1)" style="padding:0px 4px; font-size:0.65rem;">-</button>
@@ -1103,10 +1103,182 @@
                         </div>
                     </div>
 
-                    <!-- SUBSECTION A: 💚 HEALING & RESTORATION MIRACLES -->
-                    <div style="font-size:0.72rem; font-weight:700; color:#86efac; margin:6px 0 4px 2px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:4px;">
-                        <span>💚 Healing & Restoration Miracles</span>
-                        <span style="font-size:0.62rem; color:var(--text-muted); font-weight:normal;">(Includes Disciple of Life +2+lvl)</span>
+                    <!-- SUBSECTION 0: 👑 3RD-LEVEL DIVINE MIRACLES (LEVEL 5 UNLOCKED) -->
+                    <div style="font-size:0.72rem; font-weight:700; color:var(--accent-gold); margin:6px 0 4px 2px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:4px;">
+                        <span>👑 3rd-Level Divine Miracles (Apex Tier)</span>
+                        <span style="font-size:0.62rem; color:#fde68a; font-weight:normal;">(Level 5 Unlocked • 2 Slots)</span>
+                    </div>
+
+                    <div class="action-grid-2col">
+                        <!-- Spirit Guardians -->
+                        <div class="action-card" style="border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.05); grid-column: 1 / -1;">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('spiritguardians')" style="cursor:pointer; font-weight:700; color:#facc15; transition:color 0.15s;" onmouseover="this.style.color='#fef08a'" onmouseout="this.style.color='#facc15'">
+                                        👑 Spirit Guardians <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#fbbf24; margin-top:1px;">3rd Lvl • Concentration • 10 min</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:#facc15; font-weight:700; background:rgba(245,158,11,0.2); padding:1px 6px; border-radius:3px;">CONJURATION</span>
+                            </div>
+                            <div class="action-desc">Self (15ft aura). Enemies entering or starting turn take <strong>3d8 Radiant</strong> (DC 15 Wis half) & speed halved! Protects chosen allies.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" style="background:linear-gradient(135deg, #d97706 0%, #b45309 100%);" onclick="castSpiritGuardians()">👑 Summon Aura (-1 L3 Slot)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollSpiritGuardiansDmg()">💥 3d8 Radiant</button>
+                            </div>
+                        </div>
+
+                        <!-- Revivify (3rd Level • Life Domain) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('revivify')" style="cursor:pointer; font-weight:700; color:#86efac; transition:color 0.15s;" onmouseover="this.style.color='#bbf7d0'" onmouseout="this.style.color='#86efac'">
+                                        ☀️ Revivify (Domain) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">3rd Lvl • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:#86efac; font-weight:600;">NECROMANCY</span>
+                            </div>
+                            <div class="action-desc">Touch • 1 Action. Touch creature died within 1 min: returns to life with <strong>1 Hit Point</strong>!</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action btn-roll-heal" onclick="castRevivify()">☀️ Cast Revivify (-1 L3 Slot)</button>
+                            </div>
+                        </div>
+
+                        <!-- Beacon of Hope (3rd Level • Life Domain) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('beaconofhope')" style="cursor:pointer; font-weight:700; color:#67e8f9; transition:color 0.15s;" onmouseover="this.style.color='#a5f3fc'" onmouseout="this.style.color='#67e8f9'">
+                                        🕊️ Beacon of Hope (Domain) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#fbbf24; margin-top:1px;">3rd Lvl • Conc 1 min</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:#67e8f9; font-weight:600;">ABJURATION</span>
+                            </div>
+                            <div class="action-desc">30 ft aura. Allies gain <strong>Advantage on Wis & Death saves</strong> and all healing received is <strong>MAXIMIZED</strong>!</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" style="background:#0284c7;" onclick="castBeaconOfHope()">🕊️ Beacon of Hope (-1 L3 Slot)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUBSECTION A: ⚔️ 2ND-LEVEL COMBAT & RESTORATION MIRACLES -->
+                    <div style="font-size:0.72rem; font-weight:700; color:#c084fc; margin:10px 0 4px 2px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:4px;">
+                        <span>⚔️ 2nd-Level Combat & Restoration Miracles</span>
+                        <span style="font-size:0.62rem; color:var(--text-muted); font-weight:normal;">(3 Slots Total)</span>
+                    </div>
+
+                    <div class="action-grid-2col">
+                        <!-- Spiritual Weapon (2nd Level • Life Domain) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('spiritualweapon')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🗡️ Spiritual Weapon (Domain) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">2nd Lvl • Bonus Action • No Conc</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:var(--accent-purple); font-weight:600;">EVOCATION</span>
+                            </div>
+                            <div class="action-desc">60 ft • 1 min. Bonus Action strike each turn: +7 hit, 1d8+4 Force damage! Moves 20 ft.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" onclick="rollD20('Spiritual Weapon Strike', 7)">🗡️ Attack (+7)</button>
+                                <button class="btn-roll-action btn-roll-dmg" onclick="rollSpiritualWeaponDmg()">💥 1d8+4 Force</button>
+                            </div>
+                        </div>
+
+                        <!-- Lesser Restoration (2nd Level • Life Domain) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('lesserrestoration')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-green)'" onmouseout="this.style.color='#f8fafc'">
+                                        ✨ Lesser Restoration (Domain) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">2nd Lvl • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:var(--accent-green); font-weight:600;">ABJURATION</span>
+                            </div>
+                            <div class="action-desc">Touch • Instantly cures 1 disease or ends: <strong>Blinded, Deafened, Paralyzed, Poisoned</strong>.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action btn-roll-heal" onclick="castLesserRestoration()">✨ Cast & Cure (-1 L2 Slot)</button>
+                            </div>
+                        </div>
+
+                        <!-- Aid (2nd Level • Party Max HP Buff) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('aid')" style="cursor:pointer; font-weight:700; color:#f87171; transition:color 0.15s;" onmouseover="this.style.color='#fca5a5'" onmouseout="this.style.color='#f87171'">
+                                        🩸 Aid <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">2nd Lvl • 8 Hours • No Conc</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:#f87171; font-weight:600;">ABJURATION</span>
+                            </div>
+                            <div class="action-desc">30 ft • 8 hrs. 3 chosen allies gain <strong>+5 to Current & Max HP</strong>! Lasts all day.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" style="background:#dc2626;" onclick="castAidSpell()">🩸 Buff 3 Allies (+5 Max HP)</button>
+                            </div>
+                        </div>
+
+                        <!-- Hold Person (2nd Level • Paralyze Humanoid) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('holdperson')" style="cursor:pointer; font-weight:700; color:#c084fc; transition:color 0.15s;" onmouseover="this.style.color='#e9d5ff'" onmouseout="this.style.color='#c084fc'">
+                                        ⛓️ Hold Person <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#fbbf24; margin-top:1px;">2nd Lvl • Conc 1 min</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:var(--accent-purple); font-weight:600;">ENCHANTMENT</span>
+                            </div>
+                            <div class="action-desc">60 ft. Target humanoid: <strong>DC 15 Wis Save</strong> or become <strong>Paralyzed</strong> (attacks within 5ft auto-crit!).</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" style="background:#7c3aed;" onclick="castHoldPerson()">⛓️ Paralyze Humanoid (DC 15)</button>
+                            </div>
+                        </div>
+
+                        <!-- Prayer of Healing (2nd Level • 10-Min Mass Heal) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('prayerofhealing')" style="cursor:pointer; font-weight:700; color:#86efac; transition:color 0.15s;" onmouseover="this.style.color='#bbf7d0'" onmouseout="this.style.color='#86efac'">
+                                        🕯️ Prayer of Healing <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#86efac; margin-top:1px;">2nd Lvl • 10 Min Cast</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:#86efac; font-weight:600;">EVOCATION</span>
+                            </div>
+                            <div class="action-desc">30 ft • 10 min. Heals up to 6 allies for <strong>2d8 + 8 HP</strong> each (includes Disciple of Life).</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action btn-roll-heal" onclick="rollPrayerOfHealing()">🕯️ 10-Min Mass Heal</button>
+                            </div>
+                        </div>
+
+                        <!-- Silence (2nd Level • Ritual / Sphere) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('silence')" style="cursor:pointer; font-weight:700; color:#94a3b8; transition:color 0.15s;" onmouseover="this.style.color='#cbd5e1'" onmouseout="this.style.color='#94a3b8'">
+                                        🤫 Silence (Ritual) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#94a3b8; margin-top:1px;">2nd Lvl • Ritual • Conc 10 min</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:#94a3b8; font-weight:600;">ILLUSION</span>
+                            </div>
+                            <div class="action-desc">120 ft • 20ft sphere. Dead silence! No verbal spells can be cast; grants Thunder immunity.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" style="background:#475569;" onclick="castSilenceSpell(true)">🤫 Cast as Ritual (Free)</button>
+                                <button class="btn-roll-action" style="background:#334155;" onclick="castSilenceSpell(false)">🤫 Cast 1 Action (-1 L2)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUBSECTION B: ☀️ 1ST-LEVEL HEALING, WARDS & BLESSINGS -->
+                    <div style="font-size:0.72rem; font-weight:700; color:#38bdf8; margin:10px 0 4px 2px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:4px;">
+                        <span>☀️ 1st-Level Healing, Wards & Blessings</span>
+                        <span style="font-size:0.62rem; color:var(--text-muted); font-weight:normal;">(4 Slots Total)</span>
                     </div>
 
                     <div class="action-grid-2col">
@@ -1115,7 +1287,7 @@
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
                                     <div class="action-card-title" onclick="openSpellDetailsModal('curewounds')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-green)'" onmouseout="this.style.color='#f8fafc'">
-                                        💚 Cure Wounds <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                        💚 Cure Wounds (Domain) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">1st Lvl • 1 Action</div>
                                 </div>
@@ -1152,48 +1324,6 @@
                             </div>
                         </div>
 
-                        <!-- Lesser Restoration (2nd Level • Life Domain) -->
-                        <div class="action-card" style="grid-column: 1 / -1;">
-                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
-                                <div>
-                                    <div class="action-card-title" onclick="openSpellDetailsModal('lesserrestoration')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-green)'" onmouseout="this.style.color='#f8fafc'">
-                                        ✨ Lesser Restoration (Domain) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
-                                    </div>
-                                    <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">2nd Lvl • 1 Action</div>
-                                </div>
-                                <span style="font-size:0.68rem; color:var(--accent-green); font-weight:600;">ABJURATION</span>
-                            </div>
-                            <div class="action-desc">Touch • Instantly cures 1 disease or ends 1 condition: <strong>Blinded, Deafened, Paralyzed, or Poisoned</strong>.</div>
-                            <div class="action-btn-row">
-                                <button class="btn-roll-action btn-roll-heal" onclick="castLesserRestoration()">✨ Cast & Cure Condition (-1 L2 Slot)</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SUBSECTION B: ☀️ COMBAT ATTACKS, WARDS & BLESSINGS -->
-                    <div style="font-size:0.72rem; font-weight:700; color:var(--accent-gold); margin:10px 0 4px 2px; text-transform:uppercase; letter-spacing:0.5px;">
-                        ☀️ Combat Attacks, Wards & Blessings
-                    </div>
-
-                    <div class="action-grid-2col">
-                        <!-- Spiritual Weapon (2nd Level • Life Domain) -->
-                        <div class="action-card">
-                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
-                                <div>
-                                    <div class="action-card-title" onclick="openSpellDetailsModal('spiritualweapon')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
-                                        🗡️ Spiritual Weapon <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
-                                    </div>
-                                    <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">2nd Lvl • Bonus Action</div>
-                                </div>
-                                <span style="font-size:0.68rem; color:var(--accent-purple); font-weight:600;">EVOCATION</span>
-                            </div>
-                            <div class="action-desc">60 ft • 1 min (No Conc). Bonus Action strike each turn: +6 hit, 1d8+4 Force damage!</div>
-                            <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Spiritual Weapon Strike', 6)">🗡️ Attack (+6)</button>
-                                <button class="btn-roll-action btn-roll-dmg" onclick="rollSpiritualWeaponDmg()">💥 1d8+4 Force</button>
-                            </div>
-                        </div>
-
                         <!-- Guiding Bolt (Scalable) -->
                         <div class="action-card">
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
@@ -1209,9 +1339,9 @@
                                     <option value="3">Lvl 3 (6d6)</option>
                                 </select>
                             </div>
-                            <div class="action-desc">120 ft • +6 Hit • 4d6 (+1d6/lvl) Radiant. Next ally attack has Advantage!</div>
+                            <div class="action-desc">120 ft • +7 Hit • 4d6 (+1d6/lvl) Radiant. Next ally attack has Advantage!</div>
                             <div class="action-btn-row">
-                                <button class="btn-roll-action" onclick="rollD20('Guiding Bolt Attack', 6)">☀️ Attack (+6)</button>
+                                <button class="btn-roll-action" onclick="rollD20('Guiding Bolt Attack', 7)">☀️ Attack (+7)</button>
                                 <button class="btn-roll-action btn-roll-dmg" onclick="rollGuidingBolt()">💥 Radiant Dmg</button>
                             </div>
                         </div>
@@ -1221,7 +1351,7 @@
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
                                     <div class="action-card-title" onclick="openSpellDetailsModal('bless')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='#f8fafc'">
-                                        💧 Bless (Holy Water) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                        💧 Bless (Domain) <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
                                     </div>
                                     <div style="font-size:0.67rem; font-weight:700; color:#fbbf24; margin-top:1px;">1st Lvl • Concentration</div>
                                 </div>
@@ -1254,6 +1384,23 @@
                             </div>
                         </div>
 
+                        <!-- Command (1st Level • 1 Action • DC 15 Wis) -->
+                        <div class="action-card">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('command')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        🗣️ Command <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#f97316; margin-top:1px;">1st Lvl • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.68rem; color:#facc15; font-weight:600;">ENCHANTMENT</span>
+                            </div>
+                            <div class="action-desc">60 ft • 1 round. 1-word order (*Halt, Drop, Flee, Grovel*). Target: <strong>DC 15 Wis Save</strong>.</div>
+                            <div class="action-btn-row">
+                                <button class="btn-roll-action" style="background:#b45309;" onclick="castCommandSpell()">🗣️ Issue Command (DC 15)</button>
+                            </div>
+                        </div>
+
                         <!-- Sanctuary -->
                         <div class="action-card">
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
@@ -1265,7 +1412,7 @@
                                 </div>
                                 <span style="font-size:0.68rem; color:#67e8f9; font-weight:600;">ABJURATION</span>
                             </div>
-                            <div class="action-desc">30 ft • 1 min. Any creature attacking warded ally must pass <strong>DC 14 Wis Save</strong> or lose attack.</div>
+                            <div class="action-desc">30 ft • 1 min. Any creature attacking warded ally must pass <strong>DC 15 Wis Save</strong> or lose attack.</div>
                             <div class="action-btn-row">
                                 <button class="btn-roll-action" style="background:#0f766e;" onclick="castSanctuary()">🕊️ Cast Sanctuary (-1 Slot)</button>
                             </div>
@@ -1282,7 +1429,7 @@
                                 </div>
                                 <span style="font-size:0.68rem; color:#86efac; font-weight:600;">DIVINATION</span>
                             </div>
-                            <div class="action-desc">Self • 10 min. Understand & verbally converse with beasts. Free as <strong>Ritual</strong> or 1 Action.</div>
+                            <div class="action-desc">Self • 10 min. Understand & converse with beasts. Free as <strong>Ritual</strong> or 1 Action.</div>
                             <div class="action-btn-row">
                                 <button class="btn-roll-action" style="background:#059669;" onclick="castSpeakWithAnimals(true)">🐾 Ritual (Free)</button>
                                 <button class="btn-roll-action" style="background:#0284c7;" onclick="castSpeakWithAnimals(false)">🐾 Cast (-1 Slot)</button>
@@ -1299,12 +1446,20 @@
 
                     <div style="display:flex; flex-direction:column; gap:5px;">
                         <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
-                            <span>🕊️ <strong>Preserve Life (Channel Divinity • 1/Short Rest):</strong> Restore up to 20 HP distributed among bloodied allies within 30ft.</span>
-                            <button class="btn-roll-action" style="background:#059669;" onclick="triggerPreserveLife()">🕊️ Preserve Life (20 HP)</button>
+                            <span>🕊️ <strong>Preserve Life (Channel Divinity • 1/Short Rest):</strong> Restore up to <strong>25 HP</strong> distributed among bloodied allies within 30ft.</span>
+                            <button class="btn-roll-action" style="background:#059669;" onclick="triggerPreserveLife()">🕊️ Preserve Life (25 HP)</button>
+                        </div>
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <span>📿 <strong>Destroy Undead (CR 1/2 • Level 5 Power):</strong> When Turn Undead succeeds, undead of CR 1/2 or lower are <strong>instantly obliterated</strong>!</span>
+                            <span style="color:#facc15; font-weight:700; font-size:0.68rem;">AUTOMATIC VAPORIZE</span>
                         </div>
                         <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <span>🌿 <strong>Disciple of Life (Passive):</strong> Healing spells of 1st level+ automatically heal extra <code>2 + Spell Level</code> HP!</span>
                             <span style="color:#86efac; font-weight:700; font-size:0.68rem;">AUTOMATIC BOOST</span>
+                        </div>
+                        <div style="background:rgba(16, 185, 129, 0.08); border:1px solid rgba(16, 185, 129, 0.3); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <span>🛡️ <strong>Boon of Sacerdotal Purity:</strong> Permanent <strong>Resistance to Necrotic & Poison damage</strong> (divine boon from Mal'Goroth).</span>
+                            <span style="color:#34d399; font-weight:700; font-size:0.68rem;">PERMANENT RESIST</span>
                         </div>
                         <!-- Compact Vintage Lore Chip -->
                         <div style="background:rgba(190, 18, 60, 0.08); border:1px solid rgba(225, 29, 72, 0.3); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
@@ -1313,7 +1468,7 @@
                         </div>
                         <!-- Thurible Giant Fire Snake Mount Chip -->
                         <div style="background:rgba(249, 115, 22, 0.1); border:1px solid rgba(249, 115, 22, 0.5); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
-                            <span>🐍🏇 <strong>Thurible (Giant Fire Snake Mount • 32 HP, AC 14):</strong> Large battle mount ridden by Father Flubs! 30ft climb/swim, 10ft Cold Immunity Aura, Bite +4 (1d6+2+1d6 Fire), Tail Whip (10ft push DC 13).</span>
+                            <span>🐍🏇 <strong>Thurible (Giant Fire Snake Mount • 40 HP, AC 14 • Level 5):</strong> Large battle mount ridden by Father Flubs! 30ft climb/swim, 10ft Cold Immunity Aura, Bite +4 (1d6+2+1d6 Fire), Tail Whip (10ft push DC 13).</span>
                             <a href="THURIBLE_COMPANION_SHEET.html" target="_blank" style="text-decoration:none;"><button class="btn-roll-action" style="background:linear-gradient(135deg, #ea580c 0%, #c2410c 100%); font-size:0.7rem; padding:3px 8px;">🐍 Mount Sheet</button></a>
                         </div>
                     </div>
@@ -1409,8 +1564,8 @@
 
 <script>
     // State Variables
-    let curHP = 31;
-    let maxHP = 31;
+    let curHP = 38;
+    let maxHP = 38;
     let tempHP = 0;
     let baseAC = 16; // Scale Mail 14 + Shield 2
     let isShieldOfFaithActive = false;
@@ -1625,7 +1780,7 @@
         isChannelDivinityReady = false;
         document.getElementById('badge-cd').className = 'toggle-badge off';
         document.getElementById('badge-cd').innerText = 'USED';
-        logRoll(`🕊️ <strong>CHANNEL DIVINITY: PRESERVE LIFE ACTIVATED!</strong> Restores up to <span style="color:#4ade80; font-weight:700;">20 Hit Points</span> distributed among bloodied allies within 30ft!`);
+        logRoll(`🕊️ <strong>CHANNEL DIVINITY: PRESERVE LIFE ACTIVATED!</strong> Restores up to <span style="color:#4ade80; font-weight:700;">25 Hit Points</span> distributed among bloodied allies within 30ft!`);
     }
 
     // ==========================================
@@ -1661,11 +1816,11 @@
     // ==========================================
     // 🔮 SPELL SLOTS & PROGRESSION ENGINE
     // ==========================================
-    let characterLevel = 4; // Current Character Level (Level 4 Upgraded)
+    let characterLevel = 5; // Current Character Level (Level 5 Upgraded)
     let spellSlots = {
-        1: { current: 2, max: 4, reqLevel: 1 },
-        2: { current: 0, max: 3, reqLevel: 3 },
-        3: { current: 0, max: 0, reqLevel: 5 }
+        1: { current: 4, max: 4, reqLevel: 1 },
+        2: { current: 3, max: 3, reqLevel: 3 },
+        3: { current: 2, max: 2, reqLevel: 5 }
     };
 
     function renderSpellSlots() {
@@ -1744,14 +1899,14 @@
             range: "Melee 5 feet",
             components: "One-handed",
             duration: "Instantaneous",
-            attackMod: "+3 to Hit (STR +1, Prof +2)",
-            damage: "1d6 + 1 Bludgeoning Damage",
-            desc: "Melee 5ft • +3 to Hit • 1d6+1 Bludgeoning Damage.",
-            fullRules: "A heavy iron mace consecrated to Eldath and Lathander with a reinforced flanged head.<br><br>• <strong>Attack Roll:</strong> d20 + 3 vs target AC.<br>• <strong>Damage:</strong> 1d6 + 1 bludgeoning damage.",
+            attackMod: "+5 to Hit (STR +2, Prof +3)",
+            damage: "1d6 + 2 Bludgeoning Damage",
+            desc: "Melee 5ft • +5 to Hit • 1d6+2 Bludgeoning Damage.",
+            fullRules: "A heavy iron mace consecrated to Eldath and Lathander with a reinforced flanged head.<br><br>• <strong>Attack Roll:</strong> d20 + 5 vs target AC.<br>• <strong>Damage:</strong> 1d6 + 2 bludgeoning damage.",
             flavor: "Father Flubs swings the sacred ceremonial mace with divine conviction, battering armor and sundering undead bones.",
             modalButtons: [
-                { label: "🔨 Attack (+3)", class: "btn-roll-action", onClick: () => rollD20('Heavy Mace Attack', 3) },
-                { label: "💥 Damage", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Heavy Mace Damage', 6, 1, 'Bludgeoning') }
+                { label: "🔨 Attack (+5)", class: "btn-roll-action", onClick: () => rollD20('Heavy Mace Attack', 5) },
+                { label: "💥 Damage", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Heavy Mace Damage', 6, 2, 'Bludgeoning') }
             ]
         },
         "sacredflame": {
@@ -1762,13 +1917,13 @@
             range: "60 feet",
             components: "V, S",
             duration: "Instantaneous",
-            attackMod: "DC 14 Dexterity Saving Throw",
-            damage: "1d8 Radiant Damage (Ignores Cover!)",
-            desc: "60ft • DC 14 Dex save (ignores cover) or 1d8 Radiant.",
-            fullRules: "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a <strong>DC 14 Dexterity saving throw</strong> or take <strong>1d8 radiant damage</strong>.<br><br>The target gains <strong>no benefit from cover</strong> for this saving throw.<br><br>The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            attackMod: "DC 15 Dexterity Saving Throw",
+            damage: "2d8 Radiant Damage (Ignores Cover!)",
+            desc: "60ft • DC 15 Dex save (ignores cover) or 2d8 Radiant (Scales at Lvl 5).",
+            fullRules: "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a <strong>DC 15 Dexterity saving throw</strong> or take <strong>2d8 radiant damage</strong> (scaled for Level 5).<br><br>The target gains <strong>no benefit from cover</strong> for this saving throw.<br><br>The damage increases by 1d8 at 11th level (3d8) and 17th level (4d8).",
             flavor: "A column of sacred solar fire descends from above upon the target, bypassing shields and half-cover.",
             modalButtons: [
-                { label: "🔥 1d8 Radiant (DC 14)", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Sacred Flame Dmg', 8, 0, 'Radiant (DC 14 Dex save)') }
+                { label: "🔥 2d8 Radiant (DC 15)", class: "btn-roll-action btn-roll-dmg", onClick: () => rollFormulaDamage('Sacred Flame Dmg', 8, 0, 'Radiant (DC 15 Dex save)', 2) }
             ]
         },
         "guidance": {
@@ -1883,14 +2038,14 @@
             range: "60 feet",
             components: "V, S",
             duration: "1 minute (No Concentration required!)",
-            attackMod: "+6 Melee Spell Attack",
+            attackMod: "+7 Melee Spell Attack",
             damage: "1d8 + 4 Force Damage each turn",
-            desc: "60 ft • 1 min (No Conc). Bonus Action strike each turn: +6 hit, 1d8+4 Force damage!",
-            fullRules: "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack (<strong>+6 to hit</strong>) against a creature within 5 feet of the weapon. On a hit, the target takes <strong>1d8 + 4 force damage</strong>.<br><br>As a <strong>Bonus Action on any of your turns</strong>, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.<br><br>🛡️ <strong>No Concentration:</strong> You can keep Spiritual Weapon attacking every turn while simultaneously maintaining concentration on <em>Bless</em> or <em>Shield of Faith</em>!",
+            desc: "60 ft • 1 min (No Conc). Bonus Action strike each turn: +7 hit, 1d8+4 Force damage!",
+            fullRules: "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack (<strong>+7 to hit</strong>) against a creature within 5 feet of the weapon. On a hit, the target takes <strong>1d8 + 4 force damage</strong>.<br><br>As a <strong>Bonus Action on any of your turns</strong>, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.<br><br>🛡️ <strong>No Concentration:</strong> You can keep Spiritual Weapon attacking every turn while simultaneously maintaining concentration on <em>Bless</em>, <em>Shield of Faith</em>, or <em>Spirit Guardians</em>!",
             upcastNotes: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above 2nd.",
             flavor: "A glowing sacramental chalice and flanged mace made of pure radiant light manifests in midair, battering enemies on Father Flubs' command.",
             modalButtons: [
-                { label: "🗡️ Attack (+6)", class: "btn-roll-action", onClick: () => rollD20('Spiritual Weapon Strike', 6) },
+                { label: "🗡️ Attack (+7)", class: "btn-roll-action", onClick: () => rollD20('Spiritual Weapon Strike', 7) },
                 { label: "💥 1d8+4 Force", class: "btn-roll-action btn-roll-dmg", onClick: () => rollSpiritualWeaponDmg() }
             ]
         },
@@ -1902,14 +2057,14 @@
             range: "120 feet",
             components: "V, S",
             duration: "1 round",
-            attackMod: "+6 Ranged Spell Attack",
+            attackMod: "+7 Ranged Spell Attack",
             damage: "4d6 Radiant Damage + Next Ally Attack has Advantage",
-            desc: "120 ft • +6 Hit • 4d6 (+1d6/lvl) Radiant. Next ally attack has Advantage!",
-            fullRules: "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target (<strong>+6 to hit</strong>). On a hit, the target takes <strong>4d6 radiant damage</strong>, and the next attack roll made against this target before the end of your next turn has <strong>Advantage</strong>, thanks to the mystical dim light glittering on the target.",
+            desc: "120 ft • +7 Hit • 4d6 (+1d6/lvl) Radiant. Next ally attack has Advantage!",
+            fullRules: "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target (<strong>+7 to hit</strong>). On a hit, the target takes <strong>4d6 radiant damage</strong>, and the next attack roll made against this target before the end of your next turn has <strong>Advantage</strong>, thanks to the mystical dim light glittering on the target.",
             upcastNotes: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st (5d6 at 2nd lvl, 6d6 at 3rd lvl).",
             flavor: "Father Flubs channels a blinding bolt of dawnlight that sears the target and marks their weak points with glowing solar motes for his companions.",
             modalButtons: [
-                { label: "☀️ Attack (+6)", class: "btn-roll-action", onClick: () => rollD20('Guiding Bolt Attack', 6) },
+                { label: "☀️ Attack (+7)", class: "btn-roll-action", onClick: () => rollD20('Guiding Bolt Attack', 7) },
                 { label: "💥 Radiant Dmg", class: "btn-roll-action btn-roll-dmg", onClick: () => rollGuidingBolt() }
             ]
         },
@@ -1956,13 +2111,151 @@
             range: "30 feet",
             components: "V, S, M (a small silver mirror)",
             duration: "1 minute (No Concentration!)",
-            attackMod: "DC 14 Wisdom Saving Throw Warding",
+            attackMod: "DC 15 Wisdom Saving Throw Warding",
             damage: "Prevents enemy attacks against warded creature",
-            desc: "30 ft • 1 min. Any creature attacking warded ally must pass DC 14 Wis Save or lose attack.",
-            fullRules: "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a <strong>DC 14 Wisdom saving throw</strong>. On a failed save, the creature must choose a new target or lose its attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.<br><br>If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.",
+            desc: "30 ft • 1 min. Any creature attacking warded ally must pass DC 15 Wis Save or lose attack.",
+            fullRules: "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a <strong>DC 15 Wisdom saving throw</strong>. On a failed save, the creature must choose a new target or lose its attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.<br><br>If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.",
             flavor: "An aura of sacred peace descends upon the target, staying the hands of hostile attackers with sudden remorse.",
             modalButtons: [
                 { label: "🕊️ Cast Sanctuary (-1 Slot)", class: "btn-roll-action", onClick: () => castSanctuary() }
+            ]
+        },
+        "command": {
+            id: "command",
+            name: "🗣️ Command",
+            school: "1st-Level Enchantment",
+            castingTime: "1 Action",
+            range: "60 feet",
+            components: "V",
+            duration: "1 round",
+            attackMod: "DC 15 Wisdom Saving Throw",
+            damage: "Forces 1-word divine command (Grovel, Drop, Flee, Halt)",
+            desc: "60 ft • 1 Action. DC 15 Wis save or target must obey 1-word command on its next turn.",
+            fullRules: "You speak a one-word command to a creature you can see within range. The target must succeed on a <strong>DC 15 Wisdom saving throw</strong> or follow the command on its next turn.<br><br>• <strong>Approach:</strong> Moves toward you by shortest route.<br>• <strong>Drop:</strong> Drops whatever it is holding and ends turn.<br>• <strong>Flee:</strong> Spends turn moving away from you.<br>• <strong>Grovel:</strong> Falls prone and ends turn.<br>• <strong>Halt:</strong> Takes no actions and doesn't move.<br><br>If the target can't understand your language or if the command is directly harmful to it, the spell fails.",
+            flavor: "Father Flubs' gentle voice suddenly rings out with incontestable divine authority, compelling the enemy's mind to immediately yield to his spoken word.",
+            modalButtons: [
+                { label: "🗣️ Issue Command (-1 L1 Slot)", class: "btn-roll-action", onClick: () => castCommandSpell() }
+            ]
+        },
+        "aid": {
+            id: "aid",
+            name: "🩸 Aid",
+            school: "2nd-Level Abjuration",
+            castingTime: "1 Action",
+            range: "30 feet",
+            components: "V, S, M (a tiny strip of white cloth)",
+            duration: "8 hours (No Concentration!)",
+            attackMod: "Vitality Augmentation",
+            damage: "+5 Max HP and +5 Current HP to 3 allies",
+            desc: "30 ft • 8 hrs (No Conc). 3 allies gain +5 to both Max HP and Current HP.",
+            fullRules: "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's <strong>hit point maximum and current hit points increase by 5</strong> for the duration.<br><br>🔮 <strong>At Higher Levels:</strong> When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd (+10 HP with 3rd-level slot).",
+            flavor: "Father Flubs traces a sacred sigil of endurance over his allies, fortifying their blood and resolve with enduring stamina that lasts all day.",
+            modalButtons: [
+                { label: "🩸 Cast Aid (+5 Max HP to 3 Allies)", class: "btn-roll-action btn-roll-heal", onClick: () => castAidSpell() }
+            ]
+        },
+        "holdperson": {
+            id: "holdperson",
+            name: "⛓️ Hold Person",
+            school: "2nd-Level Enchantment",
+            castingTime: "1 Action",
+            range: "60 feet",
+            components: "V, S, M (a small, straight piece of iron)",
+            duration: "Concentration, up to 1 minute",
+            attackMod: "DC 15 Wisdom Saving Throw",
+            damage: "Paralyzes humanoid (Melee attacks within 5ft are auto-crits!)",
+            desc: "60 ft • Conc 1 min. Humanoid must pass DC 15 Wis save or be Paralyzed. Repeats save at end of turn.",
+            fullRules: "Choose a humanoid that you can see within range. The target must succeed on a <strong>DC 15 Wisdom saving throw</strong> or be <strong>Paralyzed</strong> for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.<br><br>⚔️ <strong>Paralyzed:</strong> Target can't move or speak, automatically fails Str and Dex saves, attacks have Advantage, and hits within 5ft are <strong>automatic Critical Hits</strong>!",
+            flavor: "Invisible golden bands of celestial authority wrap tightly around the target humanoid, locking their limbs in absolute paralysis.",
+            modalButtons: [
+                { label: "⛓️ Cast Hold Person (-1 L2 Slot)", class: "btn-roll-action", onClick: () => castHoldPerson() }
+            ]
+        },
+        "prayerofhealing": {
+            id: "prayerofhealing",
+            name: "🕯️ Prayer of Healing",
+            school: "2nd-Level Evocation",
+            castingTime: "10 minutes (Out of Combat)",
+            range: "30 feet",
+            components: "V",
+            duration: "Instantaneous",
+            attackMod: "Group Mass Heal (Up to 6 creatures)",
+            damage: "2d8 + 4 WIS + 4 Disciple of Life = 2d8 + 8 HP each",
+            desc: "30 ft • 10 min cast. Up to 6 allies regain 2d8 + 4 WIS + 4 Disciple of Life (2d8+8 total HP).",
+            fullRules: "Up to six creatures of your choice that you can see within range each regain hit points equal to <strong>2d8 + your spellcasting ability modifier (+4 WIS)</strong>.<br><br>🌿 <strong>Disciple of Life:</strong> Adds <strong>2 + spell level (4 HP)</strong> to each healed target. Total: <strong>2d8 + 8 HP</strong> to each ally!<br><br>This spell has no effect on undead or constructs.",
+            flavor: "Father Flubs leads the wounded companions in a calm 10-minute prayer of recovery, soothing injuries and cleansing exhaustion with holy resonance.",
+            modalButtons: [
+                { label: "🕯️ Cast 10-Min Mass Heal (-1 L2 Slot)", class: "btn-roll-action btn-roll-heal", onClick: () => rollPrayerOfHealing() }
+            ]
+        },
+        "silence": {
+            id: "silence",
+            name: "🤫 Silence",
+            school: "2nd-Level Illusion (Ritual)",
+            castingTime: "1 Action (or 10 min Ritual)",
+            range: "120 feet",
+            components: "V, S",
+            duration: "Concentration, up to 10 minutes",
+            attackMod: "Anti-Magic / Sound Suppression Zone",
+            damage: "20-ft radius sphere of absolute silence (shuts down Verbal spells)",
+            desc: "120 ft • Conc 10 min. 20-ft sphere creates dead silence. Negates thunder damage & Verbal (V) spells!",
+            fullRules: "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a <strong>verbal component (V) is impossible</strong> there.<br><br>📜 <strong>Ritual:</strong> Can be cast for free without expending a spell slot by taking 10 minutes!",
+            flavor: "A sphere of reverent, absolute quiet descends upon the designated ground, swallowing battle cries and suffocating enemy incantations.",
+            modalButtons: [
+                { label: "🤫 Cast Silence Ritual (Free)", class: "btn-roll-action", onClick: () => castSilenceSpell(true) },
+                { label: "🤫 Cast 1 Action (-1 L2 Slot)", class: "btn-roll-action", onClick: () => castSilenceSpell(false) }
+            ]
+        },
+        "spiritguardians": {
+            id: "spiritguardians",
+            name: "👑 Spirit Guardians",
+            school: "3rd-Level Conjuration",
+            castingTime: "1 Action",
+            range: "Self (15-foot radius)",
+            components: "V, S, M (a holy symbol)",
+            duration: "Concentration, up to 10 minutes",
+            attackMod: "DC 15 Wisdom Saving Throw & Half Speed",
+            damage: "3d8 Radiant Damage (halved on save)",
+            desc: "Self (15ft) • Conc 10 min. Spectral protectors swirl around you. Enemies enter/start turn: DC 15 Wis Save or 3d8 Radiant & speed halved!",
+            fullRules: "You call forth spirits to protect you that flit around you to a distance of 15 feet for the duration. When you cast this spell, you can designate any number of creatures you can see to be unaffected by it.<br><br>An affected creature's speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a <strong>DC 15 Wisdom saving throw</strong>. On a failed save, the creature takes <strong>3d8 radiant damage</strong>. On a successful save, the creature takes half as much damage.<br><br>🔮 <strong>At Higher Levels:</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.",
+            flavor: "A swirling chorus of luminous angelic spirits and radiant dove-forms encircle Father Flubs in a blazing 15-foot sanctuary, searing foes who draw near while shielding his companions.",
+            modalButtons: [
+                { label: "👑 Summon Aura (-1 L3 Slot)", class: "btn-roll-action", onClick: () => castSpiritGuardians() },
+                { label: "💥 3d8 Radiant (DC 15)", class: "btn-roll-action btn-roll-dmg", onClick: () => rollSpiritGuardiansDmg() }
+            ]
+        },
+        "revivify": {
+            id: "revivify",
+            name: "☀️ Revivify",
+            school: "3rd-Level Necromancy (Life Domain)",
+            castingTime: "1 Action",
+            range: "Touch",
+            components: "V, S, M (diamonds worth 300 gp, which the spell consumes)",
+            duration: "Instantaneous",
+            attackMod: "Resurrection Miracle",
+            damage: "Returns deceased creature to life with 1 HP",
+            desc: "Touch • 1 Action. Revives creature dead within 1 minute with 1 HP. Consumes 300 gp diamonds.",
+            fullRules: "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.<br><br>💎 <strong>Material Cost:</strong> Requires diamonds worth 300 gp, which the spell consumes upon casting.",
+            flavor: "Father Flubs places a prayer-steeped hand upon the newly fallen, channeling the unyielding spark of Lathander and Eldath to draw their soul back across the threshold of death.",
+            modalButtons: [
+                { label: "☀️ Cast Revivify (-1 L3 Slot)", class: "btn-roll-action btn-roll-heal", onClick: () => castRevivify() }
+            ]
+        },
+        "beaconofhope": {
+            id: "beaconofhope",
+            name: "🕊️ Beacon of Hope",
+            school: "3rd-Level Abjuration (Life Domain)",
+            castingTime: "1 Action",
+            range: "30 feet",
+            components: "V, S",
+            duration: "Concentration, up to 1 minute",
+            attackMod: "Mass Blessing & Healing Maximizer",
+            damage: "Adv on Wis & Death saves; Max healing from all sources",
+            desc: "30 ft • Conc 1 min. Allies gain Adv on Wis/Death saves, and all incoming healing is MAXIMIZED!",
+            fullRules: "This spell bestows hope and vitality. For the duration, each target of your choice within range has <strong>Advantage on Wisdom saving throws and death saving throws</strong>, and regains the <strong>maximum number of hit points possible</strong> from any healing (e.g. Cure Wounds at 1st level automatically restores 8 + 7 = 15 HP without rolling!).",
+            flavor: "A beacon of warm, golden sunlight erupts from Father Flubs' holy symbol, bolstering the hearts of allies against fear and filling every healing balm with maximum potency.",
+            modalButtons: [
+                { label: "🕊️ Cast Beacon of Hope (-1 L3 Slot)", class: "btn-roll-action", onClick: () => castBeaconOfHope() }
             ]
         },
         "speakwithanimals": {
@@ -2183,7 +2476,65 @@
 
     function castSanctuary() {
         if (!deductSlotIfAvailable(1)) return;
-        logRoll(`🕊️ <strong>Sanctuary Cast (1st-Level Slot • Bonus Action • 30 ft):</strong> Expended 1 Divine Spell Slot. Wards an ally with protective grace. Any enemy targeting the warded creature must first make a <span style="color:var(--accent-gold); font-weight:700;">DC 14 Wisdom Saving Throw</span> or lose the attack!`);
+        logRoll(`🕊️ <strong>Sanctuary Cast (1st-Level Slot • Bonus Action • 30 ft):</strong> Expended 1 Divine Spell Slot. Wards an ally with protective grace. Any enemy targeting the warded creature must first make a <span style="color:var(--accent-gold); font-weight:700;">DC 15 Wisdom Saving Throw</span> or lose the attack!`);
+    }
+
+    function castCommandSpell() {
+        if (!deductSlotIfAvailable(1)) return;
+        logRoll(`🗣️ <strong>Command Cast (1st-Level Slot • 1 Action • 60 ft):</strong> Expended 1 Divine Spell Slot (${spellSlots[1].current}/${spellSlots[1].max} remaining). Father Flubs issues a 1-word divine command (*Halt, Drop, Flee, Grovel*). Target must succeed on a <span style="color:var(--accent-gold); font-weight:700;">DC 15 Wisdom Saving Throw</span> or obey on its next turn!`);
+    }
+
+    function castAidSpell() {
+        if (!deductSlotIfAvailable(2)) return;
+        logRoll(`🩸 <strong>Aid Cast (2nd-Level Slot • 8 Hours • No Concentration):</strong> Expended 1 2nd-Level Divine Slot (${spellSlots[2].current}/${spellSlots[2].max} remaining). 3 chosen allies gain <span style="color:#f87171; font-weight:700;">+5 to Hit Point Maximum and +5 Current Hit Points</span> for the next 8 hours!`);
+    }
+
+    function castHoldPerson() {
+        if (!deductSlotIfAvailable(2)) return;
+        logRoll(`⛓️ <strong>Hold Person Cast (2nd-Level Slot • 60 ft • Concentration 1 min):</strong> Expended 1 2nd-Level Divine Slot (${spellSlots[2].current}/${spellSlots[2].max} remaining). Target humanoid must succeed on a <span style="color:var(--accent-gold); font-weight:700;">DC 15 Wisdom Saving Throw</span> or become <strong>Paralyzed</strong> (attacks within 5ft are auto-crits)! Repeats save each turn.`);
+    }
+
+    function rollPrayerOfHealing() {
+        if (!deductSlotIfAvailable(2)) return;
+        const d8_1 = Math.floor(Math.random() * 8) + 1;
+        const d8_2 = Math.floor(Math.random() * 8) + 1;
+        const wisBonus = 4;
+        const lifeBonus = 4; // 2 + 2nd-lvl slot
+        const total = d8_1 + d8_2 + wisBonus + lifeBonus;
+        logRoll(`🕯️ <strong>Prayer of Healing Cast (2nd-Level Slot • 10-Min Group Ritual):</strong> Expended 1 2nd-Level Divine Slot (${spellSlots[2].current}/${spellSlots[2].max} remaining). Up to 6 allies each regain [d8:${d8_1} + d8:${d8_2}] + 8 (4 WIS + 4 Disciple of Life) = <span style="color:#4ade80; font-weight:700;">+${total} HP Healed</span>!`);
+    }
+
+    function castSilenceSpell(isRitual) {
+        if (!isRitual) {
+            if (!deductSlotIfAvailable(2)) return;
+            logRoll(`🤫 <strong>Silence Cast (2nd-Level Slot • 1 Action • 120 ft • Concentration 10 min):</strong> Expended 1 2nd-Level Divine Slot (${spellSlots[2].current}/${spellSlots[2].max} remaining). A 20-foot radius sphere of dead silence forms! Negates thunder damage and prevents all Verbal (V) spellcasting!`);
+        } else {
+            logRoll(`🤫 <strong>Silence Cast as Ritual (10 min • Free):</strong> Father Flubs performs a ritual of reverent quiet. Creates a 20-foot radius sphere of complete silence for 10 minutes without expending a spell slot!`);
+        }
+    }
+
+    function castSpiritGuardians() {
+        if (!deductSlotIfAvailable(3)) return;
+        logRoll(`👑 <strong>Spirit Guardians Cast (3rd-Level Slot • Concentration • 10 min):</strong> Expended 1 3rd-Level Divine Slot (${spellSlots[3].current}/${spellSlots[3].max} remaining). Luminous guardian spirits encircle Father Flubs in a 15-foot aura! Enemies inside have their speed halved and must make a <span style="color:var(--accent-gold); font-weight:700;">DC 15 Wisdom Saving Throw</span> or take <strong>3d8 Radiant Damage</strong> (half on save)!`);
+    }
+
+    function rollSpiritGuardiansDmg() {
+        const d8_1 = Math.floor(Math.random() * 8) + 1;
+        const d8_2 = Math.floor(Math.random() * 8) + 1;
+        const d8_3 = Math.floor(Math.random() * 8) + 1;
+        const total = d8_1 + d8_2 + d8_3;
+        const half = Math.floor(total / 2);
+        logRoll(`👑💥 <strong>Spirit Guardians Aura Damage:</strong> [d8:${d8_1} + d8:${d8_2} + d8:${d8_3}] = <span style="color:#facc15; font-weight:700;">${total} Radiant Damage</span> (<span style="color:#cbd5e1;">${half} on DC 15 Wis Save Success</span>)! Target speed is halved.`);
+    }
+
+    function castRevivify() {
+        if (!deductSlotIfAvailable(3)) return;
+        logRoll(`☀️ <strong>Revivify Cast (3rd-Level Slot • Touch • Consumes 300gp Diamonds):</strong> Expended 1 3rd-Level Divine Slot (${spellSlots[3].current}/${spellSlots[3].max} remaining). Father Flubs channels the dawn of life! Touched creature dead within the last minute immediately <span style="color:#4ade80; font-weight:700;">Returns to Life with 1 Hit Point</span>!`);
+    }
+
+    function castBeaconOfHope() {
+        if (!deductSlotIfAvailable(3)) return;
+        logRoll(`🕊️ <strong>Beacon of Hope Cast (3rd-Level Slot • 30ft Aura • Concentration 1 min):</strong> Expended 1 3rd-Level Divine Slot (${spellSlots[3].current}/${spellSlots[3].max} remaining). All chosen allies gain <span style="color:#38bdf8; font-weight:700;">Advantage on Wisdom & Death Saving Throws</span>, and <span style="color:#4ade80; font-weight:700;">ALL incoming healing is MAXIMIZED</span>!`);
     }
 
     function castSpeakWithAnimals(isRitual) {
@@ -2338,10 +2689,17 @@
         logRoll(msg);
     }
 
-    function rollFormulaDamage(label, sides, bonus, type) {
-        const roll = Math.floor(Math.random() * sides) + 1;
-        const total = roll + bonus;
-        logRoll(`💥 <strong>${label}:</strong> [d${sides}:${roll} + ${bonus}] = <span style="font-size:1.05rem; color:#f87171; font-weight:700;">${total}</span> ${type} Damage`);
+    function rollFormulaDamage(label, sides, bonus, type, diceCount = 1) {
+        const rolls = [];
+        let rollSum = 0;
+        for (let i = 0; i < diceCount; i++) {
+            const r = Math.floor(Math.random() * sides) + 1;
+            rolls.push(r);
+            rollSum += r;
+        }
+        const total = rollSum + bonus;
+        const bonusStr = bonus !== 0 ? (bonus > 0 ? ` + ${bonus}` : ` - ${Math.abs(bonus)}`) : '';
+        logRoll(`💥 <strong>${label} (${diceCount}d${sides}${bonusStr}):</strong> [${rolls.join('+')}]${bonusStr} = <span style="font-size:1.05rem; color:#f87171; font-weight:700;">${total}</span> ${type} Damage`);
     }
 
     // ==========================================

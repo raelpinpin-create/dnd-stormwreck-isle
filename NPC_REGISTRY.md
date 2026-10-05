@@ -7,20 +7,20 @@
 
 ## 🛡️ SECTION 1: ACTIVE PARTY COMPANIONS & SIDEKICKS
 
-### 🗡️ General Varnoth Wender (Retired Mercenary Commander — Level 3 Sidekick Defender)
+### 🗡️ General Varnoth Wender (Retired Mercenary Commander — Level 5 Sidekick Defender)
 * **Role:** Front-line Martial Defender / Party Tank (Lead DM Controlled)
-* **Location:** Active Party (Dragon's Rest Village Square ➔ Heading to the *Compass Rose*)
+* **Location:** Active Party (Returning from Mal'Goroth to Sacked Dragon's Rest)
 * **Interactive Card:** [**General Varnoth Player Sheet**](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/VARNOTH_PLAYER_SHEET.html)
 * **Appearance:** A strikingly handsome female veteran in her late 40s with sharp, observant features, a deep battle scar crossing her blind, milky-white left eye, and iron-grey streaked dark hair pulled into a severe combat ponytail. She walks with a practiced, rhythmic stride despite the carved ironwood and brass peg leg below her right knee.
-* **Stat Block Snapshot (Level 3 Martial Defender):**
-  * **HP:** 29 / 29 | **AC:** 17 (Splint Mail + Azure Wolf Steel Shield) | **Speed:** 30 ft | **Initiative:** +0 (Advantage via Battle Readiness!)
+* **Stat Block Snapshot (Level 5 Martial Defender):**
+  * **HP:** 16 / 36 | **AC:** 17 (Splint Mail + Azure Wolf Steel Shield) | **Speed:** 30 ft | **Initiative:** +0 (Advantage via Battle Readiness!)
   * **Weapons:** 
-    * Honed Azure Wolf Longsword (`+4 to hit`, `1d8+2` 1H / `1d10+2` 2H slashing, Crits on 19-20)
-    * 🪓 **Twin Notched Bone-Cleavers** (`+4 to hit`, `1d6+2` slashing + `1d4` rend on double hit)
-    * Heavy Crossbow (`+2 to hit`, range 100/400, `1d10` piercing)
-    * Ironwood Peg Leg Strike (`+4 to hit`, `1d4+2` bludgeoning + DC 12 STR Save or knocked Prone)
-  * **Key Features:** Improved Critical (19-20), Battle Readiness (Init Adv), Protection Reaction (Disadvantage vs adjacent ally), Second Wind (`1d10+3` HP 1/SR), Action Surge (1 extra action 1/SR).
-  * **Proficiencies & Skills:** Athletics (+4), Perception (+4), Insight (+4), Military History (+3), Mason's Tools (+4), Intimidation (+3), Persuasion (+3). Wealth: `8 GP` • `6 SP`.
+    * Honed Azure Wolf Longsword (`+6 to hit`, `1d8+4` 1H / `1d10+4` 2H slashing, Crits on 19-20)
+    * 🪓 **Twin Notched Bone-Cleavers** (`+6 to hit`, `1d6+4` slashing + `1d6` off-hand, Crits on 19-20)
+    * Heavy Crossbow (`+2 to hit`, range 100/400, `1d10` piercing, Crits on 19-20)
+    * Ironwood Peg Leg Strike (`+6 to hit`, `1d4+4` bludgeoning + DC 14 STR Save or knocked Prone)
+  * **Key Features:** Extra Attack (2 attacks/action), Improved Critical (19-20), Battle Readiness (Init Adv), Protection Reaction (Disadvantage vs adjacent ally), Second Wind (`1d10+5` HP 1/SR, Ready), Action Surge (1 extra action 1/SR, Ready).
+  * **Proficiencies & Skills:** Athletics (+6), Perception (+4), Insight (+4), Military History (+3), Mason's Tools (+4), Intimidation (+3), Persuasion (+3). Wealth: `8 GP` • `6 SP`. Consumed all potions healing allies.
 
 #### 🧭 Psychological & Moral Dossier:
 * 🧭 **Core Philosophy & Worldview:** **Pragmatic Redemptive Duty & Honor in Atonement**. Believes war is an ugly butcher's trade that leaves no clean hands, but peace is not passive—it must be actively shielded with discipline, vigilance, and self-sacrifice. She believes every soul (including former killers like Tarak and herself) deserves a second chance to build rather than destroy.
@@ -516,20 +516,29 @@
 ---
 
 ## 📝 Custom & Player-Created NPCs
-
 *(This section automatically expands as you recruit or invent new NPCs during your campaign!)*
 
-```markdown
-### 👤 [NPC Name]
-* **Role / Title:** 
-* **Location & World State:** 
-* **Stat Snapshot:** 
-* **🧭 Core Philosophy:** 
-* **🎯 Core Desire & Method:** 
-* **⚡ Immediate Current Problem:** 
-* **👥 Who / What It Involves:** 
-* **🛠️ Approach & Current Action:** 
-* **⚖️ Moral Stand & DM RP Cues:** 
-```
+### 🦅👑 Melkor, Firstborn of Ikor (Redeemed Chimera Ally)
+* **Role / Title:** Firstborn of the God of Graft / Guardian of the Obsidian Monolith / Redeemed Planar Ally
+* **Location & World State:** Mal'Goroth (Left as the living guardian and warden of the sealed plane).
+* **Stat Snapshot:** Large Monstrosity | AC 15 | HP 65 / 65 | Speed 40 ft, Fly 40 ft | STR +4, DEX +2, CON +3, WIS +2 | Halberd +6 (2d10+4), Trample +6 (1d10+4, DC 14 STR save or prone), Suture Harpoon DC 14 (30ft range, pinned), Golden Suture Lifeline.
+* **🧭 Core Philosophy:** **Honorable Filial Devotion, Grief Transmuted to Duty, Debt of Mercy**. Bound by supreme gratitude to the heroes who spared his life non-lethally and revived him with the *Elixir of Life*.
+* **🎯 Core Desire & Method:** Protect the grave of his father Ikor and prevent Moros from defiling the plane or butchering other realms.
+* **⚡ Immediate Current Problem:** The plane of Mal'Goroth is shattered and silent, but he now stands watch as its sole guardian.
+* **👥 Who / What It Involves:** Sylvar (wielder of *Lyra* and wearer of his mask), Father Flubs, and Moros.
+* **🛠️ Approach & Current Action:** Pinned Moros to the altar in the grand cathedral, allowing the heroes to escape back to Toril.
+* **⚖️ Moral Stand & DM RP Cues:** Speaks in deep resonant tones layered with bone-flute chimes. Deeply respectful of Sylvar and Flubs.
+
+---
+
+### 👁️🩸 Moros, The Pale Sovereign (The Severed God)
+* **Role / Title:** False God of Flesh / Grafted Vessel of Vecna's Void Eye
+* **Location & World State:** Mal'Goroth (High Altar of the Grand Cathedral — Trapped forever).
+* **Stat Snapshot:** Huge Celestial/Aberration (Avatar) | AC 15 | Blinded (Void Eye destroyed) | Right arm severed cleanly at the elbow.
+* **🧭 Core Philosophy:** **Narcissistic Cosmic Vanity & Parasitic Self-Preservation**. Believed himself a benevolent father while treating all mortals and his own people as food and fuel.
+* **🎯 Core Desire & Method:** Siphon divine life from Father Flubs to tear open multiversal rifts and loose *The Null* upon the cosmos to feast.
+* **⚡ Immediate Current Problem:** Blinded by Sylvar's Nat 20 strike with *Lyra*, betrayed by the party, his arm chopped off in the closing astral rift, and trapped in his dying tomb with Melkor.
+* **👥 Who / What It Involves:** Father Flubs (whom he tried to dupe), Eflein (who opened the rift home), and Vecna (whose eye he stole).
+* **⚖️ Moral Stand & DM RP Cues:** Serene, smiling, mouthless porcelain exterior hiding a shriek of cosmic entitlement and rage. Now reduced to a maimed, howling wretch in the dark.
 
 
