@@ -1052,19 +1052,19 @@
                         </div>
 
                         <!-- Planar Gravity Step (1/Short Rest • Inherent Mobility) -->
-                        <div class="action-card" id="card-gravity-step" style="border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.05); transition: all 0.2s;">
+                        <div class="action-card" id="card-gravity-step">
                             <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <div class="action-card-title" onclick="openSpellDetailsModal('gravitystep')" style="cursor:pointer; font-weight:700; color:#38bdf8; transition:color 0.15s;" onmouseover="this.style.color='#7dd3fc'" onmouseout="this.style.color='#38bdf8'">
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('gravitystep')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='#f8fafc'">
                                         🌌 Planar Gravity Step <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
                                     </div>
-                                    <div style="font-size:0.67rem; font-weight:700; color:#7dd3fc; margin-top:1px;">1/Short Rest • Bonus Action</div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#38bdf8; margin-top:1px;">1/Short Rest • Bonus Action</div>
                                 </div>
-                                <span id="badge-gravity-step" style="font-size:0.62rem; color:#38bdf8; font-weight:700; background:rgba(56,189,248,0.15); border:1px solid #38bdf8; padding:1px 5px; border-radius:3px; cursor:pointer;" onclick="event.stopPropagation(); togglePlanarGravityStepManual();" title="Click to manually toggle Ready/Used">READY</span>
+                                <span id="badge-gravity-step" style="font-size:0.65rem; color:#38bdf8; font-weight:700; cursor:pointer;" onclick="event.stopPropagation(); togglePlanarGravityStepManual();" title="Click to manually toggle Ready/Used">READY (1/SR)</span>
                             </div>
                             <div class="action-desc">Self • Bonus Action. Glide/leap up to <strong>20 ft</strong>. Ignores difficult terrain & provokes <em>no opportunity attacks</em>!</div>
                             <div class="action-btn-row">
-                                <button id="btn-gravity-step" class="btn-roll-action" style="background:linear-gradient(135deg, #0284c7 0%, #0369a1 100%); transition: all 0.2s;" onclick="usePlanarGravityStep()">🌌 Glide 20ft</button>
+                                <button id="btn-gravity-step" class="btn-roll-action" onclick="usePlanarGravityStep()">🌌 Glide 20ft</button>
                             </div>
                         </div>
                     </div>
@@ -1503,28 +1503,80 @@
                 </div>
 
                 <!-- ════════════════════════════════════════════════════════ -->
-                <!-- 📿 SECTION 3: LIFE DOMAIN FEATURES & CHANNEL DIVINITY   -->
+                <!-- 📿 SECTION 3: CHANNEL DIVINITY (1 / SHORT REST)         -->
+                <!-- ════════════════════════════════════════════════════════ -->
+                <div class="panel" id="panel-channel-divinity">
+                    <div class="panel-title">
+                        <span>📿 Channel Divinity</span>
+                        <button class="btn-act btn-act-pre" onclick="rechargeChannelDivinity(true)" style="font-size:0.68rem; color:var(--accent-gold);">⛺ Short Rest Recharge</button>
+                    </div>
+
+                    <!-- CHANNEL DIVINITY RESOURCE INDICATOR (LIKE SPELL SLOTS) -->
+                    <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:6px 10px; margin-bottom:10px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+                            <span style="font-size:0.68rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">📿 Channel Divinity Reserve (Short Rest)</span>
+                            <span style="font-size:0.68rem; color:#94a3b8;">Cleric Lvl 5: <strong id="cd-status-text" style="color:var(--accent-gold);">1 / 1 Ready</strong></span>
+                        </div>
+                        <div style="background:#090e1a; border:1px solid var(--card-border); border-radius:4px; padding:4px 8px; display:flex; justify-content:space-between; align-items:center;">
+                            <div style="display:flex; align-items:center; gap:8px;">
+                                <span style="font-size:0.68rem; font-weight:700; color:var(--accent-gold);">Slot:</span>
+                                <span id="cd-pips-main" style="font-size:0.78rem; cursor:pointer;" onclick="toggleChannelDivinity()" title="Click to toggle Ready/Used">🟨 (1/1 Ready)</span>
+                            </div>
+                            <div style="display:flex; align-items:center; gap:4px;">
+                                <span id="badge-cd-main" style="font-size:0.65rem; font-weight:700; padding:2px 7px; border-radius:3px; background:rgba(234, 179, 8, 0.2); color:#facc15; border:1px solid rgba(234, 179, 8, 0.5); cursor:pointer;" onclick="toggleChannelDivinity()" title="Click to toggle Ready/Used">READY</span>
+                                <button class="btn-act btn-act-pre" onclick="modChannelDivinity(-1)" style="padding:0px 5px; font-size:0.65rem;" title="Spend Channel Divinity">-</button>
+                                <button class="btn-act btn-act-pre" onclick="modChannelDivinity(1)" style="padding:0px 5px; font-size:0.65rem;" title="Recharge Channel Divinity">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 CHANNEL DIVINITY ABILITY CARDS -->
+                    <div class="action-grid-2col">
+                        <!-- Channel Divinity: Preserve Life -->
+                        <div class="action-card" id="card-cd-preserve">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('preservelife')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-green)'" onmouseout="this.style.color='#f8fafc'">
+                                        🕊️ Preserve Life <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:#4ade80; margin-top:1px;">Channel Divinity • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:#4ade80; font-weight:700;">HEAL POOL</span>
+                            </div>
+                            <div class="action-desc">30 ft. Restore up to <strong>25 HP</strong> (5 × Lvl 5) divided among bloodied allies (&lt; half HP). Cannot heal above 50% max HP.</div>
+                            <div class="action-btn-row">
+                                <button id="btn-cd-preserve" class="btn-roll-action btn-roll-heal" onclick="triggerPreserveLife()">🕊️ Preserve Life (25 HP)</button>
+                            </div>
+                        </div>
+
+                        <!-- Channel Divinity: Turn Undead & Destroy Undead -->
+                        <div class="action-card" id="card-cd-turn">
+                            <div class="action-header" style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <div class="action-card-title" onclick="openSpellDetailsModal('turnundead')" style="cursor:pointer; font-weight:700; color:#f8fafc; transition:color 0.15s;" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='#f8fafc'">
+                                        📿 Turn & Destroy Undead <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span>
+                                    </div>
+                                    <div style="font-size:0.67rem; font-weight:700; color:var(--accent-gold); margin-top:1px;">Channel Divinity • 1 Action</div>
+                                </div>
+                                <span style="font-size:0.65rem; color:#facc15; font-weight:700;">DC 15 WIS</span>
+                            </div>
+                            <div class="action-desc">30 ft. Undead make <strong>DC 15 Wis Save</strong> or flee 1 min. 💀 <strong>CR 1/2 or lower</strong> undead are <strong>INSTANTLY VAPORIZED</strong>!</div>
+                            <div class="action-btn-row">
+                                <button id="btn-cd-turn" class="btn-roll-action" style="background:linear-gradient(135deg, #d97706 0%, #b45309 100%);" onclick="triggerTurnUndead()">📿 Turn & Vaporize (DC 15)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ════════════════════════════════════════════════════════ -->
+                <!-- 🌿 SECTION 4: PASSIVES, BOONS & SACRED VINTAGE          -->
                 <!-- ════════════════════════════════════════════════════════ -->
                 <div class="panel">
                     <div class="panel-title">
-                        <span>📿 Life Domain Features, Channel Divinity & Sacred Vintage</span>
+                        <span>🌿 Life Domain Passives, Boons & Sacred Vintage</span>
                     </div>
 
                     <div style="display:flex; flex-direction:column; gap:6px;">
-                        <!-- Channel Divinity: Turn Undead (CR 1/2 Destroy Undead) -->
-                        <div style="background:rgba(234, 179, 8, 0.08); border:1px solid rgba(234, 179, 8, 0.4); border-radius:6px; padding:8px 10px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem; flex-wrap:wrap; gap:6px;">
-                            <div>
-                                <span style="cursor:pointer;" onclick="openSpellDetailsModal('turnundead')">📿 <strong>Channel Divinity: Turn Undead & Destroy Undead (CR 1/2):</strong> 30ft radius. Undead make DC 15 Wis Save or flee for 1 min. <strong>CR 1/2 or lower are instantly vaporized!</strong> <span style="font-size:0.68rem; color:var(--text-muted);">ℹ️</span></span>
-                            </div>
-                            <button class="btn-roll-action" style="background:linear-gradient(135deg, #d97706 0%, #b45309 100%); font-size:0.7rem; padding:4px 10px; white-space:nowrap;" onclick="triggerTurnUndead()">📿 Turn & Vaporize (DC 15)</button>
-                        </div>
-
-                        <!-- Channel Divinity: Preserve Life -->
-                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:8px 10px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem; flex-wrap:wrap; gap:6px;">
-                            <span>🕊️ <strong>Channel Divinity: Preserve Life (1/Short Rest):</strong> Restore up to <strong>25 HP</strong> distributed among bloodied allies within 30ft.</span>
-                            <button class="btn-roll-action" style="background:#059669; font-size:0.7rem; padding:4px 10px; white-space:nowrap;" onclick="triggerPreserveLife()">🕊️ Preserve Life (25 HP)</button>
-                        </div>
-
                         <!-- Disciple of Life (Passive) -->
                         <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
                             <span>🌿 <strong>Disciple of Life (Passive):</strong> Healing spells of 1st level+ automatically heal extra <code>2 + Spell Level</code> HP!</span>
@@ -1551,7 +1603,7 @@
                     </div>
                 </div>
 
-                <!-- 🎒 4. EDITABLE INVENTORY -->
+                <!-- 🎒 5. EDITABLE INVENTORY -->
                 <div class="panel">
                     <div class="panel-title">
                         <span>🎒 Tracked Inventory & Gear</span>
@@ -1788,8 +1840,7 @@
         updateHelpDisplay();
 
         isChannelDivinityReady = true;
-        document.getElementById('badge-cd').className = 'toggle-badge on';
-        document.getElementById('badge-cd').innerText = 'READY';
+        updateChannelDivinityUI();
         isGravityStepReady = true;
         updateGravityStepUI();
         updateHPUI();
@@ -1856,41 +1907,138 @@
         }
     }
 
+    function updateChannelDivinityUI() {
+        const badgeLeft = document.getElementById('badge-cd');
+        const badgeMain = document.getElementById('badge-cd-main');
+        const pipsMain = document.getElementById('cd-pips-main');
+        const statusText = document.getElementById('cd-status-text');
+        const cardPreserve = document.getElementById('card-cd-preserve');
+        const cardTurn = document.getElementById('card-cd-turn');
+        const btnPreserve = document.getElementById('btn-cd-preserve');
+        const btnTurn = document.getElementById('btn-cd-turn');
+
+        if (isChannelDivinityReady) {
+            if (badgeLeft) {
+                badgeLeft.className = 'toggle-badge on';
+                badgeLeft.innerText = 'READY';
+            }
+            if (badgeMain) {
+                badgeMain.innerText = 'READY';
+                badgeMain.style.background = 'rgba(234, 179, 8, 0.2)';
+                badgeMain.style.color = '#facc15';
+                badgeMain.style.borderColor = 'rgba(234, 179, 8, 0.5)';
+            }
+            if (pipsMain) {
+                pipsMain.innerHTML = '🟨 (1/1 Ready)';
+                pipsMain.style.color = 'var(--accent-gold)';
+            }
+            if (statusText) {
+                statusText.innerText = '1 / 1 Ready';
+                statusText.style.color = 'var(--accent-gold)';
+            }
+            if (cardPreserve) {
+                cardPreserve.style.opacity = '1';
+                cardPreserve.style.filter = 'none';
+            }
+            if (cardTurn) {
+                cardTurn.style.opacity = '1';
+                cardTurn.style.filter = 'none';
+            }
+            if (btnPreserve) {
+                btnPreserve.innerHTML = '🕊️ Preserve Life (25 HP)';
+            }
+            if (btnTurn) {
+                btnTurn.innerHTML = '📿 Turn & Vaporize (DC 15)';
+            }
+        } else {
+            if (badgeLeft) {
+                badgeLeft.className = 'toggle-badge off';
+                badgeLeft.innerText = 'USED';
+            }
+            if (badgeMain) {
+                badgeMain.innerText = 'USED';
+                badgeMain.style.background = 'rgba(100, 116, 139, 0.2)';
+                badgeMain.style.color = '#94a3b8';
+                badgeMain.style.borderColor = '#475569';
+            }
+            if (pipsMain) {
+                pipsMain.innerHTML = '⬛ (0/1 Expended)';
+                pipsMain.style.color = '#64748b';
+            }
+            if (statusText) {
+                statusText.innerText = '0 / 1 Expended';
+                statusText.style.color = '#64748b';
+            }
+            if (cardPreserve) {
+                cardPreserve.style.opacity = '0.55';
+                cardPreserve.style.filter = 'grayscale(0.7)';
+            }
+            if (cardTurn) {
+                cardTurn.style.opacity = '0.55';
+                cardTurn.style.filter = 'grayscale(0.7)';
+            }
+            if (btnPreserve) {
+                btnPreserve.innerHTML = '🕊️ Preserve Life (Used)';
+            }
+            if (btnTurn) {
+                btnTurn.innerHTML = '📿 Turn & Vaporize (Used)';
+            }
+        }
+    }
+
+    function modChannelDivinity(delta) {
+        if (delta > 0) {
+            isChannelDivinityReady = true;
+            updateChannelDivinityUI();
+            logRoll(`📿 <strong>Channel Divinity:</strong> Restored to <strong>1/1 READY</strong>!`);
+        } else if (delta < 0) {
+            if (!isChannelDivinityReady) {
+                logRoll(`⚠️ Channel Divinity is already expended!`);
+                return;
+            }
+            isChannelDivinityReady = false;
+            updateChannelDivinityUI();
+            logRoll(`📿 <strong>Channel Divinity:</strong> Expended 1 use.`);
+        }
+    }
+
+    function rechargeChannelDivinity(logMessage = true) {
+        isChannelDivinityReady = true;
+        updateChannelDivinityUI();
+        if (logMessage) {
+            logRoll(`📿 <strong>Channel Divinity:</strong> Recharged to <strong>1/1 READY</strong> on Short Rest!`);
+        }
+    }
+
     function toggleChannelDivinity() {
         isChannelDivinityReady = !isChannelDivinityReady;
-        const badge = document.getElementById('badge-cd');
+        updateChannelDivinityUI();
         if (isChannelDivinityReady) {
-            badge.className = 'toggle-badge on';
-            badge.innerText = 'READY';
             logRoll(`📿 <strong>Channel Divinity:</strong> Recharged and marked <strong>READY</strong> (Turn Undead / Preserve Life)!`);
         } else {
-            badge.className = 'toggle-badge off';
-            badge.innerText = 'USED';
             logRoll(`📿 <strong>Channel Divinity:</strong> Marked as <strong>USED</strong> (expended until Short/Long Rest).`);
         }
     }
 
     function triggerPreserveLife() {
         if (!isChannelDivinityReady) {
-            logRoll(`⚠️ <strong>Channel Divinity already expended!</strong> Regain 1 use on a Short or Long Rest. (Click the Channel Divinity badge on the left to manually restore if granted).`);
+            logRoll(`⚠️ <strong>Channel Divinity already expended!</strong> Regain 1 use on a Short or Long Rest. (Click the Channel Divinity badge or + button to manually restore if granted).`);
             return;
         }
 
         isChannelDivinityReady = false;
-        document.getElementById('badge-cd').className = 'toggle-badge off';
-        document.getElementById('badge-cd').innerText = 'USED';
+        updateChannelDivinityUI();
         logRoll(`🕊️ <strong>CHANNEL DIVINITY: PRESERVE LIFE ACTIVATED!</strong> (1/Short Rest expended). Restores up to <span style="color:#4ade80; font-weight:700;">25 Hit Points</span> distributed among bloodied allies within 30ft! (Cannot heal an ally above half their max HP).`);
     }
 
     function triggerTurnUndead() {
         if (!isChannelDivinityReady) {
-            logRoll(`⚠️ <strong>Channel Divinity already expended!</strong> Regain 1 use on a Short or Long Rest. (Click the Channel Divinity badge on the left to manually restore if granted).`);
+            logRoll(`⚠️ <strong>Channel Divinity already expended!</strong> Regain 1 use on a Short or Long Rest. (Click the Channel Divinity badge or + button to manually restore if granted).`);
             return;
         }
 
         isChannelDivinityReady = false;
-        document.getElementById('badge-cd').className = 'toggle-badge off';
-        document.getElementById('badge-cd').innerText = 'USED';
+        updateChannelDivinityUI();
         logRoll(`📿 <strong>CHANNEL DIVINITY: TURN UNDEAD & DESTROY UNDEAD (CR 1/2)!</strong> Father Flubs raises his holy symbol and speaks a prayer censuring the undead. Each undead within 30 ft that can see or hear him must make a <span style="color:var(--accent-gold); font-weight:700;">DC 15 Wisdom Saving Throw</span>.<br>• <strong>Failed Save:</strong> The undead is <strong>Turned for 1 minute</strong> (must spend turns moving as far away as possible, cannot take reactions, only Dash).<br>• 💀 <strong>DESTROY UNDEAD (Level 5 Cleric):</strong> If an undead fails its save and is <strong>Challenge Rating 1/2 or lower</strong> (e.g. standard Zombies, Skeletons, Shadows), it is <strong>INSTANTLY VAPORIZED & DESTROYED</strong>!`);
     }
 
@@ -1992,8 +2140,7 @@
             spellSlots[lvl].current = spellSlots[lvl].max;
         }
         isChannelDivinityReady = true;
-        document.getElementById('badge-cd').className = 'toggle-badge on';
-        document.getElementById('badge-cd').innerText = 'READY';
+        updateChannelDivinityUI();
         renderSpellSlots();
         logRoll(`🟦 All Divine Spell Slots and Channel Divinity restored on Rest!`);
     }
@@ -2103,6 +2250,23 @@
             flavor: "A subtle ripple of violet-blue planar gravity bends around Father Flubs as he floats across chasms and enemy battle lines with weightless grace.",
             modalButtons: [
                 { label: "🌌 Glide 20ft", class: "btn-roll-action", onClick: () => { closeSpellModal(); usePlanarGravityStep(); } }
+            ]
+        },
+        "preservelife": {
+            id: "preservelife",
+            name: "🕊️ Channel Divinity: Preserve Life",
+            school: "Cleric Life Domain Feature",
+            castingTime: "1 Action",
+            range: "30 feet",
+            components: "V, S (Holy Symbol)",
+            duration: "Instantaneous",
+            attackMod: "Channel Divinity Miracle (1/Short Rest)",
+            damage: "Heals up to 25 Hit Points (5 × Cleric Level)",
+            desc: "30 ft • 1 Action. Restore up to 25 HP distributed among bloodied allies (at or below half max HP). Cannot heal above 50% max HP.",
+            fullRules: "As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to <strong>five times your cleric level (25 Hit Points at Level 5)</strong>.<br><br>Choose any number of creatures within <strong>30 feet of you</strong>, and divide those hit points among them. This feature can restore a creature to no more than <strong>half of its hit point maximum</strong>. You cannot use this feature on an undead or a construct.<br><br>☕ <strong>Recharge:</strong> Once used, this ability cannot be used again until you finish a <strong>Short or Long Rest</strong>.",
+            flavor: "A radiant warm halo emanates from Father Flubs' holy symbol, cascading across wounded companions, closing mortal tears, and pulling dying allies back from the brink.",
+            modalButtons: [
+                { label: "🕊️ Preserve Life (25 HP)", class: "btn-roll-action btn-roll-heal", onClick: () => { closeSpellModal(); triggerPreserveLife(); } }
             ]
         },
         "turnundead": {
@@ -2787,13 +2951,11 @@
         if (!btn || !badge) return;
 
         if (isGravityStepReady) {
-            btn.style.background = 'linear-gradient(135deg, #0284c7 0%, #0369a1 100%)';
-            btn.style.color = '#fff';
+            btn.style.background = '';
+            btn.style.color = '';
             btn.innerHTML = '🌌 Glide 20ft';
-            badge.innerText = 'READY';
+            badge.innerText = 'READY (1/SR)';
             badge.style.color = '#38bdf8';
-            badge.style.borderColor = '#38bdf8';
-            badge.style.background = 'rgba(56,189,248,0.15)';
             if (card) {
                 card.style.opacity = '1';
                 card.style.filter = 'none';
@@ -2802,13 +2964,11 @@
             btn.style.background = '#334155';
             btn.style.color = '#94a3b8';
             btn.innerHTML = '🌌 Expended (Used)';
-            badge.innerText = 'USED';
+            badge.innerText = 'USED (Short Rest)';
             badge.style.color = '#64748b';
-            badge.style.borderColor = '#475569';
-            badge.style.background = 'rgba(100,116,139,0.15)';
             if (card) {
-                card.style.opacity = '0.65';
-                card.style.filter = 'grayscale(0.6)';
+                card.style.opacity = '0.5';
+                card.style.filter = 'grayscale(0.8)';
             }
         }
     }
@@ -3789,6 +3949,7 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     updateHelpDisplay();
     updateGoldUI();
     updateGravityStepUI();
+    updateChannelDivinityUI();
     renderSpellSlots();
     renderInventory();
 </script>
