@@ -238,6 +238,29 @@
 
 ---
 
+### 🍄🏰 Session 9: The Hospital of Spores, The Basalt March, & The Stronghold Siege
+* **Location:** Seagrow Caves (Hospital of Spores) ➔ Basalt Switchbacks ➔ Kobold Mountain Stronghold
+* **Key Events:**
+  1. **The Hospital of Spores Send-Off & Blessings:**
+     - The party rested in Seagrow Caves amidst the wounded cloister refugees.
+     - **Myla "Goggles"** provided the heavy copper **Galvanic Ley-Grounder ("Spark-Tamer" Pylon)** to absorb Sparkrender's 4d10 lightning breath, tearfully begging the heroes to spare her gullible brothers, Mek and Minn, who were duped into serving the blue dragon.
+     - **Tarak** gifted a *Heartcap Draught* and bade farewell, reminding the party that Dragon's Rest lives in the hearts of its defenders.
+     - **Sovereign Sinensa** bestowed a telepathic communion blessing granting every party member **+5 Temporary Hit Points**.
+     - Refugee kobold children tied a braided red-and-gold flower ribbon around **Thurible's** neck for good luck, and Blepp handed out his lucky bread.
+  2. **The March on the Basalt Ridge:** The heroes formed up and marched out onto the storm-lashed volcanic switchbacks, bypassing sulfur fissures and static lightning squalls.
+  3. **The Assassin's Creed Fortress Infiltration:**
+     - Reaching the massive Kobold Stronghold fortifying the mountain pass below the Clifftop Observatory, the party executed a flawless stealth operation.
+     - **Father Flubs** and **Sylvar Link** neutralized the watchtowers silently, using *Hold Person* and *Hypnotic Pattern* to paralyze and daze sentries before executing silent takedowns.
+     - **Eflein** slipped into position and channeled a devastating 3rd-level **Fireball** directly into the fortress interior, nuking the barracks and incinerating the gathered cultists in a colossal explosion of flame and ash!
+     - General Varnoth and the party swept through the smoking compound, eliminating remaining hostiles and taking a key hostage.
+  4. **The Rescue of Scout Mik & Tragicomic Grief:**
+     - In the cells, the party rescued a captured kobold scout named **Mik**.
+     - In a darkly hilarious and tragic scene, Mik and the surviving captive collapsed into inconsolable tears, sobbing over the crispy, charred remains of their cultist buddies that Eflein had just nuked to cinders.
+  5. **Stage Set for Session 10 (The Grand Climax):**
+     - The fortress is broken and cleared. With the mountain pass secured, captive intelligence in hand, and Myla's Pylon primed, the heroes stand ready to breach the **Clifftop Observatory** in **Session 10** for the final reckoning against Sparkrender!
+
+---
+
 ## 🎯 Active Campaign Quests
 * [ ] **1. Primary Quest (The Archmage's Trail):** Trace the path of Eflein's wife **Lianna**—an ancient elven archmage fighting the coming Multiverse Cataclysm orchestrated by **Vecna, The Whispered One**!
 * [x] **2. 🩸 The Mal'Goroth Planar Odyssey (Act 3.5 Mini-Campaign — COMPLETED & SEALED):** Deciphered the Obsidian Monolith, uncovered Vecna's deicide, revived Melkor, shattered Moros's Void Eye, severed his arm, and escaped back to Toril!
