@@ -2753,12 +2753,12 @@
                         </tr>
                         <tr class="row-final-boss" style="background:rgba(14, 165, 233, 0.08);">
                             <td><strong class="clickable-title" onclick="openMonsterModal('kragzor')" style="color:#7dd3fc;">❄️⚡ Krag'zor the Dragon-Forged</strong> <span class="tag tag-boss" style="background:#0c4a6e; color:#7dd3fc; border:1px solid #0284c7;">❄️ 6-FT NORTHERN MAGE-WARRIOR (CR 7)</span></td>
-                            <td>7</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+3</td><td>17</td><td>95</td><td>30 ft</td><td style="color:#93c5fd;"><strong>+4★</strong></td><td><strong>+3★</strong></td><td><strong>+3★</strong></td><td style="color:#93c5fd;"><strong>+4★</strong></td><td><strong>+1</strong></td><td><strong>+2</strong></td>
+                            <td>7</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+3</td><td>17</td><td>80</td><td>30 ft</td><td style="color:#93c5fd;"><strong>+4★</strong></td><td><strong>+3★</strong></td><td><strong>+3★</strong></td><td style="color:#93c5fd;"><strong>+4★</strong></td><td><strong>+1</strong></td><td><strong>+2</strong></td>
                             <td>Great Katana <strong>+8</strong> (2d6+4 slash + 1d6 cold + light)</td><td>Northern Cryomancy & Lightning • Spells (DC 15) • Pointy Hat Actions (>50% / ≤50% HP)</td>
                         </tr>
                         <tr class="row-region-boss">
                             <td><strong class="clickable-title" onclick="openMonsterModal('giant_drake')" style="color:#fdba74;">🦎 Gorefang (Titan Crag Drake)</strong> <span class="tag tag-region-boss" style="background:#3b1d11; color:#fdba74; border:1px solid #7c2d12;">DRAKE COMPANION (CR 4)</span></td>
-                            <td>4</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+1</td><td>15</td><td>68</td><td>40 ft</td><td><strong>+4</strong></td><td><strong>+1</strong></td><td><strong>+3</strong></td><td><strong>-3</strong></td><td><strong>+1</strong></td><td><strong>-2</strong></td>
+                            <td>4</td><td style="color:#86efac; font-weight:bold; font-family:'JetBrains Mono';">+1</td><td>15</td><td>60</td><td>40 ft</td><td><strong>+4</strong></td><td><strong>+1</strong></td><td><strong>+3</strong></td><td><strong>-3</strong></td><td><strong>+1</strong></td><td><strong>-2</strong></td>
                             <td>Bite <strong>+6</strong> (2d8+4 pierc + 1d6 fire) + Tail <strong>+6</strong> (1d10+4)</td><td>Fire Breath (6d6, DC 14 Dex) • Knockdown (DC 14 Str)</td>
                         </tr>
                         <tr class="row-final-boss">
@@ -4134,14 +4134,14 @@
             statsStr: "STR 18 (+4★) | DEX 16 (+3★) | CON 16 (+3★) | INT 18 (+4★) | WIS 12 (+1) | CHA 14 (+2)",
             details: "Darkvision 60 ft., Passive Perception 14 • Athletics +7, Arcana +7 • Saves: Str +7, Con +6, Int +7 • Immune: Cold • Resist: Lightning",
             ac: 17,
-            hp: 95,
-            maxHp: 95,
-            currentHp: 95,
+            hp: 80,
+            maxHp: 80,
+            currentHp: 80,
             speed: "30 ft. (Fly 30 ft with Glacial Wings when Bloodied)",
             battlefieldActions: {
                 highHp: [
                     {
-                        name: "1. Blizzard Great-Katana Sweep (Whirlwind of Rime) — [> 50% HP]",
+                        name: "1. Blizzard Great-Katana Sweep (Whirlwind of Rime) — [> 50% HP (80–41 HP)]",
                         tell: "Krag'zor grips his 5-foot curved Great Katana in two hands; the blade glazes with thick permafrost as howling sub-zero blizzard winds and crackling azure sparks swirl around his feet.",
                         counterplay: "Step back at least 10 ft, dive behind cover, or pass a DC 15 Dex save to duck under the sweeping arc.",
                         resolve: "Krag'zor executes a 360-degree whirlwind cleave (10-ft radius): DC 15 Dex save or take 18 (3d8+4) Cold damage + 4 (1d8) Lightning damage, pushed 10 ft back, and speed reduced by 10 ft until end of their next turn (half damage, no push/slow on save).",
@@ -4152,7 +4152,7 @@
                         ]
                     },
                     {
-                        name: "2. Drake Pincer: Glacial Flank — [> 50% HP]",
+                        name: "2. Drake Pincer: Glacial Flank — [> 50% HP (80–41 HP)]",
                         tell: "Krag'zor emits a piercing frost-chirp from his bone whistle; Gorefang's claws tear up frozen stone as he charges from the flank to trap the party.",
                         counterplay: "Position Krag'zor between party and the drake, Disengage, or pass DC 14 Animal Handling/Intimidation check.",
                         resolve: "Gorefang charges 30 ft: DC 14 Dex save or take 18 (3d8+4) Piercing/Cold damage and knocked Prone onto the frozen stone right before Krag'zor!",
@@ -4164,7 +4164,7 @@
                 ],
                 lowHp: [
                     {
-                        name: "1. Permafrost Flash-Cleave (Icy Odachi Dash) — [≤ 50% HP Bloodied]",
+                        name: "1. Permafrost Flash-Cleave (Icy Odachi Dash) — [≤ 50% HP Bloodied (40–0 HP)]",
                         tell: "Spectral ivory dragon wings of hard rime-ice unfold from Krag'zor's back as he drops into a low iaido drawing stance, his great katana vibrating with sub-zero hum and blue lightning.",
                         counterplay: "Spread out horizontally away from the charge line, cast Shield, or deal 18+ damage to disrupt his stance.",
                         resolve: "Krag'zor dashes 40 ft in a straight line across the bridge, cleaving through all creatures in his path: DC 15 Dex save or take 22 (4d8+4) Slashing/Cold damage + 9 (2d8) Lightning damage (half on save). Bridge floor is coated in slick permafrost (DC 12 Dex save or fall Prone when moving).",
@@ -4176,7 +4176,7 @@
                         ]
                     },
                     {
-                        name: "2. Glacial Nova: White Dragon Breath (Recharge 5-6) — [≤ 50% HP Bloodied]",
+                        name: "2. Glacial Nova: White Dragon Breath (Recharge 5-6) — [≤ 50% HP Bloodied (40–0 HP)]",
                         tell: "Krag'zor opens his jagged jaws wide; blinding sub-zero frost and crackling static lightning gather in his throat as the air around him drops below freezing.",
                         counterplay: "Scatter out of the 20-ft cone or activate cold resistance/cover.",
                         resolve: "20-ft cone of sub-zero blizzard: DC 15 Con save or take 27 (6d8) Cold damage and be Restrained in solid ice (DC 14 Str check to shatter free). Half damage and not restrained on save.",
@@ -4287,9 +4287,9 @@
             statsStr: "STR 19 (+4) | DEX 13 (+1) | CON 17 (+3) | INT 4 (-3) | WIS 12 (+1) | CHA 7 (-2)",
             details: "Darkvision 60 ft., Passive Perception 13 • Athletics +6, Stealth +3 • Immune: Fire",
             ac: 15,
-            hp: 68,
-            maxHp: 68,
-            currentHp: 68,
+            hp: 60,
+            maxHp: 60,
+            currentHp: 60,
             speed: "40 ft., climb 30 ft.",
             actions: [
                 {
