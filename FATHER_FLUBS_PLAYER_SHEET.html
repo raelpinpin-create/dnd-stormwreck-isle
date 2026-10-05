@@ -701,6 +701,7 @@
                 </div>
             </div>
             <div class="pill-badge-group">
+                <button class="btn-act btn-act-pre" onclick="openDossierModal()" style="color:var(--accent-gold); border:1px solid rgba(245, 158, 11, 0.4); display:flex; align-items:center; gap:4px;" title="Open Father Flubs Character Dossier & Lore">📜 Dossier</button>
                 <button class="btn-act btn-act-pre" onclick="exportSheetState()" style="color:var(--accent-gold); border:1px solid rgba(245, 158, 11, 0.4); display:flex; align-items:center; gap:4px;" title="Copy current HP, spell slots, and inventory to clipboard">📋 Export Data</button>
                 <span class="pill-badge pill-gold">NEUTRAL GOOD</span>
                 <span class="pill-badge pill-wine">LIFE DOMAIN</span>
@@ -874,6 +875,15 @@
                         <li class="stat-row-item" onclick="rollD20('Intelligence Save', 0)"><span>Intelligence Save</span><span>+0 🎲</span></li>
                         <li class="stat-row-item" onclick="rollD20('Dexterity Save', 0)"><span>Dexterity Save</span><span>+0 🎲</span></li>
                     </ul>
+
+                    <!-- 🌌 Shared Party Boon: Sovereign's Planar Scar -->
+                    <div style="background:rgba(56, 189, 248, 0.08); border:1px solid rgba(56, 189, 248, 0.35); border-radius:5px; padding:6px 8px; font-size:0.69rem; color:#bae6fd; line-height:1.35; margin-top:6px; display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                        <div>
+                            <span>🌌 <strong>Party Buff: The Sovereign's Planar Scar</strong></span>
+                            <div style="color:#7dd3fc; font-size:0.65rem;">Advantage on Saves vs <strong>Frightened, Charmed & Stunned</strong></div>
+                        </div>
+                        <button class="btn-act btn-act-pre" onclick="usePlanarGravityStep()" style="font-size:0.64rem; padding:3px 6px; color:#38bdf8; border:1px solid rgba(56,189,248,0.4); white-space:nowrap;" title="Activate Planar Gravity Step (20ft glide)">🌌 Glide 20ft</button>
+                    </div>
                 </div>
 
                 <!-- ALL 18 SKILLS MATRIX -->
@@ -1466,10 +1476,10 @@
                             <span>🍾 <strong>The Vintage of the Dawn Watch (Lore / Holy Symbol):</strong> Blessed sacramental wine providing heartwarming comfort & daily nourishment.</span>
                             <button class="btn-roll-action" style="background:#881337; font-size:0.7rem; padding:3px 8px;" onclick="toastFellowship()">🍷 Sip / Toast (Flavor)</button>
                         </div>
-                        <!-- Thurible Giant Fire Snake Mount Chip -->
-                        <div style="background:rgba(249, 115, 22, 0.1); border:1px solid rgba(249, 115, 22, 0.5); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
-                            <span>🐍🏇 <strong>Thurible (Giant Fire Snake Mount • 40 HP, AC 14 • Level 5):</strong> Large battle mount ridden by Father Flubs! 30ft climb/swim, 10ft Cold Immunity Aura, Bite +4 (1d6+2+1d6 Fire), Tail Whip (10ft push DC 13).</span>
-                            <a href="THURIBLE_COMPANION_SHEET.html" target="_blank" style="text-decoration:none;"><button class="btn-roll-action" style="background:linear-gradient(135deg, #ea580c 0%, #c2410c 100%); font-size:0.7rem; padding:3px 8px;">🐍 Mount Sheet</button></a>
+                        <!-- 🌌 Shared Party Boon: The Sovereign's Planar Scar -->
+                        <div style="background:rgba(56, 189, 248, 0.08); border:1px solid rgba(56, 189, 248, 0.4); border-radius:6px; padding:7px 9px; display:flex; justify-content:space-between; align-items:center; font-size:0.76rem;">
+                            <span>🌌 <strong>The Sovereign's Planar Scar (Shared Party Boon):</strong> Permanent <strong>Advantage on saves vs Frightened, Charmed, & Stunned</strong>! <em>Planar Gravity Step (1/Short Rest):</em> Bonus Action 20-ft jump/glide ignoring difficult terrain without provoking opportunity attacks.</span>
+                            <button class="btn-roll-action" style="background:linear-gradient(135deg, #0284c7 0%, #0369a1 100%); font-size:0.7rem; padding:3px 8px; white-space:nowrap;" onclick="usePlanarGravityStep()">🌌 Gravity Step (20ft)</button>
                         </div>
                     </div>
                 </div>
@@ -1491,6 +1501,97 @@
                     </div>
                 </div>
 
+            </div>
+
+            <!-- 📜 5. COMPREHENSIVE INTERACTIVE CHARACTER DOSSIER (VERY BOTTOM, SPANNING FULL WIDTH) -->
+            <div class="panel" id="dossier-panel" style="grid-column: 1 / -1; margin-top: 10px; border: 1.5px solid rgba(245, 158, 11, 0.45); background: linear-gradient(180deg, #131b2e 0%, #0b101c 100%); box-shadow: 0 4px 20px rgba(0,0,0,0.6); padding: 12px 16px;">
+                <div class="dossier-toggle-header" onclick="toggleDossierInline()" style="cursor:pointer; display:flex; justify-content:space-between; align-items:center; user-select:none; flex-wrap:wrap; gap:8px;">
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <span style="font-size:1.45rem;">📜</span>
+                        <div>
+                            <div style="font-family:'Cinzel', serif; font-size:1.05rem; font-weight:700; color:var(--accent-gold); letter-spacing:0.5px; display:flex; align-items:center; gap:8px;">
+                                CHARACTER DOSSIER & SACRED CHRONICLES: FATHER FLUBS
+                            </div>
+                            <div style="font-size:0.74rem; color:#94a3b8; margin-top:1px;">
+                                « The Serpent Rider » • Warden of the Living Grove • Ward-Priest of Sharruth's Volcanic Tomb
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <button class="btn-act btn-act-pre" onclick="event.stopPropagation(); openDossierModal();" style="padding:4px 10px; font-size:0.72rem; color:var(--accent-gold); border:1px solid rgba(245,158,11,0.5); font-weight:700;" title="Open in popup modal">🔍 Expand Modal</button>
+                        <span id="dossier-toggle-btn" class="btn-act btn-act-pre" style="padding:4px 12px; font-size:0.72rem; color:#cbd5e1; border:1px solid #334155;">▼ Read Dossier</span>
+                    </div>
+                </div>
+
+                <!-- COLLAPSIBLE INLINE CONTENT CONTAINER -->
+                <div id="dossier-inline-content" style="display:none; margin-top:14px; border-top:1px solid rgba(245, 158, 11, 0.2); padding-top:14px; flex-direction:column; gap:12px;">
+                    
+                    <!-- Quick Badges Strip -->
+                    <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:4px;">
+                        <span style="background:rgba(245, 158, 11, 0.12); border:1px solid rgba(245, 158, 11, 0.3); color:#fde68a; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:4px;">LEVEL 5 LIFE CLERIC</span>
+                        <span style="background:rgba(56, 189, 248, 0.12); border:1px solid rgba(56, 189, 248, 0.3); color:#bae6fd; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:4px;">DEITIES: ELDATH & LATHANDER</span>
+                        <span style="background:rgba(225, 29, 72, 0.12); border:1px solid rgba(225, 29, 72, 0.3); color:#fecdd3; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:4px;">BLOODLINE: ANCIENT WARD-PRIEST</span>
+                        <span style="background:rgba(16, 185, 129, 0.12); border:1px solid rgba(16, 185, 129, 0.3); color:#a7f3d0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:4px;">BOON: SACERDOTAL PURITY</span>
+                        <span style="background:rgba(147, 51, 234, 0.12); border:1px solid rgba(147, 51, 234, 0.3); color:#e9d5ff; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:4px;">SURVIVOR OF MAL'GOROTH</span>
+                    </div>
+
+                    <!-- 4 Thematic Cards in responsive 2x2 grid -->
+                    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:12px;">
+                        
+                        <!-- CARD 1: THE MAN, THE MASK & SACRED VINTAGE -->
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:12px 14px; display:flex; flex-direction:column; gap:6px;">
+                            <div style="font-size:0.82rem; font-weight:700; color:var(--accent-gold); border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:4px; display:flex; align-items:center; gap:6px;">
+                                🍷 <span>The Jovial Priest & The Mask of Fellowship</span>
+                            </div>
+                            <div style="font-size:0.74rem; color:#cbd5e1; line-height:1.45;">
+                                <p style="margin-bottom:6px;"><strong>Name & Divine Calling:</strong> Father Flubs, Level 5 Human Life Cleric (Acolyte Background • Neutral Good). Ordained in the veneration of <strong>Eldath</strong> (goddess of tranquil waters, peaceful sanctuaries, and quiet healing) and <strong>Lathander</strong> (The Morninglord, deity of dawn, vitality, and spring renewal).</p>
+                                <p style="margin-bottom:6px;"><strong>The Jovial Mask:</strong> Boisterous, warm-hearted, and extraordinarily generous with both his coin and his spells. He preaches that holiness is measured not in stern sermons or cold dogmas, but in sharing fresh bread, warm stew, and hearty laughter with travelers.</p>
+                                <p style="margin-bottom:0;"><strong>The Existential Fear:</strong> Beneath his booming laugh lies a quiet, haunting dread of death, freezing void, and oblivion. He sips <em>The Vintage of the Dawn Watch</em> to keep warmth in his marrow, using humor as a fortress against existential despair so that none under his care ever feel alone in the dark.</p>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2: THE ANCESTRAL SECRET OF SHARRUTH -->
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:12px 14px; display:flex; flex-direction:column; gap:6px;">
+                            <div style="font-size:0.82rem; font-weight:700; color:#f97316; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:4px; display:flex; align-items:center; gap:6px;">
+                                🌋 <span>Ancestral Destiny: Sharruth's Volcanic Tomb</span>
+                            </div>
+                            <div style="font-size:0.74rem; color:#cbd5e1; line-height:1.45;">
+                                <p style="margin-bottom:6px;"><strong>The Ward-Priest Lineage:</strong> Centuries ago, three ancient metallic dragon champions—<strong>Astalagan the Bronze</strong>, <strong>Clyssavar the Silver</strong>, and <strong>Runara the Gold</strong>—slayed the primordial red dragon-queen <strong>Sharruth</strong>, whose fiery wrath threatened the entire Sword Coast.</p>
+                                <p style="margin-bottom:6px;"><strong>The Magma Tomb:</strong> Sharruth's burning corpse was interred within the volcanic crust of Stormwreck Isle. Flubs' family is the last surviving bloodline of the mortal holy order sworn to maintain the subterranean anchor seals preventing her volcanic wrath from rupturing the sea.</p>
+                                <p style="margin-bottom:0;"><strong>The Looming Danger:</strong> When Dragon's Rest was sacked and Elder Runara captured, Flubs realized Sparkrender's blasphemous ritual threatens to shatter the very seals his ancestors gave their lives to protect.</p>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3: THE ORDEAL OF MAL'GOROTH (ESPECIALLY DETAILED) -->
+                        <div style="background:rgba(190, 18, 60, 0.08); border:1px solid rgba(225, 29, 72, 0.35); border-radius:6px; padding:12px 14px; display:flex; flex-direction:column; gap:6px;">
+                            <div style="font-size:0.82rem; font-weight:700; color:#fb7185; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:4px; display:flex; align-items:center; gap:6px;">
+                                💀 <span>The Ordeal of Mal'Goroth: Defying the Dying God</span>
+                            </div>
+                            <div style="font-size:0.74rem; color:#cbd5e1; line-height:1.45;">
+                                <p style="margin-bottom:6px;"><strong>The Nat 1 Disaster:</strong> Displaced into the grim necrotic purgatory of <em>Mal'Goroth (The Weeping Planes)</em>, Flubs attempted a sacred warding ritual. In an infamous stroke of fate, a critical <strong>Natural 1</strong> was rolled, accidentally shattering an ancient boundary talisman and unleashing the suffocating necrotic rot of <strong>Moros, the Dying God</strong>!</p>
+                                <p style="margin-bottom:6px;"><strong>The Soul Crucible:</strong> As Moros's soul-rotting tendrils flooded Flubs' veins, whispering promises of decay, Father Flubs dug his heels into the ash, seized his holy symbol, and roared prayers into the void. Channeling pure radiant life-force through his agony, he violently purged Moros's corruption through sheer spiritual defiance.</p>
+                                <p style="margin-bottom:0;"><strong>🛡️ Boon of Sacerdotal Purity:</strong> For withstanding the necrotic blight of an alien dying god, Flubs earned the permanent divine <strong>Boon of Sacerdotal Purity</strong> (<strong>Permanent Resistance to Necrotic & Poison Damage</strong>). Returning home to find Dragon's Rest burned, Flubs carries a sacred vow of redemption to rescue Elder Runara and defeat Sparkrender.</p>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4: THE SERPENT RIDER & FELLOWSHIP -->
+                        <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:12px 14px; display:flex; flex-direction:column; gap:6px;">
+                            <div style="font-size:0.82rem; font-weight:700; color:#38bdf8; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:4px; display:flex; justify-content:space-between; align-items:center;">
+                                <div style="display:flex; align-items:center; gap:6px;">
+                                    <span>🐍</span>
+                                    <span>The Serpent Rider & Fellowship Dynamic</span>
+                                </div>
+                                <a href="THURIBLE_COMPANION_SHEET.html" target="_blank" style="text-decoration:none;"><button class="btn-roll-action" style="background:linear-gradient(135deg, #ea580c 0%, #c2410c 100%); font-size:0.66rem; padding:2px 7px;">🐍 Mount Sheet</button></a>
+                            </div>
+                            <div style="font-size:0.74rem; color:#cbd5e1; line-height:1.45;">
+                                <p style="margin-bottom:6px;"><strong>The Fire Snake Bond:</strong> In the geothermal vents beneath Seagrow Caves, Flubs bonded with <strong>Thurible</strong>, a Giant Fire Snake elemental. Riding Thurible into battle, Thurible's radiant hearth aura grants complete <strong>Cold Immunity</strong> to Flubs and nearby allies within 10 ft!</p>
+                                <p style="margin-bottom:6px;"><strong>The Moral Keystone:</strong> Flubs is the indispensable moral anchor of the party. He reins in Eflein's reckless arcane curiosity, shields Sylvar's mischievous feline agility, and fights shoulder-to-shoulder with General Varnoth's stalwart defensive vanguard.</p>
+                                <p style="margin-bottom:0;"><strong>Level 5 Apex Arsenal:</strong> Equipped with <em>Spirit Guardians</em>, <em>Revivify</em>, <em>Aid</em>, and <em>Preserve Life</em>, Father Flubs stands ready to ensure no ally falls beneath the shadows of Stormwreck Isle.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
     </div>
@@ -1558,6 +1659,80 @@
             <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
                 <div id="spell-modal-actions" style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;"></div>
                 <button class="btn-act btn-act-pre" onclick="closeSpellModal()" style="padding:4px 12px; font-size:0.76rem; font-weight:600;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📜 CHARACTER DOSSIER MODAL -->
+    <div class="modal-overlay" id="dossier-modal" onclick="closeDossierModalOnBackdrop(event)">
+        <div class="modal-card" style="max-width: 680px; max-height: 88vh;">
+            <div class="modal-header">
+                <h3>📜 Character Dossier: Father Flubs</h3>
+                <button class="modal-close-btn" onclick="closeDossierModal()">✕</button>
+            </div>
+            <div class="modal-body" style="padding: 14px 18px; gap: 12px; overflow-y: auto;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; border-bottom:1px solid rgba(245,158,11,0.25); padding-bottom:8px;">
+                    <div>
+                        <div style="font-family:'Cinzel', serif; font-size:1.1rem; font-weight:700; color:var(--accent-gold);">FATHER FLUBS</div>
+                        <div style="font-size:0.75rem; color:#94a3b8;">« The Serpent Rider » • Warden of the Living Grove • Ward-Priest of the Sharruth Tomb</div>
+                    </div>
+                    <div style="display:flex; gap:5px; flex-wrap:wrap;">
+                        <span style="background:rgba(245,158,11,0.15); color:#fde68a; border:1px solid rgba(245,158,11,0.3); font-size:0.65rem; font-weight:700; padding:2px 7px; border-radius:3px;">LEVEL 5 LIFE CLERIC</span>
+                        <span style="background:rgba(16,185,129,0.15); color:#86efac; border:1px solid rgba(16,185,129,0.3); font-size:0.65rem; font-weight:700; padding:2px 7px; border-radius:3px;">SACERDOTAL PURITY</span>
+                    </div>
+                </div>
+
+                <!-- Section 1 -->
+                <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:10px 12px;">
+                    <div style="font-size:0.8rem; font-weight:700; color:var(--accent-gold); margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                        🍷 <span>The Jovial Priest & The Mask of Fellowship</span>
+                    </div>
+                    <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.45;">
+                        <p style="margin-bottom:6px;"><strong>Name & Divine Path:</strong> Father Flubs, Level 5 Human Life Cleric (Acolyte Background • Neutral Good). Reveres <strong>Eldath</strong> (goddess of peaceful springs, quiet sanctuaries, and mercy) and <strong>Lathander</strong> (The Morninglord, deity of dawn, vitality, and renewal). Believes holiness is best shared over warm stew, fresh bread, and boisterous laughter rather than stern judgment.</p>
+                        <p style="margin-bottom:0;"><strong>The Existential Chill:</strong> Behind Flubs' booming laugh lies a haunting, quiet terror of death, freezing void, and oblivion. He sips <em>The Vintage of the Dawn Watch</em> to keep warmth in his marrow, using humor as a shield so none under his care ever feel the creeping cold of despair.</p>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:10px 12px;">
+                    <div style="font-size:0.8rem; font-weight:700; color:#f97316; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                        🌋 <span>Ancestral Destiny: Sharruth's Volcanic Tomb</span>
+                    </div>
+                    <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.45;">
+                        <p style="margin-bottom:6px;"><strong>The Ward-Priest Lineage:</strong> Centuries ago, three ancient metallic dragons—<strong>Astalagan the Bronze</strong>, <strong>Clyssavar the Silver</strong>, and <strong>Runara the Gold</strong>—slayed the primordial red dragon-queen <strong>Sharruth</strong>.</p>
+                        <p style="margin-bottom:0;"><strong>The Magma Seals:</strong> Sharruth's smoldering carcass was sealed deep in the volcanic crust of Stormwreck Isle. Flubs' family is the last living bloodline of the mortal holy order sworn to tend the subterranean anchor seals preventing her volcanic wrath from rupturing the sea. When Dragon's Rest was sacked and Runara captured, Flubs realized Sparkrender's ritual threatens to shatter the seals his ancestors gave their lives to protect.</p>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div style="background:rgba(190, 18, 60, 0.08); border:1px solid rgba(225, 29, 72, 0.35); border-radius:6px; padding:10px 12px;">
+                    <div style="font-size:0.8rem; font-weight:700; color:#fb7185; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                        💀 <span>The Ordeal of Mal'Goroth: Defying the Dying God</span>
+                    </div>
+                    <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.45;">
+                        <p style="margin-bottom:6px;"><strong>The Nat 1 Disaster:</strong> Displaced into the grim necrotic purgatory of <em>Mal'Goroth (The Weeping Planes)</em>, Flubs attempted a sacred warding ritual. In an infamous stroke of fate, a critical <strong>Natural 1</strong> was rolled, accidentally shattering an ancient boundary talisman and unleashing the suffocating necrotic rot of <strong>Moros, the Dying God</strong>!</p>
+                        <p style="margin-bottom:6px;"><strong>The Stand of Life:</strong> As Moros's soul-rotting tendrils flooded Flubs' veins, whispering promises of decay, Father Flubs stood firm. Screaming holy prayers, he funneled divine sunlight through his agonizing nerves, violently purging Moros's corruption through sheer spiritual defiance.</p>
+                        <p style="margin-bottom:0;"><strong>🛡️ Boon of Sacerdotal Purity:</strong> For withstanding the necrotic blight of an alien dying god, Flubs earned the permanent divine <strong>Boon of Sacerdotal Purity</strong> (<strong>Permanent Resistance to Necrotic & Poison Damage</strong>). Returning home to find Dragon's Rest burned, Flubs carries a sacred vow of redemption to rescue Elder Runara and defeat Sparkrender.</p>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div style="background:var(--panel-sub); border:1px solid var(--card-border); border-radius:6px; padding:10px 12px;">
+                    <div style="font-size:0.8rem; font-weight:700; color:#38bdf8; margin-bottom:4px; display:flex; justify-content:space-between; align-items:center;">
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <span>🐍</span>
+                            <span>Thurible the Fire Serpent & Tactical Role</span>
+                        </div>
+                        <a href="THURIBLE_COMPANION_SHEET.html" target="_blank" style="text-decoration:none;"><button class="btn-roll-action" style="background:linear-gradient(135deg, #ea580c 0%, #c2410c 100%); font-size:0.66rem; padding:2px 7px;">🐍 Mount Sheet</button></a>
+                    </div>
+                    <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.45;">
+                        <p style="margin-bottom:6px;"><strong>The Fire Snake Bond:</strong> In the geothermal vents beneath Seagrow Caves, Flubs bonded with <strong>Thurible</strong>, a Giant Fire Snake elemental. Thurible serves as Flubs' loyal battle mount, emanating a 10-ft aura of volcanic warmth that grants complete <strong>Cold Immunity</strong> to Flubs and nearby allies.</p>
+                        <p style="margin-bottom:0;"><strong>The Party's Heart:</strong> Flubs is the indispensable moral keystone of the party. Armed with <em>Spirit Guardians</em>, <em>Revivify</em>, <em>Aid</em>, and <em>Preserve Life</em>, Father Flubs stands as an unbroken bulwark ensuring no companion falls beneath the shadow of Stormwreck Isle.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="background:var(--panel-sub); border-top:1px solid var(--card-border); padding:8px 14px; display:flex; justify-content:flex-end;">
+                <button class="btn-act btn-act-pre" onclick="closeDossierModal()" style="padding:4px 14px; font-size:0.76rem; font-weight:600;">Close</button>
             </div>
         </div>
     </div>
@@ -2577,6 +2752,44 @@
     }
 
     // ==========================================
+    // 🌌 SHARED PARTY BOON & CHARACTER DOSSIER FUNCTIONS
+    // ==========================================
+    function usePlanarGravityStep() {
+        logRoll(`🌌 <strong>The Sovereign's Planar Scar — Planar Gravity Step (1/Short Rest):</strong> Father Flubs calls upon the lingering planar residue of the Myconid Sovereign! He glides up to <strong>20 feet</strong> through the air in a gravity-defying leap, completely ignoring difficult terrain and provoking <em>NO opportunity attacks</em>!`);
+    }
+
+    function toggleDossierInline() {
+        const content = document.getElementById('dossier-inline-content');
+        const btn = document.getElementById('dossier-toggle-btn');
+        if (!content) return;
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'flex';
+            if (btn) btn.innerHTML = '▲ Close Dossier';
+            logRoll("📜 <strong>Character Dossier Opened:</strong> Viewing Father Flubs' background, Mal'Goroth crucible, and sacred ward-priest heritage.");
+        } else {
+            content.style.display = 'none';
+            if (btn) btn.innerHTML = '▼ Read Dossier';
+        }
+    }
+
+    function openDossierModal() {
+        const modal = document.getElementById('dossier-modal');
+        if (modal) {
+            modal.classList.add('active');
+            logRoll("📜 <strong>Master Character Dossier Opened:</strong> Expanded full character archive.");
+        }
+    }
+
+    function closeDossierModal() {
+        const modal = document.getElementById('dossier-modal');
+        if (modal) modal.classList.remove('active');
+    }
+
+    function closeDossierModalOnBackdrop(e) {
+        if (e.target.id === 'dossier-modal') closeDossierModal();
+    }
+
+    // ==========================================
     // 🧪 CRAFTED POTIONS & COMBAT ALCHEMY FUNCTIONS
     // ==========================================
     function drinkHeartcapPotion() {
@@ -3520,6 +3733,14 @@ The necromantic magic of Aleitha's Talisman bound the drowned crew in a perpetua
     });
     document.getElementById('gold-input').addEventListener('keydown', function(e) {
         if (e.key === 'Enter') applyGoldAdd();
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeGoldHistoryModal();
+            closeItemModal();
+            closeSpellModal();
+            closeDossierModal();
+        }
     });
 
     // Init on Page Load
