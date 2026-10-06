@@ -419,21 +419,21 @@
 
 ## ⚡ SECTION 5: CLIFFTOP OBSERVATORY CULT & PRISONERS
 
-### 🐉 Sparkrender (Campaign Climax Boss — Blue Dragon Wyrmling)
-* **Identity:** Sleek, azure-scaled chromatic dragon crackling with lightning (AC 15, HP 140 [Bloodied: 70 HP], CR 8 Apex Final Boss). Channels a lethal 12d10 Apocalyptic One-Shot at ≤ 50% HP unless countered by Myla's Galvanic Ley-Grounder Pylon!
-* **Location:** Observatory Tower & Rotunda (Area D5 / D6).
+### 🐉 Sparkrender (Campaign Climax Boss — Adult Blue Dragon / Human Guise)
+* **Identity:** Adult Blue Dragon who initially manifests in aristocratic human form (tailored storm-grey silk coat, sapphire-tipped cane, circlet of dragon horns, slitted golden lightning eyes) before erupting into a colossal 40-foot azure chromatic wyrm (AC 17, HP 165, CR 8 Apex Climax Solo Boss). Wields devastating 6d10 Cobalt Lightning Breath, Leyline Thunderclaps, and Pointy Hat Battlefield Actions.
+* **Location:** Clifftop Observatory Open-Sky Rotunda (The Draconic Star-Atlas Dais).
 
 #### 🧭 Psychological & Moral Dossier:
-* 🧭 **Core Philosophy & Worldview:** **Draconic Social Darwinism & Ancestral Manifest Destiny**. Believes chromatic dragons are the rightful sovereign lords of Toril. Pacifism is a pathetic excuse invented by the weak to justify their cowardice. Power must be seized, distilled, and unleashed without mercy.
-* 🎯 **Core Desire & Modus Operandi:** Channel the passing King-Killer Star comet to violently tear open the three metallic seals on Sharruth's undersea tomb, siphon the sleeping Red Dragon's primordial magma flames into his own body, and ascend into a colossal **Volcanic Thunder-Dragon**.
-* ⚡ **Immediate Current Problem (Independent of Players):** The comet is reaching its closest orbital alignment in mere hours, but he still needs to prepare the blood-sacrifice ritual using Aidron and align the five dragon effigies before the astrological window closes.
-* 👥 **Who / What It Involves:** Imprisoned Aidron (the sacrifice), Mek & Minn (his incompetent kobold scouts), the celestial planetarium model, and his lightning hoard.
-* 🛠️ **How He Approaches It / Current Action:** Slumbering lightly atop his coins in D5 to build up maximum static breath charge, barking threats down the pulley lift, and preparing to chain Aidron to the ritual plinth.
+* 🧭 **Core Philosophy & Worldview:** **Absolute Draconic Supremacy & Divine Usurpation**. Views Bahamut, Tiamat, and ancient wyrms like Sharruth as stagnant fossils. Mortals and kobolds are merely "filthy ditch-rats" born to dig trenches and serve as cannon fodder. Believes he is destined to become the first true **Dragon God** of a new cosmic pantheon.
+* 🎯 **Core Desire & Modus Operandi:** Unlocking the ancient **Draconic Star-Atlas** embedded in the observatory floor to obtain the secret coordinates to **The Lost Dragon Lands** across the western sea of Toril. There, he seeks the legendary **Creator's Font (The Blood of Io)** to ascend to omnipotent godhood!
+* ⚡ **Immediate Current Problem (Independent of Players):** The Star-Atlas requires the three ancient scales (Silver, Gold, Bronze). Having embedded Clyssavar's Silver Scale and Terradaer's Gold Scale, he lacks Astalagan's Bronze Scale—forcing him to suspend and violently siphon Elder Runara atop Astalagan's statue. Needs Eflein's bronze scale to complete the circuit!
+* 👥 **Who / What It Involves:** Elder Runara (chained 40ft high above the statue as his energy battery), the "nameless wizard" Lianna (whose research 8 months ago alerted him to the Star-Atlas), the deceived kobold cultists, and Eflein.
+* 🛠️ **How He Approaches It / Current Action:** Standing in human form at the center of the Star-Atlas, savoring his triumph, and demanding Eflein surrender the final Bronze Scale before shedding his mortal skin in a catastrophic lightning roar.
 * ⚖️ **Moral Stand & DM Roleplay Cues:**
-  * *Red Lines:* Considers retreat a temporary tactical delay, not surrender; views mortals and kobolds as disposable cattle.
-  * *Gray Areas:* Will pause to boast in Draconic and gloat about his inevitable ascension if challenged by proud spellcasters.
-  * *Voice & Demeanor:* Snarl-laced, haughty, resonant young draconic arrogance. Static electricity arcs across his teeth when he speaks.
-  * *Dialogue Hook:* *"You crawl before me on the bones of your betters! This island's fire belongs to the blood of Eldenemir! Bow, or be turned to glass!"*
+  * *Red Lines:* Will never share divinity with anyone; regards all life beneath him with sociopathic cruelty and cold mockery.
+  * *Gray Areas:* Delights in aristocratic debate and psychological cruelty before striking.
+  * *Voice & Demeanor:* Velvety, smooth, cultured aristocratic baritone that snarls into an ear-splitting, crackling draconic roar. Arcs of sapphire static dance across his fingernails and lips.
+  * *Dialogue Hook:* *"Look at the floor beneath your filthy boots, mortals. The ancients didn't build this tower to watch the stars—they built it to MAP THEM! The Draconic Star-Atlas... the path to the gods! Hand over the scale, boy, and I might let you live long enough to watch me step into the heavens!"*
 
 ---
 
