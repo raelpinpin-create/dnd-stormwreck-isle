@@ -66,6 +66,31 @@
 
 ---
 
+### ❄️⚔️ Krag'zor the Dragon-Forged (Level 7 Dragon-Forged Mage Warrior — Party Companion)
+* **Status:** `⭐ ACTIVE PARTY COMPANION & RECRUITED ALLIED WARMASTER (LEVEL 7)`
+* **Role:** Heavy Martial Mage-Warrior, Cryomancer Striker & Drake Controller (Lead DM Controlled / Party Companion)
+* **Location:** Active Party (Crossing the Moonstone Causeway into the Clifftop Observatory)
+* **Interactive Window:** Master DM Screen (`DM_SCREEN.html`) via Krag'zor's Modal Window.
+* **Appearance:** A towering, 6-foot-tall White Dragon Mutant Kobold with an imposing gladiator build, armored in frost-rimed dragon-scale plate draped in winter wolf pelts. Swept dragon horns crown his brow, and his scales are frosted ivory-white. He carries a 5-foot Great Katana (Odachi) that crackles with freezing mist and blue static lightning.
+* **Recruitment Chronicle:** Persuaded on the Moonstone Causeway after Sylvar Link rolled a **Natural 20 + 10 + 1 = 31 Persuasion Check**! Sylvar revealed Sparkrender's betrayal—calling all kobolds "ditch-rats" and reserving only a single seat for himself on the Draconic Star-Atlas—and offered Krag'zor true honor, brotherhood, and a place as the First Draconic Warmaster.
+* **Stat Block Snapshot (Level 7 Eldritch Mage Warrior):**
+  * **HP:** 80 / 80 | **AC:** 17 (20 with Dragon-Parry, 22 with *Shield*) | **Speed:** 30 ft (Fly 30 ft with Glacial Wings) | **Initiative:** +3
+  * **Spellcasting (INT 18 • Spell DC 15 • +7 Hit):** Slots: 4 L1, 3 L2, 2 L3. Cantrips: *Ray of Frost* (+7 hit, 2d8 cold, -10ft speed), *Shocking Grasp* (+7 hit, 2d8 lightning), *Frostbite Jolt*. Spells: *Shield*, *Ice Knife*, *Rime's Binding Ice*, *Misty Step*, *Lightning Bolt*, *Counterspell*. Apex: *Cone of Cold* (1/LR, 8d8 cold, DC 15 Con).
+  * **Weapons:** The Glacial Odachi (+1 Great Katana): `+8 to hit`, `2d6+4` slashing + `1d6` cold. Crits on 19–20! (Bloodied: +1d8 Lightning).
+  * **Key Features:** Northern War Magic (Cast spell/cantrip with action, make Odachi attack as bonus action!), Drake-Master's Authority (Gorefang companion under command via Bone Whistle), Glacial Wings (30 ft fly speed), Cold Immunity, Lightning Resistance.
+
+#### 🧭 Psychological & Moral Dossier:
+* 🧭 **Core Philosophy & Worldview:** **Honorable Northern Ascendance & True Draconic Brotherhood**. Believes strength without honor is butcher's work. Krag'zor fought through gladiator pits and brutal blizzards to prove that kobolds are not vermin. Now that Sparkrender's deceit is exposed, he sees the heroes as the true carriers of the draconic soul.
+* 🎯 **Core Desire & Modus Operandi:** To storm the Clifftop Observatory with the fellowship, slay Sparkrender for deceiving his kin, and stand as the First Draconic Warmaster in the dawn of a new age.
+* ⚡ **Immediate Current Problem (Independent of Players):** The seven crying kobold sentries surviving the fortress raid need safe escort to the Seagrow hospital; Gorefang must be kept calm and directed toward Sparkrender's forces rather than snapping at Thurible.
+* 👥 **Who / What It Involves:** Sparkrender (the usurper), Sylvar Link (his new sworn brother and respected face), General Varnoth (fellow commander), Gorefang (his drake mount).
+* 🛠️ **How He Approaches It / Current Action:** Marching side-by-side with General Varnoth and Sylvar across the Moonstone Causeway, holding his Great Katana ready to cleave through the observatory wards.
+* ⚖️ **Moral Stand & DM Roleplay Cues:**
+  * *Red Lines:* Will never allow innocent kobolds to be slaughtered or mocked as vermin; will die before breaking a sworn warrior's oath to the fellowship.
+  * *Gray Areas:* Ruthless against tyrants and treacherous masters; unleashes lethal frost without hesitation in battle.
+  * *Voice & Demeanor:* Deep, rumbling, honorable baritone like grinding glacier ice. Bows with formal samurai-like discipline before battle.
+  * *Dialogue Hook:* *"A true wyrm does not hide behind lies, bard. Sparkrender called us ditch-rats... but together, we shall teach him how the sky shatters. To the summit!"*
+
 ---
 
 ## 🐺 SECTION 1.5: WANDERING LONE WOLVES & LEGENDS OF FAERÛN

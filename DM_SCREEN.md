@@ -51,6 +51,19 @@
 * **Defensive Features & Actions:** 🛡️ *Protection Reaction* (Disadvantage on attacks vs adjacent ally), 💨 *Second Wind* (1d10+5 HP — Ready), ⚡ *Action Surge* (1 Extra Action per Short Rest — **0/1 Used in combat**), 🌌 *Planar Gravity Step* (20ft glide ignoring difficult terrain, READY • 1/Short Rest), 🪓 *Shield Bash* (Athletics +7 vs Prone).
 * **Equipment & Attacks:** Splint Mail, Azure Wolf Steel Shield, Honed Longsword (+7 hit, 1d8+4/1d10+4, Crits on 19-20), Heavy Crossbow (+3 hit, 1d10), 🪓 Twin Notched Bone-Cleavers (+7 hit, 1d6+4 / 1d6), 🪵 Peg Leg Kick (+7 hit, 1d4+4 bludgeoning, DC 15 STR save), 🧪 **3x Potions of Healing** (Action: 100% Full Max HP: 44 HP), 8 gp 6 sp.
 
+---
+
+### ❄️ 5. Krag'zor the Dragon-Forged (Level 7 Recruited Champion / Eldritch Warmaster) — Party Companion
+* **Concept & Origin:** 6-Foot White Dragon Kobold Mage-Warrior from the Far North | **Chaotic Neutral / Good** | **Title:** **« The Dragon-Forged Warmaster »** | Defected from Sparkrender's service after Sylvar Link rolled a legendary **DC 31 Persuasion Check** on the Moonstone Causeway. Bonded with Gorefang (Titan Crag Drake) and respects General Varnoth's scarred veteran dignity.
+* **Hit Points (HP):** **80 / 80** | **Armor Class (AC):** **17** *(19 with Shield, 20 with Dragon-Parry, 22 with Shield spell)* | **Speed:** 30 ft *(Fly 30 ft with Glacial Wings when bloodied)* | **Initiative:** **+3** | **Passive Perception:** 14 | **Proficiency Bonus:** **+3**
+* **Ability Scores:** STR 18 (+4★), DEX 16 (+3★), CON 16 (+3★), INT 18 (+4★), WIS 12 (+1), CHA 14 (+2) | Saves: STR +7, CON +6, INT +7 | Immune: Cold | Resist: Lightning
+* **Spellcasting Specs:** Spell Save DC **15** | Spell Attack Bonus **+7** | **1st-Level Slots:** **4 / 4** | **2nd-Level Slots:** **3 / 3** | **3rd-Level Slots:** **2 / 2** | 🤝 **Help Tokens:** **2 / 2**
+* **Class & Subclass Features:** ⚔️ **Extra Attack (2 attacks/action)**, ⚡ **Northern War Magic** (Cast cantrip/spell + Bonus Action Odachi strike!), 🗡️ **Dragon-Parry** (+3 AC reaction), 💨 **Second Wind** (1d10+7 HP, 1/SR), 🛡️ **Indomitable** (Reroll failed save, 1/LR), 🌌 **Planar Gravity Step** (20ft leap, 1/SR).
+* **Apex Draconic Features:** ❄️ **Cone of Cold (Apex Cryomancy, 1/Long Rest):** 60-ft cone, DC 15 Con save or 36 (`8d8`) cold damage. 📯 **Drake-Master's Bone Whistle (1/Day):** Command Gorefang to pincer, charge, and multiattack!
+* **Spells Known & Prepared:** Cantrips: *Ray of Frost (2d8), Shocking Grasp (2d8), Frostbite (2d6), Blade Ward*. 1st-Level: *Shield (+5 AC), Absorb Elements (+1d6 melee), Ice Knife (1d10+2d6 cold), Thunderwave (2d8)*. 2nd-Level: *Rime's Binding Ice (3d8 cold, speed 0), Misty Step (30ft), Hold Person (DC 15 Wis)*. 3rd-Level: *Lightning Bolt (8d6), Counterspell (Auto cancels L3)*.
+* **Key Gear & Weapons:** ⚔️ **The Glacial Odachi (+1 Great Katana):** `+8 to hit`, `2d6+4` slashing + `1d6` cold (Heavy, Two-Handed, Crits 19-20; bloodied adds +1d8 lightning!), 📯 **Drake-Master's Bone Whistle**, 🥋 **Mantle of the Northern Rime-Shatterer** (Cold & Lightning Resistance), 📜 **Krag'zor's Northern War Journal**, 💎 4x Glacial Draconic Runestones (50 gp each).
+* **🐉 Battle Companion:** **Gorefang (Titan Crag Drake)** (AC 15, HP 60/60, Speed 40ft climb 30ft, Molten Bite `+6 [2d8+4 pierc + 1d6 fire]`, Tail Sweep `+6 [1d10+4, Knockdown DC 14 Str]`, Fire Breath `6d6 DC 14 Dex`).
+
 ```mermaid
 graph TD
     A["⚓ PROLOGUE: Neverwinter Docks"] --> B["🏖️ CHAPTER 1: Dragon's Rest Beach"]
@@ -242,7 +255,7 @@ graph TD
 | | 💀 **Skeleton Sailor** *(C2 Forecastle Patrol)* | 1/4 | **+2** | 22-26 | 13 | 30 ft | **+0** | **+2** | **+2** | **-2** | **-1** | **-3** | Scimitar **+4** (1d6+2 slash + 1d4 cold) / Bow **+4** (1d8+2) | Vulnerable Bludgeoning |
 | | 🧟‍♂️ **Drowned Ghoul** *(C8 Lower Deck Scavenger)* | 1 | **+2** | 34-40 | 12 | 30 ft | **+1** | **+2** | **+0** | **-2** | **+0** | **-1** | Bite **+4** (2d8+2 pierc) + Claws **+4** (2d6+2 slash + DC 11 Paralyze) | Coup de Grace vs Paralyzed (+1d6 necro) |
 | | 🦅 **Harpy of the Crow's Nest** *(C1 Aerial Ambush)* | 1 | **+1** | 42-48 | 11 | Fly 40 | **+1** | **+1** | **+1** | **-2** | **+0** | **+1** | Claws **+4** (2d6+2 slash) + Bone Club **+4** (1d8+3 bludgeon + 1d4 bleed) | Luring Song: DC 12 Wis (300ft charm) |
-| **⚡ Clifftop Observatory (Lvl 4–5)** | ❄️⚡ **Krag'zor the Dragon-Forged** *(⚔️ 6-FT NORTHERN MINI-BOSS CR 7)* | 7 | **+3** | 80 | 17 | 30 ft (Fly 30) | **+4★** | **+3★** | **+3★** | **+4★** | **+1** | **+2** | Great Katana **+8** (2d6+4 slash + 1d6 cold + light) | Cryomancy & Lightning • Spells (DC 15) • Pointy Hat Actions (>50% / ≤50% HP) |
+| **⚡ Clifftop Observatory (Lvl 4–5)** | ❄️⚡ **Krag'zor the Dragon-Forged** *(🤝 LEVEL 7 RECRUITED ALLY & CHAMPION)* | 7 | **+3** | 80 | 17 | 30 ft (Fly 30) | **+4★** | **+3★** | **+3★** | **+4★** | **+1** | **+2** | Great Katana **+8** (2d6+4 slash + 1d6 cold + light) | Cryomancy & Lightning • Spells (DC 15) • Pointy Hat Co-Op Actions • Drake Command |
 | | 🦎 **Gorefang (Titan Crag Drake)** *(DRAKE COMPANION CR 4)* | 4 | **+1** | 60 | 15 | 40 ft | **+4** | **+1** | **+3** | **-3** | **+1** | **-2** | Bite **+6** (2d8+4 + 1d6 fire) + Tail **+6** (1d10+4) | Fire Breath (6d6, DC 14 Dex) • Knockdown (DC 14 Str) |
 | | 🐉 **Sparkrender** *(👑 CAMPAIGN APEX FINAL BOSS CR 8)* | 8 | **+2** | 140 | 15 | Fly 60 | **+4** | **+2★** | **+4★** | **+1** | **+2★** | **+3★** | Bite **+6** (2d10+4 pierc + 2d6 light) + Claw **+6** (2d6+4) + Tail **+6** (1d8+4) | Breath: DC 15 Dex (6d10 light) • Apocalyptic 12d10 One-Shot (Pylon Required!) • Pointy Hat Actions (>50% / ≤50% HP) |
 | | 🛡️ **Kobold Champion** *(🏆 D3 CAMP COMMANDER)* | 1/2 | **+2** | 36-42 | 15 | 25 ft | **+1** | **+2** | **+2** | **-1** | **+0** | **+0** | Dual Cleavers **+4** (1d8+2 slash + 1d4 rend, 2 attacks) | Shield Bash: DC 12 Str Save or Prone |
@@ -262,16 +275,16 @@ graph TD
 
 ### 💀 DETAILED MONSTER & THINKING CREATURE STAT BLOCKS
 
-##### 0. ❄️⚡ Krag'zor the Dragon-Forged — Medium Humanoid (CR 7 LEGENDARY WHITE DRAGON KOBOLD MAGE WARRIOR • BRIDGE MINI-BOSS)
-* **Identity:** Legendary 6-foot-tall White Dragon Kobold Mage Warrior from the frozen tundras of the Far North. Refusing the cowardly destiny of his race, he mastered the heavy Great Katana (Odachi) and dangerous cryomancy interwoven with lightning. Traveled from the Reghed glaciers to Stormwreck Isle to test Sparkrender's worth and seize draconic power for his personal quest to become the greatest kobold legend in Toril.
-* **AC:** 17 (Winter Wolf Pelt & Runic Frost Plate, AC 19 with *Shield*) | **HP:** **80 HP** (Bloodied: 40 HP) | **Speed:** 30 ft (Gains Fly 30 ft [hover] with Glacial Wings when Bloodied ≤ 50% HP) | **Initiative:** +3
+##### 0. ❄️⚡ Krag'zor the Dragon-Forged — Medium Humanoid (LEVEL 7 RECRUITED ALLY & CHAMPION • FORMER BRIDGE DEFENDER)
+* **Identity:** Legendary 6-foot-tall White Dragon Kobold Mage Warrior from the frozen tundras of the Far North. Formerly Sparkrender's bridge defender on the Moonstone Causeway, he defected to join the party after Sylvar Link rolled a legendary **DC 31 Persuasion Check**! Respects the party's martial prowess, especially General Varnoth's veteran discipline, and now fights alongside them with his 5-foot Glacial Odachi, Northern Cryomancy, and Gorefang the Crag Drake.
+* **AC:** 17 (Winter Wolf Pelt & Runic Frost Plate, AC 20 with Dragon-Parry, AC 22 with *Shield*) | **HP:** **80 HP** (Bloodied: 40 HP) | **Speed:** 30 ft (Gains Fly 30 ft [hover] with Glacial Wings when Bloodied ≤ 50% HP or in need) | **Initiative:** +3
 * **Damage Immunities:** Cold | **Damage Resistances:** Lightning
 * **Saving Throws:** STR +7, CON +6, INT +7 | **Skills:** Athletics +7, Arcana +7, Perception +4, Intimidation +5
 * **Senses:** Darkvision 60 ft., Passive Perception 14
 * **Traits & Passives:**
   * ⚔️ **Northern War Magic:** When Krag'zor casts a cantrip or spell as an Action, he can make one Great Katana melee attack as a **Bonus Action**!
-  * 🩸 **Glacial Overdrive (Trigger at ≤ 50% HP / 40 HP):** When reduced to 40 HP or less, twin wings of solid permafrost erupt from his back! Gains **Fly 30 ft (hover)**, +2 AC (now **AC 19**), and all melee attacks deal an extra **+1d8 Lightning damage** from northern storm arcs!
-  * 👑 **Northern Warrior's Code / Desperation Surrender (Trigger at ≤ 20 HP):** When reduced to 20 HP or lower, Krag'zor plunges his Great Katana into the bridge and drops to one knee with frost-cracked breath. Recognizes the party's true warrior might: surrenders *The Glacial Odachi*, reveals the DC 15 Explosive Rune Trap location in Area D4, and warns that Sparkrender hoards the Gold & Silver scales in the vault!
+  * 🩸 **Glacial Overdrive (Trigger at ≤ 50% HP / 40 HP):** When reduced to 40 HP or less, twin wings of solid permafrost erupt from his back! Gains **Fly 30 ft (hover)**, +2 AC, and all melee attacks deal an extra **+1d8 Lightning damage** from northern storm arcs!
+  * 🤝 **Sworn Martial Oath (Defected Ally):** Krag'zor gave his word to Sylvar and Varnoth; he fights faithfully at the front line, reveals Sparkrender's concealed D4 rune traps, and coordinates with Gorefang to pin down foes!
 * **Pointy Hat Battlefield Actions (Health-Triggered Framework):**
   * **🎭 Stance 1: > 50% HP (80 – 41 HP) [TACTICAL CRYOMANCER & BLADE-MASTER]:**
     * **Action 1: Blizzard Great-Katana Sweep (Whirlwind of Rime)**

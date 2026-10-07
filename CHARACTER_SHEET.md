@@ -332,6 +332,66 @@
 
 ---
 
+# ❄️ Player 5: Krag'zor the Dragon-Forged
+* **Title:** **« The Dragon-Forged Warmaster »**
+* **Status:** `⭐ ACTIVE PARTY COMPANION & RECRUITED ALLIED WARMASTER (LEVEL 7)`
+* **Recruitment Chronicle:** Persuaded on the Moonstone Causeway after Sylvar Link rolled a legendary **Natural 20 + 10 + 1 = 31 Persuasion Check**! Sylvar revealed Sparkrender's betrayal—calling all kobolds disposable ditch-rats and designing the Star-Atlas ritual for only one passenger—and offered Krag'zor true brotherhood and the title of First Draconic Warmaster.
+* **Standalone Interactive Window:** Accessible directly on [**Master DM Screen**](file:///D:/Dungeons%20and%20Dragons%20Campaigns/DRAGONS%20OF%20STORMWRECK%20ISLE/DM_SCREEN.html) via Krag'zor's interactive modal sheet.
+
+## 📜 Character Profile
+* **Name:** Krag'zor the Dragon-Forged
+* **Race:** White Dragon Mutant Kobold (6 feet tall, imposing muscular gladiator frame, ivory scales rimed with permanent frost, swept dragon horns)
+* **Class & Level:** **Fighter 7 (Eldritch Knight / Dragon-Forged Warmaster Archetype)**
+* **Background:** Far North Gladiator / Glacial Scion
+* **Alignment:** **Lawful Neutral**
+* **Archetype / Personality:** **Honorable Northern Samurai-Warlord** — Calm, measured, razor-sharp discipline. Fights with unwavering pride and code of honor. Deeply respects martial skill, truth, and true draconic majesty.
+* **Role in Party:** Heavy Frontline Mage-Warrior, Cryomancer Striker, AoE Blaster & Gorefang Controller.
+
+## ⚔️ Combat Statistics
+| Attribute | Value | Notes |
+| :--- | :--- | :--- |
+| **Hit Points (HP)** | **80 / 80** | Hit Dice: `7d10 + 21 CON` + Draconic Vigor |
+| **Armor Class (AC)** | **17** | Draconic Scale Plate & Frost Aura (**20** with Dragon-Parry, **22** with *Shield*) |
+| **Initiative** | **+3** | Dex modifier (+3) |
+| **Speed** | **30 ft** | **Fly 30 ft** with Spectral Glacial Wings |
+| **Help Tokens** | **2 / 2** | Help (+1d6 to ally within 30ft, 2/LR, +1 on SR) |
+| **Passive Perception** | **14** | Base Wisdom (+1) + PB (+3) |
+| **Proficiency Bonus** | **+3** | Tier 2 (Level 7) |
+| **Damage Immunities** | ❄️ **Cold** | Native White Dragonblood |
+| **Damage Resistances** | ⚡ **Lightning** | Glacial Leyline Attunement |
+
+## 📊 Ability Scores & Modifiers
+| Ability | Score | Modifier | Saving Throw | Skill Proficiencies |
+| :--- | :---: | :---: | :---: | :--- |
+| **STR** | **18** | **+4** | **+7 ★ (Proficient)** | **Athletics (+7 ★)** |
+| **DEX** | 16 | +3 | +3 | Acrobatics (+3), Sleight of Hand (+3), Stealth (+3) |
+| **CON** | 16 | +3 | **+6 ★ (Proficient)** | Concentration checks (+3 base, +6 save) |
+| **INT** | **18** | **+4** | **+7 ★ (Proficient)** | **Arcana (+7 ★)**, History (+4), Investigation (+4) |
+| **WIS** | 12 | +1 | +1 | Animal Handling (+1), Insight (+1), **Perception (+4 ★)** |
+| **CHA** | 14 | +2 | +2 | Deception (+2), **Intimidation (+5 ★)**, Persuasion (+2) |
+
+## ✨ Martial Features & Eldritch Magic (Level 7 Dragon-Forged Warmaster)
+* **Spell Save DC:** **15** (`8 + 3 PB + 4 INT`)
+* **Spell Attack Bonus:** **+7** (`+3 PB + 4 INT`)
+* **1st-Level Spell Slots (4/4):** *Shield* (+5 AC Reaction), *Ice Knife*, *Absorb Elements*.
+* **2nd-Level Spell Slots (3/3):** *Rime's Binding Ice* (3d8 cold, DC 15 Con, speed 0), *Misty Step*.
+* **3rd-Level Spell Slots (2/2):** *Lightning Bolt* (8d6 lightning, DC 15 Dex), *Counterspell* (Reaction).
+* **❄️ Signature Apex Power (1/Long Rest):** *Cone of Cold* (60-ft cone, 8d8 cold damage, DC 15 Con save for half).
+* **⚔️ Northern War Magic (Fighter 7 Feature):** When using an Action to cast a cantrip or spell, Krag'zor can make one Glacial Odachi melee attack as a **Bonus Action**!
+* **📯 Drake-Master's Authority (Gorefang Bond):** Commands Gorefang (CR 4 Titan Crag Drake, 65 HP) to charge, flank, or pin foes via his bone whistle.
+* **❄️ Glacial Wings of the White Wyrm:** Unfolds spectral ivory dragon wings for **30 ft fly speed**.
+* **🛡️ Dragon-Parry (Reaction):** Adds **+3 to AC** against one melee weapon attack that would hit him.
+* **Cantrips Known:** *Ray of Frost* (+7 hit, 2d8 cold, -10ft speed), *Shocking Grasp* (+7 hit, 2d8 lightning, cancels reactions), *Frostbite Jolt*.
+
+## 🎒 Inventory & Companion Gear
+* ⚔️ **The Glacial Odachi (+1 Great Katana):** `+8 to hit`, `2d6+4` slashing + `1d6` cold. Reach 5 ft, Heavy, Two-Handed. Crits on 19–20! (Bloodied ≤50% HP: +1d8 Lightning).
+* 📯 **Drake-Master's Bone Whistle:** Summons or commands Gorefang (Titan Crag Drake).
+* 🥋 **Mantle of the Northern Rime-Shatterer:** Grants Cold Immunity & Lightning Resistance.
+* 📜 **Krag'zor's Northern War Journal:** Details Sparkrender's D4 rune traps and hidden vulnerabilities.
+* 💎 **4x Glacial Draconic Runestones** (50 gp each).
+
+---
+
 # 🐉 Master Campaign Arc: The Three Metallic Dragon Scales
 
 | Scale | Intended Wielder | Element & Focus | Granted Benefits |
